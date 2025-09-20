@@ -9,11 +9,17 @@
   # functions = "netlify/functions"
 
 [build.environment]
-  # Node.js version
-  NODE_VERSION = "18"
+  # Node.js version - Use Node 18 for better compatibility
+  NODE_VERSION = "18.19.0"
   
   # Enable Vite build
   NODE_ENV = "production"
+  
+  # Increase memory for build process
+  NODE_OPTIONS = "--max-old-space-size=4096"
+  
+  # Disable telemetry
+  NEXT_TELEMETRY_DISABLED = "1"
 
 # Headers for better caching and security
 [[headers]]
