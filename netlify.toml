@@ -1,6 +1,6 @@
 [build]
-  # Build command
-  command = "npm run build"
+  # Build command - use custom netlify build script
+  command = "npm run build:netlify"
   
   # Directory to publish (Vite default)
   publish = "dist"
@@ -20,6 +20,12 @@
   
   # Disable telemetry
   NEXT_TELEMETRY_DISABLED = "1"
+  
+  # Ensure npm uses the correct registry
+  npm_config_registry = "https://registry.npmjs.org/"
+  
+  # Disable npm audit during CI
+  npm_config_audit = "false"
 
 # Headers for better caching and security
 [[headers]]
