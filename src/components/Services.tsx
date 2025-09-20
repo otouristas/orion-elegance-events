@@ -46,7 +46,7 @@ export const Services = () => {
       <div className="container-max">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Οι <span className="text-gradient-gold">Υπηρεσίες</span> Μας
+            Οι <span className="text-gradient-brand">Υπηρεσίες</span> Μας
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Από γάμους και βαπτίσεις μέχρι εταιρικές εκδηλώσεις και πάρτι, 
@@ -58,12 +58,12 @@ export const Services = () => {
           {services.map((service, index) => (
             <div key={index} className="card-elegant p-8 text-center group">
               <div className="mb-6 flex justify-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-gold to-gold-dark rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-foreground" />
+                <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <service.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
               
-              <h3 className="text-2xl font-bold mb-4 text-gradient-gold">
+              <h3 className="text-2xl font-bold mb-4 text-gradient-brand">
                 {service.title}
               </h3>
               
@@ -74,13 +74,13 @@ export const Services = () => {
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="text-sm text-muted-foreground flex items-center justify-center">
-                    <span className="w-1.5 h-1.5 bg-gold rounded-full mr-2 flex-shrink-0"></span>
+                    <span className="w-1.5 h-1.5 bg-brand-main rounded-full mr-2 flex-shrink-0"></span>
                     {feature}
                   </li>
                 ))}
               </ul>
               
-              <Button variant="outline" className="border-gold text-gold hover:bg-gold hover:text-foreground">
+              <Button variant="outline" className="border-brand-main text-brand-main hover:bg-brand-main hover:text-white">
                 Μάθετε Περισσότερα
               </Button>
             </div>

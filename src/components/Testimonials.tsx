@@ -11,7 +11,7 @@ export const Testimonials = () => {
       <div className="container-max">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Εντυπώσεις <span className="text-gradient-gold">Επισκεπτών</span>
+            Εντυπώσεις <span className="text-gradient-brand">Επισκεπτών</span>
           </h2>
           <p className="text-xl text-muted-foreground">
             Ακούστε τι λένε οι φιλοξενούμενοί μας για την εμπειρία τους
@@ -23,7 +23,7 @@ export const Testimonials = () => {
             {/* Stars */}
             <div className="flex justify-center mb-6">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 text-gold fill-current" />
+                <Star key={i} className="w-6 h-6 text-brand-main fill-current" />
               ))}
             </div>
 
@@ -34,7 +34,7 @@ export const Testimonials = () => {
 
             {/* Author */}
             <div className="text-center">
-              <div className="font-bold text-xl text-gradient-gold mb-2">
+              <div className="font-bold text-xl text-gradient-brand mb-2">
                 {testimonial.name}
               </div>
               <div className="text-muted-foreground">
@@ -47,19 +47,19 @@ export const Testimonials = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-gold mb-2">500+</div>
+            <div className="text-4xl font-bold text-gradient-brand mb-2">500+</div>
             <div className="text-muted-foreground">Εκδηλώσεις</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-gold mb-2">20+</div>
+            <div className="text-4xl font-bold text-gradient-brand mb-2">20+</div>
             <div className="text-muted-foreground">Χρόνια Εμπειρίας</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-gold mb-2">100%</div>
+            <div className="text-4xl font-bold text-gradient-brand mb-2">100%</div>
             <div className="text-muted-foreground">Ικανοποίηση</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-gold mb-2">7</div>
+            <div className="text-4xl font-bold text-gradient-brand mb-2">7</div>
             <div className="text-muted-foreground">Εκκλησάκια Κοντά</div>
           </div>
         </div>

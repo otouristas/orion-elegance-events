@@ -17,7 +17,7 @@ export const About = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Εμείς - <span className="text-gradient-gold">Κτήμα Ωρίων</span>
+              Εμείς - <span className="text-gradient-brand">Κτήμα Ωρίων</span>
             </h2>
             
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -41,21 +41,21 @@ export const About = () => {
 
             <div className="mt-8">
               <p className="text-foreground font-medium mb-2">
-                Υπεύθυνη χώρου: <span className="text-gold">Μπούσουλα Παναγιώτα</span>
+                Υπεύθυνη χώρου: <span className="text-brand-main">Μπούσουλα Παναγιώτα</span>
               </p>
             </div>
           </div>
 
           {/* Features */}
           <div className="card-elegant p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center text-gradient-gold">
+            <h3 className="text-2xl font-bold mb-6 text-center text-gradient-brand">
               Το Κτήμα Διαθέτει
             </h3>
             
             <div className="grid grid-cols-1 gap-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-gold rounded-full flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-main rounded-full flex-shrink-0"></div>
                   <span className="text-foreground">{feature}</span>
                 </div>
               ))}

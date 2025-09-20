@@ -21,35 +21,35 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold text-gold mb-6">Υπηρεσίες</h3>
+            <h3 className="text-xl font-bold text-brand-main mb-6">Υπηρεσίες</h3>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Γάμος</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Βάπτιση</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Εταιρικές Εκδηλώσεις</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Πάρτι</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Φωτογράφος</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Wedding Planner</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Γάμος</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Βάπτιση</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εταιρικές Εκδηλώσεις</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Πάρτι</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Φωτογράφος</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Planner</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold text-gold mb-6">Επικοινωνία</h3>
+            <h3 className="text-xl font-bold text-brand-main mb-6">Επικοινωνία</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-gold flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-brand-main flex-shrink-0" />
                 <span className="text-secondary-foreground/80">Κερατέα, Αττική</span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
+                <Phone className="w-5 h-5 text-brand-main flex-shrink-0" />
                 <span className="text-secondary-foreground/80">2299068812</span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
+                <Phone className="w-5 h-5 text-brand-main flex-shrink-0" />
                 <span className="text-secondary-foreground/80">6981889560</span>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-gold flex-shrink-0" />
+                <Mail className="w-5 h-5 text-brand-main flex-shrink-0" />
                 <span className="text-secondary-foreground/80">info@ktimaorion.gr</span>
               </li>
             </ul>
@@ -65,7 +65,7 @@ export const Footer = () => {
             
             <div className="flex items-center space-x-2 text-secondary-foreground/60 text-sm">
               <span>Δημιουργήθηκε με</span>
-              <Heart className="w-4 h-4 text-gold fill-current" />
+              <Heart className="w-4 h-4 text-brand-main fill-current" />
               <span>για το Κτήμα Ωρίων</span>
             </div>
             

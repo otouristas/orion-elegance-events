@@ -51,7 +51,7 @@ export const Churches = () => {
       <div className="container-max">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Γραφικά <span className="text-gradient-gold">Εκκλησάκια</span>
+            Γραφικά <span className="text-gradient-brand">Εκκλησάκια</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
             Το Κτήμα Ωρίων απέχει ελάχιστα από πολλά γραφικά εκκλησάκια και εκκλησίες στη γύρω περιοχή. 
@@ -63,7 +63,7 @@ export const Churches = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {churches.map((church, index) => (
             <div key={index} className="card-elegant p-6 group hover:scale-105 transition-all duration-300">
-              <h3 className="text-xl font-bold text-gradient-gold mb-2">
+              <h3 className="text-xl font-bold text-gradient-brand mb-2">
                 {church.name}
               </h3>
               
@@ -73,12 +73,12 @@ export const Churches = () => {
               
               <div className="flex items-center justify-between text-sm">
                 <div className="flex items-center space-x-2 text-muted-foreground">
-                  <MapPin className="w-4 h-4 text-gold" />
+                  <MapPin className="w-4 h-4 text-brand-main" />
                   <span>Απόσταση: {church.distance}</span>
                 </div>
                 
                 <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Clock className="w-4 h-4 text-gold" />
+                  <Clock className="w-4 h-4 text-brand-main" />
                   <span>Χρόνος: {church.time}</span>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export const Churches = () => {
 
         <div className="mt-12 text-center">
           <div className="card-elegant p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gradient-gold mb-4">
+            <h3 className="text-2xl font-bold text-gradient-brand mb-4">
               Ένας Μαγικός Συνδυασμός
             </h3>
             <p className="text-lg text-muted-foreground">

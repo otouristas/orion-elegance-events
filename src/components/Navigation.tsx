@@ -45,10 +45,10 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               <a
                 key={item.label}
                 href={item.href}
-                className={`font-medium transition-all duration-300 hover:text-gold ${
+                className={`font-medium transition-all duration-300 hover:text-brand-main ${
                   isTransparent && !isScrolled 
-                    ? 'text-white hover:text-gold-light' 
-                    : 'text-foreground hover:text-gold'
+                    ? 'text-white hover:text-brand-main' 
+                    : 'text-foreground hover:text-brand-main'
                 }`}
               >
                 {item.label}
@@ -80,7 +80,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block font-medium text-foreground hover:text-gold transition-colors"
+                  className="block font-medium text-foreground hover:text-brand-main transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}

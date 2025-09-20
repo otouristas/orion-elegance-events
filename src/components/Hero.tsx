@@ -18,7 +18,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-          Κτήμα <span className="text-gradient-gold">Ωρίων</span>
+          Κτήμα <span className="text-gradient-brand">Ωρίων</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">
           Διοργάνωση Εκδηλώσεων - Κερατέα

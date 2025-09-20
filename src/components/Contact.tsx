@@ -10,7 +10,7 @@ export const Contact = () => {
       <div className="container-max">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-gradient-gold">Επικοινωνία</span>
+            <span className="text-gradient-brand">Επικοινωνία</span>
           </h2>
           <p className="text-xl text-muted-foreground">
             Ας μιλήσουμε για την ξεχωριστή σας εκδήλωση
@@ -21,14 +21,14 @@ export const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gradient-gold mb-6">
+              <h3 className="text-2xl font-bold text-gradient-brand mb-6">
                 Στοιχεία Επικοινωνίας
               </h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-gold" />
+                  <div className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Διεύθυνση</h4>
@@ -37,8 +37,8 @@ export const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-gold" />
+                  <div className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Τηλέφωνα</h4>
@@ -48,8 +48,8 @@ export const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-gold" />
+                  <div className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
@@ -58,8 +58,8 @@ export const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-gold" />
+                  <div className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Ώρες Λειτουργίας</h4>
@@ -78,7 +78,7 @@ export const Contact = () => {
                   href="https://www.facebook.com/ktimaorion.gr/?locale=el_GR"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center hover:bg-gold hover:text-foreground transition-colors"
+                  className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center hover:bg-brand-main hover:text-white transition-colors"
                 >
                   <Facebook className="w-6 h-6" />
                 </a>
@@ -86,7 +86,7 @@ export const Contact = () => {
                   href="https://www.instagram.com/ktimaorion/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center hover:bg-gold hover:text-foreground transition-colors"
+                  className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center hover:bg-brand-main hover:text-white transition-colors"
                 >
                   <Instagram className="w-6 h-6" />
                 </a>
@@ -96,7 +96,7 @@ export const Contact = () => {
 
           {/* Contact Form */}
           <div className="card-elegant p-8">
-            <h3 className="text-2xl font-bold text-gradient-gold mb-6">
+            <h3 className="text-2xl font-bold text-gradient-brand mb-6">
               Στείλτε μας μήνυμα
             </h3>
             
