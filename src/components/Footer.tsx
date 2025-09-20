@@ -1,0 +1,80 @@
+import { Heart, Phone, Mail, MapPin } from 'lucide-react';
+import logoDark from '@/assets/logo-dark.png';
+
+export const Footer = () => {
+  return (
+    <footer className="bg-forest text-secondary-foreground">
+      <div className="container-max section-padding">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Logo & Description */}
+          <div className="lg:col-span-2">
+            <img 
+              src={logoDark} 
+              alt="Κτήμα Ωρίων" 
+              className="h-16 w-auto mb-6 filter brightness-0 invert"
+            />
+            <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
+              Ένας υπέροχος καταπράσινος χώρος όπου η πολυτέλεια συναντά το φυσικό περιβάλλον. 
+              Δημιουργούμε αξέχαστες αναμνήσεις για τις πιο ξεχωριστές στιγμές της ζωής σας.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-bold text-gold mb-6">Υπηρεσίες</h3>
+            <ul className="space-y-3">
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Γάμος</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Βάπτιση</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Εταιρικές Εκδηλώσεις</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Πάρτι</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Φωτογράφος</a></li>
+              <li><a href="#services" className="text-secondary-foreground/80 hover:text-gold transition-colors">Wedding Planner</a></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-bold text-gold mb-6">Επικοινωνία</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center space-x-3">
+                <MapPin className="w-5 h-5 text-gold flex-shrink-0" />
+                <span className="text-secondary-foreground/80">Κερατέα, Αττική</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
+                <span className="text-secondary-foreground/80">2299068812</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
+                <span className="text-secondary-foreground/80">6981889560</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-gold flex-shrink-0" />
+                <span className="text-secondary-foreground/80">info@ktimaorion.gr</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-secondary-foreground/20 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-secondary-foreground/60 text-sm">
+              <p>Γ.Ε.ΜΗ. 062719803000</p>
+            </div>
+            
+            <div className="flex items-center space-x-2 text-secondary-foreground/60 text-sm">
+              <span>Δημιουργήθηκε με</span>
+              <Heart className="w-4 h-4 text-gold fill-current" />
+              <span>για το Κτήμα Ωρίων</span>
+            </div>
+            
+            <div className="text-secondary-foreground/60 text-sm">
+              © 2024 Κτήμα Ωρίων. Όλα τα δικαιώματα κατοχυρωμένα.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};

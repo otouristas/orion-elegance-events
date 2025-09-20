@@ -1,42 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Wedding Venue Design System - Elegant & Luxurious */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Colors - Elegant Wedding Palette */
+    --background: 32 25% 97%;
+    --foreground: 28 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 28 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 28 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Rich Champagne Gold */
+    --primary: 45 85% 65%;
+    --primary-foreground: 28 15% 15%;
+    --primary-muted: 45 75% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Deep Forest Green */
+    --secondary: 155 35% 25%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent - Warm Cream */
+    --accent: 40 40% 92%;
+    --accent-foreground: 28 15% 15%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted - Sophisticated Neutral */
+    --muted: 30 15% 90%;
+    --muted-foreground: 28 10% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 45 85% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Wedding Specific Colors */
+    --gold: 45 85% 65%;
+    --gold-light: 45 75% 85%;
+    --gold-dark: 45 65% 45%;
+    --champagne: 40 40% 92%;
+    --forest: 155 35% 25%;
+    --cream: 32 25% 97%;
+    --sage: 120 15% 85%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 65%), hsl(40 75% 72%));
+    --gradient-elegant: linear-gradient(135deg, hsl(32 25% 97%), hsl(40 40% 92%));
+    --gradient-forest: linear-gradient(135deg, hsl(155 35% 25%), hsl(150 30% 35%));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -5px hsl(45 85% 65% / 0.1);
+    --shadow-soft: 0 4px 20px -2px hsl(28 15% 15% / 0.08);
+    --shadow-luxe: 0 20px 60px -10px hsl(45 85% 65% / 0.2);
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +129,36 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold to-gold-dark bg-clip-text text-transparent;
+  }
+
+  .btn-elegant {
+    @apply bg-gradient-to-r from-gold to-gold-dark text-foreground font-medium px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground font-medium px-8 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .card-elegant {
+    @apply bg-card border border-border rounded-2xl shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 md:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
   }
 }
