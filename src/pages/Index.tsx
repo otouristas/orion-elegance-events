@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
+import { Description } from '@/components/Description';
+import { Features } from '@/components/Features';
 import { Services } from '@/components/Services';
 import { About } from '@/components/About';
 import { Churches } from '@/components/Churches';
@@ -24,6 +26,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation isScrolled={isScrolled} isTransparent={true} />
       <Hero />
+      <Description />
+      <Features />
       <Services />
       <About />
       <Churches />

@@ -4,14 +4,14 @@ import logoDark from '@/assets/logo-dark.png';
 export const Footer = () => {
   return (
     <footer className="bg-forest text-secondary-foreground">
-      <div className="container-max section-padding">
+      <div className="container-max py-16 px-4 md:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
             <img 
               src={logoDark} 
               alt="Κτήμα Ωρίων" 
-              className="h-16 w-auto mb-6 filter brightness-0 invert"
+              className="h-24 w-auto mb-6 filter brightness-0 invert"
             />
             <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
               Ένας υπέροχος καταπράσινος χώρος όπου η πολυτέλεια συναντά το φυσικό περιβάλλον. 
@@ -23,12 +23,13 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-brand-main mb-6">Υπηρεσίες</h3>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Γάμος</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Βάπτιση</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εταιρικές Εκδηλώσεις</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Πάρτι</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Φωτογράφος</a></li>
-              <li><a href="#services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Planner</a></li>
+              <li><a href="/gamos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Γάμος</a></li>
+              <li><a href="/vaptisi" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Βάπτιση</a></li>
+              <li><a href="/eterikes-ekdiloseis" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εταιρικές Εκδηλώσεις</a></li>
+              <li><a href="/parti" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Πάρτι</a></li>
+              <li><a href="/fotografos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Φωτογράφος</a></li>
+              <li><a href="/diorganotis-gamon" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Planner</a></li>
+              <li><a href="/reviews" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κριτικές</a></li>
             </ul>
           </div>
 
@@ -57,8 +58,8 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-secondary-foreground/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="border-t border-secondary-foreground/20 pt-8 mt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 gap-4">
             <div className="text-secondary-foreground/60 text-sm">
               <p>Γ.Ε.ΜΗ. 062719803000</p>
             </div>

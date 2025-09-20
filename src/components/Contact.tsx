@@ -131,7 +131,7 @@ export const Contact = () => {
                 />
               </div>
               
-              <Button type="submit" className="w-full btn-elegant">
+              <Button type="submit" className="w-full button button4">
                 Αποστολή Μηνύματος
               </Button>
               
