@@ -1,6 +1,6 @@
 [build]
-  # Build command - use custom netlify build script
-  command = "npm run build:netlify"
+  # Install dependencies and build the site
+  command = "npm ci && npm run build"
   
   # Directory to publish (Vite default)
   publish = "dist"
@@ -18,11 +18,15 @@
   # Increase memory for build process
   NODE_OPTIONS = "--max-old-space-size=4096"
   
+  # Ensure Vite is available during build
+  VITE = "true"
+  
   # Disable telemetry
   NEXT_TELEMETRY_DISABLED = "1"
   
-  # Ensure npm uses the correct registry
+  # Ensure npm uses the correct registry and installs devDependencies
   npm_config_registry = "https://registry.npmjs.org/"
+  npm_config_production = "false"
   
   # Disable npm audit during CI
   npm_config_audit = "false"
