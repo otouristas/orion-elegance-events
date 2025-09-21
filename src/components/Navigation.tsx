@@ -75,13 +75,20 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               <div key={item.label} className="relative">
                 {item.submenu ? (
                   <div>
-                    <button
-                      onClick={() => toggleDropdown(item.label)}
-                      className={`flex items-center space-x-1 font-medium transition-all duration-300 hover:text-brand-main ${textColor}`}
-                    >
-                      <span>{item.label}</span>
-                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                    </button>
+                    <div className="flex items-center">
+                      <Link
+                        to={item.href}
+                        className={`font-medium transition-all duration-300 hover:text-brand-main ${textColor} mr-2`}
+                      >
+                        {item.label}
+                      </Link>
+                      <button
+                        onClick={() => toggleDropdown(item.label)}
+                        className={`flex items-center transition-all duration-300 hover:text-brand-main ${textColor}`}
+                      >
+                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                      </button>
+                    </div>
                     
                     {/* Dropdown Menu */}
                     {openDropdown === item.label && (
@@ -141,13 +148,21 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                 <div key={item.label}>
                   {item.submenu ? (
                     <div>
-                      <button
-                        onClick={() => toggleDropdown(item.label)}
-                        className="flex items-center justify-between w-full font-medium text-foreground hover:text-brand-main transition-colors py-1"
-                      >
-                        <span>{item.label}</span>
-                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                      </button>
+                      <div className="flex items-center justify-between">
+                        <Link
+                          to={item.href}
+                          className="font-medium text-foreground hover:text-brand-main transition-colors py-1 flex-1"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                        <button
+                          onClick={() => toggleDropdown(item.label)}
+                          className="p-1 ml-2"
+                        >
+                          <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                        </button>
+                      </div>
                       {openDropdown === item.label && (
                         <div className="ml-4 mt-2 space-y-2">
                           {item.submenu.map((subItem) => (
