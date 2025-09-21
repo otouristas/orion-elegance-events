@@ -15,30 +15,30 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const navItems = [
-    { label: 'Αρχική', href: '/' },
-    { label: 'Εμείς', href: '/emeis' },
+    { label: 'ΑΡΧΙΚΗ', href: '/' },
+    { label: 'ΕΜΕΙΣ', href: '/emeis' },
     { 
-      label: 'Δεξίωση', 
+      label: 'ΔΕΞΙΩΣΗ', 
       href: '/dexiosi',
       submenu: [
-        { label: 'Γάμος', href: '/gamos' },
-        { label: 'Βάπτιση', href: '/vaptisi' },
-        { label: 'Εταιρικές Εκδηλώσεις', href: '/eterikes-ekdiloseis' },
-        { label: 'Πάρτι', href: '/parti' }
+        { label: 'ΓΑΜΟΣ', href: '/gamos' },
+        { label: 'ΒΑΠΤΙΣΗ', href: '/vaptisi' },
+        { label: 'ΕΤΑΙΡΙΚΕΣ ΕΚΔΗΛΩΣΕΙΣ', href: '/eterikes-ekdiloseis' },
+        { label: 'ΠΑΡΤΙ', href: '/parti' }
       ]
     },
-    { label: 'Ο Χώρος', href: '/o-horos' },
-    { label: 'Εκκλησίες', href: '/ekklisies' },
+    { label: 'Ο ΧΩΡΟΣ', href: '/o-horos' },
+    { label: 'ΕΚΚΛΗΣΙΕΣ', href: '/ekklisies' },
     { 
-      label: 'Υπηρεσίες', 
+      label: 'ΥΠΗΡΕΣΙΕΣ', 
       href: '/ypiresies',
       submenu: [
-        { label: 'Διοργανωτής Γάμων', href: '/diorganotis-gamon' },
-        { label: 'Φωτογράφος', href: '/fotografos' }
+        { label: 'ΔΙΟΡΓΑΝΩΤΗΣ ΓΑΜΩΝ', href: '/diorganotis-gamon' },
+        { label: 'ΦΩΤΟΓΡΑΦΟΣ', href: '/fotografos' }
       ]
     },
-    { label: 'Κριτικές', href: '/reviews' },
-    { label: 'Επικοινωνία', href: '/contact' },
+    { label: 'ΚΡΙΤΙΚΕΣ', href: '/reviews' },
+    { label: 'ΕΠΙΚΟΙΝΩΝΙΑ', href: '/contact' },
   ];
 
   const bgClass = isTransparent && !isScrolled
@@ -75,13 +75,20 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               <div key={item.label} className="relative">
                 {item.submenu ? (
                   <div>
-                    <button
-                      onClick={() => toggleDropdown(item.label)}
-                      className={`flex items-center space-x-1 font-medium transition-all duration-300 hover:text-brand-main ${textColor}`}
-                    >
-                      <span>{item.label}</span>
-                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                    </button>
+                    <div className="flex items-center">
+                      <Link
+                        to={item.href}
+                        className={`font-medium transition-all duration-300 hover:text-brand-main ${textColor} mr-2`}
+                      >
+                        {item.label}
+                      </Link>
+                      <button
+                        onClick={() => toggleDropdown(item.label)}
+                        className={`flex items-center transition-all duration-300 hover:text-brand-main ${textColor}`}
+                      >
+                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                      </button>
+                    </div>
                     
                     {/* Dropdown Menu */}
                     {openDropdown === item.label && (
@@ -141,13 +148,21 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                 <div key={item.label}>
                   {item.submenu ? (
                     <div>
-                      <button
-                        onClick={() => toggleDropdown(item.label)}
-                        className="flex items-center justify-between w-full font-medium text-foreground hover:text-brand-main transition-colors py-1"
-                      >
-                        <span>{item.label}</span>
-                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                      </button>
+                      <div className="flex items-center justify-between">
+                        <Link
+                          to={item.href}
+                          className="font-medium text-foreground hover:text-brand-main transition-colors py-1 flex-1"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                        <button
+                          onClick={() => toggleDropdown(item.label)}
+                          className="p-1 ml-2"
+                        >
+                          <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                        </button>
+                      </div>
                       {openDropdown === item.label && (
                         <div className="ml-4 mt-2 space-y-2">
                           {item.submenu.map((subItem) => (
