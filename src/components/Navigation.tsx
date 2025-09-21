@@ -15,30 +15,30 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const navItems = [
-    { label: 'Αρχική', href: '/' },
-    { label: 'Εμείς', href: '/emeis' },
+    { label: 'ΑΡΧΙΚΗ', href: '/' },
+    { label: 'ΕΜΕΙΣ', href: '/emeis' },
     { 
-      label: 'Δεξίωση', 
+      label: 'ΔΕΞΙΩΣΗ', 
       href: '/dexiosi',
       submenu: [
-        { label: 'Γάμος', href: '/gamos' },
-        { label: 'Βάπτιση', href: '/vaptisi' },
-        { label: 'Εταιρικές Εκδηλώσεις', href: '/eterikes-ekdiloseis' },
-        { label: 'Πάρτι', href: '/parti' }
+        { label: 'ΓΑΜΟΣ', href: '/gamos' },
+        { label: 'ΒΑΠΤΙΣΗ', href: '/vaptisi' },
+        { label: 'ΕΤΑΙΡΙΚΕΣ ΕΚΔΗΛΩΣΕΙΣ', href: '/eterikes-ekdiloseis' },
+        { label: 'ΠΑΡΤΙ', href: '/parti' }
       ]
     },
-    { label: 'Ο Χώρος', href: '/o-horos' },
-    { label: 'Εκκλησίες', href: '/ekklisies' },
+    { label: 'Ο ΧΩΡΟΣ', href: '/o-horos' },
+    { label: 'ΕΚΚΛΗΣΙΕΣ', href: '/ekklisies' },
     { 
-      label: 'Υπηρεσίες', 
+      label: 'ΥΠΗΡΕΣΙΕΣ', 
       href: '/ypiresies',
       submenu: [
-        { label: 'Διοργανωτής Γάμων', href: '/diorganotis-gamon' },
-        { label: 'Φωτογράφος', href: '/fotografos' }
+        { label: 'ΔΙΟΡΓΑΝΩΤΗΣ ΓΑΜΩΝ', href: '/diorganotis-gamon' },
+        { label: 'ΦΩΤΟΓΡΑΦΟΣ', href: '/fotografos' }
       ]
     },
-    { label: 'Κριτικές', href: '/reviews' },
-    { label: 'Επικοινωνία', href: '/contact' },
+    { label: 'ΚΡΙΤΙΚΕΣ', href: '/reviews' },
+    { label: 'ΕΠΙΚΟΙΝΩΝΙΑ', href: '/contact' },
   ];
 
   const bgClass = isTransparent && !isScrolled
