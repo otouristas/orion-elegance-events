@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -10,11 +10,17 @@ interface NavigationProps {
   isTransparent?: boolean;
 }
 
+interface NavItem {
+  label: string;
+  href: string;
+  submenu?: Array<{ label: string; href: string }>;
+}
+
 export const Navigation = ({ isScrolled = false, isTransparent = false }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { label: 'ΑΡΧΙΚΗ', href: '/' },
     { label: 'ΕΜΕΙΣ', href: '/emeis' },
     { 
@@ -48,19 +54,45 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
   const logoSrc = (isTransparent && !isScrolled) ? logoWhite : logoDark;
   const textColor = (isTransparent && !isScrolled) ? 'text-white' : 'text-foreground';
 
-  const toggleDropdown = (label: string) => {
-    setOpenDropdown(openDropdown === label ? null : label);
+  const handleDropdownToggle = (label: string) => {
+    console.log('Current dropdown:', openDropdown, 'Toggling:', label);
+    const newState = openDropdown === label ? null : label;
+    setOpenDropdown(newState);
+    console.log('New dropdown state:', newState);
   };
 
   const closeDropdown = () => {
     setOpenDropdown(null);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    closeDropdown();
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (!target.closest('.relative')) {
+        closeDropdown();
+      }
+    };
+
+    if (openDropdown) {
+      document.addEventListener('click', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [openDropdown]);
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${bgClass}`}>
       <div className="container-max">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - More to the right on mobile */}
+          {/* Logo */}
           <Link to="/" className="flex items-center md:ml-0 ml-8">
             <img
               src={logoSrc}
@@ -73,48 +105,37 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <div key={item.label} className="relative">
-                {item.submenu ? (
-                  <div>
-                    <div className="flex items-center">
-                      <Link
-                        to={item.href}
-                        className={`font-medium transition-all duration-300 hover:text-brand-main ${textColor} mr-2`}
-                      >
-                        {item.label}
-                      </Link>
-                      <button
-                        onClick={() => toggleDropdown(item.label)}
-                        className={`flex items-center transition-all duration-300 hover:text-brand-main ${textColor}`}
-                      >
-                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                      </button>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (item.submenu) {
+                      handleDropdownToggle(item.label);
+                    } else {
+                      window.location.href = item.href;
+                    }
+                  }}
+                  className={`font-medium transition-all duration-300 hover:text-brand-main ${textColor}`}
+                >
+                  {item.label}
+                </a>
+                
+                {/* Dropdown Menu */}
+                {item.submenu && openDropdown === item.label && (
+                  <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-[9999]">
+                    <div className="py-1">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.label}
+                          to={subItem.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                          onClick={closeDropdown}
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
                     </div>
-                    
-                    {/* Dropdown Menu */}
-                    {openDropdown === item.label && (
-                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-border z-50">
-                        <div className="py-2">
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.label}
-                              to={subItem.href}
-                              className="block px-4 py-3 text-sm text-foreground hover:bg-brand-main/10 hover:text-brand-main transition-colors"
-                              onClick={closeDropdown}
-                            >
-                              {subItem.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
                   </div>
-                ) : (
-                  <Link
-                    to={item.href}
-                    className={`font-medium transition-all duration-300 hover:text-brand-main ${textColor}`}
-                  >
-                    {item.label}
-                  </Link>
                 )}
               </div>
             ))}
@@ -146,34 +167,52 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
             <div className="px-4 py-3 space-y-1">
               {navItems.map((item) => (
                 <div key={item.label}>
-                  {item.submenu ? (
+                  <div
+                    onTouchStart={() => {
+                      console.log('Touch started on:', item.label);
+                    }}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      console.log('Touch ended on:', item.label, 'has submenu:', !!item.submenu);
+                      if (item.submenu) {
+                        console.log('Before toggle - openDropdown:', openDropdown);
+                        const newState = openDropdown === item.label ? null : item.label;
+                        setOpenDropdown(newState);
+                        console.log('After toggle - new state:', newState);
+                      } else {
+                        window.location.href = item.href;
+                        closeMenu();
+                      }
+                    }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      console.log('Click on:', item.label, 'has submenu:', !!item.submenu);
+                      if (item.submenu) {
+                        console.log('Before toggle - openDropdown:', openDropdown);
+                        const newState = openDropdown === item.label ? null : item.label;
+                        setOpenDropdown(newState);
+                        console.log('After toggle - new state:', newState);
+                      } else {
+                        window.location.href = item.href;
+                        closeMenu();
+                      }
+                    }}
+                    className="block font-medium text-foreground hover:text-brand-main transition-colors py-2 cursor-pointer select-none"
+                  >
+                    {item.label} {item.submenu ? '▼' : ''}
+                  </div>
+                  {item.submenu && (
                     <div>
-                      <div className="flex items-center justify-between">
-                        <Link
-                          to={item.href}
-                          className="font-medium text-foreground hover:text-brand-main transition-colors py-1 flex-1"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {item.label}
-                        </Link>
-                        <button
-                          onClick={() => toggleDropdown(item.label)}
-                          className="p-1 ml-2"
-                        >
-                          <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
-                        </button>
-                      </div>
+                      <div>DEBUG: Has submenu: {item.label}, Open: {openDropdown}, Match: {String(openDropdown === item.label)}</div>
                       {openDropdown === item.label && (
-                        <div className="ml-4 mt-2 space-y-2">
+                        <div className="ml-4 mt-2 space-y-1 bg-gray-50 rounded-md p-2">
+                          <div className="text-xs text-red-500">DROPDOWN OPEN FOR: {item.label}</div>
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.label}
                               to={subItem.href}
-                              className="block text-sm text-muted-foreground hover:text-brand-main transition-colors py-0.5"
-                              onClick={() => {
-                                setIsMenuOpen(false);
-                                closeDropdown();
-                              }}
+                              className="block text-sm text-foreground hover:text-brand-main transition-colors py-2 px-2 rounded hover:bg-white"
+                              onClick={closeMenu}
                             >
                               • {subItem.label}
                             </Link>
@@ -181,14 +220,6 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                         </div>
                       )}
                     </div>
-                  ) : (
-                    <Link
-                      to={item.href}
-                      className="block font-medium text-foreground hover:text-brand-main transition-colors py-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
                   )}
                 </div>
               ))}
