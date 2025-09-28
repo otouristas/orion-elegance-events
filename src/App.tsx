@@ -22,6 +22,7 @@ import Fotografos from "./pages/greek/Fotografos";
 import Dexiosi from "./pages/greek/Dexiosi";
 import Ypiresies from "./pages/greek/Ypiresies";
 import Epikoinonia from "./pages/greek/Epikoinonia";
+import Gallery from "./pages/greek/Gallery";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/ypiresies" element={<Ypiresies />} />
           <Route path="/contact" element={<Epikoinonia />} />
           <Route path="/epikoinonia" element={<Epikoinonia />} />
+          <Route path="/gallery" element={<Gallery />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
