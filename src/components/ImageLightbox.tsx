@@ -60,7 +60,7 @@ export function ImageLightbox({ images, initialIndex = 0, isOpen, onClose }: Ima
       </button>
 
       {/* Counter */}
-      <div className="absolute top-4 left-4 z-10 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white font-medium">
+      <div className="absolute top-4 left-4 z-10 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white font-medium supports-[backdrop-filter]:backdrop-blur-sm">
         {currentIndex + 1} / {images.length}
       </div>
 
@@ -90,17 +90,19 @@ export function ImageLightbox({ images, initialIndex = 0, isOpen, onClose }: Ima
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
           className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+          loading="eager"
+          decoding="async"
         />
         
         {/* Image Caption */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full text-white text-center max-w-2xl">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full text-white text-center max-w-2xl supports-[backdrop-filter]:backdrop-blur-sm">
           {images[currentIndex].alt}
         </div>
       </div>
 
       {/* Thumbnails */}
       {images.length > 1 && (
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 overflow-x-auto max-w-[90vw] px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 overflow-x-auto max-w-[90vw] px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full supports-[backdrop-filter]:backdrop-blur-sm">
           {images.map((image, index) => (
             <button
               key={index}
@@ -115,6 +117,8 @@ export function ImageLightbox({ images, initialIndex = 0, isOpen, onClose }: Ima
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </button>
           ))}
@@ -148,6 +152,8 @@ export function ClickableImage({ src, alt, className = '', images, index = 0 }: 
           src={src}
           alt={alt}
           className={`${className} transition-all duration-300 group-hover:scale-105`}
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
           <ZoomIn className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

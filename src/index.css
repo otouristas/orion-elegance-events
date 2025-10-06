@@ -133,10 +133,17 @@
 @layer components {
   .text-gradient-brand {
     @apply bg-gradient-to-r from-brand-main to-brand-dark bg-clip-text text-transparent;
+    /* Safari fallback for text gradients */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .btn-elegant {
     @apply bg-brand-main text-white font-medium px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+    /* Safari-specific fixes */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
   }
 
   .btn-secondary {
@@ -145,6 +152,9 @@
 
   .card-elegant {
     @apply bg-card border border-border rounded-2xl shadow-md hover:shadow-lg transition-all duration-300;
+    /* Safari-specific fixes */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
   }
 
   .section-padding {
@@ -203,5 +213,37 @@
     background-color: #ab9062 !important;
     color: #ffffff !important;
     border-color: #ab9062 !important;
+  }
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+  /* Fix for Safari backdrop-filter support */
+  .backdrop-blur-md {
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .backdrop-blur-sm {
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  /* Fix for Safari transform performance */
+  .hover\:scale-105:hover {
+    -webkit-transform: scale(1.05);
+  }
+  
+  .hover\:scale-110:hover {
+    -webkit-transform: scale(1.1);
+  }
+  
+  /* Fix for Safari image rendering */
+  img {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Fix for Safari smooth scrolling */
+  html {
+    -webkit-overflow-scrolling: touch;
   }
 }

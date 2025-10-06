@@ -49,7 +49,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
   const bgClass = isTransparent && !isScrolled
     ? 'bg-transparent'
-    : 'bg-background/95 backdrop-blur-md border-b border-border';
+    : 'bg-background/95 backdrop-blur-md border-b border-border supports-[backdrop-filter]:backdrop-blur-md';
 
   const logoSrc = (isTransparent && !isScrolled) ? logoWhite : logoDark;
   const textColor = (isTransparent && !isScrolled) ? 'text-white' : 'text-foreground';
