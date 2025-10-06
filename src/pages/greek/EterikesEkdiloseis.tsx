@@ -5,18 +5,18 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star, Briefcase, BarChart3, Trophy, Calendar } from 'lucide-react';
 
 // Import corporate events photos
-import event1 from '@/assets/ekdiloseis/DSC_7712.JPG';
-import event2 from '@/assets/ekdiloseis/DSC_7816.JPG';
-import event3 from '@/assets/ekdiloseis/DSC_7637.JPG';
-import event4 from '@/assets/ekdiloseis/DSC_7806.JPG';
-import event5 from '@/assets/ekdiloseis/DSC_7859.JPG';
-import event6 from '@/assets/ekdiloseis/DSC_7828.JPG';
-import event7 from '@/assets/ekdiloseis/DSC_7662.JPG';
-import event8 from '@/assets/ekdiloseis/DSC_7588.JPG';
-import event9 from '@/assets/ekdiloseis/DSC_7783.JPG';
-import event10 from '@/assets/ekdiloseis/DSC_7796.JPG';
-import event11 from '@/assets/ekdiloseis/DSC_7733.JPG';
-import event12 from '@/assets/ekdiloseis/DSC_7763.JPG';
+import event1 from '@/assets/ekdiloseis/DSC_7433.JPG';
+import event2 from '@/assets/ekdiloseis/DSC_7435.JPG';
+import event3 from '@/assets/ekdiloseis/DSC_7439.JPG';
+import event4 from '@/assets/ekdiloseis/DSC_7442.JPG';
+import event5 from '@/assets/ekdiloseis/DSC_7451.JPG';
+import event6 from '@/assets/ekdiloseis/DSC_7465.JPG';
+import event7 from '@/assets/ekdiloseis/DSC_7471.JPG';
+import event8 from '@/assets/ekdiloseis/DSC_7473.JPG';
+import event9 from '@/assets/ekdiloseis/DSC_7480.JPG';
+import event10 from '@/assets/ekdiloseis/DSC_7481.JPG';
+import event11 from '@/assets/ekdiloseis/DSC_7484.JPG';
+import event12 from '@/assets/ekdiloseis/DSC_7486.JPG';
 
 export default function EterikesEkdiloseis() {
   const eventPhotos = [

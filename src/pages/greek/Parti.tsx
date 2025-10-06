@@ -5,20 +5,20 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star, Music, Sparkles, Gift, Calendar } from 'lucide-react';
 
 // Import party photos
-import party1 from '@/assets/party/DSC_7859.JPG';
-import party2 from '@/assets/party/DSC_7637.JPG';
-import party3 from '@/assets/party/DSC_7783.JPG';
-import party4 from '@/assets/party/DSC_7816.JPG';
-import party5 from '@/assets/party/DSC_7705.JPG';
-import party6 from '@/assets/party/DSC_7662.JPG';
-import party7 from '@/assets/party/DSC_7828.JPG';
-import party8 from '@/assets/party/DSC_7806.JPG';
-import party9 from '@/assets/party/DSC_7796.JPG';
-import party10 from '@/assets/party/DSC_7733.JPG';
-import party11 from '@/assets/party/DSC_7622.JPG';
-import party12 from '@/assets/party/DSC_7588.JPG';
-import party13 from '@/assets/party/DSC_7542.JPG';
-import party14 from '@/assets/party/DSC_7569.JPG';
+import party1 from '@/assets/party/DSC_7433.JPG';
+import party2 from '@/assets/party/DSC_7435.JPG';
+import party3 from '@/assets/party/DSC_7439.JPG';
+import party4 from '@/assets/party/DSC_7442.JPG';
+import party5 from '@/assets/party/DSC_7451.JPG';
+import party6 from '@/assets/party/DSC_7465.JPG';
+import party7 from '@/assets/party/DSC_7471.JPG';
+import party8 from '@/assets/party/DSC_7473.JPG';
+import party9 from '@/assets/party/DSC_7480.JPG';
+import party10 from '@/assets/party/DSC_7481.JPG';
+import party11 from '@/assets/party/DSC_7484.JPG';
+import party12 from '@/assets/party/DSC_7486.JPG';
+import party13 from '@/assets/party/DSC_7489.JPG';
+import party14 from '@/assets/party/DSC_7494.JPG';
 
 export default function Parti() {
   const partyPhotos = [

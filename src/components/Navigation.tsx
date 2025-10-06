@@ -55,10 +55,8 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
   const textColor = (isTransparent && !isScrolled) ? 'text-white' : 'text-foreground';
 
   const handleDropdownToggle = (label: string) => {
-    console.log('Current dropdown:', openDropdown, 'Toggling:', label);
     const newState = openDropdown === label ? null : label;
     setOpenDropdown(newState);
-    console.log('New dropdown state:', newState);
   };
 
   const closeDropdown = () => {
@@ -170,17 +168,11 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               {navItems.map((item) => (
                 <div key={item.label}>
                   <div
-                    onTouchStart={() => {
-                      console.log('Touch started on:', item.label);
-                    }}
                     onTouchEnd={(e) => {
                       e.preventDefault();
-                      console.log('Touch ended on:', item.label, 'has submenu:', !!item.submenu);
                       if (item.submenu) {
-                        console.log('Before toggle - openDropdown:', openDropdown);
                         const newState = openDropdown === item.label ? null : item.label;
                         setOpenDropdown(newState);
-                        console.log('After toggle - new state:', newState);
                       } else {
                         window.location.href = item.href;
                         closeMenu();
@@ -188,12 +180,9 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                     }}
                     onClick={(e) => {
                       e.preventDefault();
-                      console.log('Click on:', item.label, 'has submenu:', !!item.submenu);
                       if (item.submenu) {
-                        console.log('Before toggle - openDropdown:', openDropdown);
                         const newState = openDropdown === item.label ? null : item.label;
                         setOpenDropdown(newState);
-                        console.log('After toggle - new state:', newState);
                       } else {
                         window.location.href = item.href;
                         closeMenu();
@@ -203,24 +192,18 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                   >
                     {item.label} {item.submenu ? '▼' : ''}
                   </div>
-                  {item.submenu && (
-                    <div>
-                      <div>DEBUG: Has submenu: {item.label}, Open: {openDropdown}, Match: {String(openDropdown === item.label)}</div>
-                      {openDropdown === item.label && (
-                        <div className="ml-4 mt-2 space-y-1 bg-gray-50 rounded-md p-2">
-                          <div className="text-xs text-red-500">DROPDOWN OPEN FOR: {item.label}</div>
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.label}
-                              to={subItem.href}
-                              className="block text-sm text-foreground hover:text-brand-main transition-colors py-2 px-2 rounded hover:bg-white"
-                              onClick={closeMenu}
-                            >
-                              • {subItem.label}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
+                  {item.submenu && openDropdown === item.label && (
+                    <div className="ml-4 mt-2 space-y-1 bg-gray-50 rounded-md p-2">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.label}
+                          to={subItem.href}
+                          className="block text-sm text-foreground hover:text-brand-main transition-colors py-2 px-2 rounded hover:bg-white"
+                          onClick={closeMenu}
+                        >
+                          • {subItem.label}
+                        </Link>
+                      ))}
                     </div>
                   )}
                 </div>
