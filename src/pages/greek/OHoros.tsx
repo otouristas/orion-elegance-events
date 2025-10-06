@@ -1,33 +1,34 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPin, Phone, Mail } from 'lucide-react';
 
 // Import images from all folders
 // Home images
-import home1 from '@/assets/home/12.jpg';
-import home2 from '@/assets/home/image.jpg';
+import home1 from '@/assets/home/DSC_7588.JPG';
+import home2 from '@/assets/home/DSC_7816.JPG';
 
 // Wedding images
-import wedding1 from '@/assets/gamos/69 (1).jpg';
-import wedding2 from '@/assets/gamos/66 (1).jpg';
-import wedding3 from '@/assets/gamos/68 (1).jpg';
+import wedding1 from '@/assets/gamos/DSC_7637.JPG';
+import wedding2 from '@/assets/gamos/DSC_7712.JPG';
+import wedding3 from '@/assets/gamos/DSC_7806.JPG';
 
 // Baptism images
-import baptism1 from '@/assets/vaftisi/72.jpg';
-import baptism2 from '@/assets/vaftisi/71 (1).jpg';
+import baptism1 from '@/assets/vaftisi/DSC_7662.JPG';
+import baptism2 from '@/assets/vaftisi/DSC_7828.JPG';
 
 // Corporate events images
-import corporate1 from '@/assets/ekdiloseis/76.jpg';
-import corporate2 from '@/assets/ekdiloseis/73.jpg';
+import corporate1 from '@/assets/ekdiloseis/DSC_7859.JPG';
+import corporate2 from '@/assets/ekdiloseis/DSC_7783.JPG';
 
 // Party images
-import party1 from '@/assets/party/104.jpg';
-import party2 from '@/assets/party/108.jpg';
+import party1 from '@/assets/party/DSC_7796.JPG';
+import party2 from '@/assets/party/DSC_7733.JPG';
 
 export default function OHoros() {
   const venuePhotos = [
     { src: home1, alt: "Κτήμα Ωρίων - Ημιυπαίθρια παγόδα", category: "Χώρος" },
-    { src: home2, alt: "Κτήμα Ωρίων - Παιδική χαρά", category: "Χώρος" },
+    { src: home2, alt: "Κτήμα Ωρίων - Χώρος εκδηλώσεων", category: "Χώρος" },
     { src: wedding1, alt: "Κτήμα Ωρίων - Γαμήλιες εκδηλώσεις", category: "Γάμος" },
     { src: wedding2, alt: "Κτήμα Ωρίων - Γαμήλια δεξίωση", category: "Γάμος" },
     { src: wedding3, alt: "Κτήμα Ωρίων - Γαμήλιες στιγμές", category: "Γάμος" },
@@ -46,11 +47,6 @@ export default function OHoros() {
       description: "Τεράστιος χώρος στάθμευσης για όλους τους καλεσμένους"
     },
     {
-      icon: Users,
-      title: "Παιδική χαρά",
-      description: "Ειδικός χώρος για τα παιδιά να παίξουν με ασφάλεια"
-    },
-    {
       icon: Home,
       title: "Ημιυπαίθρια παγόδα",
       description: "Μαγευτικός ημιυπαίθριος χώρος για εκδηλώσεις"
@@ -63,12 +59,12 @@ export default function OHoros() {
     {
       icon: Heart,
       title: "Χώρο υποδοχής",
-      description: "Ελεγκτικός χώρος υποδοχής για τους καλεσμένους"
+      description: "Χώρος υποδοχής για τους καλεσμένους"
     },
     {
       icon: Home,
-      title: "Οικία αυτόνομη",
-      description: "Αυτόνομη οικία για το ζευγάρι καθ' όλη τη διάρκεια"
+      title: "Studio",
+      description: "Studio για το ζευγάρι καθ' όλη τη διάρκεια"
     },
     {
       icon: Award,
@@ -126,7 +122,7 @@ export default function OHoros() {
     },
     {
       title: "Πάρτι & Γιορτές",
-      description: "Στο Ktima Orion, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. Γενέθλια, αρραβώνας ή εταιρικό party.",
+      description: "Στο Κτήμα Ωρίων, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. Γενέθλια, αρραβώνας ή εταιρικό party.",
       count: "300+",
       icon: Camera
     }
@@ -134,6 +130,12 @@ export default function OHoros() {
 
   return (
     <Layout>
+      <SEO 
+        title="Ο Χώρος | Κτήμα Ωρίων – Εσωτερικοί & Εξωτερικοί Χώροι"
+        description="Ανακαλύψτε τους εσωτερικούς και εξωτερικούς χώρους του Κτήματος Ωρίων. Κήπος, πισίνα, αίθουσα δεξιώσεων, studio ζευγαριού και χώρος υποδοχής."
+        canonical="/o-horos"
+        keywords="χώρος δεξιώσεων, αίθουσα, κήπος, πισίνα, studio ζευγαριού, Κερατέα"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -308,10 +310,10 @@ export default function OHoros() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <button className="button button4">
-                Κλείστε Ραντεβού
+                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
             

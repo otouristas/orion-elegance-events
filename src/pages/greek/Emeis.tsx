@@ -1,8 +1,9 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Star, Phone, Mail, MapPin, Car, Home, TreePine, Utensils, Music } from 'lucide-react';
-import heroImage from '@/assets/home/12.jpg';
-import venueImage from '@/assets/home/image.jpg';
+import heroImage from '@/assets/home/DSC_7637.JPG';
+import venueImage from '@/assets/home/DSC_7712.JPG';
 
 export default function Emeis() {
   const venueFeatures = [
@@ -10,11 +11,6 @@ export default function Emeis() {
       icon: Car,
       title: "Χώρο στάθμευσης",
       description: "Τεράστιος χώρος στάθμευσης για όλους τους καλεσμένους"
-    },
-    {
-      icon: Users,
-      title: "Παιδική χαρά",
-      description: "Ειδικός χώρος για τα παιδιά να παίξουν με ασφάλεια"
     },
     {
       icon: Home,
@@ -29,12 +25,12 @@ export default function Emeis() {
     {
       icon: Heart,
       title: "Χώρο υποδοχής",
-      description: "Ελεγκτικός χώρος υποδοχής για τους καλεσμένους"
+      description: "Χώρος υποδοχής για τους καλεσμένους"
     },
     {
       icon: Home,
-      title: "Οικία αυτόνομη",
-      description: "Αυτόνομη οικία για το ζευγάρι καθ' όλη τη διάρκεια"
+      title: "Studio",
+      description: "Studio για το ζευγάρι καθ' όλη τη διάρκεια"
     },
     {
       icon: Award,
@@ -74,12 +70,18 @@ export default function Emeis() {
   const stats = [
     { number: "200+", label: "Εκδηλώσεις οργανωμένες" },
     { number: "98%", label: "Ευχαριστημένοι πελάτες" },
-    { number: "5+", label: "Χρόνια εμπειρίας" },
-    { number: "24/7", label: "Στήριξη πελατών" }
+    { number: "15+", label: "Χρόνια εμπειρίας" },
+    { number: "24/7", label: "Υποστήριξη πελατών" }
   ];
 
   return (
     <Layout>
+      <SEO 
+        title="Εμείς | Κτήμα Ωρίων – Ποιοι Είμαστε"
+        description="Γνωρίστε την ομάδα του Κτήματος Ωρίων και τη φιλοσοφία μας. 15+ χρόνια εμπειρίας σε γάμους, βαπτίσεις και εκδηλώσεις στην Κερατέα."
+        canonical="/emeis"
+        keywords="Κτήμα Ωρίων ομάδα, ποιοι είμαστε, εμπειρία, εκδηλώσεις Κερατέα"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -103,7 +105,7 @@ export default function Emeis() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src={venueImage} 
-                  alt="Κτήμα Ωρίων - Παιδική χαρά"
+                  alt="Κτήμα Ωρίων - Χώρος εκδηλώσεων"
                   className="w-full h-80 object-cover"
                 />
               </div>
@@ -218,10 +220,10 @@ export default function Emeis() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
               <button className="button button4">
-                Αίτημα Πληροφοριών
+                ΑΙΤΗΜΑ ΠΛΗΡΟΦΟΡΙΩΝ
               </button>
             </div>
           </div>

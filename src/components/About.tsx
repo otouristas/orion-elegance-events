@@ -1,11 +1,12 @@
+import aboutImage from '@/assets/home/DSC_7662.JPG';
+
 export const About = () => {
   const features = [
     'Χώρο στάθμευσης',
-    'Παιδική χαρά', 
     'Ημιυπαίθρια παγόδα',
     'Εγκαταστάσεις Barbeque',
     'Χώρο υποδοχής',
-    'Οικία αυτόνομη για το ζευγάρι',
+    'Studio για το ζευγάρι',
     'Ηλεκτρογεννήτρια',
     'Μεγάλους κήπους και παρτέρια'
   ];
@@ -46,26 +47,37 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Features */}
-          <div className="card-elegant p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center text-gradient-brand">
-              Το Κτήμα Διαθέτει
-            </h3>
-            
-            <div className="grid grid-cols-1 gap-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-brand-main rounded-full flex-shrink-0"></div>
-                  <span className="text-foreground">{feature}</span>
-                </div>
-              ))}
+          {/* Image and Features */}
+          <div className="space-y-8">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={aboutImage}
+                alt="Κτήμα Ωρίων - Εσωτερικός χώρος"
+                className="w-full h-[400px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
 
-            <div className="mt-8 p-4 bg-sage/30 rounded-lg">
-              <p className="text-sm text-muted-foreground text-center italic">
-                "Η συνεργασία μας με πιστοποιημένα catering εξασφαλίζει, εκτός από το περιβάλλον 
-                και τη γαστριμαργική απόλαυση των καλεσμένων σας."
-              </p>
+            <div className="card-elegant p-8">
+              <h3 className="text-2xl font-bold mb-6 text-center text-gradient-brand">
+                Το Κτήμα Διαθέτει
+              </h3>
+              
+              <div className="grid grid-cols-1 gap-4">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-brand-main rounded-full flex-shrink-0"></div>
+                    <span className="text-foreground">{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 p-4 bg-sage/30 rounded-lg">
+                <p className="text-sm text-muted-foreground text-center italic">
+                  "Η συνεργασία μας με πιστοποιημένα catering εξασφαλίζει, εκτός από το περιβάλλον 
+                  και τη γαστριμαργική απόλαυση των καλεσμένων σας."
+                </p>
+              </div>
             </div>
           </div>
         </div>

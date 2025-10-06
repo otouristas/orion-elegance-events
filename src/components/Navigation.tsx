@@ -143,9 +143,11 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button variant="outline" className="button button4">
-              ΖΗΤΗΣΗ
-            </Button>
+            <a href="/contact">
+              <Button variant="outline" className="button button4">
+                ΖΗΤΗΣΗ
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -226,9 +228,11 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               
               {/* Mobile CTA Button */}
               <div className="pt-3 border-t border-border">
-                <Button className="w-full button button4">
-                  ΖΗΤΗΣΗ
-                </Button>
+                <a href="/contact" className="block">
+                  <Button className="w-full button button4">
+                    ΖΗΤΗΣΗ
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

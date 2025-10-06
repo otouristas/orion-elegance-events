@@ -1,22 +1,28 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
+import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Calendar, MapPin, Star } from 'lucide-react';
 
 // Import wedding photos
-import wedding1 from '@/assets/gamos/69 (1).jpg';
-import wedding2 from '@/assets/gamos/66 (1).jpg';
-import wedding3 from '@/assets/gamos/68 (1).jpg';
-import wedding4 from '@/assets/gamos/64 (1).jpg';
-import wedding5 from '@/assets/gamos/65 (1).jpg';
-import wedding6 from '@/assets/gamos/63 (1).jpg';
-import wedding7 from '@/assets/gamos/67 (1).jpg';
-import wedding8 from '@/assets/gamos/62 (1).jpg';
-import wedding9 from '@/assets/gamos/69.jpg';
-import wedding10 from '@/assets/gamos/24 (1).jpg';
-import wedding11 from '@/assets/gamos/9 (1).jpg';
-import wedding12 from '@/assets/gamos/61 (1).jpg';
-import wedding13 from '@/assets/gamos/26 (1).jpg';
-import wedding14 from '@/assets/gamos/27 (1).jpg';
+import wedding1 from '@/assets/gamos/DSC_7637.JPG';
+import wedding2 from '@/assets/gamos/DSC_7816.JPG';
+import wedding3 from '@/assets/gamos/DSC_7712.JPG';
+import wedding4 from '@/assets/gamos/DSC_7806.JPG';
+import wedding5 from '@/assets/gamos/DSC_7859.JPG';
+import wedding6 from '@/assets/gamos/DSC_7662.JPG';
+import wedding7 from '@/assets/gamos/DSC_7828.JPG';
+import wedding8 from '@/assets/gamos/DSC_7588.JPG';
+import wedding9 from '@/assets/gamos/DSC_7796.JPG';
+import wedding10 from '@/assets/gamos/DSC_7733.JPG';
+import wedding11 from '@/assets/gamos/DSC_7705.JPG';
+import wedding12 from '@/assets/gamos/DSC_7783.JPG';
+import wedding13 from '@/assets/gamos/DSC_7763.JPG';
+import wedding14 from '@/assets/gamos/DSC_7673.JPG';
+import wedding15 from '@/assets/gamos/DSC_7542.JPG';
+import wedding16 from '@/assets/gamos/DSC_7569.JPG';
+import wedding17 from '@/assets/gamos/DSC_7503.JPG';
+import wedding18 from '@/assets/gamos/DSC_7622.JPG';
 
 export default function Gamos() {
   const weddingPhotos = [
@@ -33,7 +39,11 @@ export default function Gamos() {
     { src: wedding11, alt: "Γαμήλια στιγμές" },
     { src: wedding12, alt: "Μοναδικές αναμνήσεις" },
     { src: wedding13, alt: "Γαμήλια φωτογραφίες" },
-    { src: wedding14, alt: "Κτήμα Ωρίων γάμος" }
+    { src: wedding14, alt: "Κτήμα Ωρίων γάμος" },
+    { src: wedding15, alt: "Ρομαντική βραδιά" },
+    { src: wedding16, alt: "Γαμήλιος στολισμός" },
+    { src: wedding17, alt: "Αξέχαστες στιγμές" },
+    { src: wedding18, alt: "Ονειρεμένος γάμος" }
   ];
 
   const weddingFeatures = [
@@ -61,6 +71,12 @@ export default function Gamos() {
 
   return (
     <Layout>
+      <SEO 
+        title="Γάμος στο Κτήμα Ωρίων | Κτήμα Δεξιώσεων Γάμου Κερατέα"
+        description="Οργανώστε τον ονειρεμένο γάμο σας στο Κτήμα Ωρίων. Μαγευτικοί χώροι, υπέροχη θέα στο Αιγαίο και πλήρης διοργάνωση γάμου στην Κερατέα, Αττική."
+        canonical="/gamos"
+        keywords="γάμος Κερατέα, κτήμα γάμου Αττική, δεξίωση γάμου, οργάνωση γάμου, wedding venue Athens"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -122,16 +138,14 @@ export default function Gamos() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {weddingPhotos.map((photo, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                </div>
+                <ClickableImage
+                  key={index}
+                  src={photo.src}
+                  alt={photo.alt}
+                  images={weddingPhotos}
+                  index={index}
+                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
               ))}
             </div>
           </div>
@@ -148,10 +162,10 @@ export default function Gamos() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Κλείστε Ραντεβού
+                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
           </div>

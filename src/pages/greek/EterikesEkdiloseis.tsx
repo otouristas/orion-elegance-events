@@ -1,13 +1,22 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
+import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star, Briefcase, BarChart3, Trophy, Calendar } from 'lucide-react';
 
 // Import corporate events photos
-import event1 from '@/assets/ekdiloseis/76.jpg';
-import event2 from '@/assets/ekdiloseis/73.jpg';
-import event3 from '@/assets/ekdiloseis/77.jpg';
-import event4 from '@/assets/ekdiloseis/13 (1).jpg';
-import event5 from '@/assets/ekdiloseis/74.jpg';
+import event1 from '@/assets/ekdiloseis/DSC_7712.JPG';
+import event2 from '@/assets/ekdiloseis/DSC_7816.JPG';
+import event3 from '@/assets/ekdiloseis/DSC_7637.JPG';
+import event4 from '@/assets/ekdiloseis/DSC_7806.JPG';
+import event5 from '@/assets/ekdiloseis/DSC_7859.JPG';
+import event6 from '@/assets/ekdiloseis/DSC_7828.JPG';
+import event7 from '@/assets/ekdiloseis/DSC_7662.JPG';
+import event8 from '@/assets/ekdiloseis/DSC_7588.JPG';
+import event9 from '@/assets/ekdiloseis/DSC_7783.JPG';
+import event10 from '@/assets/ekdiloseis/DSC_7796.JPG';
+import event11 from '@/assets/ekdiloseis/DSC_7733.JPG';
+import event12 from '@/assets/ekdiloseis/DSC_7763.JPG';
 
 export default function EterikesEkdiloseis() {
   const eventPhotos = [
@@ -15,7 +24,14 @@ export default function EterikesEkdiloseis() {
     { src: event2, alt: "Επαγγελματική εκδήλωση" },
     { src: event3, alt: "Συνέδριο και παρουσιάσεις" },
     { src: event4, alt: "Εταιρική εκδήλωση" },
-    { src: event5, alt: "Επαγγελματικό event" }
+    { src: event5, alt: "Επαγγελματικό event" },
+    { src: event6, alt: "Συνέδριο στο κτήμα" },
+    { src: event7, alt: "Εταιρική γιορτή" },
+    { src: event8, alt: "Εκδήλωση ΜΜΕ" },
+    { src: event9, alt: "Παρουσίαση προϊόντος" },
+    { src: event10, alt: "Επαγγελματική συνάντηση" },
+    { src: event11, alt: "Εταιρικό συνέδριο" },
+    { src: event12, alt: "Καλέσμα εκδήλωση" }
   ];
 
   const eventFeatures = [
@@ -26,8 +42,8 @@ export default function EterikesEkdiloseis() {
     },
     {
       icon: BarChart3,
-      title: "Τεχνολογικός Εξοπλισμός",
-      description: "Πλήρης τεχνολογικός εξοπλισμός για παρουσιάσεις, συνέδρια και εκδηλώσεις"
+      title: "Πλήρης ηχητική κάλυψη",
+      description: "Πλήρης ηχητική κάλυψη για παρουσιάσεις, συνέδρια και εκδηλώσεις"
     },
     {
       icon: Users,
@@ -62,6 +78,12 @@ export default function EterikesEkdiloseis() {
 
   return (
     <Layout>
+      <SEO 
+        title="Εταιρικές Εκδηλώσεις | Κτήμα Ωρίων Κερατέα"
+        description="Διοργανώστε επιτυχημένες εταιρικές εκδηλώσεις, συνέδρια, team building και product launches στο Κτήμα Ωρίων. Επαγγελματικοί χώροι και υπηρεσίες."
+        canonical="/eterikes-ekdiloseis"
+        keywords="εταιρικές εκδηλώσεις Κερατέα, συνέδρια Αττική, team building, corporate events Athens"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -146,16 +168,14 @@ export default function EterikesEkdiloseis() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {eventPhotos.map((photo, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                </div>
+                <ClickableImage
+                  key={index}
+                  src={photo.src}
+                  alt={photo.alt}
+                  images={eventPhotos}
+                  index={index}
+                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
               ))}
             </div>
           </div>
@@ -185,7 +205,7 @@ export default function EterikesEkdiloseis() {
                   <div>
                     <h3 className="text-xl font-semibold mb-3">Σύγχρονες Εγκαταστάσεις</h3>
                     <p className="text-muted-foreground">
-                      Πλήρης τεχνολογικός εξοπλισμός και σύγχρονες εγκαταστάσεις για επαγγελματικές εκδηλώσεις.
+                      Πλήρης ηχητική κάλυψη και σύγχρονες εγκαταστάσεις για επαγγελματικές εκδηλώσεις.
                     </p>
                   </div>
                 </div>
@@ -231,10 +251,10 @@ export default function EterikesEkdiloseis() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Κλείστε Ραντεβού
+                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
           </div>

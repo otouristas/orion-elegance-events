@@ -91,11 +91,14 @@ export const Churches = () => {
             <h3 className="text-2xl font-bold text-gradient-brand mb-4">
               Ένας Μαγικός Συνδυασμός
             </h3>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground mb-6">
               Στο Κτήμα Ωρίων η εκδήλωσή σας γίνεται προσωπική μας υπόθεση. 
               Επιλέξτε ένα από τα γραφικά εκκλησάκια που βρίσκονται σε ελάχιστη απόσταση, 
               για την τέλεση του μυστηρίου και συνεχίστε με τη δεξίωση στον εξωτερικό ή τον εσωτερικό χώρο.
             </p>
+            <a href="/ekklisies" className="button button4">
+              ΔΕΙΤΕ ΟΛΕς ΤΙΣ ΕΚΚΛΗΣΙΕΣ
+            </a>
           </div>
         </div>
       </div>

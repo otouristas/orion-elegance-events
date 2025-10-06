@@ -51,7 +51,7 @@ export const Testimonials = () => {
             <div className="text-muted-foreground">Εκδηλώσεις</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-brand mb-2">20+</div>
+            <div className="text-4xl font-bold text-gradient-brand mb-2">15+</div>
             <div className="text-muted-foreground">Χρόνια Εμπειρίας</div>
           </div>
           <div className="text-center">

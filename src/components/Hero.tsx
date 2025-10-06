@@ -26,10 +26,10 @@ export const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button size="lg" className="button button4 text-lg">
-            Εξερεύνηση Υπηρεσιών
+            ΕΞΕΡΕΥΝΗΣΗ ΥΠΗΡΕΣΙΩΝ
           </Button>
           <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-10 py-4">
-            Επικοινωνία
+            ΕΠΙΚΟΙΝΩΝΙΑ
           </Button>
         </div>
       </div>

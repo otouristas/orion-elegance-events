@@ -1,4 +1,5 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Camera, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -40,6 +41,12 @@ export default function Ypiresies() {
 
   return (
     <Layout>
+      <SEO 
+        title="Υπηρεσίες | Κτήμα Ωρίων – Ολοκληρωμένες Λύσεις Εκδηλώσεων"
+        description="Διοργάνωση γάμου, φωτογραφία, διακόσμηση, συντονισμός εκκλησίας και περισσότερα. Δείτε όλες τις υπηρεσίες του Κτήματος Ωρίων."
+        canonical="/ypiresies"
+        keywords="υπηρεσίες γάμου, wedding services, φωτογραφία, διακόσμηση, συντονισμός εκκλησίας"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -85,7 +92,7 @@ export default function Ypiresies() {
                           to={service.href}
                           className="inline-block button button4 group-hover:scale-105 transition-transform duration-300"
                         >
-                          Μάθετε Περισσότερα
+                          ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ
                         </Link>
                       </div>
                     </div>
@@ -128,10 +135,10 @@ export default function Ypiresies() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Κλείστε Ραντεβού
+                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
           </div>

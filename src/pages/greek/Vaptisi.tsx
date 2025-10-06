@@ -1,14 +1,22 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
+import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Baby, Star, Sparkles } from 'lucide-react';
 
 // Import baptism photos
-import baptism1 from '@/assets/vaftisi/72.jpg';
-import baptism2 from '@/assets/vaftisi/71 (1).jpg';
-import baptism3 from '@/assets/vaftisi/70.jpg';
-import baptism4 from '@/assets/vaftisi/28.jpg';
-import baptism5 from '@/assets/vaftisi/11 (1).jpg';
-import baptism6 from '@/assets/vaftisi/71.jpg';
+import baptism1 from '@/assets/vaftisi/DSC_7806.JPG';
+import baptism2 from '@/assets/vaftisi/DSC_7712.JPG';
+import baptism3 from '@/assets/vaftisi/DSC_7828.JPG';
+import baptism4 from '@/assets/vaftisi/DSC_7588.JPG';
+import baptism5 from '@/assets/vaftisi/DSC_7662.JPG';
+import baptism6 from '@/assets/vaftisi/DSC_7859.JPG';
+import baptism7 from '@/assets/vaftisi/DSC_7796.JPG';
+import baptism8 from '@/assets/vaftisi/DSC_7763.JPG';
+import baptism9 from '@/assets/vaftisi/DSC_7733.JPG';
+import baptism10 from '@/assets/vaftisi/DSC_7569.JPG';
+import baptism11 from '@/assets/vaftisi/DSC_7816.JPG';
+import baptism12 from '@/assets/vaftisi/DSC_7622.JPG';
 
 export default function Vaptisi() {
   const baptismPhotos = [
@@ -17,15 +25,16 @@ export default function Vaptisi() {
     { src: baptism3, alt: "Μοναδικές στιγμές βάπτισης" },
     { src: baptism4, alt: "Βαπτιστική γιορτή" },
     { src: baptism5, alt: "Κτήμα Ωρίων βάπτιση" },
-    { src: baptism6, alt: "Βαπτιστικές αναμνήσεις" }
+    { src: baptism6, alt: "Βαπτιστικές αναμνήσεις" },
+    { src: baptism7, alt: "Χαρούμενη βάπτιση" },
+    { src: baptism8, alt: "Μαγικές στιγμές" },
+    { src: baptism9, alt: "Οικογενειακή γιορτή" },
+    { src: baptism10, alt: "Βαπτιστικός στολισμός" },
+    { src: baptism11, alt: "Ξεχωριστές στιγμές" },
+    { src: baptism12, alt: "Αξέχαστη βάπτιση" }
   ];
 
   const baptismFeatures = [
-    {
-      icon: Baby,
-      title: "Ειδικός Χώρος για Παιδιά",
-      description: "Ασφαλής και ευρύχωρος χώρος όπου τα παιδιά μπορούν να παίξουν ελεύθερα"
-    },
     {
       icon: Heart,
       title: "Τρυφερή Ατμόσφαιρα",
@@ -64,6 +73,12 @@ export default function Vaptisi() {
 
   return (
     <Layout>
+      <SEO 
+        title="Βάπτιση στο Κτήμα Ωρίων | Κτήμα Δεξιώσεων Βάπτισης Κερατέα"
+        description="Γιορτάστε τη βάπτιση του μωρού σας στο Κτήμα Ωρίων. Ασφαλής περιφραγμένος χώρος, ειδικό παιδικό μενού και πλήρης διοργάνωση βάπτισης στην Κερατέα."
+        canonical="/vaptisi"
+        keywords="βάπτιση Κερατέα, δεξίωση βάπτισης, κτήμα βάπτισης Αττική, οργάνωση βάπτισης"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -144,16 +159,14 @@ export default function Vaptisi() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {baptismPhotos.map((photo, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                </div>
+                <ClickableImage
+                  key={index}
+                  src={photo.src}
+                  alt={photo.alt}
+                  images={baptismPhotos}
+                  index={index}
+                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
               ))}
             </div>
           </div>
@@ -168,12 +181,6 @@ export default function Vaptisi() {
                   <span className="text-gradient-brand">Ειδικές Λεπτομέρειες Βάπτισης</span>
                 </h2>
                 <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-3">Χώρος για Παιδιά</h3>
-                    <p className="text-muted-foreground">
-                      Ασφαλής παιδική χαρά με πολλά παιχνίδια και δραστηριότητες για να διασκεδάσουν τα μικρά παιδιά.
-                    </p>
-                  </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-3">Ειδικό Μενού</h3>
                     <p className="text-muted-foreground">
@@ -193,10 +200,6 @@ export default function Vaptisi() {
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold mb-6">Γιατί το Κτήμα Ωρίων;</h3>
                 <ul className="space-y-4">
-                  <li className="flex items-start space-x-3">
-                    <Baby className="w-6 h-6 text-brand-main mt-0.5" />
-                    <span>Ασφαλής χώρος για παιδιά</span>
-                  </li>
                   <li className="flex items-start space-x-3">
                     <Heart className="w-6 h-6 text-brand-main mt-0.5" />
                     <span>Τρυφερή ατμόσφαιρα</span>
@@ -230,10 +233,10 @@ export default function Vaptisi() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Κλείστε Ραντεβού
+                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
           </div>

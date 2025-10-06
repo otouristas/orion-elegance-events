@@ -13,7 +13,7 @@ export const Services = () => {
       icon: Baby,
       title: 'Βάπτιση',
       description: 'Δημιουργήστε αξέχαστες αναμνήσεις για τη βάπτιση του παιδιού σας. Μια τρυφερή και χαρούμενη γιορτή για όλη την οικογένεια.',
-      features: ['Παιδική χαρά', 'Ασφαλής περιφραγμένος χώρος', 'Ειδικό μενού για παιδιά']
+      features: ['Ασφαλής περιφραγμένος χώρος', 'Ειδικό μενού για παιδιά', 'Επαγγελματική εξυπηρέτηση']
     },
     {
       icon: Building,
@@ -81,7 +81,7 @@ export const Services = () => {
               </ul>
               
               <Button variant="outline" className="border-brand-main text-brand-main hover:bg-brand-main hover:text-white">
-                Μάθετε Περισσότερα
+                ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ
               </Button>
             </div>
           ))}

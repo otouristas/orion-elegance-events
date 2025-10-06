@@ -1,15 +1,24 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
+import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star, Music, Sparkles, Gift, Calendar } from 'lucide-react';
 
 // Import party photos
-import party1 from '@/assets/party/104.jpg';
-import party2 from '@/assets/party/108.jpg';
-import party3 from '@/assets/party/107.jpg';
-import party4 from '@/assets/party/105.jpg';
-import party5 from '@/assets/party/103.jpg';
-import party6 from '@/assets/party/102.jpg';
-import party7 from '@/assets/party/106.jpg';
+import party1 from '@/assets/party/DSC_7859.JPG';
+import party2 from '@/assets/party/DSC_7637.JPG';
+import party3 from '@/assets/party/DSC_7783.JPG';
+import party4 from '@/assets/party/DSC_7816.JPG';
+import party5 from '@/assets/party/DSC_7705.JPG';
+import party6 from '@/assets/party/DSC_7662.JPG';
+import party7 from '@/assets/party/DSC_7828.JPG';
+import party8 from '@/assets/party/DSC_7806.JPG';
+import party9 from '@/assets/party/DSC_7796.JPG';
+import party10 from '@/assets/party/DSC_7733.JPG';
+import party11 from '@/assets/party/DSC_7622.JPG';
+import party12 from '@/assets/party/DSC_7588.JPG';
+import party13 from '@/assets/party/DSC_7542.JPG';
+import party14 from '@/assets/party/DSC_7569.JPG';
 
 export default function Parti() {
   const partyPhotos = [
@@ -19,7 +28,14 @@ export default function Parti() {
     { src: party4, alt: "Εορταστικό πάρτι" },
     { src: party5, alt: "Κτήμα Ωρίων πάρτι" },
     { src: party6, alt: "Μοναδικό πάρτι" },
-    { src: party7, alt: "Αξέχαστο πάρτι" }
+    { src: party7, alt: "Αξέχαστο πάρτι" },
+    { src: party8, alt: "Διασκέδαση στο κτήμα" },
+    { src: party9, alt: "Χαρούμενο πάρτι" },
+    { src: party10, alt: "Γιορτή με στυλ" },
+    { src: party11, alt: "Ονειρεμένο πάρτι" },
+    { src: party12, alt: "Εκδήλωση πάρτι" },
+    { src: party13, alt: "Μαγευτική ατμόσφαιρα" },
+    { src: party14, alt: "Ξεχωριστό πάρτι" }
   ];
 
   const partyFeatures = [
@@ -68,7 +84,7 @@ export default function Parti() {
     {
       icon: Music,
       title: "Μουσική & DJ",
-      description: "Live μουσική ή DJ για να κρατήσει το πάρτι ζωντανό"
+      description: "DJ για να κρατήσει το πάρτι ζωντανό"
     },
     {
       icon: Sparkles,
@@ -89,6 +105,12 @@ export default function Parti() {
 
   return (
     <Layout>
+      <SEO 
+        title="Πάρτι στο Κτήμα Ωρίων | Κτήμα Δεξιώσεων για Πάρτι Κερατέα"
+        description="Διοργανώστε το τέλειο πάρτι γενεθλίων, επετείου ή άλλης εκδήλωσης στο Κτήμα Ωρίων. Μοναδικοί χώροι, μουσική και catering στην Κερατέα."
+        canonical="/parti"
+        keywords="πάρτι Κερατέα, γενέθλια, επέτειος, κτήμα για πάρτι Αττική, party venue"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -97,7 +119,7 @@ export default function Parti() {
               <span className="text-gradient-brand">Πάρτι</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
-              Ο ιδανικός χώρος για το party σας - Ktima Orion
+              Ο ιδανικός χώρος για το party σας - Κτήμα Ωρίων
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
@@ -106,7 +128,7 @@ export default function Parti() {
               </p>
               
               <p>
-                Στο Ktima Orion, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. 
+                Στο Κτήμα Ωρίων, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. 
                 Γενέθλια, αρραβώνας ή εταιρικό party - ο χώρος μας και οι υπηρεσίες μας προσαρμόζονται σε κάθε σας ανάγκη.
               </p>
               
@@ -192,16 +214,14 @@ export default function Parti() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {partyPhotos.map((photo, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                </div>
+                <ClickableImage
+                  key={index}
+                  src={photo.src}
+                  alt={photo.alt}
+                  images={partyPhotos}
+                  index={index}
+                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
               ))}
             </div>
           </div>
@@ -277,10 +297,10 @@ export default function Parti() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Κλείστε Ημερομηνία
+                ΚΛΕΙΣΤΕ ΗΜΕΡΟΜΗΝΙΑ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
           </div>

@@ -1,82 +1,111 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Clock, Church } from 'lucide-react';
 
 export default function Ekklisies() {
   const churches = [
     {
-      name: "Ιερός Ναός Αγίας Παρασκευής",
-      location: "Κερατέα",
-      distance: "5 λεπτά",
-      description: "Ένας όμορφος παραδοσιακός ναός με πλούσια ιστορία και μαγευτικό περιβάλλον."
+      name: 'Άγιος Αλέξανδρος, Δασκαλειό',
+      distance: '3,8 χλμ',
+      time: "8'",
+      icon: Church
     },
     {
-      name: "Ιερός Ναός Μεταμορφώσεως του Σωτήρος",
-      location: "Λαύριο",
-      distance: "15 λεπτά",
-      description: "Μεγαλοπρεπής ναός με υπέροχη αρχιτεκτονική και ιστορικό υπόβαθρο."
+      name: 'Άγιος Παντελεήμονας, Κακή Θάλασσα Κερατέας',
+      distance: '8,6 χλμ',
+      time: "13'",
+      icon: Church
     },
     {
-      name: "Ιερός Ναός Αγίου Δημητρίου",
-      location: "Ανάβυσσος",
-      distance: "20 λεπτά",
-      description: "Κομψός ναός με παραδοσιακή αρχιτεκτονική και φυσική ομορφιά."
+      name: 'Παναγία Γκαρικά, Κερατέα',
+      distance: '3,1 χλμ',
+      time: "6'",
+      icon: Church
     },
     {
-      name: "Ιερός Ναός Παναγίας",
-      location: "Σούνιο",
-      distance: "25 λεπτά",
-      description: "Ιστορικός ναός με μαγευτική θέα στο Αιγαίο πέλαγος."
+      name: 'Προφήτης Ηλίας, Λιμανάκι Περιγιάλι Κερατέας',
+      distance: '8,8 χλμ',
+      time: "11'",
+      icon: Church
+    },
+    {
+      name: 'Άγιος Νικόλαος, Θορικό Κερατέας',
+      distance: '12,3 χλμ',
+      time: "12'",
+      icon: Church
+    },
+    {
+      name: 'Άγιος Νεκτάριος, Καμάριζα Λαυρίου',
+      distance: '15,9 χλμ',
+      time: "15'",
+      icon: Church
+    },
+    {
+      name: 'Άγιος Ανδρέας, Λαύριο',
+      distance: '12,8 χλμ',
+      time: "12'",
+      icon: Church
     }
   ];
 
   return (
     <Layout>
+      <SEO 
+        title="Εκκλησίες κοντά στο Κτήμα Ωρίων | Γάμος & Βάπτιση"
+        description="Ανακαλύψτε γραφικά εκκλησάκια και εκκλησίες κοντά στο Κτήμα Ωρίων. Από 5-15 λεπτά απόσταση με καταπληκτική θέα στο Αιγαίο για το μυστήριο του γάμου ή της βάπτισης."
+        canonical="/ekklisies"
+        keywords="εκκλησίες Κερατέα, γάμος εκκλησία, βάπτιση εκκλησία, Άγιος Αλέξανδρος, Παναγία Γκαρικά, εκκλησάκια Αττική"
+      />
+      
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
+            <Church className="w-20 h-20 text-brand-main mx-auto mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="text-gradient-brand">Εκκλησίες</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Βρείτε την ιδανική εκκλησία για την τελετή σας. Συστήνουμε τις καλύτερες εκκλησίες 
-              της περιοχής που συνδυάζουν ιστορία, ομορφιά και εύκολη πρόσβαση.
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Το Κτήμα Ωρίων απέχει ελάχιστα από πολλά γραφικά εκκλησάκια και εκκλησίες στη γύρω περιοχή. 
+              Σε απόσταση που κυμαίνεται από <strong>5 - 15 λεπτά</strong>, μπορείτε να τελέσετε το μυστήριο του γάμου 
+              ή της βάπτισης, απολαμβάνοντας καταπληκτική θέα στο Αιγαίο, πριν ολοκληρώσετε την εκδήλωσή σας 
+              στο Κτήμα Ωρίων.
             </p>
           </div>
         </section>
 
-        {/* Churches Grid */}
+        {/* Churches List */}
         <section className="section-padding">
-          <div className="container-max">
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="container-max max-w-5xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <span className="text-gradient-brand">Κοντινές Εκκλησίες</span>
+            </h2>
+
+            <div className="grid gap-6">
               {churches.map((church, index) => (
-                <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300">
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gradient-brand mb-4">
-                      {church.name}
-                    </h3>
-                    <p className="text-muted-foreground mb-6">
-                      {church.description}
-                    </p>
-                    
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3">
-                        <MapPin className="w-5 h-5 text-brand-main" />
-                        <span className="text-foreground">{church.location}</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <Clock className="w-5 h-5 text-brand-main" />
-                        <span className="text-foreground">{church.distance} από το Κτήμα Ωρίων</span>
-                      </div>
-                    </div>
-                    
-                    <div className="mt-6 pt-6 border-t border-border">
-                      <div className="flex items-center space-x-3">
-                        <Phone className="w-5 h-5 text-brand-main" />
-                        <span className="text-sm text-muted-foreground">
-                          Για περισσότερες πληροφορίες και συντονισμό
-                        </span>
+                <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+                  <CardContent className="p-6 md:p-8">
+                    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                      <div className="flex items-start gap-4 flex-1">
+                        <div className="p-3 bg-brand-main/10 rounded-full">
+                          <church.icon className="w-8 h-8 text-brand-main" />
+                        </div>
+                        <div>
+                          <h3 className="text-xl md:text-2xl font-bold mb-2">
+                            {index + 1}. {church.name}
+                          </h3>
+                          <div className="flex flex-col sm:flex-row gap-4 text-muted-foreground">
+                            <div className="flex items-center gap-2">
+                              <MapPin className="w-5 h-5 text-brand-main" />
+                              <span className="font-medium">Απόσταση: {church.distance}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                              <Clock className="w-5 h-5 text-brand-main" />
+                              <span className="font-medium">Χρόνος: {church.time}</span>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </CardContent>
@@ -86,22 +115,47 @@ export default function Ekklisies() {
           </div>
         </section>
 
-        {/* Contact CTA */}
+        {/* Map Section */}
+        <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
+          <div className="container-max">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <span className="text-gradient-brand">Χάρτης Εκκλησιών</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Δείτε τις τοποθεσίες όλων των εκκλησιών στον χάρτη και επιλέξτε αυτή που σας ταιριάζει
+              </p>
+            </div>
+
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <iframe 
+                src="https://www.google.com/maps/d/u/0/embed?mid=1I1J1VWCrLSQc6iwlQkAegUrpr74rcwA&ehbc=2E312F&noprof=1" 
+                width="100%" 
+                height="760" 
+                style={{ border: 0, marginTop: '-70px' }}
+                loading="lazy"
+                title="Χάρτης Εκκλησιών κοντά στο Κτήμα Ωρίων"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Χρειάζεστε βοήθεια με την επιλογή;
+              Σχεδιάστε το Τέλειο Γάμο ή Βάπτιση
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Η ομάδα μας μπορεί να σας βοηθήσει να επιλέξετε την ιδανική εκκλησία 
-              και να συντονίσει όλες τις λεπτομέρειες της τελετής.
+              Επιλέξτε την εκκλησία που σας ταιριάζει και επικοινωνήστε μαζί μας για να οργανώσουμε 
+              την υπέροχη δεξίωσή σας στο Κτήμα Ωρίων.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="button button4">
-                Επικοινωνήστε μαζί μας
+              <a href="/epikoinonia" className="button button4">
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </a>
               <a href="/request" className="button button4">
-                Αίτημα Πληροφοριών
+                ΑΙΤΗΜΑ ΠΛΗΡΟΦΟΡΙΩΝ
               </a>
             </div>
           </div>

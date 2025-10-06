@@ -1,4 +1,5 @@
 import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Star, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -26,13 +27,19 @@ export default function Dexiosi() {
     {
       title: "Πάρτι",
       href: "/parti",
-      description: "Στο Ktima Orion, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. Γενέθλια, αρραβώνας ή εταιρικό party.",
+      description: "Στο Κτήμα Ωρίων, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. Γενέθλια, αρραβώνας ή εταιρικό party.",
       icon: Camera
     }
   ];
 
   return (
     <Layout>
+      <SEO 
+        title="Δεξίωση | Κτήμα Ωρίων – Ιδανικός Χώρος Δεξιώσεων"
+        description="Διοργανώστε την τέλεια δεξίωση στο Κτήμα Ωρίων. Κομψός εσωτερικός χώρος και μαγευτικός κήπος με πισίνα στην Κερατέα."
+        canonical="/dexiosi"
+        keywords="δεξίωση γάμου, δεξίωση βάπτισης, χώρος δεξιώσεων, Κερατέα"
+      />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -79,7 +86,7 @@ export default function Dexiosi() {
                           to={event.href}
                           className="inline-block button button4 group-hover:scale-105 transition-transform duration-300"
                         >
-                          Μάθετε Περισσότερα
+                          ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ
                         </Link>
                       </div>
                     </div>
@@ -102,10 +109,10 @@ export default function Dexiosi() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
-                Κλείστε Ραντεβού
+                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
               </button>
               <button className="button button4">
-                Επικοινωνία
+                ΕΠΙΚΟΙΝΩΝΙΑ
               </button>
             </div>
           </div>

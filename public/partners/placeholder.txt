@@ -1,0 +1,3 @@
+Place partner logos in this folder.
+Expected file for now: LOGO_transparent.black.png
+
