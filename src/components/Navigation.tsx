@@ -40,7 +40,8 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
       href: '/ypiresies',
       submenu: [
         { label: 'ΔΙΟΡΓΑΝΩΤΗΣ ΓΑΜΩΝ', href: '/diorganotis-gamon' },
-        { label: 'ΦΩΤΟΓΡΑΦΟΣ', href: '/fotografos' }
+        { label: 'ΦΩΤΟΓΡΑΦΟΣ', href: '/fotografos' },
+        { label: 'DJ - ΜΟΥΣΙΚΗ', href: '/dj-mousiki' }
       ]
     },
     { label: 'ΚΡΙΤΙΚΕΣ', href: '/reviews' },

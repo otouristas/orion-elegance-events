@@ -23,6 +23,7 @@ import Dexiosi from "./pages/greek/Dexiosi";
 import Ypiresies from "./pages/greek/Ypiresies";
 import Epikoinonia from "./pages/greek/Epikoinonia";
 import Gallery from "./pages/greek/Gallery";
+import DjMousiki from "./pages/greek/DjMousiki";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/eterikes-ekdiloseis" element={<EterikesEkdiloseis />} />
           <Route path="/o-horos" element={<OHoros />} />
           <Route path="/fotografos" element={<Fotografos />} />
+          <Route path="/dj-mousiki" element={<DjMousiki />} />
           <Route path="/dexiosi" element={<Dexiosi />} />
           <Route path="/ypiresies" element={<Ypiresies />} />
           <Route path="/contact" element={<Epikoinonia />} />

@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend('re_J23qgF7W_JvFeu3fB1FLnyYeuKHDwBJnX');
+const resend = new Resend('re_7L7cX6jQ_LHX5JpEh3HG2KMa95BAmPykQ');
 
 interface FormData {
   firstName: string;
@@ -31,7 +31,8 @@ export async function handler(event: any) {
     // Send email to business owner
     const ownerEmail = await resend.emails.send({
       from: 'Κτήμα Ωρίων <onboarding@resend.dev>',
-      to: ['bousoulag@gmail.com'],
+      to: ['info@ktimaorion.gr'],
+      cc: ['bousoulag@gmail.com'],
       subject: `Νέο Αίτημα Πληροφοριών - ${formData.eventType}`,
       html: generateOwnerEmail(formData)
     });
