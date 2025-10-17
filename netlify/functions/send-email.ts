@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend('re_7L7cX6jQ_LHX5JpEh3HG2KMa95BAmPykQ');
+const resend = new Resend('re_Za5KhddU_5ghCyYTrYzdieqA1ibdHHNrJ');
 
 interface FormData {
   firstName: string;
