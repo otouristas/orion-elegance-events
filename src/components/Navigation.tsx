@@ -164,48 +164,55 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-background border-t border-border">
-            <div className="px-4 py-3 space-y-1">
+          <div className="md:hidden absolute top-full left-0 w-full bg-background/98 backdrop-blur-md border-t shadow-2xl z-50">
+            <div className="container-max py-2">
               {navItems.map((item) => (
-                <div key={item.label}>
-                  <div
-                    onTouchEnd={(e) => {
-                      e.preventDefault();
-                      if (item.submenu) {
-                        const newState = openDropdown === item.label ? null : item.label;
-                        setOpenDropdown(newState);
-                      } else {
-                        window.location.href = item.href;
-                        closeMenu();
-                      }
-                    }}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      if (item.submenu) {
-                        const newState = openDropdown === item.label ? null : item.label;
-                        setOpenDropdown(newState);
-                      } else {
-                        window.location.href = item.href;
-                        closeMenu();
-                      }
-                    }}
-                    className="block font-medium text-foreground hover:text-brand-main transition-colors py-2 cursor-pointer select-none"
-                  >
-                    {item.label} {item.submenu ? '▼' : ''}
-                  </div>
-                  {item.submenu && openDropdown === item.label && (
-                    <div className="ml-4 mt-2 space-y-1 bg-gray-50 rounded-md p-2">
-                      {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.label}
-                          to={subItem.href}
-                          className="block text-sm text-foreground hover:text-brand-main transition-colors py-2 px-2 rounded hover:bg-white"
+                <div key={item.label} className="border-b border-border/30 last:border-0">
+                  {item.submenu ? (
+                    <div>
+                      <div className="flex items-center">
+                        <a
+                          href={item.href}
+                          className="flex-1 px-4 py-4 text-foreground hover:text-brand-main transition-colors font-semibold text-base"
                           onClick={closeMenu}
                         >
-                          • {subItem.label}
-                        </Link>
-                      ))}
+                          {item.label}
+                        </a>
+                        <button
+                          onClick={() => handleDropdownToggle(item.label)}
+                          className="px-4 py-4 text-foreground hover:text-brand-main transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+                          aria-label={`Toggle ${item.label} submenu`}
+                        >
+                          <ChevronDown
+                            className={`w-5 h-5 transition-transform duration-300 ${
+                              openDropdown === item.label ? 'rotate-180' : ''
+                            }`}
+                          />
+                        </button>
+                      </div>
+                      {openDropdown === item.label && (
+                        <div className="bg-muted/20 py-1 animate-in slide-in-from-top-2 duration-200">
+                          {item.submenu.map((subItem) => (
+                            <a
+                              key={subItem.label}
+                              href={subItem.href}
+                              className="block px-8 py-3 text-sm text-muted-foreground hover:text-brand-main hover:bg-brand-main/10 transition-all duration-200 min-h-[44px] flex items-center"
+                              onClick={closeMenu}
+                            >
+                              {subItem.label}
+                            </a>
+                          ))}
+                        </div>
+                      )}
                     </div>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="block px-4 py-4 text-foreground hover:text-brand-main transition-colors font-semibold text-base min-h-[44px] flex items-center"
+                      onClick={closeMenu}
+                    >
+                      {item.label}
+                    </a>
                   )}
                 </div>
               ))}

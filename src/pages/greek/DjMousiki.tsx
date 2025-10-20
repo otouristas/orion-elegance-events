@@ -9,10 +9,10 @@ export default function DjMousiki() {
   return (
     <>
       <SEO
-        title="DJ - Μουσική | Κτήμα Ωρίων - Κερατέα"
-        description="Επαγγελματική μουσική και DJ υπηρεσίες από την Top Events για τη δεξίωσή σας στο Κτήμα Ωρίων. Δημιουργούμε την τέλεια ατμόσφαιρα για κάθε εκδήλωση."
+        title="DJ & Μουσική για Γάμο – Top Events | Κτήμα Ωρίων Κερατέα"
+        description="Επαγγελματικές υπηρεσίες DJ & μουσικής για γάμο, βάπτιση, εταιρική εκδήλωση στο Κτήμα Ωρίων. Top Events Entertainment Services. Τηλ: 210 22 34637."
         canonical="/dj-mousiki"
-        keywords="DJ γάμου, μουσική δεξίωσης, entertainment, Κερατέα, Top Events, μουσική εκδηλώσεων"
+        keywords="DJ γάμου κερατέα, μουσική γάμου, DJ βάπτισης, top events, entertainment services, γιώργος μαρδέλλης"
       />
       
       <div className="min-h-screen bg-gradient-to-b from-background to-brand-main/5">

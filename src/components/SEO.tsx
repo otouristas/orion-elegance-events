@@ -7,6 +7,7 @@ interface SEOProps {
   ogImage?: string;
   ogType?: string;
   keywords?: string;
+  lang?: 'el' | 'en';
 }
 
 export function SEO({ 
@@ -15,7 +16,8 @@ export function SEO({
   canonical, 
   ogImage = '/hero-image.jpg',
   ogType = 'website',
-  keywords = 'κτήμα δεξιώσεων, γάμος, βάπτιση, εταιρικές εκδηλώσεις, Κερατέα, Αττική'
+  keywords = 'κτήμα δεξιώσεων, γάμος, βάπτιση, εταιρικές εκδηλώσεις, Κερατέα, Αττική',
+  lang = 'el'
 }: SEOProps) {
   const siteName = 'Κτήμα Ωρίων';
   const siteUrl = 'https://ktimaorion.gr';
@@ -26,10 +28,16 @@ export function SEO({
   return (
     <Helmet>
       {/* Basic Meta Tags */}
+      <html lang={lang} />
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <link rel="canonical" href={fullCanonical} />
+      
+      {/* Hreflang Tags for multilingual support */}
+      <link rel="alternate" hrefLang="el" href={`${siteUrl}${canonical}`} />
+      <link rel="alternate" hrefLang="en" href={`${siteUrl}/en${canonical === '/' ? '' : canonical}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${canonical}`} />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />

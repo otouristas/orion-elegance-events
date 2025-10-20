@@ -79,10 +79,10 @@ export default function EterikesEkdiloseis() {
   return (
     <Layout>
       <SEO 
-        title="Εταιρικές Εκδηλώσεις | Κτήμα Ωρίων Κερατέα"
-        description="Διοργανώστε επιτυχημένες εταιρικές εκδηλώσεις, συνέδρια, team building και product launches στο Κτήμα Ωρίων. Επαγγελματικοί χώροι και υπηρεσίες."
+        title="Εταιρικές Εκδηλώσεις Κτήμα Ωρίων Κερατέα | Corporate Events Athens"
+        description="Διοργανώστε την εταιρική σας εκδήλωση στο Κτήμα Ωρίων Κερατέα. Συνέδρια, παρουσιάσεις προϊόντων, gala dinners. Πλήρης υποστήριξη & επαγγελματισμός."
         canonical="/eterikes-ekdiloseis"
-        keywords="εταιρικές εκδηλώσεις Κερατέα, συνέδρια Αττική, team building, corporate events Athens"
+        keywords="εταιρικές εκδηλώσεις κερατέα, corporate events athens, συνέδρια αττική, team building, παρουσιάσεις προϊόντων, εταιρικά πάρτι"
       />
       <div className="pt-20">
         {/* Hero Section */}
