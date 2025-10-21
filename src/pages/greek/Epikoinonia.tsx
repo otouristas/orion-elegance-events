@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Building2, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
 
 export default function Epikoinonia() {
   const [formData, setFormData] = useState({
@@ -36,20 +37,14 @@ export default function Epikoinonia() {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/.netlify/functions/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
           ...formData,
           services: []
-        }),
+        },
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to send email');
-      }
+      if (error) throw error;
 
       setSubmitStatus('success');
       setFormData({

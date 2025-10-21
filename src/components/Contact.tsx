@@ -1,10 +1,59 @@
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+      setErrorMessage('Παρουσιάστηκε σφάλμα κατά την αποστολή του μηνύματος. Παρακαλώ δοκιμάστε ξανά ή επικοινωνήστε μαζί μας τηλεφωνικά.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="section-padding bg-gradient-to-b from-background to-champagne">
       <div className="container-max">
@@ -15,6 +64,30 @@ export const Contact = () => {
           <p className="text-xl text-muted-foreground">
             Ας μιλήσουμε για την ξεχωριστή σας εκδήλωση
           </p>
+
+          {/* Success Message */}
+          {submitStatus === 'success' && (
+            <div className="mt-8 max-w-2xl mx-auto bg-green-50 border-2 border-green-500 rounded-lg p-6 animate-fade-in">
+              <div className="flex items-center justify-center mb-4">
+                <CheckCircle className="w-12 h-12 text-green-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-green-800 mb-2">Το μήνυμά σας στάλθηκε επιτυχώς!</h3>
+              <p className="text-green-700">
+                Σας ευχαριστούμε! Λάβαμε το μήνυμά σας και θα επικοινωνήσουμε μαζί σας το συντομότερο.
+              </p>
+            </div>
+          )}
+
+          {/* Error Message */}
+          {submitStatus === 'error' && (
+            <div className="mt-8 max-w-2xl mx-auto bg-red-50 border-2 border-red-500 rounded-lg p-6">
+              <div className="flex items-center justify-center mb-4">
+                <AlertCircle className="w-12 h-12 text-red-500" />
+              </div>
+              <h3 className="text-2xl font-bold text-red-800 mb-2">Σφάλμα αποστολής</h3>
+              <p className="text-red-700">{errorMessage}</p>
+            </div>
+          )}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -100,39 +173,77 @@ export const Contact = () => {
               Στείλτε μας μήνυμα
             </h3>
             
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Ονοματεπώνυμο *</Label>
-                  <Input id="name" placeholder="Το όνομά σας" required />
+                  <Input 
+                    id="name" 
+                    placeholder="Το όνομά σας" 
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required 
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Τηλέφωνο</Label>
-                  <Input id="phone" placeholder="Το τηλέφωνό σας" />
+                  <Input 
+                    id="phone" 
+                    placeholder="Το τηλέφωνό σας"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                  />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="email">Email *</Label>
-                <Input id="email" type="email" placeholder="το email σας" required />
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="το email σας" 
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required 
+                />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="subject">Θέμα</Label>
-                <Input id="subject" placeholder="Θέμα μηνύματος" />
+                <Label htmlFor="subject">Θέμα *</Label>
+                <Input 
+                  id="subject" 
+                  placeholder="Θέμα μηνύματος"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  required
+                />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="message">Μήνυμα</Label>
+                <Label htmlFor="message">Μήνυμα *</Label>
                 <Textarea 
                   id="message" 
                   placeholder="Πείτε μας για την εκδήλωσή σας..."
                   rows={5}
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
                 />
               </div>
               
-              <Button type="submit" className="w-full button button4">
-                Αποστολή Μηνύματος
+              <Button 
+                type="submit" 
+                className="w-full button button4"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                    Αποστολή...
+                  </>
+                ) : (
+                  'Αποστολή Μηνύματος'
+                )}
               </Button>
               
               <p className="text-xs text-muted-foreground">
