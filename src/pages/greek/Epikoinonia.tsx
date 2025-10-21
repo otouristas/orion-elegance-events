@@ -7,8 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Building2, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { supabase } from '@/integrations/supabase/client';
 
+// Contact page with form submission functionality
 export default function Epikoinonia() {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -37,14 +37,21 @@ export default function Epikoinonia() {
     setErrorMessage('');
 
     try {
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: {
+      const response = await fetch('https://krtgvboewdhztlptmsvn.supabase.co/functions/v1/send-contact-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtydGd2Ym9ld2RoenRscHRtc3ZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEwMDU0NzksImV4cCI6MjA3NjU4MTQ3OX0._q-FP9L2uRsfn284ebMaGRbXfZGMkDQz0YwCDAktAH0',
+        },
+        body: JSON.stringify({
           ...formData,
           services: []
-        },
+        }),
       });
 
-      if (error) throw error;
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
 
       setSubmitStatus('success');
       setFormData({
