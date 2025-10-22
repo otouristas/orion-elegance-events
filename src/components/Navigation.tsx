@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logoDark from '@/assets/logo-dark.png';
 import logoWhite from '@/assets/logo-white.png';
 
@@ -19,6 +19,8 @@ interface NavItem {
 export const Navigation = ({ isScrolled = false, isTransparent = false }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const location = useLocation();
+  const isEnglish = location.pathname.startsWith('/en');
 
   const navItems: NavItem[] = [
     { label: 'ΑΡΧΙΚΗ', href: '/' },
@@ -92,13 +94,30 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
       <div className="container-max">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center md:ml-0 ml-8">
+          <Link to={isEnglish ? "/en" : "/"} className="flex items-center md:ml-0 ml-8">
             <img
               src={logoSrc}
               alt="Κτήμα Ωρίων"
               className="h-20 w-auto transition-all duration-300"
             />
           </Link>
+          
+          {/* Language Switcher - Desktop */}
+          <div className="hidden md:flex items-center gap-2 ml-4">
+            <Globe className={`w-5 h-5 ${textColor}`} />
+            <Link 
+              to="/" 
+              className={`px-3 py-1 rounded transition-colors ${!isEnglish ? 'bg-brand-main text-white' : textColor + ' hover:text-brand-main'}`}
+            >
+              ΕΛ
+            </Link>
+            <Link 
+              to="/en" 
+              className={`px-3 py-1 rounded transition-colors ${isEnglish ? 'bg-brand-main text-white' : textColor + ' hover:text-brand-main'}`}
+            >
+              EN
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
@@ -147,6 +166,23 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                 ΖΗΤΗΣΗ
               </Button>
             </a>
+          </div>
+
+          {/* Language Switcher - Mobile */}
+          <div className="flex md:hidden items-center gap-2 mr-2">
+            <Globe className={`w-5 h-5 ${textColor}`} />
+            <Link 
+              to="/" 
+              className={`px-2 py-1 text-sm rounded transition-colors ${!isEnglish ? 'bg-brand-main text-white' : textColor + ' hover:text-brand-main'}`}
+            >
+              ΕΛ
+            </Link>
+            <Link 
+              to="/en" 
+              className={`px-2 py-1 text-sm rounded transition-colors ${isEnglish ? 'bg-brand-main text-white' : textColor + ' hover:text-brand-main'}`}
+            >
+              EN
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

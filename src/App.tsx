@@ -7,6 +7,15 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+// English pages
+import IndexEn from "./pages/english/IndexEn";
+import WeddingsEn from "./pages/english/WeddingsEn";
+import ChurchesEn from "./pages/english/ChurchesEn";
+import BaptismEn from "./pages/english/BaptismEn";
+import PartyEn from "./pages/english/PartyEn";
+import CorporateEventsEn from "./pages/english/CorporateEventsEn";
+import ContactEn from "./pages/english/ContactEn";
+
 // Greek pages
 import Ekklisies from "./pages/greek/Ekklisies";
 import Parti from "./pages/greek/Parti";
@@ -36,6 +45,15 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          
+          {/* English Routes */}
+          <Route path="/en" element={<IndexEn />} />
+          <Route path="/en/weddings" element={<WeddingsEn />} />
+          <Route path="/en/churches" element={<ChurchesEn />} />
+          <Route path="/en/baptism" element={<BaptismEn />} />
+          <Route path="/en/party" element={<PartyEn />} />
+          <Route path="/en/corporate-events" element={<CorporateEventsEn />} />
+          <Route path="/en/contact" element={<ContactEn />} />
           
           {/* Greek Routes */}
           <Route path="/ekklisies" element={<Ekklisies />} />
