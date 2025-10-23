@@ -22,6 +22,14 @@ interface NavItem {
 const pageMapping: Record<string, string> = {
   '/': '/en',
   '/en': '/',
+  '/emeis': '/en',
+  '/dexiosi': '/en',
+  '/o-horos': '/en',
+  '/ypiresies': '/en',
+  '/diorganotis-gamon': '/en',
+  '/fotografos': '/en',
+  '/dj-mousiki': '/en',
+  '/reviews': '/en',
   '/gamos': '/en/weddings',
   '/en/weddings': '/gamos',
   '/vaptisi': '/en/baptism',
@@ -33,7 +41,6 @@ const pageMapping: Record<string, string> = {
   '/ekklisies': '/en/churches',
   '/en/churches': '/ekklisies',
   '/contact': '/en/contact',
-  '/epikoinonia': '/en/contact',
   '/en/contact': '/contact',
 };
 
@@ -143,7 +150,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center gap-4">
             {navItems.map((item) => (
               <div key={item.label} className="relative dropdown-container">
                 {item.submenu ? (
