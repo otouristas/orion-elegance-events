@@ -18,18 +18,18 @@ interface NavItem {
   submenu?: Array<{ label: string; labelEn?: string; href: string; hrefEn?: string }>;
 }
 
-// Page mapping for language switching
+// Page mapping for language switching - maps every Greek page to English equivalent
 const pageMapping: Record<string, string> = {
+  // Home
   '/': '/en',
   '/en': '/',
-  '/emeis': '/en',
-  '/dexiosi': '/en',
-  '/o-horos': '/en',
-  '/ypiresies': '/en',
-  '/diorganotis-gamon': '/en',
-  '/fotografos': '/en',
-  '/dj-mousiki': '/en',
-  '/reviews': '/en',
+  // About
+  '/emeis': '/en/about',
+  '/en/about': '/emeis',
+  // Reception parent
+  '/dexiosi': '/en/reception',
+  '/en/reception': '/dexiosi',
+  // Reception children
   '/gamos': '/en/weddings',
   '/en/weddings': '/gamos',
   '/vaptisi': '/en/baptism',
@@ -38,8 +38,26 @@ const pageMapping: Record<string, string> = {
   '/en/corporate-events': '/eterikes-ekdiloseis',
   '/parti': '/en/party',
   '/en/party': '/parti',
+  // Venue
+  '/o-horos': '/en/venue',
+  '/en/venue': '/o-horos',
+  // Churches
   '/ekklisies': '/en/churches',
   '/en/churches': '/ekklisies',
+  // Services parent
+  '/ypiresies': '/en/services',
+  '/en/services': '/ypiresies',
+  // Services children
+  '/diorganotis-gamon': '/en/wedding-planner',
+  '/en/wedding-planner': '/diorganotis-gamon',
+  '/fotografos': '/en/photographer',
+  '/en/photographer': '/fotografos',
+  '/dj-mousiki': '/en/dj-music',
+  '/en/dj-music': '/dj-mousiki',
+  // Reviews
+  '/reviews': '/en/reviews',
+  '/en/reviews': '/reviews',
+  // Contact
   '/contact': '/en/contact',
   '/en/contact': '/contact',
 };
@@ -53,12 +71,12 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
   const navItemsGreek: NavItem[] = [
     { label: 'ΑΡΧΙΚΗ', labelEn: 'HOME', href: '/', hrefEn: '/en' },
-    { label: 'ΕΜΕΙΣ', labelEn: 'ABOUT', href: '/emeis', hrefEn: '/en' },
+    { label: 'ΕΜΕΙΣ', labelEn: 'ABOUT', href: '/emeis', hrefEn: '/en/about' },
     { 
       label: 'ΔΕΞΙΩΣΗ', 
       labelEn: 'RECEPTION',
       href: '/dexiosi',
-      hrefEn: '/en',
+      hrefEn: '/en/reception',
       submenu: [
         { label: 'ΓΑΜΟΣ', labelEn: 'WEDDING', href: '/gamos', hrefEn: '/en/weddings' },
         { label: 'ΒΑΠΤΙΣΗ', labelEn: 'BAPTISM', href: '/vaptisi', hrefEn: '/en/baptism' },
@@ -66,20 +84,20 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
         { label: 'ΠΑΡΤΙ', labelEn: 'PARTY', href: '/parti', hrefEn: '/en/party' }
       ]
     },
-    { label: 'Ο ΧΩΡΟΣ', labelEn: 'THE VENUE', href: '/o-horos', hrefEn: '/en' },
+    { label: 'Ο ΧΩΡΟΣ', labelEn: 'THE VENUE', href: '/o-horos', hrefEn: '/en/venue' },
     { label: 'ΕΚΚΛΗΣΙΕΣ', labelEn: 'CHURCHES', href: '/ekklisies', hrefEn: '/en/churches' },
     { 
       label: 'ΥΠΗΡΕΣΙΕΣ', 
       labelEn: 'SERVICES',
       href: '/ypiresies',
-      hrefEn: '/en',
+      hrefEn: '/en/services',
       submenu: [
-        { label: 'ΔΙΟΡΓΑΝΩΤΗΣ ΓΑΜΩΝ', labelEn: 'WEDDING PLANNER', href: '/diorganotis-gamon', hrefEn: '/en' },
-        { label: 'ΦΩΤΟΓΡΑΦΟΣ', labelEn: 'PHOTOGRAPHER', href: '/fotografos', hrefEn: '/en' },
-        { label: 'DJ - ΜΟΥΣΙΚΗ', labelEn: 'DJ - MUSIC', href: '/dj-mousiki', hrefEn: '/en' }
+        { label: 'ΔΙΟΡΓΑΝΩΤΗΣ ΓΑΜΩΝ', labelEn: 'WEDDING PLANNER', href: '/diorganotis-gamon', hrefEn: '/en/wedding-planner' },
+        { label: 'ΦΩΤΟΓΡΑΦΟΣ', labelEn: 'PHOTOGRAPHER', href: '/fotografos', hrefEn: '/en/photographer' },
+        { label: 'DJ - ΜΟΥΣΙΚΗ', labelEn: 'DJ - MUSIC', href: '/dj-mousiki', hrefEn: '/en/dj-music' }
       ]
     },
-    { label: 'ΚΡΙΤΙΚΕΣ', labelEn: 'REVIEWS', href: '/reviews', hrefEn: '/en' },
+    { label: 'ΚΡΙΤΙΚΕΣ', labelEn: 'REVIEWS', href: '/reviews', hrefEn: '/en/reviews' },
     { label: 'ΕΠΙΚΟΙΝΩΝΙΑ', labelEn: 'CONTACT', href: '/contact', hrefEn: '/en/contact' },
   ];
 
@@ -150,25 +168,25 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
             {navItems.map((item) => (
               <div key={item.label} className="relative dropdown-container">
                 {item.submenu ? (
                   <>
                     <button
                       onClick={() => handleDropdownToggle(item.label)}
-                      className={`font-medium text-sm transition-all duration-300 hover:text-[hsl(var(--brand-main))] ${textColor} flex items-center gap-1`}
+                      className={`font-medium text-[13px] tracking-wide transition-all duration-300 hover:text-[hsl(var(--brand-main))] ${textColor} flex items-center gap-1 px-2 py-1`}
                     >
                       {isEnglish ? item.labelEn : item.label}
-                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${openDropdown === item.label ? 'rotate-180' : ''}`} />
                     </button>
                     {openDropdown === item.label && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-border z-[9999] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div className="absolute top-full left-0 mt-2 w-60 bg-background rounded-lg shadow-2xl border border-border z-[9999] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.label}
                             to={isEnglish ? (subItem.hrefEn || subItem.href) : subItem.href}
-                            className="block px-4 py-3 text-sm text-foreground hover:bg-[hsl(var(--brand-main))]/10 hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border/50 last:border-0"
+                            className="block px-5 py-3.5 text-sm text-foreground hover:bg-[hsl(var(--brand-main))]/10 hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border/30 last:border-0 font-medium"
                             onClick={closeDropdown}
                           >
                             {isEnglish ? subItem.labelEn : subItem.label}
@@ -180,7 +198,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                 ) : (
                   <Link
                     to={isEnglish ? (item.hrefEn || item.href) : item.href}
-                    className={`font-medium text-sm transition-all duration-300 hover:text-[hsl(var(--brand-main))] ${textColor}`}
+                    className={`font-medium text-[13px] tracking-wide transition-all duration-300 hover:text-[hsl(var(--brand-main))] ${textColor} px-2 py-1`}
                   >
                     {isEnglish ? item.labelEn : item.label}
                   </Link>
@@ -190,32 +208,32 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           </div>
 
           {/* Right side: CTA + Language Switcher */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
             <Link to={isEnglish ? "/en/contact" : "/contact"}>
-              <Button variant="outline" className="button button4">
+              <Button variant="outline" className="button button4 text-sm px-6">
                 {isEnglish ? 'REQUEST' : 'ΖΗΤΗΣΗ'}
               </Button>
             </Link>
 
             {/* Language Switcher */}
-            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/50 border border-border">
-              <Globe className={`w-4 h-4 ${textColor}`} />
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-background/80 border border-border backdrop-blur-sm">
+              <Globe className={`w-3.5 h-3.5 ${textColor}`} />
               <button
                 onClick={handleLanguageSwitch}
-                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
+                className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-all duration-200 ${
                   !isEnglish 
                     ? 'bg-[hsl(var(--brand-main))] text-white shadow-sm' 
-                    : 'text-foreground hover:bg-muted'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                 }`}
               >
                 ΕΛ
               </button>
               <button
                 onClick={handleLanguageSwitch}
-                className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all duration-200 ${
+                className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-all duration-200 ${
                   isEnglish 
                     ? 'bg-[hsl(var(--brand-main))] text-white shadow-sm' 
-                    : 'text-foreground hover:bg-muted'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                 }`}
               >
                 EN
@@ -238,34 +256,34 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
         {/* Mobile Navigation Menu */}
         <div 
-          className={`lg:hidden fixed inset-0 top-20 bg-background z-40 transform transition-transform duration-300 ease-in-out ${
+          className={`lg:hidden fixed inset-0 top-20 bg-background/98 backdrop-blur-md z-40 transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
           <div className="h-full overflow-y-auto">
-            <div className="container-max py-6 space-y-1">
+            <div className="container-max py-4 space-y-0">
               {navItems.map((item) => (
                 <div key={item.label}>
                   {item.submenu ? (
-                    <div className="border-b border-border/30">
+                    <div className="border-b border-border/20">
                       <button
                         onClick={() => handleDropdownToggle(item.label)}
-                        className="w-full flex items-center justify-between px-4 py-4 text-foreground font-semibold text-lg hover:text-[hsl(var(--brand-main))] transition-colors"
+                        className="w-full flex items-center justify-between px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors"
                       >
                         <span>{isEnglish ? item.labelEn : item.label}</span>
                         <ChevronDown
-                          className={`w-5 h-5 transition-transform duration-300 ${
+                          className={`w-4 h-4 transition-transform duration-300 ${
                             openDropdown === item.label ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
                       {openDropdown === item.label && (
-                        <div className="bg-muted/30 animate-in slide-in-from-top-2 duration-200">
+                        <div className="bg-muted/20 animate-in slide-in-from-top-2 duration-200">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.label}
                               to={isEnglish ? (subItem.hrefEn || subItem.href) : subItem.href}
-                              className="block px-8 py-4 text-base text-muted-foreground hover:text-[hsl(var(--brand-main))] hover:bg-[hsl(var(--brand-main))]/5 transition-all"
+                              className="block px-10 py-3.5 text-sm text-muted-foreground hover:text-[hsl(var(--brand-main))] hover:bg-[hsl(var(--brand-main))]/5 transition-all font-medium"
                               onClick={closeMenu}
                             >
                               {isEnglish ? subItem.labelEn : subItem.label}
@@ -277,7 +295,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                   ) : (
                     <Link
                       to={isEnglish ? (item.hrefEn || item.href) : item.href}
-                      className="block px-4 py-4 text-foreground font-semibold text-lg hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border/30"
+                      className="block px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border/20"
                       onClick={closeMenu}
                     >
                       {isEnglish ? item.labelEn : item.label}
@@ -287,25 +305,25 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               ))}
 
               {/* Mobile Language Switcher */}
-              <div className="pt-6 pb-4 px-4">
-                <div className="flex items-center justify-center gap-3 p-4 rounded-lg bg-muted/50 border border-border">
-                  <Globe className="w-5 h-5 text-foreground" />
+              <div className="pt-6 pb-3 px-5">
+                <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-muted/30 border border-border/50">
+                  <Globe className="w-4 h-4 text-foreground" />
                   <button
                     onClick={handleLanguageSwitch}
-                    className={`px-6 py-2.5 text-base font-medium rounded-md transition-all duration-200 ${
+                    className={`px-5 py-2 text-sm font-semibold rounded-md transition-all duration-200 ${
                       !isEnglish 
                         ? 'bg-[hsl(var(--brand-main))] text-white shadow-md' 
-                        : 'bg-background text-foreground border border-border'
+                        : 'bg-background text-muted-foreground border border-border hover:text-foreground'
                     }`}
                   >
                     ΕΛ
                   </button>
                   <button
                     onClick={handleLanguageSwitch}
-                    className={`px-6 py-2.5 text-base font-medium rounded-md transition-all duration-200 ${
+                    className={`px-5 py-2 text-sm font-semibold rounded-md transition-all duration-200 ${
                       isEnglish 
                         ? 'bg-[hsl(var(--brand-main))] text-white shadow-md' 
-                        : 'bg-background text-foreground border border-border'
+                        : 'bg-background text-muted-foreground border border-border hover:text-foreground'
                     }`}
                   >
                     EN
@@ -314,9 +332,9 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               </div>
 
               {/* Mobile CTA Button */}
-              <div className="px-4 pt-4">
+              <div className="px-5 pt-3 pb-6">
                 <Link to={isEnglish ? "/en/contact" : "/contact"} className="block">
-                  <Button className="w-full button button4 text-lg py-6">
+                  <Button className="w-full button button4 text-base py-5">
                     {isEnglish ? 'REQUEST' : 'ΖΗΤΗΣΗ'}
                   </Button>
                 </Link>
