@@ -256,7 +256,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
         {/* Mobile Navigation Menu */}
         <div 
-          className={`lg:hidden fixed inset-0 top-20 bg-background/98 backdrop-blur-md z-40 transform transition-transform duration-300 ease-in-out ${
+          className={`lg:hidden fixed inset-0 top-20 bg-background z-[100] transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -265,25 +265,25 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               {navItems.map((item) => (
                 <div key={item.label}>
                   {item.submenu ? (
-                    <div className="border-b border-border/20">
+                    <div className="border-b border-border">
                       <button
                         onClick={() => handleDropdownToggle(item.label)}
-                        className="w-full flex items-center justify-between px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors"
+                        className="w-full flex items-center justify-between px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors bg-background"
                       >
                         <span>{isEnglish ? item.labelEn : item.label}</span>
                         <ChevronDown
-                          className={`w-4 h-4 transition-transform duration-300 ${
+                          className={`w-5 h-5 transition-transform duration-200 ${
                             openDropdown === item.label ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
                       {openDropdown === item.label && (
-                        <div className="bg-muted/20 animate-in slide-in-from-top-2 duration-200">
+                        <div className="bg-muted/30">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.label}
                               to={isEnglish ? (subItem.hrefEn || subItem.href) : subItem.href}
-                              className="block px-10 py-3.5 text-sm text-muted-foreground hover:text-[hsl(var(--brand-main))] hover:bg-[hsl(var(--brand-main))]/5 transition-all font-medium"
+                              className="block px-10 py-3.5 text-sm text-foreground hover:text-[hsl(var(--brand-main))] hover:bg-[hsl(var(--brand-main))]/10 transition-all font-medium"
                               onClick={closeMenu}
                             >
                               {isEnglish ? subItem.labelEn : subItem.label}
@@ -295,7 +295,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                   ) : (
                     <Link
                       to={isEnglish ? (item.hrefEn || item.href) : item.href}
-                      className="block px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border/20"
+                      className="block px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border bg-background"
                       onClick={closeMenu}
                     >
                       {isEnglish ? item.labelEn : item.label}

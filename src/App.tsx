@@ -15,6 +15,14 @@ import BaptismEn from "./pages/english/BaptismEn";
 import PartyEn from "./pages/english/PartyEn";
 import CorporateEventsEn from "./pages/english/CorporateEventsEn";
 import ContactEn from "./pages/english/ContactEn";
+import AboutEn from "./pages/english/AboutEn";
+import WeddingPlannerEn from "./pages/english/WeddingPlannerEn";
+import PhotographerEn from "./pages/english/PhotographerEn";
+import DjMusicEn from "./pages/english/DjMusicEn";
+import VenueEn from "./pages/english/VenueEn";
+import ReviewsEn from "./pages/english/ReviewsEn";
+import ReceptionEn from "./pages/english/ReceptionEn";
+import ServicesEn from "./pages/english/ServicesEn";
 
 // Greek pages
 import Ekklisies from "./pages/greek/Ekklisies";
@@ -48,11 +56,19 @@ const App = () => (
           
           {/* English Routes */}
           <Route path="/en" element={<IndexEn />} />
+          <Route path="/en/about" element={<AboutEn />} />
+          <Route path="/en/reception" element={<ReceptionEn />} />
           <Route path="/en/weddings" element={<WeddingsEn />} />
-          <Route path="/en/churches" element={<ChurchesEn />} />
           <Route path="/en/baptism" element={<BaptismEn />} />
-          <Route path="/en/party" element={<PartyEn />} />
           <Route path="/en/corporate-events" element={<CorporateEventsEn />} />
+          <Route path="/en/party" element={<PartyEn />} />
+          <Route path="/en/venue" element={<VenueEn />} />
+          <Route path="/en/churches" element={<ChurchesEn />} />
+          <Route path="/en/services" element={<ServicesEn />} />
+          <Route path="/en/wedding-planner" element={<WeddingPlannerEn />} />
+          <Route path="/en/photographer" element={<PhotographerEn />} />
+          <Route path="/en/dj-music" element={<DjMusicEn />} />
+          <Route path="/en/reviews" element={<ReviewsEn />} />
           <Route path="/en/contact" element={<ContactEn />} />
           
           {/* Greek Routes */}
