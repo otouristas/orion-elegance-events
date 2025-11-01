@@ -42,14 +42,6 @@ import Epikoinonia from "./pages/greek/Epikoinonia";
 import Gallery from "./pages/greek/Gallery";
 import DjMousiki from "./pages/greek/DjMousiki";
 
-// SEO-optimized Greek pages
-import KtimaGamouAthina from "./pages/greek/seo/KtimaGamouAthina";
-import EkklisiakiHub from "./pages/greek/seo/EkklisiakiHub";
-import TimesKtimatos from "./pages/greek/seo/TimesKtimatos";
-import VaptisiChorosAthina from "./pages/greek/seo/VaptisiChorosAthina";
-import VaptisiStiThalassa from "./pages/greek/seo/VaptisiStiThalassa";
-import MikrosGamosAthina from "./pages/greek/seo/MikrosGamosAthina";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -97,14 +89,6 @@ const App = () => (
           <Route path="/contact" element={<Epikoinonia />} />
           <Route path="/epikoinonia" element={<Epikoinonia />} />
           <Route path="/gallery" element={<Gallery />} />
-          
-          {/* SEO-optimized Greek Routes */}
-          <Route path="/el/ktima-gamou-athina" element={<KtimaGamouAthina />} />
-          <Route path="/el/ekklisaki-dipla-sti-thalassa" element={<EkklisiakiHub />} />
-          <Route path="/el/times-ktimatos-gamou" element={<TimesKtimatos />} />
-          <Route path="/el/vaptisi-choros-athina" element={<VaptisiChorosAthina />} />
-          <Route path="/el/vaptisi-sti-thalassa" element={<VaptisiStiThalassa />} />
-          <Route path="/el/mikros-gamos-athina" element={<MikrosGamosAthina />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
