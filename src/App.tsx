@@ -46,7 +46,11 @@ import DjMousiki from "./pages/greek/DjMousiki";
 import KtimaGamouAthina from "./pages/greek/seo/KtimaGamouAthina";
 import KtimataVaptisisAthina from "./pages/greek/seo/KtimataVaptisisAthina";
 import EkklisiakiDiplaStThalassa from "./pages/greek/seo/EkklisiakiDiplaStThalassa";
+import KtimaGamouAthensRiviera from "./pages/greek/seo/KtimaGamouAthensRiviera";
 import AgiosAlexandrosDaskaleio from "./pages/greek/seo/churches/AgiosAlexandrosDaskaleio";
+import ProfitisIliasThoriko from "./pages/greek/seo/churches/ProfitisIliasThoriko";
+import AgiosPanteleimonasKeratea from "./pages/greek/seo/churches/AgiosPanteleimonasKeratea";
+import PanagiaGkarika from "./pages/greek/seo/churches/PanagiaGkarika";
 
 const queryClient = new QueryClient();
 
@@ -100,7 +104,11 @@ const App = () => (
           <Route path="/el/ktima-gamou-athina" element={<KtimaGamouAthina />} />
           <Route path="/el/ktimata-vaptisis-athina" element={<KtimataVaptisisAthina />} />
           <Route path="/el/ekklisiaki-dipla-sti-thalassa" element={<EkklisiakiDiplaStThalassa />} />
+          <Route path="/el/ktima-gamou-athens-riviera" element={<KtimaGamouAthensRiviera />} />
           <Route path="/el/ekklisies/agios-alexandros-daskaleio" element={<AgiosAlexandrosDaskaleio />} />
+          <Route path="/el/ekklisies/profitis-ilias-thoriko" element={<ProfitisIliasThoriko />} />
+          <Route path="/el/ekklisies/agios-panteleimonas-keratea" element={<AgiosPanteleimonasKeratea />} />
+          <Route path="/el/ekklisies/panagia-gkarika" element={<PanagiaGkarika />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

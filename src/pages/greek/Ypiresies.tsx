@@ -42,10 +42,10 @@ export default function Ypiresies() {
   return (
     <Layout>
       <SEO 
-        title="Υπηρεσίες | Κτήμα Ωρίων – Ολοκληρωμένες Λύσεις Εκδηλώσεων"
-        description="Διοργάνωση γάμου, φωτογραφία, διακόσμηση, συντονισμός εκκλησίας και περισσότερα. Δείτε όλες τις υπηρεσίες του Κτήματος Ωρίων."
+        title="Υπηρεσίες Κτήματος Ωρίων | Catering, Διακόσμηση, Τεχνική Υποστήριξη"
+        description="Ολοκληρωμένες υπηρεσίες: In-house catering, διακόσμηση, φωτισμός, ήχος, συντονισμός εκδήλωσης. All-inclusive πακέτα."
         canonical="/ypiresies"
-        keywords="υπηρεσίες γάμου, wedding services, φωτογραφία, διακόσμηση, συντονισμός εκκλησίας"
+        keywords="υπηρεσιες γαμου κερατεα, catering κτηματος, διακοσμηση εκδηλωσης, wedding planner athina"
       />
       <div className="pt-20">
         {/* Hero Section */}
