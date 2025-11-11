@@ -161,12 +161,29 @@ export default function Gamos() {
               Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια γαμήλια δεξίωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button button4">
-                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-              </button>
-              <button className="button button4">
-                ΕΠΙΚΟΙΝΩΝΙΑ
-              </button>
+              <a href="/contact">
+                <button className="button button4">
+                  ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                </button>
+              </a>
+              <a href="/el/ekklisiaki-dipla-sti-thalassa">
+                <button className="button button4">
+                  ΔΕΙΤΕ ΕΚΚΛΗΣΙΕΣ
+                </button>
+              </a>
+            </div>
+            
+            {/* Internal Links */}
+            <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
+              <a href="/el/ktima-gamou-athina" className="text-brand-main hover:underline">Κτήμα Γάμου Αθήνα</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/el/ktima-gamou-athens-riviera" className="text-brand-main hover:underline">Athens Riviera</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/o-horos" className="text-brand-main hover:underline">Δείτε τον Χώρο</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/fotografos" className="text-brand-main hover:underline">Φωτογράφος</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/diorganotis-gamon" className="text-brand-main hover:underline">Wedding Planner</a>
             </div>
           </div>
         </section>

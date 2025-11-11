@@ -232,12 +232,27 @@ export default function Vaptisi() {
               Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια βαπτιστική δεξίωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button button4">
-                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-              </button>
-              <button className="button button4">
-                ΕΠΙΚΟΙΝΩΝΙΑ
-              </button>
+              <a href="/contact">
+                <button className="button button4">
+                  ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                </button>
+              </a>
+              <a href="/el/ktimata-vaptisis-athina">
+                <button className="button button4">
+                  ΠΕΡΙΣΣΟΤΕΡΑ ΓΙΑ ΒΑΠΤΙΣΗ
+                </button>
+              </a>
+            </div>
+            
+            {/* Internal Links */}
+            <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
+              <a href="/el/ktimata-vaptisis-athina" className="text-brand-main hover:underline">Κτήματα Βάπτισης Αθήνα</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/el/ekklisiaki-dipla-sti-thalassa" className="text-brand-main hover:underline">Εκκλησάκια</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/o-horos" className="text-brand-main hover:underline">Δείτε τον Χώρο</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/ypiresies" className="text-brand-main hover:underline">Catering & Υπηρεσίες</a>
             </div>
           </div>
         </section>

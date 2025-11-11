@@ -151,12 +151,30 @@ export default function Ekklisies() {
               την υπέροχη δεξίωσή σας στο Κτήμα Ωρίων.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/epikoinonia" className="button button4">
+              <a href="/contact" className="button button4">
                 ΕΠΙΚΟΙΝΩΝΙΑ
               </a>
-              <a href="/request" className="button button4">
-                ΑΙΤΗΜΑ ΠΛΗΡΟΦΟΡΙΩΝ
+              <a href="/el/ekklisiaki-dipla-sti-thalassa" className="button button4">
+                ΕΚΚΛΗΣΑΚΙ ΔΙΠΛΑ ΣΤΗ ΘΑΛΑΣΣΑ
               </a>
+            </div>
+            
+            {/* Internal Links to Church Pages */}
+            <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+              <a href="/el/ekklisies/agios-alexandros-daskaleio" className="text-brand-main hover:underline">Άγιος Αλέξανδρος</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/el/ekklisies/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/el/ekklisies/agios-panteleimonas-keratea" className="text-brand-main hover:underline">Άγιος Παντελεήμονας</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/el/ekklisies/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
+            </div>
+            <div className="mt-4 flex flex-wrap justify-center gap-3 text-sm">
+              <a href="/el/ktima-gamou-athina" className="text-brand-main hover:underline">Κτήμα Γάμου Αθήνα</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/gamos" className="text-brand-main hover:underline">Γάμος</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/vaptisi" className="text-brand-main hover:underline">Βάπτιση</a>
             </div>
           </div>
         </section>

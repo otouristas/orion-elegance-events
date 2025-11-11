@@ -4,14 +4,14 @@ import { Navigation } from '@/components/Navigation';
 import { HeroEn } from '@/components/english/HeroEn';
 import { DescriptionEn } from '@/components/english/DescriptionEn';
 import { FeaturesEn } from '@/components/english/FeaturesEn';
-import { HomeGallery } from '@/components/HomeGallery';
+import { HomeGalleryEn } from '@/components/english/HomeGalleryEn';
 import { ServicesEn } from '@/components/english/ServicesEn';
 import { AboutEn } from '@/components/english/AboutEn';
 import { ChurchesEn } from '@/components/english/ChurchesEn';
 import { TestimonialsEn } from '@/components/english/TestimonialsEn';
 import { ContactEn } from '@/components/english/ContactEn';
-import { Footer } from '@/components/Footer';
-import { Partners } from '@/components/Partners';
+import { FooterEn } from '@/components/english/FooterEn';
+import { PartnersEn } from '@/components/english/PartnersEn';
 
 const IndexEn = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,14 +38,14 @@ const IndexEn = () => {
       <HeroEn />
       <DescriptionEn />
       <FeaturesEn />
-      <HomeGallery />
+      <HomeGalleryEn />
       <ServicesEn />
       <AboutEn />
       <ChurchesEn />
       <TestimonialsEn />
-      <Partners />
+      <PartnersEn />
       <ContactEn />
-      <Footer />
+      <FooterEn />
     </div>
   );
 };

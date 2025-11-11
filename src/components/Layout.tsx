@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { BackToTop } from '@/components/BackToTop';
-import { WhatsAppButton } from '@/components/WhatsAppButton';
-import { ViberButton } from '@/components/ViberButton';
+import { ContactFAB } from '@/components/ContactFAB';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -28,8 +27,7 @@ export const Layout = ({ children, isTransparent = false }: LayoutProps) => {
       <main>{children}</main>
       <Footer />
       <BackToTop />
-      <ViberButton />
-      <WhatsAppButton />
+      <ContactFAB />
     </div>
   );
 };

@@ -31,7 +31,7 @@ export const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-50 bg-brand-main hover:bg-brand-main/90 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group"
+      className="fixed bottom-6 right-6 z-[50] bg-brand-main hover:bg-brand-main/90 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group"
       aria-label="Back to top"
     >
       <ArrowUp className="w-6 h-6 transition-transform duration-300 group-hover:-translate-y-1" />

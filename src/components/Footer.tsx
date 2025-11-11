@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="container-max py-16 px-4 md:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
-          <div className="lg:col-span-2">
+          <div>
             <img 
               src={logoDark} 
               alt="Κτήμα Ωρίων" 
@@ -29,8 +29,21 @@ export const Footer = () => {
               <li><a href="/parti" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Πάρτι</a></li>
               <li><a href="/fotografos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Φωτογράφος</a></li>
               <li><a href="/diorganotis-gamon" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Planner</a></li>
-              <li><a href="/gallery" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Φωτογραφίες</a></li>
+              <li><a href="/dj-mousiki" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">DJ - Μουσική</a></li>
               <li><a href="/reviews" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κριτικές</a></li>
+            </ul>
+          </div>
+
+          {/* Popular Searches */}
+          <div>
+            <h3 className="text-xl font-bold text-brand-main mb-6">Δημοφιλείς Αναζητήσεις</h3>
+            <ul className="space-y-3">
+              <li><a href="/el/ktima-gamou-athina" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κτήμα Γάμου Αθήνα</a></li>
+              <li><a href="/el/ktimata-vaptisis-athina" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κτήματα Βάπτισης</a></li>
+              <li><a href="/el/ekklisiaki-dipla-sti-thalassa" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εκκλησάκι Θάλασσα</a></li>
+              <li><a href="/el/ktima-gamou-athens-riviera" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Athens Riviera</a></li>
+              <li><a href="/el/ekklisies/agios-alexandros-daskaleio" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Άγιος Αλέξανδρος</a></li>
+              <li><a href="/el/ekklisies/profitis-ilias-thoriko" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Προφήτης Ηλίας</a></li>
             </ul>
           </div>
 
