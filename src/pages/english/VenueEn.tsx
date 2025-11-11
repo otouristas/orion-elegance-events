@@ -122,10 +122,10 @@ export default function VenueEn() {
   return (
     <Layout>
       <SEO 
-        title="The Venue | Ktima Orion – Indoor & Outdoor Spaces"
-        description="Discover the indoor and outdoor spaces of Ktima Orion. Garden, pool, reception hall, couple's studio and welcome area near Athens."
+        title="Our Venue – Ktima Orion Keratea | Indoor & Outdoor Spaces"
+        description="Explore our venue: Large garden, indoor hall, sea view, parking for 100 cars. Flexible indoor & outdoor layouts."
         canonical="/en/venue"
-        keywords="reception space, hall, garden, pool, couple studio, Keratea, Athens venue"
+        keywords="event venue keratea, wedding hall athens, garden reception venue, venue with parking"
         lang="en"
       />
       <div className="pt-20">

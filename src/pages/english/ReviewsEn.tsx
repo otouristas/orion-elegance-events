@@ -70,10 +70,10 @@ export default function ReviewsEn() {
   return (
     <Layout>
       <SEO 
-        title="Reviews | Ktima Orion – Testimonials & Client Experiences"
-        description="Read authentic reviews from couples who celebrated their wedding, baptism or event at Ktima Orion. Discover why our clients recommend us!"
+        title="Reviews & Testimonials | Ktima Orion Wedding Venue"
+        description="Read real testimonials from couples who celebrated at Ktima Orion. 200+ 5-star reviews, 15+ years experience."
         canonical="/en/reviews"
-        keywords="reviews Ktima Orion, testimonials, wedding reviews Keratea, client experiences, event reviews Athens"
+        keywords="ktima orion reviews, wedding testimonials keratea, venue reviews athens, 5-star venue"
         lang="en"
       />
       <div className="pt-20">

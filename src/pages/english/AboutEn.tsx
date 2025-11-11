@@ -77,10 +77,10 @@ export default function AboutEn() {
   return (
     <Layout>
       <SEO 
-        title="About Us | Ktima Orion – Who We Are"
-        description="Meet the Ktima Orion team and our philosophy. 15+ years of experience in weddings, baptisms and events in Keratea, Athens."
+        title="About Ktima Orion – Wedding & Event Venue in Keratea Athens"
+        description="Learn about Ktima Orion: 15+ years experience, 500+ successful events, seaside location. Family-owned venue with personalized service."
         canonical="/en/about"
-        keywords="Ktima Orion team, about us, experience, events Keratea, wedding venue Athens"
+        keywords="about ktima orion, wedding venue keratea, event venue athens, family venue attica"
         lang="en"
       />
       <div className="pt-20">

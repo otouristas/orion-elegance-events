@@ -9,10 +9,10 @@ export default function DjMusicEn() {
   return (
     <>
       <SEO
-        title="DJ & Music for Weddings – Top Events | Ktima Orion Keratea"
-        description="Professional DJ & music services for weddings, baptisms, corporate events at Ktima Orion. Top Events Entertainment Services. Tel: 210 22 34637."
+        title="DJ & Music Services | Ktima Orion Wedding Venue"
+        description="Professional sound & lighting. DJ services, live music, dance floor. Create the perfect atmosphere for your celebration."
         canonical="/en/dj-music"
-        keywords="wedding DJ Keratea, wedding music, baptism DJ, top events, entertainment services, Giorgos Mardellis"
+        keywords="wedding dj keratea, wedding music athens, event sound lighting, dj party greece"
         lang="en"
       />
       

@@ -42,10 +42,10 @@ export default function ServicesEn() {
   return (
     <Layout>
       <SEO 
-        title="Services | Ktima Orion – Complete Event Solutions"
-        description="Wedding planning, photography, decoration, church coordination and more. See all services at Ktima Orion near Athens."
+        title="Event Services at Ktima Orion | Catering, Decor, Technical Support"
+        description="Full-service venue: In-house catering, decoration, lighting, sound, event coordination. All-inclusive packages available."
         canonical="/en/services"
-        keywords="wedding services, wedding planner, photography, decoration, church coordination, event services Athens"
+        keywords="event services athens, wedding catering, venue decoration, event planning keratea"
         lang="en"
       />
       <div className="pt-20">
