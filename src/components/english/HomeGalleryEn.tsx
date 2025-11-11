@@ -1,18 +1,18 @@
-import image1 from '@/assets/IMG_0116.jpg';
-import image2 from '@/assets/IMG_0160.jpg';
-import image3 from '@/assets/IMG_0173.jpg';
-import image4 from '@/assets/IMG_0182.jpg';
-import image5 from '@/assets/IMG_0185.jpg';
-import image6 from '@/assets/IMG_0189.jpg';
+import homeImage1 from '@/assets/home/DSC_7588.JPG';
+import homeImage2 from '@/assets/home/DSC_7637.JPG';
+import homeImage3 from '@/assets/home/DSC_7662.JPG';
+import homeImage4 from '@/assets/home/DSC_7712.JPG';
+import homeImage5 from '@/assets/home/DSC_7806.JPG';
+import homeImage6 from '@/assets/home/DSC_7816.JPG';
 
 export const HomeGalleryEn = () => {
   const galleryImages = [
-    { src: image1, alt: 'Ktima Orion wedding venue - outdoor ceremony space' },
-    { src: image2, alt: 'Ktima Orion - elegant garden setting with sea view' },
-    { src: image3, alt: 'Ktima Orion reception area - decorated for celebration' },
-    { src: image4, alt: 'Ktima Orion venue - evening ambiance with lighting' },
-    { src: image5, alt: 'Ktima Orion - venue decorated for special events' },
-    { src: image6, alt: 'Ktima Orion - scenic outdoor space for gatherings' },
+    { src: homeImage1, alt: 'Ktima Orion - Event venue' },
+    { src: homeImage2, alt: 'Ktima Orion - Wedding reception' },
+    { src: homeImage3, alt: 'Ktima Orion - Wedding moment' },
+    { src: homeImage4, alt: 'Ktima Orion - Event space' },
+    { src: homeImage5, alt: 'Ktima Orion - Venue atmosphere' },
+    { src: homeImage6, alt: 'Ktima Orion - Beautiful space' },
   ];
 
   return (
