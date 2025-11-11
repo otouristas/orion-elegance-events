@@ -140,6 +140,49 @@ export default function ChurchesEn() {
           </div>
         </section>
 
+        {/* Church Detail Links */}
+        <section className="section-padding">
+          <div className="container-max">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <span className="text-gradient-brand">Explore Our Churches</span>
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <a href="/en/churches/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Agios Alexandros Daskaleio
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">3.8 km • 8'</p>
+                <p className="text-xs text-muted-foreground">Ideal for weddings up to 170 guests</p>
+              </a>
+              
+              <a href="/en/churches/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Profitis Ilias Thoriko
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">8.8 km • 11'</p>
+                <p className="text-xs text-muted-foreground">Stunning sea views</p>
+              </a>
+              
+              <a href="/en/churches/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Agios Panteleimonas Keratea
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">8.6 km • 13'</p>
+                <p className="text-xs text-muted-foreground">Traditional rustic church</p>
+              </a>
+              
+              <a href="/en/churches/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Panagia Gkarika
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
+                <p className="text-xs text-muted-foreground">Perfect for intimate weddings</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -153,9 +196,18 @@ export default function ChurchesEn() {
               <a href="/en/contact" className="button button4">
                 CONTACT US
               </a>
-              <a href="/en/contact" className="button button4">
-                REQUEST INFORMATION
+              <a href="/en/weddings" className="button button4">
+                VIEW WEDDING SERVICES
               </a>
+            </div>
+            
+            {/* Internal Links */}
+            <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+              <a href="/en/weddings" className="text-brand-main hover:underline">Wedding Venue</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/en/baptism" className="text-brand-main hover:underline">Baptism Venue</a>
+              <span className="text-muted-foreground">•</span>
+              <a href="/en/venue" className="text-brand-main hover:underline">The Venue</a>
             </div>
           </div>
         </section>

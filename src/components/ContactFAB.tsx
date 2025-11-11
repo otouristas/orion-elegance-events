@@ -67,16 +67,22 @@ export const ContactFAB = () => {
           </div>
         )}
 
-        {/* Main FAB Button with Phone Icon - ALWAYS VISIBLE */}
+        {/* Main FAB Button - ALWAYS VISIBLE */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="relative flex items-center justify-center w-16 h-16 md:w-18 md:h-18 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 group z-[52]"
+          className="relative flex items-center justify-center gap-2 px-6 py-4 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group z-[52]"
           aria-label={isEnglish ? "Contact us" : "Επικοινωνήστε μαζί μας"}
         >
           {isOpen ? (
-            <X className="w-7 h-7 transition-transform group-hover:rotate-90 stroke-[2.5]" />
+            <>
+              <X className="w-5 h-5 transition-transform group-hover:rotate-90 stroke-[2.5]" />
+              <span className="font-bold text-sm">{isEnglish ? 'Close' : 'Κλείσιμο'}</span>
+            </>
           ) : (
-            <Phone className="w-7 h-7 transition-transform duration-300 group-hover:-translate-y-0.5 stroke-[2.5]" />
+            <>
+              <Phone className="w-5 h-5 transition-transform duration-300 stroke-[2.5]" />
+              <span className="font-bold text-sm">{isEnglish ? 'Contact us' : 'Επικοινωνία'}</span>
+            </>
           )}
           
           {/* Pulse animation - only when closed */}

@@ -140,6 +140,49 @@ export default function Ekklisies() {
           </div>
         </section>
 
+        {/* Church Detail Links */}
+        <section className="section-padding">
+          <div className="container-max">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <span className="text-gradient-brand">Εξερευνήστε τις Εκκλησίες</span>
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <a href="/el/ekklisies/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Άγιος Αλέξανδρος Δασκαλειό
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">3.8 km • 8'</p>
+                <p className="text-xs text-muted-foreground">Ιδανική για γάμους έως 170 άτομα</p>
+              </a>
+              
+              <a href="/el/ekklisies/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Προφήτης Ηλίας Θορικό
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">8.8 km • 11'</p>
+                <p className="text-xs text-muted-foreground">Εκπληκτική θέα στη θάλασσα</p>
+              </a>
+              
+              <a href="/el/ekklisies/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Άγιος Παντελεήμονας Κερατέα
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">8.6 km • 13'</p>
+                <p className="text-xs text-muted-foreground">Παραδοσιακή ρουστίκ εκκλησία</p>
+              </a>
+              
+              <a href="/el/ekklisies/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Παναγία Γκαρικά
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
+                <p className="text-xs text-muted-foreground">Ιδανική για μικρούς γάμους</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -159,17 +202,8 @@ export default function Ekklisies() {
               </a>
             </div>
             
-            {/* Internal Links to Church Pages */}
+            {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
-              <a href="/el/ekklisies/agios-alexandros-daskaleio" className="text-brand-main hover:underline">Άγιος Αλέξανδρος</a>
-              <span className="text-muted-foreground">•</span>
-              <a href="/el/ekklisies/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
-              <span className="text-muted-foreground">•</span>
-              <a href="/el/ekklisies/agios-panteleimonas-keratea" className="text-brand-main hover:underline">Άγιος Παντελεήμονας</a>
-              <span className="text-muted-foreground">•</span>
-              <a href="/el/ekklisies/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
-            </div>
-            <div className="mt-4 flex flex-wrap justify-center gap-3 text-sm">
               <a href="/el/ktima-gamou-athina" className="text-brand-main hover:underline">Κτήμα Γάμου Αθήνα</a>
               <span className="text-muted-foreground">•</span>
               <a href="/gamos" className="text-brand-main hover:underline">Γάμος</a>

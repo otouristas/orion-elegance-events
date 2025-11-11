@@ -60,8 +60,19 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
       ]
     },
     { label: 'Ο ΧΩΡΟΣ', labelEn: 'THE VENUE', href: '/o-horos', hrefEn: '/en/venue' },
-    { label: 'ΕΚΚΛΗΣΙΕΣ', labelEn: 'CHURCHES', href: '/ekklisies', hrefEn: '/en/churches' },
     { 
+      label: 'ΕΚΚΛΗΣΙΕΣ', 
+      labelEn: 'CHURCHES', 
+      href: '/ekklisies', 
+      hrefEn: '/en/churches',
+      submenu: [
+        { label: 'ΑΓΙΟΣ ΑΛΕΞΑΝΔΡΟΣ ΔΑΣΚΑΛΕΙΟ', labelEn: 'AGIOS ALEXANDROS DASKALEIO', href: '/el/ekklisies/agios-alexandros-daskaleio', hrefEn: '/en/churches/agios-alexandros-daskaleio' },
+        { label: 'ΠΡΟΦΗΤΗΣ ΗΛΙΑΣ ΘΟΡΙΚΟ', labelEn: 'PROFITIS ILIAS THORIKO', href: '/el/ekklisies/profitis-ilias-thoriko', hrefEn: '/en/churches/profitis-ilias-thoriko' },
+        { label: 'ΑΓΙΟΣ ΠΑΝΤΕΛΕΗΜΟΝΑΣ ΚΕΡΑΤΕΑ', labelEn: 'AGIOS PANTELEIMONAS KERATEA', href: '/el/ekklisies/agios-panteleimonas-keratea', hrefEn: '/en/churches/agios-panteleimonas-keratea' },
+        { label: 'ΠΑΝΑΓΙΑ ΓΚΑΡΙΚΑ', labelEn: 'PANAGIA GKARIKA', href: '/el/ekklisies/panagia-gkarika', hrefEn: '/en/churches/panagia-gkarika' }
+      ]
+    },
+    {
       label: 'ΥΠΗΡΕΣΙΕΣ', 
       labelEn: 'SERVICES',
       href: '/ypiresies',
