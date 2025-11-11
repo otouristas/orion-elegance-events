@@ -31,10 +31,11 @@ export const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-[50] bg-brand-main hover:bg-brand-main/90 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 group"
+      className="fixed bottom-24 right-6 z-[50] bg-brand-text hover:bg-brand-text/90 text-white p-4 rounded-full shadow-xl transition-all duration-300 hover:scale-110 group border-2 border-white/20"
       aria-label="Back to top"
+      title="Scroll to top"
     >
-      <ArrowUp className="w-6 h-6 transition-transform duration-300 group-hover:-translate-y-1" />
+      <ArrowUp className="w-6 h-6 transition-transform duration-300 group-hover:-translate-y-1 stroke-[2.5]" />
     </button>
   );
 };

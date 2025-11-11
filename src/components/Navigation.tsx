@@ -194,16 +194,25 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`lg:hidden z-[60] p-2 ${textColor}`}
+            className={`lg:hidden z-[60] p-2 ${textColor} hover:bg-muted/20 rounded-md transition-colors`}
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
-        {/* Mobile Menu - Slide Down Accordion */}
-        {isMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-20 bottom-0 bg-background z-[55] overflow-y-auto">
+        {/* Mobile Menu Overlay - Always render, control with classes */}
+        <div 
+          className={`lg:hidden fixed inset-0 top-20 bg-background/95 backdrop-blur-md z-[100] transition-all duration-300 ${
+            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
+          }`}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <div 
+            className="h-full overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="py-4">
               {navItems.map((item) => (
                 <div key={item.label} className="border-b border-border">
@@ -264,14 +273,14 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               {/* Mobile CTA */}
               <div className="px-6 pb-6">
                 <Link to={isEnglish ? "/en/contact" : "/contact"}>
-                  <Button className="w-full button button4 text-base py-6">
+                  <Button className="w-full button button4 text-base py-6" onClick={() => setIsMenuOpen(false)}>
                     {isEnglish ? 'REQUEST' : 'ΖΗΤΗΣΗ'}
                   </Button>
                 </Link>
               </div>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
