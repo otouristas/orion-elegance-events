@@ -202,15 +202,27 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           </button>
         </div>
 
-        {/* Mobile Menu Overlay - Always render, control with classes */}
+        {/* Mobile Menu Overlay - Fixed to viewport, always accessible */}
         <div 
-          className={`lg:hidden fixed inset-0 top-20 bg-background/95 backdrop-blur-md z-[100] transition-all duration-300 ${
+          className={`lg:hidden fixed inset-0 bg-background/98 backdrop-blur-md z-[100] transition-all duration-300 ${
             isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
           onClick={() => setIsMenuOpen(false)}
         >
+          {/* Close button at top */}
+          <div className="sticky top-0 bg-background/95 border-b border-border px-4 py-4 flex justify-between items-center z-10">
+            <span className="font-semibold text-lg">{isEnglish ? 'Menu' : 'Μενού'}</span>
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="p-2 hover:bg-muted rounded-lg transition-colors"
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
           <div 
-            className="h-full overflow-y-auto"
+            className="h-full overflow-y-auto pb-20"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="py-4">

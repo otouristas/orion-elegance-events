@@ -16,30 +16,39 @@ export const ContactFAB = () => {
   const viberUrl = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-[51] flex flex-col items-end gap-3">
+    <>
+      {/* Backdrop when open */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-black/20 z-[48]"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      <div className="fixed bottom-6 right-6 z-[51] flex flex-col items-end gap-3">
       {/* WhatsApp & Viber Options - Show when open */}
       {isOpen && (
-        <div className="flex flex-col gap-3 animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="flex flex-col gap-3 animate-in fade-in slide-in-from-bottom-2 duration-200 relative z-[52]">
           <a
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+            className="flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-5 py-3.5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group"
             aria-label={isEnglish ? "Contact us on WhatsApp" : "Επικοινωνήστε μαζί μας στο WhatsApp"}
           >
             <MessageCircle className="w-6 h-6" />
-            <span className="font-medium pr-2">WhatsApp</span>
+            <span className="font-semibold pr-2">WhatsApp</span>
           </a>
 
           <a
             href={viberUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-[#665CAC] hover:bg-[#59519A] text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+            className="flex items-center gap-3 bg-[#665CAC] hover:bg-[#59519A] text-white px-5 py-3.5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group"
             aria-label={isEnglish ? "Contact us on Viber" : "Επικοινωνήστε μαζί μας στο Viber"}
           >
             <MessageCircle className="w-6 h-6" />
-            <span className="font-medium pr-2">Viber</span>
+            <span className="font-semibold pr-2">Viber</span>
           </a>
         </div>
       )}
@@ -47,7 +56,7 @@ export const ContactFAB = () => {
       {/* Main FAB Button with Phone Icon */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative flex items-center justify-center w-16 h-16 md:w-18 md:h-18 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 group"
+        className="relative flex items-center justify-center w-16 h-16 md:w-18 md:h-18 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 group z-[52]"
         aria-label={isEnglish ? "Contact us" : "Επικοινωνήστε μαζί μας"}
       >
         {isOpen ? (
@@ -69,5 +78,6 @@ export const ContactFAB = () => {
         )}
       </button>
     </div>
+    </>
   );
 };
