@@ -1,18 +1,12 @@
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 import logoDark from '@/assets/logo-dark.png';
-
 export const Footer = () => {
-  return (
-    <footer className="bg-forest text-secondary-foreground">
+  return <footer className="bg-forest text-secondary-foreground">
       <div className="container-max py-16 px-4 md:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div>
-            <img 
-              src={logoDark} 
-              alt="Κτήμα Ωρίων" 
-              className="h-24 w-auto mb-6 filter brightness-0 invert"
-            />
+            <img src={logoDark} alt="Κτήμα Ωρίων" className="h-24 w-auto mb-6 filter brightness-0 invert" />
             <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
               Ένας υπέροχος καταπράσινος χώρος όπου η πολυτέλεια συναντά το φυσικό περιβάλλον. 
               Δημιουργούμε αξέχαστες αναμνήσεις για τις πιο ξεχωριστές στιγμές της ζωής σας.
@@ -84,12 +78,9 @@ export const Footer = () => {
               <span>για το Κτήμα Ωρίων</span>
             </div>
             
-            <div className="text-secondary-foreground/60 text-sm">
-              © 2024 Κτήμα Ωρίων. Όλα τα δικαιώματα κατοχυρωμένα.
-            </div>
+            <div className="text-secondary-foreground/60 text-sm">© 2025 Κτήμα Ωρίων. Όλα τα δικαιώματα κατοχυρωμένα.</div>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
