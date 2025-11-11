@@ -74,9 +74,9 @@ export const ContactFAB = () => {
           aria-label={isEnglish ? "Contact us" : "Επικοινωνήστε μαζί μας"}
         >
           {isOpen ? (
-            <X className="w-9 h-9 md:w-10 md:h-10 transition-transform group-hover:rotate-90 stroke-[3]" />
+            <X className="w-7 h-7 transition-transform group-hover:rotate-90 stroke-[2.5]" />
           ) : (
-            <Phone className="w-9 h-9 md:w-10 md:h-10 group-hover:scale-110 group-hover:rotate-12 transition-all stroke-[3]" />
+            <Phone className="w-7 h-7 transition-transform duration-300 group-hover:-translate-y-0.5 stroke-[2.5]" />
           )}
           
           {/* Pulse animation - only when closed */}
