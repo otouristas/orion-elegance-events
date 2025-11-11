@@ -202,27 +202,33 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           </button>
         </div>
 
-        {/* Mobile Menu Overlay - Fixed to viewport, always accessible */}
+        {/* Mobile Menu Overlay - FULL SCREEN, OPAQUE, MAXIMUM Z-INDEX */}
         <div 
-          className={`lg:hidden fixed inset-0 bg-background/98 backdrop-blur-md z-[100] transition-all duration-300 ${
+          className={`lg:hidden fixed inset-0 bg-background z-[9999] transition-all duration-300 ${
             isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
           }`}
           onClick={() => setIsMenuOpen(false)}
         >
-          {/* Close button at top */}
-          <div className="sticky top-0 bg-background/95 border-b border-border px-4 py-4 flex justify-between items-center z-10">
-            <span className="font-semibold text-lg">{isEnglish ? 'Menu' : 'Μενού'}</span>
+          {/* Header bar with close button */}
+          <div className="bg-brand-main text-white px-6 py-4 flex justify-between items-center border-b border-white/10">
+            <div className="flex items-center gap-3">
+              <Menu size={24} />
+              <span className="font-bold text-lg">{isEnglish ? 'MENU' : 'ΜΕΝΟΥ'}</span>
+            </div>
             <button
-              onClick={() => setIsMenuOpen(false)}
-              className="p-2 hover:bg-muted rounded-lg transition-colors"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsMenuOpen(false);
+              }}
+              className="p-2 hover:bg-white/10 rounded-lg transition-colors"
               aria-label="Close menu"
             >
-              <X size={24} />
+              <X size={28} strokeWidth={2.5} />
             </button>
           </div>
 
           <div 
-            className="h-full overflow-y-auto pb-20"
+            className="h-[calc(100vh-64px)] overflow-y-auto bg-background"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="py-4">
