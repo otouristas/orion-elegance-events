@@ -42,6 +42,12 @@ import Epikoinonia from "./pages/greek/Epikoinonia";
 import Gallery from "./pages/greek/Gallery";
 import DjMousiki from "./pages/greek/DjMousiki";
 
+// SEO Greek pages
+import KtimaGamouAthina from "./pages/greek/seo/KtimaGamouAthina";
+import KtimataVaptisisAthina from "./pages/greek/seo/KtimataVaptisisAthina";
+import EkklisiakiDiplaStThalassa from "./pages/greek/seo/EkklisiakiDiplaStThalassa";
+import AgiosAlexandrosDaskaleio from "./pages/greek/seo/churches/AgiosAlexandrosDaskaleio";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -89,6 +95,12 @@ const App = () => (
           <Route path="/contact" element={<Epikoinonia />} />
           <Route path="/epikoinonia" element={<Epikoinonia />} />
           <Route path="/gallery" element={<Gallery />} />
+          
+          {/* SEO Greek Routes */}
+          <Route path="/el/ktima-gamou-athina" element={<KtimaGamouAthina />} />
+          <Route path="/el/ktimata-vaptisis-athina" element={<KtimataVaptisisAthina />} />
+          <Route path="/el/ekklisiaki-dipla-sti-thalassa" element={<EkklisiakiDiplaStThalassa />} />
+          <Route path="/el/ekklisies/agios-alexandros-daskaleio" element={<AgiosAlexandrosDaskaleio />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -260,7 +260,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="h-full overflow-y-auto">
+          <div className="h-full overflow-y-auto bg-background">
             <div className="container-max py-4 space-y-0">
               {navItems.map((item) => (
                 <div key={item.label}>
@@ -268,7 +268,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                     <div className="border-b border-border">
                       <button
                         onClick={() => handleDropdownToggle(item.label)}
-                        className="w-full flex items-center justify-between px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors bg-background"
+                        className="w-full flex items-center justify-between px-5 py-5 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] hover:bg-muted/30 transition-colors bg-background min-h-[60px]"
                       >
                         <span>{isEnglish ? item.labelEn : item.label}</span>
                         <ChevronDown
@@ -278,12 +278,12 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                         />
                       </button>
                       {openDropdown === item.label && (
-                        <div className="bg-muted/30">
+                        <div className="bg-muted/50 border-t border-border/50">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.label}
                               to={isEnglish ? (subItem.hrefEn || subItem.href) : subItem.href}
-                              className="block px-10 py-3.5 text-sm text-foreground hover:text-[hsl(var(--brand-main))] hover:bg-[hsl(var(--brand-main))]/10 transition-all font-medium"
+                              className="block px-10 py-4 text-sm text-foreground hover:text-[hsl(var(--brand-main))] hover:bg-[hsl(var(--brand-main))]/10 transition-all font-medium min-h-[56px] flex items-center"
                               onClick={closeMenu}
                             >
                               {isEnglish ? subItem.labelEn : subItem.label}
@@ -295,7 +295,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                   ) : (
                     <Link
                       to={isEnglish ? (item.hrefEn || item.href) : item.href}
-                      className="block px-5 py-4 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] transition-colors border-b border-border bg-background"
+                      className="block px-5 py-5 text-foreground font-semibold text-base hover:text-[hsl(var(--brand-main))] hover:bg-muted/30 transition-colors border-b border-border bg-background min-h-[60px] flex items-center"
                       onClick={closeMenu}
                     >
                       {isEnglish ? item.labelEn : item.label}
@@ -305,12 +305,12 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               ))}
 
               {/* Mobile Language Switcher */}
-              <div className="pt-6 pb-3 px-5">
-                <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-muted/30 border border-border/50">
+              <div className="pt-6 pb-3 px-5 bg-background">
+                <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-muted/50 border border-border/50">
                   <Globe className="w-4 h-4 text-foreground" />
                   <button
                     onClick={handleLanguageSwitch}
-                    className={`px-5 py-2 text-sm font-semibold rounded-md transition-all duration-200 ${
+                    className={`px-5 py-2.5 text-sm font-semibold rounded-md transition-all duration-200 ${
                       !isEnglish 
                         ? 'bg-[hsl(var(--brand-main))] text-white shadow-md' 
                         : 'bg-background text-muted-foreground border border-border hover:text-foreground'
@@ -320,7 +320,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                   </button>
                   <button
                     onClick={handleLanguageSwitch}
-                    className={`px-5 py-2 text-sm font-semibold rounded-md transition-all duration-200 ${
+                    className={`px-5 py-2.5 text-sm font-semibold rounded-md transition-all duration-200 ${
                       isEnglish 
                         ? 'bg-[hsl(var(--brand-main))] text-white shadow-md' 
                         : 'bg-background text-muted-foreground border border-border hover:text-foreground'
@@ -332,9 +332,9 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
               </div>
 
               {/* Mobile CTA Button */}
-              <div className="px-5 pt-3 pb-6">
+              <div className="px-5 pt-3 pb-6 bg-background">
                 <Link to={isEnglish ? "/en/contact" : "/contact"} className="block">
-                  <Button className="w-full button button4 text-base py-5">
+                  <Button className="w-full button button4 text-base py-6">
                     {isEnglish ? 'REQUEST' : 'ΖΗΤΗΣΗ'}
                   </Button>
                 </Link>
