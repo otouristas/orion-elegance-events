@@ -1,20 +1,9 @@
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/Footer';
-import { useState, useEffect } from 'react';
+import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Heart, Users, Calendar, Star } from 'lucide-react';
 
 const WeddingPlannerEn = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const benefits = [
     "Personalized design according to your needs and style",
@@ -24,8 +13,14 @@ const WeddingPlannerEn = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navigation isScrolled={isScrolled} />
+    <Layout>
+      <SEO 
+        title="Wedding Planner Ktima Orion Keratea | Event Planner Athens Greece"
+        description="Professional wedding planning services at Ktima Orion. Complete event coordination, personalized design, stress-free wedding organization. Contact us today!"
+        canonical="/en/wedding-planner"
+        keywords="wedding planner athens, event planner greece, wedding coordinator keratea, professional wedding services, destination wedding planner"
+        lang="en"
+      />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
@@ -119,9 +114,7 @@ const WeddingPlannerEn = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

@@ -1,20 +1,9 @@
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/Footer';
-import { useState, useEffect } from 'react';
+import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Heart, Users, Calendar, Star } from 'lucide-react';
 
 const DiorganotisGamon = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const benefits = [
     "Προσωποποιημένος σχεδιασμός σύμφωνα με τις ανάγκες και το στυλ σας",
@@ -71,8 +60,13 @@ const DiorganotisGamon = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navigation isScrolled={isScrolled} />
+    <Layout>
+      <SEO 
+        title="Wedding Planner Κτήμα Ωρίων Κερατέα | Διοργανωτής Γάμων Αττική"
+        description="Επαγγελματική διοργάνωση γάμου στο Κτήμα Ωρίων. Ολοκληρωμένες υπηρεσίες Wedding Planner, προσωποποιημένος σχεδιασμός. Ζήστε τον γάμο σας ξέγνοιαστα!"
+        canonical="/diorganotis-gamon"
+        keywords="wedding planner κερατέα, διοργανωτής γάμων, οργάνωση γάμου αττική, υπηρεσίες γάμου, event planner athens"
+      />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
@@ -167,9 +161,7 @@ const DiorganotisGamon = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

@@ -1,20 +1,9 @@
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/Footer';
-import { useState, useEffect } from 'react';
+import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Camera, Phone, Mail, Globe, Instagram, Facebook } from 'lucide-react';
 
 const PhotographerEn = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const contactInfo = [
     { 
@@ -50,8 +39,14 @@ const PhotographerEn = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navigation isScrolled={isScrolled} />
+    <Layout>
+      <SEO 
+        title="Wedding Photographer Ktima Orion | darva photography Athens Greece"
+        description="Professional wedding & baptism photography at Ktima Orion by darva photography. 20+ years experience, stunning photos & video. Book your photographer today!"
+        canonical="/en/photographer"
+        keywords="wedding photographer athens, darva photography, baptism photography greece, professional photography, destination wedding photographer"
+        lang="en"
+      />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
@@ -142,9 +137,7 @@ const PhotographerEn = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

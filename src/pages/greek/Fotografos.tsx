@@ -1,20 +1,9 @@
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/Footer';
-import { useState, useEffect } from 'react';
+import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Camera, Phone, Mail, Globe, Instagram, Facebook } from 'lucide-react';
 
 const Fotografos = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const contactInfo = [
     { 
@@ -93,8 +82,13 @@ const Fotografos = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <Navigation isScrolled={isScrolled} />
+    <Layout>
+      <SEO 
+        title="Φωτογράφος Γάμου Κτήμα Ωρίων | darva photography Κερατέα"
+        description="Φωτογράφηση γάμου & βάπτισης στο Κτήμα Ωρίων με την darva photography. 20+ χρόνια εμπειρίας, επαγγελματική φωτογραφία & βίντεο. Επικοινωνήστε μαζί μας!"
+        canonical="/fotografos"
+        keywords="φωτογράφος γάμου κερατέα, darva photography, φωτογράφηση βάπτισης, επαγγελματική φωτογραφία, wedding photographer athens"
+      />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
@@ -185,9 +179,7 @@ const Fotografos = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
