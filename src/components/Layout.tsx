@@ -3,6 +3,7 @@ import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { BackToTop } from '@/components/BackToTop';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
+import { ViberButton } from '@/components/ViberButton';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -27,6 +28,7 @@ export const Layout = ({ children, isTransparent = false }: LayoutProps) => {
       <main>{children}</main>
       <Footer />
       <BackToTop />
+      <ViberButton />
       <WhatsAppButton />
     </div>
   );

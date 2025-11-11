@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { SEO } from '@/components/SEO';
 import { Navigation } from '@/components/Navigation';
-import { Hero } from '@/components/Hero';
-import { Description } from '@/components/Description';
-import { Features } from '@/components/Features';
+import { HeroEn } from '@/components/english/HeroEn';
+import { DescriptionEn } from '@/components/english/DescriptionEn';
+import { FeaturesEn } from '@/components/english/FeaturesEn';
 import { HomeGallery } from '@/components/HomeGallery';
-import { Services } from '@/components/Services';
-import { About } from '@/components/About';
-import { Churches } from '@/components/Churches';
-import { Testimonials } from '@/components/Testimonials';
-import { Contact } from '@/components/Contact';
+import { ServicesEn } from '@/components/english/ServicesEn';
+import { AboutEn } from '@/components/english/AboutEn';
+import { ChurchesEn } from '@/components/english/ChurchesEn';
+import { TestimonialsEn } from '@/components/english/TestimonialsEn';
+import { ContactEn } from '@/components/english/ContactEn';
 import { Footer } from '@/components/Footer';
 import { Partners } from '@/components/Partners';
 
@@ -35,16 +35,16 @@ const IndexEn = () => {
         lang="en"
       />
       <Navigation isScrolled={isScrolled} isTransparent={true} />
-      <Hero />
-      <Description />
-      <Features />
+      <HeroEn />
+      <DescriptionEn />
+      <FeaturesEn />
       <HomeGallery />
-      <Services />
-      <About />
-      <Churches />
-      <Testimonials />
+      <ServicesEn />
+      <AboutEn />
+      <ChurchesEn />
+      <TestimonialsEn />
       <Partners />
-      <Contact />
+      <ContactEn />
       <Footer />
     </div>
   );

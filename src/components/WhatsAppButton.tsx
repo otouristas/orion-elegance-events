@@ -5,7 +5,7 @@ export const WhatsAppButton = () => {
   const location = useLocation();
   const isEnglish = location.pathname.startsWith('/en');
   
-  const phoneNumber = '302299068812'; // Format: country code + phone without +
+  const phoneNumber = '306981889560'; // Format: country code + phone without +
   const message = isEnglish 
     ? 'Hello! I would like information about Ktima Orion...'
     : 'Γεια σας! Θα ήθελα πληροφορίες για το Κτήμα Ωρίων...';
