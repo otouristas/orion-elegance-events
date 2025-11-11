@@ -12,6 +12,8 @@ import { TestimonialsEn } from '@/components/english/TestimonialsEn';
 import { ContactEn } from '@/components/english/ContactEn';
 import { FooterEn } from '@/components/english/FooterEn';
 import { PartnersEn } from '@/components/english/PartnersEn';
+import { BackToTop } from '@/components/BackToTop';
+import { ContactFAB } from '@/components/ContactFAB';
 
 const IndexEn = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,6 +48,8 @@ const IndexEn = () => {
       <PartnersEn />
       <ContactEn />
       <FooterEn />
+      <BackToTop />
+      <ContactFAB />
     </div>
   );
 };

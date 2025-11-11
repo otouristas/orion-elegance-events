@@ -12,6 +12,8 @@ import { Testimonials } from '@/components/Testimonials';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { Partners } from '@/components/Partners';
+import { BackToTop } from '@/components/BackToTop';
+import { ContactFAB } from '@/components/ContactFAB';
 
 const Index = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,6 +47,8 @@ const Index = () => {
       <Partners />
       <Contact />
       <Footer />
+      <BackToTop />
+      <ContactFAB />
     </div>
   );
 };

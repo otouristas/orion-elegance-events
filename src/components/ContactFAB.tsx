@@ -67,23 +67,16 @@ export const ContactFAB = () => {
           </div>
         )}
 
-        {/* Main FAB Button with Phone Icon */}
+        {/* Main FAB Button with Phone Icon - ALWAYS VISIBLE */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="relative flex items-center justify-center w-16 h-16 md:w-18 md:h-18 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 group z-[52]"
           aria-label={isEnglish ? "Contact us" : "Επικοινωνήστε μαζί μας"}
         >
           {isOpen ? (
-            <X className="w-8 h-8 md:w-9 md:h-9 transition-transform group-hover:rotate-90 stroke-[2.5]" />
+            <X className="w-9 h-9 md:w-10 md:h-10 transition-transform group-hover:rotate-90 stroke-[3]" />
           ) : (
-            <Phone className="w-8 h-8 md:w-9 md:h-9 group-hover:scale-110 transition-transform stroke-[2.5]" />
-          )}
-          
-          {/* Tooltip - only show when closed */}
-          {!isOpen && (
-            <span className="absolute right-full mr-3 px-4 py-2.5 bg-foreground text-background text-sm font-bold rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none shadow-xl">
-              {isEnglish ? '📞 Contact Us' : '📞 Επικοινωνία'}
-            </span>
+            <Phone className="w-9 h-9 md:w-10 md:h-10 group-hover:scale-110 group-hover:rotate-12 transition-all stroke-[3]" />
           )}
           
           {/* Pulse animation - only when closed */}
