@@ -43,8 +43,8 @@ export default function ServicesEn() {
   ];
 
   return (
-    <Layout>
-      <SEO 
+    <Layout lang="en">
+      <SEO
         title="Event Services at Ktima Orion | Catering, Decor, Technical Support"
         description="Full-service venue Keratea: Catering, decoration, lighting, sound, coordination. Wedding & baptism packages available. Contact us!"
         canonical="/en/services"

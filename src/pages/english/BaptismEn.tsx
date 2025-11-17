@@ -85,8 +85,8 @@ export default function BaptismEn() {
   ];
 
   return (
-    <Layout>
-      <SEO 
+    <Layout lang="en">
+      <SEO
         title="Baptism at Ktima Orion – Baptism Venue Keratea Athens | Christening Party"
         description="Baptism reception Ktima Orion Keratea. Sea view, playground, kids menu, free parking. Near seaside chapels. Book your tour!"
         canonical="/en/baptism"
@@ -135,7 +135,7 @@ export default function BaptismEn() {
               <span className="text-gradient-brand">Why Choose Ktima Orion?</span>
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {baptismFeatures.map((feature, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">

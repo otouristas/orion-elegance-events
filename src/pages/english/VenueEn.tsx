@@ -116,8 +116,8 @@ export default function VenueEn() {
   ];
 
   return (
-    <Layout>
-      <SEO 
+    <Layout lang="en">
+      <SEO
         title="The Venue – Ktima Orion Keratea | Event Venue Athens"
         description="Wedding & event venue Keratea: 200+ parking, A/C hall, outdoor pavilion, sea view. Near Athens, close to chapels. Book your tour!"
         canonical="/en/venue"

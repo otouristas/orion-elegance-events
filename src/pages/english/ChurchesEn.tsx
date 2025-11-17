@@ -62,8 +62,8 @@ export default function ChurchesEn() {
   ];
 
   return (
-    <Layout>
-      <SEO 
+    <Layout lang="en">
+      <SEO
         title="Churches near Ktima Orion for Wedding & Baptism | Keratea Athens"
         description="Seaside churches Keratea: Agios Alexandros, Panagia Garika, Profitis Ilias. 5-15' from Ktima Orion. Ceremony + reception same day!"
         canonical="/en/churches"
