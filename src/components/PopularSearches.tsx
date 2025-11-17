@@ -1,0 +1,32 @@
+import { Link } from 'react-router-dom';
+
+interface SearchLink {
+  label: string;
+  href: string;
+}
+
+interface PopularSearchesProps {
+  links: SearchLink[];
+}
+
+export const PopularSearches = ({ links }: PopularSearchesProps) => {
+  return (
+    <div className="section-padding border-t border-border/50">
+      <div className="container-max">
+        <div className="flex flex-wrap justify-center gap-4 text-sm">
+          {links.map((link, index) => (
+            <div key={link.href} className="flex items-center gap-4">
+              {index > 0 && <span className="text-muted-foreground">•</span>}
+              <Link 
+                to={link.href} 
+                className="text-brand-main hover:underline transition-all"
+              >
+                {link.label}
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};

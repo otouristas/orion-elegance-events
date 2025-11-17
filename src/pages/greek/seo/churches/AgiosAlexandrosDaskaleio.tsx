@@ -81,7 +81,22 @@ export default function AgiosAlexandrosDaskaleio() {
                 </CardContent>
               </Card>
 
-              <div className="text-center">
+              {/* Popular Searches */}
+              <div className="mt-12 pt-8 border-t border-border/50">
+                <div className="flex flex-wrap justify-center gap-4 text-sm">
+                  <a href="/el/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
+                  <span className="text-muted-foreground">•</span>
+                  <a href="/el/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
+                  <span className="text-muted-foreground">•</span>
+                  <a href="/gamos" className="text-brand-main hover:underline">Γάμος</a>
+                  <span className="text-muted-foreground">•</span>
+                  <a href="/vaptisi" className="text-brand-main hover:underline">Βάπτιση</a>
+                  <span className="text-muted-foreground">•</span>
+                  <a href="/o-horos" className="text-brand-main hover:underline">Δείτε το Κτήμα</a>
+                </div>
+              </div>
+
+              <div className="text-center mt-8">
                 <Link to="/el/ktima-gamou-athina">
                   <button className="button button4 mb-4">
                     Δείτε το Κτήμα Ωρίων
