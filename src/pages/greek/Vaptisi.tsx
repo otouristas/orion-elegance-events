@@ -203,6 +203,12 @@ export default function Vaptisi() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignals />
+
+        {/* FAQs */}
+        <FAQ items={baptismFAQs} title="Συχνές Ερωτήσεις για Βάπτιση" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -215,12 +221,12 @@ export default function Vaptisi() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact">
                 <button className="button button4">
-                  ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                  ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
                 </button>
               </a>
               <a href="/el/ktimata-vaptisis-athina">
                 <button className="button button4">
-                  ΠΕΡΙΣΣΟΤΕΡΑ ΓΙΑ ΒΑΠΤΙΣΗ
+                  ΔΕΙΤΕ ΔΙΑΘΕΣΙΜΟΤΗΤΑ
                 </button>
               </a>
             </div>
