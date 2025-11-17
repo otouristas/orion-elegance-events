@@ -3,6 +3,7 @@ import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Heart, Users, MapPin, Car, Home, Church, Camera, Star, CheckCircle2, Phone } from 'lucide-react';
+import { PopularSearches } from '@/components/PopularSearches';
 export default function KtimaGamouAthina() {
   const features = [{
     icon: MapPin,
@@ -209,6 +210,17 @@ export default function KtimaGamouAthina() {
           </div>
         </section>
       </div>
+
+      {/* Popular Searches */}
+      <PopularSearches 
+        links={[
+          { label: "Athens Riviera", href: "/el/ktima-gamou-athens-riviera" },
+          { label: "Χώρος Δεξιώσεων", href: "/o-horos" },
+          { label: "Γάμος", href: "/gamos" },
+          { label: "Εκκλησίες", href: "/ekklisies" },
+          { label: "Φωτογράφος", href: "/fotografos" }
+        ]}
+      />
 
       {/* FAQ Schema */}
       <script type="application/ld+json">

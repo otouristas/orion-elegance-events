@@ -4,6 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPin, Phone, Mail } from 'lucide-react';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
+import { PopularSearches } from '@/components/PopularSearches';
+import { Link } from 'react-router-dom';
 
 // Import images from all folders
 // Home images
@@ -146,13 +148,13 @@ export default function OHoros() {
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
                 Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως την λάμψη της πολυτέλειας 
-                σε απόλυτη αρμονία με το φυσικό περιβάλλον. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική οδό, 
+                σε απόλυτη αρμονία με το φυσικό περιβάλλον. Ιδανικό για <Link to="/gamos" className="text-brand-main hover:underline">γάμους</Link>, <Link to="/vaptisi" className="text-brand-main hover:underline">βαπτίσεις</Link> και εταιρικές εκδηλώσεις. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική οδό, 
                 μπορείτε να απολαύσετε τις ξεχωριστές στιγμές της ζωής σας.
               </p>
               
               <p>
                 Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται την θερμή υποδοχή 
-                και την απόλυτη φιλοξενία των καλεσμένων σας. Βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια πάνω στην θάλασσα 
+                και την απόλυτη φιλοξενία των καλεσμένων σας. Βρισκόμαστε πολύ κοντά σε <Link to="/ekklisies" className="text-brand-main hover:underline">γραφικά εκκλησάκια</Link> πάνω στην θάλασσα 
                 για την τέλεση του μυστηρίου.
               </p>
             </div>
@@ -299,6 +301,17 @@ export default function OHoros() {
 
         {/* FAQ Section */}
         <FAQ items={venueFAQs} title="Συχνές Ερωτήσεις για τον Χώρο" />
+
+        {/* Popular Searches */}
+        <PopularSearches 
+          links={[
+            { label: "Γάμος", href: "/gamos" },
+            { label: "Βάπτιση", href: "/vaptisi" },
+            { label: "Εκκλησίες", href: "/ekklisies" },
+            { label: "Υπηρεσίες", href: "/ypiresies" },
+            { label: "Φωτογράφος", href: "/fotografos" }
+          ]}
+        />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
