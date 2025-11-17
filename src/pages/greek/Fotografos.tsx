@@ -9,8 +9,8 @@ const Fotografos = () => {
     { 
       icon: Phone, 
       label: "Κινητό", 
-      value: "+30 697 725 3823",
-      href: "tel:+306977253823"
+      value: "+30 697 827 4657",
+      href: "tel:+306978274657"
     },
     { 
       icon: Mail, 
@@ -140,7 +140,7 @@ const Fotografos = () => {
                     ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ
                   </h3>
                   <p className="text-lg text-brand-main font-medium">
-                    Υπεύθυνος Επικοινωνίας: Δήμητρα Αρβανίτη
+                    Υπεύθυνος Επικοινωνίας: Αρτέμης Ξένια
                   </p>
                 </div>
 

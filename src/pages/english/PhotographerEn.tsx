@@ -9,8 +9,8 @@ const PhotographerEn = () => {
     { 
       icon: Phone, 
       label: "Mobile", 
-      value: "+30 697 725 3823",
-      href: "tel:+306977253823"
+      value: "+30 697 827 4657",
+      href: "tel:+306978274657"
     },
     { 
       icon: Mail, 
@@ -98,7 +98,7 @@ const PhotographerEn = () => {
                     CONTACT INFORMATION
                   </h3>
                   <p className="text-lg text-brand-main font-medium">
-                    Contact Person: Dimitra Arvaniti
+                    Contact Person: Artemis Xenia
                   </p>
                 </div>
 
