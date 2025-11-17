@@ -5,6 +5,8 @@ import { MapPin, Clock, Church } from 'lucide-react';
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
+import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
+import { Link } from 'react-router-dom';
 
 export default function ChurchesEn() {
   const churches = [

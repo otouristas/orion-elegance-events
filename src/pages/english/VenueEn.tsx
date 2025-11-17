@@ -4,6 +4,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPin, Phone, Mail } from 'lucide-react';
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
+import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
+import { Link } from 'react-router-dom';
 
 // Import images from all folders
 import home1 from '@/assets/home/DSC_7588.JPG';

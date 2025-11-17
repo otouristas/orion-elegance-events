@@ -2,6 +2,8 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { MapPin, Camera, Heart, Sunset, Building2, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { PopularSearches } from '@/components/PopularSearches';
+import { Link } from 'react-router-dom';
 
 export default function KtimaGamouAthensRiviera() {
   const faqs = [

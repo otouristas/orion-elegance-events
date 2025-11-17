@@ -5,6 +5,8 @@ import { MapPin, Clock, Church } from 'lucide-react';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
 import { RelatedServices } from '@/components/RelatedServices';
+import { PopularSearches } from '@/components/PopularSearches';
+import { Link } from 'react-router-dom';
 
 export default function Ekklisies() {
   const churches = [

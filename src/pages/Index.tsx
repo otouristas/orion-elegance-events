@@ -16,6 +16,7 @@ import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { FAQ } from '@/components/FAQ';
 import { NearbyChurches } from '@/components/NearbyChurches';
+import { PopularSearches } from '@/components/PopularSearches';
 import { CookieConsent } from '@/components/CookieConsent';
 
 const Index = () => {
