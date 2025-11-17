@@ -161,14 +161,3 @@ export default function ServicesEn() {
     </Layout>
   );
 }
-              </button>
-              <button className="button button4">
-                CONTACT
-              </button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </Layout>
-  );
-}

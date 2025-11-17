@@ -2,6 +2,8 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Church } from 'lucide-react';
+import { FAQEn } from '@/components/english/FAQEn';
+import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 
 export default function ChurchesEn() {
   const churches = [
@@ -47,6 +49,15 @@ export default function ChurchesEn() {
       time: "12'",
       icon: Church
     }
+  ];
+
+  const churchFAQs = [
+    { question: "How far are the churches from Ktima Orion?", answer: "The churches are 3-15 minutes drive from Ktima Orion. The closest are Panagia Gkarika (3.1 km, 6') and Agios Alexandros Daskaleio (3.8 km, 8')." },
+    { question: "Which churches are by the sea?", answer: "Profitis Ilias Thoriko and Agios Panteleimonas Keratea offer stunning sea views and are ideal for seaside ceremonies." },
+    { question: "Can I have both the ceremony and reception on the same day?", answer: "Absolutely! All churches are a short distance away, allowing you to complete the ceremony and move to Ktima Orion for the reception within 10-15 minutes." },
+    { question: "Which church is best for small weddings?", answer: "Panagia Gkarika is ideal for small, intimate weddings. Agios Alexandros Daskaleio is larger and suitable for weddings up to 170 guests." },
+    { question: "Do you provide directions to the churches?", answer: "Yes, we provide detailed directions to all churches and can help you coordinate the ceremony and reception." },
+    { question: "Do I need to book the church myself?", answer: "Usually yes, but we can provide you with all the necessary contact information and help you with coordination." }
   ];
 
   return (
@@ -183,18 +194,24 @@ export default function ChurchesEn() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignalsEn />
+
+        {/* FAQ Section */}
+        <FAQEn items={churchFAQs} title="Frequently Asked Questions About Churches" />
+
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Plan Your Perfect Wedding or Baptism
+              Combine Ceremony & Reception
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Choose the church that suits you and contact us to organize your wonderful reception at Ktima Orion.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/en/contact" className="button button4">
-                CONTACT US
+                BOOK FREE TOUR
               </a>
               <a href="/en/weddings" className="button button4">
                 VIEW WEDDING SERVICES

@@ -166,14 +166,3 @@ export default function Ypiresies() {
     </Layout>
   );
 }
-              </button>
-              <button className="button button4">
-                ΕΠΙΚΟΙΝΩΝΙΑ
-              </button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </Layout>
-  );
-}

@@ -2,6 +2,8 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPin, Phone, Mail } from 'lucide-react';
+import { FAQEn } from '@/components/english/FAQEn';
+import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 
 // Import images from all folders
 import home1 from '@/assets/home/DSC_7588.JPG';
@@ -102,6 +104,15 @@ export default function VenueEn() {
       count: "300+",
       icon: Camera
     }
+  ];
+
+  const venueFAQs = [
+    { question: "Where is Ktima Orion located?", answer: "Ktima Orion is located in Keratea, Attica, with easy access from Attiki Odos. The venue offers a beautiful natural environment close to Athens." },
+    { question: "What is the capacity of the venue?", answer: "The venue can accommodate large events with extensive parking for over 100 vehicles. We offer both indoor air-conditioned spaces and outdoor areas." },
+    { question: "Is parking available?", answer: "Yes, we have a huge free parking area with over 100 spaces for all your guests." },
+    { question: "Do you have both indoor and outdoor spaces?", answer: "Yes, we offer a fully air-conditioned indoor hall and a magical semi-outdoor pavilion, suitable for all seasons and weather conditions." },
+    { question: "Can we visit the venue before booking?", answer: "Absolutely! We encourage couples to visit Ktima Orion and see the magical environment that will host their special event. Contact us to schedule a free tour." },
+    { question: "Are you close to churches?", answer: "Yes, we are very close to several picturesque seaside chapels (5-15 minutes away), perfect for wedding and baptism ceremonies." }
   ];
 
   return (
@@ -235,6 +246,12 @@ export default function VenueEn() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignalsEn />
+
+        {/* FAQ Section */}
+        <FAQEn items={venueFAQs} title="Frequently Asked Questions About the Venue" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -246,12 +263,12 @@ export default function VenueEn() {
               the magical environment that will host your event.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <button className="button button4">
-                BOOK APPOINTMENT
-              </button>
-              <button className="button button4">
-                CONTACT
-              </button>
+              <a href="/en/contact" className="button button4">
+                BOOK FREE TOUR
+              </a>
+              <a href="/en/weddings" className="button button4">
+                VIEW SERVICES
+              </a>
             </div>
             
             {/* Contact Info */}

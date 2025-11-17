@@ -2,6 +2,8 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Church } from 'lucide-react';
+import { FAQ } from '@/components/FAQ';
+import { TrustSignals } from '@/components/TrustSignals';
 
 export default function Ekklisies() {
   const churches = [
@@ -47,6 +49,15 @@ export default function Ekklisies() {
       time: "12'",
       icon: Church
     }
+  ];
+
+  const churchFAQs = [
+    { question: "Πόσο μακριά είναι οι εκκλησίες από το Κτήμα Ωρίων;", answer: "Οι εκκλησίες απέχουν από 3-15 λεπτά οδικώς από το Κτήμα Ωρίων. Η πλησιέστερη είναι η Παναγία Γκαρικά (3.1 km, 6') και ο Άγιος Αλέξανδρος Δασκαλειό (3.8 km, 8')." },
+    { question: "Ποιες εκκλησίες είναι δίπλα στη θάλασσα;", answer: "Ο Προφήτης Ηλίας Θορικό και ο Άγιος Παντελεήμονας Κερατέα προσφέρουν εκπληκτική θέα στη θάλασσα και είναι ιδανικές για παραθαλάσσιες τελετές." },
+    { question: "Μπορώ να κάνω τόσο τη τελετή όσο και τη δεξίωση την ίδια μέρα;", answer: "Απολύτως! Όλες οι εκκλησίες είναι σε μικρή απόσταση, επιτρέποντάς σας να ολοκληρώσετε την τελετή και να μεταβείτε στο Κτήμα Ωρίων για τη δεξίωση εντός 10-15 λεπτών." },
+    { question: "Ποια εκκλησία είναι καλύτερη για μικρούς γάμους;", answer: "Η Παναγία Γκαρικά είναι ιδανική για μικρούς, ιντιμ γάμους. Ο Άγιος Αλέξανδρος Δασκαλειό είναι μεγαλύτερος και κατάλληλος για γάμους έως 170 άτομα." },
+    { question: "Παρέχετε οδηγίες για τις εκκλησίες;", answer: "Ναι, παρέχουμε λεπτομερείς οδηγίες για όλες τις εκκλησίες και μπορούμε να σας βοηθήσουμε να συντονίσετε την τελετή και τη δεξίωση." },
+    { question: "Χρειάζεται να κλείσω την εκκλησία μόνος μου;", answer: "Συνήθως ναι, αλλά μπορούμε να σας παράσχουμε όλες τις απαραίτητες πληροφορίες επικοινωνίας και να σας βοηθήσουμε με το συντονισμό." }
   ];
 
   return (
@@ -183,11 +194,17 @@ export default function Ekklisies() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignals />
+
+        {/* FAQ Section */}
+        <FAQ items={churchFAQs} title="Συχνές Ερωτήσεις για Εκκλησίες" />
+
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Σχεδιάστε το Τέλειο Γάμο ή Βάπτιση
+              Συνδυάστε Τελετή & Δεξίωση
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Επιλέξτε την εκκλησία που σας ταιριάζει και επικοινωνήστε μαζί μας για να οργανώσουμε 
@@ -195,10 +212,10 @@ export default function Ekklisies() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact" className="button button4">
-                ΕΠΙΚΟΙΝΩΝΙΑ
+                ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
               </a>
-              <a href="/el/ekklisiaki-dipla-sti-thalassa" className="button button4">
-                ΕΚΚΛΗΣΑΚΙ ΔΙΠΛΑ ΣΤΗ ΘΑΛΑΣΣΑ
+              <a href="/gamos" className="button button4">
+                ΔΕΙΤΕ ΥΠΗΡΕΣΙΕΣ ΓΑΜΟΥ
               </a>
             </div>
             
