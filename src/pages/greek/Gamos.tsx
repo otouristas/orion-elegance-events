@@ -215,6 +215,12 @@ export default function Gamos() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignals />
+
+        {/* FAQs */}
+        <FAQ items={weddingFAQs} title="Συχνές Ερωτήσεις για Γάμο" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -227,7 +233,7 @@ export default function Gamos() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact">
                 <button className="button button4">
-                  ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                  ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
                 </button>
               </a>
               <a href="/el/ekklisiaki-dipla-sti-thalassa">
@@ -247,7 +253,7 @@ export default function Gamos() {
               <span className="text-muted-foreground">•</span>
               <a href="/fotografos" className="text-brand-main hover:underline">Φωτογράφος</a>
               <span className="text-muted-foreground">•</span>
-              <a href="/diorganotis-gamon" className="text-brand-main hover:underline">Wedding Planner</a>
+              <a href="/request" className="text-brand-main hover:underline">Αίτημα Πληροφοριών</a>
             </div>
           </div>
         </section>
