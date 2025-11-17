@@ -64,7 +64,7 @@ export default function ChurchesEn() {
     <Layout>
       <SEO 
         title="Churches near Ktima Orion for Wedding & Baptism | Keratea Athens"
-        description="Find beautiful chapels near Ktima Orion: Agios Alexandros Daskalio, Panagia Garika, Profitis Ilias Perigiali – all within 5-15' distance in Keratea."
+        description="Seaside churches Keratea: Agios Alexandros, Panagia Garika, Profitis Ilias. 5-15' from Ktima Orion. Ceremony + reception same day!"
         canonical="/en/churches"
         keywords="churches keratea, wedding church, baptism church, agios alexandros, panagia garika, chapels attica greece"
         lang="en"
