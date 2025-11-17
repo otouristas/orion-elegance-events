@@ -3,6 +3,8 @@ import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Baby, Star, Sparkles } from 'lucide-react';
+import { FAQEn } from '@/components/english/FAQEn';
+import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 
 // Import baptism photos
 import baptism1 from '@/assets/vaftisi/DSC_7806.JPG';
@@ -65,6 +67,19 @@ export default function BaptismEn() {
       title: "Decoration & Styling",
       description: "Enchanting decoration with luxury elements and natural flowers to create the perfect atmosphere."
     }
+  ];
+
+  const baptismFAQs = [
+    { question: "What does the baptism reception include?", answer: "The baptism reception includes catering with special children's menu, decoration, service, and use of all our spaces (indoor, outdoor, playground)." },
+    { question: "Can we have a baptism at noon?", answer: "Of course! Baptisms usually take place at noon followed by brunch or lunch reception." },
+    { question: "Is there space for children to play?", answer: "Yes, we have a safe outdoor area where children can play under supervision." },
+    { question: "Which churches do you work with for baptisms?", answer: "We work with 4 beautiful seaside churches near the estate: Agios Alexandros, Profitis Ilias, Agios Panteleimonas, and Panagia Gkarika." },
+    { question: "Can we bring our own decorator?", answer: "Absolutely! You are free to choose your own partners or use our recommended ones." },
+    { question: "How long does the reception last?", answer: "The reception duration adapts to your needs, usually 4-6 hours." },
+    { question: "Is there a special menu for children?", answer: "Yes, we offer specially adapted menu for children with healthy and delicious options." },
+    { question: "Can we have a summer baptism?", answer: "Yes, our shaded outdoor space and air-conditioned indoor space are ideal for summer baptisms." },
+    { question: "What time does the reception usually start?", answer: "Baptism receptions usually start at noon (12:00-14:00) after the ceremony." },
+    { question: "Is the venue exclusive for us?", answer: "Absolutely! The estate is exclusively yours for your event." }
   ];
 
   return (

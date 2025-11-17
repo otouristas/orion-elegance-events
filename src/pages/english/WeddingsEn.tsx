@@ -126,6 +126,12 @@ export default function WeddingsEn() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignalsEn />
+
+        {/* FAQs */}
+        <FAQEn items={weddingFAQs} title="Frequently Asked Questions About Weddings" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -136,11 +142,15 @@ export default function WeddingsEn() {
               Contact us to plan together the perfect wedding reception at Ktima Orion
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/en/contact" className="button button4">
-                BOOK A VISIT
+              <a href="/en/contact">
+                <button className="button button4">
+                  BOOK FREE TOUR
+                </button>
               </a>
-              <a href="/en/contact" className="button button4">
-                CONTACT US
+              <a href="/en/churches">
+                <button className="button button4">
+                  VIEW CHURCHES
+                </button>
               </a>
             </div>
           </div>

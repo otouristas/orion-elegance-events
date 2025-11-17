@@ -3,6 +3,8 @@ import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FAQEn } from '@/components/english/FAQEn';
+import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 
 export default function ServicesEn() {
   const services = [
@@ -27,6 +29,17 @@ export default function ServicesEn() {
       title: "Decoration & Styling",
       description: "Magical decoration with luxury elements and natural flowers that will create the perfect atmosphere."
     }
+  ];
+
+  const servicesFAQs = [
+    { question: "What services do you provide?", answer: "We offer comprehensive services: catering, decoration, lighting, sound, professional photographer (Studio Alpha) and complete event coordination." },
+    { question: "Can we choose only certain services?", answer: "Of course! You can choose the services you're interested in and bring your own partners for the rest." },
+    { question: "Do you work with photographers?", answer: "Yes, we work with professional Studio Alpha which has years of experience in weddings and baptisms." },
+    { question: "Do you provide DJ or music?", answer: "We can suggest experienced DJs and musicians or you can bring your own." },
+    { question: "Can we bring our own partners?", answer: "Absolutely! You are free to choose whichever partners you wish." },
+    { question: "Is there a decorator?", answer: "We work with experienced decorators or you can bring your own." },
+    { question: "What does catering include?", answer: "Catering includes a complete menu tailored to your wishes, with options for all ages." },
+    { question: "Do you provide cake?", answer: "Yes, we can arrange your cake through our partners or you can bring your own." }
   ];
 
   return (
@@ -114,6 +127,12 @@ export default function ServicesEn() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignalsEn />
+
+        {/* FAQs */}
+        <FAQEn items={servicesFAQs} title="Frequently Asked Questions About Services" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -125,8 +144,23 @@ export default function ServicesEn() {
               and how we can create unforgettable memories together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button button4">
-                BOOK APPOINTMENT
+              <a href="/en/contact">
+                <button className="button button4">
+                  BOOK FREE TOUR
+                </button>
+              </a>
+              <a href="/en/weddings">
+                <button className="button button4">
+                  VIEW OUR SERVICES
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Layout>
+  );
+}
               </button>
               <button className="button button4">
                 CONTACT

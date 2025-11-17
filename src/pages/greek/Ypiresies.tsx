@@ -1,8 +1,10 @@
 import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
-import { Users, Camera, Star } from 'lucide-react';
+import { Users, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FAQ } from '@/components/FAQ';
+import { TrustSignals } from '@/components/TrustSignals';
 
 export default function Ypiresies() {
   const services = [
@@ -27,6 +29,17 @@ export default function Ypiresies() {
       title: "Διακόσμηση & Στολισμός",
       description: "Μαγευτική διακόσμηση με λουξ στοιχεία και φυσικά άνθη που θα δημιουργήσει την τέλεια ατμόσφαιρα."
     }
+  ];
+
+  const servicesFAQs = [
+    { question: "Ποιες υπηρεσίες παρέχετε;", answer: "Προσφέρουμε ολοκληρωμένες υπηρεσίες: catering, διακόσμηση, φωτισμό, ήχο, επαγγελματία φωτογράφο (Studio Alpha) και πλήρη συντονισμό της εκδήλωσης." },
+    { question: "Μπορούμε να επιλέξουμε μόνο ορισμένες υπηρεσίες;", answer: "Φυσικά! Μπορείτε να επιλέξετε τις υπηρεσίες που σας ενδιαφέρουν και να φέρετε δικούς σας συνεργάτες για τις υπόλοιπες." },
+    { question: "Συνεργάζεστε με φωτογράφους;", answer: "Ναι, συνεργαζόμαστε με το επαγγελματικό Studio Alpha που διαθέτει πολύχρονη εμπειρία σε γάμους και βαπτίσεις." },
+    { question: "Παρέχετε DJ ή μουσική;", answer: "Μπορούμε να σας προτείνουμε έμπειρους DJ και μουσικούς ή μπορείτε να φέρετε τους δικούς σας." },
+    { question: "Μπορούμε να φέρουμε δικούς μας συνεργάτες;", answer: "Απολύτως! Είστε ελεύθεροι να επιλέξετε όποιους συνεργάτες επιθυμείτε." },
+    { question: "Υπάρχει διακοσμητής;", answer: "Συνεργαζόμαστε με έμπειρους διακοσμητές ή μπορείτε να φέρετε τον δικό σας." },
+    { question: "Τι περιλαμβάνει το catering;", answer: "Το catering περιλαμβάνει πλήρες μενού προσαρμοσμένο στις επιθυμίες σας, με επιλογές για όλες τις ηλικίες." },
+    { question: "Παρέχετε τούρτα;", answer: "Ναι, μπορούμε να οργανώσουμε την τούρτα σας μέσω των συνεργατών μας ή μπορείτε να φέρετε τη δική σας." }
   ];
 
   return (
@@ -113,6 +126,18 @@ export default function Ypiresies() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignals />
+
+        {/* FAQs */}
+        <FAQ items={servicesFAQs} title="Συχνές Ερωτήσεις για Υπηρεσίες" />
+
+        {/* Trust Signals */}
+        <TrustSignals />
+
+        {/* FAQs */}
+        <FAQ items={servicesFAQs} title="Συχνές Ερωτήσεις για Υπηρεσίες" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -124,8 +149,23 @@ export default function Ypiresies() {
               και πώς μπορούμε να δημιουργήσουμε μαζί αξέχαστες αναμνήσεις.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button button4">
-                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+              <a href="/contact">
+                <button className="button button4">
+                  ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
+                </button>
+              </a>
+              <a href="/gamos">
+                <button className="button button4">
+                  ΔΕΙΤΕ ΤΙΣ ΥΠΗΡΕΣΙΕΣ ΜΑΣ
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Layout>
+  );
+}
               </button>
               <button className="button button4">
                 ΕΠΙΚΟΙΝΩΝΙΑ
