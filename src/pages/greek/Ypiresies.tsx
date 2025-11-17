@@ -5,6 +5,7 @@ import { Users, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
+import { PopularSearches } from '@/components/PopularSearches';
 
 export default function Ypiresies() {
   const services = [
@@ -63,8 +64,8 @@ export default function Ypiresies() {
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Το Κτήμα Ωρίων προσφέρει πλήρες πακέτο επαγγελματικών υπηρεσιών για όλες τις εκδηλώσεις σας. 
-                Από την οργάνωση έως τη φωτογραφία, εξασφαλίζουμε ότι κάθε λεπτομέρεια θα είναι άψογη.
+                Στο <Link to="/o-horos" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> παρέχουμε ολοκληρωμένες υπηρεσίες για όλες τις εκδηλώσεις σας. 
+                Από τον σχεδιασμό μέχρι τη <Link to="/fotografos" className="text-brand-main hover:underline">φωτογράφιση</Link>, φροντίζουμε κάθε λεπτομέρεια να είναι άψογη για τον <Link to="/gamos" className="text-brand-main hover:underline">γάμο</Link> ή τη <Link to="/vaptisi" className="text-brand-main hover:underline">βάπτιση</Link> σας.
               </p>
               
               <p>
@@ -132,11 +133,15 @@ export default function Ypiresies() {
         {/* FAQs */}
         <FAQ items={servicesFAQs} title="Συχνές Ερωτήσεις για Υπηρεσίες" />
 
-        {/* Trust Signals */}
-        <TrustSignals />
-
-        {/* FAQs */}
-        <FAQ items={servicesFAQs} title="Συχνές Ερωτήσεις για Υπηρεσίες" />
+        {/* Popular Searches */}
+        <PopularSearches 
+          links={[
+            { label: "Φωτογράφος", href: "/fotografos" },
+            { label: "Γάμος", href: "/gamos" },
+            { label: "Βάπτιση", href: "/vaptisi" },
+            { label: "Χώρος", href: "/o-horos" }
+          ]}
+        />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">

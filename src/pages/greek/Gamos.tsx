@@ -7,6 +7,8 @@ import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
 import { NearbyChurches } from '@/components/NearbyChurches';
 import { RelatedServices } from '@/components/RelatedServices';
+import { PopularSearches } from '@/components/PopularSearches';
+import { Link } from 'react-router-dom';
 
 // Import wedding photos
 import wedding2 from '@/assets/gamos/DSC_7816.JPG';
@@ -111,11 +113,11 @@ export default function Gamos() {
               
               <p>
                 Αναλαμβάνουμε με φαντασία, συνέπεια και σεβασμό στις επιθυμίες σας το σχεδιασμό & τη διοργάνωση της <strong>δεξίωσης γάμου</strong> σας. 
-                Η απαίτησή σας για τελειότητα είναι ο απόλυτος στόχος μας, ώστε να σας προσφέρουμε μια ονειρεμένη γαμήλια δεξίωση στον <a href="/o-horos" className="text-brand-main hover:underline">χώρο δεξιώσεων</a> μας.
+                Η απαίτησή σας για τελειότητα είναι ο απόλυτος στόχος μας, ώστε να σας προσφέρουμε μια ονειρεμένη γαμήλια δεξίωση στον <Link to="/o-horos" className="text-brand-main hover:underline">χώρο δεξιώσεων</Link> μας.
               </p>
               
               <p className="text-brand-main font-semibold text-xl">
-                Ελάτε να σας χαρίσουμε τις πιο όμορφες αναμνήσεις στο πιο μοναδικό βράδυ της ζωής σας. Κοντά σε <a href="/ekklisies" className="text-brand-main hover:underline">παραθαλάσσια εκκλησάκια</a>, με θέα που κόβει την ανάσα.
+                Ελάτε να σας χαρίσουμε τις πιο όμορφες αναμνήσεις στο πιο μοναδικό βράδυ της ζωής σας. Κοντά σε <Link to="/ekklisies" className="text-brand-main hover:underline">παραθαλάσσια εκκλησάκια</Link>, με θέα που κόβει την ανάσα.
               </p>
             </div>
           </div>
@@ -173,6 +175,18 @@ export default function Gamos() {
 
         {/* Related Services */}
         <RelatedServices currentPage="/gamos" />
+
+        {/* Popular Searches */}
+        <PopularSearches 
+          links={[
+            { label: "Κτήμα Γάμου Αθήνα", href: "/el/ktima-gamou-athina" },
+            { label: "Athens Riviera", href: "/el/ktima-gamou-athens-riviera" },
+            { label: "Δείτε τον Χώρο", href: "/o-horos" },
+            { label: "Φωτογράφος", href: "/fotografos" },
+            { label: "Εκκλησίες", href: "/ekklisies" },
+            { label: "Βάπτιση", href: "/vaptisi" }
+          ]}
+        />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">

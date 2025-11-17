@@ -104,10 +104,10 @@ export default function Vaptisi() {
               </p>
               
               <p>
-                Η τελετή, αλλά και η δεξίωση που θα ακολουθήσει πρέπει να αντιπροσωπεύει την οικογένεια και για αυτό αξίζει ό,τι το καλύτερο. 
+                Η τελετή, αλλά και η <strong>δεξίωση βάπτισης</strong> που θα ακολουθήσει πρέπει να αντιπροσωπεύει την οικογένεια και για αυτό αξίζει ό,τι το καλύτερο. 
                 Θα πρέπει να μεταδίδει χαρά ώστε να δημιουργηθεί μια υπέροχη γιορτή για όλα τα αγαπημένα σας πρόσωπα. 
-                Με συναίσθηση της σημασίας που έχει η δεξίωση της βάπτισης, στεκόμαστε δίπλα σας, ώστε μαζί σας να οργανώσουμε την βάπτιση του παιδιού σας, 
-                με πολύ αγάπη και μεράκι.
+                Με συναίσθηση της σημασίας που έχει η δεξίωση της βάπτισης στο <Link to="/o-horos" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>, στεκόμαστε δίπλα σας, ώστε μαζί σας να οργανώσουμε την βάπτιση του παιδιού σας, 
+                με πολύ αγάπη και μεράκι. Κοντά σε <Link to="/ekklisies" className="text-brand-main hover:underline">παραθαλάσσια εκκλησάκια</Link>.
               </p>
               
               <p className="text-brand-main font-semibold text-xl">
@@ -240,6 +240,17 @@ export default function Vaptisi() {
 
         {/* Related Services */}
         <RelatedServices currentPage="/vaptisi" />
+
+        {/* Popular Searches */}
+        <PopularSearches 
+          links={[
+            { label: "Βαπτιστική Δεξίωση Κερατέα", href: "/vaptisi" },
+            { label: "Χώρος Βάπτισης", href: "/o-horos" },
+            { label: "Εκκλησίες", href: "/ekklisies" },
+            { label: "Γάμος", href: "/gamos" },
+            { label: "Φωτογράφος", href: "/fotografos" }
+          ]}
+        />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
