@@ -54,10 +54,6 @@ export default function BaptismEn() {
 
   const baptismServices = [
     {
-      title: "Church Coordination",
-      description: "We coordinate the ceremony at the church of your choice and ensure smooth transition to the reception venue."
-    },
-    {
       title: "Special Children's Menu",
       description: "Customized menu that will satisfy even the youngest guests."
     },

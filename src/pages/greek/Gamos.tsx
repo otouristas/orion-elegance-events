@@ -115,8 +115,7 @@ export default function Gamos() {
               <span className="text-gradient-brand">Γιατί να επιλέξετε το Κτήμα Ωρίων;</span>
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {weddingFeatures.map((feature, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">{weddingFeatures.map((feature, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />

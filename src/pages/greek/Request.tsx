@@ -311,26 +311,6 @@ export default function Request() {
                         <input 
                           type="checkbox" 
                           className="w-4 h-4 text-brand-main" 
-                          value="Wedding Planner"
-                          checked={formData.services.includes('Wedding Planner')}
-                          onChange={handleCheckboxChange}
-                        />
-                        <span>Wedding Planner</span>
-                      </label>
-                      <label className="flex items-center space-x-3 cursor-pointer">
-                        <input 
-                          type="checkbox" 
-                          className="w-4 h-4 text-brand-main" 
-                          value="Συντονισμός Εκκλησίας"
-                          checked={formData.services.includes('Συντονισμός Εκκλησίας')}
-                          onChange={handleCheckboxChange}
-                        />
-                        <span>Συντονισμός Εκκλησίας</span>
-                      </label>
-                      <label className="flex items-center space-x-3 cursor-pointer">
-                        <input 
-                          type="checkbox" 
-                          className="w-4 h-4 text-brand-main" 
                           value="Πλήρης Διοργάνωση"
                           checked={formData.services.includes('Πλήρης Διοργάνωση')}
                           onChange={handleCheckboxChange}

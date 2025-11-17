@@ -7,12 +7,6 @@ import { Link } from 'react-router-dom';
 export default function ServicesEn() {
   const services = [
     {
-      title: "Wedding Planner",
-      href: "/en/wedding-planner",
-      description: "Professional wedding planning with experience and imagination. We undertake with imagination, consistency and respect for your wishes the design and organization of your reception.",
-      icon: Users
-    },
-    {
       title: "Photographer",
       href: "/en/photographer",
       description: "Professional photography and videography for the most important moments of your life. We capture with love and art every detail of your event.",
@@ -21,10 +15,6 @@ export default function ServicesEn() {
   ];
 
   const additionalServices = [
-    {
-      title: "Church Coordination",
-      description: "We coordinate the ceremony at the church of your choice and ensure smooth transition to the wedding venue."
-    },
     {
       title: "Special Children's Menu",
       description: "Customized menu with options for all ages, including special dishes for children."

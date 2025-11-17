@@ -22,7 +22,6 @@ export const Footer = () => {
               <li><a href="/eterikes-ekdiloseis" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εταιρικές Εκδηλώσεις</a></li>
               <li><a href="/parti" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Πάρτι</a></li>
               <li><a href="/fotografos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Φωτογράφος</a></li>
-              <li><a href="/diorganotis-gamon" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Planner</a></li>
               <li><a href="/dj-mousiki" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">DJ - Μουσική</a></li>
               <li><a href="/reviews" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κριτικές</a></li>
             </ul>

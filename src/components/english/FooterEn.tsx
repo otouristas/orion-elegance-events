@@ -28,7 +28,6 @@ export const FooterEn = () => {
               <li><a href="/en/corporate-events" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Corporate Events</a></li>
               <li><a href="/en/party" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Party</a></li>
               <li><a href="/en/photographer" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Photographer</a></li>
-              <li><a href="/en/wedding-planner" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Planner</a></li>
               <li><a href="/en/dj-music" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">DJ - Music</a></li>
               <li><a href="/en/reviews" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Reviews</a></li>
             </ul>

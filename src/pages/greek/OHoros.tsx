@@ -52,11 +52,6 @@ export default function OHoros() {
       description: "Μαγευτικός ημιυπαίθριος χώρος για εκδηλώσεις"
     },
     {
-      icon: Utensils,
-      title: "Εγκαταστάσεις Barbeque",
-      description: "Πλήρης εγκατάσταση για μαγείρεμα και σερβίρισμα"
-    },
-    {
       icon: Heart,
       title: "Χώρο υποδοχής",
       description: "Χώρος υποδοχής για τους καλεσμένους"
@@ -65,16 +60,6 @@ export default function OHoros() {
       icon: Home,
       title: "Studio",
       description: "Studio για το ζευγάρι καθ' όλη τη διάρκεια"
-    },
-    {
-      icon: Award,
-      title: "Ηλεκτρογεννήτρια",
-      description: "Backup ρεύματος σε περίπτωση διακοπής"
-    },
-    {
-      icon: TreePine,
-      title: "Πανέμορφοι κήποι",
-      description: "Μεγάλοι κήποι και υπέροχα παρτέρια"
     }
   ];
 

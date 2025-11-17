@@ -13,7 +13,7 @@ export const ServicesEn = () => {
       icon: Baby,
       title: 'Baptisms',
       description: 'Create unforgettable memories for your child\'s baptism. A tender and joyful celebration for the whole family.',
-      features: ['Safe fenced area', 'Special children\'s menu', 'Professional service']
+      features: ['Special children\'s menu', 'Professional service', 'Ideal environment']
     },
     {
       icon: Building,
@@ -33,12 +33,6 @@ export const ServicesEn = () => {
       description: 'Partnership with "Darva Photography" with more than 20 years of experience in wedding photography and videography.',
       features: ['Professional coverage', '20+ years experience', 'Photo & video']
     },
-    {
-      icon: Crown,
-      title: 'Wedding Planner',
-      description: 'Complete wedding planning services. Personalized design and absolute care for an unforgettable wedding.',
-      features: ['Full planning', 'Personal design', 'Top partners']
-    }
   ];
 
   return (
