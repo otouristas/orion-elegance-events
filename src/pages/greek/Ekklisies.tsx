@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Church } from 'lucide-react';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
+import { RelatedServices } from '@/components/RelatedServices';
 
 export default function Ekklisies() {
   const churches = [
@@ -203,6 +204,9 @@ export default function Ekklisies() {
 
         {/* FAQ Section */}
         <FAQ items={churchFAQs} title="Συχνές Ερωτήσεις για Εκκλησίες" />
+
+        {/* Related Services */}
+        <RelatedServices currentPage="/ekklisies" />
 
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">

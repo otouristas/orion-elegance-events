@@ -15,6 +15,7 @@ import { Partners } from '@/components/Partners';
 import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { FAQ } from '@/components/FAQ';
+import { NearbyChurches } from '@/components/NearbyChurches';
 
 const Index = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,6 +66,7 @@ const Index = () => {
       <Churches />
       <Testimonials />
       <FAQ items={homepageFAQs} title="Συχνές Ερωτήσεις" />
+      <NearbyChurches />
       <Partners />
       <Contact />
       <Footer />

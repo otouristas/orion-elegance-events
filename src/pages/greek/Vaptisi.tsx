@@ -5,6 +5,8 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Baby, Star, Sparkles } from 'lucide-react';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
+import { NearbyChurches } from '@/components/NearbyChurches';
+import { RelatedServices } from '@/components/RelatedServices';
 
 export default function Vaptisi() {
   const baptismPhotos = [
@@ -230,6 +232,12 @@ export default function Vaptisi() {
 
         {/* FAQs */}
         <FAQ items={baptismFAQs} title="Συχνές Ερωτήσεις για Βαπτίσεις" />
+
+        {/* Nearby Churches */}
+        <NearbyChurches />
+
+        {/* Related Services */}
+        <RelatedServices currentPage="/vaptisi" />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">

@@ -5,6 +5,8 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Calendar, MapPin, Star } from 'lucide-react';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
+import { NearbyChurches } from '@/components/NearbyChurches';
+import { RelatedServices } from '@/components/RelatedServices';
 
 // Import wedding photos
 import wedding2 from '@/assets/gamos/DSC_7816.JPG';
@@ -165,6 +167,12 @@ export default function Gamos() {
 
         {/* FAQs */}
         <FAQ items={weddingFAQs} title="Συχνές Ερωτήσεις για Γάμους" />
+
+        {/* Nearby Churches */}
+        <NearbyChurches />
+
+        {/* Related Services */}
+        <RelatedServices currentPage="/gamos" />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
