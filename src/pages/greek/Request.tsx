@@ -89,9 +89,9 @@ export default function Request() {
     <Layout>
       <SEO 
         title="Αίτημα Πληροφοριών | Κτήμα Ωρίων"
-        description="Ζητήστε προσφορά και πληροφορίες για την εκδήλωσή σας στο Κτήμα Ωρίων. Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε άμεσα μαζί σας."
+        description="Ζητήστε πληροφορίες για την εκδήλωσή σας στο Κτήμα Ωρίων. Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε άμεσα μαζί σας."
         canonical="/request"
-        keywords="προσφορά γάμου, αίτημα πληροφοριών, κράτηση κτήματος, τιμές"
+        keywords="αίτημα πληροφοριών, κράτηση κτήματος, επικοινωνία κτήμα, ραντεβού κτήμα"
       />
       <div className="pt-20">
         {/* Hero Section */}
@@ -223,15 +223,6 @@ export default function Request() {
                           type="number" 
                           placeholder="Π.χ. 80" 
                           value={formData.guestCount}
-                          onChange={handleInputChange}
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="budget">Budget (προαιρετικό)</Label>
-                        <Input 
-                          id="budget" 
-                          placeholder="Π.χ. €5000" 
-                          value={formData.budget}
                           onChange={handleInputChange}
                         />
                       </div>
