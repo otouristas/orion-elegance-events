@@ -7,6 +7,8 @@ import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
 import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
+import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
+import { Link } from 'react-router-dom';
 
 // Import wedding photos
 import wedding1 from '@/assets/gamos/DSC_7637.JPG';

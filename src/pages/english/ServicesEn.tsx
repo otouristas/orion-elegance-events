@@ -5,6 +5,7 @@ import { Users, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
+import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
 
 export default function ServicesEn() {
   const services = [
@@ -68,8 +69,8 @@ export default function ServicesEn() {
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Ktima Orion offers a complete package of professional services for all your events. 
-                From planning to photography, we ensure that every detail will be impeccable.
+                <Link to="/en/venue" className="text-brand-main hover:underline">Ktima Orion</Link> offers a complete package of professional services for all your events. 
+                From planning to <Link to="/en/photographer" className="text-brand-main hover:underline">photography</Link>, we ensure that every detail will be impeccable for your <Link to="/en/weddings" className="text-brand-main hover:underline">wedding</Link> or <Link to="/en/baptism" className="text-brand-main hover:underline">baptism</Link>.
               </p>
               
               <p>

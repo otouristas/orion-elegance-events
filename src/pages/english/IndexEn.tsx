@@ -16,6 +16,7 @@ import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { FAQEn } from '@/components/english/FAQEn';
 import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
+import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
 import { CookieConsentEn } from '@/components/english/CookieConsentEn';
 
 const IndexEn = () => {
