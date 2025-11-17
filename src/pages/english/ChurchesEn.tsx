@@ -79,9 +79,9 @@ export default function ChurchesEn() {
               <span className="text-gradient-brand">Churches</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Ktima Orion is a short distance from many picturesque chapels and churches in the surrounding area. 
+              Ktima Orion wedding and baptism venue is a short distance from many picturesque seaside chapels and churches in Keratea. 
               At a distance ranging from <strong>5 - 15 minutes</strong>, you can hold the sacrament of marriage 
-              or baptism, enjoying stunning views of the Aegean, before completing your event at Ktima Orion.
+              or christening, enjoying stunning views of the Aegean Sea, before continuing with your <a href="/en/weddings" className="text-brand-main hover:underline">wedding reception</a> or <a href="/en/baptism" className="text-brand-main hover:underline">baptism reception</a> at our <a href="/en/venue" className="text-brand-main hover:underline">beautiful venue</a>.
             </p>
           </div>
         </section>
@@ -90,7 +90,7 @@ export default function ChurchesEn() {
         <section className="section-padding">
           <div className="container-max max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-gradient-brand">Nearby Churches</span>
+              Available <span className="text-gradient-brand">Seaside Churches</span> near Keratea
             </h2>
 
             <div className="grid gap-6">
