@@ -68,11 +68,16 @@ export default function WeddingsEn() {
   return (
     <Layout>
       <SEO 
-        title="Wedding at Ktima Orion – Wedding Venue Keratea Athens | Greece"
-        description="Wedding reception Ktima Orion Keratea Athens. Sea view, bridal table, free parking, A/C. Near seaside churches. 15+ yrs experience. Check dates!"
+        title="Wedding at Ktima Orion – Wedding Venue Keratea Athens | Dream Wedding"
+        description="Wedding reception Ktima Orion Keratea. Sea view, bridal table, free parking, A/C. 15+ years experience. Check availability now!"
         canonical="/en/weddings"
-        keywords="wedding venue keratea, wedding venue athens greece, wedding reception, wedding planning greece, destination wedding athens"
+        keywords="wedding keratea, wedding venue keratea, wedding venue attica, wedding reception, wedding venue athens riviera, destination wedding greece"
         lang="en"
+        schemaType="Event"
+        breadcrumbs={[
+          { name: 'Home', url: '/en' },
+          { name: 'Weddings', url: '/en/weddings' }
+        ]}
       />
       <div className="pt-20">
         {/* Hero Section */}

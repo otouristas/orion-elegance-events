@@ -118,11 +118,15 @@ export default function VenueEn() {
   return (
     <Layout>
       <SEO 
-        title="Our Venue – Ktima Orion Keratea | Indoor & Outdoor Spaces"
-        description="Event venue Keratea Athens: Large garden, A/C hall, sea view, 100+ parking. Weddings, baptisms, corporate events. Tour our venue today!"
+        title="The Venue – Ktima Orion Keratea | Event Venue Athens"
+        description="Wedding & event venue Keratea: 200+ parking, A/C hall, outdoor pavilion, sea view. Near Athens, close to chapels. Book your tour!"
         canonical="/en/venue"
-        keywords="event venue keratea, wedding hall athens, garden reception venue, venue with parking"
+        keywords="event venue keratea, wedding venue athens, reception hall attica, venue near athens, corporate event space greece"
         lang="en"
+        breadcrumbs={[
+          { name: 'Home', url: '/en' },
+          { name: 'The Venue', url: '/en/venue' }
+        ]}
       />
       <div className="pt-20">
         {/* Hero Section */}

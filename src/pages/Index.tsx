@@ -34,6 +34,10 @@ const Index = () => {
         description="Κτήμα γάμου & βάπτισης Κερατέα Αττική. Θέα θάλασσα, parking 100+ θέσεων, κλιματισμός. Κοντά παραθαλάσσια εκκλησάκια. Κλείστε επίσκεψη!"
         canonical="/"
         keywords="κτήμα ωρίων, κτήμα κερατέα, κτήμα γάμου κερατέα, κτήματα κερατέα, γάμος κερατέα, βάπτιση κερατέα, εκκλησίες γάμου κερατέα, χώρος δεξιώσεων κερατέα, άγιος αλέξανδρος δασκαλείο, wedding venue keratea"
+        schemaType="LocalBusiness"
+        breadcrumbs={[
+          { name: 'Αρχική', url: '/' }
+        ]}
       />
       <Navigation isScrolled={isScrolled} isTransparent={true} />
       <Hero />

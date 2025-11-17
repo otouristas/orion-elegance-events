@@ -85,11 +85,16 @@ export default function BaptismEn() {
   return (
     <Layout>
       <SEO 
-        title="Baptism at Ktima Orion – Baptism Venue Keratea Attica"
-        description="Baptism reception Ktima Orion Keratea. Kids menu, outdoor space, 100+ parking spots. Near sea & churches. Family-friendly venue. Ask now!"
+        title="Baptism at Ktima Orion – Baptism Venue Keratea Athens | Christening Party"
+        description="Baptism reception Ktima Orion Keratea. Sea view, playground, kids menu, free parking. Near seaside chapels. Book your tour!"
         canonical="/en/baptism"
-        keywords="baptism keratea greece, baptism venue attica, baptism reception, baptism venue athens, baptism packages, baptism by the sea"
+        keywords="baptism keratea, baptism venue athens, christening venue, baptism reception attica, kids party venue, baptism venue near athens"
         lang="en"
+        schemaType="Event"
+        breadcrumbs={[
+          { name: 'Home', url: '/en' },
+          { name: 'Baptism', url: '/en/baptism' }
+        ]}
       />
       <div className="pt-20">
         {/* Hero Section */}
