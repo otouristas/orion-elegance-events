@@ -35,6 +35,10 @@ const IndexEn = () => {
         canonical="/en"
         keywords="wedding venue keratea greece, baptism venue athens, event venue attica, corporate events athens, ktima orion, wedding venue near athens"
         lang="en"
+        schemaType="LocalBusiness"
+        breadcrumbs={[
+          { name: 'Home', url: '/en' }
+        ]}
       />
       <Navigation isScrolled={isScrolled} isTransparent={true} />
       <HeroEn />

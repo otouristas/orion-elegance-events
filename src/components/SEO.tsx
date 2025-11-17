@@ -1,5 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface SEOProps {
   title: string;
   description: string;
@@ -8,6 +13,9 @@ interface SEOProps {
   ogType?: string;
   keywords?: string;
   lang?: 'el' | 'en';
+  schemaType?: 'LocalBusiness' | 'Event' | 'EventVenue';
+  breadcrumbs?: BreadcrumbItem[];
+  eventDate?: string;
 }
 
 export function SEO({ 
@@ -17,7 +25,10 @@ export function SEO({
   ogImage = '/hero-image.jpg',
   ogType = 'website',
   keywords = 'κτήμα δεξιώσεων, γάμος, βάπτιση, εταιρικές εκδηλώσεις, Κερατέα, Αττική',
-  lang = 'el'
+  lang = 'el',
+  schemaType = 'EventVenue',
+  breadcrumbs = [],
+  eventDate
 }: SEOProps) {
   const siteName = 'Κτήμα Ωρίων';
   const siteUrl = 'https://ktimaorion.gr';
@@ -67,35 +78,120 @@ export function SEO({
       
       {/* Schema.org for Google */}
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "EventVenue",
-          "name": siteName,
-          "description": description,
-          "url": fullCanonical,
-          "logo": logo,
-          "image": fullOgImage,
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Κερατέα",
-            "addressRegion": "Αττική",
-            "addressCountry": "GR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "37.802493",
-            "longitude": "24.028817"
-          },
-          "telephone": "+302299068812",
-          "priceRange": "€€€",
-          "servesCuisine": "Greek",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "50"
+        {JSON.stringify(
+          schemaType === 'LocalBusiness' ? {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": `${siteUrl}/#business`,
+            "name": siteName,
+            "description": description,
+            "url": fullCanonical,
+            "logo": logo,
+            "image": fullOgImage,
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Κερατέα",
+              "addressRegion": "Αττική",
+              "addressCountry": "GR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "37.802493",
+              "longitude": "24.028817"
+            },
+            "telephone": "+302299068812",
+            "priceRange": "€€€",
+            "servesCuisine": "Greek",
+            "hasMap": "https://maps.google.com/?q=37.802493,24.028817",
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "09:00",
+              "closes": "23:00"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "50"
+            }
+          } : schemaType === 'Event' ? {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": title,
+            "description": description,
+            "image": fullOgImage,
+            "location": {
+              "@type": "Place",
+              "name": siteName,
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Κερατέα",
+                "addressRegion": "Αττική",
+                "addressCountry": "GR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "37.802493",
+                "longitude": "24.028817"
+              }
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": siteName,
+              "url": siteUrl
+            },
+            ...(eventDate && { "startDate": eventDate }),
+            "offers": {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
+              "url": fullCanonical
+            }
+          } : {
+            "@context": "https://schema.org",
+            "@type": "EventVenue",
+            "name": siteName,
+            "description": description,
+            "url": fullCanonical,
+            "logo": logo,
+            "image": fullOgImage,
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Κερατέα",
+              "addressRegion": "Αττική",
+              "addressCountry": "GR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "37.802493",
+              "longitude": "24.028817"
+            },
+            "telephone": "+302299068812",
+            "priceRange": "€€€",
+            "servesCuisine": "Greek",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "50"
+            }
           }
-        })}
+        )}
       </script>
+      
+      {/* BreadcrumbList Schema */}
+      {breadcrumbs.length > 0 && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": breadcrumbs.map((crumb, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "name": crumb.name,
+              "item": `${siteUrl}${crumb.url}`
+            }))
+          })}
+        </script>
+      )}
     </Helmet>
   );
 }

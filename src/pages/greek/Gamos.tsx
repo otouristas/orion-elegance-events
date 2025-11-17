@@ -66,6 +66,11 @@ export default function Gamos() {
         description="Γαμήλια δεξίωση Κτήμα Ωρίων Κερατέα. Θέα θάλασσα, νυφικό τραπέζι, parking δωρεάν, κλιματισμός. 15+ χρόνια εμπειρίας. Δείτε διαθεσιμότητα!"
         canonical="/gamos"
         keywords="γάμος κερατέα, κτήμα γάμου κερατέα, κτήμα γάμου αττική, δεξίωση γάμου, χώρος δεξιώσεων γάμου, διοργάνωση γάμων, wedding venue keratea, εκκλησία γάμου"
+        schemaType="Event"
+        breadcrumbs={[
+          { name: 'Αρχική', url: '/' },
+          { name: 'Γάμος', url: '/gamos' }
+        ]}
       />
       <div className="pt-20">
         {/* Hero Section */}

@@ -68,6 +68,10 @@ export default function ChurchesEn() {
         canonical="/en/churches"
         keywords="churches keratea, wedding church, baptism church, agios alexandros, panagia garika, chapels attica greece"
         lang="en"
+        breadcrumbs={[
+          { name: 'Home', url: '/en' },
+          { name: 'Churches', url: '/en/churches' }
+        ]}
       />
       
       <div className="pt-20">

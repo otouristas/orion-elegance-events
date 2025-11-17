@@ -50,6 +50,10 @@ export default function ServicesEn() {
         canonical="/en/services"
         keywords="event services athens, wedding catering, venue decoration, event planning keratea"
         lang="en"
+        breadcrumbs={[
+          { name: 'Home', url: '/en' },
+          { name: 'Services', url: '/en/services' }
+        ]}
       />
       <div className="pt-20">
         {/* Hero Section */}
