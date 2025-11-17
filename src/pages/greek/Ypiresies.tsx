@@ -48,7 +48,7 @@ export default function Ypiresies() {
         title="Υπηρεσίες Κτήματος Ωρίων | Catering, Διακόσμηση, Τεχνική Υποστήριξη"
         description="Ολοκληρωμένες υπηρεσίες: In-house catering, διακόσμηση, φωτισμός, ήχος, συντονισμός εκδήλωσης. All-inclusive πακέτα."
         canonical="/ypiresies"
-        keywords="υπηρεσιες γαμου κερατεα, catering κτηματος, διακοσμηση εκδηλωσης, wedding planner athina"
+        keywords="υπηρεσιες γαμου κερατεα, catering κτηματος, διακοσμηση εκδηλωσης, event services athina"
       />
       <div className="pt-20">
         {/* Hero Section */}

@@ -205,8 +205,6 @@ export default function Gamos() {
               <a href="/o-horos" className="text-brand-main hover:underline">Δείτε τον Χώρο</a>
               <span className="text-muted-foreground">•</span>
               <a href="/fotografos" className="text-brand-main hover:underline">Φωτογράφος</a>
-              <span className="text-muted-foreground">•</span>
-              <a href="/diorganotis-gamon" className="text-brand-main hover:underline">Wedding Planner</a>
             </div>
           </div>
         </section>

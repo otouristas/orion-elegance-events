@@ -122,7 +122,7 @@ export default function Vaptisi() {
               <span className="text-gradient-brand">Γιατί να επιλέξετε το Κτήμα Ωρίων;</span>
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
               {baptismFeatures.map((feature, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">

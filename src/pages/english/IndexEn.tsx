@@ -16,6 +16,7 @@ import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { FAQEn } from '@/components/english/FAQEn';
 import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
+import { CookieConsentEn } from '@/components/english/CookieConsentEn';
 
 const IndexEn = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,6 +74,7 @@ const IndexEn = () => {
       <FooterEn />
       <BackToTop />
       <ContactFAB />
+      <CookieConsentEn />
     </div>
   );
 };
