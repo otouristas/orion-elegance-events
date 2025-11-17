@@ -2,6 +2,8 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPin, Phone, Mail } from 'lucide-react';
+import { FAQ } from '@/components/FAQ';
+import { TrustSignals } from '@/components/TrustSignals';
 
 // Import images from all folders
 // Home images
@@ -111,6 +113,15 @@ export default function OHoros() {
       count: "300+",
       icon: Camera
     }
+  ];
+
+  const venueFAQs = [
+    { question: "Πού βρίσκεται το Κτήμα Ωρίων;", answer: "Το Κτήμα Ωρίων βρίσκεται στην Κερατέα Αττικής, με εύκολη πρόσβαση από την Αττική Οδό. Προσφέρει ένα πανέμορφο φυσικό περιβάλλον κοντά στην Αθήνα." },
+    { question: "Ποια είναι η χωρητικότητα του χώρου;", answer: "Ο χώρος μας μπορεί να φιλοξενήσει μεγάλες εκδηλώσεις με εκτεταμένο χώρο στάθμευσης για πάνω από 100 οχήματα. Διαθέτουμε τόσο κλειστούς κλιματιζόμενους όσο και εξωτερικούς χώρους." },
+    { question: "Υπάρχει χώρος στάθμευσης;", answer: "Ναι, διαθέτουμε τεράστιο δωρεάν χώρο στάθμευσης με πάνω από 100 θέσεις για όλους τους καλεσμένους σας." },
+    { question: "Έχετε εσωτερικούς και εξωτερικούς χώρους;", answer: "Ναι, προσφέρουμε πλήρως κλιματιζόμενη εσωτερική αίθουσα και μαγευτική ημιυπαίθρια παγόδα, κατάλληλη για όλες τις εποχές και τις καιρικές συνθήκες." },
+    { question: "Μπορούμε να επισκεφτούμε τον χώρο πριν την κράτηση;", answer: "Απολύτως! Ενθαρρύνουμε τα ζευγάρια να επισκεφτούν το Κτήμα Ωρίων και να δουν από κοντά το μαγευτικό περιβάλλον που θα φιλοξενήσει την εκδήλωσή τους. Επικοινωνήστε μαζί μας για να κανονίσουμε μια δωρεάν ξενάγηση." },
+    { question: "Είστε κοντά σε εκκλησίες;", answer: "Ναι, βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια δίπλα στη θάλασσα (5-15 λεπτά), ιδανικά για γαμήλιες και βαπτιστικές τελετές." }
   ];
 
   return (
@@ -283,6 +294,12 @@ export default function OHoros() {
           </div>
         </section>
 
+        {/* Trust Signals */}
+        <TrustSignals />
+
+        {/* FAQ Section */}
+        <FAQ items={venueFAQs} title="Συχνές Ερωτήσεις για τον Χώρο" />
+
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
@@ -294,12 +311,12 @@ export default function OHoros() {
               το μαγευτικό περιβάλλον που θα φιλοξενήσει την εκδήλωσή σας.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <button className="button button4">
-                ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-              </button>
-              <button className="button button4">
-                ΕΠΙΚΟΙΝΩΝΙΑ
-              </button>
+              <a href="/contact" className="button button4">
+                ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
+              </a>
+              <a href="/gamos" className="button button4">
+                ΔΕΙΤΕ ΥΠΗΡΕΣΙΕΣ
+              </a>
             </div>
             
             {/* Contact Info */}

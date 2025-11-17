@@ -3,6 +3,8 @@ import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star } from 'lucide-react';
+import { FAQEn } from '@/components/english/FAQEn';
+import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 
 // Import wedding photos
 import wedding1 from '@/assets/gamos/DSC_7637.JPG';
@@ -43,6 +45,24 @@ export default function WeddingsEn() {
       title: "Perfect Service",
       description: "Your demand for perfection is our ultimate goal"
     }
+  ];
+
+  const weddingFAQs = [
+    { question: "What is the capacity of Ktima Orion for weddings?", answer: "Ktima Orion can accommodate weddings of various sizes with both indoor and outdoor spaces. Our venue is ideal for intimate gatherings as well as large celebrations." },
+    { question: "Are there nearby churches for the ceremony?", answer: "Yes, there are several beautiful seaside churches within 5-15 minutes from Ktima Orion, including Agios Alexandros, Panagia Gkarika, and Profitis Ilias." },
+    { question: "Do you provide catering services?", answer: "Yes, we offer complete catering services with customized menus tailored to your preferences and requirements." },
+    { question: "Can we have both the ceremony and reception at the venue?", answer: "While we don't hold ceremonies on-site, we are very close to beautiful churches. You can have the ceremony at a nearby church and the reception at Ktima Orion." },
+    { question: "Is parking available for guests?", answer: "Yes, we have a huge free parking area with over 100 spaces for all your wedding guests." },
+    { question: "What services do you provide for weddings?", answer: "We offer comprehensive wedding services including venue, catering, decoration, lighting, sound, and we work with professional photographers. We handle every detail for your perfect day." },
+    { question: "Can we visit the venue before booking?", answer: "Absolutely! We encourage couples to visit Ktima Orion and see the magical environment. Contact us to schedule a free tour." },
+    { question: "Is the venue suitable for all seasons?", answer: "Yes, we have both a fully air-conditioned indoor hall and beautiful outdoor spaces, making our venue perfect for weddings in any season." },
+    { question: "Do you have accommodation for guests?", answer: "While we don't have on-site accommodation, we can recommend nearby hotels and accommodations for your guests." },
+    { question: "Can we customize the decoration?", answer: "Yes, we work with experienced decorators and can fully customize the decoration according to your vision and preferences." },
+    { question: "What makes Ktima Orion special for weddings?", answer: "Our venue offers exclusive use (one event per day), beautiful natural surroundings, proximity to seaside churches, professional service, and 15+ years of experience creating unforgettable wedding receptions." },
+    { question: "Do you provide a wedding coordinator?", answer: "Yes, we provide complete event coordination to ensure every detail of your wedding day runs smoothly." },
+    { question: "Can we bring our own vendors?", answer: "Yes, you're welcome to bring your own vendors, or you can use our trusted partners." },
+    { question: "Is there a bridal suite?", answer: "Yes, we provide a studio for the couple to use throughout the event." },
+    { question: "What is included in your wedding services?", answer: "Our services include venue rental, catering, decoration options, lighting, sound system, parking, and event coordination. We can create custom packages based on your specific needs." }
   ];
 
   return (
