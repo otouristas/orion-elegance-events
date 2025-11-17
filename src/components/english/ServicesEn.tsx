@@ -6,14 +6,14 @@ export const ServicesEn = () => {
     {
       icon: Heart,
       title: 'Weddings',
-      description: 'Unique moments of love at Ktima Orion. Your wedding is an extremely important moment, the beginning of your shared journey.',
-      features: ['Indoor & outdoor space', 'Fully air-conditioned hall', 'Near picturesque chapels']
+      description: 'Unique wedding receptions at Ktima Orion wedding venue. Your wedding is an extremely important moment, the beginning of your shared journey.',
+      features: ['Indoor & outdoor reception space', 'Fully air-conditioned wedding hall', 'Near picturesque seaside chapels']
     },
     {
       icon: Baby,
       title: 'Baptisms',
-      description: 'Create unforgettable memories for your child\'s baptism. A tender and joyful celebration for the whole family.',
-      features: ['Special children\'s menu', 'Professional service', 'Ideal environment']
+      description: 'Create unforgettable baptism reception memories for your child\'s christening. A tender and joyful celebration for the whole family.',
+      features: ['Special children\'s menu', 'Professional baptism service', 'Ideal christening environment']
     },
     {
       icon: Building,
@@ -43,8 +43,8 @@ export const ServicesEn = () => {
             Our <span className="text-gradient-brand">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From weddings and baptisms to corporate events and parties, 
-            we offer comprehensive services for every special moment.
+            From <a href="/en/weddings" className="text-brand-main hover:underline">weddings</a> and <a href="/en/baptism" className="text-brand-main hover:underline">baptisms</a> to corporate events and parties, 
+            we offer comprehensive event services for every special reception and celebration.
           </p>
         </div>
 

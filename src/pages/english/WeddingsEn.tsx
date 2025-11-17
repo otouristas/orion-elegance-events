@@ -16,12 +16,12 @@ import wedding6 from '@/assets/gamos/DSC_7662.JPG';
 
 export default function WeddingsEn() {
   const weddingPhotos = [
-    { src: wedding1, alt: "Wedding at Ktima Orion" },
-    { src: wedding2, alt: "Wedding reception" },
-    { src: wedding3, alt: "Unique wedding moments" },
-    { src: wedding4, alt: "Wedding photography" },
-    { src: wedding5, alt: "Ktima Orion wedding" },
-    { src: wedding6, alt: "Wedding evening" },
+    { src: wedding1, alt: "Wedding reception venue Ktima Orion Keratea sea view" },
+    { src: wedding2, alt: "Elegant wedding reception outdoor space Athens" },
+    { src: wedding3, alt: "Wedding venue Keratea natural surroundings bride groom" },
+    { src: wedding4, alt: "Professional wedding photography Ktima Orion" },
+    { src: wedding5, alt: "Wedding reception decorated tables seaside venue" },
+    { src: wedding6, alt: "Evening wedding celebration outdoor pavilion Athens" },
   ];
 
   const weddingFeatures = [
@@ -33,7 +33,7 @@ export default function WeddingsEn() {
     {
       icon: Users,
       title: "Professional Organization",
-      description: "Expertise and creativity for a flawless wedding reception"
+      description: "Expertise and creativity for a flawless wedding reception at our exclusive venue"
     },
     {
       icon: Camera,
@@ -79,21 +79,23 @@ export default function WeddingsEn() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient-brand">Weddings</span>
+              Your Dream <span className="text-gradient-brand">Wedding</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
-              Unique Moments of Love at Ktima Orion
+              The Ultimate Wedding Venue for Unforgettable Wedding Receptions in Keratea, Athens
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Your wedding is an exceptional moment, the beginning of your shared journey with your partner. 
-                A moment you will remember with emotion and love.
+                At Ktima Orion, we specialize in creating magical wedding receptions that reflect your unique love story. 
+                Your wedding is an exceptional moment, the beginning of your shared journey with your partner.
               </p>
               
               <p>
-                We take on with creativity, consistency and respect for your wishes the planning and organization of your reception. 
-                Your demand for perfection is our absolute goal, so that we can offer you a dream wedding reception.
+                We take on with creativity, consistency and respect for your wishes the planning and organization of your wedding reception. 
+                Our beautiful <a href="/en/venue" className="text-brand-main hover:underline">wedding venue</a>, combined with our 15+ years of experience, ensures that your special day 
+                will be everything you've dreamed of and more. Located near stunning <a href="/en/churches" className="text-brand-main hover:underline">seaside churches</a>, 
+                we offer the perfect setting for your ceremony and wedding reception.
               </p>
               
               <p className="text-brand-main font-semibold text-xl">
@@ -152,14 +154,14 @@ export default function WeddingsEn() {
         {/* FAQs */}
         <FAQEn items={weddingFAQs} title="Frequently Asked Questions About Weddings" />
 
-        {/* Contact CTA */}
-        <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
-          <div className="container-max text-center">
+        {/* Call to Action */}
+        <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
+          <div className="container-max text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Let's Make Your Wedding Dreams Come True
+              Ready to <span className="text-gradient-brand">Plan Your Wedding Reception?</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us to plan together the perfect wedding reception at Ktima Orion
+            <p className="text-xl text-muted-foreground mb-8">
+              Let's create the wedding reception of your dreams together. Book a free tour of our <a href="/en/venue" className="text-brand-main hover:underline">wedding venue</a> or explore <a href="/en/churches" className="text-brand-main hover:underline">nearby seaside churches</a> perfect for your ceremony.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/en/contact">

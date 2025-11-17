@@ -20,17 +20,17 @@ import party2 from '@/assets/party/DSC_7733.JPG';
 
 export default function VenueEn() {
   const venuePhotos = [
-    { src: home1, alt: "Ktima Orion - Semi-outdoor pavilion", category: "Venue" },
-    { src: home2, alt: "Ktima Orion - Event space", category: "Venue" },
-    { src: wedding1, alt: "Ktima Orion - Wedding events", category: "Wedding" },
-    { src: wedding2, alt: "Ktima Orion - Wedding reception", category: "Wedding" },
-    { src: wedding3, alt: "Ktima Orion - Wedding moments", category: "Wedding" },
-    { src: baptism1, alt: "Ktima Orion - Baptism events", category: "Baptism" },
-    { src: baptism2, alt: "Ktima Orion - Baptism reception", category: "Baptism" },
-    { src: corporate1, alt: "Ktima Orion - Corporate events", category: "Corporate" },
-    { src: corporate2, alt: "Ktima Orion - Professional events", category: "Corporate" },
-    { src: party1, alt: "Ktima Orion - Parties and celebrations", category: "Party" },
-    { src: party2, alt: "Ktima Orion - Festive events", category: "Party" }
+    { src: home1, alt: "Wedding venue Ktima Orion semi-outdoor pavilion Keratea", category: "Venue" },
+    { src: home2, alt: "Event space venue natural surroundings Athens", category: "Venue" },
+    { src: wedding1, alt: "Wedding reception venue elegant decoration Keratea", category: "Wedding" },
+    { src: wedding2, alt: "Outdoor wedding reception venue sea view Athens", category: "Wedding" },
+    { src: wedding3, alt: "Wedding venue celebration moments natural space", category: "Wedding" },
+    { src: baptism1, alt: "Baptism reception venue family celebration Keratea", category: "Baptism" },
+    { src: baptism2, alt: "Christening venue decorated tables outdoor space", category: "Baptism" },
+    { src: corporate1, alt: "Corporate event venue professional space Athens", category: "Corporate" },
+    { src: corporate2, alt: "Business event venue air-conditioned hall Keratea", category: "Corporate" },
+    { src: party1, alt: "Party venue celebration space outdoor pavilion", category: "Party" },
+    { src: party2, alt: "Festive event venue elegant space Athens", category: "Party" }
   ];
 
   const venueFeatures = [
@@ -82,13 +82,13 @@ export default function VenueEn() {
   const eventTypes = [
     {
       title: "Weddings",
-      description: "Unique moments of love at Ktima Orion. We undertake with imagination, consistency and respect for your wishes the design and organization of your reception.",
+      description: "Unique moments of love at Ktima Orion wedding venue. We undertake with imagination, consistency and respect for your wishes the design and organization of your wedding reception.",
       count: "200+",
       icon: Heart
     },
     {
       title: "Baptisms",
-      description: "How special and how joyful an event! The ceremony and the reception that will follow must represent the family.",
+      description: "How special and how joyful an event! The christening ceremony and the baptism reception that will follow must represent the family.",
       count: "150+",
       icon: Users
     },
@@ -129,23 +129,23 @@ export default function VenueEn() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient-brand">The Venue</span>
+              Our <span className="text-gradient-brand">Venue</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
-              Ktima Orion - Magical Event Space
+              A Unique Wedding and Baptism Venue for Unforgettable Events in Keratea, Athens
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Ktima Orion is a beautiful green space where visitors immediately feel the glow of luxury 
+                Ktima Orion is a beautiful wedding and baptism reception venue, a green event space where visitors immediately feel the glow of luxury
                 in perfect harmony with the natural environment. In an ideal location with easy access from Attiki Odos, 
                 you can enjoy the special moments of your life.
               </p>
               
               <p>
-                The closed, fully air-conditioned hall and the magical outdoor space guarantee warm reception 
-                and absolute hospitality for your guests. We are very close to picturesque chapels by the sea 
-                for the ceremony.
+                The fully air-conditioned wedding and baptism reception hall and the magical outdoor pavilion space guarantee warm reception 
+                and absolute hospitality for your guests. We are very close to <a href="/en/churches" className="text-brand-main hover:underline">picturesque seaside chapels</a> 
+                for your <a href="/en/weddings" className="text-brand-main hover:underline">wedding</a> or <a href="/en/baptism" className="text-brand-main hover:underline">baptism</a> ceremony. Explore our comprehensive <a href="/en/services" className="text-brand-main hover:underline">event services</a> for your special day.
               </p>
             </div>
           </div>

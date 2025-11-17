@@ -22,25 +22,25 @@ import baptism12 from '@/assets/vaftisi/DSC_7622.JPG';
 
 export default function BaptismEn() {
   const baptismPhotos = [
-    { src: baptism1, alt: "Baptism at Ktima Orion" },
-    { src: baptism2, alt: "Baptism reception" },
-    { src: baptism3, alt: "Unique baptism moments" },
-    { src: baptism4, alt: "Baptism celebration" },
-    { src: baptism5, alt: "Ktima Orion baptism" },
-    { src: baptism6, alt: "Baptism memories" },
-    { src: baptism7, alt: "Joyful baptism" },
-    { src: baptism8, alt: "Magical moments" },
-    { src: baptism9, alt: "Family celebration" },
-    { src: baptism10, alt: "Baptism decoration" },
-    { src: baptism11, alt: "Special moments" },
-    { src: baptism12, alt: "Unforgettable baptism" }
+    { src: baptism1, alt: "Baptism reception venue Ktima Orion Keratea Athens" },
+    { src: baptism2, alt: "Elegant baptism reception decorated tables flowers" },
+    { src: baptism3, alt: "Baptism celebration outdoor space natural surroundings" },
+    { src: baptism4, alt: "Christening venue decoration family gathering Keratea" },
+    { src: baptism5, alt: "Baptism reception table settings elegant decor" },
+    { src: baptism6, alt: "Unforgettable baptism celebration memories outdoor pavilion" },
+    { src: baptism7, alt: "Joyful baptism reception children playing area" },
+    { src: baptism8, alt: "Magical baptism moments professional photography" },
+    { src: baptism9, alt: "Family christening celebration venue Athens" },
+    { src: baptism10, alt: "Beautiful baptism decoration flowers elegant styling" },
+    { src: baptism11, alt: "Special baptism reception moments outdoor venue" },
+    { src: baptism12, alt: "Unforgettable christening reception Ktima Orion" }
   ];
 
   const baptismFeatures = [
     {
       icon: Heart,
       title: "Tender Atmosphere",
-      description: "We create a warm and welcoming atmosphere for your family"
+      description: "We create a warm and welcoming atmosphere for your baptism reception and family celebration"
     },
     {
       icon: Sparkles,
@@ -96,22 +96,22 @@ export default function BaptismEn() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient-brand">Baptism</span>
+              <span className="text-gradient-brand">Baptism</span> at Ktima Orion
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
-              Create Unforgettable Memories for Your Child's Baptism
+              The Perfect Baptism Reception Venue for Your Child's Special Day in Keratea, Athens
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                What a special and joyful occasion! How tender yet demanding!
+                A christening is a unique and special moment for every family. What a joyful and tender occasion!
               </p>
               
               <p>
-                The ceremony and the reception that follows must represent your family and deserve only the best. 
-                It should radiate joy to create a wonderful celebration for all your loved ones. 
+                The ceremony and the baptism reception that follows must represent your family and deserve only the best. 
                 Understanding the importance of the baptism reception, we stand by your side to organize 
-                your child's baptism together, with love and passion.
+                your child's baptism together, with love and passion. Our <a href="/en/venue" className="text-brand-main hover:underline">beautiful venue</a> is located near stunning <a href="/en/churches" className="text-brand-main hover:underline">seaside churches</a>, 
+                making it easy to combine the christening ceremony with a joyful reception.
               </p>
               
               <p className="text-brand-main font-semibold text-xl">
@@ -235,13 +235,13 @@ export default function BaptismEn() {
         </section>
 
         {/* Contact CTA */}
-        <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
-          <div className="container-max text-center">
+        <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
+          <div className="container-max text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Let's make your child's baptism unforgettable
+              Ready to <span className="text-gradient-brand">Plan Your Baptism Reception?</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us to plan the perfect baptism reception at Ktima Orion
+            <p className="text-xl text-muted-foreground mb-8">
+              Contact us today to schedule a visit to our <a href="/en/venue" className="text-brand-main hover:underline">christening venue</a> and start planning this unforgettable baptism celebration. Explore our <a href="/en/services" className="text-brand-main hover:underline">baptism services</a> and nearby <a href="/en/churches" className="text-brand-main hover:underline">churches</a>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button button4">
