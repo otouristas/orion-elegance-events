@@ -5,6 +5,8 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Baby, Star, Sparkles } from 'lucide-react';
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
+import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
+import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
 
 // Import baptism photos
 import baptism1 from '@/assets/vaftisi/DSC_7806.JPG';
@@ -238,6 +240,18 @@ export default function BaptismEn() {
             </div>
           </div>
         </section>
+
+        {/* Trust Signals */}
+        <TrustSignalsEn />
+
+        {/* FAQs */}
+        <FAQEn items={baptismFAQs} title="Frequently Asked Questions About Baptisms" />
+
+        {/* Nearby Churches */}
+        <NearbyChurchesEn />
+
+        {/* Related Services */}
+        <RelatedServicesEn currentPage="/en/baptism" />
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">

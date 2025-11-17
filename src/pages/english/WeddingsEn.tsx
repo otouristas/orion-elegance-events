@@ -5,6 +5,8 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star } from 'lucide-react';
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
+import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
+import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
 
 // Import wedding photos
 import wedding1 from '@/assets/gamos/DSC_7637.JPG';
@@ -158,6 +160,12 @@ export default function WeddingsEn() {
 
         {/* FAQs */}
         <FAQEn items={weddingFAQs} title="Frequently Asked Questions About Weddings" />
+
+        {/* Nearby Churches */}
+        <NearbyChurchesEn />
+
+        {/* Related Services */}
+        <RelatedServicesEn currentPage="/en/weddings" />
 
         {/* Call to Action */}
         <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
