@@ -30,8 +30,8 @@ export const ServicesEn = () => {
     {
       icon: Camera,
       title: 'Photographer',
-      description: 'Partnership with "Darva Photography" with more than 20 years of experience in wedding photography and videography.',
-      features: ['Professional coverage', '20+ years experience', 'Photo & video']
+      description: 'Partnership with "Studio Alpha" - photography is passion, inspiration, creation…the moment.',
+      features: ['Professional coverage', 'Years of experience', 'Photo & video']
     },
   ];
 
