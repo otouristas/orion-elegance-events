@@ -6,18 +6,18 @@ import { Heart, Camera, Users, Baby, Star, Sparkles } from 'lucide-react';
 
 export default function Vaptisi() {
   const baptismPhotos = [
-    { src: "/vaptisi/1.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/2.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/3.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/4.jpg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/5.jpg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/6.jpg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/7.JPG", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/8.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/9.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/10.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/11.JPG", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
-    { src: "/vaptisi/12.JPG", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" }
+    { src: "/vaptisi/1.jpeg", alt: "Βαπτιστική δεξίωση κτήμα Ωρίων Κερατέα" },
+    { src: "/vaptisi/2.jpeg", alt: "Βάπτιση χώρος δεξιώσεων Αττική παιδικό μενού" },
+    { src: "/vaptisi/3.jpeg", alt: "Βαπτιστική εκδήλωση κτήμα Κερατέα θάλασσα" },
+    { src: "/vaptisi/4.jpg", alt: "Χώρος βάπτισης Αττική εξωτερικός χώρος" },
+    { src: "/vaptisi/5.jpg", alt: "Βαπτιστική δεξίωση διακόσμηση Κερατέα" },
+    { src: "/vaptisi/6.jpg", alt: "Βάπτιση κτήμα Ωρίων parking δωρεάν" },
+    { src: "/vaptisi/7.JPG", alt: "Baptism reception venue Athens Greece" },
+    { src: "/vaptisi/8.jpeg", alt: "Βαπτιστική τελετή εκκλησία Κερατέα" },
+    { src: "/vaptisi/9.jpeg", alt: "Χώρος δεξιώσεων βαπτίσεων Αθήνα" },
+    { src: "/vaptisi/10.jpeg", alt: "Βάπτιση παιδιού κτήμα Αττική κλιματισμός" },
+    { src: "/vaptisi/11.JPG", alt: "Βαπτιστική δεξίωση υπαίθριος χώρος Κερατέα" },
+    { src: "/vaptisi/12.JPG", alt: "Κτήμα για βάπτιση κοντά Αθήνα Athens Riviera" }
   ];
 
   const baptismFeatures = [
