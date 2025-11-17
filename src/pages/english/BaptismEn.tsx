@@ -71,9 +71,9 @@ export default function BaptismEn() {
     <Layout>
       <SEO 
         title="Baptism at Ktima Orion – Baptism Venue Keratea Attica"
-        description="Dream baptism at Ktima Orion Keratea: outdoor space, playground, ample parking, near the sea. Customized baptism packages. Request a quote!"
+        description="Dream baptism at Ktima Orion Keratea: outdoor space with views, air-conditioned hall, playground, ample parking, near the sea. Book a visit today!"
         canonical="/en/baptism"
-        keywords="baptism keratea greece, baptism venue attica, baptism reception, baptism venue athens, baptism packages, baptism by the sea"
+        keywords="baptism keratea greece, baptism venue attica, baptism reception, baptism venue athens, baptism by the sea, seaside baptism venue"
         lang="en"
       />
       <div className="pt-20">

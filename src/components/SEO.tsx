@@ -87,7 +87,6 @@ export function SEO({
             "longitude": "24.028817"
           },
           "telephone": "+302299068812",
-          "priceRange": "€€€",
           "servesCuisine": "Greek",
           "aggregateRating": {
             "@type": "AggregateRating",

@@ -36,9 +36,9 @@ export default function ReceptionEn() {
     <Layout>
       <SEO 
         title="Wedding & Baptism Reception | Ktima Orion Keratea Athens"
-        description="Unique receptions by the sea. Menus from €50/person, open bar, decoration, cake. View packages & pricing."
+        description="Unique receptions at Ktima Orion Keratea: outdoor space with views, air-conditioned hall, 100+ parking spaces. Exclusive venue use. Book a tour!"
         canonical="/en/reception"
-        keywords="wedding reception keratea, baptism reception athens, reception venue attica, event catering"
+        keywords="wedding reception keratea, baptism reception athens, reception venue attica, event catering, wedding venue greece"
         lang="en"
       />
       <div className="pt-20">
