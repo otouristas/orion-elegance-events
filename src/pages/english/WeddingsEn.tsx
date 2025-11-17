@@ -69,7 +69,7 @@ export default function WeddingsEn() {
     <Layout>
       <SEO 
         title="Wedding at Ktima Orion – Wedding Venue Keratea Athens | Greece"
-        description="Organize your dream wedding at Ktima Orion Keratea, Athens. Outdoor garden with sea view, indoor hall, near seaside chapels. 15+ years experience organizing weddings."
+        description="Wedding reception Ktima Orion Keratea Athens. Sea view, bridal table, free parking, A/C. Near seaside churches. 15+ yrs experience. Check dates!"
         canonical="/en/weddings"
         keywords="wedding venue keratea, wedding venue athens greece, wedding reception, wedding planning greece, destination wedding athens"
         lang="en"

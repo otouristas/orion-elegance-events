@@ -31,7 +31,7 @@ const IndexEn = () => {
     <div className="min-h-screen">
       <SEO 
         title="Ktima Orion Keratea – Wedding & Baptism Venue Athens | Event Venue Greece"
-        description="Discover Ktima Orion in Keratea, Athens – ideal venue for weddings, baptisms, corporate events. Seaside chapels, large garden, ample parking. Book your visit today!"
+        description="Wedding & baptism venue Keratea Athens. Sea view, 100+ parking, A/C halls. Near seaside chapels. 15+ yrs experience. Book your free tour!"
         canonical="/en"
         keywords="wedding venue keratea greece, baptism venue athens, event venue attica, corporate events athens, ktima orion, wedding venue near athens"
         lang="en"
