@@ -16,7 +16,6 @@ import PartyEn from "./pages/english/PartyEn";
 import CorporateEventsEn from "./pages/english/CorporateEventsEn";
 import ContactEn from "./pages/english/ContactEn";
 import AboutEn from "./pages/english/AboutEn";
-import WeddingPlannerEn from "./pages/english/WeddingPlannerEn";
 import PhotographerEn from "./pages/english/PhotographerEn";
 import DjMusicEn from "./pages/english/DjMusicEn";
 import VenueEn from "./pages/english/VenueEn";
@@ -29,7 +28,6 @@ import Ekklisies from "./pages/greek/Ekklisies";
 import Parti from "./pages/greek/Parti";
 import Vaptisi from "./pages/greek/Vaptisi";
 import Gamos from "./pages/greek/Gamos";
-import DiorganotisGamon from "./pages/greek/DiorganotisGamon";
 import Emeis from "./pages/greek/Emeis";
 import Request from "./pages/greek/Request";
 import Reviews from "./pages/greek/Reviews";
@@ -75,21 +73,25 @@ const App = () => (
           <Route path="/en/venue" element={<VenueEn />} />
           <Route path="/en/churches" element={<ChurchesEn />} />
           <Route path="/en/services" element={<ServicesEn />} />
-          <Route path="/en/wedding-planner" element={<WeddingPlannerEn />} />
           <Route path="/en/photographer" element={<PhotographerEn />} />
           <Route path="/en/dj-music" element={<DjMusicEn />} />
           <Route path="/en/reviews" element={<ReviewsEn />} />
           <Route path="/en/contact" element={<ContactEn />} />
+          
+          {/* Redirect wedding planner to homepage */}
+          <Route path="/en/wedding-planner" element={<IndexEn />} />
           
           {/* Greek Routes */}
           <Route path="/ekklisies" element={<Ekklisies />} />
           <Route path="/parti" element={<Parti />} />
           <Route path="/vaptisi" element={<Vaptisi />} />
           <Route path="/gamos" element={<Gamos />} />
-          <Route path="/diorganotis-gamon" element={<DiorganotisGamon />} />
           <Route path="/emeis" element={<Emeis />} />
           <Route path="/request" element={<Request />} />
           <Route path="/reviews" element={<Reviews />} />
+          
+          {/* Redirect wedding planner to homepage */}
+          <Route path="/diorganotis-gamon" element={<Index />} />
           <Route path="/eterikes-ekdiloseis" element={<EterikesEkdiloseis />} />
           <Route path="/o-horos" element={<OHoros />} />
           <Route path="/fotografos" element={<Fotografos />} />

@@ -43,11 +43,6 @@ export default function VenueEn() {
       description: "Magical semi-outdoor space for events"
     },
     {
-      icon: Utensils,
-      title: "Barbeque Facilities",
-      description: "Full setup for cooking and serving"
-    },
-    {
       icon: Heart,
       title: "Reception Area",
       description: "Welcome space for guests"
@@ -56,16 +51,6 @@ export default function VenueEn() {
       icon: Home,
       title: "Studio",
       description: "Studio for the couple throughout"
-    },
-    {
-      icon: Award,
-      title: "Generator",
-      description: "Power backup in case of outage"
-    },
-    {
-      icon: TreePine,
-      title: "Beautiful Gardens",
-      description: "Large gardens and lovely flower beds"
     }
   ];
 

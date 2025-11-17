@@ -4,11 +4,8 @@ export const AboutEn = () => {
   const features = [
     'Parking space',
     'Semi-outdoor pavilion',
-    'Barbecue facilities',
     'Reception area',
-    'Studio for the couple',
-    'Power generator',
-    'Large gardens and flowerbeds'
+    'Studio for the couple'
   ];
 
   return (

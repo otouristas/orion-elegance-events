@@ -30,7 +30,6 @@ const pageMapping: Record<string, string> = {
   '/o-horos': '/en/venue', '/en/venue': '/o-horos',
   '/ekklisies': '/en/churches', '/en/churches': '/ekklisies',
   '/ypiresies': '/en/services', '/en/services': '/ypiresies',
-  '/diorganotis-gamon': '/en/wedding-planner', '/en/wedding-planner': '/diorganotis-gamon',
   '/fotografos': '/en/photographer', '/en/photographer': '/fotografos',
   '/dj-mousiki': '/en/dj-music', '/en/dj-music': '/dj-mousiki',
   '/reviews': '/en/reviews', '/en/reviews': '/reviews',
@@ -78,7 +77,6 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
       href: '/ypiresies',
       hrefEn: '/en/services',
       submenu: [
-        { label: 'ΔΙΟΡΓΑΝΩΤΗΣ ΓΑΜΩΝ', labelEn: 'WEDDING PLANNER', href: '/diorganotis-gamon', hrefEn: '/en/wedding-planner' },
         { label: 'ΦΩΤΟΓΡΑΦΟΣ', labelEn: 'PHOTOGRAPHER', href: '/fotografos', hrefEn: '/en/photographer' },
         { label: 'DJ - ΜΟΥΣΙΚΗ', labelEn: 'DJ - MUSIC', href: '/dj-mousiki', hrefEn: '/en/dj-music' }
       ]
