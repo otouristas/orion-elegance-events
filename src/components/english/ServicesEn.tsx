@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Heart, Baby, Building, PartyPopper, Camera, Crown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const ServicesEn = () => {
   const services = [
@@ -7,31 +8,36 @@ export const ServicesEn = () => {
       icon: Heart,
       title: 'Weddings',
       description: 'Unique wedding receptions at Ktima Orion wedding venue. Your wedding is an extremely important moment, the beginning of your shared journey.',
-      features: ['Indoor & outdoor reception space', 'Fully air-conditioned wedding hall', 'Near picturesque seaside chapels']
+      features: ['Indoor & outdoor reception space', 'Fully air-conditioned wedding hall', 'Near picturesque seaside chapels'],
+      link: '/en/weddings'
     },
     {
       icon: Baby,
       title: 'Baptisms',
       description: 'Create unforgettable baptism reception memories for your child\'s christening. A tender and joyful celebration for the whole family.',
-      features: ['Special children\'s menu', 'Professional baptism service', 'Ideal christening environment']
+      features: ['Special children\'s menu', 'Professional baptism service', 'Ideal christening environment'],
+      link: '/en/baptism'
     },
     {
       icon: Building,
       title: 'Corporate Events',
       description: 'Your event, our expertise. Professionalism and dedication for the most successful corporate events.',
-      features: ['Conference equipment', 'High-quality catering', 'Parking space']
+      features: ['Conference equipment', 'High-quality catering', 'Parking space'],
+      link: '/en/services'
     },
     {
       icon: PartyPopper,
       title: 'Parties',
       description: 'The ideal space for your party. Birthdays, engagements or any special moment - our venue adapts to every need.',
-      features: ['Flexible space', 'Music coverage', 'Bar & cocktails']
+      features: ['Flexible space', 'Music coverage', 'Bar & cocktails'],
+      link: '/en/services'
     },
     {
       icon: Camera,
       title: 'Photographer',
       description: 'Partnership with "Studio Alpha" - photography is passion, inspiration, creation…the moment.',
-      features: ['Professional coverage', 'Years of experience', 'Photo & video']
+      features: ['Professional coverage', 'Years of experience', 'Photo & video'],
+      link: '/en/services'
     },
   ];
 
@@ -74,8 +80,8 @@ export const ServicesEn = () => {
                 ))}
               </ul>
               
-              <Button variant="outline" className="border-brand-main text-brand-main hover:bg-brand-main hover:text-white">
-                LEARN MORE
+              <Button variant="outline" className="border-brand-main text-brand-main hover:bg-brand-main hover:text-white" asChild>
+                <Link to={service.link}>LEARN MORE</Link>
               </Button>
             </div>
           ))}
