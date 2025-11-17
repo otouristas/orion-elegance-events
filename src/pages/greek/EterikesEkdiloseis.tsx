@@ -4,34 +4,16 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star, Briefcase, BarChart3, Trophy, Calendar } from 'lucide-react';
 
-// Import corporate events photos
-import event1 from '@/assets/ekdiloseis/DSC_7433.JPG';
-import event2 from '@/assets/ekdiloseis/DSC_7435.JPG';
-import event3 from '@/assets/ekdiloseis/DSC_7439.JPG';
-import event4 from '@/assets/ekdiloseis/DSC_7442.JPG';
-import event5 from '@/assets/ekdiloseis/DSC_7451.JPG';
-import event6 from '@/assets/ekdiloseis/DSC_7465.JPG';
-import event7 from '@/assets/ekdiloseis/DSC_7471.JPG';
-import event8 from '@/assets/ekdiloseis/DSC_7473.JPG';
-import event9 from '@/assets/ekdiloseis/DSC_7480.JPG';
-import event10 from '@/assets/ekdiloseis/DSC_7481.JPG';
-import event11 from '@/assets/ekdiloseis/DSC_7484.JPG';
-import event12 from '@/assets/ekdiloseis/DSC_7486.JPG';
-
 export default function EterikesEkdiloseis() {
   const eventPhotos = [
-    { src: event1, alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
-    { src: event2, alt: "Επαγγελματική εκδήλωση" },
-    { src: event3, alt: "Συνέδριο και παρουσιάσεις" },
-    { src: event4, alt: "Εταιρική εκδήλωση" },
-    { src: event5, alt: "Επαγγελματικό event" },
-    { src: event6, alt: "Συνέδριο στο κτήμα" },
-    { src: event7, alt: "Εταιρική γιορτή" },
-    { src: event8, alt: "Εκδήλωση ΜΜΕ" },
-    { src: event9, alt: "Παρουσίαση προϊόντος" },
-    { src: event10, alt: "Επαγγελματική συνάντηση" },
-    { src: event11, alt: "Εταιρικό συνέδριο" },
-    { src: event12, alt: "Καλέσμα εκδήλωση" }
+    { src: "/etairika/1.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/2.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/3.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/4.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/5.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/6.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/7.JPG", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" },
+    { src: "/etairika/8.jpeg", alt: "Εταιρική εκδήλωση στο Κτήμα Ωρίων" }
   ];
 
   const eventFeatures = [
@@ -169,7 +151,6 @@ export default function EterikesEkdiloseis() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {eventPhotos.map((photo, index) => (
                 <ClickableImage
-                  key={index}
                   src={photo.src}
                   alt={photo.alt}
                   images={eventPhotos}

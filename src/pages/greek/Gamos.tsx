@@ -5,45 +5,35 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Calendar, MapPin, Star } from 'lucide-react';
 
 // Import wedding photos
-import wedding1 from '@/assets/gamos/DSC_7637.JPG';
 import wedding2 from '@/assets/gamos/DSC_7816.JPG';
-import wedding3 from '@/assets/gamos/DSC_7712.JPG';
 import wedding4 from '@/assets/gamos/DSC_7806.JPG';
 import wedding5 from '@/assets/gamos/DSC_7859.JPG';
-import wedding6 from '@/assets/gamos/DSC_7662.JPG';
 import wedding7 from '@/assets/gamos/DSC_7828.JPG';
-import wedding8 from '@/assets/gamos/DSC_7588.JPG';
-import wedding9 from '@/assets/gamos/DSC_7796.JPG';
-import wedding10 from '@/assets/gamos/DSC_7733.JPG';
-import wedding11 from '@/assets/gamos/DSC_7705.JPG';
-import wedding12 from '@/assets/gamos/DSC_7783.JPG';
-import wedding13 from '@/assets/gamos/DSC_7763.JPG';
-import wedding14 from '@/assets/gamos/DSC_7673.JPG';
-import wedding15 from '@/assets/gamos/DSC_7542.JPG';
 import wedding16 from '@/assets/gamos/DSC_7569.JPG';
-import wedding17 from '@/assets/gamos/DSC_7503.JPG';
-import wedding18 from '@/assets/gamos/DSC_7622.JPG';
 
 export default function Gamos() {
   const weddingPhotos = [
-    { src: wedding1, alt: "Γαμήλια στιγμή στο Κτήμα Ωρίων" },
     { src: wedding2, alt: "Γαμήλια δεξίωση" },
-    { src: wedding3, alt: "Μοναδικές στιγμές" },
     { src: wedding4, alt: "Γαμήλια φωτογραφία" },
     { src: wedding5, alt: "Κτήμα Ωρίων γάμος" },
-    { src: wedding6, alt: "Γαμήλια βράδια" },
     { src: wedding7, alt: "Αγάπη και χαρά" },
-    { src: wedding8, alt: "Μαγευτικό περιβάλλον" },
-    { src: wedding9, alt: "Γαμήλια αναμνήσεις" },
-    { src: wedding10, alt: "Κτήμα Ωρίων" },
-    { src: wedding11, alt: "Γαμήλια στιγμές" },
-    { src: wedding12, alt: "Μοναδικές αναμνήσεις" },
-    { src: wedding13, alt: "Γαμήλια φωτογραφίες" },
-    { src: wedding14, alt: "Κτήμα Ωρίων γάμος" },
-    { src: wedding15, alt: "Ρομαντική βραδιά" },
     { src: wedding16, alt: "Γαμήλιος στολισμός" },
-    { src: wedding17, alt: "Αξέχαστες στιγμές" },
-    { src: wedding18, alt: "Ονειρεμένος γάμος" }
+    { src: "/gamos/1.jpeg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/3.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/6.jpeg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/8.jpeg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/9.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/10.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/11.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/12.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/13.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/14.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/15.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/16.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/17.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/18.jpg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/19.jpeg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/gamos/20.jpeg", alt: "Γαμήλια φωτογραφία στο Κτήμα Ωρίων" }
   ];
 
   const weddingFeatures = [
@@ -138,7 +128,6 @@ export default function Gamos() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {weddingPhotos.map((photo, index) => (
                 <ClickableImage
-                  key={index}
                   src={photo.src}
                   alt={photo.alt}
                   images={weddingPhotos}

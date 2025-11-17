@@ -1,5 +1,3 @@
-import aboutImage from '@/assets/home/DSC_7662.JPG';
-
 export const About = () => {
   const features = [
     'Χώρο στάθμευσης',
@@ -48,7 +46,7 @@ export const About = () => {
           <div className="space-y-8">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={aboutImage}
+                src="/arxiki/9.jpg"
                 alt="Κτήμα Ωρίων - Εσωτερικός χώρος"
                 className="w-full h-[400px] object-cover"
               />

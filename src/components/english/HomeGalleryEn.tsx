@@ -1,18 +1,13 @@
-import homeImage1 from '@/assets/home/DSC_7588.JPG';
-import homeImage2 from '@/assets/home/DSC_7637.JPG';
-import homeImage3 from '@/assets/home/DSC_7662.JPG';
-import homeImage4 from '@/assets/home/DSC_7712.JPG';
-import homeImage5 from '@/assets/home/DSC_7806.JPG';
-import homeImage6 from '@/assets/home/DSC_7816.JPG';
-
 export const HomeGalleryEn = () => {
   const galleryImages = [
-    { src: homeImage1, alt: 'Ktima Orion - Event venue' },
-    { src: homeImage2, alt: 'Ktima Orion - Wedding reception' },
-    { src: homeImage3, alt: 'Ktima Orion - Wedding moment' },
-    { src: homeImage4, alt: 'Ktima Orion - Event space' },
-    { src: homeImage5, alt: 'Ktima Orion - Venue atmosphere' },
-    { src: homeImage6, alt: 'Ktima Orion - Beautiful space' },
+    { src: "/arxiki/1.jpeg", alt: 'Ktima Orion - Event venue' },
+    { src: "/arxiki/2.jpg", alt: 'Ktima Orion - Wedding reception' },
+    { src: "/arxiki/3.jpg", alt: 'Ktima Orion - Wedding moment' },
+    { src: "/arxiki/4.jpg", alt: 'Ktima Orion - Event space' },
+    { src: "/arxiki/5.jpg", alt: 'Ktima Orion - Venue atmosphere' },
+    { src: "/arxiki/6.JPG", alt: 'Ktima Orion - Celebration' },
+    { src: "/arxiki/7.jpeg", alt: 'Ktima Orion - Beautiful space' },
+    { src: "/arxiki/9.jpg", alt: 'Ktima Orion - Magical space' }
   ];
 
   return (

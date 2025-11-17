@@ -5,37 +5,20 @@ import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star, Music, Sparkles, Gift, Calendar } from 'lucide-react';
 
 // Import party photos
-import party1 from '@/assets/party/DSC_7433.JPG';
-import party2 from '@/assets/party/DSC_7435.JPG';
-import party3 from '@/assets/party/DSC_7439.JPG';
-import party4 from '@/assets/party/DSC_7442.JPG';
-import party5 from '@/assets/party/DSC_7451.JPG';
-import party6 from '@/assets/party/DSC_7465.JPG';
-import party7 from '@/assets/party/DSC_7471.JPG';
-import party8 from '@/assets/party/DSC_7473.JPG';
-import party9 from '@/assets/party/DSC_7480.JPG';
-import party10 from '@/assets/party/DSC_7481.JPG';
-import party11 from '@/assets/party/DSC_7484.JPG';
-import party12 from '@/assets/party/DSC_7486.JPG';
-import party13 from '@/assets/party/DSC_7489.JPG';
-import party14 from '@/assets/party/DSC_7494.JPG';
 
 export default function Parti() {
   const partyPhotos = [
-    { src: party1, alt: "Πάρτι στο Κτήμα Ωρίων" },
-    { src: party2, alt: "Γενέθλια πάρτι" },
-    { src: party3, alt: "Εταιρικό πάρτι" },
-    { src: party4, alt: "Εορταστικό πάρτι" },
-    { src: party5, alt: "Κτήμα Ωρίων πάρτι" },
-    { src: party6, alt: "Μοναδικό πάρτι" },
-    { src: party7, alt: "Αξέχαστο πάρτι" },
-    { src: party8, alt: "Διασκέδαση στο κτήμα" },
-    { src: party9, alt: "Χαρούμενο πάρτι" },
-    { src: party10, alt: "Γιορτή με στυλ" },
-    { src: party11, alt: "Ονειρεμένο πάρτι" },
-    { src: party12, alt: "Εκδήλωση πάρτι" },
-    { src: party13, alt: "Μαγευτική ατμόσφαιρα" },
-    { src: party14, alt: "Ξεχωριστό πάρτι" }
+    { src: "/party/1.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/2.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/3.JPG", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/4.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/5.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/6.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/7.jpeg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/8.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/9.JPG", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/10.jpg", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" },
+    { src: "/party/11.JPG", alt: "Φωτογραφία πάρτι στο Κτήμα Ωρίων" }
   ];
 
   const partyFeatures = [
@@ -215,7 +198,6 @@ export default function Parti() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {partyPhotos.map((photo, index) => (
                 <ClickableImage
-                  key={index}
                   src={photo.src}
                   alt={photo.alt}
                   images={partyPhotos}

@@ -1,23 +1,15 @@
 import { Camera } from 'lucide-react';
-import homeImage1 from '@/assets/home/DSC_7588.JPG';
-import homeImage2 from '@/assets/home/DSC_7637.JPG';
-import homeImage3 from '@/assets/home/DSC_7662.JPG';
-import homeImage4 from '@/assets/home/DSC_7712.JPG';
-import homeImage5 from '@/assets/home/DSC_7806.JPG';
-import homeImage6 from '@/assets/home/DSC_7816.JPG';
-import homeImage7 from '@/assets/home/DSC_7828.JPG';
-import homeImage8 from '@/assets/home/DSC_7859.JPG';
 
 export const HomeGallery = () => {
   const galleryImages = [
-    { src: homeImage1, alt: "Κτήμα Ωρίων - Εκδήλωση" },
-    { src: homeImage2, alt: "Κτήμα Ωρίων - Δεξίωση" },
-    { src: homeImage3, alt: "Κτήμα Ωρίων - Γαμήλια στιγμή" },
-    { src: homeImage4, alt: "Κτήμα Ωρίων - Εκδήλωση" },
-    { src: homeImage5, alt: "Κτήμα Ωρίων - Χώρος" },
-    { src: homeImage6, alt: "Κτήμα Ωρίων - Ατμόσφαιρα" },
-    { src: homeImage7, alt: "Κτήμα Ωρίων - Γιορτή" },
-    { src: homeImage8, alt: "Κτήμα Ωρίων - Μαγευτικός χώρος" }
+    { src: "/arxiki/1.jpeg", alt: "Κτήμα Ωρίων - Εκδήλωση" },
+    { src: "/arxiki/2.jpg", alt: "Κτήμα Ωρίων - Δεξίωση" },
+    { src: "/arxiki/3.jpg", alt: "Κτήμα Ωρίων - Γαμήλια στιγμή" },
+    { src: "/arxiki/4.jpg", alt: "Κτήμα Ωρίων - Εκδήλωση" },
+    { src: "/arxiki/5.jpg", alt: "Κτήμα Ωρίων - Χώρος" },
+    { src: "/arxiki/6.JPG", alt: "Κτήμα Ωρίων - Ατμόσφαιρα" },
+    { src: "/arxiki/7.jpeg", alt: "Κτήμα Ωρίων - Γιορτή" },
+    { src: "/arxiki/9.jpg", alt: "Κτήμα Ωρίων - Μαγευτικός χώρος" }
   ];
 
   return (

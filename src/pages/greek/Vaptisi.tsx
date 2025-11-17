@@ -4,34 +4,20 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Baby, Star, Sparkles } from 'lucide-react';
 
-// Import baptism photos
-import baptism1 from '@/assets/vaftisi/DSC_7806.JPG';
-import baptism2 from '@/assets/vaftisi/DSC_7712.JPG';
-import baptism3 from '@/assets/vaftisi/DSC_7828.JPG';
-import baptism4 from '@/assets/vaftisi/DSC_7588.JPG';
-import baptism5 from '@/assets/vaftisi/DSC_7662.JPG';
-import baptism6 from '@/assets/vaftisi/DSC_7859.JPG';
-import baptism7 from '@/assets/vaftisi/DSC_7796.JPG';
-import baptism8 from '@/assets/vaftisi/DSC_7763.JPG';
-import baptism9 from '@/assets/vaftisi/DSC_7733.JPG';
-import baptism10 from '@/assets/vaftisi/DSC_7569.JPG';
-import baptism11 from '@/assets/vaftisi/DSC_7816.JPG';
-import baptism12 from '@/assets/vaftisi/DSC_7622.JPG';
-
 export default function Vaptisi() {
   const baptismPhotos = [
-    { src: baptism1, alt: "Βαπτιστικό στο Κτήμα Ωρίων" },
-    { src: baptism2, alt: "Βαπτιστική δεξίωση" },
-    { src: baptism3, alt: "Μοναδικές στιγμές βάπτισης" },
-    { src: baptism4, alt: "Βαπτιστική γιορτή" },
-    { src: baptism5, alt: "Κτήμα Ωρίων βάπτιση" },
-    { src: baptism6, alt: "Βαπτιστικές αναμνήσεις" },
-    { src: baptism7, alt: "Χαρούμενη βάπτιση" },
-    { src: baptism8, alt: "Μαγικές στιγμές" },
-    { src: baptism9, alt: "Οικογενειακή γιορτή" },
-    { src: baptism10, alt: "Βαπτιστικός στολισμός" },
-    { src: baptism11, alt: "Ξεχωριστές στιγμές" },
-    { src: baptism12, alt: "Αξέχαστη βάπτιση" }
+    { src: "/vaptisi/1.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/2.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/3.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/4.jpg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/5.jpg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/6.jpg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/7.JPG", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/8.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/9.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/10.jpeg", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/11.JPG", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" },
+    { src: "/vaptisi/12.JPG", alt: "Βαπτιστική φωτογραφία στο Κτήμα Ωρίων" }
   ];
 
   const baptismFeatures = [
@@ -156,7 +142,6 @@ export default function Vaptisi() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {baptismPhotos.map((photo, index) => (
                 <ClickableImage
-                  key={index}
                   src={photo.src}
                   alt={photo.alt}
                   images={baptismPhotos}
