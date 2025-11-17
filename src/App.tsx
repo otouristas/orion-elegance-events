@@ -39,6 +39,10 @@ import Ypiresies from "./pages/greek/Ypiresies";
 import Epikoinonia from "./pages/greek/Epikoinonia";
 import Gallery from "./pages/greek/Gallery";
 import DjMousiki from "./pages/greek/DjMousiki";
+import Blog from "./pages/greek/Blog";
+import BlogPost from "./pages/greek/BlogPost";
+import BlogEn from "./pages/english/BlogEn";
+import BlogPostEn from "./pages/english/BlogPostEn";
 
 // SEO Greek pages
 import KtimaGamouAthina from "./pages/greek/seo/KtimaGamouAthina";
@@ -77,6 +81,8 @@ const App = () => (
           <Route path="/en/dj-music" element={<DjMusicEn />} />
           <Route path="/en/reviews" element={<ReviewsEn />} />
           <Route path="/en/contact" element={<ContactEn />} />
+          <Route path="/en/blog" element={<BlogEn />} />
+          <Route path="/en/blog/:slug" element={<BlogPostEn />} />
           
           {/* Redirect wedding planner to homepage */}
           <Route path="/en/wedding-planner" element={<IndexEn />} />
