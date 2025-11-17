@@ -144,16 +144,16 @@ export default function ServicesEn() {
               and how we can create unforgettable memories together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/en/contact">
+              <Link to="/en/contact">
                 <button className="button button4">
                   BOOK FREE TOUR
                 </button>
-              </a>
-              <a href="/en/weddings">
+              </Link>
+              <Link to="/en/weddings">
                 <button className="button button4">
                   VIEW OUR SERVICES
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
