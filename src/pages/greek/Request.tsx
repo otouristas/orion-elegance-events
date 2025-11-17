@@ -17,7 +17,6 @@ export default function Request() {
     eventType: '',
     eventDate: '',
     guestCount: '',
-    budget: '',
     specialRequests: '',
     howDidYouHear: '',
     services: [] as string[]
@@ -70,7 +69,6 @@ export default function Request() {
         eventType: '',
         eventDate: '',
         guestCount: '',
-        budget: '',
         specialRequests: '',
         howDidYouHear: '',
         services: []
