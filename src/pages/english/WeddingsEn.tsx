@@ -3,6 +3,8 @@ import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
 import { Heart, Camera, Users, Star } from 'lucide-react';
+import { FAQEn } from '@/components/english/FAQEn';
+import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 
 // Import wedding photos
 import wedding1 from '@/assets/gamos/DSC_7637.JPG';
@@ -43,6 +45,24 @@ export default function WeddingsEn() {
       title: "Perfect Service",
       description: "Your demand for perfection is our ultimate goal"
     }
+  ];
+
+  const weddingFAQs = [
+    { question: "How do I choose the ideal wedding date?", answer: "Choosing a date depends on many factors: your preferred season, venue availability, and your guests' needs. Weekends in May-June and September are very popular." },
+    { question: "Can we have a winter wedding?", answer: "Absolutely! Our fully air-conditioned indoor space is ideal for winter weddings, offering warmth and elegance." },
+    { question: "Is there a Plan B in case of rain?", answer: "Yes, we have a large air-conditioned hall that can comfortably host the entire event." },
+    { question: "How long is the venue rental?", answer: "The venue rental is exclusive for the entire duration of your event, from preparation until the end of the reception." },
+    { question: "Can we bring our own DJ?", answer: "Of course! You can choose your own partners (DJ, band) or use our recommended partners." },
+    { question: "Is there space for photos before the reception?", answer: "Yes, our garden and outdoor areas offer wonderful settings for couple and guest photography." },
+    { question: "Which seaside churches are nearby?", answer: "We work with 4 beautiful seaside churches: Agios Alexandros Daskaleio (8 min), Profitis Ilias Thoriko (12 min), Agios Panteleimonas (5 min), and Panagia Gkarika (10 min)." },
+    { question: "What time can we start preparation?", answer: "You can have access to the space from early morning to prepare the decoration and all details." },
+    { question: "Does the venue fit 150 people?", answer: "Yes, our venue can comfortably accommodate 30 to 200 people, with a combination of indoor and outdoor space." },
+    { question: "Is there air conditioning?", answer: "Yes, the indoor space is fully air-conditioned for your guests' maximum comfort." },
+    { question: "Can we decorate ourselves?", answer: "Absolutely! You can bring your own decorator or use our experienced partners." },
+    { question: "Do you provide catering?", answer: "Yes, we work with professional caterers offering high-quality menus tailored to your wishes." },
+    { question: "How much parking space is there?", answer: "We have private parking with 100+ free spaces for your guests." },
+    { question: "Can we have a rehearsal before the wedding?", answer: "Yes, you can visit the venue and organize details with our team before the big day." },
+    { question: "Is the venue exclusive for us?", answer: "Absolutely! Ktima Orion is exclusively yours for your event, ensuring complete privacy." }
   ];
 
   return (
