@@ -28,6 +28,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    exclude: [
+      "@radix-ui/react-separator",
+      "@radix-ui/react-checkbox",
+    ],
+  },
   assetsInclude: ['**/*.JPG', '**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
   build: {
     // Ensure proper module resolution for production

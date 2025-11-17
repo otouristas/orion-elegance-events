@@ -44,13 +44,14 @@ export const About = () => {
 
           {/* Image and Features */}
           <div className="space-y-8">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <img
                 src="/arxiki/9.jpg"
                 alt="Κτήμα Ωρίων - Εσωτερικός χώρος"
-                className="w-full h-[400px] object-cover"
+                className="w-full aspect-video object-cover"
+                style={{ objectPosition: "center 20%" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
 
             <div className="card-elegant p-8">
