@@ -107,6 +107,8 @@ const App = () => (
           <Route path="/contact" element={<Epikoinonia />} />
           <Route path="/epikoinonia" element={<Epikoinonia />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           
           {/* SEO Greek Routes */}
           <Route path="/el/ktima-gamou-athina" element={<KtimaGamouAthina />} />

@@ -27,16 +27,16 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Popular Searches */}
+          {/* Blog & Resources */}
           <div>
-            <h3 className="text-xl font-bold text-brand-main mb-6">Δημοφιλείς Αναζητήσεις</h3>
+            <h3 className="text-xl font-bold text-brand-main mb-6">Blog & Πληροφορίες</h3>
             <ul className="space-y-3">
+              <li><a href="/blog" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Blog</a></li>
               <li><a href="/el/ktima-gamou-athina" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κτήμα Γάμου Αθήνα</a></li>
               <li><a href="/el/ktimata-vaptisis-athina" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κτήματα Βάπτισης</a></li>
               <li><a href="/el/ekklisiaki-dipla-sti-thalassa" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εκκλησάκι Θάλασσα</a></li>
-              <li><a href="/el/ktima-gamou-athens-riviera" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Athens Riviera</a></li>
-              <li><a href="/el/ekklisies/agios-alexandros-daskaleio" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Άγιος Αλέξανδρος</a></li>
-              <li><a href="/el/ekklisies/profitis-ilias-thoriko" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Προφήτης Ηλίας</a></li>
+              <li><a href="/ekklisies" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εκκλησίες</a></li>
+              <li><a href="/o-horos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Ο Χώρος</a></li>
             </ul>
           </div>
 

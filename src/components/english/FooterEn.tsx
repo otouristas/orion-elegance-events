@@ -33,16 +33,16 @@ export const FooterEn = () => {
             </ul>
           </div>
 
-          {/* Popular Searches */}
+          {/* Blog & Resources */}
           <div>
-            <h3 className="text-xl font-bold text-brand-main mb-6">Popular</h3>
+            <h3 className="text-xl font-bold text-brand-main mb-6">Blog & Resources</h3>
             <ul className="space-y-3">
+              <li><a href="/en/blog" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Blog</a></li>
               <li><a href="/en/weddings" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Venue Athens</a></li>
-              <li><a href="/en/baptism" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Baptism Venues Athens</a></li>
-              <li><a href="/en/churches" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Seaside Church</a></li>
-              <li><a href="/en/churches/agios-alexandros-daskaleio" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Agios Alexandros</a></li>
-              <li><a href="/en/churches/profitis-ilias-thoriko" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Profitis Ilias</a></li>
-              <li><a href="/en/churches/panagia-gkarika" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Panagia Gkarika</a></li>
+              <li><a href="/en/baptism" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Baptism Venues</a></li>
+              <li><a href="/en/churches" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Seaside Churches</a></li>
+              <li><a href="/en/venue" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">The Venue</a></li>
+              <li><a href="/en/services" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Services</a></li>
             </ul>
           </div>
 
