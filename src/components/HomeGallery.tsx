@@ -34,6 +34,10 @@ export const HomeGallery = () => {
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                width={566}
+                height={566}
+                loading={index < 4 ? "eager" : "lazy"}
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
                 <Camera className="w-6 h-6 text-white" />

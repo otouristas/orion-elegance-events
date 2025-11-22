@@ -13,19 +13,18 @@
     <meta name="keywords" content="κτήμα γάμου, βάπτιση, εκδηλώσεις, Κερατέα, γάμος, δεξίωση, εκκλησάκια, catering">
     <meta name="google-site-verification" content="xuVpFU3oswJIf8NTCV-D8mDL6xd6leTUk62qJBDsmSM" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3D1HPVZYG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-R3D1HPVZYG');
-    </script>
-
+    <!-- Resource Hints -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
     <!-- Google Fonts - Inter Only -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="/src/assets/hero-image.jpg" fetchpriority="high" type="image/jpeg">
 
     <meta property="og:title" content="Κτήμα Ωρίων - Διοργάνωση Εκδηλώσεων Κερατέα" />
     <meta property="og:description" content="Υπέροχος καταπράσινος χώρος για γάμους, βαπτίσεις και εκδηλώσεις. Πολυτέλεια σε αρμονία με τη φύση, κοντά σε γραφικά εκκλησάκια." />
@@ -41,5 +40,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Google tag (gtag.js) - Deferred -->
+    <script>
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-R3D1HPVZYG';
+        document.head.appendChild(script);
+        
+        script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-R3D1HPVZYG');
+        };
+      });
+    </script>
   </body>
 </html>

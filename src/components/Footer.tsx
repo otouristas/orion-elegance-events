@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div>
-            <img src={logoDark} alt="Κτήμα Ωρίων" className="h-24 w-auto mb-6 filter brightness-0 invert" />
+            <img src={logoDark} alt="Κτήμα Ωρίων" className="h-24 w-auto mb-6 filter brightness-0 invert" width={96} height={96} loading="lazy" decoding="async" />
             <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
               Ένας υπέροχος καταπράσινος χώρος όπου η πολυτέλεια συναντά το φυσικό περιβάλλον. 
               Δημιουργούμε αξέχαστες αναμνήσεις για τις πιο ξεχωριστές στιγμές της ζωής σας.

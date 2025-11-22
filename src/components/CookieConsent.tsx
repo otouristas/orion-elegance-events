@@ -46,13 +46,13 @@ export const CookieConsent = () => {
         <div className="flex gap-3">
           <button
             onClick={acceptCookies}
-            className="button button4 text-sm px-4 py-2 flex-1"
+            className="button button4 text-sm px-4 py-2 flex-1 min-h-[44px]"
           >
             Αποδοχή
           </button>
           <button
             onClick={declineCookies}
-            className="px-4 py-2 text-sm border border-border rounded-md hover:bg-muted transition-colors"
+            className="px-4 py-2 text-sm border border-border rounded-md hover:bg-muted transition-colors min-h-[44px] min-w-[44px]"
           >
             Απόρριψη
           </button>

@@ -11,6 +11,10 @@ export const Hero = () => {
           src={heroImage} 
           alt="Κτήμα Ωρίων - Μαγευτικός χώρος για εκδηλώσεις"
           className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
       </div>

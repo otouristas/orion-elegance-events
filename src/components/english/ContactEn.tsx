@@ -157,7 +157,8 @@ export const ContactEn = () => {
                   href="https://www.facebook.com/ktimaorion.gr/?locale=el_GR"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center hover:bg-brand-main hover:text-white transition-colors"
+                  aria-label="Follow us on Facebook"
+                  className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center hover:bg-brand-main hover:text-white transition-colors min-w-[48px] min-h-[48px]"
                 >
                   <Facebook className="w-6 h-6" />
                 </a>
@@ -165,7 +166,8 @@ export const ContactEn = () => {
                   href="https://www.instagram.com/ktimaorion/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center hover:bg-brand-main hover:text-white transition-colors"
+                  aria-label="Follow us on Instagram"
+                  className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center hover:bg-brand-main hover:text-white transition-colors min-w-[48px] min-h-[48px]"
                 >
                   <Instagram className="w-6 h-6" />
                 </a>

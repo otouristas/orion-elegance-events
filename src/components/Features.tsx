@@ -35,12 +35,16 @@ export const Features = () => {
                   src={feature.icon} 
                   alt={feature.subtitle}
                   className="w-24 h-24 mx-auto object-contain"
+                  width={96}
+                  height={96}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               
-              <h3 className="text-xl font-semibold text-gradient-brand mb-6">
+              <h2 className="text-xl font-semibold text-gradient-brand mb-6">
                 {feature.subtitle}
-              </h3>
+              </h2>
               
               <p className="text-muted-foreground leading-relaxed">
                 {feature.description}

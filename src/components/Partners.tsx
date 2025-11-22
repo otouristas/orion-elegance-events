@@ -22,6 +22,10 @@ export const Partners = () => {
                 src={pleiadesLogo}
                 alt="Pleiades Catering Stars"
                 className="w-full max-w-[320px] opacity-90 group-hover:opacity-100 transition-opacity"
+                width={320}
+                height={320}
+                loading="lazy"
+                decoding="async"
               />
             </CardContent>
           </Card>
@@ -32,6 +36,10 @@ export const Partners = () => {
                 src={topeventsLogo}
                 alt="Top Events Entertainment Services"
                 className="w-full max-w-[320px] opacity-90 group-hover:opacity-100 transition-opacity"
+                width={320}
+                height={320}
+                loading="lazy"
+                decoding="async"
               />
             </CardContent>
           </Card>

@@ -70,7 +70,7 @@ export const ContactFAB = () => {
         {/* Main FAB Button - ALWAYS VISIBLE */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="relative flex items-center justify-center gap-2 px-6 py-4 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group z-[52]"
+          className="relative flex items-center justify-center gap-2 px-6 py-4 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group z-[52] min-h-[48px] min-w-[48px]"
           aria-label={isEnglish ? "Contact us" : "Επικοινωνήστε μαζί μας"}
         >
           {isOpen ? (

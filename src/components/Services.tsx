@@ -80,7 +80,7 @@ export const Services = () => {
                 ))}
               </ul>
               
-              <Button variant="outline" className="border-brand-main text-brand-main hover:bg-brand-main hover:text-white" asChild>
+              <Button variant="outline" className="border-brand-main text-white bg-brand-main hover:bg-brand-dark hover:border-brand-dark min-h-[44px] min-w-[140px]" asChild>
                 <Link to={service.link}>ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</Link>
               </Button>
             </div>
