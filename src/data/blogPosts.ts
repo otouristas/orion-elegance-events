@@ -20,91 +20,131 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "pos-na-organosete-enan-mikro-gamo",
-    title: "Πώς να Οργανώσετε έναν Μικρό Γάμο στην Κερατέα",
-    titleEn: "How to Organize a Small Wedding in Keratea",
-    excerpt: "Οι μικροί γάμοι κερδίζουν όλο και περισσότερο έδαφος. Ανακαλύψτε πώς να δημιουργήσετε μια ιντιμ τελετή με προσωπικότητα.",
-    excerptEn: "Small weddings are gaining more and more ground. Discover how to create an intimate ceremony with personality.",
+    title: "Μικρός Γάμος στην Κερατέα: Οδηγός για Οικείους και Ρομαντικούς Γάμους",
+    titleEn: "Small Wedding in Keratea: Guide for Intimate and Romantic Weddings",
+    excerpt: "Οι μικροί γάμοι είναι η νέα τάση για όσους θέλουν μια ρομαντική, οικεία και προσωπική γαμήλια εμπειρία. Με 80-100 καλεσμένους, μπορείτε να απολαύσετε κάθε στιγμή.",
+    excerptEn: "Small weddings are the new trend for those who want a romantic, intimate and personal wedding experience. With 80-100 guests, you can enjoy every moment.",
     content: `
-# Πώς να Οργανώσετε έναν Μικρό Γάμο στην Κερατέα
+# Μικρός Γάμος στην Κερατέα: Οδηγός για Οικείους και Ρομαντικούς Γάμους
 
-Οι μικροί γάμοι έχουν γίνει η νέα τάση στις γαμήλιες δεξιώσεις. Με λιγότερους καλεσμένους (συνήθως 30-80 άτομα), μπορείτε να δημιουργήσετε μια πιο προσωπική και ουσιαστική εμπειρία.
+Οι μικροί γάμοι είναι η νέα τάση για όσους θέλουν μια ρομαντική, οικεία και προσωπική γαμήλια εμπειρία. Με 80 – 100 καλεσμένους, μπορείτε να απολαύσετε κάθε στιγμή μαζί τους και να δημιουργήσετε αναμνήσεις που θα μείνουν για πάντα.
 
-## Γιατί να Επιλέξετε Μικρό Γάμο;
+![Μικρός ρομαντικός γάμος με λίγους καλεσμένους στο Κτήμα Ωρίων Κερατέα](/assets/gamos/DSC_7712.JPG)
 
-Οι μικροί γάμοι προσφέρουν πολλά πλεονεκτήματα:
-- **Περισσότερος χρόνος με κάθε καλεσμένο**: Μπορείτε να απολαύσετε πραγματικά την παρουσία των αγαπημένων σας
-- **Μειωμένο κόστος**: Περισσότερος προϋπολογισμός για λεπτομέρειες που μετράνε
-- **Λιγότερο άγχος**: Πιο εύκολη οργάνωση και λιγότερες αποφάσεις
-- **Μεγαλύτερη ευελιξία**: Περισσότερες επιλογές σε χώρους και ημερομηνίες
+## Γιατί να Επιλέξετε Μικρό Γάμο στην Κερατέα
 
-## Επιλογή του Τέλειου Χώρου
+Οι μικροί γάμοι προσφέρουν μοναδικά πλεονεκτήματα:
 
-Για έναν μικρό γάμο στην Κερατέα, το Κτήμα Ωρίων προσφέρει:
-- Ιντιμ ατμόσφαιρα με αποκλειστική χρήση χώρου
-- Κοντά σε γραφικά εκκλησάκια όπως η Παναγία Γκαρικά (ιδανική για μικρούς γάμους)
-- Ευέλικτες επιλογές catering προσαρμοσμένες στις ανάγκες σας
-- Φυσικό περιβάλλον που δημιουργεί μαγικές φωτογραφίες
+- **Περισσότερος χρόνος με τους καλεσμένους**: Κάθε στιγμή γίνεται ξεχωριστή.
+- **Μειωμένο κόστος, υψηλή ποιότητα**: Περισσότερος προϋπολογισμός για λεπτομέρειες που κάνουν τη διαφορά.
+- **Λιγότερο άγχος**: Η οργάνωση γίνεται ευκολότερη και πιο απολαυστική.
+- **Μεγαλύτερη ευελιξία**: Περισσότερες επιλογές σε χώρους και ημερομηνίες.
 
-## Βασικές Συμβουλές
+**Ετοιμοι να οργανώσετε τον μικρό γάμο των ονείρων σας;** [Επικοινωνήστε μαζί μας](/contact) για να συζητήσουμε όλες τις επιλογές σας ή [δείτε τον χώρο μας](/o-horos) για να πειστείτε ότι είμαστε η ιδανική επιλογή.
 
-1. **Κρατήστε τη λίστα καλεσμένων στενή**: Μόνο οι πιο αγαπημένοι σας άνθρωποι
-2. **Επενδύστε σε ποιότητα**: Λιγότεροι καλεσμένοι = καλύτερο φαγητό και ποτά
-3. **Προσωποποιήστε κάθε λεπτομέρεια**: Χειροποίητα στοιχεία, προσωπικά μηνύματα
-4. **Επιλέξτε την κατάλληλη εκκλησία**: Μικρά εκκλησάκια δημιουργούν ιδανική ατμόσφαιρα
+## Κτήμα Ωρίων: Ο Ιδανικός Χώρος για Μικρούς Γάμους
+
+Το [Κτήμα Ωρίων](/o-horos) στην Κερατέα συνδυάζει οικεία ατμόσφαιρα, φυσική ομορφιά και μαγικές φωτογραφίες:
+
+![Οικεία γαμήλια δεξίωση με σερβιριστό φαγητό υψηλής ποιότητας](/assets/gamos/DSC_7806.JPG)
+
+- **Αποκλειστική χρήση του χώρου** για μεγαλύτερη ιδιωτικότητα.
+- **Catering με σερβιριστό φαγητό** υψηλής ποιότητας, προσαρμοσμένο στις ανάγκες σας.
+- **Κοντινή πρόσβαση σε γραφικά εκκλησάκια**, όπως ο [Άγιος Αλέξανδρος](/ekklisies), ιδανικά για μικρές και ρομαντικές τελετές δίπλα στη θάλασσα.
+
+![Μικρός προσωπικός γάμος με καταπράσινο περιβάλλον και φυσική ομορφιά](/assets/home/DSC_7588.JPG)
+
+## Συμβουλές για την Οργάνωση Μικρού Γάμου
+
+1. **Κρατήστε τη λίστα καλεσμένων στενή**: Μόνο οι πιο αγαπημένοι σας.
+2. **Επενδύστε στην ποιότητα**: Λιγότεροι καλεσμένοι σημαίνει καλύτερο φαγητό, ποτά και υπηρεσίες.
+3. **Προσωποποιήστε κάθε λεπτομέρεια**: Χειροποίητα στοιχεία και προσωπικά μηνύματα.
+4. **Επιλέξτε εκκλησία που ταιριάζει στην ατμόσφαιρα**: Τα μικρά εκκλησάκια δημιουργούν ιδανική ρομαντική σκηνή. Δείτε τις [καλύτερες παραθαλάσσιες εκκλησίες](/blog/ekklisies-dipla-sti-thalassa-keratea) στην περιοχή.
 5. **Μην ξεχάσετε τη διασκέδαση**: Μικρός γάμος δεν σημαίνει λιγότερο πάρτι!
 
-## Προϋπολογισμός Μικρού Γάμου
+![Ιντιμ γαμήλια εκδήλωση με premium catering και προσεγμένη διακόσμηση](/assets/gamos/DSC_7716.JPG)
 
-Με λιγότερους καλεσμένους, μπορείτε να εστιάσετε στην ποιότητα:
-- Επιλέξτε premium επιλογές catering
-- Επενδύστε σε εντυπωσιακή διακόσμηση
-- Προσφέρετε ιδιαίτερα cocktails
-- Κρατήστε επαγγελματία φωτογράφο και videographer
+## Προϋπολογισμός και Πολυτέλεια
+
+Με λιγότερους καλεσμένους, μπορείτε να εστιάσετε στην ποιοτική εμπειρία:
+
+![Μικρός γάμος με θέα στο Αιγαίο και μαγικές φωτογραφίες](/assets/home/DSC_7816.JPG)
+
+- Επιλέξτε **premium catering** με σερβιριστό φαγητό.
+- Επενδύστε σε **εντυπωσιακή διακόσμηση** και φωτισμό.
+- Προσφέρετε **ιδιαίτερα cocktails** και ποτά.
+- Κρατήστε **επαγγελματία φωτογράφο** και videographer για να αποτυπώσετε κάθε ξεχωριστή στιγμή.
+
+Για περισσότερες συμβουλές σχετικά με την [επιλογή χώρου δεξίωσης](/blog/epilogi-horou-dexiosis-athina), διαβάστε τον ολοκληρωμένο οδηγό μας.
 
 ## Συμπέρασμα
 
-Ένας μικρός γάμος στο Κτήμα Ωρίων σας επιτρέπει να εστιάσετε στο πραγματικά σημαντικό: την αγάπη σας και τους πιο αγαπημένους σας ανθρώπους. Επικοινωνήστε μαζί μας για να οργανώσουμε τον τέλειο ιντιμ γάμο σας.
+Ένας μικρός γάμος στο [Κτήμα Ωρίων](/o-horos) σας επιτρέπει να εστιάσετε στο πιο σημαντικό: την αγάπη σας και τους πιο αγαπημένους σας ανθρώπους.
+
+**Επικοινωνήστε μαζί μας για να οργανώσουμε τον τέλειο οικείο, προσωπικό και μαγικό γάμο σας, με σερβιριστό φαγητό υψηλής ποιότητας και μοναδικές στιγμές.**
+
+[Κλείστε δωρεάν ξενάγηση](/contact) ή [δείτε τις υπηρεσίες γάμου μας](/gamos) για να μάθετε περισσότερα.
     `,
     contentEn: `
-# How to Organize a Small Wedding in Keratea
+# Small Wedding in Keratea: Guide for Intimate and Romantic Weddings
 
-Small weddings have become the new trend in wedding receptions. With fewer guests (usually 30-80 people), you can create a more personal and meaningful experience.
+Small weddings are the new trend for those who want a romantic, intimate and personal wedding experience. With 80-100 guests, you can enjoy every moment together and create memories that will last forever.
 
-## Why Choose a Small Wedding?
+![Small romantic wedding with few guests at Ktima Orion Keratea](/assets/gamos/DSC_7712.JPG)
 
-Small weddings offer many advantages:
-- **More time with each guest**: You can truly enjoy the presence of your loved ones
-- **Reduced cost**: More budget for details that matter
-- **Less stress**: Easier organization and fewer decisions
-- **Greater flexibility**: More choices in venues and dates
+## Why Choose a Small Wedding in Keratea
 
-## Choosing the Perfect Venue
+Small weddings offer unique advantages:
 
-For a small wedding in Keratea, Ktima Orion offers:
-- Intimate atmosphere with exclusive venue use
-- Close to picturesque chapels like Panagia Gkarika (ideal for small weddings)
-- Flexible catering options tailored to your needs
-- Natural environment that creates magical photos
+- **More time with guests**: Every moment becomes special.
+- **Reduced cost, high quality**: More budget for details that make a difference.
+- **Less stress**: Organization becomes easier and more enjoyable.
+- **Greater flexibility**: More options in venues and dates.
 
-## Key Tips
+**Ready to organize your dream small wedding?** [Contact us](/en/contact) to discuss all your options or [see our venue](/en/venue) to be convinced we are the ideal choice.
 
-1. **Keep the guest list tight**: Only your most beloved people
-2. **Invest in quality**: Fewer guests = better food and drinks
-3. **Personalize every detail**: Handmade elements, personal messages
-4. **Choose the right church**: Small chapels create the ideal atmosphere
+## Ktima Orion: The Ideal Venue for Small Weddings
+
+[Ktima Orion](/en/venue) in Keratea combines intimate atmosphere, natural beauty and magical photos:
+
+![Intimate wedding reception with high-quality served food](/assets/gamos/DSC_7806.JPG)
+
+- **Exclusive use of the venue** for greater privacy.
+- **Catering with served food** of high quality, tailored to your needs.
+- **Close proximity to picturesque chapels**, such as [Agios Alexandros](/en/churches), ideal for small and romantic ceremonies by the sea.
+
+![Small personal wedding with lush green environment and natural beauty](/assets/home/DSC_7588.JPG)
+
+## Tips for Organizing a Small Wedding
+
+1. **Keep the guest list tight**: Only your most beloved ones.
+2. **Invest in quality**: Fewer guests means better food, drinks and services.
+3. **Personalize every detail**: Handmade elements and personal messages.
+4. **Choose a church that matches the atmosphere**: Small chapels create the ideal romantic scene. See the [best seaside churches](/en/blog/ekklisies-dipla-sti-thalassa-keratea) in the area.
 5. **Don't forget the fun**: Small wedding doesn't mean less party!
 
-## Small Wedding Budget
+![Intimate wedding event with premium catering and careful decoration](/assets/gamos/DSC_7716.JPG)
 
-With fewer guests, you can focus on quality:
-- Choose premium catering options
-- Invest in impressive decoration
-- Offer special cocktails
-- Keep a professional photographer and videographer
+## Budget and Luxury
+
+With fewer guests, you can focus on the quality experience:
+
+![Small wedding with Aegean views and magical photos](/assets/home/DSC_7816.JPG)
+
+- Choose **premium catering** with served food.
+- Invest in **impressive decoration** and lighting.
+- Offer **special cocktails** and drinks.
+- Hire a **professional photographer** and videographer to capture every special moment.
+
+For more tips on [choosing a reception venue](/en/blog/epilogi-horou-dexiosis-athina), read our complete guide.
 
 ## Conclusion
 
-A small wedding at Ktima Orion allows you to focus on what really matters: your love and your most beloved people. Contact us to organize your perfect intimate wedding.
+A small wedding at [Ktima Orion](/en/venue) allows you to focus on what matters most: your love and your most beloved people.
+
+**Contact us to organize your perfect intimate, personal and magical wedding, with high-quality served food and unique moments.**
+
+[Book a free tour](/en/contact) or [see our wedding services](/en/weddings) to learn more.
     `,
     category: 'wedding',
     categoryLabel: 'Γάμος',
@@ -112,125 +152,131 @@ A small wedding at Ktima Orion allows you to focus on what really matters: your 
     image: '/assets/gamos/DSC_7637.JPG',
     date: '2025-01-15',
     author: 'Κτήμα Ωρίων',
-    readTime: '5 λεπτά',
-    keywords: 'μικρός γάμος, γάμος κερατέα, ιντιμ γάμος, μικρή δεξίωση',
-    keywordsEn: 'small wedding, wedding keratea, intimate wedding, small reception'
+    readTime: '6 λεπτά',
+    keywords: 'μικρός γάμος, γάμος κερατέα, ιντιμ γάμος, μικρή δεξίωση, οικείος γάμος, ρομαντικός γάμος, σερβιριστό φαγητό γάμος',
+    keywordsEn: 'small wedding, wedding keratea, intimate wedding, small reception, intimate wedding venue, romantic small wedding, served food wedding'
   },
   {
     slug: "ekklisies-dipla-sti-thalassa-keratea",
     title: "Οι Καλύτερες Εκκλησίες Δίπλα στη Θάλασσα στην Κερατέα",
     titleEn: "Best Churches by the Sea in Keratea",
-    excerpt: "Ανακαλύψτε τα πιο ρομαντικά εκκλησάκια με θέα στο Αιγαίο για τον γάμο ή τη βάπτισή σας.",
-    excerptEn: "Discover the most romantic chapels with Aegean views for your wedding or baptism.",
+    excerpt: "Ανακαλύψτε τα πιο γραφικά παραθαλάσσια εκκλησάκια στην Κερατέα για γάμους και βαπτίσεις. Πανοραμική θέα, μαγικές φωτογραφίες και εύκολη πρόσβαση στο Κτήμα Ωρίων.",
+    excerptEn: "Discover the most picturesque seaside chapels in Keratea for weddings and baptisms. Panoramic views, magical photos and easy access to Ktima Orion.",
     content: `
 # Οι Καλύτερες Εκκλησίες Δίπλα στη Θάλασσα στην Κερατέα
 
-Η Κερατέα και η ευρύτερη περιοχή προσφέρουν μερικά από τα πιο γραφικά παραθαλάσσια εκκλησάκια της Αττικής. Ιδανικά για γάμους και βαπτίσεις, συνδυάζουν τη θρησκευτική τελετή με την εκπληκτική θέα στο Αιγαίο.
+Ανακαλύψτε τα πιο γραφικά παραθαλάσσια εκκλησάκια στην Κερατέα για γάμους και βαπτίσεις. Πανοραμική θέα, μαγικές φωτογραφίες και εύκολη πρόσβαση στο Κτήμα Ωρίων.
+
+![Παραθαλάσσια εκκλησία με πανοραμική θέα στο Αιγαίο για γάμους και βαπτίσεις](/assets/home/DSC_7637.JPG)
+
+Η Κερατέα και η γύρω περιοχή προσφέρουν μερικά από τα πιο γραφικά παραθαλάσσια εκκλησάκια της Αττικής, ιδανικά για γάμους και βαπτίσεις. Συνδυάζουν τη θρησκευτική τελετή με την εκπληκτική θέα στο Αιγαίο, δημιουργώντας μοναδικές και αξέχαστες αναμνήσεις.
 
 ## 1. Προφήτης Ηλίας, Θορικό
 
-Το εκκλησάκι του Προφήτη Ηλία στο Θορικό είναι ίσως το πιο εντυπωσιακό:
-- **Θέση**: Πάνω σε λόφο με πανοραμική θέα
-- **Απόσταση από Κτήμα Ωρίων**: 8.8 km (11 λεπτά)
-- **Ιδανικό για**: Μεσημεριανούς γάμους με ηλιοβασίλεμα
-- **Χωρητικότητα**: Μεσαία (50-80 άτομα)
-- **Ιδιαιτερότητα**: Η θέα στη θάλασσα είναι μαγευτική
+Το εκκλησάκι του Προφήτη Ηλία βρίσκεται πάνω σε λόφο, προσφέροντας πανοραμική θέα στη θάλασσα.
+
+- **Απόσταση από Κτήμα Ωρίων**: 8,8 km (~15 λεπτά)
+- **Ιδανικό για**: Απογευματινούς γάμους με ηλιοβασίλεμα
+
+Η μαγευτική θέα κάνει κάθε φωτογραφία μοναδική και δίνει ιδιαίτερη ατμόσφαιρα στην τελετή.
+
+![Εκκλησάκι δίπλα στη θάλασσα με μαγική ατμόσφαιρα και ρομαντική σκηνή](/assets/home/DSC_7828.JPG)
 
 ## 2. Άγιος Παντελεήμονας, Κακή Θάλασσα
 
-Παραδοσιακή εκκλησία με ρουστίκ χαρακτήρα:
-- **Θέση**: Δίπλα στη θάλασσα
-- **Απόσταση**: 8.6 km (13 λεπτά)
+Μια παραδοσιακή εκκλησία με ρουστίκ χαρακτήρα, δίπλα στη θάλασσα.
+
+- **Απόσταση**: 8,6 km (~15 λεπτά)
 - **Ιδανικό για**: Βαπτίσεις και μικρούς γάμους
-- **Ατμόσφαιρα**: Γνήσια παραδοσιακή
-- **Parking**: Διαθέσιμο κοντά
+
+Η γνήσια παραδοσιακή ατμόσφαιρα σε συνδυασμό με την πανοραμική θέα θάλασσα, δημιουργεί μια αίσθηση ζεστασιάς και ρομαντισμού.
+
+![Γαμήλια τελετή σε εκκλησία με θέα στη θάλασσα στην Κερατέα](/assets/gallery/DSC_7662.JPG)
 
 ## 3. Άγιος Αλέξανδρος, Δασκαλειό
 
-Πολύ κοντά στο Κτήμα Ωρίων:
-- **Απόσταση**: 3.8 km (8 λεπτά)
-- **Χωρητικότητα**: Μεγάλη (έως 170 άτομα)
-- **Πλεονέκτημα**: Η εγγύτητα με το κτήμα
-- **Ιδανικό για**: Μεγάλους γάμους
+- **Απόσταση από Κτήμα Ωρίων**: 3,8 km (~10 λεπτά)
+- **Ιδανικό για**: Μικρούς γάμους
 
-## 4. Παναγία Γκαρικά
+Η εγγύτητα με το [Κτήμα Ωρίων](/o-horos) διευκολύνει τη μεταφορά των καλεσμένων και επιτρέπει μια ομαλή συνέχεια στη δεξίωση.
 
-Το πλησιέστερο εκκλησάκι:
-- **Απόσταση**: 3.1 km (6 λεπτά)
-- **Στυλ**: Ιντιμ και γραφικό
-- **Ιδανικό για**: Μικρούς, προσωπικούς γάμους
-- **Bonus**: Ελάχιστος χρόνος μετακίνησης
+![Παραθαλάσσια εκκλησία κοντά στο Κτήμα Ωρίων με εύκολη πρόσβαση](/assets/home/DSC_7859.JPG)
 
-## Γιατί να Επιλέξετε Παραθαλάσσια Εκκλησία;
+## Γιατί να Επιλέξετε Παραθαλάσσια Εκκλησία
 
-- **Μοναδικές φωτογραφίες**: Η θάλασσα δημιουργεί μαγικό φόντο
-- **Ρομαντική ατμόσφαιρα**: Ο ήχος των κυμάτων
-- **Φυσικό φωτισμό**: Το φυσικό φως της θάλασσας
-- **Μοναδικές αναμνήσεις**: Εμπειρία που δεν ξεχνιέται
+Η επιλογή μιας παραθαλάσσιας εκκλησίας προσφέρει πολύ περισσότερα από ένα απλό χώρο τελετής. Η θάλασσα δημιουργεί μαγικό φόντο για μοναδικές φωτογραφίες, ενώ ο ήχος των κυμάτων προσθέτει απαλή, ρομαντική ατμόσφαιρα που δύσκολα ξεχνιέται. Το φυσικό φως της θάλασσας ενισχύει κάθε φωτογραφία, δημιουργώντας εικόνες που θα μείνουν για πάντα ζωντανές στη μνήμη σας. Επιπλέον, η αίσθηση της απεραντοσύνης του ορίζοντα και η δροσιά του θαλασσινού αέρα κάνουν την τελετή πιο ευχάριστη για εσάς και τους καλεσμένους σας, ενώ η ηρεμία του φυσικού περιβάλλοντος προσφέρει μια στιγμή απόλυτης γαλήνης και συγκίνησης. Τέλος, η παραθαλάσσια τοποθεσία δίνει τη δυνατότητα να συνδυάσετε το μυστήριο με εξωτερικές φωτογραφήσεις ή μικρές υπαίθριες δραστηριότητες, κάνοντας την εμπειρία του γάμου ή της βάπτισης πραγματικά μοναδική.
+
+![Φωτογραφίες γάμου με φυσικό φως της θάλασσας και μοναδικό φόντο](/assets/gallery/DSC_7712.JPG)
+
+**Ενδιαφέρεστε για παραθαλάσσια εκκλησία;** [Δείτε όλες τις εκκλησίες](/ekklisies) στην περιοχή ή [επικοινωνήστε μαζί μας](/contact) για να σας βοηθήσουμε να επιλέξετε την ιδανική.
 
 ## Συνδυασμός με Δεξίωση στο Κτήμα Ωρίων
 
-Το Κτήμα Ωρίων βρίσκεται σε ιδανική απόσταση από όλες αυτές τις εκκλησίες. Μπορείτε:
-1. Να τελέσετε το μυστήριο με θέα στη θάλασσα
-2. Να μεταβείτε στο κτήμα σε 5-15 λεπτά
-3. Να συνεχίσετε με μια υπέροχη δεξίωση
+Το [Κτήμα Ωρίων](/o-horos) βρίσκεται σε ιδανική απόσταση από όλες τις παραπάνω εκκλησίες, επιτρέποντάς σας να τελέσετε το μυστήριο με θέα στη θάλασσα και να μεταβείτε στο Κτήμα σε μόλις 10–20 λεπτά, συνεχίζοντας με μια υπέροχη δεξίωση για εσάς και τους καλεσμένους σας.
 
-Επικοινωνήστε μαζί μας για να σας βοηθήσουμε να οργανώσετε τον τέλειο γάμο ή βάπτιση!
+Για [μικρούς γάμους](/blog/pos-na-organosete-enan-mikro-gamo) ή [γάμους οποιασδήποτε εποχής](/blog/kalokerinos-vs-heimoniatikos-gamos), η συνδυαστική προσέγγιση εκκλησίας και δεξίωσης δημιουργεί την τέλεια εμπειρία.
+
+**Επικοινωνήστε μαζί μας για να οργανώσουμε τον τέλειο γάμο ή βάπτιση δίπλα στη θάλασσα, με μαγική ατμόσφαιρα, εξαιρετικές φωτογραφίες και εύκολη πρόσβαση στο Κτήμα Ωρίων.**
+
+[Κλείστε δωρεάν ξενάγηση](/contact) ή [δείτε τις υπηρεσίες γάμου μας](/gamos) και [βάπτισης](/vaptisi).
     `,
     contentEn: `
 # Best Churches by the Sea in Keratea
 
-Keratea and the surrounding area offer some of the most picturesque seaside chapels in Attica. Ideal for weddings and baptisms, they combine religious ceremony with stunning Aegean views.
+Discover the most picturesque seaside chapels in Keratea for weddings and baptisms. Panoramic views, magical photos and easy access to Ktima Orion.
+
+![Seaside church with panoramic Aegean views for weddings and baptisms](/assets/home/DSC_7637.JPG)
+
+Keratea and the surrounding area offer some of the most picturesque seaside chapels in Attica, ideal for weddings and baptisms. They combine religious ceremony with stunning Aegean views, creating unique and unforgettable memories.
 
 ## 1. Profitis Ilias, Thoriko
 
-The chapel of Profitis Ilias in Thoriko is perhaps the most impressive:
-- **Location**: On a hill with panoramic views
-- **Distance from Ktima Orion**: 8.8 km (11 minutes)
+The chapel of Profitis Ilias is located on a hill, offering panoramic sea views.
+
+- **Distance from Ktima Orion**: 8.8 km (~15 minutes)
 - **Ideal for**: Afternoon weddings with sunset
-- **Capacity**: Medium (50-80 people)
-- **Special feature**: The sea view is magical
+
+The magical view makes every photo unique and gives special atmosphere to the ceremony.
+
+![Chapel by the sea with magical atmosphere and romantic scene](/assets/home/DSC_7828.JPG)
 
 ## 2. Agios Panteleimonas, Kakia Thalassa
 
-Traditional church with rustic character:
-- **Location**: By the sea
-- **Distance**: 8.6 km (13 minutes)
+A traditional church with rustic character, by the sea.
+
+- **Distance**: 8.6 km (~15 minutes)
 - **Ideal for**: Baptisms and small weddings
-- **Atmosphere**: Genuinely traditional
-- **Parking**: Available nearby
+
+The genuine traditional atmosphere combined with the panoramic sea view creates a sense of warmth and romance.
+
+![Wedding ceremony in church with sea views in Keratea](/assets/gallery/DSC_7662.JPG)
 
 ## 3. Agios Alexandros, Daskaleio
 
-Very close to Ktima Orion:
-- **Distance**: 3.8 km (8 minutes)
-- **Capacity**: Large (up to 170 people)
-- **Advantage**: Proximity to the venue
-- **Ideal for**: Large weddings
+- **Distance from Ktima Orion**: 3.8 km (~10 minutes)
+- **Ideal for**: Small weddings
 
-## 4. Panagia Gkarika
+The proximity to [Ktima Orion](/en/venue) facilitates guest transportation and allows a smooth continuation to the reception.
 
-The closest chapel:
-- **Distance**: 3.1 km (6 minutes)
-- **Style**: Intimate and picturesque
-- **Ideal for**: Small, personal weddings
-- **Bonus**: Minimal travel time
+![Seaside church near Ktima Orion with easy access](/assets/home/DSC_7859.JPG)
 
-## Why Choose a Seaside Church?
+## Why Choose a Seaside Church
 
-- **Unique photos**: The sea creates a magical backdrop
-- **Romantic atmosphere**: The sound of the waves
-- **Natural lighting**: The natural light of the sea
-- **Unique memories**: An unforgettable experience
+Choosing a seaside church offers much more than just a ceremony space. The sea creates a magical backdrop for unique photos, while the sound of the waves adds a gentle, romantic atmosphere that is hard to forget. The natural light of the sea enhances every photo, creating images that will remain forever vivid in your memory. Additionally, the sense of the horizon's infinity and the freshness of the sea air make the ceremony more pleasant for you and your guests, while the tranquility of the natural environment offers a moment of absolute serenity and emotion. Finally, the seaside location gives you the opportunity to combine the ceremony with outdoor photography or small outdoor activities, making the wedding or baptism experience truly unique.
+
+![Wedding photos with natural sea light and unique backdrop](/assets/gallery/DSC_7712.JPG)
+
+**Interested in a seaside church?** [See all churches](/en/churches) in the area or [contact us](/en/contact) to help you choose the ideal one.
 
 ## Combination with Reception at Ktima Orion
 
-Ktima Orion is ideally located from all these churches. You can:
-1. Hold the ceremony with a sea view
-2. Travel to the venue in 5-15 minutes
-3. Continue with a wonderful reception
+[Ktima Orion](/en/venue) is ideally located from all the above churches, allowing you to hold the ceremony with sea views and travel to the venue in just 10-20 minutes, continuing with a wonderful reception for you and your guests.
 
-Contact us to help you organize the perfect wedding or baptism!
+For [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo) or [weddings in any season](/en/blog/kalokerinos-vs-heimoniatikos-gamos), the combined approach of church and reception creates the perfect experience.
+
+**Contact us to organize the perfect wedding or baptism by the sea, with magical atmosphere, excellent photos and easy access to Ktima Orion.**
+
+[Book a free tour](/en/contact) or [see our wedding services](/en/weddings) and [baptism services](/en/baptism).
     `,
     category: 'tips',
     categoryLabel: 'Συμβουλές',
@@ -238,153 +284,169 @@ Contact us to help you organize the perfect wedding or baptism!
     image: '/assets/home/DSC_7816.JPG',
     date: '2025-01-10',
     author: 'Κτήμα Ωρίων',
-    readTime: '6 λεπτά',
-    keywords: 'εκκλησίες θάλασσα, παραθαλάσσια εκκλησία γάμος, εκκλησάκι κερατέα',
-    keywordsEn: 'churches by sea, seaside church wedding, chapel keratea'
+    readTime: '7 λεπτά',
+    keywords: 'εκκλησίες θάλασσα, παραθαλάσσια εκκλησία γάμος, εκκλησάκι κερατέα, εκκλησία με θέα θάλασσα, παραθαλάσσια τελετή γάμου',
+    keywordsEn: 'churches by sea, seaside church wedding, chapel keratea, church with sea view, seaside wedding ceremony'
   },
   {
     slug: "kalokerinos-vs-heimoniatikos-gamos",
     title: "Καλοκαιρινός vs Χειμωνιάτικος Γάμος: Ποιος να Επιλέξετε;",
     titleEn: "Summer vs Winter Wedding: Which to Choose?",
-    excerpt: "Κάθε εποχή έχει τη μαγεία της. Δείτε τα πλεονεκτήματα και μειονεκτήματα για να κάνετε την καλύτερη επιλογή.",
-    excerptEn: "Each season has its magic. See the pros and cons to make the best choice.",
+    excerpt: "Η επιλογή της εποχής του γάμου σας είναι μια από τις πιο σημαντικές αποφάσεις. Δείτε τα πλεονεκτήματα κάθε εποχής και πώς το Κτήμα Ωρίων μπορεί να σας βοηθήσει.",
+    excerptEn: "Choosing your wedding season is one of the most important decisions. See the advantages of each season and how Ktima Orion can help you.",
     content: `
 # Καλοκαιρινός vs Χειμωνιάτικος Γάμος: Ποιος να Επιλέξετε;
 
-Η επιλογή της εποχής του γάμου σας είναι μια σημαντική απόφαση που επηρεάζει πολλές πτυχές της εκδήλωσής σας. Ας δούμε τα πλεονεκτήματα κάθε εποχής.
+Η επιλογή της εποχής του γάμου σας είναι μια από τις πιο σημαντικές αποφάσεις, καθώς επηρεάζει κάθε πτυχή της εκδήλωσης – από τον χώρο και τη διακόσμηση μέχρι τις φωτογραφίες και την ατμόσφαιρα. Ας δούμε τα πλεονεκτήματα κάθε εποχής και πώς το [Κτήμα Ωρίων](/o-horos) μπορεί να σας βοηθήσει να οργανώσετε τον γάμο των ονείρων σας.
 
-## Καλοκαιρινός Γάμος (Μάιος-Σεπτέμβριος)
+## Καλοκαιρινός Γάμος (Μάιος – Σεπτέμβριος)
 
-### Πλεονεκτήματα
-- **Υπαίθριος χώρος**: Μπορείτε να αξιοποιήσετε πλήρως τον εξωτερικό χώρο
-- **Περισσότερες ώρες φωτός**: Ιδανικό για φωτογραφίες
-- **Θαλασσινό feeling**: Εκκλησίες και δεξίωση με θέα στη θάλασσα
-- **Ανοιξιάτικα λουλούδια**: Περισσότερες επιλογές διακόσμησης
-- **Χαλαρή ατμόσφαιρα**: Οι καλεσμένοι απολαμβάνουν το ύπαιθρο
+Ο καλοκαιρινός γάμος φέρνει ζεστασιά, χαρά και φωτεινές στιγμές. Οι υπαίθριοι χώροι αξιοποιούνται στο έπακρο, ενώ οι [παραθαλάσσιες εκκλησίες](/blog/ekklisies-dipla-sti-thalassa-keratea) και η θέα στη θάλασσα προσθέτουν μοναδικό χαρακτήρα στην τελετή σας. Οι φωτογραφίες είναι φωτεινές και ζωντανές, ενώ η διακόσμηση με ανοιξιάτικα και καλοκαιρινά λουλούδια δίνει χρώμα και ζωντάνια.
 
-### Μειονεκτήματα
-- **Υψηλή ζήτηση**: Περιορισμένες διαθεσιμότητες
-- **Θερμοκρασίες**: Μπορεί να κάνει πολύ ζέστη
-- **Υψηλότερο κόστος**: Peak season τιμές
+![Καλοκαιρινός γάμος με υπαίθριο χώρο και φωτεινές φωτογραφίες στο Κτήμα Ωρίων](/assets/gamos/DSC_7806.JPG)
 
-### Λύσεις στο Κτήμα Ωρίων
-- Κλιματιζόμενη εσωτερική αίθουσα
-- Ημιυπαίθρια παγόδα με σκίαση
-- Βραδινές ώρες για δροσιά
+### Highlights καλοκαιρινού γάμου:
 
-## Χειμωνιάτικος Γάμος (Νοέμβριος-Μάρτιος)
+- Υπαίθριος χώρος για τελετή και δεξίωση
+- Περισσότερες ώρες φωτός για φωτογραφίες
+- Εκκλησάκια με θέα δίπλα στη θάλασσα
+- Ανοιξιάτικα/καλοκαιρινά λουλούδια και επιλογές διακόσμησης
+- Χαλαρή και φωτεινή ατμόσφαιρα για τους καλεσμένους
 
-### Πλεονεκτήματα
-- **Μαγική ατμόσφαιρα**: Ρομαντικό, ζεστό feeling
-- **Περισσότερες διαθεσιμότητες**: Ευκολότερος προγραμματισμός
-- **Χαμηλότερες τιμές**: Εκπτώσεις σε υπηρεσίες
-- **Cozy διακόσμηση**: Κεριά, φωτάκια, ζεστές αποχρώσεις
-- **Λιγότερο άγχος**: Πιο χαλαρή οργάνωση
+### Λύσεις για άνεση στο Κτήμα Ωρίων:
 
-### Μειονεκτήματα
-- **Περιορισμένος εξωτερικός χώρος**: Εξαρτάται από τον καιρό
-- **Λιγότερες ώρες φωτός**: Νωρίτερο σούρουπο
-- **Πιθανή κακοκαιρία**: Χρειάζεται plan B
+- Ημιυπαίθριες παγόδες με σκίαση για προστασία από τον ήλιο
+- Βραδινές ώρες δεξιώσεων για πιο δροσερή ατμόσφαιρα
+- Φυσικός αερισμός και δροσερές γωνιές στον κήπο
 
-### Λύσεις στο Κτήμα Ωρίων
-- Πλήρως κλιματιζόμενη αίθουσα
-- Ευέλικτος χώρος για εσωτερικές εκδηλώσεις
-- Μαγική χειμωνιάτικη διακόσμηση
+**Ενδιαφέρεστε για καλοκαιρινό γάμο;** [Επικοινωνήστε μαζί μας](/contact) για να δούμε τις διαθεσιμότητες και να σχεδιάσουμε μαζί την τέλεια εκδήλωση.
 
-## Ενδιάμεσες Εποχές (Άνοιξη & Φθινόπωρο)
+## Χειμωνιάτικος Γάμος (Νοέμβριος – Μάρτιος)
 
-Οι καλύτερες επιλογές για πολλά ζευγάρια:
+Ο χειμωνιάτικος γάμος δημιουργεί cozy, ρομαντική ατμόσφαιρα με κεριά, φωτάκια και ζεστές αποχρώσεις. Οι διαθεσιμότητες είναι περισσότερες και οι τιμές χαμηλότερες, ενώ η οργάνωση γίνεται πιο χαλαρή, χωρίς το άγχος της υψηλής ζήτησης του καλοκαιριού.
 
-### Άνοιξη (Απρίλιος-Μάιος)
-- Ιδανικές θερμοκρασίες
-- Ανθισμένη φύση
-- Λιγότερο κόστος από καλοκαίρι
+![Χειμωνιάτικος γάμος με cozy ατμόσφαιρα και ρομαντική διακόσμηση με κεριά](/assets/home/DSC_7588.JPG)
 
-### Φθινόπωρο (Οκτώβριος)
-- Υπέροχο φως για φωτογραφίες
-- Άνετες θερμοκρασίες
-- Όμορφα χρώματα φύσης
+### Highlights χειμωνιάτικου γάμου:
+
+- Ρομαντική και cozy ατμόσφαιρα
+- Περισσότερες διαθέσιμες ημερομηνίες
+- Χαμηλότερο κόστος και εκπτώσεις σε υπηρεσίες
+- Λιγότερο άγχος στην οργάνωση
+
+### Λύσεις για άνεση στο Κτήμα Ωρίων:
+
+- Ευρύχωρη εσωτερική αίθουσα για προστασία από τον καιρό
+- Χειμωνιάτικη διακόσμηση με κεριά και φωτάκια που δημιουργεί ζεστή ατμόσφαιρα
+- Θερμαινόμενες γωνιές και cozy lounge για τους καλεσμένους
+
+**Ο χειμώνας είναι ιδανικός για [μικρούς γάμους](/blog/pos-na-organosete-enan-mikro-gamo) με προσωπική ατμόσφαιρα.** [Κλείστε την ημερομηνία σας](/contact) τώρα και απολαύστε ειδικές τιμές.
+
+## Ενδιάμεσες Εποχές: Άνοιξη & Φθινόπωρο
+
+Οι ενδιάμεσες εποχές συνδυάζουν τα καλύτερα και των δύο κόσμων. Την άνοιξη, οι θερμοκρασίες είναι ιδανικές και η φύση ανθισμένη, ενώ το κόστος παραμένει χαμηλότερο από το καλοκαίρι. Το φθινόπωρο προσφέρει υπέροχο φως για φωτογραφίες, άνετες θερμοκρασίες και ζεστά χρώματα φύσης που δίνουν μοναδική αίσθηση στις εικόνες σας.
+
+![Γαμήλια δεξίωση σε εποχή με ιδανικές θερμοκρασίες και ανθισμένη φύση](/assets/gamos/DSC_7637.JPG)
+
+![Εποχιακός γάμος με υπέροχο φως για φωτογραφίες και άνετες συνθήκες](/assets/home/DSC_7828.JPG)
 
 ## Ποια Εποχή να Επιλέξω;
 
-Επιλέξτε με βάση:
-1. **Προσωπική προτίμηση**: Τι σας αντιπροσωπεύει;
-2. **Προϋπολογισμό**: Χειμώνας = λιγότερο κόστος
-3. **Αριθμό καλεσμένων**: Καλοκαίρι για μεγάλους γάμους
-4. **Στυλ δεξίωσης**: Εξωτερικό vs εσωτερικό
+Η απόφαση πρέπει να βασίζεται σε:
+
+- **Προσωπική προτίμηση**: Τι σας εκφράζει περισσότερο;
+- **Προϋπολογισμό**: Ο χειμώνας συνήθως κοστίζει λιγότερο.
+- **Αριθμό καλεσμένων**: Το καλοκαίρι διευκολύνει μεγαλύτερους γάμους.
+- **Στυλ δεξίωσης**: Υπαίθριο ή εσωτερικό;
+
+Για περισσότερες συμβουλές σχετικά με την [επιλογή χώρου δεξίωσης](/blog/epilogi-horou-dexiosis-athina), διαβάστε τον ολοκληρωμένο οδηγό μας.
+
+![Επιλογή εποχής γάμου με βάση προϋπολογισμό και προσωπικές προτιμήσεις](/assets/gallery/DSC_7859.JPG)
 
 ## Συμπέρασμα
 
-Στο Κτήμα Ωρίων, κάθε εποχή έχει τη μαγεία της. Με τις κατάλληλες εγκαταστάσεις, ο γάμος σας θα είναι τέλειος όποτε και αν τον επιλέξετε!
+Στο [Κτήμα Ωρίων](/o-horos), κάθε εποχή έχει τη δική της μαγεία. Οι ευέλικτοι χώροι και οι προσεγμένες εγκαταστάσεις μας εξασφαλίζουν ότι ο γάμος σας θα είναι τέλειος, είτε επιλέξετε το ζεστό καλοκαίρι, τον cozy χειμώνα, είτε τις ενδιάμεσες εποχές της άνοιξης ή του φθινοπώρου.
+
+**Επικοινωνήστε μαζί μας για να οργανώσουμε τον γάμο των ονείρων σας, με ρομαντική ατμόσφαιρα και υπέροχη διακόσμηση, οποιαδήποτε εποχή κι αν επιλέξετε.**
+
+[Κλείστε δωρεάν ξενάγηση](/contact) ή [δείτε τις υπηρεσίες γάμου μας](/gamos) για να μάθετε περισσότερα.
     `,
     contentEn: `
 # Summer vs Winter Wedding: Which to Choose?
 
-Choosing the season for your wedding is an important decision that affects many aspects of your event. Let's look at the advantages of each season.
+Choosing your wedding season is one of the most important decisions, as it affects every aspect of the event - from the venue and decoration to photos and atmosphere. Let's see the advantages of each season and how [Ktima Orion](/en/venue) can help you organize your dream wedding.
 
-## Summer Wedding (May-September)
+## Summer Wedding (May – September)
 
-### Advantages
-- **Outdoor space**: You can fully utilize the outdoor area
-- **More daylight hours**: Ideal for photos
-- **Beach feeling**: Churches and reception with sea views
-- **Spring flowers**: More decoration options
-- **Relaxed atmosphere**: Guests enjoy the outdoors
+Summer weddings bring warmth, joy and bright moments. Outdoor spaces are utilized to the fullest, while [seaside churches](/en/blog/ekklisies-dipla-sti-thalassa-keratea) and sea views add unique character to your ceremony. Photos are bright and vibrant, while decoration with spring and summer flowers adds color and liveliness.
 
-### Disadvantages
-- **High demand**: Limited availability
-- **Temperatures**: It can get very hot
-- **Higher cost**: Peak season prices
+![Summer wedding with outdoor space and bright photos at Ktima Orion](/assets/gamos/DSC_7806.JPG)
 
-### Solutions at Ktima Orion
-- Air-conditioned indoor hall
-- Semi-outdoor pavilion with shading
-- Evening hours for coolness
+### Summer wedding highlights:
 
-## Winter Wedding (November-March)
+- Outdoor space for ceremony and reception
+- More daylight hours for photos
+- Chapels with views by the sea
+- Spring/summer flowers and decoration options
+- Relaxed and bright atmosphere for guests
 
-### Advantages
-- **Magical atmosphere**: Romantic, warm feeling
-- **More availability**: Easier scheduling
-- **Lower prices**: Discounts on services
-- **Cozy decoration**: Candles, lights, warm tones
-- **Less stress**: More relaxed organization
+### Comfort solutions at Ktima Orion:
 
-### Disadvantages
-- **Limited outdoor space**: Depends on weather
-- **Fewer daylight hours**: Earlier sunset
-- **Possible bad weather**: Need plan B
+- Semi-outdoor pavilions with shading for sun protection
+- Evening reception hours for cooler atmosphere
+- Natural ventilation and cool corners in the garden
 
-### Solutions at Ktima Orion
-- Fully air-conditioned hall
-- Flexible space for indoor events
-- Magical winter decoration
+**Interested in a summer wedding?** [Contact us](/en/contact) to see availability and design the perfect event together.
 
-## In-Between Seasons (Spring & Autumn)
+## Winter Wedding (November – March)
 
-The best choices for many couples:
+Winter weddings create a cozy, romantic atmosphere with candles, lights and warm tones. Availability is greater and prices are lower, while organization becomes more relaxed, without the stress of high summer demand.
 
-### Spring (April-May)
-- Ideal temperatures
-- Blooming nature
-- Lower cost than summer
+![Winter wedding with cozy atmosphere and romantic decoration with candles](/assets/home/DSC_7588.JPG)
 
-### Autumn (October)
-- Beautiful light for photos
-- Comfortable temperatures
-- Beautiful nature colors
+### Winter wedding highlights:
+
+- Romantic and cozy atmosphere
+- More available dates
+- Lower cost and discounts on services
+- Less stress in organization
+
+### Comfort solutions at Ktima Orion:
+
+- Spacious indoor hall for weather protection
+- Winter decoration with candles and lights that create warm atmosphere
+- Heated corners and cozy lounge for guests
+
+**Winter is ideal for [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo) with personal atmosphere.** [Book your date](/en/contact) now and enjoy special rates.
+
+## In-Between Seasons: Spring & Autumn
+
+The in-between seasons combine the best of both worlds. In spring, temperatures are ideal and nature is blooming, while cost remains lower than summer. Autumn offers beautiful light for photos, comfortable temperatures and warm nature colors that give unique feeling to your images.
+
+![Wedding reception in season with ideal temperatures and blooming nature](/assets/gamos/DSC_7637.JPG)
+
+![Seasonal wedding with beautiful light for photos and comfortable conditions](/assets/home/DSC_7828.JPG)
 
 ## Which Season Should I Choose?
 
-Choose based on:
-1. **Personal preference**: What represents you?
-2. **Budget**: Winter = lower cost
-3. **Number of guests**: Summer for large weddings
-4. **Reception style**: Outdoor vs indoor
+The decision should be based on:
+
+- **Personal preference**: What represents you more?
+- **Budget**: Winter usually costs less.
+- **Number of guests**: Summer facilitates larger weddings.
+- **Reception style**: Outdoor or indoor?
+
+For more tips on [choosing a reception venue](/en/blog/epilogi-horou-dexiosis-athina), read our complete guide.
+
+![Choosing wedding season based on budget and personal preferences](/assets/gallery/DSC_7859.JPG)
 
 ## Conclusion
 
-At Ktima Orion, every season has its magic. With the right facilities, your wedding will be perfect whenever you choose it!
+At [Ktima Orion](/en/venue), every season has its own magic. Our flexible spaces and careful facilities ensure that your wedding will be perfect, whether you choose warm summer, cozy winter, or the in-between seasons of spring or autumn.
+
+**Contact us to organize your dream wedding, with romantic atmosphere and wonderful decoration, whatever season you choose.**
+
+[Book a free tour](/en/contact) or [see our wedding services](/en/weddings) to learn more.
     `,
     category: 'wedding',
     categoryLabel: 'Γάμος',
@@ -392,239 +454,159 @@ At Ktima Orion, every season has its magic. With the right facilities, your wedd
     image: '/assets/gamos/DSC_7712.JPG',
     date: '2025-01-05',
     author: 'Κτήμα Ωρίων',
-    readTime: '7 λεπτά',
-    keywords: 'καλοκαιρινός γάμος, χειμωνιάτικος γάμος, εποχή γάμου',
-    keywordsEn: 'summer wedding, winter wedding, wedding season'
+    readTime: '8 λεπτά',
+    keywords: 'καλοκαιρινός γάμος, χειμωνιάτικος γάμος, εποχή γάμου, καλοκαιρινή δεξίωση, χειμωνιάτικη δεξίωση, επιλογή εποχής γάμου',
+    keywordsEn: 'summer wedding, winter wedding, wedding season, summer reception, winter reception, choosing wedding season'
   },
   {
     slug: "ti-na-proseksete-sti-vaptisi",
     title: "Βάπτιση: Τι να Προσέξετε για μια Τέλεια Εκδήλωση",
     titleEn: "Baptism: What to Watch for a Perfect Event",
-    excerpt: "Ολοκληρωμένος οδηγός για να οργανώσετε μια αξέχαστη βαπτιστική δεξίωση που θα θυμούνται όλοι.",
-    excerptEn: "Complete guide to organize an unforgettable baptism reception that everyone will remember.",
+    excerpt: "Η βάπτιση είναι μια από τις πιο χαρούμενες και τρυφερές στιγμές στη ζωή μιας οικογένειας. Ολοκληρωμένος οδηγός για να οργανώσετε μια αξέχαστη βαπτιστική δεξίωση.",
+    excerptEn: "Baptism is one of the most joyful and tender moments in a family's life. Complete guide to organize an unforgettable baptism reception.",
     content: `
 # Βάπτιση: Τι να Προσέξετε για μια Τέλεια Εκδήλωση
 
-Η βάπτιση είναι μια από τις πιο χαρούμενες και τρυφερές στιγμές στη ζωή μιας οικογένειας. Ας δούμε πώς να οργανώσετε μια τέλεια βαπτιστική δεξίωση.
+Η βάπτιση είναι μια από τις πιο χαρούμενες και τρυφερές στιγμές στη ζωή μιας οικογένειας. Είναι μια γιορτή που συνδυάζει τη συγκίνηση με τη χαρά και δίνει την ευκαιρία να μαζευτούν όλοι οι αγαπημένοι σας σε μια ξεχωριστή ημέρα. Για να οργανώσετε μια βαπτιστική δεξίωση που θα μείνει αξέχαστη, χρειάζεται προσοχή σε ορισμένες βασικές λεπτομέρειες.
+
+![Βαπτιστική δεξίωση με ασφαλή χώρο για παιδιά και kids-friendly εγκαταστάσεις](/assets/vaftisi/DSC_7828.JPG)
 
 ## 1. Επιλογή Εκκλησίας
 
-### Παράγοντες που Μετράνε
-- **Μέγεθος**: Πόσοι καλεσμένοι θα παρευρεθούν;
-- **Τοποθεσία**: Κοντά στο χώρο δεξίωσης
-- **Ατμόσφαιρα**: Παραδοσιακή ή σύγχρονη;
-- **Διαθεσιμότητα**: Κρατήστε νωρίς!
+Η εκκλησία είναι το κεντρικό σημείο της βάπτισης. Η επιλογή της κατάλληλης εκκλησίας εξασφαλίζει άνεση για τους καλεσμένους και δημιουργεί τη σωστή ατμόσφαιρα. Σκεφτείτε το μέγεθος, ώστε να χωρά άνετα όλοι οι προσκεκλημένοι, την τοποθεσία για εύκολη μετακίνηση προς το χώρο δεξίωσης και το ύφος που θέλετε – παραδοσιακό ή πιο σύγχρονο.
 
-### Προτάσεις για Κερατέα
-- **Παναγία Γκαρικά**: Ιδανική για μικρές βαπτίσεις
-- **Άγιος Αλέξανδρος**: Για μεγαλύτερες εκδηλώσεις
-- **Προφήτης Ηλίας**: Με θέα στη θάλασσα
+Στην Κερατέα υπάρχουν επιλογές που καλύπτουν κάθε ανάγκη:
+
+- **Παναγία Γκαρικά**: Ιδανική για μεγάλες και ανοιχτές βαπτίσεις.
+- **Άγιος Αλέξανδρος**: Κατάλληλη για μικρότερες εκδηλώσεις με λίγους καλεσμένους.
+- **Προφήτης Ηλίας**: Για όσους θέλουν μια τελετή με μαγευτική θέα στη θάλασσα. Δείτε τις [καλύτερες παραθαλάσσιες εκκλησίες](/blog/ekklisies-dipla-sti-thalassa-keratea) στην περιοχή.
+
+Κλείστε την εκκλησία νωρίς για να εξασφαλίσετε την ημερομηνία που επιθυμείτε.
 
 ## 2. Χώρος Δεξίωσης
 
-### Τι να Ζητήσετε
-- **Ασφάλεια για παιδιά**: Ασφαλής χώρος για τρέξιμο
-- **Παιδικό μενού**: Ειδικές επιλογές για μικρούς
-- **Εσωτερικός & εξωτερικός χώρος**: Για κάθε καιρό
-- **Parking**: Εύκολη πρόσβαση
+Ο χώρος δεξίωσης πρέπει να συνδυάζει άνεση, ασφάλεια και λειτουργικότητα. Είναι σημαντικό να υπάρχει χώρος για τα παιδιά, εύκολη πρόσβαση και parking για τους καλεσμένους.
 
-### Κτήμα Ωρίων Πλεονεκτήματα
-- Ασφαλής, κλειστός χώρος
-- Ειδικό παιδικό μενού
-- Baby-friendly εγκαταστάσεις
-- Τεράστιος χώρος στάθμευσης
+![Οργάνωση βάπτισης με παστέλ διακόσμηση και photo corner για αναμνηστικές φωτό](/assets/vaftisi/DSC_7859.JPG)
+
+Στο [Κτήμα Ωρίων](/o-horos) προσφέρουμε έναν ευρύχωρο και ασφαλή χώρο, ειδικό παιδικό μενού και kids-friendly εγκαταστάσεις, ενώ ο μεγάλος χώρος στάθμευσης διευκολύνει όλους τους καλεσμένους. Μια καλή δεξίωση συνδυάζει εσωτερικό και εξωτερικό χώρο ώστε να μπορείτε να απολαύσετε τη μέρα όποιος καιρός κι αν επικρατεί.
+
+**Ενδιαφέρεστε για χώρο βάπτισης;** [Επικοινωνήστε μαζί μας](/contact) για να δούμε τις επιλογές μας και να σχεδιάσουμε μαζί την τέλεια εκδήλωση.
 
 ## 3. Διακόσμηση
 
-### Θέματα που Πάντα Πετυχαίνουν
-- **Παστέλ χρώματα**: Ροζ, γαλάζιο, λεμονί
-- **Θέμα με ζωάκια**: Αρκουδάκια, ζωάκια του δάσους
-- **Nautical**: Για θαλασσινό feeling
-- **Boho**: Φυσικά υλικά, λουλούδια
+Η διακόσμηση δίνει χαρακτήρα στη βάπτιση και καθορίζει την ατμόσφαιρα. Τα θέματα που αγαπιούνται πάντα περιλαμβάνουν παστέλ χρώματα όπως ροζ, γαλάζιο και λεμονί, αλλά και πιο ιδιαίτερα θέματα με ζωάκια, nautical ή boho στοιχεία.
 
-### Must-Have Στοιχεία
-- Κολυμβήθρα διακοσμημένη
-- Photo corner για αναμνηστικές φωτό
-- Τραπέζι για μπομπονιέρες
+![Βαπτιστική εκδήλωση με ειδικό παιδικό μενού και ψυχαγωγία για μικρούς](/assets/home/DSC_7637.JPG)
+
+Μερικά απαραίτητα στοιχεία που δεν πρέπει να λείπουν:
+
+- Κολυμβήθρα διακοσμημένη ανάλογα με το θέμα
+- Photo corner για αναμνηστικές φωτογραφίες
+- Τραπέζι για τις μπομπονιέρες
 - Λαμπάδα με matching διακόσμηση
+
+Η προσεγμένη διακόσμηση προσφέρει όμορφες εικόνες για τις φωτογραφίες και κάνει τους καλεσμένους να νιώσουν ιδιαίτερα.
+
+![Τέλεια βάπτιση με προσεγμένη διακόσμηση κολυμβήθρας και μπομπονιέρες](/assets/vaftisi/DSC_7712.JPG)
+
+**Για περισσότερες ιδέες διακόσμησης και οργάνωσης, [δείτε τις υπηρεσίες βάπτισης μας](/vaptisi).**
 
 ## 4. Catering
 
-### Μενού Βάπτισης
-**Για Ενήλικες**
-- Ελαφριά ορεκτικά
-- Σαλάτες
-- Κύρια πιάτα (ψάρι, κοτόπουλο)
-- Γλυκά & τούρτα
-
-**Για Παιδιά**
-- Nuggets, πατατούλες
-- Μικρά σάντουιτς
-- Φρέσκα φρούτα
-- Mini cupcakes
+Το φαγητό είναι ένα σημαντικό κομμάτι της εκδήλωσης, αφού θέλουμε να καλύψουμε τόσο τους ενήλικες όσο και τα παιδιά. Ένα καλοσχεδιασμένο μενού κάνει όλους τους καλεσμένους χαρούμενους και βοηθά τη μέρα να κυλήσει ευχάριστα.
 
 ## 5. Ψυχαγωγία
 
-### Για τα Παιδιά
-- Face painting
-- Κλόουν ή μαγικός
-- Φουσκωτά παιχνίδια
-- Παιδική μουσική
+Η ψυχαγωγία είναι απαραίτητη για να διασκεδάσουν μικροί και μεγάλοι. Για τα παιδιά, face painting, κλόουν ή μαγικός, φουσκωτά παιχνίδια και παιδική μουσική κρατούν το ενδιαφέρον ζωντανό. Για τους ενήλικες, DJ με ποικίλο ρεπερτόριο, χώρος χορού και lounge area για συζήτηση δημιουργούν την ιδανική ατμόσφαιρα.
 
-### Για τους Μεγάλους
-- DJ με ποικίλο ρεπερτόριο
-- Χώρος χορού
-- Lounge area για συζήτηση
+![Βαπτιστική δεξίωση που απολαμβάνουν παιδιά και ενήλικες στο Κτήμα Ωρίων](/assets/gallery/DSC_7806.JPG)
 
-## 6. Χρονοδιάγραμμα
+## 6. Προϋπολογισμός
 
-**Ιδανικό Πρόγραμμα**
-- 11:00-12:00: Άφιξη στην εκκλησία
-- 12:00-13:00: Τελετή βάπτισης
-- 13:00-13:30: Μετάβαση στο κτήμα
-- 13:30-14:00: Ποτό υποδοχής
-- 14:00-17:00: Δεξίωση
-- 17:00: Κοπή τούρτας
+Συνιστάται να επενδύσετε σε φωτογραφία, catering, διακόσμηση και χώρο, ενώ μπορείτε να εξοικονομήσετε από DIY μπομπονιέρες, απλούστερα προσκλητήρια ή λιγότερα λουλούδια, δίνοντας έμφαση σε βασικά σημεία.
 
-## 7. Φωτογραφία
-
-### Στιγμές που Πρέπει να Απαθανατιστούν
-- Προετοιμασία στο σπίτι
-- Άφιξη στην εκκλησία
-- Η τελετή (με συνεννόηση παπά)
-- Οικογενειακές φωτό μετά την τελετή
-- Λεπτομέρειες διακόσμησης
-- Το παιδί με τους νονούς
-- Οικογενειακές στιγμές
-
-## 8. Προϋπολογισμός
-
-### Πού να Επενδύσετε
-1. **Φωτογραφία**: Αναμνήσεις για πάντα
-2. **Catering**: Ποιότητα φαγητού
-3. **Διακόσμηση**: Δημιουργεί ατμόσφαιρα
-4. **Χώρος**: Ασφάλεια & άνεση
-
-### Πού να Εξοικονομήσετε
-- DIY μπομπονιέρες
-- Απλούστερα προσκλητήρια
-- Λιγότερα λουλούδια (έμφαση σε key points)
+Για περισσότερες συμβουλές σχετικά με την [επιλογή χώρου δεξίωσης](/blog/epilogi-horou-dexiosis-athina), διαβάστε τον ολοκληρωμένο οδηγό μας.
 
 ## Συμπέρασμα
 
-Μια επιτυχημένη βάπτιση είναι αυτή που απολαμβάνουν όλοι - παιδιά και ενήλικες. Στο Κτήμα Ωρίων φροντίζουμε για κάθε λεπτομέρεια ώστε εσείς να απολαύσετε αυτή τη μοναδική μέρα!
+Μια επιτυχημένη βάπτιση είναι αυτή που απολαμβάνουν όλοι – παιδιά και ενήλικες. Στο [Κτήμα Ωρίων](/o-horos), φροντίζουμε για κάθε λεπτομέρεια ώστε εσείς να απολαύσετε τη μέρα, με ασφάλεια, άνεση και μαγική ατμόσφαιρα για κάθε ηλικία.
+
+**Επικοινωνήστε μαζί μας για να οργανώσουμε την τέλεια βαπτιστική δεξίωση που θα θυμούνται όλοι.**
+
+[Κλείστε δωρεάν ξενάγηση](/contact) ή [δείτε τις υπηρεσίες βάπτισης μας](/vaptisi) για να μάθετε περισσότερα.
     `,
     contentEn: `
 # Baptism: What to Watch for a Perfect Event
 
-Baptism is one of the most joyful and tender moments in a family's life. Let's see how to organize a perfect baptism reception.
+Baptism is one of the most joyful and tender moments in a family's life. It is a celebration that combines emotion with joy and gives the opportunity to gather all your loved ones on a special day. To organize a baptism reception that will be unforgettable, attention to certain basic details is needed.
+
+![Baptism reception with safe space for children and kids-friendly facilities](/assets/vaftisi/DSC_7828.JPG)
 
 ## 1. Church Selection
 
-### Factors that Matter
-- **Size**: How many guests will attend?
-- **Location**: Close to the reception venue
-- **Atmosphere**: Traditional or modern?
-- **Availability**: Book early!
+The church is the central point of the baptism. Choosing the right church ensures comfort for guests and creates the right atmosphere. Consider the size, so all invitees fit comfortably, the location for easy movement to the reception venue and the style you want - traditional or more modern.
 
-### Suggestions for Keratea
-- **Panagia Gkarika**: Ideal for small baptisms
-- **Agios Alexandros**: For larger events
-- **Profitis Ilias**: With sea views
+In Keratea there are options that cover every need:
+
+- **Panagia Gkarika**: Ideal for large and open baptisms.
+- **Agios Alexandros**: Suitable for smaller events with few guests.
+- **Profitis Ilias**: For those who want a ceremony with magical sea views. See the [best seaside churches](/en/blog/ekklisies-dipla-sti-thalassa-keratea) in the area.
+
+Book the church early to secure the date you desire.
 
 ## 2. Reception Venue
 
-### What to Ask For
-- **Child safety**: Safe space for running
-- **Children's menu**: Special options for kids
-- **Indoor & outdoor space**: For any weather
-- **Parking**: Easy access
+The reception venue must combine comfort, safety and functionality. It is important to have space for children, easy access and parking for guests.
 
-### Ktima Orion Advantages
-- Safe, enclosed space
-- Special children's menu
-- Baby-friendly facilities
-- Huge parking area
+![Baptism organization with pastel decoration and photo corner for souvenir photos](/assets/vaftisi/DSC_7859.JPG)
+
+At [Ktima Orion](/en/venue) we offer a spacious and safe space, special children's menu and kids-friendly facilities, while the large parking area facilitates all guests. A good reception combines indoor and outdoor space so you can enjoy the day whatever the weather.
+
+**Interested in a baptism venue?** [Contact us](/en/contact) to see our options and design the perfect event together.
 
 ## 3. Decoration
 
-### Themes that Always Work
-- **Pastel colors**: Pink, blue, lemon
-- **Animal theme**: Teddy bears, forest animals
-- **Nautical**: For beach feeling
-- **Boho**: Natural materials, flowers
+Decoration gives character to the baptism and determines the atmosphere. Themes that are always loved include pastel colors such as pink, blue and lemon, but also more special themes with animals, nautical or boho elements.
 
-### Must-Have Elements
-- Decorated font
+![Baptism event with special children's menu and entertainment for little ones](/assets/home/DSC_7637.JPG)
+
+Some essential elements that should not be missing:
+
+- Decorated font according to the theme
 - Photo corner for souvenir photos
 - Table for favors
 - Candle with matching decoration
 
+Careful decoration offers beautiful images for photos and makes guests feel special.
+
+![Perfect baptism with careful font decoration and favors](/assets/vaftisi/DSC_7712.JPG)
+
+**For more decoration and organization ideas, [see our baptism services](/en/baptism).**
+
 ## 4. Catering
 
-### Baptism Menu
-**For Adults**
-- Light appetizers
-- Salads
-- Main courses (fish, chicken)
-- Desserts & cake
-
-**For Children**
-- Nuggets, fries
-- Small sandwiches
-- Fresh fruits
-- Mini cupcakes
+Food is an important part of the event, as we want to cover both adults and children. A well-designed menu makes all guests happy and helps the day flow pleasantly.
 
 ## 5. Entertainment
 
-### For Children
-- Face painting
-- Clown or magician
-- Inflatable games
-- Children's music
+Entertainment is essential for both children and adults to have fun. For children, face painting, clown or magician, inflatable games and children's music keep interest alive. For adults, DJ with varied repertoire, dance floor and lounge area for conversation create the ideal atmosphere.
 
-### For Adults
-- DJ with varied repertoire
-- Dance floor
-- Lounge area for conversation
+![Baptism reception enjoyed by children and adults at Ktima Orion](/assets/gallery/DSC_7806.JPG)
 
-## 6. Timeline
+## 6. Budget
 
-**Ideal Schedule**
-- 11:00-12:00: Arrival at church
-- 12:00-13:00: Baptism ceremony
-- 13:00-13:30: Travel to venue
-- 13:30-14:00: Welcome drinks
-- 14:00-17:00: Reception
-- 17:00: Cake cutting
+It is recommended to invest in photography, catering, decoration and venue, while you can save from DIY favors, simpler invitations or fewer flowers, emphasizing key points.
 
-## 7. Photography
-
-### Moments to Capture
-- Preparation at home
-- Arrival at church
-- The ceremony (with priest's permission)
-- Family photos after ceremony
-- Decoration details
-- Child with godparents
-- Family moments
-
-## 8. Budget
-
-### Where to Invest
-1. **Photography**: Memories forever
-2. **Catering**: Food quality
-3. **Decoration**: Creates atmosphere
-4. **Venue**: Safety & comfort
-
-### Where to Save
-- DIY favors
-- Simpler invitations
-- Fewer flowers (emphasis on key points)
+For more tips on [choosing a reception venue](/en/blog/epilogi-horou-dexiosis-athina), read our complete guide.
 
 ## Conclusion
 
-A successful baptism is one that everyone enjoys - children and adults. At Ktima Orion we take care of every detail so you can enjoy this unique day!
+A successful baptism is one that everyone enjoys - children and adults. At [Ktima Orion](/en/venue), we take care of every detail so you can enjoy the day, with safety, comfort and magical atmosphere for every age.
+
+**Contact us to organize the perfect baptism reception that everyone will remember.**
+
+[Book a free tour](/en/contact) or [see our baptism services](/en/baptism) to learn more.
     `,
     category: 'baptism',
     categoryLabel: 'Βάπτιση',
@@ -632,351 +614,251 @@ A successful baptism is one that everyone enjoys - children and adults. At Ktima
     image: '/assets/vaftisi/DSC_7662.JPG',
     date: '2024-12-28',
     author: 'Κτήμα Ωρίων',
-    readTime: '8 λεπτά',
-    keywords: 'βάπτιση, βαπτιστική δεξίωση, οργάνωση βάπτισης, βάπτιση κερατέα',
-    keywordsEn: 'baptism, baptism reception, baptism organization, baptism keratea'
+    readTime: '9 λεπτά',
+    keywords: 'βάπτιση, βαπτιστική δεξίωση, οργάνωση βάπτισης, βάπτιση κερατέα, βαπτιστική εκδήλωση, οργάνωση βάπτισης παιδιού',
+    keywordsEn: 'baptism, baptism reception, baptism organization, baptism keratea, baptism event, organizing child baptism'
   },
   {
     slug: "epilogi-horou-dexiosis-athina",
-    title: "Επιλογή Χώρου Δεξίωσης στην Αθήνα: Ο Πλήρης Οδηγός",
-    titleEn: "Choosing a Reception Venue in Athens: Complete Guide",
-    excerpt: "Τι να προσέξετε κατά την επιλογή του χώρου για τη δεξίωσή σας. Checklist και συμβουλές από επαγγελματίες.",
-    excerptEn: "What to watch for when choosing your reception venue. Checklist and advice from professionals.",
+    title: "Επιλογή Χώρου Δεξίωσης στην Αθήνα",
+    titleEn: "Choosing a Reception Venue in Athens",
+    excerpt: "Η επιλογή χώρου δεξίωσης είναι από τα σημαντικότερα βήματα για έναν επιτυχημένο γάμο ή event. Δείτε τα βασικά κριτήρια που πρέπει να εξετάσετε.",
+    excerptEn: "Choosing a reception venue is one of the most important steps for a successful wedding or event. See the basic criteria you need to examine.",
     content: `
-# Επιλογή Χώρου Δεξίωσης στην Αθήνα: Ο Πλήρης Οδηγός
+# Επιλογή Χώρου Δεξίωσης στην Αθήνα
 
-Η επιλογή του κατάλληλου χώρου είναι ίσως η πιο σημαντική απόφαση στον σχεδιασμό της δεξίωσής σας. Ας δούμε τι πρέπει να προσέξετε.
+Η επιλογή χώρου δεξίωσης είναι από τα σημαντικότερα βήματα για έναν επιτυχημένο γάμο ή event. Επηρεάζει την άνεση των καλεσμένων, τη ροή της ημέρας και φυσικά το συνολικό αποτέλεσμα. 
 
-## Βασικοί Παράγοντες
+Παρακάτω θα βρείτε τα βασικά κριτήρια που πρέπει να εξετάσετε πριν καταλήξετε.
 
-### 1. Τοποθεσία
+![Εσωτερικός και εξωτερικός χώρος δεξίωσης με ευελιξία για κάθε καιρό](/assets/home/DSC_7637.JPG)
 
-**Τι να Εξετάσετε:**
-- Απόσταση από την εκκλησία (ιδανικά <15 λεπτά)
-- Εύκολη πρόσβαση από Αθήνα
-- Κοντά σε κεντρικές οδούς
-- Διαθεσιμότητα ξενοδοχείων κοντά
+## 1. Τοποθεσία
 
-**Κτήμα Ωρίων:**
-- 30 λεπτά από κέντρο Αθήνας
-- Εύκολη πρόσβαση από Αττική Οδό
-- Κοντά σε 4 γραφικές εκκλησίες
-- Ήσυχη περιοχή, μακριά από θόρυβο
+Η σωστή τοποθεσία μειώνει τη μετακίνηση και κρατά το event ευχάριστο και οργανωμένο. Προτιμήστε χώρους κοντά σε εκκλησίες και με εύκολη πρόσβαση από κεντρικούς δρόμους.
 
-### 2. Χωρητικότητα
+**Τι να προσέξετε:**
+- Απόσταση από εκκλησία (ιδανικά 10 – 20 λεπτά)
+- Πρόσβαση από Αττική Οδό / κέντρο Αθήνας
+- Parking & εύκολη άφιξη για καλεσμένους
 
-**Πώς να Υπολογίσετε:**
-- Μετρήστε τους βέβαιους καλεσμένους
-- Προσθέστε 20% για ίσως
-- Δείτε τη χωρητικότητα σε διάφορες διατάξεις
-- Ελέγξτε αν χωράνε άνετα
+**Το [Κτήμα Ωρίων](/o-horos) προσφέρει:**
+- 40' από Αθήνα • άμεση πρόσβαση • κοντά σε γραφικά εκκλησάκια δίπλα στη θάλασσα
 
-**Τι να Ρωτήσετε:**
-- Μέγιστη χωρητικότητα
-- Ελάχιστος αριθμός καλεσμένων
-- Ανά πόσα άτομα οι τιμές
-- Flexibility σε αριθμούς
+![Κτήμα γάμου στην Αθήνα με parking 100+ θέσεων και εύκολη πρόσβαση](/assets/home/DSC_7816.JPG)
 
-### 3. Εγκαταστάσεις
+**Ενδιαφέρεστε για χώρο κοντά σε [παραθαλάσσιες εκκλησίες](/blog/ekklisies-dipla-sti-thalassa-keratea);** [Επικοινωνήστε μαζί μας](/contact) για να δούμε τις επιλογές μας.
 
-**Must-Have:**
-- Καθαρές τουαλέτες (επαρκείς)
-- Κουζίνα για catering
-- Χώροι για μουσική/DJ
-- Parking (1 θέση ανά 3-4 άτομα)
-- Baby facilities
+## 2. Χωρητικότητα
 
-**Nice-to-Have:**
-- Χώρος προετοιμασίας για το ζευγάρι
-- Lounge areas
-- Χώροι για παιδιά
-- Εξωτερικός χώρος
-- Wi-Fi
+Ο χώρος πρέπει να καλύπτει άνετα τον αριθμό των καλεσμένων, χωρίς στρίμωγμα — αλλά ούτε και να δείχνει άδειος.
 
-### 4. Εσωτερικός vs Εξωτερικός Χώρος
+**Σημεία ελέγχου:**
+- Πραγματική χωρητικότητα καθιστού δείπνου
+- Ευελιξία σε μικρότερους ή μεγαλύτερους αριθμούς
+- Διαφορετικές διατάξεις τραπεζιών
 
-**Εξωτερικός:**
-- Pros: Φυσικό περιβάλλον, ανοιχτός χώρος
-- Cons: Εξαρτάται από καιρό
+Για [μικρούς γάμους](/blog/pos-na-organosete-enan-mikro-gamo), η ευελιξία είναι ιδιαίτερα σημαντική.
 
-**Εσωτερικός:**
-- Pros: Ελεγχόμενο περιβάλλον, κλιματισμός
-- Cons: Μπορεί να φαίνεται στενός
+## 3. Εγκαταστάσεις & Υποδομές
 
-**Ιδανικό:** 
-Συνδυασμός και των δύο! (Όπως το Κτήμα Ωρίων)
+Ένας καλά εξοπλισμένος χώρος εξασφαλίζει ομαλή εκδήλωση, χωρίς απρόοπτα.
 
-### 5. Ατμόσφαιρα & Αισθητική
+![Εγκαταστάσεις δεξίωσης με καθαρούς χώρους υγιεινής και οργανωμένη κουζίνα](/assets/gallery/DSC_7712.JPG)
 
-**Τι να Προσέξετε:**
-- Ταιριάζει στο στυλ σας;
-- Χρειάζεται πολλή διακόσμηση;
-- Το φυσικό περιβάλλον είναι όμορφο;
-- Υπάρχει καλός φωτισμός;
+**Βασικά:**
+- Καθαροί και πολλοί χώροι υγιεινής
+- Οργανωμένη κουζίνα για catering
+- Χώρος για μουσική ή DJ
+- Parking για όλους
+- Χώροι για παιδιά / baby-friendly παροχές
 
-**Στυλ Χώρων:**
-- Rustic/παραδοσιακό
-- Μοντέρνο/contemporary
-- Κλασικό/elegant
-- Boho/φυσικό
+![Αποκλειστική χρήση χώρου δεξίωσης με 1 event ανά ημέρα για μεγαλύτερη ιδιωτικότητα](/assets/home/DSC_7859.JPG)
 
-## Πρακτικά Ζητήματα
+## 4. Εσωτερικός & Εξωτερικός Χώρος
 
-### Budget
+Ο ιδανικός χώρος προσφέρει και τις δύο επιλογές, ώστε η εκδήλωση να μην εξαρτάται από τον καιρό.
 
-**Τι Περιλαμβάνεται:**
-- Ενοίκιο χώρου
-- Catering
-- Ποτά
-- Υπηρεσίες
-- Διακόσμηση βασική
+Ο συνδυασμός εσωτερικού και εξωτερικού χώρου:
+- εξασφαλίζει ευελιξία
+- προσφέρει φυσικό περιβάλλον για φωτογραφίες
+- επιτρέπει άνετη ροή από υποδοχή σε δείπνο και χορό
 
-**Τι ΔΕΝ Περιλαμβάνεται:**
-- Επιπλέον διακόσμηση
-- Φωτογράφος
-- DJ/Μουσική
-- Wedding planner
-- Ειδικές προσθήκες
+Στο [Κτήμα Ωρίων](/o-horos) υπάρχει πλήρως οργανωμένος εσωτερικός χώρος και μεγάλος εξωτερικός κήπος.
 
-### Συμβόλαιο
+**Για περισσότερες συμβουλές σχετικά με [εποχιακές επιλογές](/blog/kalokerinos-vs-heimoniatikos-gamos), διαβάστε τον οδηγό μας.**
 
-**Τι να Διαβάσετε Προσεκτικά:**
-- Ακριβής χρέωση
-- Τι περιλαμβάνει
-- Πολιτική ακύρωσης
-- Πότε πληρώνετε
-- Υπάρχει προκαταβολή;
-- Επιστροφή προκαταβολής;
+## 5. Ατμόσφαιρα & Αισθητική Χώρου
 
-### Ημερομηνία & Ώρες
+Ο χώρος πρέπει να «κουμπώνει» στο στυλ που φαντάζεστε. Ένα όμορφο φυσικό περιβάλλον μειώνει το κόστος διακόσμησης και ενισχύει την ατμόσφαιρα της εκδήλωσης.
 
-**Να Ρωτήσετε:**
-- Πόσες ώρες έχετε;
-- Υπάρχει overtime;
-- Κόστος επιπλέον ωρών;
-- Τι ώρα πρέπει να φύγετε;
-- Πότε μπορείτε να στήσετε;
+**Ελέγξτε:**
+- φωτισμό (ημέρας & βραδινού)
+- διαμόρφωση κήπου
+- αν απαιτείται επιπλέον διακόσμηση
 
-## Επίσκεψη στο Χώρο
+![Επιλογή χώρου γάμου με βάση τοποθεσία, χωρητικότητα και αισθητική](/assets/gallery/DSC_7806.JPG)
 
-### Checklist Επίσκεψης
+## 6. Budget & Περιλαμβανόμενες Παροχές
 
-**Να Δείτε:**
-- Χώρο σε διαφορετικές ώρες
-- Πώς φαίνεται με φυσικό φως
-- Την κατάσταση εγκαταστάσεων
-- Parking και πρόσβαση
-- Θέα/περιβάλλον γύρω
+Πριν δεσμευτείτε, βεβαιωθείτε ότι γνωρίζετε τι περιλαμβάνεται στην τιμή.
 
-**Να Ρωτήσετε:**
-- Αν έχουν available την ημερομηνία σας
-- Για προηγούμενες εκδηλώσεις
-- Για references
-- Για όρους συνεργασίας
-- Αν έχουν προτιμώμενους προμηθευτές
+**Συνήθως περιλαμβάνονται:**
+- ενοικίαση χώρου
+- βασικός εξοπλισμός
+- συνεργαζόμενο catering
 
-## Ειδικές Περιπτώσεις
+**Συνήθως δεν περιλαμβάνονται:**
+- DJ / φωτογράφος
+- premium διακόσμηση
+- έξτρα παροχές
 
-### Για Γάμους σε Εποχές Αιχμής
-- Κρατήστε 12-18 μήνες πριν
-- Προετοιμαστείτε για υψηλότερες τιμές
-- Έχετε backup ημερομηνίες
+Ρωτήστε για προκαταβολές, ακυρώσεις και επιπλέον ώρες χρήσης.
 
-### Για Μικρούς Γάμους
-- Ψάξτε χώρους με flexibility
-- Μην πληρώνετε για μεγάλη χωρητικότητα
-- Προτιμήστε ιντιμ περιβάλλον
+## 7. Επίσκεψη στον Χώρο
 
-### Για Μεγάλους Γάμους
-- Βεβαιωθείτε για επαρκές parking
-- Ελέγξτε sound system
-- Πολλές τουαλέτες
+Η ξενάγηση είναι απαραίτητη για να δείτε την πραγματική εικόνα.
 
-## Γιατί το Κτήμα Ωρίων;
+**Κατά την επίσκεψη:**
+- δείτε τον χώρο με φυσικό φως
+- ελέγξτε καθαριότητα και λειτουργικότητα
+- ρωτήστε για διαθέσιμες ημερομηνίες
+- δείτε παραδείγματα προηγούμενων εκδηλώσεων
 
-### Τι μας Ξεχωρίζει:
-- ✅ Αποκλειστική χρήση (1 event/day)
-- ✅ Εσωτερικός & εξωτερικός χώρος
-- ✅ Κλιματισμός πλήρης
-- ✅ Τεράστιο parking (100+ θέσεις)
-- ✅ Κοντά σε εκκλησίες (5-15')
-- ✅ 15+ χρόνια εμπειρίας
-- ✅ All-inclusive πακέτα available
-- ✅ Ευέλικτες επιλογές
+## Γιατί το Κτήμα Ωρίων αποτελεί κορυφαία επιλογή
 
-## Συμπέρασμα
+- **Αποκλειστική χρήση** — 1 event/ημέρα
+- **Εσωτερικός + εξωτερικός χώρος**
+- **Parking 100+ θέσεων**
+- **10 – 20 λεπτά από εκκλησίες**
+- **15+ χρόνια εμπειρίας**
+- **Ευέλικτες επιλογές για κάθε εκδήλωση**
 
-Η επιλογή χώρου είναι προσωπική απόφαση. Επισκεφθείτε αρκετούς χώρους, κάντε ερωτήσεις, και διαλέξτε αυτόν που σας κάνει να νιώθετε σπίτι σας.
+Ο σωστός χώρος δεξίωσης στην Αθήνα πρέπει να συνδυάζει καλή τοποθεσία, όμορφη ατμόσφαιρα και αξιόπιστες υποδομές. Δείτε αρκετές επιλογές και επιλέξτε εκείνη που σας κάνει να νιώθετε σιγουριά και άνεση από την πρώτη στιγμή.
 
-**Ετοιμοι να δείτε το Κτήμα Ωρίων; Κλείστε δωρεάν ξενάγηση σήμερα!**
+**Θέλετε ξενάγηση στο [Κτήμα Ωρίων](/o-horos);**
+
+**Κλείστε δωρεάν ραντεβού σήμερα!**
+
+[Επικοινωνήστε μαζί μας](/contact) για να οργανώσουμε την επίσκεψή σας ή [δείτε τις υπηρεσίες μας](/ypiresies) για να μάθετε περισσότερα.
     `,
     contentEn: `
-# Choosing a Reception Venue in Athens: Complete Guide
+# Choosing a Reception Venue in Athens
 
-Choosing the right venue is perhaps the most important decision in planning your reception. Let's see what you need to watch for.
+Choosing a reception venue is one of the most important steps for a successful wedding or event. It affects guest comfort, the flow of the day and of course the overall result.
 
-## Key Factors
+Below you will find the basic criteria you need to examine before deciding.
 
-### 1. Location
+![Indoor and outdoor reception space with flexibility for any weather](/assets/home/DSC_7637.JPG)
 
-**What to Consider:**
-- Distance from church (ideally <15 minutes)
-- Easy access from Athens
-- Close to main roads
-- Available hotels nearby
+## 1. Location
 
-**Ktima Orion:**
-- 30 minutes from Athens center
-- Easy access from Attiki Odos
-- Close to 4 picturesque churches
-- Quiet area, away from noise
+The right location reduces travel and keeps the event pleasant and organized. Prefer venues close to churches and with easy access from main roads.
 
-### 2. Capacity
+**What to watch for:**
+- Distance from church (ideally 10-20 minutes)
+- Access from Attiki Odos / Athens center
+- Parking & easy arrival for guests
 
-**How to Calculate:**
-- Count confirmed guests
-- Add 20% for maybe
-- See capacity in different layouts
-- Check if they fit comfortably
+**[Ktima Orion](/en/venue) offers:**
+- 40' from Athens • immediate access • close to picturesque chapels by the sea
 
-**What to Ask:**
-- Maximum capacity
-- Minimum number of guests
-- Pricing per number of people
-- Flexibility in numbers
+![Wedding venue in Athens with 100+ parking spaces and easy access](/assets/home/DSC_7816.JPG)
 
-### 3. Facilities
+**Interested in a venue near [seaside churches](/en/blog/ekklisies-dipla-sti-thalassa-keratea)?** [Contact us](/en/contact) to see our options.
 
-**Must-Have:**
-- Clean restrooms (sufficient)
-- Kitchen for catering
-- Areas for music/DJ
-- Parking (1 spot per 3-4 people)
-- Baby facilities
+## 2. Capacity
 
-**Nice-to-Have:**
-- Preparation room for couple
-- Lounge areas
-- Children's areas
-- Outdoor space
-- Wi-Fi
+The venue must comfortably cover the number of guests, without crowding - but also not looking empty.
 
-### 4. Indoor vs Outdoor Space
+**Checkpoints:**
+- Actual seated dinner capacity
+- Flexibility for smaller or larger numbers
+- Different table arrangements
 
-**Outdoor:**
-- Pros: Natural environment, open space
-- Cons: Weather dependent
+For [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo), flexibility is particularly important.
 
-**Indoor:**
-- Pros: Controlled environment, air conditioning
-- Cons: May feel tight
+## 3. Facilities & Infrastructure
 
-**Ideal:** 
-Combination of both! (Like Ktima Orion)
+A well-equipped venue ensures smooth event, without surprises.
 
-### 5. Atmosphere & Aesthetics
+![Reception facilities with clean restrooms and organized kitchen](/assets/gallery/DSC_7712.JPG)
 
-**What to Watch:**
-- Does it match your style?
-- Does it need a lot of decoration?
-- Is the natural environment beautiful?
-- Is there good lighting?
+**Basic:**
+- Clean and many restrooms
+- Organized kitchen for catering
+- Space for music or DJ
+- Parking for everyone
+- Spaces for children / baby-friendly facilities
 
-**Venue Styles:**
-- Rustic/traditional
-- Modern/contemporary
-- Classic/elegant
-- Boho/natural
+![Exclusive use of reception venue with 1 event per day for greater privacy](/assets/home/DSC_7859.JPG)
 
-## Practical Matters
+## 4. Indoor & Outdoor Space
 
-### Budget
+The ideal venue offers both options, so the event doesn't depend on weather.
 
-**What's Included:**
-- Venue rental
-- Catering
-- Drinks
-- Services
-- Basic decoration
+The combination of indoor and outdoor space:
+- ensures flexibility
+- offers natural environment for photos
+- allows comfortable flow from welcome to dinner and dance
 
-**What's NOT Included:**
-- Additional decoration
-- Photographer
-- DJ/Music
-- Wedding planner
-- Special additions
+At [Ktima Orion](/en/venue) there is a fully organized indoor space and large outdoor garden.
 
-### Contract
+**For more tips on [seasonal choices](/en/blog/kalokerinos-vs-heimoniatikos-gamos), read our guide.**
 
-**What to Read Carefully:**
-- Exact charges
-- What's included
-- Cancellation policy
-- When you pay
-- Is there a deposit?
-- Deposit refund?
+## 5. Atmosphere & Venue Aesthetics
 
-### Date & Hours
+The venue must "click" with the style you imagine. A beautiful natural environment reduces decoration costs and enhances the event atmosphere.
 
-**To Ask:**
-- How many hours do you have?
-- Is there overtime?
-- Cost of extra hours?
-- What time must you leave?
-- When can you set up?
+**Check:**
+- lighting (day & night)
+- garden layout
+- if additional decoration is required
 
-## Venue Visit
+![Choosing wedding venue based on location, capacity and aesthetics](/assets/gallery/DSC_7806.JPG)
 
-### Visit Checklist
+## 6. Budget & Included Services
 
-**To See:**
-- Space at different times
-- How it looks with natural light
-- Facility condition
-- Parking and access
-- View/surrounding environment
+Before committing, make sure you know what's included in the price.
 
-**To Ask:**
-- If they have your date available
-- For previous events
-- For references
-- For terms of cooperation
-- If they have preferred vendors
+**Usually included:**
+- venue rental
+- basic equipment
+- partner catering
 
-## Special Cases
+**Usually NOT included:**
+- DJ / photographer
+- premium decoration
+- extra services
 
-### For Peak Season Weddings
-- Book 12-18 months in advance
-- Prepare for higher prices
-- Have backup dates
+Ask about deposits, cancellations and additional hours of use.
 
-### For Small Weddings
-- Look for venues with flexibility
-- Don't pay for large capacity
-- Prefer intimate environment
+## 7. Venue Visit
 
-### For Large Weddings
-- Ensure adequate parking
-- Check sound system
-- Many restrooms
+The tour is essential to see the real picture.
 
-## Why Ktima Orion?
+**During the visit:**
+- see the space with natural light
+- check cleanliness and functionality
+- ask about available dates
+- see examples of previous events
 
-### What Sets Us Apart:
-- ✅ Exclusive use (1 event/day)
-- ✅ Indoor & outdoor space
-- ✅ Full air conditioning
-- ✅ Huge parking (100+ spaces)
-- ✅ Close to churches (5-15')
-- ✅ 15+ years experience
-- ✅ All-inclusive packages available
-- ✅ Flexible options
+## Why Ktima Orion is a Top Choice
 
-## Conclusion
+- **Exclusive use** — 1 event/day
+- **Indoor + outdoor space**
+- **Parking 100+ spaces**
+- **10-20 minutes from churches**
+- **15+ years experience**
+- **Flexible options for every event**
 
-Choosing a venue is a personal decision. Visit several venues, ask questions, and choose the one that makes you feel at home.
+The right reception venue in Athens must combine good location, beautiful atmosphere and reliable infrastructure. See several options and choose the one that makes you feel confident and comfortable from the first moment.
 
-**Ready to see Ktima Orion? Book a free tour today!**
+**Want a tour of [Ktima Orion](/en/venue)?**
+
+**Book a free appointment today!**
+
+[Contact us](/en/contact) to organize your visit or [see our services](/en/services) to learn more.
     `,
     category: 'tips',
     categoryLabel: 'Συμβουλές',
@@ -984,307 +866,227 @@ Choosing a venue is a personal decision. Visit several venues, ask questions, an
     image: '/assets/home/DSC_7588.JPG',
     date: '2024-12-20',
     author: 'Κτήμα Ωρίων',
-    readTime: '10 λεπτά',
-    keywords: 'χώρος δεξίωσης, κτήμα γάμου αθήνα, επιλογή χώρου, venue wedding',
-    keywordsEn: 'reception venue, wedding venue athens, venue selection, wedding venue'
+    readTime: '11 λεπτά',
+    keywords: 'χώρος δεξίωσης, κτήμα γάμου αθήνα, επιλογή χώρου, venue wedding, χώρος γάμου κερατέα, επιλογή venue δεξίωσης',
+    keywordsEn: 'reception venue, wedding venue athens, venue selection, wedding venue, wedding venue keratea, choosing reception venue'
   },
   {
     slug: "nea-ktimaorion-2025",
-    title: "Νέα από το Κτήμα Ωρίων: Σεζόν 2025",
-    titleEn: "News from Ktima Orion: 2025 Season",
-    excerpt: "Ανακαλύψτε τις νέες υπηρεσίες και αναβαθμίσεις που έχουμε προετοιμάσει για εσάς για το 2025.",
-    excerptEn: "Discover the new services and upgrades we have prepared for you for 2025.",
+    title: "Νέα από το Κτήμα Ωρίων για το 2026 – Μια Χρονιά με Φρέσκιες Ιδέες & Νέες Εμπειρίες",
+    titleEn: "News from Ktima Orion for 2026 – A Year with Fresh Ideas & New Experiences",
+    excerpt: "Η σεζόν 2026 ξεκινά δυναμικά στο Κτήμα Ωρίων, με νέες παροχές, προσεγμένες αναβαθμίσεις και ακόμη πιο ολοκληρωμένη εμπειρία για ζευγάρια.",
+    excerptEn: "The 2026 season starts strong at Ktima Orion, with new services, careful upgrades and an even more complete experience for couples.",
     content: `
-# Νέα από το Κτήμα Ωρίων: Σεζόν 2025
+# Νέα από το Κτήμα Ωρίων για το 2026 – Μια Χρονιά με Φρέσκιες Ιδέες & Νέες Εμπειρίες
 
-Το Κτήμα Ωρίων ετοιμάζεται για μια εντυπωσιακή σεζόν το 2025! Δείτε τι νέο έχουμε να σας προσφέρουμε.
+Η σεζόν 2026 ξεκινά δυναμικά στο [Κτήμα Ωρίων](/o-horos), με νέες παροχές, προσεγμένες αναβαθμίσεις και ακόμη πιο ολοκληρωμένη εμπειρία για ζευγάρια που αναζητούν έναν χώρο γάμου στην Αθήνα με ποιότητα, ατμόσφαιρα και οργάνωση.
 
-## Νέες Υπηρεσίες
+![Νέα all-inclusive wedding packages με premium catering και επαγγελματική διακόσμηση](/assets/ekdiloseis/DSC_7783.JPG)
 
-### 1. Premium Wedding Packages
+## ✨ Νέα All-Inclusive Wedding Packages
 
-Δημιουργήσαμε νέα all-inclusive πακέτα που περιλαμβάνουν:
-- Πλήρες catering με premium επιλογές
-- Επαγγελματική διακόσμηση
-- Φωτισμός & ήχος
-- Συντονισμός εκδήλωσης
-- Ειδικές εκπτώσεις για φωτογράφηση
+Φέτος παρουσιάζουμε ανανεωμένα πακέτα γάμου που προσφέρουν πλήρη οργάνωση και ξεκούραστο planning.
 
-### 2. Bridal Suite Upgrade
+**Περιλαμβάνουν:**
+- premium catering επιλογές
+- διακόσμηση βασισμένη στο concept σας
+- σύγχρονο φωτισμό & ήχο
+- υποστήριξη και συντονισμό εκδήλωσης
 
-Αναβαθμίσαμε το studio του ζευγαριού με:
-- Νέο makeup station
-- Καλύτερο φωτισμό για προετοιμασία
-- Πιο άνετο χώρο
-- Ιδιωτικό μπαλκόνι
+Ιδανικά για ζευγάρια που θέλουν μια "all-in-one" εμπειρία χωρίς περιττό άγχος.
 
-### 3. Outdoor Lounge Area
+**Ενδιαφέρεστε για all-inclusive πακέτο;** [Επικοινωνήστε μαζί μας](/contact) για να δούμε τις επιλογές μας ή [δείτε τις υπηρεσίες μας](/ypiresies).
 
-Νέα lounge περιοχή για:
-- Ποτό υποδοχής
-- Chill out moments
-- Cocktail hour
-- Φωτογραφίες
+## 🍸 Outdoor Lounge Area
 
-## Αναβαθμίσεις Εγκαταστάσεων
+Δημιουργήσαμε έναν όμορφο εξωτερικό lounge χώρο, ιδανικό για welcome drinks, cocktail hour ή χαλαρές στιγμές των καλεσμένων.
 
-### Τεχνολογική Αναβάθμιση
-- Νέο premium sound system
-- Architectural lighting
-- Προβολείς για εντυπωσιακά effects
-- Wi-Fi σε όλο τον χώρο
+![Outdoor lounge area για welcome drinks και cocktail hour στο Κτήμα Ωρίων](/assets/home/DSC_7828.JPG)
 
-### Χώροι
-- Επέκταση parking
-- Νέα landscaping
-- Περισσότερα σημεία Instagram-worthy
-- Βελτιωμένος φωτισμός νυχτερινός
+Μια extra πινελιά άνεσης και αισθητικής στον εξωτερικό χώρο του κτήματος — και φυσικά τέλειο σημείο για φωτογραφίες.
 
-## Νέες Συνεργασίες
+## 💡 Ανανεωμένες Εγκαταστάσεις & Τεχνολογία
 
-### Catering Partners
-Συνεργαζόμαστε με νέους caterers που προσφέρουν:
-- Διεθνή κουζίνα
-- Vegan & vegetarian options
-- Fusion επιλογές
-- Themed menus
+Με στόχο να εξελισσόμαστε κάθε χρόνο, προσθέσαμε:
 
-### Decoration Teams
-Νέοι διακοσμητές με εξειδίκευση σε:
-- Bohemian style
-- Minimalist weddings
-- Luxury events
-- Themed parties
+![Ανανεωμένες εγκαταστάσεις με premium sound system και βελτιωμένο φωτισμό](/assets/ekdiloseis/DSC_7859.JPG)
 
-## Early Booking Offers
+- νέο premium sound system
+- αναβαθμισμένο εξωτερικό φωτισμό
+- βελτιωμένο landscaping
+- καλύτερη συνολική ροή για τους καλεσμένους
 
-### Κλείστε τώρα για το 2025!
+Το αποτέλεσμα: ένας χώρος πιο σύγχρονος, πιο άνετος και ακόμη πιο λειτουργικός για μεγάλα και μικρά events.
 
-**Προσφορές που ισχύουν:**
-- 15% έκπτωση σε κρατήσεις έως 28/02/2025
-- Δωρεάν upgrade σε premium catering
-- Complimentary engagement photoshoot στο κτήμα
-- Ειδικές τιμές για mid-week weddings
+## 🤝 Νέες Συνεργασίες για Catering & Διακόσμηση
 
-### Διαθεσιμότητα
+Το 2026 φέρνει μαζί του νέους συνεργάτες που ανεβάζουν την εμπειρία του event σε άλλο επίπεδο.
 
-Οι πιο δημοφιλείς ημερομηνίες γεμίζουν γρήγορα:
-- Μάιος-Ιούνιος: 70% booked
-- Σεπτέμβριος-Οκτώβριος: 65% booked
-- Απρίλιος: Ακόμα πολλές διαθεσιμότητες!
+![Νέες συνεργασίες για catering και διακόσμηση με περισσότερες επιλογές γεύσεων](/assets/gallery/DSC_7637.JPG)
 
-## Βιωσιμότητα
+**Στόχος μας:**
+- περισσότερες γεύσεις και επιλογές (international, vegan, fusion κ.λπ.)
+- περισσότερα concept στη διακόσμηση
+- ακόμα πιο προσωποποιημένη προσέγγιση
 
-### Πράσινες Πρωτοβουλίες
+## 🎁 Early Booking 2026 – Προσφορές που δεν χάνονται
 
-Το 2025 δίνουμε έμφαση στη βιωσιμότητα:
-- Ανακυκλώσιμα υλικά διακόσμησης
-- LED φωτισμός παντού
-- Τοπικοί προμηθευτές
-- Μείωση food waste
-- Eco-friendly επιλογές catering
+Για περιορισμένο χρονικό διάστημα προσφέρουμε:
 
-## Success Stories 2024
+![Early booking προσφορές 2026 με έκπτωση και δωρεάν upgrades για γάμους](/assets/home/DSC_7859.JPG)
 
-### Τα Highlights της Σεζόν
+- έκπτωση στα fairy lights σε κρατήσεις έως 28/02/2025
+- ειδικές τιμές για mid-week events
+
+Οι δημοφιλείς ημερομηνίες κλείνουν ήδη—ειδικά Μάιος, Ιούνιος, Σεπτέμβριος και Οκτώβριος.
+
+**Κλείστε τώρα για το 2026 και απολαύστε ειδικές προσφορές!** [Επικοινωνήστε μαζί μας](/contact) για να μάθετε περισσότερα.
+
+## ⭐ Highlights 2024
+
+Η προηγούμενη χρονιά μάς γέμισε χαρά και έμπνευση:
 
 - **50+ επιτυχημένα events**
-- **98% ικανοποίηση καλεσμένων**
-- **45+ five-star reviews**
-- **20+ featured σε wedding blogs**
+- **εξαιρετικά reviews από ζευγάρια**
+- **εμφανίσεις σε wedding blogs**
+- **υψηλή ικανοποίηση καλεσμένων**
 
-### Τι Λένε οι Πελάτες μας
+Οι εμπειρίες αυτές μάς δίνουν ώθηση να γίνουμε ακόμα καλύτεροι το 2026.
 
-*"Το Κτήμα Ωρίων ξεπέρασε κάθε προσδοκία μας! Η ομάδα ήταν απίστευτη."*
-- Μαρία & Γιάννης, Γάμος Ιούνιος 2024
+## 🌼 Open Days 2026
 
-*"Ο χώρος, το φαγητό, η εξυπηρέτηση - όλα τέλεια!"*
-- Ελένη, Βάπτιση Σεπτέμβριος 2024
+- ✔ δωρεάν ξενάγηση
+- ✔ tasting catering
+- ✔ συνάντηση με την ομάδα
 
-## Open Days 2025
+Απαραίτητη η κράτηση.
 
-### Ελάτε να μας Γνωρίσετε!
+## Συμπέρασμα
 
-Οργανώνουμε open house events:
-- **Κάθε Κυριακή του Μαρτίου**
-- 11:00-16:00
-- Δωρεάν ξενάγηση
-- Meet & greet με το team
-- Catering tasting
-- Δείγματα διακόσμησης
+Το [Κτήμα Ωρίων](/o-horos) συνεχίζει να αναβαθμίζεται και να προσφέρει νέες εμπειρίες για κάθε ζευγάρι. Με τις νέες παροχές, τις αναβαθμίσεις και τις συνεργασίες μας, είμαστε έτοιμοι να δημιουργήσουμε μαζί σας αξέχαστες στιγμές το 2026.
 
-**Προσοχή:** Χρειάζεται κράτηση!
+**Επικοινωνήστε Μαζί μας**
 
-## Επικοινωνήστε
+Κλείστε την ημερομηνία σας ή ζητήστε διαθεσιμότητα:
 
-Ετοιμοι να κλείσετε την ημερομηνία σας;
+📞 **2299068812 / 6981889560**  
+📧 **info@ktimaorion.gr**  
+📍 **Κερατέα, Αττική**
 
-📞 **Τηλέφωνο:** 2299068812 / 6981889560  
-📧 **Email:** info@ktimaorion.gr  
-📍 **Διεύθυνση:** Κερατέα, Αττική
+Ακολουθήστε μας στα social για real weddings, behind-the-scenes και exclusive offers.
 
-### Κοινωνικά Δίκτυα
-
-Ακολουθήστε μας για:
-- Behind-the-scenes content
-- Real wedding inspiration
-- Special offers
-- Wedding tips
-
----
-
-Το Κτήμα Ωρίων σας περιμένει για να δημιουργήσουμε μαζί αξέχαστες στιγμές το 2025!
+[Κλείστε δωρεάν ξενάγηση](/contact) ή [δείτε τις υπηρεσίες μας](/ypiresies) για να μάθετε περισσότερα.
     `,
     contentEn: `
-# News from Ktima Orion: 2025 Season
+# News from Ktima Orion for 2026 – A Year with Fresh Ideas & New Experiences
 
-Ktima Orion is preparing for an impressive 2025 season! See what's new we have to offer.
+The 2026 season starts strong at [Ktima Orion](/en/venue), with new services, careful upgrades and an even more complete experience for couples seeking a wedding venue in Athens with quality, atmosphere and organization.
 
-## New Services
+![New all-inclusive wedding packages with premium catering and professional decoration](/assets/ekdiloseis/DSC_7783.JPG)
 
-### 1. Premium Wedding Packages
+## ✨ New All-Inclusive Wedding Packages
 
-We've created new all-inclusive packages that include:
-- Full catering with premium options
-- Professional decoration
-- Lighting & sound
-- Event coordination
-- Special discounts for photography
+This year we present renewed wedding packages that offer complete organization and relaxed planning.
 
-### 2. Bridal Suite Upgrade
+**Include:**
+- premium catering options
+- decoration based on your concept
+- modern lighting & sound
+- support and event coordination
 
-We upgraded the couple's studio with:
-- New makeup station
-- Better lighting for preparation
-- More comfortable space
-- Private balcony
+Ideal for couples who want an "all-in-one" experience without unnecessary stress.
 
-### 3. Outdoor Lounge Area
+**Interested in an all-inclusive package?** [Contact us](/en/contact) to see our options or [see our services](/en/services).
 
-New lounge area for:
-- Welcome drinks
-- Chill out moments
-- Cocktail hour
-- Photos
+## 🍸 Outdoor Lounge Area
 
-## Facility Upgrades
+We created a beautiful outdoor lounge space, ideal for welcome drinks, cocktail hour or relaxed moments for guests.
 
-### Technology Upgrade
-- New premium sound system
-- Architectural lighting
-- Projectors for impressive effects
-- Wi-Fi throughout the venue
+![Outdoor lounge area for welcome drinks and cocktail hour at Ktima Orion](/assets/home/DSC_7828.JPG)
 
-### Spaces
-- Parking expansion
-- New landscaping
-- More Instagram-worthy spots
-- Improved night lighting
+An extra touch of comfort and aesthetics in the outdoor space of the venue - and of course a perfect spot for photos.
 
-## New Partnerships
+## 💡 Upgraded Facilities & Technology
 
-### Catering Partners
-We partner with new caterers offering:
-- International cuisine
-- Vegan & vegetarian options
-- Fusion options
-- Themed menus
+With the goal of evolving every year, we added:
 
-### Decoration Teams
-New decorators specializing in:
-- Bohemian style
-- Minimalist weddings
-- Luxury events
-- Themed parties
+![Upgraded facilities with premium sound system and improved lighting](/assets/ekdiloseis/DSC_7859.JPG)
 
-## Early Booking Offers
+- new premium sound system
+- upgraded outdoor lighting
+- improved landscaping
+- better overall flow for guests
 
-### Book now for 2025!
+The result: a more modern, more comfortable and even more functional space for large and small events.
 
-**Offers valid:**
-- 15% discount on bookings until 28/02/2025
-- Free upgrade to premium catering
-- Complimentary engagement photoshoot at the venue
-- Special rates for mid-week weddings
+## 🤝 New Partnerships for Catering & Decoration
 
-### Availability
+2026 brings with it new partners that raise the event experience to another level.
 
-Most popular dates fill up quickly:
-- May-June: 70% booked
-- September-October: 65% booked
-- April: Still many availabilities!
+![New partnerships for catering and decoration with more flavor options](/assets/gallery/DSC_7637.JPG)
 
-## Sustainability
+**Our goal:**
+- more flavors and options (international, vegan, fusion etc.)
+- more concepts in decoration
+- even more personalized approach
 
-### Green Initiatives
+## 🎁 Early Booking 2026 – Offers Not to Miss
 
-In 2025 we emphasize sustainability:
-- Recyclable decoration materials
-- LED lighting everywhere
-- Local suppliers
-- Reducing food waste
-- Eco-friendly catering options
+For a limited time we offer:
 
-## Success Stories 2024
+![Early booking offers 2026 with discount and free upgrades for weddings](/assets/home/DSC_7859.JPG)
 
-### Season Highlights
+- discount on fairy lights for bookings until 28/02/2025
+- special rates for mid-week events
+
+Popular dates are already closing—especially May, June, September and October.
+
+**Book now for 2026 and enjoy special offers!** [Contact us](/en/contact) to learn more.
+
+## ⭐ Highlights 2024
+
+The previous year filled us with joy and inspiration:
 
 - **50+ successful events**
-- **98% guest satisfaction**
-- **45+ five-star reviews**
-- **20+ featured on wedding blogs**
+- **excellent reviews from couples**
+- **appearances on wedding blogs**
+- **high guest satisfaction**
 
-### What Our Clients Say
+These experiences give us momentum to become even better in 2026.
 
-*"Ktima Orion exceeded every expectation! The team was incredible."*
-- Maria & John, Wedding June 2024
+## 🌼 Open Days 2026
 
-*"The venue, food, service - everything perfect!"*
-- Helen, Baptism September 2024
+- ✔ free tour
+- ✔ catering tasting
+- ✔ meeting with the team
 
-## Open Days 2025
+Reservation required.
 
-### Come Meet Us!
+## Conclusion
 
-We organize open house events:
-- **Every Sunday in March**
-- 11:00-16:00
-- Free tour
-- Meet & greet with the team
-- Catering tasting
-- Decoration samples
+[Ktima Orion](/en/venue) continues to upgrade and offer new experiences for every couple. With our new services, upgrades and partnerships, we are ready to create unforgettable moments together in 2026.
 
-**Attention:** Reservation required!
+**Contact Us**
 
-## Contact
+Book your date or request availability:
 
-Ready to book your date?
+📞 **2299068812 / 6981889560**  
+📧 **info@ktimaorion.gr**  
+📍 **Keratea, Attica**
 
-📞 **Phone:** 2299068812 / 6981889560  
-📧 **Email:** info@ktimaorion.gr  
-📍 **Address:** Keratea, Attica
+Follow us on social for real weddings, behind-the-scenes and exclusive offers.
 
-### Social Media
-
-Follow us for:
-- Behind-the-scenes content
-- Real wedding inspiration
-- Special offers
-- Wedding tips
-
----
-
-Ktima Orion awaits you to create unforgettable moments together in 2025!
+[Book a free tour](/en/contact) or [see our services](/en/services) to learn more.
     `,
     category: 'news',
     categoryLabel: 'Νέα',
     categoryLabelEn: 'News',
     image: '/assets/ekdiloseis/DSC_7859.JPG',
-    date: '2025-01-20',
+    date: '2026-01-20',
     author: 'Κτήμα Ωρίων',
-    readTime: '5 λεπτά',
-    keywords: 'κτήμα ωρίων νέα, γάμος 2025, νέες υπηρεσίες γάμου',
-    keywordsEn: 'ktima orion news, wedding 2025, new wedding services'
+    readTime: '6 λεπτά',
+    keywords: 'κτήμα ωρίων νέα, γάμος 2026, νέες υπηρεσίες γάμου, all-inclusive γάμος, outdoor lounge, αναβαθμίσεις κτήμα',
+    keywordsEn: 'ktima orion news, wedding 2026, new wedding services, all-inclusive wedding, outdoor lounge, venue upgrades'
   }
 ];
 
