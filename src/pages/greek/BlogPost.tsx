@@ -66,76 +66,136 @@ export default function BlogPost() {
       
       <div className="pt-20">
         {/* Back Button */}
-        <section className="section-padding-sm bg-background">
-          <div className="container-max">
+        <section className="section-padding-sm bg-gradient-to-b from-background to-brand-main/5">
+          <div className="container-max max-w-5xl">
             <Link 
               to="/blog" 
-              className="inline-flex items-center gap-2 text-brand-main hover:underline"
+              className="inline-flex items-center gap-2 text-brand-main hover:text-brand-dark font-medium transition-colors group"
             >
-              <ArrowLeft className="w-4 h-4" />
-              Πίσω στο Blog
+              <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+              <span>Πίσω στο Blog</span>
             </Link>
           </div>
         </section>
 
         {/* Hero Image */}
-        <section className="section-padding-sm bg-background">
-          <div className="container-max max-w-4xl">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
-            />
+        <section className="section-padding-sm bg-gradient-to-b from-brand-main/5 to-background">
+          <div className="container-max max-w-5xl">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-[400px] md:h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            </div>
           </div>
         </section>
 
         {/* Article Header */}
         <article className="section-padding bg-background">
-          <div className="container-max max-w-4xl">
+          <div className="container-max max-w-4xl mx-auto">
+            {/* Category Badge */}
             <div className="mb-6">
-              <span className="bg-brand-main text-white px-4 py-2 rounded-full text-sm">
+              <span className="inline-block bg-gradient-to-r from-brand-main to-brand-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
                 {post.categoryLabel}
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-foreground">
               {post.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-8 pb-8 border-b">
-              <div className="flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                <span>{new Date(post.date).toLocaleDateString('el-GR', { 
+            {/* Meta Information */}
+            <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-10 pb-8 border-b-2 border-border">
+              <div className="flex items-center gap-2.5">
+                <Calendar className="w-5 h-5 text-brand-main" />
+                <span className="font-medium">{new Date(post.date).toLocaleDateString('el-GR', { 
                   year: 'numeric', 
                   month: 'long', 
                   day: 'numeric' 
                 })}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-5 h-5" />
-                <span>{post.readTime} ανάγνωσης</span>
+              <div className="flex items-center gap-2.5">
+                <Clock className="w-5 h-5 text-brand-main" />
+                <span className="font-medium">{post.readTime} ανάγνωσης</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Tag className="w-5 h-5" />
-                <span>{post.author}</span>
+              <div className="flex items-center gap-2.5">
+                <Tag className="w-5 h-5 text-brand-main" />
+                <span className="font-medium">{post.author}</span>
               </div>
             </div>
 
             {/* Article Content */}
-            <div className="prose prose-lg max-w-none prose-headings:text-brand-main prose-a:text-brand-main hover:prose-a:underline prose-strong:text-foreground">
-              <ReactMarkdown>{post.content}</ReactMarkdown>
+            <div className="blog-content">
+              <ReactMarkdown
+                components={{
+                  // Headings
+                  h1: ({node, ...props}) => <h1 className="text-4xl md:text-5xl font-bold mt-12 mb-6 text-foreground leading-tight" {...props} />,
+                  h2: ({node, ...props}) => <h2 className="text-3xl md:text-4xl font-bold mt-10 mb-5 text-brand-main leading-tight" {...props} />,
+                  h3: ({node, ...props}) => <h3 className="text-2xl md:text-3xl font-bold mt-8 mb-4 text-foreground leading-tight" {...props} />,
+                  h4: ({node, ...props}) => <h4 className="text-xl md:text-2xl font-semibold mt-6 mb-3 text-foreground" {...props} />,
+                  
+                  // Paragraphs
+                  p: ({node, ...props}) => <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground/90" {...props} />,
+                  
+                  // Links
+                  a: ({node, ...props}) => (
+                    <a 
+                      className="text-brand-main font-bold hover:text-brand-dark underline underline-offset-4 decoration-2 hover:decoration-brand-dark transition-all inline-flex items-center gap-1" 
+                      {...props} 
+                    />
+                  ),
+                  
+                  // Strong/Bold
+                  strong: ({node, ...props}) => <strong className="font-bold text-foreground" {...props} />,
+                  
+                  // Lists
+                  ul: ({node, ...props}) => <ul className="list-disc list-outside ml-6 mb-6 space-y-3 text-lg md:text-xl leading-relaxed text-foreground/90" {...props} />,
+                  ol: ({node, ...props}) => <ol className="list-decimal list-outside ml-6 mb-6 space-y-3 text-lg md:text-xl leading-relaxed text-foreground/90" {...props} />,
+                  li: ({node, ...props}) => <li className="pl-2" {...props} />,
+                  
+                  // Images
+                  img: ({node, ...props}) => (
+                    <img 
+                      className="w-full rounded-xl shadow-xl my-8 object-cover" 
+                      loading="lazy"
+                      {...props} 
+                    />
+                  ),
+                  
+                  // Blockquotes
+                  blockquote: ({node, ...props}) => (
+                    <blockquote className="border-l-4 border-brand-main pl-6 py-4 my-8 bg-brand-main/5 rounded-r-lg italic text-lg text-foreground/80" {...props} />
+                  ),
+                  
+                  // Code
+                  code: ({node, inline, ...props}) => 
+                    inline ? (
+                      <code className="bg-muted px-2 py-1 rounded text-sm font-mono text-foreground" {...props} />
+                    ) : (
+                      <code className="block bg-muted p-4 rounded-lg text-sm font-mono text-foreground overflow-x-auto" {...props} />
+                    ),
+                }}
+              >
+                {post.content}
+              </ReactMarkdown>
             </div>
 
             {/* Social Share */}
-            <div className="mt-12 pt-8 border-t">
-              <div className="flex items-center gap-4">
-                <span className="font-semibold">Μοιραστείτε:</span>
+            <div className="mt-16 pt-10 border-t-2 border-border">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <span className="text-lg font-semibold text-foreground mb-3 block">Μοιραστείτε αυτό το άρθρο:</span>
+                  <p className="text-sm text-muted-foreground">Βοηθήστε άλλους να ανακαλύψουν το Κτήμα Ωρίων</p>
+                </div>
                 <div className="flex gap-3">
                   <a
                     href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-[#1877F2] text-white rounded hover:opacity-90 transition-opacity"
+                    className="px-6 py-3 bg-[#1877F2] text-white rounded-lg hover:bg-[#166FE5] transition-colors font-semibold shadow-lg hover:shadow-xl"
                   >
                     Facebook
                   </a>
@@ -143,7 +203,7 @@ export default function BlogPost() {
                     href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${post.title}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-[#1DA1F2] text-white rounded hover:opacity-90 transition-opacity"
+                    className="px-6 py-3 bg-[#1DA1F2] text-white rounded-lg hover:bg-[#1A91DA] transition-colors font-semibold shadow-lg hover:shadow-xl"
                   >
                     Twitter
                   </a>
