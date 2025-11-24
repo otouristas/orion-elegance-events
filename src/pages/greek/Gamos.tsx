@@ -10,36 +10,35 @@ import { RelatedServices } from '@/components/RelatedServices';
 import { PopularSearches } from '@/components/PopularSearches';
 import { Link } from 'react-router-dom';
 
-// Import wedding photos
-import wedding2 from '@/assets/gamos/DSC_7816.JPG';
-import wedding4 from '@/assets/gamos/DSC_7806.JPG';
-import wedding5 from '@/assets/gamos/DSC_7859.JPG';
-import wedding7 from '@/assets/gamos/DSC_7828.JPG';
-import wedding16 from '@/assets/gamos/DSC_7569.JPG';
+interface WeddingPhoto {
+  readonly src: string;
+  readonly alt: string;
+}
 
 export default function Gamos() {
-  const weddingPhotos = [
-    { src: wedding2, alt: "Γαμήλια δεξίωση κτήμα Ωρίων Κερατέα θέα θάλασσα" },
-    { src: wedding4, alt: "Γάμος κτήμα γάμου Αττική με εξωτερικό χώρο" },
-    { src: wedding5, alt: "Νυφικό τραπέζι γαμήλια δεξίωση Κερατέα" },
-    { src: wedding7, alt: "Wedding reception Ktima Orion Athens Riviera" },
-    { src: wedding16, alt: "Γαμήλιος στολισμός δεξίωσης γάμου Κερατέα" },
-    { src: "/gamos/1.jpeg", alt: "Χώρος δεξίωσης γάμου Κερατέα με κλιματισμό" },
-    { src: "/gamos/3.jpg", alt: "Γαμήλια τελετή εκκλησία θάλασσα Κερατέα" },
-    { src: "/gamos/6.jpeg", alt: "Νυφικό ζευγάρι κτήμα Ωρίων Αττική" },
-    { src: "/gamos/8.jpeg", alt: "Δεξίωση γάμου υπαίθριος χώρος Κερατέα" },
-    { src: "/gamos/9.jpg", alt: "Γαμήλια φωτογράφηση κτήμα γάμου Αθήνα" },
-    { src: "/gamos/10.jpg", alt: "Wedding venue Athens Keratea reception" },
-    { src: "/gamos/11.jpg", alt: "Γαμήλια δεξίωση εσωτερικός χώρος κλιματιζόμενος" },
-    { src: "/gamos/12.jpg", alt: "Νυφικό τραπέζι διακόσμηση γάμου Κερατέα" },
-    { src: "/gamos/13.jpg", alt: "Χώρος δεξιώσεων γάμων βαπτίσεων Αττική" },
-    { src: "/gamos/14.jpg", alt: "Γάμος παραθαλάσσια εκκλησία Κερατέα" },
-    { src: "/gamos/15.jpg", alt: "Γαμήλια δεξίωση κήπος κτήμα Ωρίων" },
-    { src: "/gamos/16.jpg", alt: "Wedding reception venue Athens Greece" },
-    { src: "/gamos/17.jpg", alt: "Γάμος Κερατέα δεξίωση υπαίθριο κτήμα" },
-    { src: "/gamos/18.jpg", alt: "Κτήμα για γάμο Αττική parking δωρεάν" },
-    { src: "/gamos/19.jpeg", alt: "Γαμήλια εκδήλωση χώρος στάθμευσης Κερατέα" },
-    { src: "/gamos/20.jpeg", alt: "Δεξίωση γάμου κοντά Αθήνα Athens Riviera" }
+  const weddingPhotos: readonly WeddingPhoto[] = [
+    { src: "/final-photos/gamos/20.jpg", alt: "Διακοσμημένο νυφικό τραπέζι στο Κτήμα Ωρίων" },
+    { src: "/final-photos/gamos/DSC_7899.JPG", alt: "Πισίνα και φωτισμός σε γαμήλια δεξίωση" },
+    { src: "/final-photos/gamos/DSC_7943.JPG", alt: "Ρομαντικός διάδρομος με φανάρια" },
+    { src: "/final-photos/gamos/DSC_8030.JPG", alt: "Στολισμός δεξίωσης με ανθοσυνθέσεις" },
+    { src: "/final-photos/gamos/IMG_0169.jpeg", alt: "Ζευγάρι στον κήπο μετά τον γάμο" },
+    { src: "/final-photos/gamos/IMG_0174.jpeg", alt: "Στολισμένη καμάρα για φωτογράφηση" },
+    { src: "/final-photos/gamos/IMG_0234.jpeg", alt: "Δεξίωση με φωτεινές γιρλάντες" },
+    { src: "/final-photos/gamos/IMG_0237.jpeg", alt: "Λεπτομέρεια στολισμού τραπεζιών" },
+    { src: "/final-photos/gamos/IMG_0804.jpeg", alt: "Ατμοσφαιρικός φωτισμός δίπλα στην πισίνα" },
+    { src: "/final-photos/gamos/IMG_0810.jpeg", alt: "Πολυτελής εξωτερικός χώρος δεξίωσης" },
+    { src: "/final-photos/gamos/IMG_0815.jpeg", alt: "Εσωτερική αίθουσα με πολυελαίους" },
+    { src: "/final-photos/gamos/IMG_0817.jpeg", alt: "Στολισμένη είσοδος δεξίωσης" },
+    { src: "/final-photos/gamos/IMG_0825.jpeg", alt: "Γαμήλιο setup με λευκά λουλούδια" },
+    { src: "/final-photos/gamos/IMG_0833.jpeg", alt: "Στολισμένα καθίσματα κήπου" },
+    { src: "/final-photos/gamos/IMG_0851.jpeg", alt: "Γαμήλια δεξίωση με θέα στον κήπο" },
+    { src: "/final-photos/gamos/IMG_0860.jpeg", alt: "Βραδινή φωτογράφηση ζευγαριού" },
+    { src: "/final-photos/gamos/IMG_1795.jpeg", alt: "Γαμήλια τούρτα μπροστά από φωτισμούς" },
+    { src: "/final-photos/gamos/IMG_2240.jpeg", alt: "Στολισμός με κρεμαστά φώτα και άνθη" },
+    { src: "/final-photos/gamos/IMG_2791.jpeg", alt: "Κεντρικός κήπος για δεξιώσεις" },
+    { src: "/final-photos/gamos/IMG_3008.jpeg", alt: "Στολισμένο τραπέζι καλεσμένων" },
+    { src: "/final-photos/gamos/IMG_5466.jpeg", alt: "Γαμήλιο setup δίπλα στην πισίνα" },
+    { src: "/final-photos/gamos/IMG_7904.JPG", alt: "Άποψη χώρου με πολυτελή φωτισμό" }
   ];
 
   const weddingFeatures = [
@@ -153,6 +152,7 @@ export default function Gamos() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {weddingPhotos.map((photo, index) => (
                 <ClickableImage
+                  key={photo.src}
                   src={photo.src}
                   alt={photo.alt}
                   images={weddingPhotos}

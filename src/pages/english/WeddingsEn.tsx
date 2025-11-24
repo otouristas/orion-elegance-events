@@ -10,22 +10,35 @@ import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
 import { Link } from 'react-router-dom';
 
-// Import wedding photos
-import wedding1 from '@/assets/gamos/DSC_7637.JPG';
-import wedding2 from '@/assets/gamos/DSC_7816.JPG';
-import wedding3 from '@/assets/gamos/DSC_7712.JPG';
-import wedding4 from '@/assets/gamos/DSC_7806.JPG';
-import wedding5 from '@/assets/gamos/DSC_7859.JPG';
-import wedding6 from '@/assets/gamos/DSC_7662.JPG';
+interface WeddingPhoto {
+  readonly src: string;
+  readonly alt: string;
+}
 
 export default function WeddingsEn() {
-  const weddingPhotos = [
-    { src: wedding1, alt: "Wedding reception venue Ktima Orion Keratea sea view" },
-    { src: wedding2, alt: "Elegant wedding reception outdoor space Athens" },
-    { src: wedding3, alt: "Wedding venue Keratea natural surroundings bride groom" },
-    { src: wedding4, alt: "Professional wedding photography Ktima Orion" },
-    { src: wedding5, alt: "Wedding reception decorated tables seaside venue" },
-    { src: wedding6, alt: "Evening wedding celebration outdoor pavilion Athens" },
+  const weddingPhotos: readonly WeddingPhoto[] = [
+    { src: "/final-photos/gamos/20.jpg", alt: "Decorated bridal table at Ktima Orion" },
+    { src: "/final-photos/gamos/DSC_7899.JPG", alt: "Poolside wedding reception lighting" },
+    { src: "/final-photos/gamos/DSC_7943.JPG", alt: "Romantic lantern aisle for weddings" },
+    { src: "/final-photos/gamos/DSC_8030.JPG", alt: "Wedding reception floral decorations" },
+    { src: "/final-photos/gamos/IMG_0169.jpeg", alt: "Couple photoshoot in the garden" },
+    { src: "/final-photos/gamos/IMG_0174.jpeg", alt: "Decorated arch for wedding photography" },
+    { src: "/final-photos/gamos/IMG_0234.jpeg", alt: "Outdoor reception with string lights" },
+    { src: "/final-photos/gamos/IMG_0237.jpeg", alt: "Table styling with floral details" },
+    { src: "/final-photos/gamos/IMG_0804.jpeg", alt: "Atmospheric pool lighting" },
+    { src: "/final-photos/gamos/IMG_0810.jpeg", alt: "Luxury outdoor wedding setup" },
+    { src: "/final-photos/gamos/IMG_0815.jpeg", alt: "Indoor hall with chandeliers" },
+    { src: "/final-photos/gamos/IMG_0817.jpeg", alt: "Illuminated wedding entrance" },
+    { src: "/final-photos/gamos/IMG_0825.jpeg", alt: "Elegant white floral arrangement" },
+    { src: "/final-photos/gamos/IMG_0833.jpeg", alt: "Styled garden seating" },
+    { src: "/final-photos/gamos/IMG_0851.jpeg", alt: "Reception view over the garden" },
+    { src: "/final-photos/gamos/IMG_0860.jpeg", alt: "Evening couple portrait" },
+    { src: "/final-photos/gamos/IMG_1795.jpeg", alt: "Wedding cake with ambient lighting" },
+    { src: "/final-photos/gamos/IMG_2240.jpeg", alt: "Hanging lights and floral décor" },
+    { src: "/final-photos/gamos/IMG_2791.jpeg", alt: "Central lawn set for receptions" },
+    { src: "/final-photos/gamos/IMG_3008.jpeg", alt: "Guest table styling details" },
+    { src: "/final-photos/gamos/IMG_5466.jpeg", alt: "Poolside wedding dinner setup" },
+    { src: "/final-photos/gamos/IMG_7904.JPG", alt: "Venue overview with night lighting" }
   ];
 
   const weddingFeatures = [
@@ -145,7 +158,7 @@ export default function WeddingsEn() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {weddingPhotos.map((photo, index) => (
                 <ClickableImage
-                  key={index}
+                  key={photo.src}
                   src={photo.src}
                   alt={photo.alt}
                   images={weddingPhotos}

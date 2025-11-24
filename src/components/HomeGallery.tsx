@@ -1,15 +1,20 @@
 import { Camera } from 'lucide-react';
 
+interface GalleryImage {
+  readonly src: string;
+  readonly alt: string;
+}
+
 export const HomeGallery = () => {
-  const galleryImages = [
-    { src: "/arxiki/1.jpeg", alt: "Κτήμα Ωρίων - Εκδήλωση" },
-    { src: "/arxiki/2.jpg", alt: "Κτήμα Ωρίων - Δεξίωση" },
-    { src: "/arxiki/3.jpg", alt: "Κτήμα Ωρίων - Γαμήλια στιγμή" },
-    { src: "/arxiki/4.jpg", alt: "Κτήμα Ωρίων - Εκδήλωση" },
-    { src: "/arxiki/5.jpg", alt: "Κτήμα Ωρίων - Χώρος" },
-    { src: "/arxiki/6.JPG", alt: "Κτήμα Ωρίων - Ατμόσφαιρα" },
-    { src: "/arxiki/7.jpeg", alt: "Κτήμα Ωρίων - Γιορτή" },
-    { src: "/arxiki/9.jpg", alt: "Κτήμα Ωρίων - Μαγευτικός χώρος" }
+  const galleryImages: readonly GalleryImage[] = [
+    { src: "/final-photos/arxiki/1.jpeg", alt: "Είσοδος Κτήμα Ωρίων φωτισμένη το βράδυ" },
+    { src: "/final-photos/arxiki/2.jpeg", alt: "Κεντρικός κήπος Κτήμα Ωρίων" },
+    { src: "/final-photos/arxiki/2.jpg", alt: "Στολισμένη δεξίωση στο Κτήμα Ωρίων" },
+    { src: "/final-photos/arxiki/3.jpeg", alt: "Υπαίθριος χώρος εκδηλώσεων Κτήμα Ωρίων" },
+    { src: "/final-photos/arxiki/IMG_0825.jpeg", alt: "Στολισμός τραπεζιού με φυσικά άνθη" },
+    { src: "/final-photos/arxiki/IMG_0852.jpeg", alt: "Πανοραμική άποψη χώρου δεξίωσης" },
+    { src: "/final-photos/arxiki/IMG_3429.jpeg", alt: "Λεπτομέρεια φωτισμού στον κήπο" },
+    { src: "/final-photos/arxiki/3%20(2).jpeg", alt: "Διαμορφωμένος χώρος υποδοχής" }
   ];
 
   return (

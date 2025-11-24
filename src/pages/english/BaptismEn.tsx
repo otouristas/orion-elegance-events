@@ -10,34 +10,33 @@ import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
 import { Link } from 'react-router-dom';
 
-// Import baptism photos
-import baptism1 from '@/assets/vaftisi/DSC_7806.JPG';
-import baptism2 from '@/assets/vaftisi/DSC_7712.JPG';
-import baptism3 from '@/assets/vaftisi/DSC_7828.JPG';
-import baptism4 from '@/assets/vaftisi/DSC_7588.JPG';
-import baptism5 from '@/assets/vaftisi/DSC_7662.JPG';
-import baptism6 from '@/assets/vaftisi/DSC_7859.JPG';
-import baptism7 from '@/assets/vaftisi/DSC_7796.JPG';
-import baptism8 from '@/assets/vaftisi/DSC_7763.JPG';
-import baptism9 from '@/assets/vaftisi/DSC_7733.JPG';
-import baptism10 from '@/assets/vaftisi/DSC_7569.JPG';
-import baptism11 from '@/assets/vaftisi/DSC_7816.JPG';
-import baptism12 from '@/assets/vaftisi/DSC_7622.JPG';
+interface BaptismPhoto {
+  readonly src: string;
+  readonly alt: string;
+}
 
 export default function BaptismEn() {
-  const baptismPhotos = [
-    { src: baptism1, alt: "Baptism reception venue Ktima Orion Keratea Athens" },
-    { src: baptism2, alt: "Elegant baptism reception decorated tables flowers" },
-    { src: baptism3, alt: "Baptism celebration outdoor space natural surroundings" },
-    { src: baptism4, alt: "Christening venue decoration family gathering Keratea" },
-    { src: baptism5, alt: "Baptism reception table settings elegant decor" },
-    { src: baptism6, alt: "Unforgettable baptism celebration memories outdoor pavilion" },
-    { src: baptism7, alt: "Joyful baptism reception children playing area" },
-    { src: baptism8, alt: "Magical baptism moments professional photography" },
-    { src: baptism9, alt: "Family christening celebration venue Athens" },
-    { src: baptism10, alt: "Beautiful baptism decoration flowers elegant styling" },
-    { src: baptism11, alt: "Special baptism reception moments outdoor venue" },
-    { src: baptism12, alt: "Unforgettable christening reception Ktima Orion" }
+  const baptismPhotos: readonly BaptismPhoto[] = [
+    { src: "/final-photos/vaftisi/10.jpeg", alt: "Kids-friendly dessert table for christening reception" },
+    { src: "/final-photos/vaftisi/11.JPG", alt: "Outdoor baptism lounge with sun shades" },
+    { src: "/final-photos/vaftisi/12.JPG", alt: "Evening christening celebration with warm lighting" },
+    { src: "/final-photos/vaftisi/2.jpeg", alt: "Keepsake table with thematic baptism décor" },
+    { src: "/final-photos/vaftisi/3.jpeg", alt: "Candy bar filled with handcrafted sweets" },
+    { src: "/final-photos/vaftisi/4.jpg", alt: "Pastel decorated exterior space for baptisms" },
+    { src: "/final-photos/vaftisi/5.jpg", alt: "Floral centerpiece for christening reception" },
+    { src: "/final-photos/vaftisi/6.jpg", alt: "Colorful kids corner for family celebrations" },
+    { src: "/final-photos/vaftisi/7.JPG", alt: "Baptism venue overlooking the sea" },
+    { src: "/final-photos/vaftisi/8.jpeg", alt: "Lantern walkway guiding guests to the reception" },
+    { src: "/final-photos/vaftisi/9.jpeg", alt: "Guest welcome station with thematic props" },
+    { src: "/final-photos/vaftisi/IMG_1128.jpeg", alt: "Vintage-inspired christening favors" },
+    { src: "/final-photos/vaftisi/IMG_1133.jpeg", alt: "Whimsical cloud and teddy bear décor" },
+    { src: "/final-photos/vaftisi/IMG_1140.jpeg", alt: "Rustic baptism accessories and textures" },
+    { src: "/final-photos/vaftisi/IMG_3443.jpeg", alt: "Christening candy bar with curated styling" },
+    { src: "/final-photos/vaftisi/IMG_3444.jpeg", alt: "Photo corner filled with pastel balloons" },
+    { src: "/final-photos/vaftisi/IMG_3446.jpeg", alt: "Dessert buffet with pastel palette" },
+    { src: "/final-photos/vaftisi/IMG_3449.jpeg", alt: "Wish table with guestbook and décor" },
+    { src: "/final-photos/vaftisi/IMG_5527.jpeg", alt: "Family seating area beneath shaded trees" },
+    { src: "/final-photos/vaftisi/IMG_6187.jpeg", alt: "Panoramic view of Ktima Orion baptism venue" }
   ];
 
   const baptismFeatures = [
@@ -181,7 +180,7 @@ export default function BaptismEn() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {baptismPhotos.map((photo, index) => (
                 <ClickableImage
-                  key={index}
+                  key={photo.src}
                   src={photo.src}
                   alt={photo.alt}
                   images={baptismPhotos}

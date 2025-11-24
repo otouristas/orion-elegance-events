@@ -7,32 +7,102 @@ import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
 import { Link } from 'react-router-dom';
 
-// Import images from all folders
-import home1 from '@/assets/home/DSC_7588.JPG';
-import home2 from '@/assets/home/DSC_7816.JPG';
-import wedding1 from '@/assets/gamos/DSC_7637.JPG';
-import wedding2 from '@/assets/gamos/DSC_7712.JPG';
-import wedding3 from '@/assets/gamos/DSC_7806.JPG';
-import baptism1 from '@/assets/vaftisi/DSC_7662.JPG';
-import baptism2 from '@/assets/vaftisi/DSC_7828.JPG';
-import corporate1 from '@/assets/ekdiloseis/DSC_7859.JPG';
-import corporate2 from '@/assets/ekdiloseis/DSC_7783.JPG';
-import party1 from '@/assets/party/DSC_7796.JPG';
-import party2 from '@/assets/party/DSC_7733.JPG';
+interface VenuePhoto {
+  readonly src: string;
+  readonly alt: string;
+  readonly category: string;
+}
 
 export default function VenueEn() {
-  const venuePhotos = [
-    { src: home1, alt: "Wedding venue Ktima Orion semi-outdoor pavilion Keratea", category: "Venue" },
-    { src: home2, alt: "Event space venue natural surroundings Athens", category: "Venue" },
-    { src: wedding1, alt: "Wedding reception venue elegant decoration Keratea", category: "Wedding" },
-    { src: wedding2, alt: "Outdoor wedding reception venue sea view Athens", category: "Wedding" },
-    { src: wedding3, alt: "Wedding venue celebration moments natural space", category: "Wedding" },
-    { src: baptism1, alt: "Baptism reception venue family celebration Keratea", category: "Baptism" },
-    { src: baptism2, alt: "Christening venue decorated tables outdoor space", category: "Baptism" },
-    { src: corporate1, alt: "Corporate event venue professional space Athens", category: "Corporate" },
-    { src: corporate2, alt: "Business event venue air-conditioned hall Keratea", category: "Corporate" },
-    { src: party1, alt: "Party venue celebration space outdoor pavilion", category: "Party" },
-    { src: party2, alt: "Festive event venue elegant space Athens", category: "Party" }
+  const venuePhotos: readonly VenuePhoto[] = [
+    { src: "/final-photos/xwros/1.jpeg", alt: "Panoramic view of Ktima Orion gardens", category: "Venue" },
+    { src: "/final-photos/xwros/2.jpeg", alt: "Decorated garden pathway with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/2.jpg", alt: "Outdoor space with natural lighting", category: "Venue" },
+    { src: "/final-photos/xwros/3.jpeg", alt: "Garden with lush vegetation", category: "Venue" },
+    { src: "/final-photos/xwros/4.jpeg", alt: "Central lawn set for receptions", category: "Venue" },
+    { src: "/final-photos/xwros/5.jpeg", alt: "Decorative detail", category: "Venue" },
+    { src: "/final-photos/xwros/6.jpeg", alt: "Detail of outdoor décor elements", category: "Venue" },
+    { src: "/final-photos/xwros/7.jpeg", alt: "Pool and reception space overview", category: "Venue" },
+    { src: "/final-photos/xwros/8.jpeg", alt: "Outdoor pathway with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/9.jpeg", alt: "Garden with natural environment", category: "Venue" },
+    { src: "/final-photos/xwros/10.jpg", alt: "Panoramic venue view", category: "Venue" },
+    { src: "/final-photos/xwros/DSC_7738.jpeg", alt: "Indoor reception space", category: "Venue" },
+    { src: "/final-photos/xwros/DSC_7922.JPG", alt: "Indoor hall with luxurious lighting", category: "Wedding" },
+    { src: "/final-photos/xwros/DSC_7928.JPG", alt: "Elegant indoor reception setup", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0229.jpeg", alt: "Wedding decoration outdoor space", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0232.jpeg", alt: "Decorated space for wedding", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0304.jpeg", alt: "Wedding setup with flowers", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0802.jpeg", alt: "Bridal table by the pool", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0805.jpeg", alt: "Wedding reception with view", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0824.jpeg", alt: "Bridal table with decoration", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0832.jpeg", alt: "Garden area prepared for ceremonies", category: "Wedding" },
+    { src: "/final-photos/xwros/IMG_0842.jpeg", alt: "Lounge seating for corporate events", category: "Corporate" },
+    { src: "/final-photos/xwros/IMG_0844.jpeg", alt: "Corporate event with professional setup", category: "Corporate" },
+    { src: "/final-photos/xwros/IMG_0852.jpeg", alt: "Professional banquet table layout", category: "Corporate" },
+    { src: "/final-photos/xwros/IMG_0864.jpeg", alt: "Mood lighting for business events", category: "Corporate" },
+    { src: "/final-photos/xwros/IMG_0865.jpeg", alt: "Corporate event with networking space", category: "Corporate" },
+    { src: "/final-photos/xwros/IMG_0871.jpeg", alt: "Professional meeting space", category: "Corporate" },
+    { src: "/final-photos/xwros/IMG_1052.jpeg", alt: "Relaxing corner for guests", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1147.jpeg", alt: "Party with decoration", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1149.jpeg", alt: "Festive atmosphere", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1150.jpeg", alt: "Celebration space", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1667.jpeg", alt: "Party with lighting", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1669.jpeg", alt: "Festive decoration", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1670.jpeg", alt: "Celebration setup", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1684.jpeg", alt: "Party with view", category: "Party" },
+    { src: "/final-photos/xwros/IMG_1783.jpeg", alt: "Cocktail bar setup outdoors", category: "Party" },
+    { src: "/final-photos/xwros/IMG_2757.jpeg", alt: "Festive hall", category: "Party" },
+    { src: "/final-photos/xwros/IMG_2791.jpeg", alt: "Celebration space with decoration", category: "Party" },
+    { src: "/final-photos/xwros/IMG_2836.jpeg", alt: "Buffet styling with illuminated décor", category: "Party" },
+    { src: "/final-photos/xwros/IMG_2989.jpeg", alt: "Festive decoration with lights", category: "Party" },
+    { src: "/final-photos/xwros/IMG_2995.jpeg", alt: "Party with atmospheric lighting", category: "Party" },
+    { src: "/final-photos/xwros/IMG_3009.jpeg", alt: "Celebration space with setup", category: "Party" },
+    { src: "/final-photos/xwros/IMG_3012.jpeg", alt: "Festive hall with decoration", category: "Party" },
+    { src: "/final-photos/xwros/IMG_3013.jpeg", alt: "Party with lighting and decoration", category: "Party" },
+    { src: "/final-photos/xwros/IMG_3029.jpeg", alt: "Celebration space with lights", category: "Party" },
+    { src: "/final-photos/xwros/IMG_3061.jpeg", alt: "Festive decoration with setup", category: "Party" },
+    { src: "/final-photos/xwros/IMG_3419.jpeg", alt: "Playful kids corner for baptisms", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3420.jpeg", alt: "Baptism decoration with pastels", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3421.jpeg", alt: "Baptism space with decoration", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3422.jpeg", alt: "Baptism corner with elements", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3423.jpeg", alt: "Pastel baptism decoration details", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3425.jpeg", alt: "Baptism candy bar", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3426.jpeg", alt: "Baptism decoration with details", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3427.jpeg", alt: "Baptism space with styling", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3428.jpeg", alt: "Baptism corner with decoration", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3429.jpeg", alt: "Baptism decoration detail", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3432.jpeg", alt: "Candy bar close-up for christenings", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3433.jpeg", alt: "Baptism decoration with elements", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3434.jpeg", alt: "Baptism space with minimal decoration", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3436.jpeg", alt: "Baptism corner with flowers", category: "Baptism" },
+    { src: "/final-photos/xwros/IMG_3438.jpeg", alt: "Lantern walkway with flowers", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3439.jpeg", alt: "Garden with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3440.jpeg", alt: "Outdoor space with decoration", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3449.jpeg", alt: "Welcome table with signage", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3453.jpeg", alt: "Space with natural lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3455.jpeg", alt: "Garden with decoration", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3456.jpeg", alt: "Outdoor space with setup", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_3458.jpeg", alt: "Space with lighting and decoration", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_5285.jpeg", alt: "Panoramic venue view", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_6187.jpeg", alt: "Outdoor space with view", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7099.jpeg", alt: "Garden with natural environment", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7211.jpeg", alt: "Space with decoration and lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7222.jpeg", alt: "Outdoor space with setup", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7224.jpeg", alt: "Garden with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7227.jpeg", alt: "Space with decoration", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7232.jpeg", alt: "Outdoor space with natural lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_7727.jpeg", alt: "Panoramic view with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9152.jpeg", alt: "Space with decoration and setup", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9226.jpeg", alt: "Garden with natural environment", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9228.jpeg", alt: "Outdoor space with view", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9229.jpeg", alt: "Space with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9449.jpeg", alt: "Garden with decoration and lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9528.jpeg", alt: "Panoramic venue view with lighting", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9529.jpeg", alt: "Night view of illuminated pool", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9530.jpeg", alt: "Outdoor space with setup", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9532.jpeg", alt: "Garden with lighting and decoration", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9533.jpeg", alt: "Minimal garden décor concept", category: "Venue" },
+    { src: "/final-photos/xwros/IMG_9534.jpeg", alt: "Boho-inspired outdoor lounge", category: "Venue" }
   ];
 
   const venueFeatures = [
@@ -234,11 +304,13 @@ export default function VenueEn() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {venuePhotos.map((photo, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div key={photo.src} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <img
                     src={photo.src}
                     alt={photo.alt}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
                     <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

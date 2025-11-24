@@ -1,9 +1,23 @@
+interface FeatureList {
+  readonly label: string;
+}
+
+interface TeamPhoto {
+  readonly src: string;
+  readonly alt: string;
+}
+
 export const About = () => {
-  const features = [
-    'Χώρο στάθμευσης',
-    'Ημιυπαίθρια παγόδα',
-    'Χώρο υποδοχής',
-    'Studio για το ζευγάρι'
+  const features: readonly FeatureList[] = [
+    { label: 'Χώρο στάθμευσης' },
+    { label: 'Ημιυπαίθρια παγόδα' },
+    { label: 'Χώρο υποδοχής' },
+    { label: 'Studio για το ζευγάρι' }
+  ];
+
+  const teamPhotos: readonly TeamPhoto[] = [
+    { src: "/final-photos/emeis/emeis1.jpg", alt: "Ομάδα Κτήμα Ωρίων σε εκδήλωση" },
+    { src: "/final-photos/emeis/emeis2.jpg", alt: "Υπεύθυνη χώρου Κτήμα Ωρίων" }
   ];
 
   return (
@@ -44,14 +58,19 @@ export const About = () => {
 
           {/* Image and Features */}
           <div className="space-y-8">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
-              <img
-                src="/arxiki/9.jpg"
-                alt="Κτήμα Ωρίων - Εσωτερικός χώρος"
-                className="w-full aspect-video object-cover"
-                style={{ objectPosition: "center 20%" }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="grid gap-6">
+              {teamPhotos.map(photo => (
+                <div key={photo.src} className="relative rounded-2xl overflow-hidden shadow-2xl group">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full aspect-video object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              ))}
             </div>
 
             <div className="card-elegant p-8">
@@ -60,10 +79,10 @@ export const About = () => {
               </h3>
               
               <div className="grid grid-cols-1 gap-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
+                {features.map(feature => (
+                  <div key={feature.label} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-brand-main rounded-full flex-shrink-0"></div>
-                    <span className="text-foreground">{feature}</span>
+                    <span className="text-foreground">{feature.label}</span>
                   </div>
                 ))}
               </div>

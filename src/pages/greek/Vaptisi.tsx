@@ -10,20 +10,33 @@ import { RelatedServices } from '@/components/RelatedServices';
 import { PopularSearches } from '@/components/PopularSearches';
 import { Link } from 'react-router-dom';
 
+interface BaptismPhoto {
+  readonly src: string;
+  readonly alt: string;
+}
+
 export default function Vaptisi() {
-  const baptismPhotos = [
-    { src: "/vaptisi/1.jpeg", alt: "Βαπτιστική δεξίωση κτήμα Ωρίων Κερατέα" },
-    { src: "/vaptisi/2.jpeg", alt: "Βάπτιση χώρος δεξιώσεων Αττική παιδικό μενού" },
-    { src: "/vaptisi/3.jpeg", alt: "Βαπτιστική εκδήλωση κτήμα Κερατέα θάλασσα" },
-    { src: "/vaptisi/4.jpg", alt: "Χώρος βάπτισης Αττική εξωτερικός χώρος" },
-    { src: "/vaptisi/5.jpg", alt: "Βαπτιστική δεξίωση διακόσμηση Κερατέα" },
-    { src: "/vaptisi/6.jpg", alt: "Βάπτιση κτήμα Ωρίων parking δωρεάν" },
-    { src: "/vaptisi/7.JPG", alt: "Baptism reception venue Athens Greece" },
-    { src: "/vaptisi/8.jpeg", alt: "Βαπτιστική τελετή εκκλησία Κερατέα" },
-    { src: "/vaptisi/9.jpeg", alt: "Χώρος δεξιώσεων βαπτίσεων Αθήνα" },
-    { src: "/vaptisi/10.jpeg", alt: "Βάπτιση παιδιού κτήμα Αττική κλιματισμός" },
-    { src: "/vaptisi/11.JPG", alt: "Βαπτιστική δεξίωση υπαίθριος χώρος Κερατέα" },
-    { src: "/vaptisi/12.JPG", alt: "Κτήμα για βάπτιση κοντά Αθήνα Athens Riviera" }
+  const baptismPhotos: readonly BaptismPhoto[] = [
+    { src: "/final-photos/vaftisi/10.jpeg", alt: "Γλυκές λιχουδιές σε παιδικό τραπέζι βάπτισης" },
+    { src: "/final-photos/vaftisi/11.JPG", alt: "Εξωτερικός χώρος βάπτισης με σκίαση" },
+    { src: "/final-photos/vaftisi/12.JPG", alt: "Βραδινή δεξίωση βάπτισης με φωτισμούς" },
+    { src: "/final-photos/vaftisi/2.jpeg", alt: "Αναμνηστικό τραπέζι με θεματική διακόσμηση" },
+    { src: "/final-photos/vaftisi/3.jpeg", alt: "Candy bar βάπτισης με γλυκά και στολισμό" },
+    { src: "/final-photos/vaftisi/4.jpg", alt: "Εξωτερικός χώρος στολισμένος με γαλάζια παλέτα" },
+    { src: "/final-photos/vaftisi/5.jpg", alt: "Centerpiece βάπτισης με φυσικά άνθη" },
+    { src: "/final-photos/vaftisi/6.jpg", alt: "Παιδικό καθιστικό γεμάτο χρώμα" },
+    { src: "/final-photos/vaftisi/7.JPG", alt: "Βάπτιση με θέα στη θάλασσα" },
+    { src: "/final-photos/vaftisi/8.jpeg", alt: "Διαδρομή με φανάρια και λουλούδια" },
+    { src: "/final-photos/vaftisi/9.jpeg", alt: "Γωνιά υποδοχής καλεσμένων βάπτισης" },
+    { src: "/final-photos/vaftisi/IMG_1128.jpeg", alt: "Λεπτομέρεια μπομπονιέρας με vintage στοιχεία" },
+    { src: "/final-photos/vaftisi/IMG_1133.jpeg", alt: "Διακόσμηση με fluffy σύννεφα και αρκουδάκια" },
+    { src: "/final-photos/vaftisi/IMG_1140.jpeg", alt: "Ξύλινα διακοσμητικά και υφές λινάτσας" },
+    { src: "/final-photos/vaftisi/IMG_3443.jpeg", alt: "Candy bar βάπτισης με θεματική παρουσίαση" },
+    { src: "/final-photos/vaftisi/IMG_3444.jpeg", alt: "Λεπτομέρεια φωτογραφικού corner βάπτισης" },
+    { src: "/final-photos/vaftisi/IMG_3446.jpeg", alt: "Μπουφέ με παστέλ χρώματα και γλυκά" },
+    { src: "/final-photos/vaftisi/IMG_3449.jpeg", alt: "Στολισμένο τραπέζι ευχών" },
+    { src: "/final-photos/vaftisi/IMG_5527.jpeg", alt: "Καθιστικό κάτω από δέντρα για την οικογένεια" },
+    { src: "/final-photos/vaftisi/IMG_6187.jpeg", alt: "Πανοραμική άποψη χώρου για βάπτιση" }
   ];
 
   const baptismFeatures = [
@@ -168,6 +181,7 @@ export default function Vaptisi() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {baptismPhotos.map((photo, index) => (
                 <ClickableImage
+                  key={photo.src}
                   src={photo.src}
                   alt={photo.alt}
                   images={baptismPhotos}

@@ -7,41 +7,102 @@ import { TrustSignals } from '@/components/TrustSignals';
 import { PopularSearches } from '@/components/PopularSearches';
 import { Link } from 'react-router-dom';
 
-// Import images from all folders
-// Home images
-import home1 from '@/assets/home/DSC_7588.JPG';
-import home2 from '@/assets/home/DSC_7816.JPG';
-
-// Wedding images
-import wedding1 from '@/assets/gamos/DSC_7637.JPG';
-import wedding2 from '@/assets/gamos/DSC_7712.JPG';
-import wedding3 from '@/assets/gamos/DSC_7806.JPG';
-
-// Baptism images
-import baptism1 from '@/assets/vaftisi/DSC_7662.JPG';
-import baptism2 from '@/assets/vaftisi/DSC_7828.JPG';
-
-// Corporate events images
-import corporate1 from '@/assets/ekdiloseis/DSC_7859.JPG';
-import corporate2 from '@/assets/ekdiloseis/DSC_7783.JPG';
-
-// Party images
-import party1 from '@/assets/party/DSC_7796.JPG';
-import party2 from '@/assets/party/DSC_7733.JPG';
+interface VenuePhoto {
+  readonly src: string;
+  readonly alt: string;
+  readonly category: string;
+}
 
 export default function OHoros() {
-  const venuePhotos = [
-    { src: home1, alt: "Κτήμα Ωρίων - Ημιυπαίθρια παγόδα", category: "Χώρος" },
-    { src: home2, alt: "Κτήμα Ωρίων - Χώρος εκδηλώσεων", category: "Χώρος" },
-    { src: wedding1, alt: "Κτήμα Ωρίων - Γαμήλιες εκδηλώσεις", category: "Γάμος" },
-    { src: wedding2, alt: "Κτήμα Ωρίων - Γαμήλια δεξίωση", category: "Γάμος" },
-    { src: wedding3, alt: "Κτήμα Ωρίων - Γαμήλιες στιγμές", category: "Γάμος" },
-    { src: baptism1, alt: "Κτήμα Ωρίων - Βαπτιστικές εκδηλώσεις", category: "Βάπτιση" },
-    { src: baptism2, alt: "Κτήμα Ωρίων - Βαπτιστική δεξίωση", category: "Βάπτιση" },
-    { src: corporate1, alt: "Κτήμα Ωρίων - Εταιρικές εκδηλώσεις", category: "Εταιρικά" },
-    { src: corporate2, alt: "Κτήμα Ωρίων - Επαγγελματικές εκδηλώσεις", category: "Εταιρικά" },
-    { src: party1, alt: "Κτήμα Ωρίων - Πάρτι και γιορτές", category: "Πάρτι" },
-    { src: party2, alt: "Κτήμα Ωρίων - Εορταστικές εκδηλώσεις", category: "Πάρτι" }
+  const venuePhotos: readonly VenuePhoto[] = [
+    { src: "/final-photos/xwros/1.jpeg", alt: "Πανοραμική άποψη του Κτήματος Ωρίων", category: "Χώρος" },
+    { src: "/final-photos/xwros/2.jpeg", alt: "Στολισμένος διάδρομος κήπου", category: "Χώρος" },
+    { src: "/final-photos/xwros/2.jpg", alt: "Εξωτερικός χώρος με φυσικό φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/3.jpeg", alt: "Κήπος με πλούσια βλάστηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/4.jpeg", alt: "Κεντρικός κήπος με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/5.jpeg", alt: "Λεπτομέρεια διακόσμησης", category: "Χώρος" },
+    { src: "/final-photos/xwros/6.jpeg", alt: "Λεπτομέρεια διακόσμησης εξωτερικού χώρου", category: "Χώρος" },
+    { src: "/final-photos/xwros/7.jpeg", alt: "Άποψη πισίνας και χώρου δεξιώσεων", category: "Χώρος" },
+    { src: "/final-photos/xwros/8.jpeg", alt: "Εξωτερικός διάδρομος με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/9.jpeg", alt: "Κήπος με φυσικό περιβάλλον", category: "Χώρος" },
+    { src: "/final-photos/xwros/10.jpg", alt: "Πανοραμική άποψη χώρου", category: "Χώρος" },
+    { src: "/final-photos/xwros/DSC_7738.jpeg", alt: "Εσωτερικός χώρος δεξιώσεων", category: "Χώρος" },
+    { src: "/final-photos/xwros/DSC_7922.JPG", alt: "Σαλόνι δεξιώσεων με πολυτελή φωτισμό", category: "Γάμος" },
+    { src: "/final-photos/xwros/DSC_7928.JPG", alt: "Εσωτερική αίθουσα με πολυτελές setup", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0229.jpeg", alt: "Γαμήλια διακόσμηση εξωτερικού χώρου", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0232.jpeg", alt: "Στολισμένος χώρος για γάμο", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0304.jpeg", alt: "Γαμήλιο setup με λουλούδια", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0802.jpeg", alt: "Στολισμένο νυφικό τραπέζι δίπλα στην πισίνα", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0805.jpeg", alt: "Γαμήλια δεξίωση με θέα", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0824.jpeg", alt: "Νυφικό τραπέζι με διακόσμηση", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0832.jpeg", alt: "Κήπος διαμορφωμένος για τελετή", category: "Γάμος" },
+    { src: "/final-photos/xwros/IMG_0842.jpeg", alt: "Περιοχή lounge με αναπαυτικά καθίσματα", category: "Εταιρικά" },
+    { src: "/final-photos/xwros/IMG_0844.jpeg", alt: "Εταιρική εκδήλωση με επαγγελματικό setup", category: "Εταιρικά" },
+    { src: "/final-photos/xwros/IMG_0852.jpeg", alt: "Επαγγελματική διάταξη τραπεζιών", category: "Εταιρικά" },
+    { src: "/final-photos/xwros/IMG_0864.jpeg", alt: "Ατμοσφαιρικός φωτισμός για εταιρικές εκδηλώσεις", category: "Εταιρικά" },
+    { src: "/final-photos/xwros/IMG_0865.jpeg", alt: "Εταιρική εκδήλωση με networking χώρο", category: "Εταιρικά" },
+    { src: "/final-photos/xwros/IMG_0871.jpeg", alt: "Επαγγελματικός χώρος συναντήσεων", category: "Εταιρικά" },
+    { src: "/final-photos/xwros/IMG_1052.jpeg", alt: "Γωνιά χαλάρωσης για καλεσμένους", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1147.jpeg", alt: "Πάρτι με διακόσμηση", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1149.jpeg", alt: "Εορταστική ατμόσφαιρα", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1150.jpeg", alt: "Γιορταστικός χώρος", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1667.jpeg", alt: "Πάρτι με φωτισμό", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1669.jpeg", alt: "Εορταστική διακόσμηση", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1670.jpeg", alt: "Γιορταστικός setup", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1684.jpeg", alt: "Πάρτι με θέα", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_1783.jpeg", alt: "Cocktail setup στον εξωτερικό χώρο", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_2757.jpeg", alt: "Εορταστική αίθουσα", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_2791.jpeg", alt: "Γιορταστικός χώρος με διακόσμηση", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_2836.jpeg", alt: "Στολισμός μπουφέ με φωτιστικά στοιχεία", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_2989.jpeg", alt: "Εορταστική διακόσμηση με φώτα", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_2995.jpeg", alt: "Πάρτι με ατμοσφαιρικό φωτισμό", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_3009.jpeg", alt: "Γιορταστικός χώρος με setup", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_3012.jpeg", alt: "Εορταστική αίθουσα με διακόσμηση", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_3013.jpeg", alt: "Πάρτι με φωτισμό και διακόσμηση", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_3029.jpeg", alt: "Γιορταστικός χώρος με φώτα", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_3061.jpeg", alt: "Εορταστική διακόσμηση με setup", category: "Πάρτι" },
+    { src: "/final-photos/xwros/IMG_3419.jpeg", alt: "Παιχνιδιάρικη γωνιά για παιδιά", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3420.jpeg", alt: "Βαπτιστική διακόσμηση με παστέλ", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3421.jpeg", alt: "Χώρος βάπτισης με διακόσμηση", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3422.jpeg", alt: "Βαπτιστική γωνιά με στοιχεία", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3423.jpeg", alt: "Διακόσμηση βάπτισης με παστέλ χρώματα", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3425.jpeg", alt: "Candy bar βάπτισης", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3426.jpeg", alt: "Βαπτιστική διακόσμηση με λεπτομέρειες", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3427.jpeg", alt: "Χώρος βάπτισης με στολισμό", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3428.jpeg", alt: "Βαπτιστική γωνιά με διακόσμηση", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3429.jpeg", alt: "Λεπτομέρεια διακόσμησης βάπτισης", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3432.jpeg", alt: "Λεπτομέρεια candy bar βάπτισης", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3433.jpeg", alt: "Βαπτιστική διακόσμηση με στοιχεία", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3434.jpeg", alt: "Χώρος βάπτισης με minimal διακόσμηση", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3436.jpeg", alt: "Βαπτιστική γωνιά με λουλούδια", category: "Βάπτιση" },
+    { src: "/final-photos/xwros/IMG_3438.jpeg", alt: "Διαδρομή με φανάρια και λουλούδια", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3439.jpeg", alt: "Κήπος με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3440.jpeg", alt: "Εξωτερικός χώρος με διακόσμηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3449.jpeg", alt: "Στολισμένο τραπέζι υποδοχής", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3453.jpeg", alt: "Χώρος με φυσικό φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3455.jpeg", alt: "Κήπος με διακόσμηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3456.jpeg", alt: "Εξωτερικός χώρος με setup", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_3458.jpeg", alt: "Χώρος με φωτισμό και διακόσμηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_5285.jpeg", alt: "Πανοραμική άποψη χώρου", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_6187.jpeg", alt: "Εξωτερικός χώρος με θέα", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7099.jpeg", alt: "Κήπος με φυσικό περιβάλλον", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7211.jpeg", alt: "Χώρος με διακόσμηση και φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7222.jpeg", alt: "Εξωτερικός χώρος με setup", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7224.jpeg", alt: "Κήπος με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7227.jpeg", alt: "Χώρος με διακόσμηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7232.jpeg", alt: "Εξωτερικός χώρος με φυσικό φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_7727.jpeg", alt: "Πανοραμική άποψη με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9152.jpeg", alt: "Χώρος με διακόσμηση και setup", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9226.jpeg", alt: "Κήπος με φυσικό περιβάλλον", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9228.jpeg", alt: "Εξωτερικός χώρος με θέα", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9229.jpeg", alt: "Χώρος με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9449.jpeg", alt: "Κήπος με διακόσμηση και φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9528.jpeg", alt: "Πανοραμική άποψη χώρου με φωτισμό", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9529.jpeg", alt: "Βραδινή άποψη με φωτισμένη πισίνα", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9530.jpeg", alt: "Εξωτερικός χώρος με setup", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9532.jpeg", alt: "Κήπος με φωτισμό και διακόσμηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9533.jpeg", alt: "Κήπος με minimal διακόσμηση", category: "Χώρος" },
+    { src: "/final-photos/xwros/IMG_9534.jpeg", alt: "Εξωτερικός χώρος με boho στοιχεία", category: "Χώρος" }
   ];
 
   const venueFeatures = [

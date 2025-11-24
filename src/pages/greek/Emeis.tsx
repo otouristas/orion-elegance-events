@@ -2,10 +2,18 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Star, Phone, Mail, MapPin, Car, Home, TreePine, Utensils, Music } from 'lucide-react';
-import heroImage from '@/assets/home/DSC_7637.JPG';
-import venueImage from '@/assets/home/DSC_7712.JPG';
+
+interface HeroImage {
+  readonly src: string;
+  readonly alt: string;
+}
 
 export default function Emeis() {
+  const heroImages: readonly HeroImage[] = [
+    { src: "/final-photos/emeis/emeis1.jpg", alt: "Ομάδα Κτήμα Ωρίων σε εκδήλωση" },
+    { src: "/final-photos/emeis/emeis2.jpg", alt: "Υπεύθυνη χώρου Κτήμα Ωρίων" }
+  ];
+
   const venueFeatures = [
     {
       icon: Car,
@@ -95,20 +103,17 @@ export default function Emeis() {
             
             {/* Hero Images */}
             <div className="grid md:grid-cols-2 gap-8 mt-12">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src={heroImage} 
-                  alt="Κτήμα Ωρίων - Μητέρα και παιδί"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src={venueImage} 
-                  alt="Κτήμα Ωρίων - Χώρος εκδηλώσεων"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
+              {heroImages.map(image => (
+                <div key={image.src} className="relative rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-80 object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>
