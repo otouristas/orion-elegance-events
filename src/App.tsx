@@ -53,6 +53,8 @@ import AgiosAlexandrosDaskaleio from "./pages/greek/seo/churches/AgiosAlexandros
 import ProfitisIliasThoriko from "./pages/greek/seo/churches/ProfitisIliasThoriko";
 import AgiosPanteleimonasKeratea from "./pages/greek/seo/churches/AgiosPanteleimonasKeratea";
 import PanagiaGkarika from "./pages/greek/seo/churches/PanagiaGkarika";
+import AgiaTriada from "./pages/greek/seo/churches/AgiaTriada";
+import AgiaTriadaEn from "./pages/english/churches/AgiaTriadaEn";
 
 const queryClient = new QueryClient();
 
@@ -119,6 +121,10 @@ const App = () => (
           <Route path="/el/ekklisies/profitis-ilias-thoriko" element={<ProfitisIliasThoriko />} />
           <Route path="/el/ekklisies/agios-panteleimonas-keratea" element={<AgiosPanteleimonasKeratea />} />
           <Route path="/el/ekklisies/panagia-gkarika" element={<PanagiaGkarika />} />
+          <Route path="/el/ekklisies/agia-triada" element={<AgiaTriada />} />
+          
+          {/* English Church Routes */}
+          <Route path="/en/churches/agia-triada" element={<AgiaTriadaEn />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

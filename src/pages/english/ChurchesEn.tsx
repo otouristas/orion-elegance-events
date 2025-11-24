@@ -29,6 +29,12 @@ export default function ChurchesEn() {
       icon: Church
     },
     {
+      name: 'Agia Triada, Keratea',
+      distance: '5 km',
+      time: "10'",
+      icon: Church
+    },
+    {
       name: 'Profitis Ilias, Limanaki Perigiali Keratea',
       distance: '8.8 km',
       time: "11'",
@@ -196,6 +202,14 @@ export default function ChurchesEn() {
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
                 <p className="text-xs text-muted-foreground">Perfect for intimate weddings</p>
+              </a>
+              
+              <a href="/en/churches/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Agia Triada
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">5 km • 10'</p>
+                <p className="text-xs text-muted-foreground">Picturesque stone chapel</p>
               </a>
             </div>
           </div>

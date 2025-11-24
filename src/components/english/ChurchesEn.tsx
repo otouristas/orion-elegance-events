@@ -15,6 +15,12 @@ export const ChurchesEn = () => {
       time: "6'"
     },
     {
+      name: 'Agia Triada',
+      location: 'Entrance of Keratea',
+      distance: '5 km',
+      time: "10'"
+    },
+    {
       name: 'Agios Panteleimonas',
       location: 'Kaki Thalassa Keratea',
       distance: '8.6 km',

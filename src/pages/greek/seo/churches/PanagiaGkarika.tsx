@@ -79,7 +79,7 @@ export default function PanagiaGkarika() {
             <div className="card-elegant p-6 text-center">
               <Users className="w-8 h-8 text-brand-main mx-auto mb-3" />
               <h3 className="font-bold mb-2">Χωρητικότητα</h3>
-              <p className="text-muted-foreground">30-40 άτομα</p>
+              <p className="text-muted-foreground">Η διαθεσιμότητα εξαρτάται, και μέσα και έξω. Ζητήστε πληροφορίες</p>
             </div>
             <div className="card-elegant p-6 text-center">
               <Car className="w-8 h-8 text-brand-main mx-auto mb-3" />

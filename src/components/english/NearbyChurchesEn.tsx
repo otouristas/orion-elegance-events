@@ -15,13 +15,19 @@ export const NearbyChurchesEn = () => {
       name: "Agios Alexandros, Daskalio",
       distance: "3.8 km",
       time: "8'",
-      link: "/el/agios-alexandros-daskalio"
+      link: "/en/churches/agios-alexandros-daskaleio"
     },
     {
       name: "Panagia Garika, Keratea",
       distance: "3.1 km",
       time: "6'",
-      link: "/el/panagia-gkarika"
+      link: "/en/churches/panagia-gkarika"
+    },
+    {
+      name: "Agia Triada, Keratea",
+      distance: "5 km",
+      time: "10'",
+      link: "/en/churches/agia-triada"
     },
     {
       name: "Profitis Ilias, Thoriko",
@@ -33,7 +39,7 @@ export const NearbyChurchesEn = () => {
       name: "Agios Panteleimonas, Keratea",
       distance: "8.6 km",
       time: "13'",
-      link: "/el/agios-panteleimonas-keratea"
+      link: "/en/churches/agios-panteleimonas-keratea"
     }
   ];
 

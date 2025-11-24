@@ -8,7 +8,7 @@ export default function AgiosAlexandrosDaskaleio() {
   const details = [
     { icon: MapPin, title: "Τοποθεσία", value: "Δασκαλειό, Κερατέα" },
     { icon: Clock, title: "Απόσταση από Κτήμα", value: "10 λεπτά (5.2 km)" },
-    { icon: Users, title: "Χωρητικότητα", value: "Έως 50 άτομα" },
+    { icon: Users, title: "Χωρητικότητα", value: "Η διαθεσιμότητα εξαρτάται, και μέσα και έξω. Ζητήστε πληροφορίες" },
     { icon: Car, title: "Parking", value: "Διαθέσιμο" }
   ];
 

@@ -29,6 +29,12 @@ export default function Ekklisies() {
       icon: Church
     },
     {
+      name: 'Αγία Τριάδα, Κερατέα',
+      distance: '5 χλμ',
+      time: "10'",
+      icon: Church
+    },
+    {
       name: 'Προφήτης Ηλίας, Λιμανάκι Περιγιάλι Κερατέας',
       distance: '8,8 χλμ',
       time: "11'",
@@ -196,6 +202,14 @@ export default function Ekklisies() {
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
                 <p className="text-xs text-muted-foreground">Ιδανική για μικρούς γάμους</p>
+              </a>
+              
+              <a href="/el/ekklisies/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
+                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+                  Αγία Τριάδα
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">5 km • 10'</p>
+                <p className="text-xs text-muted-foreground">Πέτρινο γραφικό εκκλησάκι</p>
               </a>
             </div>
           </div>

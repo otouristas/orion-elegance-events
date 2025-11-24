@@ -15,13 +15,19 @@ export const NearbyChurches = () => {
       name: "Άγιος Αλέξανδρος, Δασκαλειό",
       distance: "3,8 χλμ",
       time: "8'",
-      link: "/el/agios-alexandros-daskalio"
+      link: "/el/ekklisies/agios-alexandros-daskaleio"
     },
     {
       name: "Παναγία Γκαρικά, Κερατέα",
       distance: "3,1 χλμ",
       time: "6'",
-      link: "/el/panagia-gkarika"
+      link: "/el/ekklisies/panagia-gkarika"
+    },
+    {
+      name: "Αγία Τριάδα, Κερατέα",
+      distance: "5 χλμ",
+      time: "10'",
+      link: "/el/ekklisies/agia-triada"
     },
     {
       name: "Προφήτης Ηλίας, Θορικό",
@@ -33,7 +39,7 @@ export const NearbyChurches = () => {
       name: "Άγιος Παντελεήμονας, Κερατέα",
       distance: "8,6 χλμ",
       time: "13'",
-      link: "/el/agios-panteleimonas-keratea"
+      link: "/el/ekklisies/agios-panteleimonas-keratea"
     }
   ];
 

@@ -15,6 +15,12 @@ export const Churches = () => {
       time: "6'"
     },
     {
+      name: 'Αγία Τριάδα',
+      location: 'Είσοδος Κερατέας',
+      distance: '5 χλμ',
+      time: "10'"
+    },
+    {
       name: 'Άγιος Παντελεήμονας',
       location: 'Κακή Θάλασσα Κερατέας',
       distance: '8,6 χλμ',
