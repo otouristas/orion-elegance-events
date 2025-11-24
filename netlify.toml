@@ -1,6 +1,6 @@
 [build]
   # Install dependencies and build the site
-  command = "npm ci && npm run build"
+  command = "npm install && npm run build"
   
   # Directory to publish (Vite default)
   publish = "dist"
