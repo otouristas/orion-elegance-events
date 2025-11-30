@@ -2,27 +2,20 @@ import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { MapPin, Clock, Users, Car, Church, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 export default function AgiosPanteleimonasKeratea() {
-  const faqs = [
-    {
-      question: "Τι επιτρέπεται για τη διακόσμηση του εκκλησιού;",
-      answer: "Ο Άγιος Παντελεήμονας επιτρέπει διακόσμηση με φρέσκα άνθη στην είσοδο, τα παγκάρια και το τέμπλο. Αποφύγετε ρίζα ρυζιού και κονφετί εντός του ναού - χρησιμοπο��ήστε πέταλα λουλουδιών."
-    },
-    {
-      question: "Ποιο είναι το κόστος της τελετής;",
-      answer: "Το κόστος καθορίζεται από την ενορία και εξαρτάται από την ημέρα και την ώρα. Επικοινωνήστε μαζί μας στο Κτήμα Ωρίων για να σας βοηθήσουμε με όλες τις λεπτομέρειες και να σας συνδέσουμε με την ενορία."
-    },
-    {
-      question: "Υπάρχει χώρος στάθμευσης;",
-      answer: "Ναι, υπάρχει επαρκής χώρος στάθμευσης κοντά στο εκκλησί. Το Κτήμα Ωρίων διαθέτει επίσης μεγάλο χώρο parking για 100+ αυτοκίνητα για τη δεξίωση."
-    },
-    {
-      question: "Πόσος χρόνος χρειάζεται για να φτάσουμε στο κτήμα μετά τον γάμο;",
-      answer: "Η διαδρομή από τον Άγιο Παντελεήμονα στο Κτήμα Ωρίων διαρκεί περίπου 13 λεπτά (8,6 χλμ). Αυτό επιτρέπει αρκετό χρόνο για φωτογραφίσεις στο εκκλησί πριν μεταβείτε στη δεξίωση."
-    }
-  ];
-
+  const faqs = [{
+    question: "Τι επιτρέπεται για τη διακόσμηση του εκκλησιού;",
+    answer: "Ο Άγιος Παντελεήμονας επιτρέπει διακόσμηση με φρέσκα άνθη στην είσοδο, τα παγκάρια και το τέμπλο. Αποφύγετε ρίζα ρυζιού και κονφετί εντός του ναού - χρησιμοπο��ήστε πέταλα λουλουδιών."
+  }, {
+    question: "Ποιο είναι το κόστος της τελετής;",
+    answer: "Το κόστος καθορίζεται από την ενορία και εξαρτάται από την ημέρα και την ώρα. Επικοινωνήστε μαζί μας στο Κτήμα Ωρίων για να σας βοηθήσουμε με όλες τις λεπτομέρειες και να σας συνδέσουμε με την ενορία."
+  }, {
+    question: "Υπάρχει χώρος στάθμευσης;",
+    answer: "Ναι, υπάρχει επαρκής χώρος στάθμευσης κοντά στο εκκλησί. Το Κτήμα Ωρίων διαθέτει επίσης μεγάλο χώρο parking για 100+ αυτοκίνητα για τη δεξίωση."
+  }, {
+    question: "Πόσος χρόνος χρειάζεται για να φτάσουμε στο κτήμα μετά τον γάμο;",
+    answer: "Η διαδρομή από τον Άγιο Παντελεήμονα στο Κτήμα Ωρίων διαρκεί περίπου 13 λεπτά (8,6 χλμ). Αυτό επιτρέπει αρκετό χρόνο για φωτογραφίσεις στο εκκλησί πριν μεταβείτε στη δεξίωση."
+  }];
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -35,16 +28,8 @@ export default function AgiosPanteleimonasKeratea() {
       }
     }))
   };
-
-  return (
-    <Layout>
-      <SEO
-        title="Άγιος Παντελεήμονας Κερατέα – Παραδοσιακή Τελετή Γάμου"
-        description="Τελέστε τον γάμο σας στον Άγιο Παντελεήμονα Κακής Θάλασσας. 8,6 χλμ από Κτήμα Ωρίων. Παραδοσιακό εκκλησί με ιστορία. Κλείστε ημερομηνία!"
-        canonical="/el/ekklisies/agios-panteleimonas-keratea"
-        keywords="αγιος παντελεημονας κερατεα, γαμος κερατεα, εκκλησι κερατεα, παραδοσιακος γαμος αττικη"
-        lang="el"
-      />
+  return <Layout>
+      <SEO title="Άγιος Παντελεήμονας Κερατέα – Παραδοσιακή Τελετή Γάμου" description="Τελέστε τον γάμο σας στον Άγιο Παντελεήμονα Κακής Θάλασσας. 8,6 χλμ από Κτήμα Ωρίων. Παραδοσιακό εκκλησί με ιστορία. Κλείστε ημερομηνία!" canonical="/el/ekklisies/agios-panteleimonas-keratea" keywords="αγιος παντελεημονας κερατεα, γαμος κερατεα, εκκλησι κερατεα, παραδοσιακος γαμος αττικη" lang="el" />
       
       <script type="application/ld+json">
         {JSON.stringify(schemaData)}
@@ -94,7 +79,7 @@ export default function AgiosPanteleimonasKeratea() {
           <div className="max-w-4xl mx-auto">
             <div className="card-elegant p-8 mb-8">
               <h2 className="text-3xl font-bold mb-6 text-gradient-brand">
-                Το Εκκλησί
+                Το Εκκλησάκι
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
@@ -139,28 +124,16 @@ export default function AgiosPanteleimonasKeratea() {
             <div className="card-elegant p-6 mb-8">
               <h3 className="text-2xl font-bold mb-4 text-gradient-brand">Πώς να φτάσετε</h3>
               <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12595.59!2d24.04!3d37.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18b0032a91af7%3A0x830f333c3fb94ecf!2s%CE%86%CE%B3%CE%B9%CE%BF%CF%82%20%CE%A0%CE%B1%CE%BD%CF%84%CE%B5%CE%BB%CE%B5%CE%AE%CE%BC%CF%89%CE%BD!3m2!1d37.8357432!2d24.0492849!5e0!3m2!1sel!2sgr"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Χάρτης Άγιος Παντελεήμονας Κερατέα"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12595.59!2d24.04!3d37.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18b0032a91af7%3A0x830f333c3fb94ecf!2s%CE%86%CE%B3%CE%B9%CE%BF%CF%82%20%CE%A0%CE%B1%CE%BD%CF%84%CE%B5%CE%BB%CE%B5%CE%AE%CE%BC%CF%89%CE%BD!3m2!1d37.8357432!2d24.0492849!5e0!3m2!1sel!2sgr" width="100%" height="100%" style={{
+                border: 0
+              }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Χάρτης Άγιος Παντελεήμονας Κερατέα"></iframe>
               </div>
               <p className="text-muted-foreground">
                 Από το Κτήμα Ωρίων: Πάρτε την Επαρχιακή Οδό Κερατέας προς Κακή Θάλασσα. 
                 Το εκκλησί βρίσκεται στην περιοχή και είναι εύκολα προσβάσιμο.
               </p>
               <div className="mt-4">
-                <a 
-                  href="https://www.google.com/maps/place/%CE%86%CE%B3%CE%B9%CE%BF%CF%82+%CE%A0%CE%B1%CE%BD%CF%84%CE%B5%CE%BB%CE%B5%CE%AE%CE%BC%CF%89%CE%BD/@37.8357474,24.04671,17z/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand-main hover:underline inline-flex items-center gap-2"
-                >
+                <a href="https://www.google.com/maps/place/%CE%86%CE%B3%CE%B9%CE%BF%CF%82+%CE%A0%CE%B1%CE%BD%CF%84%CE%B5%CE%BB%CE%B5%CE%AE%CE%BC%CF%89%CE%BD/@37.8357474,24.04671,17z/" target="_blank" rel="noopener noreferrer" className="text-brand-main hover:underline inline-flex items-center gap-2">
                   Άνοιγμα στο Google Maps
                 </a>
               </div>
@@ -177,16 +150,14 @@ export default function AgiosPanteleimonasKeratea() {
           </h2>
           
           <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div key={index} className="card-elegant p-6">
+            {faqs.map((faq, index) => <div key={index} className="card-elegant p-6">
                 <h3 className="text-xl font-bold mb-3 text-gradient-brand">
                   {faq.question}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {faq.answer}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -210,6 +181,5 @@ export default function AgiosPanteleimonasKeratea() {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 }
