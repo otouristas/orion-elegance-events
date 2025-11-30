@@ -104,6 +104,36 @@ export default function PanagiaGkarika() {
                 </p>
               </div>
             </div>
+
+            {/* Map */}
+            <div className="card-elegant p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 text-gradient-brand">Πώς να φτάσετε</h2>
+              <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12610.849!2d24.02!3d37.806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18d000e1f1841%3A0x4c67a4812568b370!2s%CE%A0%CE%B1%CE%BD%CE%B1%CE%B3%CE%B9%CE%B1%20%CE%93%CE%BA%CE%B1%CF%81%CE%B9%CE%BA%CE%B1!3m2!1d37.8107985!2d24.0172445!5e0!3m2!1sel!2sgr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Χάρτης Παναγία Γκαρικά"
+                ></iframe>
+              </div>
+              <p className="text-muted-foreground">
+                Από το Κτήμα Ωρίων: Μόλις 6 λεπτά οδήγηση (3,1 χλμ). Εύκολη και γρήγορη πρόσβαση.
+              </p>
+              <div className="mt-4">
+                <a 
+                  href="https://www.google.gr/maps/place/%CE%A0%CE%B1%CE%BD%CE%B1%CE%B3%CE%B9%CE%B1+%CE%93%CE%BA%CE%B1%CF%81%CE%B9%CE%BA%CE%B1/@37.8107985,24.0146642,17z/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-main hover:underline inline-flex items-center gap-2"
+                >
+                  Άνοιγμα στο Google Maps
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

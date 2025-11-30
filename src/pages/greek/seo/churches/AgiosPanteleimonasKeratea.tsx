@@ -138,9 +138,9 @@ export default function AgiosPanteleimonasKeratea() {
             {/* Map */}
             <div className="card-elegant p-6 mb-8">
               <h3 className="text-2xl font-bold mb-4 text-gradient-brand">Πώς να φτάσετε</h3>
-              <div className="aspect-video w-full rounded-lg overflow-hidden">
+              <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12633.043389284907!2d23.975699!3d37.69283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a1bbe6c5d5c5c5%3A0x5c5c5c5c5c5c5c5c!2sKtima%20Orion%2C%20Keratea!3m2!1d37.6928333!2d23.9756999!4m5!1s0x14a1b8f8f8f8f8f8%3A0x8f8f8f8f8f8f8f8f!2sAgios%20Panteleimonas%20Keratea!3m2!1d37.7028217!2d24.0163583!5e0!3m2!1sen!2sgr!4v1234567891"
+                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12595.59!2d24.04!3d37.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18b0032a91af7%3A0x830f333c3fb94ecf!2s%CE%86%CE%B3%CE%B9%CE%BF%CF%82%20%CE%A0%CE%B1%CE%BD%CF%84%CE%B5%CE%BB%CE%B5%CE%AE%CE%BC%CF%89%CE%BD!3m2!1d37.8357432!2d24.0492849!5e0!3m2!1sel!2sgr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -150,10 +150,20 @@ export default function AgiosPanteleimonasKeratea() {
                   title="Χάρτης Άγιος Παντελεήμονας Κερατέα"
                 ></iframe>
               </div>
-              <p className="text-muted-foreground mt-4">
+              <p className="text-muted-foreground">
                 Από το Κτήμα Ωρίων: Πάρτε την Επαρχιακή Οδό Κερατέας προς Κακή Θάλασσα. 
                 Το εκκλησί βρίσκεται στην περιοχή και είναι εύκολα προσβάσιμο.
               </p>
+              <div className="mt-4">
+                <a 
+                  href="https://www.google.com/maps/place/%CE%86%CE%B3%CE%B9%CE%BF%CF%82+%CE%A0%CE%B1%CE%BD%CF%84%CE%B5%CE%BB%CE%B5%CE%AE%CE%BC%CF%89%CE%BD/@37.8357474,24.04671,17z/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-main hover:underline inline-flex items-center gap-2"
+                >
+                  Άνοιγμα στο Google Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>

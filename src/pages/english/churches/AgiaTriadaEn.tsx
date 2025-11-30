@@ -178,7 +178,7 @@ export default function AgiaTriadaEn() {
               <h3 className="text-2xl font-bold mb-4 text-gradient-brand">How to Get There</h3>
               <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.123456789!2d23.9710399!3d37.8103664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18d6e091cb57d%3A0x20df8f722cd314b8!2sAgias%20Triados%2C%20Keratea%20190%2001!5e0!3m2!1sen!2sgr!4v1234567890123!5m2!1sen!2sgr"
+                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12609.08!2d23.99!3d37.806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2sKtima%20Orion!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18d6e091cb57d%3A0x20df8f722cd314b8!2sAgias%20Triados%20Keratea!3m2!1d37.8103664!2d23.9710399!5e0!3m2!1sen!2sgr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -194,7 +194,7 @@ export default function AgiaTriadaEn() {
               </p>
               <div className="mt-4">
                 <a 
-                  href="https://www.google.com/maps/place/Agias+Triados,+Keratea+190+01/@37.8523444,23.928858,12.25z/data=!4m6!3m5!1s0x14a18d6e091cb57d:0x20df8f722cd314b8!8m2!3d37.8103664!4d23.9710399!16s%2Fg%2F1tf5ylmd?entry=ttu&g_ep=EgoyMDI1MTEyMC4xIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.gr/maps/place/Agias+Triados,+Keratea+190+01/@37.8103664,23.9684596,17z/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-main hover:underline inline-flex items-center gap-2"

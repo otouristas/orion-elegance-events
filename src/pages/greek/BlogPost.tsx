@@ -171,12 +171,9 @@ export default function BlogPost() {
                   ),
                   
                   // Code
-                  code: ({node, inline, ...props}) => 
-                    inline ? (
-                      <code className="bg-muted px-2 py-1 rounded text-sm font-mono text-foreground" {...props} />
-                    ) : (
-                      <code className="block bg-muted p-4 rounded-lg text-sm font-mono text-foreground overflow-x-auto" {...props} />
-                    ),
+                  code: ({node, ...props}) => (
+                    <code className="bg-muted px-2 py-1 rounded text-sm font-mono text-foreground" {...props} />
+                  ),
                 }}
               >
                 {post.content}
