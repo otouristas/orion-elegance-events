@@ -6,6 +6,7 @@ import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
 import { PopularSearches } from '@/components/PopularSearches';
 import { Link } from 'react-router-dom';
+import { ClickableImage } from '@/components/ImageLightbox';
 
 interface VenuePhoto {
   readonly src: string;
@@ -299,19 +300,14 @@ export default function OHoros() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {venuePhotos.map((photo, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <img
-                    src={photo.src}
-                    alt={photo.alt}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  <div className="absolute bottom-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {photo.category}
-                  </div>
-                </div>
+                <ClickableImage
+                  key={index}
+                  src={photo.src}
+                  alt={photo.alt}
+                  images={venuePhotos}
+                  index={index}
+                  className="w-full h-64 object-cover rounded-lg shadow-lg hover:shadow-xl"
+                />
               ))}
             </div>
           </div>

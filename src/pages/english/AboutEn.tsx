@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Star, Phone, Mail, MapPin, Car, Home, TreePine, Utensils } from 'lucide-react';
 import heroImage from '@/assets/home/DSC_7637.JPG';
 import venueImage from '@/assets/home/DSC_7712.JPG';
+import { ClickableImage } from '@/components/ImageLightbox';
 
 export default function AboutEn() {
   const venueFeatures = [
@@ -96,20 +97,26 @@ export default function AboutEn() {
             
             {/* Hero Images */}
             <div className="grid md:grid-cols-2 gap-8 mt-12">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src={heroImage} 
-                  alt="Ktima Orion - Mother and child"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src={venueImage} 
-                  alt="Ktima Orion - Event venue"
-                  className="w-full h-80 object-cover"
-                />
-              </div>
+              <ClickableImage
+                src={heroImage}
+                alt="Ktima Orion - Mother and child"
+                images={[
+                  { src: heroImage, alt: "Ktima Orion - Mother and child" },
+                  { src: venueImage, alt: "Ktima Orion - Event venue" }
+                ]}
+                index={0}
+                className="w-full h-80 object-cover rounded-2xl shadow-xl"
+              />
+              <ClickableImage
+                src={venueImage}
+                alt="Ktima Orion - Event venue"
+                images={[
+                  { src: heroImage, alt: "Ktima Orion - Mother and child" },
+                  { src: venueImage, alt: "Ktima Orion - Event venue" }
+                ]}
+                index={1}
+                className="w-full h-80 object-cover rounded-2xl shadow-xl"
+              />
             </div>
           </div>
         </section>
