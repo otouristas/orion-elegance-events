@@ -1,4 +1,4 @@
-import { Camera } from 'lucide-react';
+import { ClickableImage } from './ImageLightbox';
 
 interface GalleryImage {
   readonly src: string;
@@ -31,23 +31,14 @@ export const HomeGallery = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {galleryImages.map((image, index) => (
-            <div 
-              key={index} 
-              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 aspect-square"
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                width={566}
-                height={566}
-                loading={index < 4 ? "eager" : "lazy"}
-                decoding="async"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-                <Camera className="w-6 h-6 text-white" />
-              </div>
-            </div>
+            <ClickableImage
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              images={galleryImages}
+              index={index}
+              className="w-full h-full object-cover aspect-square rounded-lg shadow-lg hover:shadow-xl"
+            />
           ))}
         </div>
       </div>
