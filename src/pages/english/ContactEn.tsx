@@ -342,7 +342,7 @@ export default function ContactEn() {
             
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6304.937079785293!2d24.028817!3d37.802493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2zzprPhM6ezrzOsSDOqc-Bzq_Pic69!5e0!3m2!1sen!2sgr!4v1758391271502!5m2!1sen!2sgr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.468!2d24.0262364!3d37.8024928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2sKtima%20Orion!5e0!3m2!1sen!2sgr" 
                 width="100%" 
                 height="450" 
                 style={{ border: 0 }} 
@@ -352,6 +352,17 @@ export default function ContactEn() {
                 className="w-full h-[450px]"
                 title="Ktima Orion Location"
               />
+            </div>
+            <div className="text-center mt-6">
+              <a 
+                href="https://www.google.gr/maps/place/%CE%9A%CF%84%CE%AE%CE%BC%CE%B1+%CE%A9%CF%81%CE%AF%CF%89%CE%BD/@37.8024928,24.0262364,17z/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-main hover:underline inline-flex items-center gap-2 text-lg font-semibold"
+              >
+                <MapPin className="w-5 h-5" />
+                Open in Google Maps
+              </a>
             </div>
           </div>
         </section>

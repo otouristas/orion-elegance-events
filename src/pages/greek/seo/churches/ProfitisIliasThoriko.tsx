@@ -136,9 +136,9 @@ export default function ProfitisIliasThoriko() {
             {/* Map */}
             <div className="card-elegant p-6 mb-8">
               <h3 className="text-2xl font-bold mb-4 text-gradient-brand">Πώς να φτάσετε</h3>
-              <div className="aspect-video w-full rounded-lg overflow-hidden">
+              <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12633.043389284907!2d23.975699!3d37.69283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a1bbe6c5d5c5c5%3A0x5c5c5c5c5c5c5c5c!2sKtima%20Orion%2C%20Keratea!3m2!1d37.6928333!2d23.9756999!4m5!1s0x14a1b7f7f7f7f7f7%3A0x7f7f7f7f7f7f7f7f!2sProfitis%20Ilias%20Thoriko!3m2!1d37.7135217!2d24.0363583!5e0!3m2!1sen!2sgr!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25221.68!2d24.05!3d37.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18b34a5b27aa3%3A0x4b79577b1a1682ff!2sChurch%20of%20Prophet%20Elias!3m2!1d37.758934!2d24.0781474!5e0!3m2!1sel!2sgr"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -148,10 +148,20 @@ export default function ProfitisIliasThoriko() {
                   title="Χάρτης Προφήτης Ηλίας Θορικού"
                 ></iframe>
               </div>
-              <p className="text-muted-foreground mt-4">
+              <p className="text-muted-foreground">
                 Από το Κτήμα Ωρίων: Ακολουθήστε την Επαρχιακή Οδό Κερατέας-Λαυρίου προς τη θάλασσα. 
                 Το εκκλησάκι βρίσκεται στο Λιμανάκι Περιγιάλι.
               </p>
+              <div className="mt-4">
+                <a 
+                  href="https://www.google.gr/maps/place/Church+of+Prophet+Elias/@37.7480317,24.0695919,13.27z/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-main hover:underline inline-flex items-center gap-2"
+                >
+                  Άνοιγμα στο Google Maps
+                </a>
+              </div>
             </div>
           </div>
         </div>

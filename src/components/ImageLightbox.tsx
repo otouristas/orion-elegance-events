@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 
 interface ImageLightboxProps {
-  images: { src: string; alt: string }[];
+  images: readonly { src: string; alt: string }[];
   initialIndex?: number;
   isOpen: boolean;
   onClose: () => void;
@@ -137,7 +137,7 @@ interface ClickableImageProps {
   src: string;
   alt: string;
   className?: string;
-  images?: { src: string; alt: string }[];
+  images?: readonly { src: string; alt: string }[];
   index?: number;
 }
 
