@@ -7,8 +7,8 @@ export const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
+        <img
+          src={heroImage}
           alt="Κτήμα Ωρίων - Μαγευτικός χώρος για εκδηλώσεις"
           className="w-full h-full object-cover"
           width={1920}
@@ -27,13 +27,13 @@ export const Hero = () => {
         <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-light">
           Διοργάνωση Εκδηλώσεων - Κερατέα
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="button button4 text-lg">
-            ΕΞΕΡΕΥΝΗΣΗ ΥΠΗΡΕΣΙΩΝ
+          <Button size="lg" className="button button4 text-lg" asChild>
+            <a href="/ypiresies">ΕΞΕΡΕΥΝΗΣΗ ΥΠΗΡΕΣΙΩΝ</a>
           </Button>
-          <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-10 py-4">
-            ΕΠΙΚΟΙΝΩΝΙΑ
+          <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20 text-lg px-10 py-4" asChild>
+            <a href="/epikoinonia">ΕΠΙΚΟΙΝΩΝΙΑ</a>
           </Button>
         </div>
       </div>

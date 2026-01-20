@@ -55,6 +55,8 @@ import AgiosPanteleimonasKeratea from "./pages/greek/seo/churches/AgiosPanteleim
 import PanagiaGkarika from "./pages/greek/seo/churches/PanagiaGkarika";
 import AgiaTriada from "./pages/greek/seo/churches/AgiaTriada";
 import AgiaTriadaEn from "./pages/english/churches/AgiaTriadaEn";
+import KtimaGamou from "./pages/greek/seo/KtimaGamou";
+import KtimaVaptisis from "./pages/greek/seo/KtimaVaptisis";
 
 const queryClient = new QueryClient();
 
@@ -67,7 +69,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          
+
           {/* English Routes */}
           <Route path="/en" element={<IndexEn />} />
           <Route path="/en/about" element={<AboutEn />} />
@@ -85,13 +87,13 @@ const App = () => (
           <Route path="/en/contact" element={<ContactEn />} />
           <Route path="/en/blog" element={<BlogEn />} />
           <Route path="/en/blog/:slug" element={<BlogPostEn />} />
-          
+
           {/* Redirect wedding planner to homepage */}
           <Route path="/en/wedding-planner" element={<IndexEn />} />
           <Route path="/en/about-us" element={<AboutEn />} />
           <Route path="/en/epikoinonia" element={<ContactEn />} />
           <Route path="/en/event" element={<CorporateEventsEn />} />
-          
+
           {/* Greek Routes */}
           <Route path="/ekklisies" element={<Ekklisies />} />
           <Route path="/parti" element={<Parti />} />
@@ -100,7 +102,7 @@ const App = () => (
           <Route path="/emeis" element={<Emeis />} />
           <Route path="/request" element={<Request />} />
           <Route path="/reviews" element={<Reviews />} />
-          
+
           {/* Redirect wedding planner to homepage */}
           <Route path="/diorganotis-gamon" element={<Index />} />
           <Route path="/eterikes-ekdiloseis" element={<EterikesEkdiloseis />} />
@@ -114,14 +116,14 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          
+
           {/* Greek route variations */}
           <Route path="/o-xoros" element={<OHoros />} />
           <Route path="/deksiosi" element={<Dexiosi />} />
           <Route path="/deksiosi/gamos" element={<Gamos />} />
           <Route path="/deksiosi/vaptisi" element={<Vaptisi />} />
           <Route path="/index" element={<Index />} />
-          
+
           {/* SEO Greek Routes */}
           <Route path="/el/ktima-gamou-athina" element={<KtimaGamouAthina />} />
           <Route path="/el/ktimata-vaptisis-athina" element={<KtimataVaptisisAthina />} />
@@ -132,14 +134,16 @@ const App = () => (
           <Route path="/el/ekklisies/agios-panteleimonas-keratea" element={<AgiosPanteleimonasKeratea />} />
           <Route path="/el/ekklisies/panagia-gkarika" element={<PanagiaGkarika />} />
           <Route path="/el/ekklisies/agia-triada" element={<AgiaTriada />} />
-          
+          <Route path="/ktima-gamou" element={<KtimaGamou />} />
+          <Route path="/ktima-vaptisis" element={<KtimaVaptisis />} />
+
           {/* /el/ mirror routes for main pages */}
           <Route path="/el" element={<Index />} />
           <Route path="/el/" element={<Index />} />
-          
+
           {/* English Church Routes */}
           <Route path="/en/churches/agia-triada" element={<AgiaTriadaEn />} />
-          
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -71,17 +71,17 @@ export default function Ekklisies() {
 
   return (
     <Layout>
-      <SEO 
-        title="Εκκλησάκια κοντά στο Κτήμα Ωρίων | Γάμος & Τελετή"
-        description="4 παραθαλάσσια εκκλησάκια Κερατέα: Άγ. Αλέξανδρος, Προφ. Ηλίας, Παναγία Γκαρικά. 5-15' από Κτήμα Ωρίων. Δεξίωση μετά την τελετή!"
+      <SEO
+        title="Εκκλησίες Κερατέα για Γάμο & Βάπτιση | 8 Εκκλησάκια κοντά στη Θάλασσα"
+        description="Εκκλησίες Κερατέα: Άγιος Αλέξανδρος Δασκαλειό, Άγιος Παντελεήμονας, Προφήτης Ηλίας. Εκκλησάκια δίπλα στη θάλασσα για γάμο ή βάπτιση. 5-15' από το Κτήμα Ωρίων."
         canonical="/ekklisies"
         breadcrumbs={[
           { name: 'Αρχική', url: '/' },
-          { name: 'Εκκλησίες', url: '/ekklisies' }
+          { name: 'Εκκλησίες Κερατέα', url: '/ekklisies' }
         ]}
-        keywords="εκκλησακια θαλασσα κερατεα, γαμος εκκλησι αττικη, παραθαλασσιο εκκλησι, τελετη γαμου"
+        keywords="εκκλησία κερατέα, εκκλησίες κερατέα, εκκλησάκι γάμου κερατέα, εκκλησάκι θάλασσα αττική, παραθαλάσσιο εκκλησάκι, άγιος παντελεήμονας κερατέα, άγιος αλέξανδρος δασκαλειό, προφήτης ηλίας θορικό"
       />
-      
+
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -91,9 +91,9 @@ export default function Ekklisies() {
               <span className="text-gradient-brand">Εκκλησίες</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Το Κτήμα Ωρίων απέχει ελάχιστα από πολλά γραφικά εκκλησάκια και εκκλησίες στη γύρω περιοχή. 
-              Σε απόσταση που κυμαίνεται από <strong>5 - 15 λεπτά</strong>, μπορείτε να τελέσετε το μυστήριο του γάμου 
-              ή της βάπτισης, απολαμβάνοντας καταπληκτική θέα στο Αιγαίο, πριν ολοκληρώσετε την εκδήλωσή σας 
+              Το Κτήμα Ωρίων απέχει ελάχιστα από πολλά γραφικά εκκλησάκια και εκκλησίες στη γύρω περιοχή.
+              Σε απόσταση που κυμαίνεται από <strong>5 - 15 λεπτά</strong>, μπορείτε να τελέσετε το μυστήριο του γάμου
+              ή της βάπτισης, απολαμβάνοντας καταπληκτική θέα στο Αιγαίο, πριν ολοκληρώσετε την εκδήλωσή σας
               στο Κτήμα Ωρίων.
             </p>
           </div>
@@ -152,10 +152,10 @@ export default function Ekklisies() {
             </div>
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <iframe 
-                src="https://www.google.com/maps/d/u/0/embed?mid=1I1J1VWCrLSQc6iwlQkAegUrpr74rcwA&ehbc=2E312F&noprof=1" 
-                width="100%" 
-                height="760" 
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1I1J1VWCrLSQc6iwlQkAegUrpr74rcwA&ehbc=2E312F&noprof=1"
+                width="100%"
+                height="760"
                 style={{ border: 0, marginTop: '-70px' }}
                 loading="lazy"
                 title="Χάρτης Εκκλησιών κοντά στο Κτήμα Ωρίων"
@@ -170,7 +170,7 @@ export default function Ekklisies() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               <span className="text-gradient-brand">Εξερευνήστε τις Εκκλησίες</span>
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <a href="/el/ekklisies/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
                 <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
@@ -179,7 +179,7 @@ export default function Ekklisies() {
                 <p className="text-sm text-muted-foreground mb-3">3.8 km • 8'</p>
                 <p className="text-xs text-muted-foreground">Ιδανική για γάμους έως 170 άτομα</p>
               </a>
-              
+
               <a href="/el/ekklisies/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
                 <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
                   Προφήτης Ηλίας Θορικό
@@ -187,7 +187,7 @@ export default function Ekklisies() {
                 <p className="text-sm text-muted-foreground mb-3">8.8 km • 11'</p>
                 <p className="text-xs text-muted-foreground">Εκπληκτική θέα στη θάλασσα</p>
               </a>
-              
+
               <a href="/el/ekklisies/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
                 <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
                   Άγιος Παντελεήμονας Κερατέα
@@ -195,7 +195,7 @@ export default function Ekklisies() {
                 <p className="text-sm text-muted-foreground mb-3">8.6 km • 13'</p>
                 <p className="text-xs text-muted-foreground">Παραδοσιακή ρουστίκ εκκλησία</p>
               </a>
-              
+
               <a href="/el/ekklisies/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
                 <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
                   Παναγία Γκαρικά
@@ -203,7 +203,7 @@ export default function Ekklisies() {
                 <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
                 <p className="text-xs text-muted-foreground">Ιδανική για μικρούς γάμους</p>
               </a>
-              
+
               <a href="/el/ekklisies/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
                 <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
                   Αγία Τριάδα
@@ -231,7 +231,7 @@ export default function Ekklisies() {
               Συνδυάστε Τελετή & Δεξίωση
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Επιλέξτε την εκκλησία που σας ταιριάζει και επικοινωνήστε μαζί μας για να οργανώσουμε 
+              Επιλέξτε την εκκλησία που σας ταιριάζει και επικοινωνήστε μαζί μας για να οργανώσουμε
               την υπέροχη δεξίωσή σας στο Κτήμα Ωρίων.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -242,7 +242,7 @@ export default function Ekklisies() {
                 ΔΕΙΤΕ ΥΠΗΡΕΣΙΕΣ ΓΑΜΟΥ
               </a>
             </div>
-            
+
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
               <a href="/el/ktima-gamou-athina" className="text-brand-main hover:underline">Κτήμα Γάμου Αθήνα</a>

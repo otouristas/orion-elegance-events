@@ -45,7 +45,7 @@ export default function ProfitisIliasThoriko() {
         keywords="προφητης ηλιας θορικο, γαμος θορικο κερατεα, εκκλησακι θαλασσα κερατεα, παραθαλασσιος γαμος αττικη"
         lang="el"
       />
-      
+
       <script type="application/ld+json">
         {JSON.stringify(schemaData)}
       </script>
@@ -98,16 +98,16 @@ export default function ProfitisIliasThoriko() {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Ο Προφήτης Ηλίας στο Θορικό είναι ένα από τα πιο εντυπωσιακά παραθαλάσσια εκκλησάκια της περιοχής. 
+                  Ο Προφήτης Ηλίας στο Θορικό είναι ένα από τα πιο εντυπωσιακά παραθαλάσσια εκκλησάκια της περιοχής.
                   Χτισμένο σε λόφο με απεριόριστη θέα στο Αιγαίο, προσφέρει ένα μοναδικό φόντο για την τελετή του γάμου σας.
                 </p>
                 <p>
-                  Η τοποθεσία του εκκλησιού στο Λιμανάκι Περιγιάλι συνδυάζει παραδοσιακή αρχιτεκτονική με φυσική ομορφιά. 
-                  Το λευκό κτίριο του εκκλησιού, οι γαλάζιοι θόλοι και η πανοραμική θέα δημιουργούν ένα ρομαντικό σκηνικό 
+                  Η τοποθεσία της εκκλησίας στο Λιμανάκι Περιγιάλι συνδυάζει παραδοσιακή αρχιτεκτονική με φυσική ομορφιά.
+                  Το λευκό κτίριο της εκκλησίας, οι γαλάζιοι θόλοι και η πανοραμική θέα δημιουργούν ένα ρομαντικό σκηνικό
                   που μένει αξέχαστο.
                 </p>
                 <p>
-                  Το Κτήμα Ωρίων απέχει μόλις 11 λεπτά, καθιστώντας την μετάβαση από την τελετή στη δεξίωση γρήγορη 
+                  Το Κτήμα Ωρίων απέχει μόλις 11 λεπτά, καθιστώντας την μετάβαση από την τελετή στη δεξίωση γρήγορη
                   και άνετη για τους καλεσμένους σας.
                 </p>
               </div>
@@ -119,7 +119,7 @@ export default function ProfitisIliasThoriko() {
                 <Camera className="w-8 h-8 text-brand-main mb-4" />
                 <h3 className="text-xl font-bold mb-3">Φωτογραφίσεις</h3>
                 <p className="text-muted-foreground">
-                  Μαγευτικά σημεία για φωτογράφιση με θέα θάλασσα, ηλιοβασίλεμα πάνω στο νερό, 
+                  Μαγευτικά σημεία για φωτογράφιση με θέα θάλασσα, ηλιοβασίλεμα πάνω στο νερό,
                   και παραδοσιακή αρχιτεκτονική. Ιδανικό για pre-wedding και την ημέρα του γάμου.
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default function ProfitisIliasThoriko() {
                 <Heart className="w-8 h-8 text-brand-main mb-4" />
                 <h3 className="text-xl font-bold mb-3">Ρομαντική Ατμόσφαιρα</h3>
                 <p className="text-muted-foreground">
-                  Ο ήχος της θάλασσας, η θέα στο άπειρο γαλάζιο, και το άγιο σκηνικό του εκκλησιού 
+                  Ο ήχος της θάλασσας, η θέα στο άπειρο γαλάζιο, και το άγιο σκηνικό της εκκλησίας
                   δημιουργούν την τέλεια ατμόσφαιρα για το ξεκίνημα της νέας σας ζωής.
                 </p>
               </div>
@@ -149,11 +149,11 @@ export default function ProfitisIliasThoriko() {
                 ></iframe>
               </div>
               <p className="text-muted-foreground">
-                Από το Κτήμα Ωρίων: Ακολουθήστε την Επαρχιακή Οδό Κερατέας-Λαυρίου προς τη θάλασσα. 
+                Από το Κτήμα Ωρίων: Ακολουθήστε την Επαρχιακή Οδό Κερατέας-Λαυρίου προς τη θάλασσα.
                 Το εκκλησάκι βρίσκεται στο Λιμανάκι Περιγιάλι.
               </p>
               <div className="mt-4">
-                <a 
+                <a
                   href="https://www.google.gr/maps/place/Church+of+Prophet+Elias/@37.7480317,24.0695919,13.27z/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -173,7 +173,7 @@ export default function ProfitisIliasThoriko() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Συχνές <span className="text-gradient-brand">Ερωτήσεις</span>
           </h2>
-          
+
           <div className="space-y-6">
             {faqs.map((faq, index) => (
               <div key={index} className="card-elegant p-6">
@@ -196,7 +196,7 @@ export default function ProfitisIliasThoriko() {
             Ετοιμοι για τον <span className="text-gradient-brand">Γάμο των Ονείρων σας</span>;
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Συνδυάστε την τελετή στον Προφήτη Ηλία με τη δεξίωση στο Κτήμα Ωρίων 
+            Συνδυάστε την τελετή στον Προφήτη Ηλία με τη δεξίωση στο Κτήμα Ωρίων
             για μια αξέχαστη ημέρα.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
