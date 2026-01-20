@@ -19,26 +19,8 @@ export default function KtimaVaptisis() {
         { icon: Camera, title: "Οικογενειακές Φωτογραφίες", description: "Υπέροχα σκηνικά για αναμνηστικές φωτογραφίες" }
     ];
 
-    const packages = [
-        {
-            title: "Βασικό Πακέτο Βάπτισης",
-            price: "Από 35€/άτομο",
-            features: ["Χώρος δεξίωσης", "Catering", "Παιδικό μενού", "Βασική διακόσμηση", "Parking"]
-        },
-        {
-            title: "Premium Πακέτο",
-            price: "Από 50€/άτομο",
-            features: ["Πλήρες catering", "Θεματική διακόσμηση", "Παιδικό μπάρ", "Ηχητικά", "Φωτογράφος"]
-        },
-        {
-            title: "VIP Πακέτο",
-            price: "Από 70€/άτομο",
-            features: ["Gourmet catering", "Premium διακόσμηση", "Animator για παιδιά", "Φωτο & video", "Event coordinator"]
-        }
-    ];
-
     const faqs = [
-        { question: "Πόσο κοστίζει μια δεξίωση βάπτισης σε κτήμα;", answer: "Στο Κτήμα Ωρίων τα πακέτα δεξίωσης βάπτισης ξεκινούν από 35€/άτομο. Η τελική τιμή εξαρτάται από τον αριθμό καλεσμένων και τις υπηρεσίες που θα επιλέξετε." },
+        { question: "Πόσο κοστίζει μια δεξίωση βάπτισης σε κτήμα;", answer: "Το κόστος για μια δεξίωση βάπτισης διαμορφώνεται ανάλογα με τον αριθμό των καλεσμένων και τις επιθυμητές υπηρεσίες. Καλέστε μας για να ετοιμάσουμε μια πρόταση στα μέτρα σας." },
         { question: "Υπάρχει παιδικό μενού;", answer: "Φυσικά! Προσφέρουμε ειδικό παιδικό μενού με αγαπημένα φαγητά για τα παιδιά, καθώς και επιλογές για ειδικές διατροφικές ανάγκες." },
         { question: "Είναι ασφαλής ο εξωτερικός χώρος για παιδιά;", answer: "Ο κήπος μας είναι πλήρως περιφραγμένος και ασφαλής για τα παιδιά. Διαθέτουμε χώρο παιχνιδιού και μπορούμε να οργανώσουμε δραστηριότητες με animator." },
         { question: "Ποιες εκκλησίες είναι κοντά για τη βάπτιση;", answer: "Υπάρχουν 8 γραφικά εκκλησάκια σε απόσταση 5-15 λεπτά: Άγιος Αλέξανδρος Δασκαλειό, Παναγία Γκαρικά, Άγιος Παντελεήμονας και άλλα." },
@@ -52,7 +34,7 @@ export default function KtimaVaptisis() {
         <Layout>
             <SEO
                 title="Κτήμα Βάπτισης | Κτήμα για Δεξίωση Βάπτισης Αθήνα | Κτήμα Ωρίων"
-                description="Ψάχνετε κτήμα για βάπτιση; Κτήμα Ωρίων Κερατέα: Παιδικό μενού, ασφαλής κήπος, 8 κοντινές εκκλησίες. Πακέτα δεξίωσης από 35€/άτομο. ☎️ 22990 68812"
+                description="Ψάχνετε κτήμα για βάπτιση; Κτήμα Ωρίων Κερατέα: Παιδικό μενού, ασφαλής κήπος, 8 κοντινές εκκλησίες. Κλείστε δωρεάν επίσκεψη! ☎️ 22990 68812"
                 canonical="/ktima-vaptisis"
                 keywords="κτήμα βάπτισης, κτημα βαπτισης, κτήμα για βάπτιση, κτηματα για βαπτιση, δεξίωση βάπτισης, χώρος για βάπτιση αθήνα, κτήματα βαπτισης αθηνα, κτημα για βαπτιση αθηνα"
                 breadcrumbs={[
@@ -74,7 +56,7 @@ export default function KtimaVaptisis() {
                             Γιορτάστε τη βάπτιση του παιδιού σας στο Κτήμα Ωρίων Κερατέα
                         </p>
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                            Πακέτα από <strong className="text-brand-main">35€/άτομο</strong> • Παιδικό μενού • Ασφαλής κήπος
+                            Παιδικό μενού • Ασφαλής κήπος • 8 κοντινές εκκλησίες
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link to="/epikoinonia">
@@ -116,40 +98,6 @@ export default function KtimaVaptisis() {
                     </div>
                 </section>
 
-                {/* Pricing Packages */}
-                <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
-                    <div className="container-max">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                            <span className="text-gradient-brand">Πακέτα Δεξίωσης Βάπτισης & Τιμές</span>
-                        </h2>
-                        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                            Ολοκληρωμένα πακέτα για αξέχαστες βαπτιστικές δεξιώσεις
-                        </p>
-
-                        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                            {packages.map((pkg, index) => (
-                                <Card key={index} className={`card-elegant hover:shadow-xl transition-all ${index === 1 ? 'ring-2 ring-brand-main' : ''}`}>
-                                    <CardContent className="p-8">
-                                        {index === 1 && <span className="bg-brand-main text-white text-xs px-3 py-1 rounded-full mb-4 inline-block">Δημοφιλές</span>}
-                                        <h3 className="text-2xl font-bold mb-2">{pkg.title}</h3>
-                                        <p className="text-3xl font-bold text-brand-main mb-6">{pkg.price}</p>
-                                        <ul className="space-y-3 mb-6">
-                                            {pkg.features.map((feature, idx) => (
-                                                <li key={idx} className="flex items-start">
-                                                    <CheckCircle2 className="w-5 h-5 text-brand-main mr-2 flex-shrink-0 mt-0.5" />
-                                                    <span className="text-muted-foreground">{feature}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <Link to="/epikoinonia">
-                                            <button className="button button4 w-full">Ζητήστε Προσφορά</button>
-                                        </Link>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                        </div>
-                    </div>
-                </section>
 
                 {/* SEO Content Section */}
                 <section className="section-padding">
@@ -247,14 +195,7 @@ export default function KtimaVaptisis() {
                     "@type": "Product",
                     "name": "Κτήμα Βάπτισης - Κτήμα Ωρίων",
                     "description": "Κτήμα για δεξίωση βάπτισης στην Αθήνα με παιδικό μενού, ασφαλή κήπο, κοντινές εκκλησίες",
-                    "brand": { "@type": "Brand", "name": "Κτήμα Ωρίων" },
-                    "offers": {
-                        "@type": "AggregateOffer",
-                        "priceCurrency": "EUR",
-                        "lowPrice": "35",
-                        "highPrice": "70",
-                        "offerCount": "3"
-                    }
+                    "brand": { "@type": "Brand", "name": "Κτήμα Ωρίων" }
                 })}
             </script>
         </Layout>

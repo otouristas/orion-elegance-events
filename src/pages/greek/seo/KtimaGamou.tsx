@@ -19,26 +19,8 @@ export default function KtimaGamou() {
         { icon: Camera, title: "Φωτογενικό Περιβάλλον", description: "Υπέροχα σκηνικά για αξέχαστες φωτογραφίες γάμου" }
     ];
 
-    const packages = [
-        {
-            title: "Βασικό Πακέτο",
-            price: "Από 45€/άτομο",
-            features: ["Χώρος δεξίωσης", "Catering", "Βασική διακόσμηση", "Ηχητική κάλυψη", "Parking"]
-        },
-        {
-            title: "Premium Πακέτο",
-            price: "Από 65€/άτομο",
-            features: ["Catering deluxe", "Πλήρης διακόσμηση", "DJ & ηχητικά", "Ατμοσφαιρικός φωτισμός", "Φωτογράφος"]
-        },
-        {
-            title: "VIP Πακέτο",
-            price: "Από 85€/άτομο",
-            features: ["Gourmet catering", "Luxury διακόσμηση", "Live μουσική", "Φωτο & video", "Event coordinator"]
-        }
-    ];
-
     const faqs = [
-        { question: "Πόσο κοστίζει ένας γάμος σε κτήμα;", answer: "Στο Κτήμα Ωρίων τα πακέτα γάμου ξεκινούν από 45€/άτομο και φτάνουν έως 85€/άτομο για το VIP πακέτο. Η τελική τιμή εξαρτάται από τον αριθμό καλεσμένων και τις υπηρεσίες που θα επιλέξετε." },
+        { question: "Πόσο κοστίζει ένας γάμος σε κτήμα;", answer: "Η τιμή για μια γαμήλια δεξίωση εξαρτάται από τον αριθμό των καλεσμένων, την ημερομηνία και τις υπηρεσίες που θα επιλέξετε. Επικοινωνήστε μαζί μας για μια προσωποποιημένη προσφορά." },
         { question: "Πόσα άτομα χωράει το κτήμα για γάμο;", answer: "Το Κτήμα Ωρίων φιλοξενεί γάμους από 50 έως 350 άτομα. Διαθέτουμε κλιματιζόμενη εσωτερική αίθουσα και καταπράσινο εξωτερικό χώρο." },
         { question: "Υπάρχουν εκκλησίες κοντά στο κτήμα;", answer: "Ναι! Υπάρχουν 8 γραφικά εκκλησάκια σε απόσταση 5-15 λεπτά: Άγιος Αλέξανδρος Δασκαλειό, Προφήτης Ηλίας Θορικό, Άγιος Παντελεήμονας, Παναγία Γκαρικά και άλλα." },
         { question: "Υπάρχει χώρος στάθμευσης;", answer: "Διαθέτουμε τεράστιο δωρεάν parking με πάνω από 100 θέσεις για όλους τους καλεσμένους του γάμου σας." },
@@ -52,7 +34,7 @@ export default function KtimaGamou() {
         <Layout>
             <SEO
                 title="Κτήμα Γάμου | Κτήμα για Γάμο στην Αθήνα - Θέα Θάλασσα | Κτήμα Ωρίων"
-                description="Ψάχνετε κτήμα για γάμο; Κτήμα Ωρίων Κερατέα: 50-350 άτομα, θέα θάλασσα, 8 κοντινά εκκλησάκια, δωρεάν parking 100+ θέσεις. Πακέτα από 45€/άτομο. ☎️ 22990 68812"
+                description="Ψάχνετε κτήμα για γάμο; Κτήμα Ωρίων Κερατέα: 50-350 άτομα, θέα θάλασσα, 8 κοντινά εκκλησάκια, δωρεάν parking 100+ θέσεις. Κλείστε δωρεάν επίσκεψη! ☎️ 22990 68812"
                 canonical="/ktima-gamou"
                 keywords="κτήμα γάμου, κτημα γαμου, κτήμα για γάμο, κτηματα γαμου, κτήματα γάμου αθήνα, κτημα γαμου αθηνα, κτημα γαμου αττικη, γαμος σε κτημα, χωρος δεξιωσης γαμου"
                 breadcrumbs={[
@@ -73,7 +55,7 @@ export default function KtimaGamou() {
                             Δημιουργήστε τον ονειρεμένο γάμο σας στο Κτήμα Ωρίων Κερατέα με θέα θάλασσα
                         </p>
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                            Πακέτα από <strong className="text-brand-main">45€/άτομο</strong> • 50-350 άτομα • Δωρεάν parking 100+ θέσεις
+                            Ιδανικό για 50-350 άτομα • Δωρεάν parking 100+ θέσεις • 8 κοντινά εκκλησάκια
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link to="/epikoinonia">
@@ -115,40 +97,6 @@ export default function KtimaGamou() {
                     </div>
                 </section>
 
-                {/* Pricing Packages */}
-                <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
-                    <div className="container-max">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-                            <span className="text-gradient-brand">Πακέτα Γάμου & Τιμές</span>
-                        </h2>
-                        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                            Ολοκληρωμένα πακέτα γαμήλιας δεξίωσης προσαρμοσμένα στις ανάγκες σας
-                        </p>
-
-                        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                            {packages.map((pkg, index) => (
-                                <Card key={index} className={`card-elegant hover:shadow-xl transition-all ${index === 1 ? 'ring-2 ring-brand-main' : ''}`}>
-                                    <CardContent className="p-8">
-                                        {index === 1 && <span className="bg-brand-main text-white text-xs px-3 py-1 rounded-full mb-4 inline-block">Δημοφιλές</span>}
-                                        <h3 className="text-2xl font-bold mb-2">{pkg.title}</h3>
-                                        <p className="text-3xl font-bold text-brand-main mb-6">{pkg.price}</p>
-                                        <ul className="space-y-3 mb-6">
-                                            {pkg.features.map((feature, idx) => (
-                                                <li key={idx} className="flex items-start">
-                                                    <CheckCircle2 className="w-5 h-5 text-brand-main mr-2 flex-shrink-0 mt-0.5" />
-                                                    <span className="text-muted-foreground">{feature}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <Link to="/epikoinonia">
-                                            <button className="button button4 w-full">Ζητήστε Προσφορά</button>
-                                        </Link>
-                                    </CardContent>
-                                </Card>
-                            ))}
-                        </div>
-                    </div>
-                </section>
 
                 {/* SEO Content Section */}
                 <section className="section-padding">
@@ -246,14 +194,7 @@ export default function KtimaGamou() {
                     "@type": "Product",
                     "name": "Κτήμα Γάμου - Κτήμα Ωρίων",
                     "description": "Κτήμα για γάμο στην Αθήνα με θέα θάλασσα, 50-350 άτομα, κοντινά εκκλησάκια",
-                    "brand": { "@type": "Brand", "name": "Κτήμα Ωρίων" },
-                    "offers": {
-                        "@type": "AggregateOffer",
-                        "priceCurrency": "EUR",
-                        "lowPrice": "45",
-                        "highPrice": "85",
-                        "offerCount": "3"
-                    }
+                    "brand": { "@type": "Brand", "name": "Κτήμα Ωρίων" }
                 })}
             </script>
         </Layout>
