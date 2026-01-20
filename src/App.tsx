@@ -88,6 +88,9 @@ const App = () => (
           
           {/* Redirect wedding planner to homepage */}
           <Route path="/en/wedding-planner" element={<IndexEn />} />
+          <Route path="/en/about-us" element={<AboutEn />} />
+          <Route path="/en/epikoinonia" element={<ContactEn />} />
+          <Route path="/en/event" element={<CorporateEventsEn />} />
           
           {/* Greek Routes */}
           <Route path="/ekklisies" element={<Ekklisies />} />
@@ -112,6 +115,13 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           
+          {/* Greek route variations */}
+          <Route path="/o-xoros" element={<OHoros />} />
+          <Route path="/deksiosi" element={<Dexiosi />} />
+          <Route path="/deksiosi/gamos" element={<Gamos />} />
+          <Route path="/deksiosi/vaptisi" element={<Vaptisi />} />
+          <Route path="/index" element={<Index />} />
+          
           {/* SEO Greek Routes */}
           <Route path="/el/ktima-gamou-athina" element={<KtimaGamouAthina />} />
           <Route path="/el/ktimata-vaptisis-athina" element={<KtimataVaptisisAthina />} />
@@ -122,6 +132,10 @@ const App = () => (
           <Route path="/el/ekklisies/agios-panteleimonas-keratea" element={<AgiosPanteleimonasKeratea />} />
           <Route path="/el/ekklisies/panagia-gkarika" element={<PanagiaGkarika />} />
           <Route path="/el/ekklisies/agia-triada" element={<AgiaTriada />} />
+          
+          {/* /el/ mirror routes for main pages */}
+          <Route path="/el" element={<Index />} />
+          <Route path="/el/" element={<Index />} />
           
           {/* English Church Routes */}
           <Route path="/en/churches/agia-triada" element={<AgiaTriadaEn />} />
