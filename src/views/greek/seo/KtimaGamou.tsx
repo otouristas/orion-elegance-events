@@ -191,6 +191,36 @@ export default function KtimaGamou() {
                 {/* Trust Signals */}
                 <TrustSignals />
 
+                {/* Wedding planning topic cluster */}
+                <section className="section-padding bg-muted/20">
+                    <div className="container-max">
+                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                            <span className="text-gradient-brand">Οδηγοί για την οργάνωση γάμου σε κτήμα</span>
+                        </h2>
+                        <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
+                            Χρήσιμες πληροφορίες για να συγκρίνετε χώρους, να οργανώσετε τον προϋπολογισμό και να σχεδιάσετε τη γαμήλια ημέρα στην Αττική.
+                        </p>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <Link href="/el/ktima-gamou-athina" className="card-elegant p-6 hover:shadow-xl transition-all">
+                                <h3 className="text-xl font-bold mb-3">Κτήμα γάμου κοντά στην Αθήνα</h3>
+                                <p className="text-muted-foreground">Τι να περιμένετε από έναν χώρο δεξίωσης στην Κερατέα και πώς να οργανώσετε την επίσκεψή σας.</p>
+                            </Link>
+                            <Link href="/blog/ktimata-gia-gamo-athina-odigos" className="card-elegant p-6 hover:shadow-xl transition-all">
+                                <h3 className="text-xl font-bold mb-3">Κτήματα για γάμο στην Αθήνα</h3>
+                                <p className="text-muted-foreground">Οδηγός σύγκρισης περιοχών, πρόσβασης, χωρητικότητας και parking στην Αττική.</p>
+                            </Link>
+                            <Link href="/blog/kostos-gamou-ktima-2026" className="card-elegant p-6 hover:shadow-xl transition-all">
+                                <h3 className="text-xl font-bold mb-3">Κόστος γάμου σε κτήμα</h3>
+                                <p className="text-muted-foreground">Δείτε τι επηρεάζει τον προϋπολογισμό μιας γαμήλιας δεξίωσης και ποιες ερωτήσεις αξίζει να κάνετε.</p>
+                            </Link>
+                            <Link href="/blog/gamos-thalassa-ktima-attiki" className="card-elegant p-6 hover:shadow-xl transition-all">
+                                <h3 className="text-xl font-bold mb-3">Γάμος με θέα θάλασσα</h3>
+                                <p className="text-muted-foreground">Ιδέες για να συνδυάσετε παραθαλάσσιο μυστήριο, φωτογράφιση και δεξίωση στην Ανατολική Αττική.</p>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Nearby Churches */}
                 <NearbyChurches />
 

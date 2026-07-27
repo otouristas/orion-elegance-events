@@ -55,7 +55,8 @@ const staticEnglishPaths: readonly string[] = [
 ];
 
 function lastMod(): Date {
-  return new Date("2026-05-03");
+  // Update this only when a shared page template or static page content changes.
+  return new Date("2026-07-27T00:00:00.000Z");
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -95,7 +96,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const post of blogPosts) {
     entries.push({
       url: buildAbsoluteUrl(`/blog/${post.slug}`),
-      lastModified: new Date(post.date),
+      // The shared article template was updated on this date (H1 and Article JSON-LD).
+      lastModified: lastMod(),
       changeFrequency: "monthly",
       priority: 0.65,
       alternates: {
