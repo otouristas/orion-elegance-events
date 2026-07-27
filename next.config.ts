@@ -66,7 +66,7 @@ const nextConfig: NextConfig = {
       { source: "/en/en/weddings", destination: "/en/weddings", permanent: true },
       { source: "/en/en/baptism", destination: "/en/baptism", permanent: true },
       { source: "/en/en", destination: "/en", permanent: true },
-      { source: "/en/el/:path*", destination: "/:path*", permanent: true },
+      { source: "/en/el/:path*", destination: "/el/:path*", permanent: true },
       {
         source: "/en/churches/agios-alexandros-daskaleio",
         destination: "/el/ekklisies/agios-alexandros-daskaleio",
