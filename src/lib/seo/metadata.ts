@@ -51,6 +51,13 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
   const canonicalUrl = buildAbsoluteUrl(canonicalPath);
   const fullOg = toOgImageUrl(ogImage);
   const siteName = lang === "en" ? "Ktima Orion" : SITE_NAME_EL;
+  // The root layout appends the brand to ordinary string titles. Many established
+  // page titles already include it, so use an absolute title to avoid duplicates
+  // such as “... | Κτήμα Ωρίων | Κτήμα Ωρίων”.
+  const titleWithBrand =
+    title.includes(SITE_NAME_EL) || title.includes("Ktima Orion")
+      ? title
+      : `${title} | ${siteName}`;
   let languages: Record<string, string>;
   if (lang === "el") {
     const enAlt = resolveEnglishAlternatePath(canonicalPath);
@@ -69,7 +76,7 @@ export function buildMetadata(input: BuildMetadataInput): Metadata {
   }
   return {
     metadataBase: new URL(SITE_URL),
-    title,
+    title: { absolute: titleWithBrand },
     description,
     keywords: keywords ? keywords.split(",").map((k) => k.trim()) : undefined,
     alternates: {
