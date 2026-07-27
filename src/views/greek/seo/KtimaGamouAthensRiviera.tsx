@@ -7,16 +7,16 @@ import Link from 'next/link';
 export default function KtimaGamouAthensRiviera() {
   const faqs = [
     {
-      question: "Πόσο απέχει το Κτήμα Ωρίων από την Αθήνα;",
-      answer: "Το Κτήμα Ωρίων βρίσκεται στην Κερατέα, μόλις 45 λεπτά από το κέντρο της Αθήνας μέσω Αττικής Οδού. Η εύκολη πρόσβαση το καθιστά ιδανικό για γάμους στην Athens Riviera."
+      question: "Πού βρίσκεται το Κτήμα Ωρίων στην Ανατολική Αττική;",
+      answer: "Το Κτήμα Ωρίων βρίσκεται στην Κερατέα, περίπου 45 λεπτά από το κέντρο της Αθήνας. Η διαδρομή εξαρτάται από το σημείο εκκίνησης και την κίνηση της ημέρας."
     },
     {
       question: "Υπάρχουν ξενοδοχεία κοντά για τους καλεσμένους;",
       answer: "Ναι! Στην περιοχή της Athens Riviera (Λαύριο, Σούνιο, Πόρτο Ράφτη) υπάρχουν πολλά ξενοδοχεία και boutique hotels. Μπορούμε να σας προτείνουμε επιλογές για κάθε budget."
     },
     {
-      question: "Πόσα άτομα χωράει το κτήμα;",
-      answer: "Το Κτήμα Ωρίων μπορεί να φιλοξενήσει από 50 έως 350 καλεσμένους. Διαθέτει εσωτερικό και εξωτερικό χώρο με αποκλειστική χρήση για την εκδήλωσή σας."
+      question: "Είναι κατάλληλο για δεξίωση γάμου 50 ατόμων;",
+      answer: "Ναι. Το Κτήμα Ωρίων μπορεί να φιλοξενήσει περίπου 50 έως 350 καλεσμένους, με εσωτερικό και εξωτερικό χώρο. Στην επίσκεψη συζητάμε τη διάταξη που ταιριάζει στο μέγεθος της δικής σας δεξίωσης."
     },
     {
       question: "Ποια είναι η καλύτερη εποχή για γάμο στην Athens Riviera;",
@@ -81,32 +81,30 @@ export default function KtimaGamouAthensRiviera() {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Κτήμα Γάμου <span className="text-gradient-brand">Athens Riviera</span>
+              Κτήματα Γάμου στην <span className="text-gradient-brand">Ανατολική Αττική</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Κτήμα Ωρίων στην Κερατέα - Ο Ιδανικός Προορισμός για τον Γάμο σας
+              Κτήμα Ωρίων στην Κερατέα για γαμήλια δεξίωση 50–350 ατόμων, με θέα θάλασσα και εύκολη πρόσβαση από την Αθήνα
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why Athens Riviera */}
+      {/* Why Eastern Attica */}
       <section className="section-padding bg-background">
         <div className="container-max">
           <div className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Γιατί να επιλέξετε <span className="text-gradient-brand">Athens Riviera</span> για τον Γάμο σας;
+              Γιατί να επιλέξετε κτήμα γάμου στην <span className="text-gradient-brand">Ανατολική Αττική</span>;
             </h2>
             <div className="card-elegant p-8 text-lg text-muted-foreground leading-relaxed space-y-4">
               <p>
-                Η Athens Riviera είναι μια από τις πιο γοητευτικές περιοχές της Αττικής, συνδυάζοντας 
-                την εγγύτητα στην Αθήνα με την ομορφιά της θάλασσας και την ηρεμία της φύσης. Το Κτήμα Ωρίων 
-                βρίσκεται στην καρδιά αυτής της περιοχής, προσφέροντας:
+                Η Ανατολική Αττική συνδυάζει πρόσβαση από την Αθήνα, θάλασσα και πιο ήρεμο φυσικό περιβάλλον για τη γαμήλια ημέρα. Το Κτήμα Ωρίων βρίσκεται στην Κερατέα και προσφέρει:
               </p>
               <ul className="space-y-3 ml-6">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-brand-main rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span><strong>Εύκολη πρόσβαση:</strong> Μόλις 45 λεπτά από Αθήνα και 30 λεπτά από το αεροδρόμιο μέσω Αττικής Οδού</span>
+                  <span><strong>Εύκολη πρόσβαση:</strong> περίπου 45 λεπτά από το κέντρο της Αθήνας, ανάλογα με την κίνηση</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-brand-main rounded-full mr-3 mt-2 flex-shrink-0"></span>
@@ -114,7 +112,7 @@ export default function KtimaGamouAthensRiviera() {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-brand-main rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span><strong>Κοντά σε iconic προορισμούς:</strong> Ναός Ποσειδώνα Σούνιο, Πόρτο Ράφτη, Λαύριο</span>
+                  <span><strong>Κοντά σε προορισμούς της περιοχής:</strong> Λαύριο, Σούνιο και παραθαλάσσια σημεία της Κερατέας</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-brand-main rounded-full mr-3 mt-2 flex-shrink-0"></span>
@@ -122,7 +120,7 @@ export default function KtimaGamouAthensRiviera() {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-brand-main rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span><strong>Παραθαλάσσια εκκλησάκια:</strong> 7 γραφικά εκκλησάκια σε απόσταση 5-15 λεπτών</span>
+                  <span><strong>Κοντινά εκκλησάκια:</strong> επιλογές για το μυστήριο σε μικρή οδηγική απόσταση πριν από τη δεξίωση</span>
                 </li>
               </ul>
             </div>
@@ -149,7 +147,7 @@ export default function KtimaGamouAthensRiviera() {
       <section className="section-padding bg-gradient-to-b from-champagne/30 to-background">
         <div className="container-max max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Γειτονικοί <span className="text-gradient-brand">Προορισμοί</span>
+            Χρήσιμες περιοχές της <span className="text-gradient-brand">Ανατολικής Αττικής</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
@@ -196,14 +194,14 @@ export default function KtimaGamouAthensRiviera() {
       <section className="section-padding bg-background">
         <div className="container-max max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            Φωτογραφίσεις <span className="text-gradient-brand">Athens Riviera</span>
+            Φωτογραφίσεις στην <span className="text-gradient-brand">Ανατολική Αττική</span>
           </h2>
           
           <div className="card-elegant p-8 mb-8">
             <h3 className="text-2xl font-bold mb-6 text-gradient-brand">Μοναδικά Σκηνικά</h3>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Η Athens Riviera προσφέρει ασύγκριτα σκηνικά για τις φωτογραφίσεις του γάμου σας:
+            Η Ανατολική Αττική προσφέρει διαφορετικά σκηνικά για τις φωτογραφίσεις του γάμου σας:
               </p>
               <ul className="space-y-3 ml-6">
                 <li className="flex items-start">
@@ -258,18 +256,17 @@ export default function KtimaGamouAthensRiviera() {
       <section className="section-padding bg-gradient-to-r from-brand-main/10 to-sage/20">
         <div className="container-max text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ονειρευτείτε τον Γάμο σας στην <span className="text-gradient-brand">Athens Riviera</span>
+            Ονειρευτείτε τον Γάμο σας στην <span className="text-gradient-brand">Ανατολική Αττική</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Το Κτήμα Ωρίων σας περιμένει για να δημιουργήσετε μαζί μας τις πιο όμορφες αναμνήσεις 
-            της ζωής σας στην Athens Riviera.
+            Το Κτήμα Ωρίων σας περιμένει στην Κερατέα για να δημιουργήσετε μαζί μας τις πιο όμορφες αναμνήσεις της ζωής σας.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="button button4" asChild>
               <a href="/epikoinonia">Κλείστε Επίσκεψη Σήμερα</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="/gamos">Δείτε Πακέτα Γάμου</a>
+              <a href="/ktima-gamou">Δείτε το κτήμα γάμου</a>
             </Button>
           </div>
         </div>
