@@ -37,7 +37,7 @@ const pageMapping: Record<string, string> = {
   '/fotografos': '/en/photographer', '/en/photographer': '/fotografos',
   '/dj-mousiki': '/en/dj-music', '/en/dj-music': '/dj-mousiki',
   '/reviews': '/en/reviews', '/en/reviews': '/reviews',
-  '/contact': '/en/contact', '/en/contact': '/contact',
+  '/epikoinonia': '/en/contact', '/en/contact': '/epikoinonia',
 };
 
 export const Navigation = ({ isScrolled = false, isTransparent = false }: NavigationProps) => {
@@ -88,7 +88,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
       ]
     },
     { label: 'ΚΡΙΤΙΚΕΣ', labelEn: 'REVIEWS', href: '/reviews', hrefEn: '/en/reviews' },
-    { label: 'ΕΠΙΚΟΙΝΩΝΙΑ', labelEn: 'CONTACT', href: '/contact', hrefEn: '/en/contact' },
+    { label: 'ΕΠΙΚΟΙΝΩΝΙΑ', labelEn: 'CONTACT', href: '/epikoinonia', hrefEn: '/en/contact' },
   ];
 
   const bgClass = isTransparent && !isScrolled
