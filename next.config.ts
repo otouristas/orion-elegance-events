@@ -47,6 +47,7 @@ const nextConfig: NextConfig = {
       { source: "/deksiosi/vaptisi/content/profil", destination: "/vaptisi", permanent: true },
       { source: "/deletem", destination: "/", permanent: true },
       { source: "/en/wedding", destination: "/en/weddings", permanent: true },
+      { source: "/en/wedding-planner", destination: "/en/weddings", permanent: true },
       { source: "/en/christening", destination: "/en/baptism", permanent: true },
       { source: "/en/diorganotis-gamon", destination: "/en/weddings", permanent: true },
       { source: "/en/dexiosi", destination: "/en/reception", permanent: true },
