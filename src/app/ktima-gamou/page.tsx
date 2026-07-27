@@ -3,9 +3,9 @@ import KtimaGamou from "@/views/greek/seo/KtimaGamou";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Κτήμα Γάμου στην Αττική | Κτήμα Ωρίων, Κερατέα";
+const title = "Κτήμα για Γάμο στην Αττική | Κτήμα Ωρίων, Κερατέα";
 const description =
-  "Κτήμα γάμου στην Αττική, στην Κερατέα, με θέα θάλασσα, αποκλειστική χρήση, χώρο για 50–350 άτομα και κοντινά εκκλησάκια. Κλείστε επίσκεψη.";
+  "Κτήμα για γάμο στην Αττική, στην Κερατέα, με θέα θάλασσα, αποκλειστική χρήση, χώρο για 50–350 άτομα και κοντινά εκκλησάκια. Κλείστε επίσκεψη.";
 
 export const metadata: Metadata = buildMetadata({
   title,

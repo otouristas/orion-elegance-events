@@ -36,7 +36,7 @@ export default function KtimaGamou() {
                 <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
                     <div className="container-max text-center">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                            <span className="text-gradient-brand">Κτήμα γάμου στην Αττική – Κτήμα Ωρίων στην Κερατέα</span>
+                            <span className="text-gradient-brand">Κτήμα για γάμο στην Αττική – Κτήμα Ωρίων στην Κερατέα</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
                             Ρομαντικό κτήμα γάμου στην Ανατολική Αττική, κοντά στην Αθήνα, με θέα θάλασσα και ολοκληρωμένες παροχές για τη δεξίωσή σας
