@@ -223,16 +223,6 @@ export default function KtimaVaptisis() {
                 })}
             </script>
 
-            {/* Product Schema */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Product",
-                    "name": "Κτήμα Βάπτισης - Κτήμα Ωρίων",
-                    "description": "Κτήμα για δεξίωση βάπτισης στην Αθήνα με παιδικό μενού, ασφαλή κήπο, κοντινές εκκλησίες",
-                    "brand": { "@type": "Brand", "name": "Κτήμα Ωρίων" }
-                })}
-            </script>
         </Layout>
     );
 }
