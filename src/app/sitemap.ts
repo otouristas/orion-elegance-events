@@ -23,7 +23,6 @@ const staticGreekPaths: readonly string[] = [
   "/blog",
   "/ktima-gamou",
   "/ktima-vaptisis",
-  "/el",
   "/el/ktima-gamou-athina",
   "/el/ktimata-vaptisis-athina",
   "/el/ekklisiaki-dipla-sti-thalassa",
@@ -66,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: buildAbsoluteUrl(path),
       lastModified: lastMod(),
-      changeFrequency: path === "/" || path === "/el" ? "weekly" : "monthly",
+      changeFrequency: path === "/" ? "weekly" : "monthly",
       priority: path === "/" ? 1 : path.startsWith("/el/") ? 0.75 : 0.85,
       alternates: en
         ? { languages: { el: buildAbsoluteUrl(path), en: buildAbsoluteUrl(en), "x-default": buildAbsoluteUrl(path) } }

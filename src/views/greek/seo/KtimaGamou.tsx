@@ -36,10 +36,10 @@ export default function KtimaGamou() {
                 <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
                     <div className="container-max text-center">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                            <span className="text-gradient-brand">Κτήμα γάμου για μοναδικές δεξιώσεις</span>
+                            <span className="text-gradient-brand">Κτήμα γάμου στην Αττική – Κτήμα Ωρίων στην Κερατέα</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-                            Ρομαντικό κτήμα γάμου στην Ανατολική Αττική (Κερατέα), κοντά στην Αθήνα, με θέα θάλασσα και ολοκληρωμένες παροχές για τη δεξίωσή σας
+                            Ρομαντικό κτήμα γάμου στην Ανατολική Αττική, κοντά στην Αθήνα, με θέα θάλασσα και ολοκληρωμένες παροχές για τη δεξίωσή σας
                         </p>
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                             Ιδανικό για 50-350 άτομα • Δωρεάν parking 100+ θέσεις • 8 κοντινά εκκλησάκια
@@ -144,6 +144,16 @@ export default function KtimaGamou() {
                         </div>
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                                <span className="text-gradient-brand">Πώς να επιλέξετε κτήμα γάμου στην Αττική</span>
+                            </h2>
+                            <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
+                                <p>
+                                    Όταν συγκρίνετε <strong>κτήματα γάμου</strong>, αξίζει να δείτε τον χώρο την ώρα που θα γίνει η δεξίωση, να επιβεβαιώσετε τη χωρητικότητα, το plan B για τον καιρό και την πρόσβαση για τους καλεσμένους. Στο Κτήμα Ωρίων μπορείτε να γνωρίσετε από κοντά τον κήπο, την κλιματιζόμενη αίθουσα και το parking πριν αποφασίσετε. Δείτε επίσης τον <Link href="/blog/organoste-gamo-ktima-checklist" className="text-brand-main hover:underline">οδηγό επιλογής κτήματος για γάμο</Link> για μια πρακτική λίστα ελέγχου.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                                 <span className="text-gradient-brand">Κόστος γάμου σε κτήμα</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -164,7 +174,7 @@ export default function KtimaGamou() {
 
                         <div className="prose prose-lg max-w-none text-muted-foreground">
                             <p>
-                                Αν αναζητάτε <strong>κτήμα για γάμο</strong> κοντά στην Αθήνα, το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> στην Κερατέα (Ανατολική Αττική) είναι μια ισχυρή επιλογή: <strong>κτήμα γάμου με θέα θάλασσα</strong>, αποκλειστική χρήση και εμπειρία σε γαμήλιες δεξιώσεις. Στοχεύουμε σε ζευγάρια που ψάχνουν <strong>κτημα γαμου αθηνα</strong> ή <strong>κτημα γαμου ανατολικη αττικη</strong> με εύκολη πρόσβαση από την Αττική Οδό.
+                                Αν αναζητάτε <strong>κτήμα για γάμο</strong> κοντά στην Αθήνα, το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> στην Κερατέα (Ανατολική Αττική) συνδυάζει <strong>θέα θάλασσα</strong>, αποκλειστική χρήση και εμπειρία σε γαμήλιες δεξιώσεις. Η πρόσβαση από την Αττική Οδό διευκολύνει ζευγάρια και καλεσμένους που οργανώνουν γάμο στην Αττική.
                             </p>
 
                             <p>
@@ -231,32 +241,6 @@ export default function KtimaGamou() {
                 </section>
             </div>
 
-            {/* FAQ Schema */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": faqs.map(faq => ({
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": faq.answer
-                        }
-                    }))
-                })}
-            </script>
-
-            {/* Product Schema */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Product",
-                    "name": "Κτήμα Γάμου - Κτήμα Ωρίων",
-                    "description": "Κτήμα για γάμο στην Αθήνα με θέα θάλασσα, 50-350 άτομα, κοντινά εκκλησάκια",
-                    "brand": { "@type": "Brand", "name": "Κτήμα Ωρίων" }
-                })}
-            </script>
         </Layout>
     );
 }

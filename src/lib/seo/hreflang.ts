@@ -20,8 +20,6 @@ export const GREEK_TO_ENGLISH_PATH: Readonly<Record<string, string>> = {
   "/gallery": "/en/gallery",
   "/blog": "/en/blog",
   "/request": "/en/contact",
-  "/el": "/en",
-  "/el/": "/en",
 };
 
 export function resolveEnglishAlternatePath(greekPath: string): string | undefined {

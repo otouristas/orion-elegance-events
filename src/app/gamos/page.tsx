@@ -3,15 +3,15 @@ import Gamos from "@/views/greek/Gamos";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Κτήμα Γάμου Αττική | Δεξίωση Γάμου Κερατέα – Κτήμα Ωρίων";
-const description = "Κτήμα γάμου στην Κερατέα με θέα θάλασσα, catering, στολισμό & κοντινά εκκλησάκια. Ζητήστε προσφορά για δεξίωση γάμου.";
+const title = "Δεξίωση Γάμου στην Κερατέα | Κτήμα Ωρίων";
+const description = "Οργανώστε τη γαμήλια δεξίωσή σας στην Κερατέα, με θέα θάλασσα, catering, στολισμό και κοντινά εκκλησάκια.";
 
 export const metadata: Metadata = buildMetadata({
   title,
   description,
   canonicalPath: "/gamos",
   lang: "el",
-  keywords: "κτήμα γάμου, κτήμα για γάμο, κτήμα γάμου κερατέα, δεξίωση γάμου αττική",
+  keywords: "δεξίωση γάμου κερατέα, γαμήλια δεξίωση αττική, catering γάμου, χώρος δεξίωσης κερατέα",
 });
 
 export default function Page() {

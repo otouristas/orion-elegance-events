@@ -73,18 +73,12 @@ export function JsonLd({
       geo,
       telephone: PHONE,
       priceRange: "€€€",
-      servesCuisine: "Greek",
       hasMap: `https://maps.google.com/?q=${GEO_LAT},${GEO_LNG}`,
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         opens: "09:00",
         closes: "23:00",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5.0",
-        reviewCount: "50",
       },
     };
   } else if (schemaType === "Event") {
@@ -125,12 +119,6 @@ export function JsonLd({
       geo,
       telephone: PHONE,
       priceRange: "€€€",
-      servesCuisine: "Greek",
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5.0",
-        reviewCount: "50",
-      },
     };
   }
   return (
