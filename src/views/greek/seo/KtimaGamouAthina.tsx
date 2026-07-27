@@ -10,7 +10,7 @@ const features = [
   {
     icon: MapPin,
     title: "Κερατέα, Ανατολική Αττική",
-    description: "Ένας προορισμός για γαμήλια δεξίωση κοντά στην Αθήνα, με φυσικό τοπίο και θέα θάλασσα.",
+    description: "Ένας προορισμός για γαμήλια δεξίωση στην Αθήνα και την Ανατολική Αττική, με φυσικό τοπίο και θέα θάλασσα.",
   },
   {
     icon: Users,
@@ -74,7 +74,7 @@ export default function KtimaGamouAthina() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max max-w-4xl text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient-brand">Κτήμα γάμου κοντά στην Αθήνα, στην Κερατέα</span>
+              <span className="text-gradient-brand">Κτήμα γάμου Αθήνα: Κτήμα Ωρίων στην Κερατέα</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-5">
               Το Κτήμα Ωρίων είναι ένας χώρος γαμήλιας δεξίωσης στην Ανατολική Αττική, με θέα θάλασσα, κήπο και κλιματιζόμενη αίθουσα.
@@ -96,7 +96,7 @@ export default function KtimaGamouAthina() {
           <div className="container-max max-w-4xl prose prose-lg text-muted-foreground">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-6">Κτήμα γάμου Αθήνα: ένας προορισμός εκτός κέντρου</h2>
             <p>
-              Για ζευγάρια που αναζητούν <strong>κτήμα γάμου κοντά στην Αθήνα</strong>, η Κερατέα δίνει την αίσθηση ενός προορισμού χωρίς να απαιτεί διανυκτέρευση. Το Κτήμα Ωρίων βρίσκεται περίπου 45 λεπτά από το κέντρο της Αθήνας, σε μια περιοχή που συνδυάζει τη δεξίωση με παραθαλάσσιες εκκλησίες και φωτογράφιση στη φύση.
+              Για ζευγάρια που αναζητούν <strong>κτήμα γάμου στην Αθήνα</strong>, η Κερατέα δίνει την αίσθηση ενός προορισμού χωρίς να απαιτεί διανυκτέρευση. Το Κτήμα Ωρίων βρίσκεται περίπου 45 λεπτά από το κέντρο της Αθήνας, σε μια περιοχή που συνδυάζει τη δεξίωση με παραθαλάσσιες εκκλησίες και φωτογράφιση στη φύση.
             </p>
             <p>
               Πριν κλείσετε, αξίζει να επισκεφθείτε τον χώρο την ώρα που σκέφτεστε να γίνει η εκδήλωση, να ελέγξετε τη χωρητικότητα για το δικό σας setup και να συζητήσετε τι περιλαμβάνει η προσφορά. Στον <Link href="/blog/ktima-gia-gamo-odigos-epilogis" className="text-brand-main hover:underline">οδηγό επιλογής κτήματος για γάμο</Link> θα βρείτε τις ερωτήσεις που βοηθούν στην σύγκριση των χώρων.
@@ -133,7 +133,7 @@ export default function KtimaGamouAthina() {
           </div>
         </section>
 
-        <FAQ items={faqs} title="Συχνές ερωτήσεις για κτήμα γάμου κοντά στην Αθήνα" />
+        <FAQ items={faqs} title="Συχνές ερωτήσεις για κτήμα γάμου Αθήνα" />
 
         <section className="section-padding bg-gradient-to-r from-brand-main/10 to-brand-main/5">
           <div className="container-max text-center">

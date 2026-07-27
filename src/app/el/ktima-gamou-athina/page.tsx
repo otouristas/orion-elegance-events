@@ -3,8 +3,8 @@ import KtimaGamouAthina from "@/views/greek/seo/KtimaGamouAthina";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Κτήμα Γάμου Κοντά στην Αθήνα | Κτήμα Ωρίων, Κερατέα";
-const description = "Κτήμα γάμου κοντά στην Αθήνα, στην Κερατέα: θέα θάλασσα, κλιματιζόμενη αίθουσα, parking 100+ θέσεων και χώρος για 50–350 καλεσμένους.";
+const title = "Κτήμα Γάμου Αθήνα | Κτήμα Ωρίων στην Κερατέα";
+const description = "Κτήμα γάμου Αθήνα, στην Κερατέα: θέα θάλασσα, κλιματιζόμενη αίθουσα, parking 100+ θέσεων και χώρος για 50–350 καλεσμένους.";
 
 export const metadata: Metadata = buildMetadata({
   title,
@@ -24,7 +24,7 @@ export default function Page() {
         schemaType="LocalBusiness"
         breadcrumbs={[
           { name: "Αρχική", url: "/" },
-          { name: "Κτήμα γάμου κοντά στην Αθήνα", url: "/el/ktima-gamou-athina" },
+          { name: "Κτήμα γάμου Αθήνα", url: "/el/ktima-gamou-athina" },
         ]}
       />
       <KtimaGamouAthina />
