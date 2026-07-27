@@ -298,7 +298,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
               Επικοινωνήστε μαζί μας για να οργανώσουμε την τέλεια εκδήλωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact">
+              <a href="/epikoinonia">
                 <button className="button button4">
                   ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
                 </button>

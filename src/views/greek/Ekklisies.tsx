@@ -223,7 +223,7 @@ export default function Ekklisies() {
               την υπέροχη δεξίωσή σας στο Κτήμα Ωρίων.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="button button4">
+              <a href="/epikoinonia" className="button button4">
                 ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
               </a>
               <a href="/gamos" className="button button4">

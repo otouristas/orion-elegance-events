@@ -82,7 +82,7 @@ const Fotografos = () => {
             Επικοινωνήστε μαζί μας σήμερα για να συζητήσουμε πώς μπορούμε να κάνουμε την ημέρα σας ακόμα πιο ξεχωριστή.
           </p>
           <Button size="lg" className="bg-brand-main hover:bg-brand-main/90" asChild>
-            <a href="/contact">ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</a>
+            <a href="/epikoinonia">ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</a>
           </Button>
         </div>
       </section>

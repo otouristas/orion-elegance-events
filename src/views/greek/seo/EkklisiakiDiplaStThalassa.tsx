@@ -80,7 +80,7 @@ export default function EkklisiakiDiplaStThalassa() {
                 Τελετή & Δεξίωση την ίδια μέρα - Ομαλή μετάβαση στο Κτήμα Ωρίων
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
+                <Link href="/epikoinonia">
                   <button className="button button4">
                     Κλείστε Επίσκεψη
                   </button>
@@ -203,7 +203,7 @@ export default function EkklisiakiDiplaStThalassa() {
                   Καλέστε 22990 68812
                 </button>
               </a>
-              <Link href="/contact">
+              <Link href="/epikoinonia">
                 <button className="button button4">
                   Online Αίτημα
                 </button>

@@ -95,7 +95,7 @@ export default function AgiosAlexandrosDaskaleio() {
                   </button>
                 </Link>
                 <br />
-                <Link href="/contact">
+                <Link href="/epikoinonia">
                   <button className="button button4">
                     Κλείστε Επίσκεψη
                   </button>

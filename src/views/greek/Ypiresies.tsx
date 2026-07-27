@@ -147,7 +147,7 @@ export default function Ypiresies() {
               και πώς μπορούμε να δημιουργήσουμε μαζί αξέχαστες αναμνήσεις.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact">
+              <a href="/epikoinonia">
                 <button className="button button4">
                   ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
                 </button>

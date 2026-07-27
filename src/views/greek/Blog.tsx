@@ -116,7 +116,7 @@ export default function Blog() {
               Επικοινωνήστε μαζί μας για να οργανώσουμε την τέλεια εκδήλωσή σας
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact">
+              <a href="/epikoinonia">
                 <button className="button button4">
                   ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
                 </button>

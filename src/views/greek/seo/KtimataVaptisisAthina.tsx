@@ -69,7 +69,7 @@ export default function KtimataVaptisisAthina() {
                 Δημιουργήστε αξέχαστες αναμνήσεις για τη βάπτιση του παιδιού σας στο Κτήμα Ωρίων
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
+                <Link href="/epikoinonia">
                   <button className="button button4">
                     Κλείστε Επίσκεψη
                   </button>
@@ -143,7 +143,7 @@ export default function KtimataVaptisisAthina() {
                   Καλέστε Τώρα
                 </button>
               </a>
-              <Link href="/contact">
+              <Link href="/epikoinonia">
                 <button className="button button4">
                   Online Αίτημα
                 </button>

@@ -374,7 +374,7 @@ export default function OHoros() {
               το μαγευτικό περιβάλλον που θα φιλοξενήσει την εκδήλωσή σας.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a href="/contact" className="button button4">
+              <a href="/epikoinonia" className="button button4">
                 ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
               </a>
               <a href="/gamos" className="button button4">

@@ -186,7 +186,7 @@ export default function Gamos() {
               Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια γαμήλια δεξίωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact">
+              <a href="/epikoinonia">
                 <button className="button button4">
                   ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
                 </button>
