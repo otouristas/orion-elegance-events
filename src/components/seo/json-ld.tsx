@@ -5,6 +5,7 @@ import {
   SITE_NAME_EL,
   DEFAULT_OG_IMAGE,
   PHONE,
+  EMAIL,
   GEO_LAT,
   GEO_LNG,
 } from "@/lib/seo/config";
@@ -58,6 +59,10 @@ export function JsonLd({
     latitude: GEO_LAT,
     longitude: GEO_LNG,
   };
+  const sameAs = [
+    "https://www.facebook.com/ktimaorion.gr/?locale=el_GR",
+    "https://www.instagram.com/ktimaorion/",
+  ];
   let mainEntity: Record<string, unknown>;
   if (schemaType === "LocalBusiness") {
     mainEntity = {
@@ -72,6 +77,8 @@ export function JsonLd({
       address,
       geo,
       telephone: PHONE,
+      email: EMAIL,
+      sameAs,
       priceRange: "€€€",
       hasMap: `https://maps.google.com/?q=${GEO_LAT},${GEO_LNG}`,
       openingHoursSpecification: {
