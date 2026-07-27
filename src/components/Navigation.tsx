@@ -184,7 +184,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
           {/* Desktop: CTA + Language */}
           <div className="hidden lg:flex items-center gap-3">
-            <Link href={isEnglish ? "/en/contact" : "/contact"}>
+            <Link href={isEnglish ? "/en/contact" : "/epikoinonia"}>
               <Button variant="outline" className="button button4 text-sm px-6">
                 {isEnglish ? 'REQUEST' : 'ΖΗΤΗΣΗ'}
               </Button>
@@ -310,7 +310,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
 
               {/* Mobile CTA */}
               <div className="px-6 pb-6">
-                <Link href={isEnglish ? "/en/contact" : "/contact"}>
+                <Link href={isEnglish ? "/en/contact" : "/epikoinonia"}>
                   <Button className="w-full button button4 text-base py-6" onClick={() => setIsMenuOpen(false)}>
                     {isEnglish ? 'REQUEST' : 'ΖΗΤΗΣΗ'}
                   </Button>

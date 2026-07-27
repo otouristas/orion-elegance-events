@@ -18,7 +18,6 @@ const staticGreekPaths: readonly string[] = [
   "/gallery",
   "/reviews",
   "/epikoinonia",
-  "/contact",
   "/request",
   "/blog",
   "/ktima-gamou",

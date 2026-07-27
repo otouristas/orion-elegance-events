@@ -16,7 +16,6 @@ export const GREEK_TO_ENGLISH_PATH: Readonly<Record<string, string>> = {
   "/dj-mousiki": "/en/dj-music",
   "/reviews": "/en/reviews",
   "/epikoinonia": "/en/contact",
-  "/contact": "/en/contact",
   "/gallery": "/en/gallery",
   "/blog": "/en/blog",
   "/request": "/en/contact",
