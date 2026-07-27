@@ -49,7 +49,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
     "headline": post.title,
     "image": [articleImage],
     "datePublished": post.date,
-    "dateModified": post.date,
+    "dateModified": post.modifiedDate ?? post.date,
     "author": {
       "@type": "Organization",
       "name": post.author

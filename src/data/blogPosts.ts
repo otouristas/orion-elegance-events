@@ -16,6 +16,8 @@ export interface BlogPost {
   categoryLabelEn: string;
   image: string;
   date: string;
+  /** Date of the most recent material editorial update, when different from publication. */
+  modifiedDate?: string;
   author: string;
   readTime: string;
   keywords: string;
@@ -1187,6 +1189,7 @@ Choosing the right wedding venue is one of the most critical decisions. This gui
     categoryLabelEn: 'Tips & Guides',
     image: '/final-photos/gamos/IMG_0825.jpeg',
     date: '2026-02-10',
+    modifiedDate: '2026-07-27',
     author: 'Κτήμα Ωρίων',
     readTime: '8 λεπτά',
     keywords: 'κτήμα για γάμο, επιλογή κτήματος γάμου, κτήματα για γάμο αθήνα, πώς να επιλέξω κτήμα γάμου, κριτήρια κτήμα γάμου, οδηγός κτήμα γάμου',
@@ -1278,6 +1281,7 @@ Looking for ktimata (wedding venues) near Athens? Ktima Orion in Keratea is the 
     categoryLabelEn: 'Tips & Guides',
     image: '/final-photos/gamos/IMG_0833.jpeg',
     date: '2026-02-20',
+    modifiedDate: '2026-07-27',
     author: 'Κτήμα Ωρίων',
     readTime: '7 λεπτά',
     keywords: 'κτήματα γάμου αθήνα, κτήματα για γάμο αθήνα, κτήμα για γάμο αττική, κτήματα γάμου αττική, καλύτερα κτήματα γάμου, κτήμα για γάμο κοντά αθήνα, κτήμα γαμήλιας δεξίωσης',
@@ -1378,9 +1382,9 @@ Looking for ktimata (wedding venues) near Athens? Ktima Orion in Keratea is the 
     contentEn: `
 # How Much Does a Venue Wedding Cost? 2026
 
-Venue wedding costs in Attica range from 6,000€ to 36,000€+ depending on guests and services.
+Venue wedding costs in Attica vary significantly with guest count, date, menu and services. Use indicative figures only to compare proposals, then ask for a detailed written quote for your event.
 
-[Ktima Orion](/en/venue) offers transparent all-inclusive packages from 45€/person.
+[Ktima Orion](/en/venue) can prepare a personalized proposal after discussing your guest count and plans.
 
 [Get a free quote](/en/contact) today.
     `,
@@ -1389,6 +1393,7 @@ Venue wedding costs in Attica range from 6,000€ to 36,000€+ depending on gue
     categoryLabelEn: 'Tips & Guides',
     image: '/final-photos/gamos/IMG_0815.jpeg',
     date: '2026-02-28',
+    modifiedDate: '2026-07-27',
     author: 'Κτήμα Ωρίων',
     readTime: '9 λεπτά',
     keywords: 'κτημα γαμου τιμες, κόστος γάμου κτήμα, τιμές κτήμα για γάμο, πόσο κοστίζει γάμος κτήμα, προϋπολογισμός γάμου, τιμές catering γάμου, κόστος γαμήλιας δεξίωσης αττική',
