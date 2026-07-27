@@ -152,21 +152,25 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                   <>
                     <button
                       className={`font-medium text-sm tracking-wide transition-colors duration-300 hover:text-brand-main ${textColor} flex items-center gap-1 px-3 py-2`}
+                      aria-expanded={openDesktopDropdown === item.label}
+                      onClick={() => setOpenDesktopDropdown(openDesktopDropdown === item.label ? null : item.label)}
                     >
                       {isEnglish ? item.labelEn : item.label}
                       <ChevronDown className="w-4 h-4" />
                     </button>
                     {openDesktopDropdown === item.label && (
-                      <div className="absolute top-full left-0 mt-1 w-64 bg-background rounded-lg shadow-2xl border border-border z-[100] overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
-                        {item.submenu.map((subItem) => (
-                          <Link
-                            key={subItem.label}
-                            href={isEnglish ? subItem.hrefEn : subItem.href}
-                            className="block px-5 py-3.5 text-sm text-foreground hover:bg-brand-main/10 hover:text-brand-main transition-colors border-b border-border/30 last:border-0 font-medium"
-                          >
-                            {isEnglish ? subItem.labelEn : subItem.label}
-                          </Link>
-                        ))}
+                      <div className="absolute top-full left-0 w-64 pt-1 z-[100]">
+                        <div className="overflow-hidden rounded-lg border border-border bg-background shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+                          {item.submenu.map((subItem) => (
+                            <Link
+                              key={subItem.label}
+                              href={isEnglish ? subItem.hrefEn : subItem.href}
+                              className="block px-5 py-3.5 text-sm text-foreground hover:bg-brand-main/10 hover:text-brand-main transition-colors border-b border-border/30 last:border-0 font-medium"
+                            >
+                              {isEnglish ? subItem.labelEn : subItem.label}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </>
