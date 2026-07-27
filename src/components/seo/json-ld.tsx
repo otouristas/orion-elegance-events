@@ -10,6 +10,7 @@ import {
   POSTAL_CODE,
   GEO_LAT,
   GEO_LNG,
+  GOOGLE_MAPS_URL,
 } from "@/lib/seo/config";
 
 export interface BreadcrumbItem {
@@ -64,6 +65,7 @@ export function JsonLd({
     longitude: GEO_LNG,
   };
   const sameAs = [
+    GOOGLE_MAPS_URL,
     "https://www.facebook.com/ktimaorion.gr/?locale=el_GR",
     "https://www.instagram.com/ktimaorion/",
   ];
@@ -75,7 +77,8 @@ export function JsonLd({
       "@id": `${SITE_URL}/#business`,
       name: SITE_NAME_EL,
       description,
-      url: fullCanonical,
+      url: SITE_URL,
+      mainEntityOfPage: fullCanonical,
       logo,
       image: fullOgImage,
       address,
@@ -84,7 +87,7 @@ export function JsonLd({
       email: EMAIL,
       sameAs,
       priceRange: "€€€",
-      hasMap: `https://maps.google.com/?q=${GEO_LAT},${GEO_LNG}`,
+      hasMap: GOOGLE_MAPS_URL,
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
