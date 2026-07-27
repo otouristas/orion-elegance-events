@@ -26,7 +26,8 @@ export const Footer = () => {
         <div>
           <h3 className="text-xl font-bold text-brand-main mb-6">Υπηρεσίες</h3>
           <ul className="space-y-3">
-            <li><a href="/gamos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Γάμος</a></li>
+            <li><a href="/ktima-gamou" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Κτήμα Γάμου</a></li>
+            <li><a href="/gamos" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Δεξίωση Γάμου</a></li>
             <li><a href="/vaptisi" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Βάπτιση</a></li>
             <li><a href="/eterikes-ekdiloseis" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Εταιρικές Εκδηλώσεις</a></li>
             <li><a href="/parti" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Πάρτι</a></li>

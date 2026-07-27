@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
 import { getPostBySlug, blogPosts } from '@/data/blogPosts';
 import { normalizePublicImageSrc } from '@/lib/images/normalize-public-src';
+import { buildAbsoluteUrl } from '@/lib/seo/hreflang';
 import ReactMarkdown from 'react-markdown';
 
 interface BlogPostProps {
@@ -34,12 +35,21 @@ export default function BlogPost({ slug }: BlogPostProps) {
     .filter(p => p.category === post.category && p.slug !== post.slug)
     .slice(0, 3);
 
+  const canonicalUrl = buildAbsoluteUrl(`/blog/${post.slug}`);
+  const articleImage = buildAbsoluteUrl(normalizePublicImageSrc(post.image));
+  const encodedArticleUrl = encodeURIComponent(canonicalUrl);
+  const encodedArticleTitle = encodeURIComponent(post.title);
+  // The page header already supplies the document H1; remove the duplicate Markdown title.
+  const articleContent = post.content.replace(/^\s*#\s+[^\n]+\n?/, '');
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "mainEntityOfPage": canonicalUrl,
     "headline": post.title,
-    "image": post.image,
+    "image": [articleImage],
     "datePublished": post.date,
+    "dateModified": post.date,
     "author": {
       "@type": "Organization",
       "name": post.author
@@ -49,7 +59,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
       "name": "Κτήμα Ωρίων",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ktimaorion.gr/logo.png"
+        "url": buildAbsoluteUrl("/images/logo-dark.png")
       }
     },
     "description": post.excerpt,
@@ -208,7 +218,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
                   ),
                 }}
               >
-                {post.content}
+                {articleContent}
               </ReactMarkdown>
             </div>
 
@@ -221,7 +231,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
                 </div>
                 <div className="flex gap-3">
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodedArticleUrl}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#1877F2] text-white rounded-lg hover:bg-[#166FE5] transition-colors font-semibold shadow-lg hover:shadow-xl"
@@ -229,7 +239,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
                     Facebook
                   </a>
                   <a
-                    href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${post.title}`}
+                    href={`https://twitter.com/intent/tweet?url=${encodedArticleUrl}&text=${encodedArticleTitle}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#1DA1F2] text-white rounded-lg hover:bg-[#1A91DA] transition-colors font-semibold shadow-lg hover:shadow-xl"

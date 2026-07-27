@@ -56,7 +56,8 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
       href: '/dexiosi',
       hrefEn: '/en/reception',
       submenu: [
-        { label: 'ΓΑΜΟΣ', labelEn: 'WEDDING', href: '/gamos', hrefEn: '/en/weddings' },
+        { label: 'ΚΤΗΜΑ ΓΑΜΟΥ', labelEn: 'WEDDING VENUE', href: '/ktima-gamou', hrefEn: '/en/weddings' },
+        { label: 'ΔΕΞΙΩΣΗ ΓΑΜΟΥ', labelEn: 'WEDDING RECEPTION', href: '/gamos', hrefEn: '/en/weddings' },
         { label: 'ΒΑΠΤΙΣΗ', labelEn: 'BAPTISM', href: '/vaptisi', hrefEn: '/en/baptism' },
         { label: 'ΕΤΑΙΡΙΚΕΣ ΕΚΔΗΛΩΣΕΙΣ', labelEn: 'CORPORATE EVENTS', href: '/eterikes-ekdiloseis', hrefEn: '/en/corporate-events' },
         { label: 'ΠΑΡΤΙ', labelEn: 'PARTY', href: '/parti', hrefEn: '/en/party' }
