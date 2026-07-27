@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src={heroSrc}
-          alt="Κτήμα Ωρίων - Μαγευτικός χώρος για εκδηλώσεις"
+          alt="Κτήμα Ωρίων στην Κερατέα – χώρος για γάμο και εκδηλώσεις"
           fill
           priority
           fetchPriority="high"
@@ -21,10 +21,10 @@ export function Hero() {
       </div>
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-          Κτήμα <span className="text-gradient-brand">Ωρίων</span>
+          Κτήμα <span className="text-gradient-brand">Ωρίων</span> στην Κερατέα
         </h1>
         <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-light">
-          Διοργάνωση Εκδηλώσεων - Κερατέα
+          Κτήμα γάμου, βάπτισης και εκδηλώσεων στην Αττική
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button size="lg" className="button button4 text-lg" asChild>
