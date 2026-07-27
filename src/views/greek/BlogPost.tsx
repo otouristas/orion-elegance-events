@@ -222,6 +222,24 @@ export default function BlogPost({ slug }: BlogPostProps) {
               </ReactMarkdown>
             </div>
 
+            {post.category === 'wedding' ? (
+              <aside className="mt-12 rounded-2xl border border-brand-main/20 bg-brand-main/5 p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Αναζητάτε κτήμα γάμου στην Αθήνα;
+                </h2>
+                <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
+                  Δείτε τι να περιμένετε από το Κτήμα Ωρίων στην Κερατέα, με χώρο για
+                  γαμήλια δεξίωση, parking και κοντινές εκκλησίες.
+                </p>
+                <Link
+                  href="/el/ktima-gamou-athina"
+                  className="mt-5 inline-flex font-bold text-brand-main underline underline-offset-4"
+                >
+                  Κτήμα γάμου στην Αθήνα →
+                </Link>
+              </aside>
+            ) : null}
+
             {/* Social Share */}
             <div className="mt-16 pt-10 border-t-2 border-border">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
