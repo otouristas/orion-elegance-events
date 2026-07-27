@@ -33,6 +33,9 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
   const relatedPosts = blogPosts
     .filter(p => p.category === post.category && p.slug !== post.slug)
     .slice(0, 3);
+  const canonicalUrl = `https://ktimaorion.gr/en/blog/${post.slug}`;
+  const encodedCanonicalUrl = encodeURIComponent(canonicalUrl);
+  const encodedTitle = encodeURIComponent(post.titleEn);
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -203,7 +206,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
                 </div>
                 <div className="flex gap-3">
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodedCanonicalUrl}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#1877F2] text-white rounded-lg hover:bg-[#166FE5] transition-colors font-semibold shadow-lg hover:shadow-xl"
@@ -211,7 +214,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
                     Facebook
                   </a>
                   <a
-                    href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=${post.titleEn}`}
+                    href={`https://twitter.com/intent/tweet?url=${encodedCanonicalUrl}&text=${encodedTitle}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-[#1DA1F2] text-white rounded-lg hover:bg-[#1A91DA] transition-colors font-semibold shadow-lg hover:shadow-xl"

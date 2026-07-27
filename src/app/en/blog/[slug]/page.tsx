@@ -1,12 +1,19 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import BlogPostEn from '@/views/english/BlogPostEn';
-import { getPostBySlug } from '@/data/blogPosts';
+import { blogPosts, getPostBySlug } from '@/data/blogPosts';
 import { buildMetadata } from '@/lib/seo/metadata';
 
 interface BlogSlugPageProps {
   readonly params: Promise<{ slug: string }>;
 }
+
+/** Pre-render the English editorial URLs so search crawlers receive complete HTML. */
+export function generateStaticParams() {
+  return blogPosts.map(({ slug }) => ({ slug }));
+}
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: BlogSlugPageProps): Promise<Metadata> {
   const { slug } = await params;
