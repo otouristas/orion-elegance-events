@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Building2, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { FORMSPREE_FORM_ACTION, submitToFormspree } from '@/lib/formspree';
+import { POSTAL_CODE, STREET_ADDRESS_EL } from '@/lib/seo/config';
 
 // Contact page with form submission functionality
 export default function Epikoinonia() {
@@ -80,7 +81,7 @@ export default function Epikoinonia() {
     {
       icon: MapPin,
       title: "Τοποθεσία",
-      details: ["Κερατέα, Αττική"]
+      details: [`${STREET_ADDRESS_EL}, Κερατέα ${POSTAL_CODE}, Αττική`]
     },
     {
       icon: Phone,

@@ -6,6 +6,8 @@ import {
   DEFAULT_OG_IMAGE,
   PHONE,
   EMAIL,
+  STREET_ADDRESS_EL,
+  POSTAL_CODE,
   GEO_LAT,
   GEO_LNG,
 } from "@/lib/seo/config";
@@ -50,8 +52,10 @@ export function JsonLd({
   const logo = fullUrl("/images/logo-dark.png");
   const address = {
     "@type": "PostalAddress" as const,
+    streetAddress: STREET_ADDRESS_EL,
     addressLocality: "Κερατέα",
     addressRegion: "Αττική",
+    postalCode: POSTAL_CODE,
     addressCountry: "GR",
   };
   const geo = {

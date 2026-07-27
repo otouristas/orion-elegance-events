@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail, MapPin, Clock, Building2, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { FORMSPREE_FORM_ACTION, submitToFormspree } from '@/lib/formspree';
+import { POSTAL_CODE, STREET_ADDRESS_EN } from '@/lib/seo/config';
 
 export default function ContactEn() {
   const [formData, setFormData] = useState({
@@ -80,7 +81,7 @@ export default function ContactEn() {
     {
       icon: MapPin,
       title: "Location",
-      details: ["Keratea, Attica, Greece"]
+      details: [`${STREET_ADDRESS_EN}, Keratea ${POSTAL_CODE}, Attica, Greece`]
     },
     {
       icon: Phone,

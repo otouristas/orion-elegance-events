@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
+import { POSTAL_CODE, STREET_ADDRESS_EL } from '@/lib/seo/config';
 const logoWhite = "/images/logo-white.png";
 export const Footer = () => {
   return <footer className="bg-forest text-secondary-foreground">
@@ -56,7 +57,7 @@ export const Footer = () => {
           <ul className="space-y-3">
             <li className="flex items-center space-x-3">
               <MapPin className="w-5 h-5 text-brand-main flex-shrink-0" />
-              <span className="text-secondary-foreground/80">Κερατέα, Αττική</span>
+              <span className="text-secondary-foreground/80">{STREET_ADDRESS_EL}, Κερατέα {POSTAL_CODE}</span>
             </li>
             <li className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-brand-main flex-shrink-0" />
