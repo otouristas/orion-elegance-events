@@ -41,6 +41,8 @@ export default function BlogPost({ slug }: BlogPostProps) {
   const encodedArticleTitle = encodeURIComponent(post.title);
   // The page header already supplies the document H1; remove the duplicate Markdown title.
   const articleContent = post.content.replace(/^\s*#\s+[^\n]+\n?/, '');
+  // Promotional graphics carry text that a cropping fill would cut off.
+  const heroFitsWithin = post.imageFit === 'contain';
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -108,16 +110,22 @@ export default function BlogPost({ slug }: BlogPostProps) {
         {/* Hero Image */}
         <section className="section-padding-sm bg-gradient-to-b from-brand-main/5 to-background">
           <div className="container-max max-w-5xl">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl h-[400px] md:h-[500px] w-full">
+            <div
+              className={`relative overflow-hidden rounded-2xl shadow-2xl h-[400px] md:h-[500px] w-full ${
+                heroFitsWithin ? 'bg-brand-main/5' : ''
+              }`}
+            >
               <Image
                 src={normalizePublicImageSrc(post.image)}
                 alt={post.title}
                 fill
-                className="object-cover"
+                className={heroFitsWithin ? 'object-contain' : 'object-cover'}
                 sizes="(max-width: 768px) 100vw, 896px"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              {heroFitsWithin ? null : (
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              )}
             </div>
           </div>
         </section>

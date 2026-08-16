@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { AppProviders } from '@/components/providers/app-providers';
 import { ScrollToTop } from '@/components/ScrollToTop';
+import { PromoPopup } from '@/components/PromoPopup';
 import { SITE_URL } from '@/lib/seo/config';
 import './globals.css';
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AppProviders>
           <ScrollToTop />
           {children}
+          <PromoPopup />
         </AppProviders>
         <GoogleAnalytics gaId="G-R3D1HPVZYG" />
         <Analytics />

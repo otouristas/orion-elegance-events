@@ -15,6 +15,11 @@ export interface BlogPost {
   categoryLabel: string;
   categoryLabelEn: string;
   image: string;
+  /**
+   * How the hero image fills its frame. Defaults to `cover` (photography).
+   * Use `contain` for promotional graphics whose text would be cropped.
+   */
+  imageFit?: 'cover' | 'contain';
   date: string;
   /** Date of the most recent material editorial update, when different from publication. */
   modifiedDate?: string;
@@ -1741,6 +1746,410 @@ Safety, menus, pricing, outdoor space and churches near the venue. For Ktima Ori
         question: 'Υπάρχει χώρος για αλλαγή ρούχων του μωρού;',
         answer:
           'Ρωτήστε για ξεχωριστό χώρο ή δωμάτιο υποστήριξης κοντά στη δεξίωση και πρόσβαση σε καθαρούς χώρους υγιεινής.',
+      },
+    ],
+  },
+  {
+    slug: 'paketa-vaptisis-ktima-orion-varsos-catering',
+    title: 'Πακέτα Βάπτισης στο Κτήμα Ωρίων με L. Varsos Catering από 33€ / άτομο',
+    titleEn: 'Baptism Packages at Ktima Orion with L. Varsos Catering from €33 per person',
+    excerpt:
+      'Δύο ολοκληρωμένα πακέτα βάπτισης στο Κτήμα Ωρίων με το L. Varsos Catering: Classic Finger Food 33€ / άτομο και Premium Finger Food 38€ / άτομο, για εκδηλώσεις από 100 καλεσμένους, με όλες τις παροχές του κτήματος.',
+    excerptEn:
+      'Two all-inclusive baptism packages at Ktima Orion with L. Varsos Catering: Classic Finger Food at €33 per person and Premium Finger Food at €38 per person, for events from 100 guests, venue amenities included.',
+    content: `
+# Πακέτα Βάπτισης στο Κτήμα Ωρίων με L. Varsos Catering από 33€ / άτομο
+
+Η βάπτιση είναι μία από τις σημαντικότερες οικογενειακές στιγμές και αξίζει να πραγματοποιηθεί σε έναν χώρο που συνδυάζει όμορφο περιβάλλον, προσεγμένο φαγητό και ολοκληρωμένη οργάνωση.
+
+Το [Κτήμα Ωρίων](/ktima-vaptisis), σε συνεργασία με το **L. Varsos Catering**, παρουσιάζει δύο ολοκληρωμένες προτάσεις για τη διοργάνωση βάπτισης: το **Classic Finger Food Menu** και το **Premium Finger Food Menu**.
+
+Οι προτάσεις έχουν σχεδιαστεί ώστε οι οικογένειες να μπορούν να οργανώσουν τη δεξίωση της βάπτισης χωρίς να χρειάζεται να συντονίζουν ξεχωριστούς προμηθευτές για catering, προσωπικό, εξοπλισμό και βασικές παροχές.
+
+## Βάπτιση στο Κτήμα Ωρίων: χώρος και catering σε μία ολοκληρωμένη πρόταση
+
+Ένα από τα σημαντικότερα πλεονεκτήματα των συγκεκριμένων πακέτων είναι ότι συνδυάζουν την εμπειρία του Κτήματος Ωρίων, που φιλοξενεί εκδηλώσεις από το 2009, με την τεχνογνωσία του L. Varsos Catering, με παρουσία στον χώρο της εστίασης από το 1987.
+
+Η φιλοσοφία είναι απλή: όλα όσα χρειάζονται για μία όμορφη και οργανωμένη βάπτιση συγκεντρωμένα σε ένα πακέτο.
+
+Οι τιμές των πακέτων αφορούν εκδηλώσεις από 100 καλεσμένους, ενώ στην τιμή περιλαμβάνονται και οι παροχές του [Κτήματος Ωρίων](/o-horos).
+
+![Δεξίωση βάπτισης στο Κτήμα Ωρίων στην Κερατέα](/final-photos/vaftisi/IMG_3443.jpeg)
+
+---
+
+## Πακέτο Classic Finger Food – 33€ / άτομο
+
+Για όσους αναζητούν μία κομψή αλλά οικονομικά οργανωμένη επιλογή, το Classic Finger Food Menu προσφέρεται στην τιμή των **33€ / άτομο**.
+
+Το πακέτο περιλαμβάνει:
+
+- πλούσιο menu finger food,
+- επαγγελματικό προσωπικό,
+- τούρτα βάπτισης,
+- κρασί ή μπύρα,
+- αναψυκτικά και νερά,
+- πιάτα και ποτήρια,
+- χαρτοπετσέτες υψηλής ποιότητας,
+- οργάνωση και στήσιμο του buffet.
+
+Πρόκειται για μία ιδιαίτερα πρακτική επιλογή για οικογένειες που θέλουν η δεξίωση της βάπτισης να έχει πιο χαλαρό και κοινωνικό χαρακτήρα, χωρίς όμως να γίνονται εκπτώσεις στην παρουσίαση και την εξυπηρέτηση.
+
+Το finger food format επιτρέπει στους καλεσμένους να κινηθούν πιο ελεύθερα στον χώρο και δημιουργεί μία πιο ανεπίσημη αλλά παράλληλα προσεγμένη ατμόσφαιρα.
+
+---
+
+## Premium Finger Food Menu – 38€ / άτομο
+
+Για μία πιο αναβαθμισμένη γαστρονομική εμπειρία, υπάρχει το Premium πακέτο βάπτισης στην τιμή των **38€ / άτομο**.
+
+Το Premium πακέτο περιλαμβάνει:
+
+- premium menu finger food,
+- επαγγελματικό προσωπικό,
+- τούρτα βάπτισης,
+- κρασί ή μπύρα,
+- αναψυκτικά και νερά,
+- πιάτα και ποτήρια,
+- χαρτοπετσέτες υψηλής ποιότητας,
+- πλήρη οργάνωση και στήσιμο buffet.
+
+Η Premium επιλογή απευθύνεται σε όσους θέλουν να δώσουν μεγαλύτερη έμφαση στο catering και στην εμπειρία των καλεσμένων, διατηρώντας παράλληλα τη λειτουργικότητα και την ευελιξία ενός σύγχρονου finger food event.
+
+---
+
+## Τι περιλαμβάνεται στην τιμή της βάπτισης;
+
+Ένα από τα σημαντικότερα στοιχεία της πρότασης είναι ότι στις τιμές περιλαμβάνονται όλες οι παροχές του Κτήματος Ωρίων.
+
+Αυτό σημαίνει ότι η οικογένεια μπορεί να γνωρίζει από την αρχή πολύ πιο ξεκάθαρα το συνολικό πλαίσιο της εκδήλωσης και να αποφύγει πολλές επιπλέον χρεώσεις που συναντώνται συχνά όταν ο χώρος, το catering και ο εξοπλισμός οργανώνονται ξεχωριστά.
+
+Τα πακέτα ισχύουν για εκδηλώσεις από 100 καλεσμένους και άνω.
+
+![Στημένο buffet και χώρος δεξίωσης για βάπτιση](/final-photos/vaftisi/IMG_1128.jpeg)
+
+---
+
+## Κτήμα βάπτισης ανοιχτό 365 ημέρες τον χρόνο
+
+Το Κτήμα Ωρίων λειτουργεί 365 ημέρες τον χρόνο, δίνοντας τη δυνατότητα διοργάνωσης βάπτισης καθ' όλη τη διάρκεια της χρονιάς.
+
+Η βάπτιση δεν χρειάζεται πλέον να περιορίζεται αποκλειστικά στους ανοιξιάτικους και καλοκαιρινούς μήνες.
+
+Ανάλογα με την ημερομηνία, τον αριθμό των καλεσμένων και το ύφος της εκδήλωσης, μπορεί να δημιουργηθεί μία διαφορετική εμπειρία για κάθε εποχή.
+
+Από μία καλοκαιρινή απογευματινή βάπτιση μέχρι μία πιο ατμοσφαιρική φθινοπωρινή ή χειμερινή εκδήλωση, το Κτήμα Ωρίων μπορεί να αποτελέσει τη βάση για μία ολοκληρωμένη πρόταση φιλοξενίας.
+
+---
+
+## Προαιρετικές παροχές για τη βάπτιση
+
+Για όσους θέλουν να εμπλουτίσουν ακόμη περισσότερο την εκδήλωσή τους, υπάρχουν και προαιρετικές πρόσθετες παροχές, όπως:
+
+- παγωτό 3 γεύσεων,
+- ποτηράκια γλυκού,
+- φουσκωτό παιχνίδι.
+
+Οι συγκεκριμένες επιλογές μπορούν να κάνουν τη βάπτιση ακόμη πιο ευχάριστη, ιδιαίτερα όταν υπάρχουν πολλά παιδιά ανάμεσα στους καλεσμένους.
+
+Το φουσκωτό παιχνίδι μπορεί να δημιουργήσει έναν ξεχωριστό χώρο ψυχαγωγίας, ενώ το παγωτό και τα γλυκά λειτουργούν ως μία όμορφη προσθήκη μετά το βασικό finger food menu.
+
+---
+
+## Classic ή Premium πακέτο βάπτισης;
+
+Η επιλογή εξαρτάται κυρίως από το ύφος που θέλετε να δώσετε στην εκδήλωση.
+
+**Επιλέξτε το Classic Package εάν** θέλετε μία ολοκληρωμένη και οικονομικότερη πρόταση με όλα τα βασικά στοιχεία μιας οργανωμένης δεξίωσης βάπτισης. Με 33€ / άτομο, αποτελεί μία ιδιαίτερα ανταγωνιστική επιλογή για μεγαλύτερες εκδηλώσεις.
+
+**Επιλέξτε το Premium Package εάν** θέλετε να δώσετε μεγαλύτερη έμφαση στη γαστρονομική εμπειρία και στο menu που θα προσφερθεί στους καλεσμένους σας. Με 38€ / άτομο, η διαφορά από το Classic παραμένει περιορισμένη, ενώ η συνολική εμπειρία catering αναβαθμίζεται.
+
+---
+
+## Γιατί να οργανώσετε τη βάπτισή σας στο Κτήμα Ωρίων;
+
+Η επιλογή ενός χώρου βάπτισης δεν αφορά μόνο την αισθητική.
+
+Χρειάζεται να εξετάσετε την ποιότητα του catering, την εξυπηρέτηση, την οργάνωση, τον εξοπλισμό, τη δυνατότητα φιλοξενίας των καλεσμένων και φυσικά το συνολικό κόστος.
+
+Στο Κτήμα Ωρίων, η συνεργασία με το L. Varsos Catering δημιουργεί μία ολοκληρωμένη λύση που συγκεντρώνει όλα τα βασικά στοιχεία μιας δεξίωσης.
+
+Έτσι, αντί να χρειάζεται να οργανώσετε διαφορετικά τον χώρο, το catering, το προσωπικό, τα ποτά, τα σερβίτσια και το buffet, μπορείτε να επιλέξετε μία ενιαία πρόταση και να επικεντρωθείτε περισσότερο στην ίδια τη στιγμή.
+
+Δείτε επίσης [τι να προσέξετε στη βάπτιση](/blog/ti-na-proseksete-sti-vaptisi) και τις [συχνές ερωτήσεις για κτήματα βάπτισης](/blog/syxnes-erotiseis-ktima-vaptisis), ενώ για τις κοντινές επιλογές τελετής μπορείτε να δείτε τις [εκκλησίες κοντά στο κτήμα](/ekklisies).
+
+---
+
+## Συχνές Ερωτήσεις για τα Πακέτα Βάπτισης
+
+### Πόσο κοστίζει μία βάπτιση στο Κτήμα Ωρίων;
+
+Το Classic Finger Food Menu κοστίζει 33€ / άτομο, ενώ το Premium Finger Food Menu κοστίζει 38€ / άτομο, σύμφωνα με την τρέχουσα προσφορά.
+
+### Υπάρχει ελάχιστος αριθμός καλεσμένων;
+
+Ναι. Οι συγκεκριμένες τιμές ισχύουν για εκδηλώσεις από 100 καλεσμένους.
+
+### Περιλαμβάνεται ο χώρος στην τιμή;
+
+Σύμφωνα με την προσφορά, στην τιμή περιλαμβάνονται όλες οι παροχές του Κτήματος Ωρίων.
+
+### Περιλαμβάνονται ποτά;
+
+Ναι. Τα πακέτα περιλαμβάνουν κρασί ή μπύρα, αναψυκτικά και νερά.
+
+### Περιλαμβάνεται το προσωπικό;
+
+Ναι. Και στα δύο πακέτα περιλαμβάνεται επαγγελματικό προσωπικό για την εξυπηρέτηση της εκδήλωσης.
+
+### Περιλαμβάνεται τούρτα βάπτισης;
+
+Ναι, η τούρτα βάπτισης περιλαμβάνεται τόσο στο Classic όσο και στο Premium πακέτο.
+
+### Μπορούμε να προσθέσουμε επιπλέον παροχές για τα παιδιά;
+
+Ναι. Διατίθενται προαιρετικά επιλογές όπως φουσκωτό παιχνίδι, παγωτό τριών γεύσεων και ποτηράκια γλυκού.
+
+### Μπορεί να πραγματοποιηθεί βάπτιση τον χειμώνα;
+
+Το Κτήμα Ωρίων είναι ανοιχτό 365 ημέρες τον χρόνο, επομένως μπορείτε να εξετάσετε διαθέσιμες ημερομηνίες καθ' όλη τη διάρκεια του έτους.
+
+---
+
+## Κλείστε τη βάπτισή σας στο Κτήμα Ωρίων
+
+Η βάπτιση είναι μία ημέρα που θα μείνει στις οικογενειακές σας αναμνήσεις για πολλά χρόνια.
+
+Στο Κτήμα Ωρίων, με την υπογραφή του L. Varsos Catering, μπορείτε να επιλέξετε ανάμεσα σε δύο ολοκληρωμένα πακέτα και να δημιουργήσετε μία εκδήλωση προσαρμοσμένη στον αριθμό των καλεσμένων και στο ύφος που επιθυμείτε.
+
+- **Classic Finger Food Menu: 33€ / άτομο**
+- **Premium Finger Food Menu: 38€ / άτομο**
+
+Οι τιμές αφορούν εκδηλώσεις από 100 άτομα και περιλαμβάνουν τις παροχές του Κτήματος Ωρίων.
+
+[Επικοινωνήστε μαζί μας](/epikoinonia) για διαθεσιμότητα ημερομηνιών, περισσότερες πληροφορίες και για να οργανώσουμε μαζί τη βάπτιση που έχετε φανταστεί, ή [ζητήστε προσφορά](/request) online.
+    `,
+    contentEn: `
+# Baptism Packages at Ktima Orion with L. Varsos Catering from €33 per person
+
+A baptism is one of the most important family milestones, and it deserves a venue that combines beautiful surroundings, carefully prepared food and complete organisation.
+
+[Ktima Orion](/en/baptism), in partnership with **L. Varsos Catering**, presents two all-inclusive baptism proposals: the **Classic Finger Food Menu** and the **Premium Finger Food Menu**.
+
+Both packages are designed so families can organise the baptism reception without having to coordinate separate suppliers for catering, staff, equipment and basic amenities.
+
+## Baptism at Ktima Orion: venue and catering in one package
+
+One of the biggest advantages of these packages is that they combine the experience of Ktima Orion, hosting events since 2009, with the expertise of L. Varsos Catering, active in hospitality since 1987.
+
+The philosophy is simple: everything needed for a beautiful, well-organised baptism gathered into a single package.
+
+Package prices apply to events from 100 guests, and all [Ktima Orion](/en/venue) venue amenities are included in the price.
+
+![Baptism reception at Ktima Orion in Keratea](/final-photos/vaftisi/IMG_3443.jpeg)
+
+---
+
+## Classic Finger Food Package – €33 per person
+
+For those looking for an elegant yet budget-conscious option, the Classic Finger Food Menu is offered at **€33 per person**.
+
+The package includes:
+
+- a rich finger food menu,
+- professional service staff,
+- baptism cake,
+- wine or beer,
+- soft drinks and water,
+- plates and glasses,
+- high-quality napkins,
+- buffet organisation and setup.
+
+This is a particularly practical choice for families who want the baptism reception to feel relaxed and sociable, without compromising on presentation or service.
+
+The finger food format lets guests move freely around the venue and creates a more informal yet still refined atmosphere.
+
+---
+
+## Premium Finger Food Menu – €38 per person
+
+For an elevated gastronomic experience, the Premium baptism package is offered at **€38 per person**.
+
+The Premium package includes:
+
+- a premium finger food menu,
+- professional service staff,
+- baptism cake,
+- wine or beer,
+- soft drinks and water,
+- plates and glasses,
+- high-quality napkins,
+- full buffet organisation and setup.
+
+The Premium option suits those who want to place more emphasis on the catering and on the guest experience, while keeping the flexibility and practicality of a modern finger food event.
+
+---
+
+## What is included in the price?
+
+One of the most important elements of the offer is that all Ktima Orion venue amenities are included in the prices.
+
+This means the family knows the full scope of the event from the outset and avoids many of the extra charges that appear when venue, catering and equipment are arranged separately.
+
+The packages apply to events from 100 guests and above.
+
+![Buffet setup and reception area for a baptism](/final-photos/vaftisi/IMG_1128.jpeg)
+
+---
+
+## A baptism venue open 365 days a year
+
+Ktima Orion operates 365 days a year, making it possible to hold a baptism at any point in the year.
+
+Baptisms no longer need to be limited to the spring and summer months.
+
+Depending on the date, the number of guests and the style of the event, a different experience can be created for every season — from a summer afternoon baptism to a more atmospheric autumn or winter celebration.
+
+---
+
+## Optional extras for the baptism
+
+For those who want to enrich the event further, optional additions are available:
+
+- ice cream in 3 flavours,
+- dessert cups,
+- an inflatable play castle.
+
+These options can make the baptism even more enjoyable, particularly when there are many children among the guests.
+
+The inflatable castle creates a dedicated play area, while the ice cream and desserts work beautifully as an addition after the main finger food menu.
+
+---
+
+## Classic or Premium baptism package?
+
+The choice depends mostly on the character you want to give the event.
+
+**Choose the Classic Package if** you want a complete, more economical proposal with all the essentials of a well-organised baptism reception. At €33 per person, it is a highly competitive option for larger events.
+
+**Choose the Premium Package if** you want to place greater emphasis on the food and on the menu offered to your guests. At €38 per person, the difference from the Classic remains small while the overall catering experience is upgraded.
+
+---
+
+## Why organise your baptism at Ktima Orion?
+
+Choosing a baptism venue is not only about aesthetics.
+
+You need to consider catering quality, service, organisation, equipment, guest capacity and, of course, the total cost.
+
+At Ktima Orion, the partnership with L. Varsos Catering creates a complete solution that brings together all the key elements of a reception.
+
+Instead of arranging the venue, catering, staff, drinks, tableware and buffet separately, you can choose a single proposal and focus on the moment itself.
+
+You may also want to read our [baptism planning guide](/en/blog/ti-na-proseksete-sti-vaptisi) and see the [churches near the venue](/en/churches).
+
+---
+
+## Frequently Asked Questions
+
+### How much does a baptism at Ktima Orion cost?
+
+The Classic Finger Food Menu is €33 per person and the Premium Finger Food Menu is €38 per person, according to the current offer.
+
+### Is there a minimum number of guests?
+
+Yes. These prices apply to events from 100 guests.
+
+### Is the venue included in the price?
+
+According to the offer, all Ktima Orion venue amenities are included in the price.
+
+### Are drinks included?
+
+Yes. The packages include wine or beer, soft drinks and water.
+
+### Is staff included?
+
+Yes. Both packages include professional staff to serve the event.
+
+### Is the baptism cake included?
+
+Yes, the baptism cake is included in both the Classic and the Premium package.
+
+### Can we add extras for the children?
+
+Yes. Optional extras such as an inflatable play castle, three-flavour ice cream and dessert cups are available.
+
+### Can a baptism take place in winter?
+
+Ktima Orion is open 365 days a year, so you can check available dates throughout the year.
+
+---
+
+## Book your baptism at Ktima Orion
+
+A baptism is a day that stays in your family's memories for many years.
+
+At Ktima Orion, with the signature of L. Varsos Catering, you can choose between two complete packages and create an event tailored to your guest count and to the style you have in mind.
+
+- **Classic Finger Food Menu: €33 per person**
+- **Premium Finger Food Menu: €38 per person**
+
+Prices apply to events from 100 guests and include the Ktima Orion venue amenities.
+
+[Contact us](/en/contact) for date availability, more information, and to plan the baptism you have imagined.
+    `,
+    category: 'baptism',
+    categoryLabel: 'Βάπτιση',
+    categoryLabelEn: 'Baptism',
+    image: '/promo/ktimaorion1.jpeg',
+    imageFit: 'contain',
+    date: '2026-08-16',
+    author: 'Κτήμα Ωρίων',
+    readTime: '8 λεπτά',
+    keywords:
+      'πακετα βαπτισης, τιμη βαπτισης ανα ατομο, κτημα βαπτισης αττικη, finger food βαπτιση, l varsos catering, κτημα ωριων βαπτιση, ποσο κοστιζει βαπτιση σε κτημα',
+    keywordsEn:
+      'baptism packages greece, baptism venue attica, finger food catering baptism, baptism cost per person, ktima orion baptism',
+    faqSchema: [
+      {
+        question: 'Πόσο κοστίζει μία βάπτιση στο Κτήμα Ωρίων;',
+        answer:
+          'Το Classic Finger Food Menu κοστίζει 33€ / άτομο και το Premium Finger Food Menu 38€ / άτομο, σύμφωνα με την τρέχουσα προσφορά σε συνεργασία με το L. Varsos Catering.',
+      },
+      {
+        question: 'Υπάρχει ελάχιστος αριθμός καλεσμένων για τα πακέτα βάπτισης;',
+        answer:
+          'Ναι. Οι συγκεκριμένες τιμές ισχύουν για εκδηλώσεις από 100 καλεσμένους και άνω.',
+      },
+      {
+        question: 'Περιλαμβάνεται ο χώρος στην τιμή της βάπτισης;',
+        answer:
+          'Σύμφωνα με την προσφορά, στην τιμή περιλαμβάνονται όλες οι παροχές του Κτήματος Ωρίων.',
+      },
+      {
+        question: 'Περιλαμβάνονται ποτά στα πακέτα βάπτισης;',
+        answer: 'Ναι. Τα πακέτα περιλαμβάνουν κρασί ή μπύρα, αναψυκτικά και νερά.',
+      },
+      {
+        question: 'Περιλαμβάνεται το προσωπικό εξυπηρέτησης;',
+        answer:
+          'Ναι. Και στα δύο πακέτα περιλαμβάνεται επαγγελματικό προσωπικό για την εξυπηρέτηση της εκδήλωσης.',
+      },
+      {
+        question: 'Περιλαμβάνεται τούρτα βάπτισης;',
+        answer:
+          'Ναι, η τούρτα βάπτισης περιλαμβάνεται τόσο στο Classic όσο και στο Premium πακέτο.',
+      },
+      {
+        question: 'Μπορούμε να προσθέσουμε επιπλέον παροχές για τα παιδιά;',
+        answer:
+          'Ναι. Διατίθενται προαιρετικά παγωτό τριών γεύσεων, ποτηράκια γλυκού και φουσκωτό παιχνίδι.',
+      },
+      {
+        question: 'Μπορεί να πραγματοποιηθεί βάπτιση τον χειμώνα;',
+        answer:
+          'Το Κτήμα Ωρίων είναι ανοιχτό 365 ημέρες τον χρόνο, επομένως μπορείτε να εξετάσετε διαθέσιμες ημερομηνίες καθ’ όλη τη διάρκεια του έτους.',
       },
     ],
   }
