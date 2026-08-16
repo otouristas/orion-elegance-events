@@ -148,7 +148,7 @@ export default function KtimaVaptisis() {
                             </p>
 
                             <p>
-                                Για πρακτικές συμβουλές πριν την οργάνωση, διαβάστε το <Link href="/blog/ti-na-proseksete-sti-vaptisi" className="text-brand-main hover:underline">άρθρο «Τι να προσέξετε στη βάπτιση»</Link> και τις <Link href="/blog/syxnes-erotiseis-ktima-vaptisis" className="text-brand-main hover:underline">συχνές ερωτήσεις για κτήματα βάπτισης</Link>. Για προσφορά <Link href="/request" className="text-brand-main hover:underline">συμπληρώστε τη φόρμα αιτήματος</Link>.
+                                Για πρακτικές συμβουλές πριν την οργάνωση, διαβάστε το <Link href="/blog/ti-na-proseksete-sti-vaptisi" className="text-brand-main hover:underline">άρθρο «Τι να προσέξετε στη βάπτιση»</Link>, τα <Link href="/blog/paketa-vaptisis-ktima-orion-varsos" className="text-brand-main hover:underline">πακέτα βάπτισης από 33€ / άτομο με L. Varsos Catering</Link> και τις <Link href="/blog/syxnes-erotiseis-ktima-vaptisis" className="text-brand-main hover:underline">συχνές ερωτήσεις για κτήματα βάπτισης</Link>. Για προσφορά <Link href="/request" className="text-brand-main hover:underline">συμπληρώστε τη φόρμα αιτήματος</Link>.
                             </p>
                         </div>
                     </div>

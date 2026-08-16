@@ -95,8 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const post of blogPosts) {
     entries.push({
       url: buildAbsoluteUrl(`/blog/${post.slug}`),
-      // The shared article template was updated on this date (H1 and Article JSON-LD).
-      lastModified: lastMod(),
+      lastModified: new Date(post.modifiedDate ?? post.date),
       changeFrequency: "monthly",
       priority: 0.65,
       alternates: {

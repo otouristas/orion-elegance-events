@@ -246,6 +246,7 @@ export default function Vaptisi() {
         {/* Popular Searches */}
         <PopularSearches 
           links={[
+            { label: "Πακέτα βάπτισης από 33€", href: "/blog/paketa-vaptisis-ktima-orion-varsos" },
             { label: "Βαπτιστική Δεξίωση Κερατέα", href: "/vaptisi" },
             { label: "Χώρος Βάπτισης", href: "/o-horos" },
             { label: "Εκκλησίες", href: "/ekklisies" },

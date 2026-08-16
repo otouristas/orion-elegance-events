@@ -17,7 +17,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
 
   if (!post) {
     return (
-      <Layout>
+      <Layout lang="en">
         <div className="pt-20 min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Article not found</h1>
@@ -61,7 +61,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
   };
 
   return (
-    <Layout>
+    <Layout lang="en">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
@@ -84,16 +84,30 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
         {/* Hero Image */}
         <section className="section-padding-sm bg-gradient-to-b from-brand-main/5 to-background">
           <div className="container-max max-w-5xl">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl h-[400px] md:h-[500px] w-full">
-              <Image
-                src={normalizePublicImageSrc(post.image)}
-                alt={post.titleEn}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 896px"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            <div className={`relative overflow-hidden rounded-2xl shadow-2xl w-full ${post.imageFit === 'contain' ? 'h-auto bg-[#0b1830]' : 'h-[400px] md:h-[500px]'}`}>
+              {post.imageFit === 'contain' ? (
+                <Image
+                  src={normalizePublicImageSrc(post.image)}
+                  alt={post.titleEn}
+                  width={1080}
+                  height={1350}
+                  className="mx-auto h-auto w-full object-contain"
+                  sizes="(max-width: 768px) 100vw, 896px"
+                  priority
+                />
+              ) : (
+                <>
+                  <Image
+                    src={normalizePublicImageSrc(post.image)}
+                    alt={post.titleEn}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                </>
+              )}
             </div>
           </div>
         </section>

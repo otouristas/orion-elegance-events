@@ -7,6 +7,7 @@ import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { CookieConsent } from '@/components/CookieConsent';
 import { CookieConsentEn } from '@/components/english/CookieConsentEn';
+import { PromoPopup } from '@/components/PromoPopup';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -33,6 +34,7 @@ export const Layout = ({ children, isTransparent = false, lang = 'el' }: LayoutP
       <Footer />
       <BackToTop />
       <ContactFAB />
+      <PromoPopup />
       {lang === 'en' ? <CookieConsentEn /> : <CookieConsent />}
     </div>
   );

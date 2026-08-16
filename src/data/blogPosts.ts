@@ -1,3 +1,5 @@
+import { baptismPackagesPost } from './posts/baptism-packages';
+
 export interface BlogPostFaqItem {
   readonly question: string;
   readonly answer: string;
@@ -15,6 +17,8 @@ export interface BlogPost {
   categoryLabel: string;
   categoryLabelEn: string;
   image: string;
+  /** Use contain for graphic posters so text in the artwork is not cropped. */
+  imageFit?: 'cover' | 'contain';
   date: string;
   /** Date of the most recent material editorial update, when different from publication. */
   modifiedDate?: string;
@@ -27,6 +31,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  baptismPackagesPost,
   {
     slug: "pos-na-organosete-enan-mikro-gamo",
     title: "Μικρός Γάμος στην Κερατέα: Οδηγός για Οικείους και Ρομαντικούς Γάμους",

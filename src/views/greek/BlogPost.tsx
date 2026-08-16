@@ -108,16 +108,30 @@ export default function BlogPost({ slug }: BlogPostProps) {
         {/* Hero Image */}
         <section className="section-padding-sm bg-gradient-to-b from-brand-main/5 to-background">
           <div className="container-max max-w-5xl">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl h-[400px] md:h-[500px] w-full">
-              <Image
-                src={normalizePublicImageSrc(post.image)}
-                alt={post.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 896px"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            <div className={`relative overflow-hidden rounded-2xl shadow-2xl w-full ${post.imageFit === 'contain' ? 'h-auto bg-[#0b1830]' : 'h-[400px] md:h-[500px]'}`}>
+              {post.imageFit === 'contain' ? (
+                <Image
+                  src={normalizePublicImageSrc(post.image)}
+                  alt={post.title}
+                  width={1080}
+                  height={1350}
+                  className="mx-auto h-auto w-full object-contain"
+                  sizes="(max-width: 768px) 100vw, 896px"
+                  priority
+                />
+              ) : (
+                <>
+                  <Image
+                    src={normalizePublicImageSrc(post.image)}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                </>
+              )}
             </div>
           </div>
         </section>
@@ -237,6 +251,31 @@ export default function BlogPost({ slug }: BlogPostProps) {
                 >
                   Κτήμα γάμου στην Αθήνα →
                 </Link>
+              </aside>
+            ) : null}
+            {post.category === 'baptism' ? (
+              <aside className="mt-12 rounded-2xl border border-brand-main/20 bg-brand-main/5 p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Οργανώνετε βάπτιση στην Αττική;
+                </h2>
+                <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
+                  Δείτε τον χώρο, τις κοντινές εκκλησίες και τα ολοκληρωμένα πακέτα
+                  βάπτισης με catering από 33€ / άτομο.
+                </p>
+                <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:gap-6">
+                  <Link
+                    href="/ktima-vaptisis"
+                    className="inline-flex font-bold text-brand-main underline underline-offset-4"
+                  >
+                    Κτήμα βάπτισης →
+                  </Link>
+                  <Link
+                    href="/blog/paketa-vaptisis-ktima-orion-varsos"
+                    className="inline-flex font-bold text-brand-main underline underline-offset-4"
+                  >
+                    Πακέτα βάπτισης από 33€ →
+                  </Link>
+                </div>
               </aside>
             ) : null}
 
