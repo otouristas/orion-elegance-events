@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { Toaster } from '@/components/ui/toaster';
 import { Toaster as Sonner } from '@/components/ui/sonner';
+import { PromoPopup } from '@/components/PromoPopup';
 
 interface AppProvidersProps {
   readonly children: ReactNode;
@@ -16,6 +17,7 @@ export function AppProviders({ children }: AppProvidersProps) {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         {children}
+        <PromoPopup />
         <Toaster />
         <Sonner />
       </TooltipProvider>
