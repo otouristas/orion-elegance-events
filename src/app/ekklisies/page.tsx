@@ -3,15 +3,17 @@ import Ekklisies from "@/views/greek/Ekklisies";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Εκκλησίες Γάμου & Βάπτισης Κερατέα | Παραθαλάσσια Εκκλησάκια";
-const description = "Κοντινά εκκλησάκια για τελετή γάμου ή βάπτισης δίπλα στη θάλασσα, λίγα λεπτά από το Κτήμα Ωρίων.";
+const title = "Εκκλησίες Κερατέα για Γάμο & Βάπτιση | Κτήμα Ωρίων";
+const description =
+  "Άγιος Αλέξανδρος Δασκαλειό, Παναγία Γκαρικά, Άγιος Παντελεήμονας, Προφήτης Ηλίας Θορικό και Αγία Τριάδα: απόσταση, χωρητικότητα και φωτογραφίες.";
 
 export const metadata: Metadata = buildMetadata({
   title,
   description,
   canonicalPath: "/ekklisies",
   lang: "el",
-  keywords: "εκκλησία κερατέα, εκκλησίες γάμου αττική",
+  keywords:
+    "εκκλησία κερατέα, εκκλησίες κερατέα, εκκλησίες γάμου αττική, παραθαλάσσια εκκλησάκια κερατέα, κτήμα με εκκλησάκι",
 });
 
 export default function Page() {

@@ -49,32 +49,40 @@ export const PromoPopup = () => {
   const promoHref = isEnglish ? `/en/blog/${PROMO_SLUG}` : `/blog/${PROMO_SLUG}`;
   // Never interrupt the page the popup is advertising.
   const isPromoPage = pathname === `/blog/${PROMO_SLUG}` || pathname === `/en/blog/${PROMO_SLUG}`;
+  // The homepage always re-shows the offer, on every visit and every refresh, so
+  // a dismissal there is for the current view only and is never remembered.
+  const isHomepage = pathname === '/' || pathname === '/en';
 
   const dismiss = useCallback(() => {
     setIsOpen(false);
+    if (isHomepage) {
+      return;
+    }
     try {
       window.localStorage.setItem(DISMISS_KEY, 'dismissed');
     } catch {
       // Private browsing or blocked storage: closing for this view is enough.
     }
-  }, []);
+  }, [isHomepage]);
 
   useEffect(() => {
     if (isPromoPage) {
       return;
     }
-    let dismissed = false;
-    try {
-      dismissed = window.localStorage.getItem(DISMISS_KEY) !== null;
-    } catch {
-      dismissed = false;
-    }
-    if (dismissed) {
-      return;
+    if (!isHomepage) {
+      let dismissed = false;
+      try {
+        dismissed = window.localStorage.getItem(DISMISS_KEY) !== null;
+      } catch {
+        dismissed = false;
+      }
+      if (dismissed) {
+        return;
+      }
     }
     const timer = window.setTimeout(() => setIsOpen(true), APPEAR_DELAY_MS);
     return () => window.clearTimeout(timer);
-  }, [isPromoPage]);
+  }, [isPromoPage, isHomepage]);
 
   // Lock background scrolling and wire up Escape while the dialog is open.
   useEffect(() => {

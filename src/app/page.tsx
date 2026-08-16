@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Index from '@/views/Index';
-import { JsonLd, FaqJsonLd } from '@/components/seo/json-ld';
-import { homepageFaqs } from '@/data/homepage-faqs';
+import { JsonLd, WebSiteJsonLd } from '@/components/seo/json-ld';
 import { buildMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = buildMetadata({
@@ -26,7 +25,9 @@ export default function HomePage() {
         breadcrumbs={[{ name: 'Αρχική', url: '/' }]}
         ogImagePath="/og-image.jpg"
       />
-      <FaqJsonLd items={homepageFaqs} />
+      {/* The FAQPage schema is emitted by the visible <FAQ> block inside <Index>,
+          so declaring it again here would duplicate FAQPage on one URL. */}
+      <WebSiteJsonLd />
       <Index />
     </>
   );
