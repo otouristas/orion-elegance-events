@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Menu, X, ChevronDown, Globe, Sparkles, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import * as Collapsible from '@radix-ui/react-collapsible';
+import { PROMO_COPY, isPromoPage, promoHref } from '@/lib/promo';
 const logoDark = '/images/logo-dark.png';
 const logoWhite = '/images/logo-white.png';
 
@@ -37,6 +38,7 @@ const pageMapping: Record<string, string> = {
   '/fotografos': '/en/photographer', '/en/photographer': '/fotografos',
   '/dj-mousiki': '/en/dj-music', '/en/dj-music': '/dj-mousiki',
   '/reviews': '/en/reviews', '/en/reviews': '/reviews',
+  '/blog': '/en/blog', '/en/blog': '/blog',
   '/epikoinonia': '/en/contact', '/en/contact': '/epikoinonia',
 };
 
@@ -90,6 +92,15 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
     { label: 'ΚΡΙΤΙΚΕΣ', labelEn: 'REVIEWS', href: '/reviews', hrefEn: '/en/reviews' },
     { label: 'ΕΠΙΚΟΙΝΩΝΙΑ', labelEn: 'CONTACT', href: '/epikoinonia', hrefEn: '/en/contact' },
   ];
+
+  // The blog lives in the mobile menu only; the desktop bar is already full.
+  const mobileNavItems: NavItem[] = [
+    ...navItems,
+    { label: 'BLOG', labelEn: 'BLOG', href: '/blog', hrefEn: '/en/blog' },
+  ];
+
+  const promoCopy = isEnglish ? PROMO_COPY.en : PROMO_COPY.el;
+  const showPromo = !isPromoPage(pathname);
 
   const bgClass = isTransparent && !isScrolled
     ? 'bg-transparent'
@@ -256,7 +267,27 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
             onClick={(e) => e.stopPropagation()}
           >
             <div className="py-4">
-              {navItems.map((item) => (
+              {/* Marketing indicator for the running promotion */}
+              {showPromo && (
+                <Link
+                  href={promoHref(isEnglish)}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="mx-4 mb-4 flex items-center gap-3 rounded-lg border border-brand-main/30 bg-brand-main/10 px-4 py-4 transition-colors hover:bg-brand-main/20"
+                >
+                  <Sparkles className="h-5 w-5 flex-shrink-0 text-brand-main" />
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-brand-main">
+                      {promoCopy.menuBadge}
+                    </span>
+                    <span className="block text-sm font-semibold text-foreground">
+                      {promoCopy.menuLabel}
+                    </span>
+                  </span>
+                  <ArrowRight className="h-4 w-4 flex-shrink-0 text-brand-main" />
+                </Link>
+              )}
+
+              {mobileNavItems.map((item) => (
                 <div key={item.label} className="border-b border-border">
                   {item.submenu ? (
                     <Collapsible.Root>

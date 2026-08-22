@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 import { POSTAL_CODE, STREET_ADDRESS_EN } from '@/lib/seo/config';
+import { PromoBanner } from '@/components/PromoBanner';
 const logoWhite = "/images/logo-white.png";
 
 export const FooterEn = () => {
   return (
+    <>
+    {/* Site-wide promotion, directly above the footer on every page. */}
+    <PromoBanner />
     <footer className="bg-forest text-secondary-foreground">
       <div className="container-max py-16 px-4 md:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -96,5 +100,6 @@ export const FooterEn = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };

@@ -5,10 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { X } from 'lucide-react';
-
-/** Article the promotion points at, in both locales. */
-const PROMO_SLUG = 'paketa-vaptisis-ktima-orion-varsos-catering';
-const PROMO_IMAGE = '/promo/ktimaorion2.jpeg';
+import { PROMO_COPY, PROMO_IMAGE, isPromoPage, promoHref } from '@/lib/promo';
 
 /**
  * Bump the suffix to re-show the popup to visitors who dismissed an earlier campaign.
@@ -18,37 +15,16 @@ const DISMISS_KEY = 'promoPopup:vaptisi-paketa-2026';
 /** Give the visitor a moment with the page (and the cookie notice) first. */
 const APPEAR_DELAY_MS = 6000;
 
-const COPY = {
-  el: {
-    eyebrow: 'Νέα προσφορά',
-    title: 'Ολοκληρωμένα Πακέτα Βάπτισης',
-    subtitle: 'Με L. Varsos Catering, από 33€ / άτομο για εκδηλώσεις από 100 καλεσμένους.',
-    cta: 'Δείτε τα πακέτα',
-    dismiss: 'Όχι τώρα',
-    close: 'Κλείσιμο',
-    alt: 'Ολοκληρωμένα πακέτα βάπτισης στο Κτήμα Ωρίων με L. Varsos Catering',
-  },
-  en: {
-    eyebrow: 'New offer',
-    title: 'All-Inclusive Baptism Packages',
-    subtitle: 'With L. Varsos Catering, from €33 per person for events from 100 guests.',
-    cta: 'See the packages',
-    dismiss: 'Not now',
-    close: 'Close',
-    alt: 'All-inclusive baptism packages at Ktima Orion with L. Varsos Catering',
-  },
-} as const;
-
 export const PromoPopup = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   const isEnglish = pathname.startsWith('/en');
-  const copy = isEnglish ? COPY.en : COPY.el;
-  const promoHref = isEnglish ? `/en/blog/${PROMO_SLUG}` : `/blog/${PROMO_SLUG}`;
+  const copy = isEnglish ? PROMO_COPY.en : PROMO_COPY.el;
+  const href = promoHref(isEnglish);
   // Never interrupt the page the popup is advertising.
-  const isPromoPage = pathname === `/blog/${PROMO_SLUG}` || pathname === `/en/blog/${PROMO_SLUG}`;
+  const onPromoPage = isPromoPage(pathname);
   // The homepage always re-shows the offer, on every visit and every refresh, so
   // a dismissal there is for the current view only and is never remembered.
   const isHomepage = pathname === '/' || pathname === '/en';
@@ -66,7 +42,7 @@ export const PromoPopup = () => {
   }, [isHomepage]);
 
   useEffect(() => {
-    if (isPromoPage) {
+    if (onPromoPage) {
       return;
     }
     if (!isHomepage) {
@@ -82,7 +58,7 @@ export const PromoPopup = () => {
     }
     const timer = window.setTimeout(() => setIsOpen(true), APPEAR_DELAY_MS);
     return () => window.clearTimeout(timer);
-  }, [isPromoPage, isHomepage]);
+  }, [onPromoPage, isHomepage]);
 
   // Lock background scrolling and wire up Escape while the dialog is open.
   useEffect(() => {
@@ -137,7 +113,7 @@ export const PromoPopup = () => {
           <X className="h-5 w-5" />
         </button>
 
-        <Link href={promoHref} onClick={dismiss} className="block">
+        <Link href={href} onClick={dismiss} className="block">
           <Image
             src={PROMO_IMAGE}
             alt={copy.alt}
@@ -160,7 +136,7 @@ export const PromoPopup = () => {
 
           <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:items-center">
             <Link
-              href={promoHref}
+              href={href}
               onClick={dismiss}
               className="flex min-h-[44px] flex-1 items-center justify-center rounded-md bg-brand-main px-5 font-bold text-white transition-colors hover:bg-brand-dark"
             >
