@@ -115,29 +115,30 @@ export const PromoPopup = () => {
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-in fade-in duration-300"
+      className="fixed inset-0 z-[200] flex items-center justify-center p-3 animate-in fade-in duration-300"
       role="dialog"
       aria-modal="true"
       aria-labelledby="promo-popup-title"
     >
       {/* Decorative scrim: closing is also reachable via Escape and the labelled buttons. */}
       <div
-        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={dismiss}
         aria-hidden="true"
       />
 
-      <div className="relative z-[201] w-full max-w-sm overflow-hidden rounded-2xl bg-background shadow-2xl animate-in zoom-in-95 duration-300 sm:max-w-md">
+      {/* Compact card: portrait promo art is cropped so the dialog stays small. */}
+      <div className="relative z-[201] w-full max-w-[220px] overflow-hidden rounded-xl bg-background shadow-2xl animate-in zoom-in-95 duration-300 sm:max-w-[260px]">
         {/* `p-0` resets the global `button` padding in globals.css, which would
             otherwise collapse this icon button's content box to zero width. */}
         <button
           ref={closeButtonRef}
           type="button"
           onClick={dismiss}
-          className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 p-0 text-white transition-colors hover:bg-black/70"
+          className="absolute right-1.5 top-1.5 z-10 flex h-7 w-7 items-center justify-center rounded-full bg-black/50 p-0 text-white transition-colors hover:bg-black/70"
           aria-label={copy.close}
         >
-          <X className="h-5 w-5" />
+          <X className="h-3.5 w-3.5" />
         </button>
 
         <Link href={promoHref} onClick={dismiss} className="block">
@@ -146,33 +147,33 @@ export const PromoPopup = () => {
             alt={copy.alt}
             width={939}
             height={1675}
-            className="h-auto w-full"
-            sizes="(max-width: 640px) 92vw, 448px"
+            className="h-28 w-full object-cover object-top sm:h-32"
+            sizes="260px"
             priority
           />
         </Link>
 
-        <div className="p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand-main">
+        <div className="px-3 py-2.5">
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-main">
             {copy.eyebrow}
           </p>
-          <h2 id="promo-popup-title" className="mt-1 text-xl font-bold leading-tight text-foreground">
+          <h2 id="promo-popup-title" className="mt-0.5 text-sm font-bold leading-snug text-foreground sm:text-base">
             {copy.title}
           </h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{copy.subtitle}</p>
+          <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{copy.subtitle}</p>
 
-          <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <div className="mt-2.5 flex flex-col gap-1">
             <Link
               href={promoHref}
               onClick={dismiss}
-              className="flex min-h-[44px] flex-1 items-center justify-center rounded-md bg-brand-main px-5 font-bold text-white transition-colors hover:bg-brand-dark"
+              className="flex min-h-[36px] items-center justify-center rounded-md bg-brand-main px-3 text-xs font-bold text-white transition-colors hover:bg-brand-dark sm:text-sm"
             >
               {copy.cta}
             </Link>
             <button
               type="button"
               onClick={dismiss}
-              className="min-h-[44px] rounded-md border border-border px-5 text-sm text-muted-foreground transition-colors hover:bg-muted"
+              className="min-h-[32px] rounded-md px-3 text-[11px] text-muted-foreground transition-colors hover:bg-muted"
             >
               {copy.dismiss}
             </button>
