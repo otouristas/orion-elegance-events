@@ -5,37 +5,40 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { X } from 'lucide-react';
+import { PLEIADES_ARTICLE_SLUG, PLEIADES_PROMO_IMAGE } from '@/data/pleiades-promo';
 
 /** Article the promotion points at, in both locales. */
-const PROMO_SLUG = 'paketa-vaptisis-ktima-orion-varsos-catering';
-const PROMO_IMAGE = '/promo/ktimaorion2.jpeg';
+const PROMO_SLUG = PLEIADES_ARTICLE_SLUG;
+const PROMO_IMAGE = PLEIADES_PROMO_IMAGE;
 
 /**
  * Bump the suffix to re-show the popup to visitors who dismissed an earlier campaign.
  */
-const DISMISS_KEY = 'promoPopup:vaptisi-paketa-2026';
+const DISMISS_KEY = 'promoPopup:pleiades-synergasia-2026';
 
 /** Give the visitor a moment with the page (and the cookie notice) first. */
 const APPEAR_DELAY_MS = 6000;
 
 const COPY = {
   el: {
-    eyebrow: 'Νέα προσφορά',
-    title: 'Ολοκληρωμένα Πακέτα Βάπτισης',
-    subtitle: 'Με L. Varsos Catering, από 33€ / άτομο για εκδηλώσεις από 100 καλεσμένους.',
-    cta: 'Δείτε τα πακέτα',
+    eyebrow: 'Συνεργασία',
+    title: 'Ο γάμος των ονείρων σας',
+    subtitle:
+      'Κτήμα Ωρίων × Pleiades Catering — καλύτερα από ό,τι είχατε ονειρευτεί. Κλείστε σήμερα τον χώρο.',
+    cta: 'Δείτε περισσότερα',
     dismiss: 'Όχι τώρα',
     close: 'Κλείσιμο',
-    alt: 'Ολοκληρωμένα πακέτα βάπτισης στο Κτήμα Ωρίων με L. Varsos Catering',
+    alt: 'Συνεργασία Κτήμα Ωρίων και Pleiades Catering — ο γάμος των ονείρων σας',
   },
   en: {
-    eyebrow: 'New offer',
-    title: 'All-Inclusive Baptism Packages',
-    subtitle: 'With L. Varsos Catering, from €33 per person for events from 100 guests.',
-    cta: 'See the packages',
+    eyebrow: 'Partnership',
+    title: 'The wedding of your dreams',
+    subtitle:
+      'Ktima Orion × Pleiades Catering — better than you had dreamed. Book the venue today.',
+    cta: 'Learn more',
     dismiss: 'Not now',
     close: 'Close',
-    alt: 'All-inclusive baptism packages at Ktima Orion with L. Varsos Catering',
+    alt: 'Ktima Orion and Pleiades Catering partnership — the wedding of your dreams',
   },
 } as const;
 
@@ -141,8 +144,8 @@ export const PromoPopup = () => {
           <Image
             src={PROMO_IMAGE}
             alt={copy.alt}
-            width={1254}
-            height={1254}
+            width={939}
+            height={1675}
             className="h-auto w-full"
             sizes="(max-width: 640px) 92vw, 448px"
             priority

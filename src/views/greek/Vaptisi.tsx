@@ -7,6 +7,7 @@ import { TrustSignals } from '@/components/TrustSignals';
 import { NearbyChurches } from '@/components/NearbyChurches';
 import { RelatedServices } from '@/components/RelatedServices';
 import { PopularSearches } from '@/components/PopularSearches';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 import Link from 'next/link';
 
 interface BaptismPhoto {
@@ -233,6 +234,8 @@ export default function Vaptisi() {
 
         {/* Trust Signals */}
         <TrustSignals />
+
+        <PleiadesBanner lang="el" />
 
         {/* FAQs */}
         <FAQ items={baptismFAQs} title="Συχνές Ερωτήσεις για Βαπτίσεις" />

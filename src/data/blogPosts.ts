@@ -2152,7 +2152,140 @@ Prices apply to events from 100 guests and include the Ktima Orion venue ameniti
           'Το Κτήμα Ωρίων είναι ανοιχτό 365 ημέρες τον χρόνο, επομένως μπορείτε να εξετάσετε διαθέσιμες ημερομηνίες καθ’ όλη τη διάρκεια του έτους.',
       },
     ],
-  }
+  },
+  {
+    slug: 'synergasia-pleiades-catering-ktima-orion',
+    title: 'Κτήμα Ωρίων × Pleiades Catering: Ο Γάμος των Ονείρων σας',
+    titleEn: 'Ktima Orion × Pleiades Catering: The Wedding of Your Dreams',
+    excerpt:
+      'Εκεί όπου η λάμψη συναντά τα όνειρά σας. Από το 2009 στην Κερατέα, με κορυφαία γαστρονομία από το Pleiades Catering — καλύτερα από ό,τι είχατε ονειρευτεί.',
+    excerptEn:
+      'Where sparkle meets your dreams. Since 2009 in Keratea, with outstanding cuisine from Pleiades Catering — better than you had dreamed.',
+    content: `
+# Κτήμα Ωρίων × Pleiades Catering: Ο Γάμος των Ονείρων σας
+
+**Εκεί όπου η λάμψη συναντά τα όνειρά σας.**
+
+Από το 2009, το [Κτήμα Ωρίων](/o-horos) στην Κερατέα φιλοξενεί τις πιο φωτεινές στιγμές της ζωής σας. Σε συνεργασία με το **Pleiades Catering (Πλειάδες)**, σας προσκαλούμε να απολαύσετε κορυφαία γαστρονομία σε μια ατμόσφαιρα γεμάτη μαγεία — **καλύτερα από ό,τι είχατε ονειρευτεί**.
+
+![Ο γάμος των ονείρων σας στο Κτήμα Ωρίων με Pleiades Catering](/promo/pleiades-synergasia.jpg)
+
+## Η συνεργασία που κάνει τη διαφορά
+
+Ο γάμος των ονείρων σας δεν χρειάζεται να μείνει στα όνειρα. Στο Κτήμα Ωρίων συνδυάζουμε:
+
+- **Μαγευτικό χώρο** με φωτεινούς κήπους, κομψή διακόσμηση και ατμόσφαιρα που λάμπει το βράδυ
+- **Γαστρονομία υψηλού επιπέδου** από το Pleiades Catering — hors d'oeuvres, σερβίρισμα και γεύσεις που μένουν στη μνήμη
+- **Ολοκληρωμένη οργάνωση**, ώστε να κλείσετε σήμερα τον χώρο και να αφήσετε σε εμάς τα υπόλοιπα
+
+Η εμπειρία των καλεσμένων μας επιβεβαιώνει τη δύναμη αυτής της συνεργασίας: γεύση, ποιότητα και ποσότητα που μιλούν από μόνες τους.
+
+## Γιατί Κτήμα Ωρίων + Pleiades
+
+### Χώρος που δημιουργεί ατμόσφαιρα
+
+Το Κτήμα Ωρίων στην Κερατέα προσφέρει αποκλειστική χρήση για μία εκδήλωση την ημέρα, φυσικό περιβάλλον και εγγύτητα σε [παραθαλάσσια εκκλησάκια](/ekklisies). Από το ηλιοβασίλεμα έως τα φώτα της δεξίωσης, κάθε στιγμή έχει τη δική της λάμψη.
+
+### Catering με υπογραφή
+
+Το **Pleiades Catering** αναλαμβάνει τη γαστρονομική εμπειρία: από τα πρώτα finger food και τα ποτά υποδοχής έως το κυρίως μενού. Η προσοχή στη λεπτομέρεια και η σταθερή ποιότητα κάνουν τη διαφορά σε κάθε τραπέζι.
+
+### Από το 2009 δίπλα σας
+
+Με πάνω από δεκαπέντε χρόνια φιλοξενίας, γνωρίζουμε πώς να μετατρέψουμε το όραμά σας σε πραγματικότητα — με συνέπεια, ζεστασιά και επαγγελματισμό.
+
+## Κλείστε σήμερα τον χώρο
+
+Ο γάμος των ονείρων σας, καλύτερα από ό,τι είχατε ονειρευτεί.
+
+**Κλείστε σήμερα τον χώρο** και αφήστε σε εμάς τα υπόλοιπα — οργάνωση, catering και την ατμόσφαιρα που αξίζει η μέρα σας.
+
+- [Δείτε τον χώρο](/o-horos)
+- [Υπηρεσίες γάμου](/gamos)
+- [Κλείστε δωρεάν ξενάγηση](/epikoinonia)
+
+Επικοινωνήστε μαζί μας για διαθεσιμότητα ημερομηνίας και προσωποποιημένη πρόταση για τον δικό σας γάμο στο Κτήμα Ωρίων με Pleiades Catering.
+    `,
+    contentEn: `
+# Ktima Orion × Pleiades Catering: The Wedding of Your Dreams
+
+**Where sparkle meets your dreams.**
+
+Since 2009, [Ktima Orion](/en/venue) in Keratea has hosted life’s brightest moments. In partnership with **Pleiades Catering**, we invite you to enjoy outstanding cuisine in an atmosphere full of magic — **better than you had dreamed**.
+
+![The wedding of your dreams at Ktima Orion with Pleiades Catering](/promo/pleiades-synergasia.jpg)
+
+## The partnership that makes the difference
+
+Your dream wedding does not have to stay a dream. At Ktima Orion we combine:
+
+- **A magical venue** with glowing gardens, elegant styling and an evening atmosphere that sparkles
+- **High-level cuisine** from Pleiades Catering — hors d'oeuvres, service and flavours that stay in memory
+- **Complete organisation**, so you can book the venue today and leave the rest to us
+
+Our guests’ experiences confirm the strength of this partnership: taste, quality and generosity that speak for themselves.
+
+## Why Ktima Orion + Pleiades
+
+### A venue that creates atmosphere
+
+Ktima Orion in Keratea offers exclusive use for one event per day, a natural setting and proximity to [seaside chapels](/en/churches). From sunset to reception lights, every moment has its own glow.
+
+### Catering with a signature
+
+**Pleiades Catering** shapes the culinary experience: from the first finger food and welcome drinks to the main menu. Attention to detail and consistent quality make the difference at every table.
+
+### By your side since 2009
+
+With more than fifteen years of hospitality, we know how to turn your vision into reality — with consistency, warmth and professionalism.
+
+## Book the venue today
+
+The wedding of your dreams, better than you had dreamed.
+
+**Book the venue today** and leave the rest to us — organisation, catering and the atmosphere your day deserves.
+
+- [See the venue](/en/venue)
+- [Wedding services](/en/weddings)
+- [Book a free tour](/en/contact)
+
+Contact us for date availability and a personalised proposal for your wedding at Ktima Orion with Pleiades Catering.
+    `,
+    category: 'wedding',
+    categoryLabel: 'Γάμος',
+    categoryLabelEn: 'Wedding',
+    image: '/promo/pleiades-synergasia.jpg',
+    imageFit: 'contain',
+    date: '2026-09-11',
+    author: 'Κτήμα Ωρίων',
+    readTime: '5 λεπτά',
+    keywords:
+      'pleiades catering, πλειαδες catering, κτημα ωριων γαμος, συνεργασια catering κερατεα, γαμος ονειρων κερατεα, κτημα δεξιωσεων αττικη',
+    keywordsEn:
+      'pleiades catering, ktima orion wedding, wedding catering keratea, dream wedding attica, wedding venue greece catering',
+    faqSchema: [
+      {
+        question: 'Με ποιο catering συνεργάζεται το Κτήμα Ωρίων;',
+        answer:
+          'Το Κτήμα Ωρίων συνεργάζεται με το Pleiades Catering (Πλειάδες) για κορυφαία γαστρονομία σε γάμους και δεξιώσεις.',
+      },
+      {
+        question: 'Πού βρίσκεται το Κτήμα Ωρίων;',
+        answer:
+          'Το Κτήμα Ωρίων βρίσκεται στην Κερατέα Αττικής και φιλοξενεί εκδηλώσεις από το 2009.',
+      },
+      {
+        question: 'Μπορώ να κλείσω μόνο τον χώρο;',
+        answer:
+          'Ναι. Μπορείτε να κλείσετε τον χώρο και να αφήσετε σε εμάς την οργάνωση και το catering σε συνεργασία με το Pleiades Catering.',
+      },
+      {
+        question: 'Είναι κατάλληλο για γάμο μεγάλου μεγέθους;',
+        answer:
+          'Το Κτήμα Ωρίων φιλοξενεί γάμους διαφόρων μεγεθών, με εσωτερικό και εξωτερικό χώρο και αποκλειστική χρήση για μία εκδήλωση την ημέρα.',
+      },
+    ],
+  },
 ];
 
 // Helper functions

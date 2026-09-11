@@ -7,6 +7,7 @@ import { TrustSignals } from '@/components/TrustSignals';
 import { NearbyChurches } from '@/components/NearbyChurches';
 import { RelatedServices } from '@/components/RelatedServices';
 import { PopularSearches } from '@/components/PopularSearches';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 import Link from 'next/link';
 
 interface WeddingPhoto {
@@ -154,6 +155,8 @@ export default function Gamos() {
 
         {/* Trust Signals */}
         <TrustSignals />
+
+        <PleiadesBanner lang="el" />
 
         {/* FAQs */}
         <FAQ items={weddingFAQs} title="Συχνές Ερωτήσεις για Γάμους" />
