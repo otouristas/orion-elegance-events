@@ -115,29 +115,30 @@ export const PromoPopup = () => {
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-in fade-in duration-300"
+      className="fixed inset-0 z-[200] flex items-center justify-center p-3 animate-in fade-in duration-300"
       role="dialog"
       aria-modal="true"
       aria-labelledby="promo-popup-title"
     >
       {/* Decorative scrim: closing is also reachable via Escape and the labelled buttons. */}
       <div
-        className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={dismiss}
         aria-hidden="true"
       />
 
-      <div className="relative z-[201] w-full max-w-sm overflow-hidden rounded-2xl bg-background shadow-2xl animate-in zoom-in-95 duration-300 sm:max-w-md">
+      {/* Compact card: portrait promo art is cropped so the dialog stays small. */}
+      <div className="relative z-[201] w-full max-w-[260px] overflow-hidden rounded-xl bg-background shadow-2xl animate-in zoom-in-95 duration-300 sm:max-w-[300px]">
         {/* `p-0` resets the global `button` padding in globals.css, which would
             otherwise collapse this icon button's content box to zero width. */}
         <button
           ref={closeButtonRef}
           type="button"
           onClick={dismiss}
-          className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 p-0 text-white transition-colors hover:bg-black/70"
+          className="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 p-0 text-white transition-colors hover:bg-black/70"
           aria-label={copy.close}
         >
-          <X className="h-5 w-5" />
+          <X className="h-4 w-4" />
         </button>
 
         <Link href={promoHref} onClick={dismiss} className="block">
@@ -146,33 +147,33 @@ export const PromoPopup = () => {
             alt={copy.alt}
             width={939}
             height={1675}
-            className="h-auto w-full"
-            sizes="(max-width: 640px) 92vw, 448px"
+            className="h-40 w-full object-cover object-top sm:h-44"
+            sizes="300px"
             priority
           />
         </Link>
 
-        <div className="p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand-main">
+        <div className="px-3.5 py-3">
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-main">
             {copy.eyebrow}
           </p>
-          <h2 id="promo-popup-title" className="mt-1 text-xl font-bold leading-tight text-foreground">
+          <h2 id="promo-popup-title" className="mt-0.5 text-base font-bold leading-snug text-foreground">
             {copy.title}
           </h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{copy.subtitle}</p>
+          <p className="mt-1 text-xs leading-snug text-muted-foreground">{copy.subtitle}</p>
 
-          <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <div className="mt-3 flex flex-col gap-1.5">
             <Link
               href={promoHref}
               onClick={dismiss}
-              className="flex min-h-[44px] flex-1 items-center justify-center rounded-md bg-brand-main px-5 font-bold text-white transition-colors hover:bg-brand-dark"
+              className="flex min-h-[40px] items-center justify-center rounded-md bg-brand-main px-4 text-sm font-bold text-white transition-colors hover:bg-brand-dark"
             >
               {copy.cta}
             </Link>
             <button
               type="button"
               onClick={dismiss}
-              className="min-h-[44px] rounded-md border border-border px-5 text-sm text-muted-foreground transition-colors hover:bg-muted"
+              className="min-h-[36px] rounded-md px-4 text-xs text-muted-foreground transition-colors hover:bg-muted"
             >
               {copy.dismiss}
             </button>
