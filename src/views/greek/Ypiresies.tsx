@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
 import { PopularSearches } from '@/components/PopularSearches';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 
 export default function Ypiresies() {
   const services = [
@@ -122,6 +123,8 @@ export default function Ypiresies() {
 
         {/* Trust Signals */}
         <TrustSignals />
+
+        <PleiadesBanner lang="el" />
 
         {/* FAQs */}
         <FAQ items={servicesFAQs} title="Συχνές Ερωτήσεις για Υπηρεσίες" />

@@ -7,6 +7,7 @@ import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
 import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 import Link from 'next/link';
 
 interface WeddingPhoto {
@@ -159,6 +160,8 @@ export default function WeddingsEn() {
 
         {/* Trust Signals */}
         <TrustSignalsEn />
+
+        <PleiadesBanner lang="en" />
 
         {/* FAQs */}
         <FAQEn items={weddingFAQs} title="Frequently Asked Questions About Weddings" />

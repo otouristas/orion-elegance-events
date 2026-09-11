@@ -5,6 +5,7 @@ import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPi
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 import Link from 'next/link';
 
 interface VenuePhoto {
@@ -316,6 +317,8 @@ export default function VenueEn() {
 
         {/* Trust Signals */}
         <TrustSignalsEn />
+
+        <PleiadesBanner lang="en" />
 
         {/* FAQ Section */}
         <FAQEn items={venueFAQs} title="Frequently Asked Questions About the Venue" />

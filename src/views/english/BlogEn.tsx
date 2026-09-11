@@ -13,9 +13,11 @@ export default function BlogEn() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const categories = getAllCategories();
 
-  const filteredPosts = selectedCategory === 'all' 
+  const filteredPosts = (selectedCategory === 'all' 
     ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+    : blogPosts.filter(post => post.category === selectedCategory))
+    .slice()
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
     <Layout>
@@ -66,12 +68,12 @@ export default function BlogEn() {
               {filteredPosts.map(post => (
                 <Link key={post.slug} href={`/en/blog/${post.slug}`}>
                   <Card className="card-elegant hover:shadow-xl transition-all duration-300 group h-full">
-                    <div className="relative overflow-hidden rounded-t-lg h-48 w-full">
+                    <div className="relative overflow-hidden rounded-t-lg h-48 w-full bg-muted/40">
                       <Image
                         src={normalizePublicImageSrc(post.image)}
                         alt={post.titleEn}
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
+                        className={`${post.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-110 transition-transform duration-300`}
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                         loading="lazy"
                       />

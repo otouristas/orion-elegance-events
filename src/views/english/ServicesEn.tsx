@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FAQEn } from '@/components/english/FAQEn';
 import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 
 export default function ServicesEn() {
   const services = [
@@ -122,6 +123,8 @@ export default function ServicesEn() {
 
         {/* Trust Signals */}
         <TrustSignalsEn />
+
+        <PleiadesBanner lang="en" />
 
         {/* FAQs */}
         <FAQEn items={servicesFAQs} title="Frequently Asked Questions About Services" />
