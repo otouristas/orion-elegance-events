@@ -7,6 +7,7 @@ import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { CookieConsent } from '@/components/CookieConsent';
 import { CookieConsentEn } from '@/components/english/CookieConsentEn';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -22,17 +23,24 @@ export const Layout = ({ children, isTransparent = false, lang = 'el' }: LayoutP
       setIsScrolled(window.scrollY > 50);
     };
     handleScroll();
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="min-h-screen">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand-text focus:px-5 focus:py-3 focus:text-sm focus:text-white"
+      >
+        {lang === 'en' ? 'Skip to content' : 'Μετάβαση στο περιεχόμενο'}
+      </a>
       <Navigation isScrolled={isScrolled} isTransparent={isTransparent} />
-      <main>{children}</main>
+      <main id="main">{children}</main>
       <Footer />
       <BackToTop />
       <ContactFAB />
+      <ScrollReveal />
       {lang === 'en' ? <CookieConsentEn /> : <CookieConsent />}
     </div>
   );

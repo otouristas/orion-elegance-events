@@ -3,8 +3,8 @@ import Reviews from "@/views/greek/Reviews";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Κριτικές & Αξιολογήσεις | Κτήμα Ωρίων";
-const description = "Διαβάστε τις εμπειρίες ζευγαριών και οικογενειών από γάμους και βαπτίσεις στο Κτήμα Ωρίων.";
+const title = "Κριτικές & αξιολογήσεις για το Κτήμα Ωρίων";
+const description = "Τι λένε ζευγάρια και οικογένειες για τον γάμο ή τη βάπτισή τους στο Κτήμα Ωρίων στην Κερατέα. Πραγματικές κριτικές, με όνομα και ημερομηνία.";
 
 export const metadata: Metadata = buildMetadata({
   title,

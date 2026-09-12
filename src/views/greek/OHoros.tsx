@@ -133,22 +133,22 @@ export default function OHoros() {
   const venueHighlights = [
     {
       title: "Μαγευτικό Φυσικό Περιβάλλον",
-      description: "Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως την λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον.",
+      description: "Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως τη λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον.",
       icon: TreePine
     },
     {
       title: "Ιδανική Τοποθεσία",
-      description: "Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική οδό, μπορείτε να απολαύσετε τις ξεχωριστές στιγμές της ζωής σας.",
+      description: "Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική Οδό, μπορείτε να απολαύσετε τις ξεχωριστές στιγμές της ζωής σας.",
       icon: MapPin
     },
     {
       title: "Σύγχρονες Εγκαταστάσεις",
-      description: "Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται την θερμή υποδοχή και την απόλυτη φιλοξενία των καλεσμένων σας.",
+      description: "Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται τη θερμή υποδοχή και την απόλυτη φιλοξενία των καλεσμένων σας.",
       icon: Home
     },
     {
       title: "Κοντά σε Εκκλησάκια",
-      description: "Βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια πάνω στην θάλασσα για την τέλεση του μυστηρίου.",
+      description: "Βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια πάνω στη θάλασσα για την τέλεση του μυστηρίου.",
       icon: Heart
     }
   ];
@@ -167,7 +167,7 @@ export default function OHoros() {
       icon: Users
     },
     {
-      title: "Εταιρικές Εκδηλώσεις",
+      title: "Εταιρικές εκδηλώσεις",
       description: "Η επαγγελματική σας εκδήλωση επαγγελματική μας ευθύνη. Η εμπειρία των συνεργατών μας καθιστεί τον χώρο μας ιδανικό για επιτυχημένες εκδηλώσεις.",
       count: "100+",
       icon: Star
@@ -185,8 +185,8 @@ export default function OHoros() {
     { question: "Ποια είναι η χωρητικότητα του χώρου;", answer: "Ο χώρος μας μπορεί να φιλοξενήσει μεγάλες εκδηλώσεις με εκτεταμένο χώρο στάθμευσης για πάνω από 100 οχήματα. Διαθέτουμε τόσο κλειστούς κλιματιζόμενους όσο και εξωτερικούς χώρους." },
     { question: "Υπάρχει χώρος στάθμευσης;", answer: "Ναι, διαθέτουμε τεράστιο δωρεάν χώρο στάθμευσης με πάνω από 100 θέσεις για όλους τους καλεσμένους σας." },
     { question: "Έχετε εσωτερικούς και εξωτερικούς χώρους;", answer: "Ναι, προσφέρουμε πλήρως κλιματιζόμενη εσωτερική αίθουσα και μαγευτική ημιυπαίθρια παγόδα, κατάλληλη για όλες τις εποχές και τις καιρικές συνθήκες." },
-    { question: "Μπορούμε να επισκεφτούμε τον χώρο πριν την κράτηση;", answer: "Απολύτως! Ενθαρρύνουμε τα ζευγάρια να επισκεφτούν το Κτήμα Ωρίων και να δουν από κοντά το μαγευτικό περιβάλλον που θα φιλοξενήσει την εκδήλωσή τους. Επικοινωνήστε μαζί μας για να κανονίσουμε μια δωρεάν ξενάγηση." },
-    { question: "Είστε κοντά σε εκκλησίες;", answer: "Ναι, βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια δίπλα στη θάλασσα (5-15 λεπτά), ιδανικά για γαμήλιες και βαπτιστικές τελετές." }
+    { question: "Μπορούμε να επισκεφτούμε τον χώρο πριν την κράτηση;", answer: "Βεβαίως. Ενθαρρύνουμε τα ζευγάρια να επισκεφτούν το Κτήμα Ωρίων και να δουν από κοντά το μαγευτικό περιβάλλον που θα φιλοξενήσει την εκδήλωσή τους. Επικοινωνήστε μαζί μας για να κανονίσουμε μια δωρεάν ξενάγηση." },
+    { question: "Είστε κοντά σε εκκλησίες;", answer: "Ναι, βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια δίπλα στη θάλασσα (6–13 λεπτά), ιδανικά για γαμήλιες και βαπτιστικές τελετές." }
   ];
 
   return (
@@ -195,23 +195,23 @@ export default function OHoros() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient-brand">Ο Χώρος</span>
+            <h1 className="font-heading mb-6">
+              <span className="text-gradient-brand">Ο χώρος</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               Κτήμα Ωρίων - Μαγευτικός Χώρος για Εκδηλώσεις
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως την λάμψη της πολυτέλειας 
-                σε απόλυτη αρμονία με το φυσικό περιβάλλον. Ιδανικό για <Link href="/gamos" className="text-brand-main hover:underline">γάμους</Link>, <Link href="/vaptisi" className="text-brand-main hover:underline">βαπτίσεις</Link> και εταιρικές εκδηλώσεις. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική οδό, 
+                Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως τη λάμψη της πολυτέλειας 
+                σε απόλυτη αρμονία με το φυσικό περιβάλλον. Ιδανικό για <Link href="/gamos" className="text-brand-main hover:underline">γάμους</Link>, <Link href="/vaptisi" className="text-brand-main hover:underline">βαπτίσεις</Link> και εταιρικές εκδηλώσεις. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική Οδό, 
                 μπορείτε να απολαύσετε τις ξεχωριστές στιγμές της ζωής σας.
               </p>
               
               <p>
-                Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται την θερμή υποδοχή 
-                και την απόλυτη φιλοξενία των καλεσμένων σας. Βρισκόμαστε πολύ κοντά σε <Link href="/ekklisies" className="text-brand-main hover:underline">γραφικά εκκλησάκια</Link> πάνω στην θάλασσα 
+                Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται τη θερμή υποδοχή 
+                και την απόλυτη φιλοξενία των καλεσμένων σας. Βρισκόμαστε πολύ κοντά σε <Link href="/ekklisies" className="text-brand-main hover:underline">γραφικά εκκλησάκια</Link> πάνω στη θάλασσα 
                 για την τέλεση του μυστηρίου.
               </p>
             </div>
@@ -221,7 +221,7 @@ export default function OHoros() {
         {/* Venue Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Το Κτήμα διαθέτει:</span>
             </h2>
 
@@ -230,7 +230,7 @@ export default function OHoros() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -242,7 +242,7 @@ export default function OHoros() {
         {/* Venue Highlights */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Γιατί το Κτήμα Ωρίων;</span>
             </h2>
 
@@ -253,7 +253,7 @@ export default function OHoros() {
                     <div className="flex items-start space-x-4">
                       <highlight.icon className="w-12 h-12 text-brand-main flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="text-xl font-bold text-gradient-brand mb-4">{highlight.title}</h3>
+                        <h3 className="font-heading text-gradient-brand mb-4">{highlight.title}</h3>
                         <p className="text-muted-foreground leading-relaxed">{highlight.description}</p>
                       </div>
                     </div>
@@ -267,7 +267,7 @@ export default function OHoros() {
         {/* Event Statistics */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Οι Εκδηλώσεις μας</span>
             </h2>
 
@@ -277,7 +277,7 @@ export default function OHoros() {
                   <CardContent className="p-8">
                     <event.icon className="w-16 h-16 text-brand-main mx-auto mb-4" />
                     <div className="text-3xl font-bold text-brand-main mb-2">{event.count}</div>
-                    <h3 className="text-xl font-bold mb-4">{event.title}</h3>
+                    <h3 className="font-heading mb-4">{event.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{event.description}</p>
                   </CardContent>
                 </Card>
@@ -289,7 +289,7 @@ export default function OHoros() {
         {/* Comprehensive Photo Gallery */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Φωτογραφίες Χώρου</span>
             </h2>
 
@@ -313,7 +313,7 @@ export default function OHoros() {
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="font-heading mb-6">
                   <span className="text-gradient-brand">Η Συνεργασία μας</span>
                 </h2>
                 <div className="space-y-6">
@@ -333,7 +333,7 @@ export default function OHoros() {
               </div>
               
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Υπεύθυνη χώρου</h3>
+                <h3 className="font-heading mb-6">Υπεύθυνη χώρου</h3>
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center">
                     <Heart className="w-8 h-8 text-white" />
@@ -344,7 +344,7 @@ export default function OHoros() {
                   </div>
                 </div>
                 <p className="text-muted-foreground">
-                  Με εμπειρία και αγάπη για την φιλοξενία, η Μπούσουλα Παναγιώτα εξασφαλίζει
+                  Με εμπειρία και αγάπη για τη φιλοξενία, η Μπούσουλα Παναγιώτα εξασφαλίζει
                   ότι κάθε εκδήλωση στο Κτήμα Ωρίων θα είναι άψογη και αξέχαστη.
                 </p>
               </div>
@@ -358,7 +358,7 @@ export default function OHoros() {
         <TrustSignals />
 
         {/* FAQ Section */}
-        <FAQ items={venueFAQs} title="Συχνές Ερωτήσεις για τον Χώρο" />
+        <FAQ items={venueFAQs} title="Συχνές ερωτήσεις για τον Χώρο" />
 
         {/* Popular Searches */}
         <PopularSearches 
@@ -374,7 +374,7 @@ export default function OHoros() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Επισκεφτείτε το Κτήμα Ωρίων
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

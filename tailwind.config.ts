@@ -8,16 +8,20 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      // Was a flat 2rem, which spent 64px of a 360px phone on side gutters.
+      padding: { DEFAULT: "1.25rem", sm: "1.5rem", lg: "2rem", "2xl": "3rem" },
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        heading: ["Inter", "system-ui", "sans-serif"],
-        body: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        body: ["var(--font-inter)", "system-ui", "sans-serif"],
+        // Display face for headings. Previously this pointed at Inter too,
+        // so the site had no heading voice at all.
+        heading: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -63,6 +67,7 @@ export default {
         "brand-text": "hsl(var(--brand-text))",
         "brand-light": "hsl(var(--brand-light))",
         "brand-dark": "hsl(var(--brand-dark))",
+        "brand-deep": "hsl(var(--brand-deep))",
         champagne: "hsl(var(--cream))",
         forest: "hsl(var(--brand-text))",
         cream: "hsl(var(--cream))",

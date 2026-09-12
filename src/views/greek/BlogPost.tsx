@@ -21,7 +21,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
       <Layout>
         <div className="pt-20 min-h-screen flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Το άρθρο δεν βρέθηκε</h1>
+            <h1 className="font-heading mb-4">Το άρθρο δεν βρέθηκε</h1>
             <Link href="/blog" className="text-brand-main hover:underline">
               Επιστροφή στο Blog
             </Link>
@@ -141,7 +141,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-foreground">
+            <h1 className="font-heading mb-8 leading-tight text-foreground">
               {post.title}
             </h1>
 
@@ -170,10 +170,10 @@ export default function BlogPost({ slug }: BlogPostProps) {
               <ReactMarkdown
                 components={{
                   // Headings
-                  h1: ({node, ...props}) => <h1 className="text-4xl md:text-5xl font-bold mt-12 mb-6 text-foreground leading-tight" {...props} />,
-                  h2: ({node, ...props}) => <h2 className="text-3xl md:text-4xl font-bold mt-10 mb-5 text-brand-main leading-tight" {...props} />,
-                  h3: ({node, ...props}) => <h3 className="text-2xl md:text-3xl font-bold mt-8 mb-4 text-foreground leading-tight" {...props} />,
-                  h4: ({node, ...props}) => <h4 className="text-xl md:text-2xl font-semibold mt-6 mb-3 text-foreground" {...props} />,
+                  h1: ({node, ...props}) => <h1 className="font-heading mt-12 mb-6 text-foreground leading-tight" {...props} />,
+                  h2: ({node, ...props}) => <h2 className="font-heading mt-10 mb-5 text-brand-main leading-tight" {...props} />,
+                  h3: ({node, ...props}) => <h3 className="font-heading mt-8 mb-4 text-foreground leading-tight" {...props} />,
+                  h4: ({node, ...props}) => <h4 className="font-heading mt-6 mb-3 text-foreground" {...props} />,
                   
                   // Paragraphs
                   p: ({node, ...props}) => <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground/90" {...props} />,
@@ -232,7 +232,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
 
             {post.category === 'wedding' ? (
               <aside className="mt-12 rounded-2xl border border-brand-main/20 bg-brand-main/5 p-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                <h2 className="font-heading text-foreground">
                   Αναζητάτε κτήμα γάμου στην Αθήνα;
                 </h2>
                 <p className="mt-3 text-lg leading-relaxed text-muted-foreground">
@@ -240,7 +240,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
                   γαμήλια δεξίωση, parking και κοντινές εκκλησίες.
                 </p>
                 <Link
-                  href="/el/ktima-gamou-athina"
+                  href="/ktima-gamou"
                   className="mt-5 inline-flex font-bold text-brand-main underline underline-offset-4"
                 >
                   Κτήμα γάμου στην Αθήνα →
@@ -282,7 +282,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
         {relatedPosts.length > 0 && (
           <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
             <div className="container-max">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <h2 className="font-heading text-center mb-12">
                 <span className="text-gradient-brand">Σχετικά Άρθρα</span>
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
@@ -294,14 +294,14 @@ export default function BlogPost({ slug }: BlogPostProps) {
                           src={normalizePublicImageSrc(relatedPost.image)}
                           alt={relatedPost.title}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="object-cover transition-transform duration-300"
                           sizes="(min-width: 768px) 33vw, 100vw"
                           loading="lazy"
                         />
                       </div>
                       <div className="p-6">
                         <span className="text-sm text-brand-main">{relatedPost.categoryLabel}</span>
-                        <h3 className="text-xl font-bold mt-2 mb-3 group-hover:text-brand-main transition-colors">
+                        <h3 className="font-heading mt-2 mb-3 group-hover:text-brand-main transition-colors">
                           {relatedPost.title}
                         </h3>
                         <p className="text-muted-foreground line-clamp-2">{relatedPost.excerpt}</p>
@@ -317,7 +317,7 @@ export default function BlogPost({ slug }: BlogPostProps) {
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ετοιμοι για την Εκδήλωσή σας;
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

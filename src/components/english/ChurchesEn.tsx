@@ -56,7 +56,7 @@ export const ChurchesEn = () => {
     <section id="churches" className="section-padding bg-gradient-to-b from-champagne to-background">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Picturesque <span className="text-gradient-brand">Chapels</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
@@ -68,8 +68,8 @@ export const ChurchesEn = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {churches.map((church, index) => (
-            <div key={index} className="card-elegant p-6 group hover:scale-105 transition-all duration-300">
-              <h3 className="text-xl font-bold text-gradient-brand mb-2">
+            <div key={index} className="card-elegant p-6 group transition-all duration-300">
+              <h3 className="font-heading text-gradient-brand mb-2">
                 {church.name}
               </h3>
               
@@ -94,7 +94,7 @@ export const ChurchesEn = () => {
 
         <div className="mt-12 text-center">
           <div className="card-elegant p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gradient-brand mb-4">
+            <h3 className="font-heading text-gradient-brand mb-4">
               A Magical Combination
             </h3>
             <p className="text-lg text-muted-foreground mb-6">

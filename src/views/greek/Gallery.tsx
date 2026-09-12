@@ -545,11 +545,11 @@ export default function Gallery() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Φωτογραφίες</span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-3xl mx-auto mb-8">
-              Ανακαλύψτε τη μαγεία του Κτήματος Ωρίων μέσα από τις φωτογραφίες μας. 
+              Δείτε από κοντά το Κτήματος Ωρίων μέσα από τις φωτογραφίες μας. 
               Κάθε εικόνα αφηγείται μια ιστορία αγάπης, χαράς και αξέχαστων αναμνήσεων.
             </p>
             <div className="text-muted-foreground">
@@ -575,7 +575,7 @@ export default function Gallery() {
                       src={getImageUrl(image)}
                       alt={`Gallery image ${index + 1}`}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      className="object-cover transition-transform duration-300"
                       sizes="(min-width: 1280px) 20vw, (min-width: 768px) 33vw, 50vw"
                       loading="lazy"
                     />

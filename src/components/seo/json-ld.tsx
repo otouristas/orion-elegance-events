@@ -13,6 +13,75 @@ import {
   GEO_LNG,
   GOOGLE_MAPS_URL,
 } from "@/lib/seo/config";
+import {
+  AVERAGE_RATING,
+  REVIEW_COUNT,
+  guestReviews,
+  reviewIsoDate,
+} from "@/data/reviews";
+
+/** Guest capacity, stated identically in the copy, the FAQ and llms.txt. */
+const MIN_CAPACITY = 50;
+const MAX_CAPACITY = 350;
+
+/**
+ * Amenities a visitor can verify on the site. Kept deliberately short — every
+ * entry corresponds to something stated on /o-horos.
+ */
+const AMENITIES: readonly string[] = [
+  "Δωρεάν parking 100+ θέσεων",
+  "Κλιματιζόμενη αίθουσα",
+  "Κήπος με θέα στη θάλασσα",
+  "Ημιυπαίθρια παγόδα",
+  "Πισίνα",
+  "Χώρος παιχνιδιού για παιδιά",
+];
+
+function amenityFeature() {
+  return AMENITIES.map((name) => ({
+    "@type": "LocationFeatureSpecification" as const,
+    name,
+    value: true,
+  }));
+}
+
+/**
+ * Rating over the reviews published on /reviews.
+ *
+ * Note for anyone extending this: Google has excluded self-serving reviews —
+ * reviews about a business, hosted on that business's own site — from
+ * LocalBusiness star rich results since 2019, so this will not put stars in the
+ * SERP. It is here because answer engines read it, and because the values are
+ * computed from the reviews on the page rather than asserted.
+ */
+function aggregateRating() {
+  return {
+    "@type": "AggregateRating" as const,
+    ratingValue: AVERAGE_RATING,
+    reviewCount: REVIEW_COUNT,
+    bestRating: 5,
+    worstRating: 1,
+  };
+}
+
+/** A few representative reviews, only those carrying a real publication date. */
+function sampleReviews() {
+  return guestReviews
+    .filter((review) => reviewIsoDate(review) !== undefined)
+    .slice(0, 5)
+    .map((review) => ({
+      "@type": "Review" as const,
+      author: { "@type": "Person" as const, name: review.name },
+      datePublished: reviewIsoDate(review),
+      reviewRating: {
+        "@type": "Rating" as const,
+        ratingValue: review.rating,
+        bestRating: 5,
+        worstRating: 1,
+      },
+      reviewBody: review.text,
+    }));
+}
 
 export interface BreadcrumbItem {
   readonly name: string;
@@ -88,7 +157,21 @@ export function JsonLd({
       email: EMAIL,
       sameAs,
       priceRange: "€€€",
+      currenciesAccepted: "EUR",
       hasMap: GOOGLE_MAPS_URL,
+      foundingDate: "2009",
+      maximumAttendeeCapacity: MAX_CAPACITY,
+      amenityFeature: amenityFeature(),
+      aggregateRating: aggregateRating(),
+      review: sampleReviews(),
+      areaServed: [
+        "Κερατέα",
+        "Λαύριο",
+        "Μαρκόπουλο",
+        "Πόρτο Ράφτη",
+        "Ανατολική Αττική",
+        "Αθήνα",
+      ].map((name) => ({ "@type": "Place" as const, name })),
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -134,6 +217,10 @@ export function JsonLd({
       geo,
       telephone: PHONE,
       priceRange: "€€€",
+      maximumAttendeeCapacity: MAX_CAPACITY,
+      amenityFeature: amenityFeature(),
+      aggregateRating: aggregateRating(),
+      isAccessibleForFree: false,
     };
   }
   return (
@@ -296,7 +383,14 @@ export interface FaqJsonLdProps {
   readonly items: readonly { question: string; answer: string }[];
 }
 
-/** FAQPage structured data for rich results. */
+/**
+ * FAQPage structured data.
+ *
+ * Google restricted FAQ rich results to government and health sites in August
+ * 2023, so this no longer produces SERP accordions. It is kept because answer
+ * engines parse it directly, and it remains the cleanest machine-readable form
+ * of the questions people actually ask before booking.
+ */
 export function FaqJsonLd({ items }: FaqJsonLdProps): ReactElement {
   const data = {
     "@context": "https://schema.org",
@@ -309,6 +403,116 @@ export function FaqJsonLd({ items }: FaqJsonLdProps): ReactElement {
         text: item.answer,
       },
     })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export interface ServiceOffer {
+  /** Price per person in euro, where a published figure exists. */
+  readonly price?: number;
+  readonly name: string;
+  readonly description?: string;
+}
+
+export interface ServiceJsonLdProps {
+  readonly name: string;
+  readonly description: string;
+  readonly canonicalPath: string;
+  readonly offers?: readonly ServiceOffer[];
+}
+
+/**
+ * A service the venue provides (wedding reception, baptism, corporate event).
+ *
+ * Prices are per person and must match a figure published on the page — the
+ * baptism packages are the only ones with public pricing, so they are the only
+ * ones that pass `price`.
+ */
+export function ServiceJsonLd({
+  name,
+  description,
+  canonicalPath,
+  offers = [],
+}: ServiceJsonLdProps): ReactElement {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    serviceType: name,
+    url: fullUrl(canonicalPath),
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: { "@type": "Place", name: "Αττική, Ελλάδα" },
+    ...(offers.length > 0
+      ? {
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name,
+            itemListElement: offers.map((offer) => ({
+              "@type": "Offer",
+              name: offer.name,
+              ...(offer.description ? { description: offer.description } : {}),
+              ...(offer.price !== undefined
+                ? {
+                    price: offer.price,
+                    priceCurrency: "EUR",
+                    priceSpecification: {
+                      "@type": "UnitPriceSpecification",
+                      price: offer.price,
+                      priceCurrency: "EUR",
+                      unitText: "άτομο",
+                    },
+                  }
+                : {}),
+            })),
+          },
+        }
+      : {}),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export interface BlogPostingJsonLdProps {
+  readonly headline: string;
+  readonly description: string;
+  readonly canonicalPath: string;
+  readonly datePublished: string;
+  readonly dateModified?: string;
+  readonly imagePath?: string;
+}
+
+/** Article markup for the planning guides. */
+export function BlogPostingJsonLd({
+  headline,
+  description,
+  canonicalPath,
+  datePublished,
+  dateModified,
+  imagePath,
+}: BlogPostingJsonLdProps): ReactElement {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline,
+    description,
+    mainEntityOfPage: { "@type": "WebPage", "@id": fullUrl(canonicalPath) },
+    url: fullUrl(canonicalPath),
+    datePublished,
+    dateModified: dateModified ?? datePublished,
+    inLanguage: "el",
+    author: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    ...(imagePath ? { image: fullUrl(imagePath) } : {}),
   };
   return (
     <script

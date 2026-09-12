@@ -20,7 +20,7 @@ export function HeroEn() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
       </div>
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+        <h1 className="font-heading mb-6 leading-tight">
           Ktima <span className="text-gradient-brand">Orion</span>
         </h1>
         <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-light">

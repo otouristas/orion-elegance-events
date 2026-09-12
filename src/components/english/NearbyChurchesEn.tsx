@@ -48,7 +48,7 @@ export const NearbyChurchesEn = () => {
       <div className="container-max">
         <div className="text-center mb-12">
           <Church className="w-16 h-16 text-brand-main mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading mb-4">
             <span className="text-gradient-brand">Nearby Churches</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -65,7 +65,7 @@ export const NearbyChurchesEn = () => {
                     <div className="w-12 h-12 bg-brand-main/10 rounded-full flex items-center justify-center">
                       <Church className="w-6 h-6 text-brand-main" />
                     </div>
-                    <h3 className="font-bold text-sm leading-tight">{church.name}</h3>
+                    <h3 className="font-heading leading-tight">{church.name}</h3>
                     <div className="flex items-center gap-2 text-xs text-muted-foreground">
                       <MapPin className="w-4 h-4" />
                       <span>{church.distance}</span>

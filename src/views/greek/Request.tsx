@@ -101,7 +101,7 @@ export default function Request() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Αίτημα Πληροφοριών</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -115,7 +115,7 @@ export default function Request() {
                 <div className="flex items-center justify-center mb-4">
                   <CheckCircle className="w-12 h-12 text-green-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-green-800 mb-2">Το αίτημά σας στάλθηκε επιτυχώς!</h3>
+                <h3 className="font-heading text-green-800 mb-2">Το αίτημά σας στάλθηκε επιτυχώς!</h3>
                 <p className="text-green-700">
                   Σας ευχαριστούμε! Λάβαμε το μήνυμά σας και θα επικοινωνήσουμε μαζί σας εντός 24 ωρών.
                   Ένα email επιβεβαίωσης έχει σταλεί στο {confirmationEmail || 'email σας'}.
@@ -129,7 +129,7 @@ export default function Request() {
                 <div className="flex items-center justify-center mb-4">
                   <AlertCircle className="w-12 h-12 text-red-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-red-800 mb-2">Σφάλμα αποστολής</h3>
+                <h3 className="font-heading text-red-800 mb-2">Σφάλμα αποστολής</h3>
                 <p className="text-red-700">{errorMessage}</p>
               </div>
             )}
@@ -144,7 +144,7 @@ export default function Request() {
                 <form action={FORMSPREE_FORM_ACTION} method="POST" onSubmit={handleSubmit} className="space-y-8">
                   {/* Personal Information */}
                   <div>
-                    <h3 className="text-2xl font-bold text-gradient-brand mb-6">Προσωπικές Πληροφορίες</h3>
+                    <h3 className="font-heading text-gradient-brand mb-6">Προσωπικές Πληροφορίες</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="firstName">Όνομα *</Label>
@@ -192,7 +192,7 @@ export default function Request() {
 
                   {/* Event Information */}
                   <div>
-                    <h3 className="text-2xl font-bold text-gradient-brand mb-6">Πληροφορίες Εκδήλωσης</h3>
+                    <h3 className="font-heading text-gradient-brand mb-6">Πληροφορίες Εκδήλωσης</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="eventType">Τύπος Εκδήλωσης *</Label>
@@ -244,7 +244,7 @@ export default function Request() {
 
                   {/* Additional Information */}
                   <div>
-                    <h3 className="text-2xl font-bold text-gradient-brand mb-6">Επιπλέον Πληροφορίες</h3>
+                    <h3 className="font-heading text-gradient-brand mb-6">Επιπλέον Πληροφορίες</h3>
                     <div className="space-y-6">
                       <div className="space-y-2">
                         <Label htmlFor="specialRequests">Ειδικές Απαιτήσεις ή Παρατηρήσεις</Label>
@@ -277,7 +277,7 @@ export default function Request() {
 
                   {/* Services Interest */}
                   <div>
-                    <h3 className="text-2xl font-bold text-gradient-brand mb-6">Υπηρεσίες Ενδιαφέροντος</h3>
+                    <h3 className="font-heading text-gradient-brand mb-6">Υπηρεσίες Ενδιαφέροντος</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <label className="flex items-center space-x-3 cursor-pointer">
                         <input 
@@ -339,7 +339,7 @@ export default function Request() {
                       )}
                     </Button>
                     <p className="text-sm text-muted-foreground mt-4">
-                      Υποβάλλοντας αυτή την φόρμα συμφωνείτε με τους όρους μας και την 
+                      Υποβάλλοντας αυτή τη φόρμα συμφωνείτε με τους όρους μας και την 
                       Πολιτική για Προστασία προσωπικών δεδομένων
                     </p>
                   </div>
@@ -357,7 +357,7 @@ export default function Request() {
                 <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center mb-4">
                   <Phone className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Τηλέφωνο</h3>
+                <h3 className="font-heading mb-2">Τηλέφωνο</h3>
                 <p className="text-muted-foreground">2299068812</p>
                 <p className="text-muted-foreground">6981889560</p>
               </div>
@@ -365,14 +365,14 @@ export default function Request() {
                 <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center mb-4">
                   <Mail className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Email</h3>
+                <h3 className="font-heading mb-2">Email</h3>
                 <p className="text-muted-foreground">info@ktimaorion.gr</p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center mb-4">
                   <Calendar className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Ώρες Λειτουργίας</h3>
+                <h3 className="font-heading mb-2">Ώρες Λειτουργίας</h3>
                 <p className="text-muted-foreground">Δευτέρα - Κυριακή</p>
                 <p className="text-muted-foreground">9:00 - 21:00</p>
               </div>

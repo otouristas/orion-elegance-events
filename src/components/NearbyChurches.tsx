@@ -1,94 +1,63 @@
 import Link from 'next/link';
-import { Card, CardContent } from '@/components/ui/card';
 import { Church, MapPin, Clock } from 'lucide-react';
+import { CHURCH_COUNT, CHURCH_MINUTES_RANGE, churches } from '@/data/churches';
 
-interface ChurchItem {
-  name: string;
-  distance: string;
-  time: string;
-  link: string;
-}
-
+/**
+ * Compact cross-link module for the wedding and baptism pages. The homepage
+ * uses the fuller `Churches` section instead — the two used to render one after
+ * the other there, repeating the same five churches on a single page.
+ */
 export const NearbyChurches = () => {
-  const churches: ChurchItem[] = [
-    {
-      name: "Άγιος Αλέξανδρος, Δασκαλειό",
-      distance: "3,8 χλμ",
-      time: "8'",
-      link: "/el/ekklisies/agios-alexandros-daskaleio"
-    },
-    {
-      name: "Παναγία Γκαρικά, Κερατέα",
-      distance: "3,1 χλμ",
-      time: "6'",
-      link: "/el/ekklisies/panagia-gkarika"
-    },
-    {
-      name: "Αγία Τριάδα, Κερατέα",
-      distance: "5 χλμ",
-      time: "10'",
-      link: "/el/ekklisies/agia-triada"
-    },
-    {
-      name: "Προφήτης Ηλίας, Θορικό",
-      distance: "8,8 χλμ",
-      time: "11'",
-      link: "/ekklisies"
-    },
-    {
-      name: "Άγιος Παντελεήμονας, Κερατέα",
-      distance: "8,6 χλμ",
-      time: "13'",
-      link: "/el/ekklisies/agios-panteleimonas-keratea"
-    }
-  ];
-
   return (
     <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
       <div className="container-max">
-        <div className="text-center mb-12">
-          <Church className="w-16 h-16 text-brand-main mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-gradient-brand">Κοντινές Εκκλησίες</span>
+        <div className="reveal mx-auto max-w-2xl text-center">
+          <p className="eyebrow">Για την τελετή</p>
+          <h2 className="rule-brand rule-brand-center mt-4 font-heading text-brand-text">
+            Κοντινές εκκλησίες
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Παραθαλάσσια εκκλησάκια για την τελετή σας, σε απόσταση αναπνοής από το κτήμα
+          <p className="mt-8 text-lg text-muted-foreground">
+            {CHURCH_COUNT} παραθαλάσσια εκκλησάκια, {CHURCH_MINUTES_RANGE} λεπτά
+            με το αυτοκίνητο από το κτήμα.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {churches.map((church, index) => (
-            <Link key={index} href={church.link}>
-              <Card className="card-elegant h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="w-12 h-12 bg-brand-main/10 rounded-full flex items-center justify-center">
-                      <Church className="w-6 h-6 text-brand-main" />
-                    </div>
-                    <h3 className="font-bold text-sm leading-tight">{church.name}</h3>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <MapPin className="w-4 h-4" />
-                      <span>{church.distance}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <Clock className="w-4 h-4" />
-                      <span>{church.time} οδικώς</span>
-                    </div>
-                    <div className="text-brand-main font-semibold text-xs">
-                      Δείτε Λεπτομέρειες →
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+            <li
+              key={church.href}
+              className="reveal"
+              style={{ transitionDelay: `${index * 60}ms` }}
+            >
+              <Link
+                href={church.href}
+                className="card-elegant flex h-full flex-col items-center gap-3 p-6 text-center"
+              >
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-main/10">
+                  <Church className="h-5 w-5 text-brand-deep" aria-hidden="true" />
+                </span>
+                <h3 className="font-heading text-lg leading-tight text-brand-text">
+                  {church.name}
+                </h3>
+                <p className="text-xs text-muted-foreground">{church.location}</p>
+                <div className="mt-auto flex flex-col gap-1 pt-3 text-xs text-muted-foreground">
+                  <span className="flex items-center justify-center gap-1.5">
+                    <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+                    {church.distance}
+                  </span>
+                  <span className="flex items-center justify-center gap-1.5">
+                    <Clock className="h-3.5 w-3.5" aria-hidden="true" />
+                    {church.minutes} λεπτά οδικώς
+                  </span>
+                </div>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <div className="text-center mt-8">
-          <Link href="/ekklisies">
-            <button className="button button4">
-              ΔΕΙΤΕ ΟΛΕΣ ΤΙΣ ΕΚΚΛΗΣΙΕΣ
-            </button>
+        <div className="reveal mt-10 text-center">
+          <Link href="/ekklisies" className="button button4">
+            Δείτε όλες τις εκκλησίες
           </Link>
         </div>
       </div>

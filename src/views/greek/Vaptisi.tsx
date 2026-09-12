@@ -77,7 +77,7 @@ export default function Vaptisi() {
     { question: "Μπορώ να κάνω βάπτιση το μεσημέρι;", answer: "Φυσικά! Οι βαπτίσεις συνήθως γίνονται το μεσημέρι ακολουθούμενες από brunch ή μεσημεριανή δεξίωση." },
     { question: "Υπάρχει χώρος για τα παιδιά να παίξουν;", answer: "Ναι, διαθέτουμε ασφαλή εξωτερικό χώρο όπου τα παιδιά μπορούν να παίξουν υπό επίβλεψη." },
     { question: "Με ποιες εκκλησίες συνεργάζεστε για βαπτίσεις;", answer: "Συνεργαζόμαστε με 4 όμορφες παραθαλάσσιες εκκλησίες κοντά στο κτήμα: Άγιος Αλέξανδρος, Προφήτης Ηλίας, Άγιος Παντελεήμονας και Παναγία Γκαρικά." },
-    { question: "Μπορώ να φέρω τον δικό μου διακοσμητή;", answer: "Απολύτως! Είστε ελεύθεροι να επιλέξετε τους δικούς σας συνεργάτες ή να χρησιμοποιήσετε τους προτεινόμενους από εμάς." },
+    { question: "Μπορώ να φέρω τον δικό μου διακοσμητή;", answer: "Βεβαίως. Είστε ελεύθεροι να επιλέξετε τους δικούς σας συνεργάτες ή να χρησιμοποιήσετε τους προτεινόμενους από εμάς." },
     { question: "Πόσο διαρκεί η δεξίωση;", answer: "Η διάρκεια της δεξίωσης προσαρμόζεται στις ανάγκες σας, συνήθως 4-6 ώρες." },
     { question: "Παρέχετε ειδικό μενού για παιδιά;", answer: "Ναι, προσφέρουμε προσαρμοσμένο παιδικό μενού με επιλογές που αρέσουν στα παιδιά, όπως nuggets, πατάτες, μακαρόνια και πιο υγιεινές επιλογές." },
     { question: "Υπάρχει parking για τους καλεσμένους;", answer: "Ναι, έχουμε τεράστιο χώρο δωρεάν στάθμευσης με πάνω από 100 θέσεις." },
@@ -93,10 +93,10 @@ export default function Vaptisi() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Βάπτιση</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               Δημιουργήστε Αξέχαστες Αναμνήσεις για τη Βάπτιση του Παιδιού σας
             </h2>
             
@@ -108,7 +108,7 @@ export default function Vaptisi() {
               <p>
                 Η τελετή, αλλά και η <strong>δεξίωση βάπτισης</strong> που θα ακολουθήσει πρέπει να αντιπροσωπεύει την οικογένεια και για αυτό αξίζει ό,τι το καλύτερο. 
                 Θα πρέπει να μεταδίδει χαρά ώστε να δημιουργηθεί μια υπέροχη γιορτή για όλα τα αγαπημένα σας πρόσωπα. 
-                Με συναίσθηση της σημασίας που έχει η δεξίωση της βάπτισης στο <Link href="/o-horos" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>, στεκόμαστε δίπλα σας, ώστε μαζί σας να οργανώσουμε την βάπτιση του παιδιού σας, 
+                Με συναίσθηση της σημασίας που έχει η δεξίωση της βάπτισης στο <Link href="/o-horos" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>, στεκόμαστε δίπλα σας, ώστε μαζί σας να οργανώσουμε τη βάπτιση του παιδιού σας, 
                 με πολύ αγάπη και μεράκι. Κοντά σε <Link href="/ekklisies" className="text-brand-main hover:underline">παραθαλάσσια εκκλησάκια</Link>.
               </p>
               
@@ -122,7 +122,7 @@ export default function Vaptisi() {
         {/* Baptism Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Γιατί να επιλέξετε το Κτήμα Ωρίων;</span>
             </h2>
 
@@ -131,7 +131,7 @@ export default function Vaptisi() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -143,7 +143,7 @@ export default function Vaptisi() {
         {/* Services Section */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Υπηρεσίες Βάπτισης</span>
             </h2>
 
@@ -151,7 +151,7 @@ export default function Vaptisi() {
               {baptismServices.map((service, index) => (
                 <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
-                    <h3 className="text-xl font-bold text-gradient-brand mb-4">{service.title}</h3>
+                    <h3 className="font-heading text-gradient-brand mb-4">{service.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                   </CardContent>
                 </Card>
@@ -163,7 +163,7 @@ export default function Vaptisi() {
         {/* Photo Gallery */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Φωτογραφίες Βαπτίσεων</span>
             </h2>
 
@@ -187,18 +187,18 @@ export default function Vaptisi() {
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="font-heading mb-6">
                   <span className="text-gradient-brand">Ειδικές Λεπτομέρειες Βάπτισης</span>
                 </h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Ειδικό Μενού</h3>
+                    <h3 className="font-heading mb-3">Ειδικό Μενού</h3>
                     <p className="text-muted-foreground">
                       Προσαρμοσμένο μενού με επιλογές για όλες τις ηλικίες, συμπεριλαμβανομένων ειδικών πιάτων για παιδιά.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Φωτογραφία & Video</h3>
+                    <h3 className="font-heading mb-3">Φωτογραφία & Video</h3>
                     <p className="text-muted-foreground">
                       Επαγγελματική καταγραφή όλων των στιγμών - από την προετοιμασία έως το τέλος του πάρτι - 
                       για να διατηρήσετε για πάντα αυτές τις αξέχαστες στιγμές.
@@ -208,7 +208,7 @@ export default function Vaptisi() {
               </div>
               
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Γιατί το Κτήμα Ωρίων;</h3>
+                <h3 className="font-heading mb-6">Γιατί το Κτήμα Ωρίων;</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
                     <Heart className="w-6 h-6 text-brand-main mt-0.5" />
@@ -238,7 +238,7 @@ export default function Vaptisi() {
         <PleiadesBanner lang="el" />
 
         {/* FAQs */}
-        <FAQ items={baptismFAQs} title="Συχνές Ερωτήσεις για Βαπτίσεις" />
+        <FAQ items={baptismFAQs} title="Συχνές ερωτήσεις για Βαπτίσεις" />
 
         {/* Nearby Churches */}
         <NearbyChurches />
@@ -260,7 +260,7 @@ export default function Vaptisi() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ας κάνουμε τη βάπτιση του παιδιού σας αξέχαστη
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -272,7 +272,7 @@ export default function Vaptisi() {
                   ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
                 </button>
               </a>
-              <a href="/el/ktimata-vaptisis-athina">
+              <a href="/ktima-vaptisis">
                 <button className="button button4">
                   ΠΕΡΙΣΣΟΤΕΡΑ ΓΙΑ ΒΑΠΤΙΣΗ
                 </button>
@@ -281,7 +281,7 @@ export default function Vaptisi() {
             
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
-              <a href="/el/ktimata-vaptisis-athina" className="text-brand-main hover:underline">Κτήματα Βάπτισης Αθήνα</a>
+              <a href="/ktima-vaptisis" className="text-brand-main hover:underline">Κτήματα Βάπτισης Αθήνα</a>
               <span className="text-muted-foreground">•</span>
               <a href="/el/ekklisiaki-dipla-sti-thalassa" className="text-brand-main hover:underline">Εκκλησάκια</a>
               <span className="text-muted-foreground">•</span>

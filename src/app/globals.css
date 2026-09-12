@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Wedding Venue Design System - Elegant & Luxurious */
+/* ==========================================================================
+   Κτήμα Ωρίων — design system
+   Palette is unchanged (gold 36 27% 53%, navy 220 29% 26%, cream 36 25% 95%).
+   The redesign is structural and typographic: an editorial type scale, a real
+   heading face, hairline rules and calmer elevation in place of scale-on-hover.
+   ========================================================================== */
 
 @layer base {
   :root {
@@ -27,16 +32,39 @@
     --input: 36 20% 88%;
     --ring: 36 27% 53%;
     --radius: 0.75rem;
+
+    /* Brand — unchanged hues */
     --brand-main: 36 27% 53%;
     --brand-text: 220 29% 26%;
     --brand-light: 36 27% 75%;
     --brand-dark: 36 27% 35%;
     --cream: 36 25% 95%;
+
+    /* Same gold hue, darkened for body/heading text on light grounds.
+       The 53% lightness gold sits near 2.8:1 on white — under the 3:1 floor
+       for large text — so text uses this step and ornament keeps --brand-main. */
+    --brand-deep: 36 32% 31%;
+
     --gradient-main: linear-gradient(135deg, hsl(36 27% 53%), hsl(36 27% 45%));
     --gradient-elegant: linear-gradient(135deg, hsl(0 0% 100%), hsl(36 25% 95%));
     --gradient-dark: linear-gradient(135deg, hsl(220 29% 26%), hsl(220 29% 20%));
-    --font-heading: var(--font-inter), sans-serif;
-    --font-body: var(--font-inter), sans-serif;
+
+    --font-heading: var(--font-display), Georgia, 'Times New Roman', serif;
+    --font-body: var(--font-inter), system-ui, sans-serif;
+
+    /* Editorial measure and rhythm */
+    --measure: 68ch;
+    --hairline: 1px solid hsl(var(--brand-main) / 0.28);
+    --section-y: clamp(4rem, 9vw, 8.5rem);
+    --gutter: clamp(1.25rem, 5vw, 3rem);
+
+    /* Elevation — low, wide and warm rather than grey drop shadows */
+    --shadow-sm: 0 1px 2px hsl(220 29% 26% / 0.05);
+    --shadow-md: 0 8px 24px -12px hsl(220 29% 26% / 0.18);
+    --shadow-lg: 0 24px 56px -28px hsl(220 29% 26% / 0.28);
+
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -46,117 +74,246 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
 }
+
+/* The previous `.dark` block was unreachable: `darkMode: ["class"]` needs a
+   `.dark` class that nothing mounts (next-themes is a dependency but no
+   ThemeProvider is rendered), and it redefined no brand token, so enabling it
+   would have rendered the site brandless. Removed rather than left as a trap. */
 
 @layer base {
   * {
     @apply border-border;
   }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
     @apply bg-background text-foreground font-body;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
   }
+
+  /* Headings take the display face. The previous rule forced h1–h6 to the body
+     font, which flattened the hierarchy the design depends on. */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-body;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.12;
+    text-wrap: balance;
+  }
+
+  h1 { font-size: clamp(2.5rem, 6.2vw, 5rem); }
+  h2 { font-size: clamp(1.95rem, 4.2vw, 3.25rem); }
+  h3 { font-size: clamp(1.4rem, 2.4vw, 2rem); }
+  h4 { font-size: clamp(1.15rem, 1.7vw, 1.4rem); }
+
+  p { text-wrap: pretty; }
+
+  /* Visible, branded focus ring — the previous styles left keyboard users
+     with the browser default or nothing at all. */
+  :focus-visible {
+    outline: 2px solid hsl(var(--brand-main));
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
 @layer components {
+  /* ---- Layout primitives (used by ~75 files; redesigning them here is what
+         propagates the new look across the whole site) ---- */
+
+  .container-max {
+    @apply mx-auto w-full;
+    max-width: 80rem;
+    padding-inline: var(--gutter);
+  }
+
+  .section-padding {
+    padding-block: var(--section-y);
+    padding-inline: var(--gutter);
+  }
+
+  /* ---- Type ---- */
+
   .text-gradient-brand {
-    @apply bg-gradient-to-r from-brand-main to-brand-dark bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      100deg,
+      hsl(var(--brand-deep)),
+      hsl(var(--brand-dark))
+    );
     -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
   }
-  .btn-elegant {
-    @apply bg-brand-main text-white font-medium px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
+
+  /* Same accent on photography or navy, where the light end of the ramp is
+     the legible one. */
+  .text-gradient-brand-on-dark {
+    background-image: linear-gradient(
+      100deg,
+      hsl(var(--brand-light)),
+      hsl(var(--brand-main))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
-  .btn-secondary {
-    @apply bg-brand-text text-white font-medium px-8 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: hsl(var(--brand-deep));
   }
+
+  .measure {
+    max-width: var(--measure);
+  }
+
+  /* Thin gold rule used to open sections instead of heavy dividers. */
+  .rule-brand::after {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 1px;
+    margin-top: 1.25rem;
+    background: hsl(var(--brand-main));
+  }
+
+  .rule-brand-center::after {
+    margin-inline: auto;
+  }
+
+  /* ---- Surfaces ---- */
+
   .card-elegant {
-    @apply bg-card border border-border rounded-2xl shadow-md hover:shadow-lg transition-all duration-300;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
+    @apply bg-card rounded-2xl;
+    border: var(--hairline);
+    box-shadow: var(--shadow-sm);
+    transition:
+      box-shadow 0.4s var(--ease-out),
+      border-color 0.4s var(--ease-out),
+      transform 0.4s var(--ease-out);
   }
-  .section-padding {
-    @apply py-20 px-4 md:px-6 lg:px-8;
+
+  .card-elegant:hover {
+    box-shadow: var(--shadow-md);
+    border-color: hsl(var(--brand-main) / 0.55);
+    transform: translateY(-3px);
   }
-  .container-max {
-    @apply max-w-7xl mx-auto;
-  }
-  .button, .button1 {
-    font-size: 13px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  .button4 {
-    padding: 20px 50px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border: 2px solid;
-    border-radius: 30px;
-    min-height: auto;
-    line-height: 1.4;
-  }
-  button, .button, .buttoncat {
+
+  /* ---- Buttons ----
+     `.button`/`.button4` are inherited class names used in ~40 places across
+     the Greek and English trees. They are redefined here rather than renamed,
+     so the new button design reaches every call site without touching them. */
+
+  button,
+  .button,
+  .buttoncat {
     position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 0;
-    font-size: 17px;
-    font-weight: normal;
-    font-style: normal;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     text-align: center;
     text-decoration: none !important;
     cursor: pointer;
+    line-height: 1.35;
+  }
+
+  .button,
+  .buttoncat {
+    padding: 0.95rem 2rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
     white-space: nowrap;
-    background-clip: padding-box;
-    z-index: 1;
+    border-radius: 999px;
+    box-shadow: var(--shadow-sm);
+    transition:
+      background-color 0.35s var(--ease-out),
+      border-color 0.35s var(--ease-out),
+      box-shadow 0.35s var(--ease-out),
+      color 0.35s var(--ease-out);
+    /* `!important` is load-bearing, not sloppiness: most call sites are the
+       shadcn <Button>, whose `bg-primary` lands in @layer utilities and would
+       otherwise outrank anything declared here in @layer components. */
+    background-color: hsl(var(--brand-text)) !important;
+    color: #fff !important;
+    border: 1px solid hsl(var(--brand-text)) !important;
+  }
+
+  .button:hover,
+  .buttoncat:hover {
+    background-color: hsl(var(--brand-deep)) !important;
+    border-color: hsl(var(--brand-deep)) !important;
+    color: #fff !important;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Pill outline variant. Previously 20px/50px uppercase with a 2px border —
+     kept as a distinct shape, but sized and cased for Greek, where long
+     all-caps strings are markedly harder to read than in Latin. */
+  .button4 {
+    padding: 0.95rem 2.25rem;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0.01em;
+    border-radius: 999px;
     min-height: auto;
-    line-height: 1.4;
   }
-  .button {
-    background-color: #313b57 !important;
-    color: #ffffff !important;
-    border: 2px solid #313b57 !important;
+
+  .button-ghost {
+    background-color: transparent !important;
+    color: hsl(var(--brand-text)) !important;
+    border-color: hsl(var(--brand-main) / 0.55) !important;
+    box-shadow: none;
   }
-  .button:hover {
-    background-color: #ab9062 !important;
-    color: #ffffff !important;
-    border-color: #ab9062 !important;
+
+  .button-ghost:hover {
+    background-color: hsl(var(--brand-main) / 0.1) !important;
+    border-color: hsl(var(--brand-main)) !important;
+    color: hsl(var(--brand-deep)) !important;
+  }
+
+  /* ---- Scroll reveal (IntersectionObserver adds .is-visible) ---- */
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s var(--ease-out),
+      transform 0.7s var(--ease-out);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -167,20 +324,14 @@
   .backdrop-blur-sm {
     -webkit-backdrop-filter: blur(4px);
   }
-  .hover\:scale-105:hover {
-    -webkit-transform: scale(1.05);
-  }
-  .hover\:scale-110:hover {
-    -webkit-transform: scale(1.1);
-  }
-  img {
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-  }
   html {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+/* ==========================================================================
+   Blog article body
+   ========================================================================== */
 
 .blog-content {
   font-family: var(--font-body);
@@ -191,8 +342,8 @@
 .blog-content h3,
 .blog-content h4 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  letter-spacing: -0.015em;
 }
 .blog-content h2 {
   position: relative;
@@ -203,68 +354,55 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, hsl(var(--brand-main)), hsl(var(--brand-dark)));
-  border-radius: 2px;
+  width: 3rem;
+  height: 1px;
+  background: hsl(var(--brand-main));
 }
+/* Justified text was set with `hyphens: auto`, which Greek hyphenates poorly;
+   ragged-right is both safer and the normal setting for Greek body copy. */
 .blog-content p {
-  text-align: justify;
-  hyphens: auto;
-  word-spacing: 0.05em;
+  text-align: left;
+  text-wrap: pretty;
 }
 .blog-content a {
-  position: relative;
-  text-decoration-thickness: 2px;
+  color: hsl(var(--brand-deep));
+  text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
 .blog-content a:hover {
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 .blog-content ul li::marker,
 .blog-content ol li::marker {
   color: hsl(var(--brand-main));
-  font-weight: 600;
 }
 .blog-content img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.blog-content img:hover {
-  transform: scale(1.01);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
 }
 .blog-content blockquote {
   position: relative;
-}
-.blog-content blockquote::before {
-  content: '"';
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  font-size: 4rem;
-  color: hsl(var(--brand-main));
-  opacity: 0.2;
-  font-family: Georgia, serif;
-  line-height: 1;
+  border-left: 2px solid hsl(var(--brand-main));
+  padding-left: 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-style: italic;
 }
 .blog-content strong {
-  font-weight: 700;
+  font-weight: 600;
   color: hsl(var(--foreground));
 }
-.blog-content code {
-  font-family: 'Courier New', Courier, monospace;
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
 }
-@media (max-width: 768px) {
-  .blog-content {
-    font-size: 1rem;
-  }
-  .blog-content h1 {
-    font-size: 2rem;
-  }
-  .blog-content h2 {
-    font-size: 1.75rem;
-  }
-  .blog-content h3 {
-    font-size: 1.5rem;
-  }
+.blog-content th,
+.blog-content td {
+  border: 1px solid hsl(var(--border));
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+}
+.blog-content th {
+  background: hsl(var(--cream));
+  font-weight: 600;
 }

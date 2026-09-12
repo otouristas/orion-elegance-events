@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Cannibalisation cleanup. Five pages targeted the same "κτήμα γάμου"
+      // cluster and three the "κτήμα βάπτισης" one, so the site ranked 27–62
+      // for terms at KD 0–13. Their content is folded into the two pillars.
+      { source: "/el/ktima-gamou-athina", destination: "/ktima-gamou", permanent: true },
+      { source: "/el/ktima-gamou-athens-riviera", destination: "/ktima-gamou", permanent: true },
+      { source: "/el/ktimata-vaptisis-athina", destination: "/ktima-vaptisis", permanent: true },
       { source: "/index.php/:path*", destination: "/", permanent: true },
       { source: "/index", destination: "/", permanent: true },
       { source: "/o-xoros", destination: "/o-horos", permanent: true },

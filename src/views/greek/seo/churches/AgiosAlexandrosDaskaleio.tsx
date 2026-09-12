@@ -6,7 +6,7 @@ import { MapPin, Clock, Users, Car, Phone, Navigation2, Heart } from 'lucide-rea
 export default function AgiosAlexandrosDaskaleio() {
   const details = [
     { icon: MapPin, title: "Τοποθεσία", value: "Δασκαλειό, Κερατέα" },
-    { icon: Clock, title: "Απόσταση από Κτήμα", value: "10 λεπτά (5.2 km)" },
+    { icon: Clock, title: "Απόσταση από Κτήμα", value: "10 λεπτά (5,2 χλμ)" },
     { icon: Users, title: "Χωρητικότητα", value: "Η διαθεσιμότητα εξαρτάται, και μέσα και έξω. Ζητήστε πληροφορίες" },
     { icon: Car, title: "Parking", value: "Διαθέσιμο" }
   ];
@@ -17,7 +17,7 @@ export default function AgiosAlexandrosDaskaleio() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+              <h1 className="font-heading mb-6 text-center">
                 <span className="text-gradient-brand">Άγιος Αλέξανδρος Δασκαλειό</span>
               </h1>
               <p className="text-xl text-center text-muted-foreground mb-12">
@@ -40,7 +40,7 @@ export default function AgiosAlexandrosDaskaleio() {
 
               <Card className="card-elegant mb-8">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-4 text-gradient-brand">Περιγραφή</h2>
+                  <h2 className="font-heading mb-4 text-gradient-brand">Περιγραφή</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Ο Άγιος Αλέξανδρος στο Δασκαλειό είναι ένα από τα πιο γραφικά εκκλησάκια της περιοχής, 
                     με μοναδική θέα στη θάλασσα. Η τοποθεσία του το καθιστά ιδανικό για ρομαντικούς γάμους, 
@@ -55,7 +55,7 @@ export default function AgiosAlexandrosDaskaleio() {
 
               <Card className="card-elegant mb-8">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold mb-4 text-gradient-brand">Διαδρομή προς Κτήμα Ωρίων</h2>
+                  <h2 className="font-heading mb-4 text-gradient-brand">Διαδρομή προς Κτήμα Ωρίων</h2>
                   <ol className="space-y-3 text-muted-foreground">
                     <li className="flex items-start">
                       <span className="font-bold text-brand-main mr-2">1.</span>
@@ -89,7 +89,7 @@ export default function AgiosAlexandrosDaskaleio() {
               </div>
 
               <div className="text-center mt-8">
-                <Link href="/el/ktima-gamou-athina">
+                <Link href="/ktima-gamou">
                   <button className="button button4 mb-4">
                     Δείτε το Κτήμα Ωρίων
                   </button>

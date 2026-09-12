@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { ChurchJsonLd } from "@/components/seo/json-ld";
 
 const canonicalPath = "/el/ekklisies/agia-triada";
-const title = "Αγία Τριάδα Κερατέα | Εκκλησία Γάμου – Κτήμα Ωρίων";
+const title = "Αγία Τριάδα Κερατέας — εκκλησία για γάμο";
 const description =
   "Ο Ιερός Ναός Αγίας Τριάδος στην Κερατέα, 5 χλμ και 10 λεπτά από το Κτήμα Ωρίων. Πληροφορίες για την τελετή, πρόσβαση και συνδυασμό με τη δεξίωση.";
 

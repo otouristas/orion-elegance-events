@@ -88,11 +88,11 @@ export default function Emeis() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Εμείς</span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-5xl mx-auto mb-12">
-              Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως την λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική οδό, μπορείτε να απολαύσετε, με κάθε μεγαλοπρέπεια, τις ξεχωριστές στιγμές όπως το γάμο σας ή τη βάπτιση του παιδιού σας. Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται την θερμή υποδοχή και την απόλυτη φιλοξενία των καλεσμένων σας.
+              Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως τη λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική Οδό, μπορείτε να απολαύσετε, με κάθε μεγαλοπρέπεια, τις ξεχωριστές στιγμές όπως το γάμο σας ή τη βάπτιση του παιδιού σας. Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται τη θερμή υποδοχή και την απόλυτη φιλοξενία των καλεσμένων σας.
             </p>
             
             {/* Hero Images */}
@@ -116,7 +116,7 @@ export default function Emeis() {
         {/* Venue Features Section */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Το Κτήμα διαθέτει:</span>
             </h2>
             
@@ -125,7 +125,7 @@ export default function Emeis() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -153,21 +153,21 @@ export default function Emeis() {
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="font-heading mb-6">
                   <span className="text-gradient-brand">Η Συνεργασία μας</span>
                 </h2>
                 <div className="space-y-6 text-muted-foreground">
                   <p>
-                    Η συνεργασία μας, με πιστοποιημένα catering εξασφαλίζει, εκτός από το περιβάλλον και τη γαστριμαργική απόλαυση των καλεσμένων σας. Οι επιλεγμένοι συνεργάτες μας φροντίζουν για την μουσική και ηχητική κάλυψη της δεξίωσής σας.
+                    Η συνεργασία μας, με πιστοποιημένα catering εξασφαλίζει, εκτός από το περιβάλλον και τη γαστριμαργική απόλαυση των καλεσμένων σας. Οι επιλεγμένοι συνεργάτες μας φροντίζουν για τη μουσική και ηχητική κάλυψη της δεξίωσής σας.
                   </p>
                   <p>
-                    Το Κτήμα μας συνδυάζει, παρουσία, άρτια οργάνωση και υψηλό επίπεδο υπηρεσιών. Βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια πάνω στην θάλασσα για την τέλεση του μυστηρίου.
+                    Το Κτήμα μας συνδυάζει, παρουσία, άρτια οργάνωση και υψηλό επίπεδο υπηρεσιών. Βρισκόμαστε πολύ κοντά σε γραφικά εκκλησάκια πάνω στη θάλασσα για την τέλεση του μυστηρίου.
                   </p>
                 </div>
               </div>
               
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Υπεύθυνη χώρου</h3>
+                <h3 className="font-heading mb-6">Υπεύθυνη χώρου</h3>
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center">
                     <Heart className="w-8 h-8 text-white" />
@@ -178,7 +178,7 @@ export default function Emeis() {
                   </div>
                 </div>
                 <p className="text-muted-foreground mt-6">
-                  Με εμπειρία και αγάπη για την φιλοξενία, η Μπούσουλα Παναγιώτα εξασφαλίζει 
+                  Με εμπειρία και αγάπη για τη φιλοξενία, η Μπούσουλα Παναγιώτα εξασφαλίζει 
                   ότι κάθε εκδήλωση στο Κτήμα Ωρίων θα είναι άψογη και αξέχαστη.
                 </p>
               </div>
@@ -189,7 +189,7 @@ export default function Emeis() {
         {/* Values Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Οι Αξίες μας</span>
             </h2>
             
@@ -198,7 +198,7 @@ export default function Emeis() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <value.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-xl font-bold mb-3">{value.title}</h3>
+                    <h3 className="font-heading mb-3">{value.title}</h3>
                     <p className="text-muted-foreground">{value.description}</p>
                   </CardContent>
                 </Card>
@@ -211,7 +211,7 @@ export default function Emeis() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ας γνωριστούμε καλύτερα
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

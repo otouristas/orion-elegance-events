@@ -3,9 +3,9 @@ import Emeis from "@/views/greek/Emeis";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Ποιοι Είμαστε | Κτήμα Ωρίων Κερατέα από το 2009";
+const title = "Κτήμα Ωρίων: το κτήμα δεξιώσεων της Κερατέας από το 2009";
 const description =
-  "Κτήμα γάμου και βάπτισης στην Κερατέα Αττικής από το 2009. 50–350 καλεσμένοι, 100+ θέσεις δωρεάν parking και 4 εκκλησάκια σε 6–13 λεπτά.";
+  "Ποιοι είμαστε: οικογενειακό κτήμα δεξιώσεων στην Κερατέα από το 2009, με πάνω από 500 γάμους και βαπτίσεις. Γνωρίστε την ομάδα και τον χώρο μας.";
 
 export const metadata: Metadata = buildMetadata({
   title,

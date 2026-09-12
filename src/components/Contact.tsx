@@ -67,7 +67,7 @@ export const Contact = () => {
     <section id="contact" className="section-padding bg-gradient-to-b from-background to-champagne">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             <span className="text-gradient-brand">Επικοινωνία</span>
           </h2>
           <p className="text-xl text-muted-foreground">
@@ -80,7 +80,7 @@ export const Contact = () => {
               <div className="flex items-center justify-center mb-4">
                 <CheckCircle className="w-12 h-12 text-green-500" />
               </div>
-              <h3 className="text-2xl font-bold text-green-800 mb-2">Το μήνυμά σας στάλθηκε επιτυχώς!</h3>
+              <h3 className="font-heading text-green-800 mb-2">Το μήνυμά σας στάλθηκε επιτυχώς!</h3>
               <p className="text-green-700">
                 Σας ευχαριστούμε! Λάβαμε το μήνυμά σας και θα επικοινωνήσουμε μαζί σας το συντομότερο.
               </p>
@@ -93,7 +93,7 @@ export const Contact = () => {
               <div className="flex items-center justify-center mb-4">
                 <AlertCircle className="w-12 h-12 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-red-800 mb-2">Σφάλμα αποστολής</h3>
+              <h3 className="font-heading text-red-800 mb-2">Σφάλμα αποστολής</h3>
               <p className="text-red-700">{errorMessage}</p>
             </div>
           )}
@@ -103,7 +103,7 @@ export const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gradient-brand mb-6">
+              <h3 className="font-heading text-gradient-brand mb-6">
                 Στοιχεία Επικοινωνίας
               </h3>
               
@@ -113,7 +113,7 @@ export const Contact = () => {
                     <MapPin className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Διεύθυνση</h4>
+                    <h4 className="font-heading mb-1">Διεύθυνση</h4>
                     <p className="text-muted-foreground">Κερατέα, Αττική</p>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export const Contact = () => {
                     <Phone className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Τηλέφωνα</h4>
+                    <h4 className="font-heading mb-1">Τηλέφωνα</h4>
                     <p className="text-muted-foreground">2299068812</p>
                     <p className="text-muted-foreground">6981889560</p>
                   </div>
@@ -134,7 +134,7 @@ export const Contact = () => {
                     <Mail className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
+                    <h4 className="font-heading mb-1">Email</h4>
                     <p className="text-muted-foreground">info@ktimaorion.gr</p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export const Contact = () => {
                     <Clock className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Ώρες Λειτουργίας</h4>
+                    <h4 className="font-heading mb-1">Ώρες Λειτουργίας</h4>
                     <p className="text-muted-foreground">Δευτέρα - Κυριακή</p>
                     <p className="text-muted-foreground">9:00 - 21:00</p>
                   </div>
@@ -154,7 +154,7 @@ export const Contact = () => {
 
             {/* Social Media */}
             <div>
-              <h4 className="font-semibold mb-4">Ακολουθήστε μας</h4>
+              <h4 className="font-heading mb-4">Ακολουθήστε μας</h4>
               <div className="flex space-x-4">
                 <a 
                   href="https://www.facebook.com/ktimaorion.gr/?locale=el_GR"
@@ -180,7 +180,7 @@ export const Contact = () => {
 
           {/* Contact Form */}
           <div className="card-elegant p-8">
-            <h3 className="text-2xl font-bold text-gradient-brand mb-6">
+            <h3 className="font-heading text-gradient-brand mb-6">
               Στείλτε μας μήνυμα
             </h3>
             
@@ -258,7 +258,7 @@ export const Contact = () => {
               </Button>
               
               <p className="text-xs text-muted-foreground">
-                Υποβάλλοντας αυτή την φόρμα συμφωνείτε με τους όρους μας και την 
+                Υποβάλλοντας αυτή τη φόρμα συμφωνείτε με τους όρους μας και την 
                 Πολιτική για Προστασία προσωπικών δεδομένων
               </p>
             </form>

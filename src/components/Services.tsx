@@ -20,7 +20,7 @@ export const Services = () => {
     },
     {
       icon: Building,
-      title: 'Εταιρικές Εκδηλώσεις',
+      title: 'Εταιρικές εκδηλώσεις',
       description: 'Η εταιρική σας εκδήλωση, η εξειδίκευσή μας. Επαγγελματισμός και αφοσίωση για τις πιο επιτυχημένες εταιρικές εκδηλώσεις και συνέδρια.',
       features: ['Συνεδριακός εξοπλισμός', 'Catering υψηλής ποιότητας', 'Χώρος στάθμευσης 100+ θέσεων'],
       link: '/eterikes-ekdiloseis'
@@ -45,7 +45,7 @@ export const Services = () => {
     <section id="services" className="section-padding bg-gradient-to-b from-background to-champagne">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Οι <span className="text-gradient-brand">Υπηρεσίες</span> Μας
           </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -58,12 +58,12 @@ export const Services = () => {
           {services.map((service, index) => (
             <div key={index} className="card-elegant p-8 text-center group">
               <div className="mb-6 flex justify-center">
-                <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
               
-              <h3 className="text-2xl font-bold mb-4 text-gradient-brand">
+              <h3 className="font-heading mb-4 text-gradient-brand">
                 {service.title}
               </h3>
               
@@ -81,7 +81,7 @@ export const Services = () => {
               </ul>
               
               <Button variant="outline" className="border-brand-main text-white bg-brand-main hover:bg-brand-dark hover:border-brand-dark min-h-[44px] min-w-[140px]" asChild>
-                <Link href={service.link}>ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</Link>
+                <Link href={service.link}>Μάθετε περισσότερα</Link>
               </Button>
             </div>
           ))}

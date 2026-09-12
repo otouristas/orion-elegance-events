@@ -1,4 +1,6 @@
 import { SITE_URL, SITE_NAME_EL, PHONE, EMAIL } from "@/lib/seo/config";
+import { CHURCH_COUNT, CHURCH_MINUTES_RANGE, churches } from "@/data/churches";
+import { AVERAGE_RATING, REVIEW_COUNT } from "@/data/reviews";
 
 /**
  * Answer-engine summary. Every fact here must be verifiable on the site itself —
@@ -22,20 +24,22 @@ export function GET(): Response {
 - Parking: 100+ free spaces on site
 - Indoor air-conditioned hall plus garden, pool area and semi-covered space
 - Distance from central Athens: approximately 45 minutes
-- Five nearby churches for the ceremony, 6–13 minutes by car (see below)
+- ${CHURCH_COUNT} nearby churches for the ceremony, ${CHURCH_MINUTES_RANGE} minutes by car (see below)
 - Baptism packages with L. Varsos Catering: Classic finger food 33€/person, Premium finger food 38€/person, for events from 100 guests
+- Published guest reviews: ${REVIEW_COUNT}, average rating ${AVERAGE_RATING.toFixed(1)}/5 (see /reviews)
 
 ## Nearby churches (driving time from the venue)
-- Panagia Gkarika, Keratea — 3.1 km, 6 minutes
-- Agios Alexandros Daskaleio (seaside) — 5.2 km, 10 minutes, suitable for up to 170 people
-- Agia Triada, Keratea — 5 km, 10 minutes
-- Profitis Ilias, Thoriko — 8.8 km, 11 minutes, suited to small ceremonies of 40–50 people
-- Agios Panteleimonas, Kaki Thalassa Keratea — 8.6 km, 13 minutes
+${churches
+  .map(
+    (c) =>
+      `- ${c.name}, ${c.location} — ${c.distance.replace(",", ".").replace(" χλμ", " km")}, ${c.minutes} minutes`,
+  )
+  .join("\n")}
 
 ## Key pages
 - / — Greek homepage
-- /ktima-gamou — Wedding venue (primary commercial page)
-- /ktima-vaptisis — Baptism venue (primary commercial page)
+- /ktima-gamou — Wedding venue (primary commercial page; /el/ktima-gamou-athina and /el/ktima-gamou-athens-riviera redirect here)
+- /ktima-vaptisis — Baptism venue (primary commercial page; /el/ktimata-vaptisis-athina redirects here)
 - /gamos — What a wedding at the venue includes
 - /vaptisi — Baptism packages, menu and reception
 - /eterikes-ekdiloseis — Corporate events and conferences
@@ -51,7 +55,7 @@ export function GET(): Response {
 ## Full machine-readable index
 See ${SITE_URL}/llms-full.txt
 
-Last-Updated: 2026-08-16
+Last-Updated: 2026-09-12
 `;
   return new Response(body, {
     headers: {

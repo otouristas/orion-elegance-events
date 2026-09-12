@@ -10,7 +10,7 @@ export const Testimonials = () => {
     <section className="section-padding bg-gradient-to-r from-champagne to-sage/20">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Εντυπώσεις <span className="text-gradient-brand">Επισκεπτών</span>
           </h2>
           <p className="text-xl text-muted-foreground">

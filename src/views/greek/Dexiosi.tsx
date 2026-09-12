@@ -18,7 +18,7 @@ export default function Dexiosi() {
       icon: Users
     },
     {
-      title: "Εταιρικές Εκδηλώσεις",
+      title: "Εταιρικές εκδηλώσεις",
       href: "/eterikes-ekdiloseis",
       description: "Η επαγγελματική σας εκδήλωση επαγγελματική μας ευθύνη. Η εμπειρία των συνεργατών μας καθιστεί τον χώρο μας ιδανικό για επιτυχημένες εκδηλώσεις.",
       icon: Star
@@ -37,10 +37,10 @@ export default function Dexiosi() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Δεξίωση</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               Εκδηλώσεις στο Κτήμα Ωρίων
             </h2>
             
@@ -62,7 +62,7 @@ export default function Dexiosi() {
         {/* Event Types */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Τύποι Εκδηλώσεων</span>
             </h2>
 
@@ -73,13 +73,13 @@ export default function Dexiosi() {
                     <div className="flex items-start space-x-4 mb-6">
                       <event.icon className="w-12 h-12 text-brand-main flex-shrink-0 mt-1" />
                       <div className="flex-grow">
-                        <h3 className="text-2xl font-bold text-gradient-brand mb-4">{event.title}</h3>
+                        <h3 className="font-heading text-gradient-brand mb-4">{event.title}</h3>
                         <p className="text-muted-foreground leading-relaxed mb-6">{event.description}</p>
                         <Link
                           href={event.href}
-                          className="inline-block button button4 group-hover:scale-105 transition-transform duration-300"
+                          className="inline-block button button4 transition-transform duration-300"
                         >
-                          ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ
+                          Μάθετε περισσότερα
                         </Link>
                       </div>
                     </div>
@@ -93,7 +93,7 @@ export default function Dexiosi() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ας δημιουργήσουμε μαζί την τέλεια εκδήλωση
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

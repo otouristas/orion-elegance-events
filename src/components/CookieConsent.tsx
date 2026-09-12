@@ -34,7 +34,7 @@ export const CookieConsent = () => {
           <X className="w-5 h-5" />
         </button>
         
-        <h3 className="text-lg font-bold mb-3 text-gradient-brand pr-6">
+        <h3 className="font-heading mb-3 text-gradient-brand pr-6">
           Χρήση Cookies
         </h3>
         

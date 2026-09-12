@@ -14,7 +14,7 @@ const Fotografos = () => {
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-brand-main mb-6">Φωτογράφος</h1>
+            <h1 className="font-heading text-brand-main mb-6">Φωτογράφος</h1>
             <p className="text-xl text-muted-foreground mb-8">Studio Alpha - Κτήμα Ωρίων - Κερατέα</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Fotografos = () => {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <Camera className="w-12 h-12 text-brand-main" />
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-text">Studio Alpha</h2>
+                <h2 className="font-heading text-brand-text">Studio Alpha</h2>
               </div>
               <div className="w-24 h-1 bg-brand-main mx-auto mb-8"></div>
             </div>
@@ -47,9 +47,9 @@ const Fotografos = () => {
 
               <div className="bg-gradient-to-br from-brand-main/5 to-brand-main/10 rounded-2xl p-8">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-semibold text-brand-text mb-4">Επικοινωνήστε!</h3>
+                  <h3 className="font-heading text-brand-text mb-4">Επικοινωνήστε!</h3>
                   <p className="text-lg text-muted-foreground mb-4">
-                    Μην διστάσετε να επικοινωνήσετε μαζί μας οποιαδήποτε στιγμή, μας ευχαριστεί να απαντάμε στις ερωτήσεις που αφορούν την δουλειά μας.
+                    Μην διστάσετε να επικοινωνήσετε μαζί μας οποιαδήποτε στιγμή, μας ευχαριστεί να απαντάμε στις ερωτήσεις που αφορούν τη δουλειά μας.
                   </p>
                   <p className="text-lg text-brand-main font-medium">Λεωφ. Κηφισίας 12, Αμπελόκηποι 115 26 ΑΘΗΝΑ</p>
                 </div>
@@ -75,14 +75,14 @@ const Fotografos = () => {
 
       <section className="py-16 bg-gradient-to-b from-muted/30 to-background">
         <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Έτοιμοι να Αποτυπώσουμε τις <span className="text-gradient-brand">Αναμνήσεις</span> σας;
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Επικοινωνήστε μαζί μας σήμερα για να συζητήσουμε πώς μπορούμε να κάνουμε την ημέρα σας ακόμα πιο ξεχωριστή.
           </p>
           <Button size="lg" className="bg-brand-main hover:bg-brand-main/90" asChild>
-            <a href="/epikoinonia">ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</a>
+            <a href="/epikoinonia">Επικοινωνήστε μαζί μας</a>
           </Button>
         </div>
       </section>

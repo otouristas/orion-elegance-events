@@ -27,7 +27,7 @@ export const TrustSignalsEn = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
       <div className="container-max">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="font-heading text-center mb-12">
           <span className="text-gradient-brand">Why Choose Ktima Orion</span>
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -38,7 +38,7 @@ export const TrustSignalsEn = () => {
                   <signal.icon className="w-8 h-8 text-brand-main" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold mb-2 text-gradient-brand">{signal.title}</h3>
+              <h3 className="font-heading mb-2 text-gradient-brand">{signal.title}</h3>
               <p className="text-sm text-muted-foreground">{signal.description}</p>
             </div>
           ))}

@@ -4,9 +4,9 @@ import { JsonLd, WebSiteJsonLd } from '@/components/seo/json-ld';
 import { buildMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Κτήμα Ωρίων Κερατέα | Κτήμα Γάμου & Βάπτισης Αττική',
+  title: 'Κτήμα Ωρίων | Κτήμα γάμου & βάπτισης στην Κερατέα',
   description:
-    'Κτήμα γάμου & βάπτισης Κερατέα Αττική. Θέα θάλασσα, parking 100+ θέσεων, κλιματισμός. Κοντά παραθαλάσσια εκκλησάκια. Κλείστε επίσκεψη!',
+    'Κτήμα δεξιώσεων στην Κερατέα Αττικής από το 2009. Γάμοι και βαπτίσεις 50–350 ατόμων, θέα θάλασσα, 100+ θέσεις parking. Κλείστε δωρεάν ξενάγηση.',
   canonicalPath: '/',
   lang: 'el',
   keywords:
@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <JsonLd
         title="Κτήμα Ωρίων – Κτήμα γάμου & βάπτισης στην Κερατέα Αττικής"
-        description="Κτήμα γάμου & βάπτισης Κερατέα Αττική. Θέα θάλασσα, parking 100+ θέσεων, κλιματισμός."
+        description="Κτήμα δεξιώσεων στην Κερατέα Αττικής από το 2009. Γάμοι και βαπτίσεις από 50 έως 350 άτομα, με θέα στη θάλασσα και δωρεάν parking 100+ θέσεων."
         canonicalPath="/"
         schemaType="LocalBusiness"
         breadcrumbs={[{ name: 'Αρχική', url: '/' }]}

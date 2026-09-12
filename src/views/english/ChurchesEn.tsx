@@ -75,7 +75,7 @@ export default function ChurchesEn() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <Church className="w-20 h-20 text-brand-main mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Churches</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
@@ -89,7 +89,7 @@ export default function ChurchesEn() {
         {/* Churches List */}
         <section className="section-padding">
           <div className="container-max max-w-5xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="font-heading text-center mb-12">
               Available <span className="text-gradient-brand">Seaside Churches</span> near Keratea
             </h2>
 
@@ -103,7 +103,7 @@ export default function ChurchesEn() {
                           <church.icon className="w-8 h-8 text-brand-main" />
                         </div>
                         <div>
-                          <h3 className="text-xl md:text-2xl font-bold mb-2">
+                          <h3 className="font-heading mb-2">
                             {index + 1}. {church.name}
                           </h3>
                           <div className="flex flex-col sm:flex-row gap-4 text-muted-foreground">
@@ -130,7 +130,7 @@ export default function ChurchesEn() {
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="font-heading mb-6">
                 <span className="text-gradient-brand">Church Map</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -154,45 +154,45 @@ export default function ChurchesEn() {
         {/* Church Detail Links */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="font-heading text-center mb-12">
               <span className="text-gradient-brand">Explore Our Churches</span>
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <a href="/en/churches/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/en/churches/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Agios Alexandros Daskaleio
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">3.8 km • 8'</p>
                 <p className="text-xs text-muted-foreground">Ideal for weddings up to 170 guests</p>
               </a>
               
-              <a href="/en/churches/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/en/churches/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Profitis Ilias Thoriko
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">8.8 km • 11'</p>
                 <p className="text-xs text-muted-foreground">Stunning sea views</p>
               </a>
               
-              <a href="/en/churches/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/en/churches/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Agios Panteleimonas Keratea
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">8.6 km • 13'</p>
                 <p className="text-xs text-muted-foreground">Traditional rustic church</p>
               </a>
               
-              <a href="/en/churches/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/en/churches/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Panagia Gkarika
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
                 <p className="text-xs text-muted-foreground">Perfect for intimate weddings</p>
               </a>
               
-              <a href="/en/churches/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/en/churches/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Agia Triada
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">5 km • 10'</p>
@@ -214,7 +214,7 @@ export default function ChurchesEn() {
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Combine Ceremony & Reception
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

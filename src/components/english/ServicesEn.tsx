@@ -45,7 +45,7 @@ export const ServicesEn = () => {
     <section id="services" className="section-padding bg-gradient-to-b from-background to-champagne">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Our <span className="text-gradient-brand">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -58,12 +58,12 @@ export const ServicesEn = () => {
           {services.map((service, index) => (
             <div key={index} className="card-elegant p-8 text-center group">
               <div className="mb-6 flex justify-center">
-                <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
               </div>
               
-              <h3 className="text-2xl font-bold mb-4 text-gradient-brand">
+              <h3 className="font-heading mb-4 text-gradient-brand">
                 {service.title}
               </h3>
               

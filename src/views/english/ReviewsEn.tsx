@@ -72,7 +72,7 @@ export default function ReviewsEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Reviews</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -95,7 +95,7 @@ export default function ReviewsEn() {
                           <Quote className="w-6 h-6 text-brand-main" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-brand-text">{review.name}</h3>
+                          <h3 className="font-heading text-brand-text">{review.name}</h3>
                           <div className="flex items-center gap-2">
                             <div className="flex">
                               {[...Array(review.rating)].map((_, i) => (
@@ -121,7 +121,7 @@ export default function ReviewsEn() {
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Be part of our story
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

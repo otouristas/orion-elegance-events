@@ -106,7 +106,7 @@ export default function ContactEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Contact Us</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -119,7 +119,7 @@ export default function ContactEn() {
                 <div className="flex items-center justify-center mb-4">
                   <CheckCircle className="w-12 h-12 text-green-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-green-800 mb-2">Message sent successfully!</h3>
+                <h3 className="font-heading text-green-800 mb-2">Message sent successfully!</h3>
                 <p className="text-green-700">
                   Thank you! We received your message and will contact you as soon as possible.
                 </p>
@@ -132,7 +132,7 @@ export default function ContactEn() {
                 <div className="flex items-center justify-center mb-4">
                   <AlertCircle className="w-12 h-12 text-red-500" />
                 </div>
-                <h3 className="text-2xl font-bold text-red-800 mb-2">Submission error</h3>
+                <h3 className="font-heading text-red-800 mb-2">Submission error</h3>
                 <p className="text-red-700">{errorMessage}</p>
               </div>
             )}
@@ -145,7 +145,7 @@ export default function ContactEn() {
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Details */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-12">
+                <h2 className="font-heading mb-12">
                   <span className="text-gradient-brand">Contact Information</span>
                 </h2>
                 
@@ -156,7 +156,7 @@ export default function ContactEn() {
                         <div className="flex items-start space-x-4">
                           <info.icon className="w-8 h-8 text-brand-main flex-shrink-0 mt-1" />
                           <div>
-                            <h3 className="text-xl font-bold text-gradient-brand mb-3">{info.title}</h3>
+                            <h3 className="font-heading text-gradient-brand mb-3">{info.title}</h3>
                             {info.details.map((detail, idx) => (
                               <p key={idx} className="text-muted-foreground text-lg">
                                 {detail}
@@ -175,7 +175,7 @@ export default function ContactEn() {
                     <div className="flex items-start space-x-4">
                       <Clock className="w-8 h-8 text-brand-main flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="text-xl font-bold text-gradient-brand mb-3">Business Hours</h3>
+                        <h3 className="font-heading text-gradient-brand mb-3">Business Hours</h3>
                         <p className="text-muted-foreground text-lg">
                           Monday - Sunday: 9:00 AM - 10:00 PM
                         </p>
@@ -190,7 +190,7 @@ export default function ContactEn() {
 
               {/* Contact Form */}
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                <h2 className="font-heading mb-8">
                   <span className="text-gradient-brand">Contact Form</span>
                 </h2>
                 
@@ -328,7 +328,7 @@ export default function ContactEn() {
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="font-heading mb-6">
                 <span className="text-gradient-brand">Find Us</span>
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -366,7 +366,7 @@ export default function ContactEn() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Contact us today
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

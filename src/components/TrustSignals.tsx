@@ -1,45 +1,58 @@
 import { Shield, Users, Award, MapPin } from 'lucide-react';
 
-export const TrustSignals = () => {
-  const signals = [
-    {
-      icon: Award,
-      title: "15+ Χρόνια Εμπειρίας",
-      description: "500+ Επιτυχημένοι Γάμοι & Βαπτίσεις από το 2008"
-    },
-    {
-      icon: Shield,
-      title: "Αποκλειστική Χρήση Χώρου",
-      description: "Μόνο μία εκδήλωση ανά ημέρα για απόλυτη ηρεμία"
-    },
-    {
-      icon: MapPin,
-      title: "Δωρεάν Parking 100+ Θέσεων",
-      description: "Τεράστιος χώρος στάθμευσης για όλους τους καλεσμένους"
-    },
-    {
-      icon: Users,
-      title: "Κλιματιζόμενοι Χώροι",
-      description: "Εσωτερικοί & εξωτερικοί χώροι για κάθε εποχή"
-    }
-  ];
+interface Signal {
+  readonly icon: typeof Award;
+  readonly title: string;
+  readonly description: string;
+}
 
+const signals: readonly Signal[] = [
+  {
+    icon: Award,
+    title: 'Από το 2009',
+    // Was "από το 2008", which contradicted the founding date declared in the
+    // site's own structured data, llms.txt and the /emeis page.
+    description: 'Πάνω από 500 γάμοι και βαπτίσεις στον χώρο μας.',
+  },
+  {
+    icon: Shield,
+    title: 'Μία εκδήλωση την ημέρα',
+    description: 'Ο χώρος είναι αποκλειστικά δικός σας, χωρίς παράλληλες δεξιώσεις.',
+  },
+  {
+    icon: MapPin,
+    title: 'Δωρεάν parking 100+ θέσεων',
+    description: 'Στάθμευση μέσα στο κτήμα για όλους τους καλεσμένους σας.',
+  },
+  {
+    icon: Users,
+    title: 'Από 50 έως 350 άτομα',
+    description: 'Κλιματιζόμενη αίθουσα και εξωτερικός κήπος, για κάθε εποχή.',
+  },
+];
+
+export const TrustSignals = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
       <div className="container-max">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          <span className="text-gradient-brand">Γιατί να Επιλέξετε το Κτήμα Ωρίων</span>
+        <h2 className="rule-brand rule-brand-center reveal text-center font-heading text-brand-text">
+          Γιατί να επιλέξετε το Κτήμα Ωρίων
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {signals.map((signal, index) => (
-            <div key={index} className="card-elegant p-6 text-center hover:shadow-xl transition-all duration-300">
-              <div className="mb-4 flex justify-center">
-                <div className="w-16 h-16 bg-brand-main/10 rounded-full flex items-center justify-center">
-                  <signal.icon className="w-8 h-8 text-brand-main" />
-                </div>
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-gradient-brand">{signal.title}</h3>
-              <p className="text-sm text-muted-foreground">{signal.description}</p>
+            <div
+              key={signal.title}
+              className="card-elegant reveal p-7"
+              style={{ transitionDelay: `${index * 80}ms` }}
+            >
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-main/10">
+                <signal.icon className="h-5 w-5 text-brand-deep" aria-hidden="true" />
+              </span>
+              <h3 className="mt-5 font-heading text-xl text-brand-text">{signal.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {signal.description}
+              </p>
             </div>
           ))}
         </div>

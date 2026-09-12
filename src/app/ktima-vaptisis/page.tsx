@@ -3,9 +3,9 @@ import KtimaVaptisis from "@/views/greek/seo/KtimaVaptisis";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Κτήμα για Βάπτιση στην Αττική | Κτήμα Ωρίων";
+const title = "Κτήμα για βάπτιση στην Αττική: πακέτα από 33€";
 const description =
-  "Κτήμα βάπτισης στην Κερατέα με ασφαλή κήπο για παιδιά, κλιματιζόμενη αίθουσα και 100+ θέσεις parking. Πακέτα με catering από 33€/άτομο και εκκλησάκια σε 6–13 λεπτά.";
+  "Κτήμα βάπτισης στην Κερατέα, 45 λεπτά από την Αθήνα. Πακέτα catering από 33€/άτομο, παιδικό μενού, κήπος για παιχνίδι και δωρεάν parking.";
 
 export const metadata: Metadata = buildMetadata({
   title,

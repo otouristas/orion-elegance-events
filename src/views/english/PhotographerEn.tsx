@@ -14,7 +14,7 @@ const PhotographerEn = () => {
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-brand-main mb-6">Photographer</h1>
+            <h1 className="font-heading text-brand-main mb-6">Photographer</h1>
             <p className="text-xl text-muted-foreground mb-8">Studio Alpha - Ktima Orion - Keratea</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ const PhotographerEn = () => {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <Camera className="w-12 h-12 text-brand-main" />
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-text">Studio Alpha</h2>
+                <h2 className="font-heading text-brand-text">Studio Alpha</h2>
               </div>
               <div className="w-24 h-1 bg-brand-main mx-auto mb-8"></div>
             </div>
@@ -47,7 +47,7 @@ const PhotographerEn = () => {
 
               <div className="bg-gradient-to-br from-brand-main/5 to-brand-main/10 rounded-2xl p-8">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-semibold text-brand-text mb-4">Get in Touch!</h3>
+                  <h3 className="font-heading text-brand-text mb-4">Get in Touch!</h3>
                   <p className="text-lg text-muted-foreground mb-4">
                     Don't hesitate to contact us at any time. We're happy to answer questions about our work.
                   </p>
@@ -75,7 +75,7 @@ const PhotographerEn = () => {
 
       <section className="py-16 bg-gradient-to-b from-muted/30 to-background">
         <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Ready to Capture Your <span className="text-gradient-brand">Memories</span>?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

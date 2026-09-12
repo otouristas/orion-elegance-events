@@ -73,7 +73,7 @@ export default function EkklisiakiDiplaStThalassa() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="font-heading mb-6">
                 <span className="text-gradient-brand">Εκκλησάκι δίπλα στη θάλασσα</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -99,7 +99,7 @@ export default function EkklisiakiDiplaStThalassa() {
         {/* Churches Grid */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            <h2 className="font-heading text-center mb-4">
               <span className="text-gradient-brand">Κοντινά Εκκλησάκια</span>
             </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-lg">
@@ -112,7 +112,7 @@ export default function EkklisiakiDiplaStThalassa() {
                   <Card className="card-elegant hover:shadow-2xl transition-all h-full">
                     <CardContent className="p-6">
                       <Church className="w-12 h-12 text-brand-main mb-4" />
-                      <h3 className="font-bold text-lg mb-3">{church.name}</h3>
+                      <h3 className="font-heading mb-3">{church.name}</h3>
                       <div className="space-y-2 text-sm text-muted-foreground mb-4">
                         <div className="flex items-center">
                           <MapPin className="w-4 h-4 mr-2 text-brand-main" />
@@ -141,7 +141,7 @@ export default function EkklisiakiDiplaStThalassa() {
         {/* Timeline */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="font-heading text-center mb-12">
               <span className="text-gradient-brand">Δείγμα Χρονοδιαγράμματος</span>
             </h2>
 
@@ -171,15 +171,15 @@ export default function EkklisiakiDiplaStThalassa() {
         {/* FAQs */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-gradient-brand">Συχνές Ερωτήσεις</span>
+            <h2 className="font-heading text-center mb-12">
+              <span className="text-gradient-brand">Συχνές ερωτήσεις</span>
             </h2>
 
             <div className="max-w-4xl mx-auto space-y-6">
               {faqs.map((faq, index) => (
                 <Card key={index} className="card-elegant">
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-bold mb-3 text-brand-text">{faq.question}</h3>
+                    <h3 className="font-heading mb-3 text-brand-text">{faq.question}</h3>
                     <p className="text-muted-foreground">{faq.answer}</p>
                   </CardContent>
                 </Card>
@@ -191,7 +191,7 @@ export default function EkklisiakiDiplaStThalassa() {
         {/* CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/10 to-brand-main/5">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Οργανώστε την τέλεια ημέρα
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
