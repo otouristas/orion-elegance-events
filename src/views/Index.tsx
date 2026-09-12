@@ -6,6 +6,9 @@ import { homepageFaqs } from '@/data/homepage-faqs';
 import { Hero } from '@/components/Hero';
 import { Description } from '@/components/Description';
 import { Features } from '@/components/Features';
+// Mounted eagerly, not lazily: this is what removes `.reveal`'s opacity:0, so it
+// must never load after the content it is meant to reveal.
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 // Lazy load non-critical components
 const HomeGallery = lazy(() => import('@/components/HomeGallery').then(module => ({ default: module.HomeGallery })));
@@ -20,7 +23,6 @@ const BackToTop = lazy(() => import('@/components/BackToTop').then(module => ({ 
 const ContactFAB = lazy(() => import('@/components/ContactFAB').then(module => ({ default: module.ContactFAB })));
 const FAQ = lazy(() => import('@/components/FAQ').then(module => ({ default: module.FAQ })));
 const CookieConsent = lazy(() => import('@/components/CookieConsent').then(module => ({ default: module.CookieConsent })));
-const ScrollReveal = lazy(() => import('@/components/ScrollReveal').then(module => ({ default: module.ScrollReveal })));
 
 const Index = () => {
   const [isScrolled, setIsScrolled] = useState(false);
