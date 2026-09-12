@@ -25,7 +25,7 @@ export default function BlogEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Blog</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ export default function BlogEn() {
                         src={normalizePublicImageSrc(post.image)}
                         alt={post.titleEn}
                         fill
-                        className={`${post.imageFit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-110 transition-transform duration-300`}
+                        className={`${post.imageFit === 'contain' ? 'object-contain' : 'object-cover'} transition-transform duration-300`}
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                         loading="lazy"
                       />
@@ -84,7 +84,7 @@ export default function BlogEn() {
                       </div>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-3 group-hover:text-brand-main transition-colors">
+                      <h3 className="font-heading mb-3 group-hover:text-brand-main transition-colors">
                         {post.titleEn}
                       </h3>
                       <p className="text-muted-foreground mb-4 line-clamp-3">
@@ -111,7 +111,7 @@ export default function BlogEn() {
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ready to Get Started?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

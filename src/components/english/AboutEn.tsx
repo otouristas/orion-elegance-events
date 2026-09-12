@@ -14,7 +14,7 @@ export const AboutEn = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="font-heading mb-8">
               About Us - <span className="text-gradient-brand">Ktima Orion</span>
             </h2>
             
@@ -59,7 +59,7 @@ export const AboutEn = () => {
             </div>
 
             <div className="card-elegant p-8">
-              <h3 className="text-2xl font-bold mb-6 text-center text-gradient-brand">
+              <h3 className="font-heading mb-6 text-center text-gradient-brand">
                 Venue Features
               </h3>
               

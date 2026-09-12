@@ -158,7 +158,7 @@ export const PromoPopup = () => {
           <p className="text-xs font-semibold uppercase tracking-wider text-brand-main">
             {copy.eyebrow}
           </p>
-          <h2 id="promo-popup-title" className="mt-1 text-lg font-bold leading-snug text-foreground">
+          <h2 id="promo-popup-title" className="font-heading mt-1 leading-snug text-foreground">
             {copy.title}
           </h2>
           <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{copy.subtitle}</p>

@@ -194,10 +194,10 @@ export default function VenueEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               Our <span className="text-gradient-brand">Venue</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               A Unique Wedding and Baptism Venue for Unforgettable Events in Keratea, Athens
             </h2>
             
@@ -220,7 +220,7 @@ export default function VenueEn() {
         {/* Venue Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">The Venue Features:</span>
             </h2>
 
@@ -229,7 +229,7 @@ export default function VenueEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -241,7 +241,7 @@ export default function VenueEn() {
         {/* Venue Highlights */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Why Ktima Orion?</span>
             </h2>
 
@@ -252,7 +252,7 @@ export default function VenueEn() {
                     <div className="flex items-start space-x-4">
                       <highlight.icon className="w-12 h-12 text-brand-main flex-shrink-0 mt-1" />
                       <div>
-                        <h3 className="text-xl font-bold text-gradient-brand mb-4">{highlight.title}</h3>
+                        <h3 className="font-heading text-gradient-brand mb-4">{highlight.title}</h3>
                         <p className="text-muted-foreground leading-relaxed">{highlight.description}</p>
                       </div>
                     </div>
@@ -266,7 +266,7 @@ export default function VenueEn() {
         {/* Event Statistics */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Our Events</span>
             </h2>
 
@@ -276,7 +276,7 @@ export default function VenueEn() {
                   <CardContent className="p-8">
                     <event.icon className="w-16 h-16 text-brand-main mx-auto mb-4" />
                     <div className="text-3xl font-bold text-brand-main mb-2">{event.count}</div>
-                    <h3 className="text-xl font-bold mb-4">{event.title}</h3>
+                    <h3 className="font-heading mb-4">{event.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{event.description}</p>
                   </CardContent>
                 </Card>
@@ -288,18 +288,18 @@ export default function VenueEn() {
         {/* Photo Gallery */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Venue Photos</span>
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {venuePhotos.map((photo, index) => (
-                <div key={photo.src} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-64 w-full">
+                <div key={photo.src} className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-64 w-full">
                   <Image
                     src={photo.src}
                     alt={photo.alt}
                     fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="object-cover transition-transform duration-300"
                     sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
                     loading="lazy"
                   />
@@ -326,7 +326,7 @@ export default function VenueEn() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Visit Ktima Orion
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import EterikesEkdiloseis from "@/views/greek/EterikesEkdiloseis";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { JsonLd } from "@/components/seo/json-ld";
+import { JsonLd, ServiceJsonLd } from "@/components/seo/json-ld";
 
-const title = "Εταιρικές Εκδηλώσεις Αθήνα – Κτήμα Ωρίων Κερατέα";
+const title = "Εταιρικές εκδηλώσεις & συνέδρια στην Αττική";
 const description =
-  "Χώρος για συνέδρια, team building και εταιρικά events 50–350 ατόμων, 45 λεπτά από την Αθήνα. 100+ θέσεις parking, κλιματιζόμενη αίθουσα και catering.";
+  "Χώρος για εταιρικές εκδηλώσεις, συνέδρια και team building στην Ανατολική Αττική. Έως 350 άτομα, parking 100+ θέσεων, 45 λεπτά από την Αθήνα.";
 
 export const metadata: Metadata = buildMetadata({
   title,
@@ -24,6 +24,11 @@ export default function Page() {
         description={description}
         canonicalPath="/eterikes-ekdiloseis"
         schemaType="EventVenue"
+      />
+      <ServiceJsonLd
+        name="Εταιρικές εκδηλώσεις"
+        description="Εταιρικές εκδηλώσεις, συνέδρια και team building στην Ανατολική Αττική, για έως 350 άτομα."
+        canonicalPath="/eterikes-ekdiloseis"
       />
       <EterikesEkdiloseis />
     </>

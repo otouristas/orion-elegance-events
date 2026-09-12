@@ -60,7 +60,7 @@ export const PleiadesBanner = ({ lang }: PleiadesBannerProps) => {
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-main">
                 {copy.eyebrow}
               </p>
-              <h2 className="text-2xl font-bold leading-tight md:text-3xl">
+              <h2 className="font-heading leading-tight">
                 <span className="text-gradient-brand">{copy.title}</span>
               </h2>
               <p className="text-base leading-relaxed text-muted-foreground md:text-lg">

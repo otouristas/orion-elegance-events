@@ -3,8 +3,8 @@ import Ypiresies from "@/views/greek/Ypiresies";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Υπηρεσίες Γάμου & Βάπτισης | Κτήμα Ωρίων";
-const description = "Catering, διακόσμηση, φωτογράφος, DJ και πλήρης συντονισμός εκδήλωσης στο Κτήμα Ωρίων.";
+const title = "Υπηρεσίες γάμου: catering, στολισμός, DJ";
+const description = "Όλες οι υπηρεσίες του Κτήματος Ωρίων: catering, στολισμός, φωτισμός, DJ και φωτογράφος. Συνεργαστείτε με την ομάδα μας ή φέρτε δικούς σας συνεργάτες.";
 
 export const metadata: Metadata = buildMetadata({
   title,

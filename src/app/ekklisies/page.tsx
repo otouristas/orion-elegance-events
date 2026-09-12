@@ -3,9 +3,9 @@ import Ekklisies from "@/views/greek/Ekklisies";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Εκκλησίες Κερατέα για Γάμο & Βάπτιση | Κτήμα Ωρίων";
+const title = "5 εκκλησίες στην Κερατέα για γάμο & βάπτιση";
 const description =
-  "Άγιος Αλέξανδρος Δασκαλειό, Παναγία Γκαρικά, Άγιος Παντελεήμονας, Προφήτης Ηλίας Θορικό και Αγία Τριάδα: απόσταση, χωρητικότητα και φωτογραφίες.";
+  "Πέντε παραθαλάσσια εκκλησάκια για την τελετή σας, 6–13 λεπτά από το Κτήμα Ωρίων: Γκαρικά, Αγία Τριάδα, Δασκαλειό, Κακή Θάλασσα, Θορικό.";
 
 export const metadata: Metadata = buildMetadata({
   title,

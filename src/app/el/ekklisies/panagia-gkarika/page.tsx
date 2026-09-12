@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { ChurchJsonLd } from "@/components/seo/json-ld";
 
 const canonicalPath = "/el/ekklisies/panagia-gkarika";
-const title = "Παναγία Γκαρικά Κερατέα | Εκκλησία Γάμου – Κτήμα Ωρίων";
+const title = "Παναγία Γκαρικά: εκκλησία γάμου στην Κερατέα";
 const description =
   "Η Παναγία Γκαρικά στην Κερατέα — το πιο κοντινό εκκλησάκι στο Κτήμα Ωρίων, μόλις 3,1 χλμ και 6 λεπτά. Φωτογραφίες, πρόσβαση και οργάνωση τελετής.";
 

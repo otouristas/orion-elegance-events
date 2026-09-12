@@ -43,7 +43,7 @@ export const FeaturesEn = () => {
                 />
               </div>
               
-              <h3 className="text-xl font-semibold text-gradient-brand mb-6">
+              <h3 className="font-heading text-gradient-brand mb-6">
                 {feature.subtitle}
               </h3>
               

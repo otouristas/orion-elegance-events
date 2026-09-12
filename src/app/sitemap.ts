@@ -22,10 +22,7 @@ const staticGreekPaths: readonly string[] = [
   "/blog",
   "/ktima-gamou",
   "/ktima-vaptisis",
-  "/el/ktima-gamou-athina",
-  "/el/ktimata-vaptisis-athina",
   "/el/ekklisiaki-dipla-sti-thalassa",
-  "/el/ktima-gamou-athens-riviera",
   "/el/ekklisies/agios-alexandros-daskaleio",
   "/el/ekklisies/profitis-ilias-thoriko",
   "/el/ekklisies/agios-panteleimonas-keratea",
@@ -60,7 +57,14 @@ function lastMod(): Date {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
+  const seen = new Set<string>();
   for (const path of staticGreekPaths) {
+    // Guards against a duplicate URL reaching the sitemap, which is what
+    // happened when the consolidated wedding pages were all repointed here.
+    if (seen.has(path)) {
+      continue;
+    }
+    seen.add(path);
     const en = GREEK_TO_ENGLISH_PATH[path];
     entries.push({
       url: buildAbsoluteUrl(path),

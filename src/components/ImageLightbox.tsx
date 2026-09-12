@@ -162,7 +162,7 @@ export function ClickableImage({ src, alt, className = '', images, index = 0 }: 
           alt={alt}
           width={1200}
           height={800}
-          className={`${className} h-auto w-full transition-all duration-300 group-hover:scale-105`}
+          className={`${className} h-auto w-full transition-all duration-300`}
           sizes="(max-width: 768px) 100vw, 896px"
           loading="lazy"
           unoptimized={src.startsWith('http')}

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Gamos from "@/views/greek/Gamos";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { JsonLd } from "@/components/seo/json-ld";
+import { JsonLd, ServiceJsonLd } from "@/components/seo/json-ld";
 
-const title = "Γάμος στο Κτήμα Ωρίων | Τελετή, Δεξίωση & Υπηρεσίες";
+const title = "Γάμος στο Κτήμα Ωρίων: τελετή, δεξίωση & παροχές";
 const description =
-  "Γάμος στην Κερατέα: τελετή σε εκκλησάκι 6–13 λεπτά μακριά, δεξίωση 50–350 ατόμων, catering, στολισμός, DJ και φωτογράφος. Δείτε τι περιλαμβάνεται.";
+  "Τι περιλαμβάνει ένας γάμος στο Κτήμα Ωρίων: τελετή σε εκκλησάκι 6–13 λεπτά μακριά, δεξίωση 50–350 ατόμων, catering, στολισμός, DJ και φωτογράφος.";
 
 export const metadata: Metadata = buildMetadata({
   title,
@@ -24,6 +24,11 @@ export default function Page() {
         description={description}
         canonicalPath="/gamos"
         schemaType="EventVenue"
+      />
+      <ServiceJsonLd
+        name="Δεξίωση γάμου"
+        description="Οργάνωση γαμήλιας δεξίωσης στο Κτήμα Ωρίων: τελετή σε κοντινό εκκλησάκι, catering, στολισμός, μουσική και φωτογράφιση."
+        canonicalPath="/gamos"
       />
       <Gamos />
     </>

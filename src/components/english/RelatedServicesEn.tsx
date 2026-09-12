@@ -59,7 +59,7 @@ export const RelatedServicesEn = ({ currentPage }: RelatedServicesEnProps) => {
   return (
     <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
       <div className="container-max">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="font-heading text-center mb-12">
           <span className="text-gradient-brand">Related Services</span>
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -72,7 +72,7 @@ export const RelatedServicesEn = ({ currentPage }: RelatedServicesEnProps) => {
                       <service.icon className="w-8 h-8 text-brand-main" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gradient-brand">{service.title}</h3>
+                  <h3 className="font-heading mb-3 text-gradient-brand">{service.title}</h3>
                   <p className="text-muted-foreground text-sm">{service.description}</p>
                   <div className="mt-4 text-brand-main font-semibold text-sm">
                     Learn More →

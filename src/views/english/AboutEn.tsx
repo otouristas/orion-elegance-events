@@ -81,7 +81,7 @@ export default function AboutEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">About Us</span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-5xl mx-auto mb-12">
@@ -117,7 +117,7 @@ export default function AboutEn() {
         {/* Venue Features Section */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">The Venue Features:</span>
             </h2>
             
@@ -126,7 +126,7 @@ export default function AboutEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -154,7 +154,7 @@ export default function AboutEn() {
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="font-heading mb-6">
                   <span className="text-gradient-brand">Our Partnership</span>
                 </h2>
                 <div className="space-y-6 text-muted-foreground">
@@ -168,7 +168,7 @@ export default function AboutEn() {
               </div>
               
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Venue Manager</h3>
+                <h3 className="font-heading mb-6">Venue Manager</h3>
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center">
                     <Heart className="w-8 h-8 text-white" />
@@ -190,7 +190,7 @@ export default function AboutEn() {
         {/* Values Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Our Values</span>
             </h2>
             
@@ -199,7 +199,7 @@ export default function AboutEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <value.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-xl font-bold mb-3">{value.title}</h3>
+                    <h3 className="font-heading mb-3">{value.title}</h3>
                     <p className="text-muted-foreground">{value.description}</p>
                   </CardContent>
                 </Card>
@@ -211,7 +211,7 @@ export default function AboutEn() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Let's get to know each other better
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

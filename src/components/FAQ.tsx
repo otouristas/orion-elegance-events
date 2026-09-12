@@ -10,7 +10,7 @@ interface FAQProps {
   title?: string;
 }
 
-export const FAQ = ({ items, title = "Συχνές Ερωτήσεις" }: FAQProps) => {
+export const FAQ = ({ items, title = "Συχνές ερωτήσεις" }: FAQProps) => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -31,7 +31,7 @@ export const FAQ = ({ items, title = "Συχνές Ερωτήσεις" }: FAQPro
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="container-max max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="font-heading text-center mb-12">
           <span className="text-gradient-brand">{title}</span>
         </h2>
         <Accordion type="single" collapsible className="w-full space-y-4">

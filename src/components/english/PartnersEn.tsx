@@ -11,7 +11,7 @@ export const PartnersEn = () => {
     <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
       <div className="container-max">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading mb-4">
             <span className="text-gradient-brand">Partners</span>
           </h2>
           <p className="text-muted-foreground text-lg">

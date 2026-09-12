@@ -88,10 +88,10 @@ export default function WeddingsEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               Your Dream <span className="text-gradient-brand">Wedding</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               The Ultimate Wedding Venue for Unforgettable Wedding Receptions in Keratea, Athens
             </h2>
             
@@ -118,7 +118,7 @@ export default function WeddingsEn() {
         {/* Wedding Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Why Choose Ktima Orion?</span>
             </h2>
 
@@ -127,7 +127,7 @@ export default function WeddingsEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -139,7 +139,7 @@ export default function WeddingsEn() {
         {/* Photo Gallery */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Wedding Photos</span>
             </h2>
 
@@ -175,7 +175,7 @@ export default function WeddingsEn() {
         {/* Call to Action */}
         <section className="section-padding bg-gradient-to-b from-brand-main/5 to-background">
           <div className="container-max text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ready to <span className="text-gradient-brand">Plan Your Wedding Reception?</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8">

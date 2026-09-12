@@ -20,7 +20,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
       <Layout>
         <div className="pt-20 min-h-screen flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Article not found</h1>
+            <h1 className="font-heading mb-4">Article not found</h1>
             <Link href="/en/blog" className="text-brand-main hover:underline">
               Back to Blog
             </Link>
@@ -117,7 +117,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-foreground">
+            <h1 className="font-heading mb-8 leading-tight text-foreground">
               {post.titleEn}
             </h1>
 
@@ -146,10 +146,10 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
               <ReactMarkdown
                 components={{
                   // Headings
-                  h1: ({node, ...props}) => <h1 className="text-4xl md:text-5xl font-bold mt-12 mb-6 text-foreground leading-tight" {...props} />,
-                  h2: ({node, ...props}) => <h2 className="text-3xl md:text-4xl font-bold mt-10 mb-5 text-brand-main leading-tight" {...props} />,
-                  h3: ({node, ...props}) => <h3 className="text-2xl md:text-3xl font-bold mt-8 mb-4 text-foreground leading-tight" {...props} />,
-                  h4: ({node, ...props}) => <h4 className="text-xl md:text-2xl font-semibold mt-6 mb-3 text-foreground" {...props} />,
+                  h1: ({node, ...props}) => <h1 className="font-heading mt-12 mb-6 text-foreground leading-tight" {...props} />,
+                  h2: ({node, ...props}) => <h2 className="font-heading mt-10 mb-5 text-brand-main leading-tight" {...props} />,
+                  h3: ({node, ...props}) => <h3 className="font-heading mt-8 mb-4 text-foreground leading-tight" {...props} />,
+                  h4: ({node, ...props}) => <h4 className="font-heading mt-6 mb-3 text-foreground" {...props} />,
                   
                   // Paragraphs
                   p: ({node, ...props}) => <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground/90" {...props} />,
@@ -240,7 +240,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
         {relatedPosts.length > 0 && (
           <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
             <div className="container-max">
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <h2 className="font-heading text-center mb-12">
                 <span className="text-gradient-brand">Related Articles</span>
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
@@ -252,14 +252,14 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
                           src={normalizePublicImageSrc(relatedPost.image)}
                           alt={relatedPost.titleEn}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="object-cover transition-transform duration-300"
                           sizes="(min-width: 768px) 33vw, 100vw"
                           loading="lazy"
                         />
                       </div>
                       <div className="p-6">
                         <span className="text-sm text-brand-main">{relatedPost.categoryLabelEn}</span>
-                        <h3 className="text-xl font-bold mt-2 mb-3 group-hover:text-brand-main transition-colors">
+                        <h3 className="font-heading mt-2 mb-3 group-hover:text-brand-main transition-colors">
                           {relatedPost.titleEn}
                         </h3>
                         <p className="text-muted-foreground line-clamp-2">{relatedPost.excerptEn}</p>
@@ -275,7 +275,7 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ready for Your Event?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

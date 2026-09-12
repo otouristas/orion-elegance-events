@@ -3,9 +3,9 @@ import Blog from "@/views/greek/Blog";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Οδηγοί Γάμου & Βάπτισης στην Αττική";
+const title = "Οδηγοί γάμου & βάπτισης στην Αττική";
 const description =
-  "Πόσο κοστίζει ένας γάμος σε κτήμα, πώς επιλέγετε χώρο δεξίωσης, ποια εκκλησάκια είναι κοντά και τι να προσέξετε στη βάπτιση. Οδηγοί για την Αττική.";
+  "Πρακτικοί οδηγοί για γάμο και βάπτιση στην Αττική: τιμές και κόστος δεξίωσης, πώς επιλέγετε κτήμα, checklist προετοιμασίας και συχνές ερωτήσεις.";
 
 export const metadata: Metadata = buildMetadata({
   title,

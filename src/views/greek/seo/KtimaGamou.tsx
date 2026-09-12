@@ -14,14 +14,14 @@ export default function KtimaGamou() {
         { icon: Home, title: "Αποκλειστική Χρήση", description: "Ολόκληρο το κτήμα μόνο για εσάς - μία εκδήλωση την ημέρα" },
         { icon: Users, title: "50-350 Άτομα", description: "Ευέλικτες διαρρυθμίσεις για μικρούς και μεγάλους γάμους" },
         { icon: Car, title: "Δωρεάν Parking 100+ Θέσεις", description: "Τεράστιος χώρος στάθμευσης για όλους τους καλεσμένους" },
-        { icon: Church, title: "Κοντινά Εκκλησάκια", description: "Παραθαλάσσιοι ναοί σε απόσταση 5-15 λεπτά" },
+        { icon: Church, title: "Κοντινά Εκκλησάκια", description: "Πέντε παραθαλάσσιοι ναοί σε απόσταση 6–13 λεπτά" },
         { icon: Camera, title: "Φωτογενικό Περιβάλλον", description: "Υπέροχα σκηνικά για αξέχαστες φωτογραφίες γάμου" }
     ];
 
     const faqs = [
         { question: "Πόσο κοστίζει ένας γάμος στο Κτήμα Ωρίων;", answer: "Το κόστος εξαρτάται από αριθμό καλεσμένων, μενού, ημέρα (Σάββατο έναντι καθημερινής) και πρόσθετες παροχές. Για ενδεικτικά εύρη δείτε το άρθρο «Κόστος γάμου σε κτήμα 2026» στο blog μας· για ακριβή προσφορά επικοινωνήστε ή συμπληρώστε τη φόρμα αιτήματος στο ktimaorion.gr/request." },
         { question: "Πόσα άτομα μπορεί να φιλοξενήσει το Κτήμα Ωρίων για γάμο;", answer: "Φιλοξενούμε γάμους από περίπου 50 έως 350 άτομα, με ευέλικτες διατάξεις για μικρότερους γάμους και micro wedding. Υπάρχουν επιλογές εσωτερικού και εξωτερικού χώρου." },
-        { question: "Υπάρχει εκκλησάκι ή κοντινές εκκλησίες για το μυστήριο;", answer: "Κοντά στο κτήμα υπάρχουν πολλά γραφικά εκκλησάκια (συνήθως 5–15 λεπτά με αυτοκίνητο), όπως Άγιος Αλέξανδρος Δασκαλειό, Παναγία Γκαρικά, Προφήτης Ηλίας Θορικό και άλλα. Δείτε λεπτομέρειες στη σελίδα εκκλησιών." },
+        { question: "Υπάρχει εκκλησάκι ή κοντινές εκκλησίες για το μυστήριο;", answer: "Κοντά στο κτήμα υπάρχουν πολλά γραφικά εκκλησάκια (συνήθως 6–13 λεπτά με αυτοκίνητο), όπως Άγιος Αλέξανδρος Δασκαλειό, Παναγία Γκαρικά, Προφήτης Ηλίας Θορικό και άλλα. Δείτε λεπτομέρειες στη σελίδα εκκλησιών." },
         { question: "Τι συμβαίνει σε περίπτωση κακοκαιρίας;", answer: "Έχουμε πλήρως κλιματιζόμενη αίθουσα και εναλλακτικές διατάξεις ώστε η δεξίωση να συνεχίζεται άνετα. Η ομάδα μας βοηθά στο plan B χωρίς να χαθεί η ατμόσφαιρα της βραδιάς." },
         { question: "Προσφέρετε δοκιμαστικό μενού για γάμο;", answer: "Ναι, οργανώνουμε γευσιγνωσία/δοκιμαστικό μενού κατόπιν ραντεβού, ώστε να επιλέξετε πιάτα και στυλ σερβιρίσματος πριν την οριστική κράτηση." },
         { question: "Υπάρχει χώρος στάθμευσης;", answer: "Διαθέτουμε δωρεάν parking με πάνω από 100 θέσεις για τους καλεσμένους σας." },
@@ -35,14 +35,14 @@ export default function KtimaGamou() {
                 {/* Hero Section */}
                 <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
                     <div className="container-max text-center">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                        <h1 className="font-heading mb-6">
                             <span className="text-gradient-brand">Κτήμα για γάμο στην Αττική – Κτήμα Ωρίων στην Κερατέα</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
                             Ρομαντικό κτήμα γάμου στην Ανατολική Αττική, κοντά στην Αθήνα, με θέα θάλασσα και ολοκληρωμένες παροχές για τη δεξίωσή σας
                         </p>
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                            Ιδανικό για 50-350 άτομα • Δωρεάν parking 100+ θέσεις • 8 κοντινά εκκλησάκια
+                            Ιδανικό για 50-350 άτομα • Δωρεάν parking 100+ θέσεις • 5 κοντινά εκκλησάκια
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/request">
@@ -68,7 +68,7 @@ export default function KtimaGamou() {
                 {/* Why Choose Us */}
                 <section className="section-padding">
                     <div className="container-max">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                        <h2 className="font-heading text-center mb-4">
                             <span className="text-gradient-brand">Γιατί να Επιλέξετε το Κτήμα Ωρίων για τον Γάμο σας</span>
                         </h2>
                         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
@@ -80,7 +80,7 @@ export default function KtimaGamou() {
                                 <Card key={index} className="card-elegant hover:shadow-xl transition-all">
                                     <CardContent className="p-6">
                                         <feature.icon className="w-10 h-10 text-brand-main mb-4" />
-                                        <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+                                        <h3 className="font-heading mb-2">{feature.title}</h3>
                                         <p className="text-muted-foreground text-sm">{feature.description}</p>
                                     </CardContent>
                                 </Card>
@@ -93,7 +93,7 @@ export default function KtimaGamou() {
                 <section className="section-padding bg-muted/20">
                     <div className="container-max max-w-4xl space-y-12">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Χώρος δεξίωσης και εγκαταστάσεις</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -103,7 +103,7 @@ export default function KtimaGamou() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Εκκλησάκι και κοντινές εκκλησίες για μυστήριο</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -113,7 +113,7 @@ export default function KtimaGamou() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Μενού γάμου και υπηρεσίες catering</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -123,7 +123,7 @@ export default function KtimaGamou() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Παροχές και συνεργάτες</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -133,7 +133,7 @@ export default function KtimaGamou() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Δεξίωση γάμου για 50 άτομα στην Αθήνα και την Αττική</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -143,7 +143,7 @@ export default function KtimaGamou() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Πώς να επιλέξετε κτήμα γάμου στην Αττική</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -153,7 +153,7 @@ export default function KtimaGamou() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Κόστος γάμου σε κτήμα</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -168,7 +168,7 @@ export default function KtimaGamou() {
                 {/* SEO intro */}
                 <section className="section-padding">
                     <div className="container-max max-w-4xl">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+                        <h2 className="font-heading text-center mb-8">
                             <span className="text-gradient-brand">Κτήμα γάμου στην Αττική – Κτήμα Ωρίων Κερατέα</span>
                         </h2>
 
@@ -194,29 +194,80 @@ export default function KtimaGamou() {
                 {/* Wedding planning topic cluster */}
                 <section className="section-padding bg-muted/20">
                     <div className="container-max">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                        <h2 className="font-heading text-center mb-4">
                             <span className="text-gradient-brand">Οδηγοί για την οργάνωση γάμου σε κτήμα</span>
                         </h2>
                         <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-12">
                             Χρήσιμες πληροφορίες για να συγκρίνετε χώρους, να οργανώσετε τον προϋπολογισμό και να σχεδιάσετε τη γαμήλια ημέρα στην Αττική.
                         </p>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <Link href="/el/ktima-gamou-athina" className="card-elegant p-6 hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3">Κτήμα γάμου κοντά στην Αθήνα</h3>
+                            <Link href="/ktima-gamou" className="card-elegant p-6 hover:shadow-xl transition-all">
+                                <h3 className="font-heading mb-3">Κτήμα γάμου κοντά στην Αθήνα</h3>
                                 <p className="text-muted-foreground">Τι να περιμένετε από έναν χώρο δεξίωσης στην Κερατέα και πώς να οργανώσετε την επίσκεψή σας.</p>
                             </Link>
                             <Link href="/blog/ktimata-gia-gamo-athina-odigos" className="card-elegant p-6 hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3">Κτήματα για γάμο στην Αθήνα</h3>
+                                <h3 className="font-heading mb-3">Κτήματα για γάμο στην Αθήνα</h3>
                                 <p className="text-muted-foreground">Οδηγός σύγκρισης περιοχών, πρόσβασης, χωρητικότητας και parking στην Αττική.</p>
                             </Link>
                             <Link href="/blog/kostos-gamou-ktima-2026" className="card-elegant p-6 hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3">Κόστος γάμου σε κτήμα</h3>
+                                <h3 className="font-heading mb-3">Κόστος γάμου σε κτήμα</h3>
                                 <p className="text-muted-foreground">Δείτε τι επηρεάζει τον προϋπολογισμό μιας γαμήλιας δεξίωσης και ποιες ερωτήσεις αξίζει να κάνετε.</p>
                             </Link>
                             <Link href="/blog/gamos-thalassa-ktima-attiki" className="card-elegant p-6 hover:shadow-xl transition-all">
-                                <h3 className="text-xl font-bold mb-3">Γάμος με θέα θάλασσα</h3>
+                                <h3 className="font-heading mb-3">Γάμος με θέα θάλασσα</h3>
                                 <p className="text-muted-foreground">Ιδέες για να συνδυάσετε παραθαλάσσιο μυστήριο, φωτογράφιση και δεξίωση στην Ανατολική Αττική.</p>
                             </Link>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Η περιοχή — folded in from /el/ktima-gamou-athens-riviera,
+                    which was competing with this page for the same queries.
+                    The area detail is what the page was missing locally. */}
+                <section className="section-padding bg-gradient-to-b from-champagne/30 to-background">
+                    <div className="container-max max-w-4xl">
+                        <h2 className="font-heading mb-4 text-center">
+                            Η περιοχή γύρω από το κτήμα
+                        </h2>
+                        <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
+                            Η Ανατολική Αττική δίνει στους καλεσμένους σας λόγους να
+                            μείνουν και την επόμενη μέρα, και σε εσάς σκηνικά για
+                            φωτογράφιση πριν ή μετά την τελετή.
+                        </p>
+
+                        <div className="grid gap-6 md:grid-cols-2">
+                            {[
+                                {
+                                    name: 'Ναός του Ποσειδώνα, Σούνιο',
+                                    time: '20 λεπτά από το κτήμα',
+                                    text: 'Το πιο αναγνωρίσιμο μνημείο της περιοχής, με θέα στο ηλιοβασίλεμα — από τα δημοφιλέστερα σημεία για γαμήλια φωτογράφιση στην Αττική.',
+                                },
+                                {
+                                    name: 'Πόρτο Ράφτη',
+                                    time: '15 λεπτά από το κτήμα',
+                                    text: 'Παραθαλάσσια περιοχή με παραλίες, ταβέρνες και ξενοδοχεία — βολική λύση για τη διαμονή των καλεσμένων που έρχονται από μακριά.',
+                                },
+                                {
+                                    name: 'Λαύριο',
+                                    time: '15 λεπτά από το κτήμα',
+                                    text: 'Ιστορική πόλη με λιμάνι και αρχαιολογικό πάρκο, με αρκετές επιλογές για φαγητό και για την παραμονή της επόμενης ημέρας.',
+                                },
+                                {
+                                    name: 'Παραλίες της Λαυρεωτικής',
+                                    time: '10–20 λεπτά',
+                                    text: 'Κακή Θάλασσα, Θορικό και Δασκαλειό: κοντινές παραλίες για φωτογράφιση μετά την τελετή ή για βουτιά την επομένη.',
+                                },
+                            ].map((place) => (
+                                <div key={place.name} className="card-elegant p-6">
+                                    <h3 className="font-heading mb-2 text-2xl text-brand-text">
+                                        {place.name}
+                                    </h3>
+                                    <p className="mb-3 text-sm text-brand-deep">{place.time}</p>
+                                    <p className="leading-relaxed text-muted-foreground">
+                                        {place.text}
+                                    </p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
@@ -233,7 +284,7 @@ export default function KtimaGamou() {
                 {/* Popular Searches */}
                 <PopularSearches
                     links={[
-                        { label: "κτημα γαμου στην αττικη", href: "/el/ktima-gamou-athina" },
+                        { label: "κτημα γαμου στην αττικη", href: "/ktima-gamou" },
                         { label: "ρομαντικο κτημα για γαμο", href: "/ktima-gamou" },
                         { label: "κτημα για βαπτιση με κηπο", href: "/ktima-vaptisis" },
                         { label: "εκκλησιες κοντα στο κτημα", href: "/ekklisies" },
@@ -245,7 +296,7 @@ export default function KtimaGamou() {
                 {/* CTA */}
                 <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
                     <div className="container-max text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        <h2 className="font-heading mb-6">
                             Κλείστε Δωρεάν Επίσκεψη στο Κτήμα
                         </h2>
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

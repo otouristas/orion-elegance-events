@@ -21,8 +21,8 @@ export const HomeGallery = () => {
     <section className="section-padding bg-gradient-to-b from-champagne/30 to-background">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ανακαλύψτε το <span className="text-gradient-brand">Κτήμα Ωρίων</span>
+          <h2 className="font-heading mb-6">
+            Γνωρίστε το <span className="text-gradient-brand">Κτήμα Ωρίων</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ένα μαγευτικό περιβάλλον που συνδυάζει την πολυτέλεια με τη φύση

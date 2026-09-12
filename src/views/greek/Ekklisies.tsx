@@ -62,7 +62,7 @@ export default function Ekklisies() {
   const churchFAQs = [
     { question: "Πόσο μακριά είναι οι εκκλησίες από το Κτήμα Ωρίων;", answer: "Οι εκκλησίες απέχουν από 3-15 λεπτά οδικώς από το Κτήμα Ωρίων. Η πλησιέστερη είναι η Παναγία Γκαρικά (3.1 km, 6') και ο Άγιος Αλέξανδρος Δασκαλειό (3.8 km, 8')." },
     { question: "Ποιες εκκλησίες είναι δίπλα στη θάλασσα;", answer: "Ο Προφήτης Ηλίας Θορικό και ο Άγιος Παντελεήμονας Κερατέα προσφέρουν εκπληκτική θέα στη θάλασσα και είναι ιδανικές για παραθαλάσσιες τελετές." },
-    { question: "Μπορώ να κάνω τόσο τη τελετή όσο και τη δεξίωση την ίδια μέρα;", answer: "Απολύτως! Όλες οι εκκλησίες είναι σε μικρή απόσταση, επιτρέποντάς σας να ολοκληρώσετε την τελετή και να μεταβείτε στο Κτήμα Ωρίων για τη δεξίωση εντός 10-15 λεπτών." },
+    { question: "Μπορώ να κάνω τόσο την τελετή όσο και τη δεξίωση την ίδια μέρα;", answer: "Βεβαίως. Όλες οι εκκλησίες είναι σε μικρή απόσταση, επιτρέποντάς σας να ολοκληρώσετε την τελετή και να μεταβείτε στο Κτήμα Ωρίων για τη δεξίωση εντός 6–13 λεπτών." },
     { question: "Ποια εκκλησία είναι καλύτερη για μικρούς γάμους;", answer: "Η Παναγία Γκαρικά είναι ιδανική για μικρούς, ιντιμ γάμους. Ο Άγιος Αλέξανδρος Δασκαλειό είναι μεγαλύτερος και κατάλληλος για γάμους έως 170 άτομα." },
     { question: "Παρέχετε οδηγίες για τις εκκλησίες;", answer: "Ναι, παρέχουμε λεπτομερείς οδηγίες για όλες τις εκκλησίες και μπορούμε να σας βοηθήσουμε να συντονίσετε την τελετή και τη δεξίωση." },
     { question: "Χρειάζεται να κλείσω την εκκλησία μόνος μου;", answer: "Συνήθως ναι, αλλά μπορούμε να σας παράσχουμε όλες τις απαραίτητες πληροφορίες επικοινωνίας και να σας βοηθήσουμε με το συντονισμό." }
@@ -75,12 +75,12 @@ export default function Ekklisies() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <Church className="w-20 h-20 text-brand-main mx-auto mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Εκκλησίες</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Το Κτήμα Ωρίων απέχει ελάχιστα από πολλά γραφικά εκκλησάκια και εκκλησίες στη γύρω περιοχή.
-              Σε απόσταση που κυμαίνεται από <strong>5 - 15 λεπτά</strong>, μπορείτε να τελέσετε το μυστήριο του γάμου
+              Σε απόσταση που κυμαίνεται από <strong>6–13 λεπτά</strong>, μπορείτε να τελέσετε το μυστήριο του γάμου
               ή της βάπτισης, απολαμβάνοντας καταπληκτική θέα στο Αιγαίο, πριν ολοκληρώσετε την εκδήλωσή σας
               στο Κτήμα Ωρίων.
             </p>
@@ -90,7 +90,7 @@ export default function Ekklisies() {
         {/* Churches List */}
         <section className="section-padding">
           <div className="container-max max-w-5xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 className="font-heading text-center mb-12">
               <span className="text-gradient-brand">Κοντινές Εκκλησίες</span>
             </h2>
 
@@ -104,7 +104,7 @@ export default function Ekklisies() {
                           <church.icon className="w-8 h-8 text-brand-main" />
                         </div>
                         <div>
-                          <h3 className="text-xl md:text-2xl font-bold mb-2">
+                          <h3 className="font-heading mb-2">
                             {index + 1}. {church.name}
                           </h3>
                           <div className="flex flex-col sm:flex-row gap-4 text-muted-foreground">
@@ -131,7 +131,7 @@ export default function Ekklisies() {
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="font-heading mb-6">
                 <span className="text-gradient-brand">Χάρτης Εκκλησιών</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -155,45 +155,45 @@ export default function Ekklisies() {
         {/* Church Detail Links */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="text-gradient-brand">Εξερευνήστε τις Εκκλησίες</span>
+            <h2 className="font-heading text-center mb-12">
+              <span className="text-gradient-brand">Οι εκκλησίες της περιοχής</span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <a href="/el/ekklisies/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/el/ekklisies/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Άγιος Αλέξανδρος Δασκαλειό
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">3.8 km • 8'</p>
                 <p className="text-xs text-muted-foreground">Ιδανική για γάμους έως 170 άτομα</p>
               </a>
 
-              <a href="/el/ekklisies/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/el/ekklisies/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Προφήτης Ηλίας Θορικό
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">8.8 km • 11'</p>
                 <p className="text-xs text-muted-foreground">Εκπληκτική θέα στη θάλασσα</p>
               </a>
 
-              <a href="/el/ekklisies/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/el/ekklisies/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Άγιος Παντελεήμονας Κερατέα
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">8.6 km • 13'</p>
                 <p className="text-xs text-muted-foreground">Παραδοσιακή ρουστίκ εκκλησία</p>
               </a>
 
-              <a href="/el/ekklisies/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/el/ekklisies/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Παναγία Γκαρικά
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
                 <p className="text-xs text-muted-foreground">Ιδανική για μικρούς γάμους</p>
               </a>
 
-              <a href="/el/ekklisies/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 hover:scale-105 group text-center">
-                <h3 className="text-lg font-bold text-gradient-brand mb-2 group-hover:underline">
+              <a href="/el/ekklisies/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
+                <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Αγία Τριάδα
                 </h3>
                 <p className="text-sm text-muted-foreground mb-3">5 km • 10'</p>
@@ -207,7 +207,7 @@ export default function Ekklisies() {
         <TrustSignals />
 
         {/* FAQ Section */}
-        <FAQ items={churchFAQs} title="Συχνές Ερωτήσεις για Εκκλησίες" />
+        <FAQ items={churchFAQs} title="Συχνές ερωτήσεις για Εκκλησίες" />
 
         {/* Related Services */}
         <RelatedServices currentPage="/ekklisies" />
@@ -215,7 +215,7 @@ export default function Ekklisies() {
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Συνδυάστε Τελετή & Δεξίωση
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -233,7 +233,7 @@ export default function Ekklisies() {
 
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
-              <a href="/el/ktima-gamou-athina" className="text-brand-main hover:underline">Κτήμα Γάμου Αθήνα</a>
+              <a href="/ktima-gamou" className="text-brand-main hover:underline">Κτήμα γάμου Αθήνα</a>
               <span className="text-muted-foreground">•</span>
               <a href="/gamos" className="text-brand-main hover:underline">Γάμος</a>
               <span className="text-muted-foreground">•</span>

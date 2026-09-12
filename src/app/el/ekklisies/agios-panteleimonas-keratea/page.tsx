@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { ChurchJsonLd } from "@/components/seo/json-ld";
 
 const canonicalPath = "/el/ekklisies/agios-panteleimonas-keratea";
-const title = "Άγιος Παντελεήμονας Κερατέα | Εκκλησία Γάμου – Κτήμα Ωρίων";
+const title = "Άγιος Παντελεήμονας, Κακή Θάλασσα Κερατέας";
 const description =
   "Ο Άγιος Παντελεήμονας στην Κακή Θάλασσα Κερατέας, 8,6 χλμ και 13 λεπτά από το Κτήμα Ωρίων. Θέα στη θάλασσα, πληροφορίες πρόσβασης και οργάνωση τελετής.";
 

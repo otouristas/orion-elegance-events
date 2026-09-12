@@ -27,7 +27,7 @@ export const FooterEn = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold text-brand-main mb-6">Services</h3>
+            <h3 className="font-heading text-brand-main mb-6">Services</h3>
             <ul className="space-y-3">
               <li><a href="/en/weddings" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding</a></li>
               <li><a href="/en/baptism" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Baptism</a></li>
@@ -41,7 +41,7 @@ export const FooterEn = () => {
 
           {/* Blog & Resources */}
           <div>
-            <h3 className="text-xl font-bold text-brand-main mb-6">Blog & Resources</h3>
+            <h3 className="font-heading text-brand-main mb-6">Blog & Resources</h3>
             <ul className="space-y-3">
               <li><a href="/en/blog" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Blog</a></li>
               <li><a href="/en/weddings" className="text-secondary-foreground/80 hover:text-brand-main transition-colors">Wedding Venue Athens</a></li>
@@ -54,7 +54,7 @@ export const FooterEn = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold text-brand-main mb-6">Contact</h3>
+            <h3 className="font-heading text-brand-main mb-6">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-brand-main flex-shrink-0" />

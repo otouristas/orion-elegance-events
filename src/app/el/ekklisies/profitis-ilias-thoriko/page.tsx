@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { ChurchJsonLd } from "@/components/seo/json-ld";
 
 const canonicalPath = "/el/ekklisies/profitis-ilias-thoriko";
-const title = "Προφήτης Ηλίας Θορικό | Εκκλησάκι Γάμου – Κτήμα Ωρίων";
+const title = "Προφήτης Ηλίας Θορικό — εκκλησάκι γάμου";
 const description =
   "Το εκκλησάκι του Προφήτη Ηλία στο Θορικό Περιγιαλίου, 8,8 χλμ και 11 λεπτά από το Κτήμα Ωρίων. Ιδανικό για μικρές τελετές 40–50 ατόμων με θέα στο Αιγαίο.";
 

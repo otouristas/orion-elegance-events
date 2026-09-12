@@ -49,7 +49,7 @@ export const ContactFAB = () => {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-5 py-3.5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group"
+              className="flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-5 py-3.5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group"
               aria-label={isEnglish ? "Contact us on WhatsApp" : "Επικοινωνήστε μαζί μας στο WhatsApp"}
             >
               <WhatsAppIcon className="w-7 h-7" />
@@ -60,7 +60,7 @@ export const ContactFAB = () => {
               href={viberUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#665CAC] hover:bg-[#59519A] text-white px-5 py-3.5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group"
+              className="flex items-center gap-3 bg-[#665CAC] hover:bg-[#59519A] text-white px-5 py-3.5 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group"
               aria-label={isEnglish ? "Contact us on Viber" : "Επικοινωνήστε μαζί μας στο Viber"}
             >
               <ViberIcon className="w-7 h-7" />
@@ -72,7 +72,7 @@ export const ContactFAB = () => {
         {/* Main FAB Button - ALWAYS VISIBLE */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="relative flex items-center justify-center gap-2 px-6 py-4 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 group z-[52] min-h-[48px] min-w-[48px]"
+          className="relative flex items-center justify-center gap-2 px-6 py-4 bg-brand-main hover:bg-brand-dark text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group z-[52] min-h-[48px] min-w-[48px]"
           aria-label={isEnglish ? "Contact us" : "Επικοινωνήστε μαζί μας"}
         >
           {isOpen ? (

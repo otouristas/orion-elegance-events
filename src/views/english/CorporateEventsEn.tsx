@@ -67,10 +67,10 @@ export default function CorporateEventsEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Corporate Events</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               Your Event, Our Expertise
             </h2>
             
@@ -100,7 +100,7 @@ export default function CorporateEventsEn() {
         {/* Event Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Why Choose Ktima Orion?</span>
             </h2>
 
@@ -109,7 +109,7 @@ export default function CorporateEventsEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -121,7 +121,7 @@ export default function CorporateEventsEn() {
         {/* Event Types */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Event Types</span>
             </h2>
 
@@ -129,7 +129,7 @@ export default function CorporateEventsEn() {
               {eventTypes.map((event, index) => (
                 <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
-                    <h3 className="text-xl font-bold text-gradient-brand mb-4">{event.title}</h3>
+                    <h3 className="font-heading text-gradient-brand mb-4">{event.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{event.description}</p>
                   </CardContent>
                 </Card>
@@ -141,7 +141,7 @@ export default function CorporateEventsEn() {
         {/* Photo Gallery */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Corporate Event Photos</span>
             </h2>
 
@@ -165,24 +165,24 @@ export default function CorporateEventsEn() {
           <div className="container-max">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="font-heading mb-6">
                   <span className="text-gradient-brand">Professional Experience</span>
                 </h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Consistent Execution</h3>
+                    <h3 className="font-heading mb-3">Consistent Execution</h3>
                     <p className="text-muted-foreground">
                       Commitment to consistency and attention to detail for flawless results.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Flexibility & Adaptation</h3>
+                    <h3 className="font-heading mb-3">Flexibility & Adaptation</h3>
                     <p className="text-muted-foreground">
                       Experience and flexibility to fulfill all the conditions for success.
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3">Modern Facilities</h3>
+                    <h3 className="font-heading mb-3">Modern Facilities</h3>
                     <p className="text-muted-foreground">
                       Full audio coverage and modern facilities for professional events.
                     </p>
@@ -191,7 +191,7 @@ export default function CorporateEventsEn() {
               </div>
               
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Why Ktima Orion?</h3>
+                <h3 className="font-heading mb-6">Why Ktima Orion?</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
                     <Trophy className="w-6 h-6 text-brand-main mt-0.5" />
@@ -222,7 +222,7 @@ export default function CorporateEventsEn() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Let's create the perfect professional event
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

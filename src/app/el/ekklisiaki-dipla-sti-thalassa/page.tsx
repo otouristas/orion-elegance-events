@@ -3,7 +3,7 @@ import EkklisiakiDiplaStThalassa from "@/views/greek/seo/EkklisiakiDiplaStThalas
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Εκκλησάκι Δίπλα στη Θάλασσα για Γάμο | Κερατέα";
+const title = "Εκκλησάκι δίπλα στη θάλασσα για γάμο";
 const description = "Παραθαλάσσια εκκλησάκια κοντά στο Κτήμα Ωρίων για τελετή γάμου ή βάπτισης.";
 
 export const metadata: Metadata = buildMetadata({

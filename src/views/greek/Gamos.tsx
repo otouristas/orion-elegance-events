@@ -68,12 +68,12 @@ export default function Gamos() {
     { question: "Πόσο κοστίζει ο γάμος στο Κτήμα Ωρίων;", answer: "Επικοινωνήστε μαζί μας για προσωποποιημένη προσφορά. Κάθε γάμος είναι μοναδικός και οι τιμές εξαρτώνται από τον αριθμό καλεσμένων, το μενού και τις υπηρεσίες που επιλέγετε." },
     { question: "Τι περιλαμβάνει η γαμήλια δεξίωση;", answer: "Η γαμήλια δεξίωση περιλαμβάνει νοίκι χώρου, catering, διακόσμηση, φωτισμό, ηχητικό σύστημα, parking και συντονισμό εκδήλωσης. Μπορούμε να δημιουργήσουμε προσαρμοσμένα πακέτα βάσει των αναγκών σας." },
     { question: "Πόσους καλεσμένους χωράει για γάμο;", answer: "Το Κτήμα Ωρίων μπορεί να φιλοξενήσει γάμους διαφόρων μεγεθών με εκτεταμένο χώρο στάθμευσης. Διαθέτουμε εσωτερικό κλιματιζόμενο χώρο και εξωτερικό χώρο." },
-    { question: "Υπάρχουν κοντινές εκκλησίες για την τελετή;", answer: "Ναι, υπάρχουν πολλές όμορφες παραθαλάσσιες εκκλησίες 5-15 λεπτά από το Κτήμα Ωρίων, συμπεριλαμβανομένων των Άγιος Αλέξανδρος, Παναγία Γκαρικά και Προφήτης Ηλίας." },
+    { question: "Υπάρχουν κοντινές εκκλησίες για την τελετή;", answer: "Ναι, υπάρχουν πολλές όμορφες παραθαλάσσιες εκκλησίες 6–13 λεπτά από το Κτήμα Ωρίων, συμπεριλαμβανομένων των Άγιος Αλέξανδρος, Παναγία Γκαρικά και Προφήτης Ηλίας." },
     { question: "Παρέχετε υπηρεσίες catering;", answer: "Ναι, προσφέρουμε πλήρεις υπηρεσίες catering με προσαρμοσμένα μενού βάσει των προτιμήσεων και απαιτήσεών σας." },
     { question: "Μπορούμε να κάνουμε τόσο την τελετή όσο και τη δεξίωση στο κτήμα;", answer: "Ενώ δεν πραγματοποιούμε τελετές στον χώρο, είμαστε πολύ κοντά σε όμορφες εκκλησίες. Μπορείτε να κάνετε την τελετή σε κοντινή εκκλησία και τη δεξίωση στο Κτήμα Ωρίων." },
     { question: "Υπάρχει διαθέσιμο parking για καλεσμένους;", answer: "Ναι, έχουμε τεράστιο χώρο δωρεάν στάθμευσης με πάνω από 100 θέσεις για όλους τους καλεσμένους του γάμου σας." },
     { question: "Ποιες υπηρεσίες παρέχετε για γάμους;", answer: "Προσφέρουμε ολοκληρωμένες υπηρεσίες γάμου: χώρο, catering, διακόσμηση, φωτισμό, ήχο και συνεργαζόμαστε με επαγγελματίες φωτογράφους. Χειριζόμαστε κάθε λεπτομέρεια για την τέλεια μέρα σας." },
-    { question: "Μπορούμε να επισκεφτούμε το κτήμα πριν την κράτηση;", answer: "Απολύτως! Ενθαρρύνουμε τα ζευγάρια να επισκεφτούν το Κτήμα Ωρίων και να δουν το μαγευτικό περιβάλλον. Επικοινωνήστε μαζί μας για να προγραμματίσουμε δωρεάν ξενάγηση." },
+    { question: "Μπορούμε να επισκεφτούμε το κτήμα πριν την κράτηση;", answer: "Βεβαίως. Ενθαρρύνουμε τα ζευγάρια να επισκεφτούν το Κτήμα Ωρίων και να δουν το μαγευτικό περιβάλλον. Επικοινωνήστε μαζί μας για να προγραμματίσουμε δωρεάν ξενάγηση." },
     { question: "Είναι ο χώρος κατάλληλος για όλες τις εποχές;", answer: "Ναι, διαθέτουμε τόσο πλήρως κλιματιζόμενη εσωτερική αίθουσα όσο και όμορφους εξωτερικούς χώρους, καθιστώντας τον χώρο μας ιδανικό για γάμους σε οποιαδήποτε εποχή." },
     { question: "Διαθέτετε καταλύματα για καλεσμένους;", answer: "Ενώ δεν έχουμε καταλύματα στο χώρο, μπορούμε να συστήσουμε κοντινά ξενοδοχεία και καταλύματα για τους καλεσμένους σας." },
     { question: "Μπορούμε να προσαρμόσουμε τη διακόσμηση;", answer: "Ναι, συνεργαζόμαστε με έμπειρους διακοσμητές και μπορούμε να προσαρμόσουμε πλήρως τη διακόσμηση σύμφωνα με το όραμα και τις προτιμήσεις σας." },
@@ -86,10 +86,10 @@ export default function Gamos() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Γάμος</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               Μοναδικές Στιγμές Αγάπης στο Κτήμα Ωρίων
             </h2>
             
@@ -114,7 +114,7 @@ export default function Gamos() {
         {/* Wedding Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Γιατί να επιλέξετε το Κτήμα Ωρίων;</span>
             </h2>
 
@@ -122,7 +122,7 @@ export default function Gamos() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -134,7 +134,7 @@ export default function Gamos() {
         {/* Photo Gallery */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Φωτογραφίες Γάμων</span>
             </h2>
 
@@ -159,7 +159,7 @@ export default function Gamos() {
         <PleiadesBanner lang="el" />
 
         {/* FAQs */}
-        <FAQ items={weddingFAQs} title="Συχνές Ερωτήσεις για Γάμους" />
+        <FAQ items={weddingFAQs} title="Συχνές ερωτήσεις για Γάμους" />
 
         {/* Nearby Churches */}
         <NearbyChurches />
@@ -170,8 +170,8 @@ export default function Gamos() {
         {/* Popular Searches */}
         <PopularSearches 
           links={[
-            { label: "Κτήμα Γάμου Αθήνα", href: "/el/ktima-gamou-athina" },
-            { label: "Athens Riviera", href: "/el/ktima-gamou-athens-riviera" },
+            { label: "Κτήμα γάμου Αθήνα", href: "/ktima-gamou" },
+            { label: "Athens Riviera", href: "/ktima-gamou" },
             { label: "Δείτε τον Χώρο", href: "/o-horos" },
             { label: "Φωτογράφος", href: "/fotografos" },
             { label: "Εκκλησίες", href: "/ekklisies" },
@@ -182,7 +182,7 @@ export default function Gamos() {
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Ας κάνουμε τον γάμο σας ονειρεμένο
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -203,9 +203,9 @@ export default function Gamos() {
             
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
-              <a href="/el/ktima-gamou-athina" className="text-brand-main hover:underline">Κτήμα Γάμου Αθήνα</a>
+              <a href="/ktima-gamou" className="text-brand-main hover:underline">Κτήμα γάμου Αθήνα</a>
               <span className="text-muted-foreground">•</span>
-              <a href="/el/ktima-gamou-athens-riviera" className="text-brand-main hover:underline">Athens Riviera</a>
+              <a href="/ktima-gamou" className="text-brand-main hover:underline">Athens Riviera</a>
               <span className="text-muted-foreground">•</span>
               <a href="/o-horos" className="text-brand-main hover:underline">Δείτε τον Χώρο</a>
               <span className="text-muted-foreground">•</span>

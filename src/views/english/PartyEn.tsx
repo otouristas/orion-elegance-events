@@ -92,10 +92,10 @@ export default function PartyEn() {
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               <span className="text-gradient-brand">Party</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-brand-text">
+            <h2 className="font-heading mb-8 text-brand-text">
               The ideal venue for your party - Ktima Orion
             </h2>
             
@@ -123,7 +123,7 @@ export default function PartyEn() {
         {/* Party Features */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Why Choose Ktima Orion?</span>
             </h2>
 
@@ -132,7 +132,7 @@ export default function PartyEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <feature.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
+                    <h3 className="font-heading mb-3">{feature.title}</h3>
                     <p className="text-muted-foreground text-sm">{feature.description}</p>
                   </CardContent>
                 </Card>
@@ -144,7 +144,7 @@ export default function PartyEn() {
         {/* Party Types */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Party Types</span>
             </h2>
 
@@ -152,7 +152,7 @@ export default function PartyEn() {
               {partyTypes.map((party, index) => (
                 <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-8">
-                    <h3 className="text-xl font-bold text-gradient-brand mb-4">{party.title}</h3>
+                    <h3 className="font-heading text-gradient-brand mb-4">{party.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{party.description}</p>
                   </CardContent>
                 </Card>
@@ -164,7 +164,7 @@ export default function PartyEn() {
         {/* Party Services */}
         <section className="section-padding">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Party Services</span>
             </h2>
 
@@ -173,7 +173,7 @@ export default function PartyEn() {
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
                   <CardContent className="p-6">
                     <service.icon className="w-12 h-12 text-brand-main mx-auto mb-4" />
-                    <h3 className="text-lg font-bold mb-3">{service.title}</h3>
+                    <h3 className="font-heading mb-3">{service.title}</h3>
                     <p className="text-muted-foreground text-sm">{service.description}</p>
                   </CardContent>
                 </Card>
@@ -185,7 +185,7 @@ export default function PartyEn() {
         {/* Photo Gallery */}
         <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Party Photos</span>
             </h2>
 
@@ -207,7 +207,7 @@ export default function PartyEn() {
         {/* Contact CTA */}
         <section className="section-padding">
           <div className="container-max text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="font-heading mb-6">
               Let's create the perfect party together
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">

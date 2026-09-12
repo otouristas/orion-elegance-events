@@ -56,10 +56,7 @@ ${[
   .join("\n")}
 
 ## SEO / editorial landing (Greek)
-- ${SITE_URL}/el/ktima-gamou-athina
-- ${SITE_URL}/el/ktimata-vaptisis-athina
 - ${SITE_URL}/el/ekklisiaki-dipla-sti-thalassa
-- ${SITE_URL}/el/ktima-gamou-athens-riviera
 - Church detail pages under ${SITE_URL}/el/ekklisies/…
 
 ## English section

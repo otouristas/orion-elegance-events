@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { ChurchJsonLd } from "@/components/seo/json-ld";
 
 const canonicalPath = "/el/ekklisies/agios-alexandros-daskaleio";
-const title = "Άγιος Αλέξανδρος Δασκαλειό | Εκκλησάκι Γάμου – Κτήμα Ωρίων";
+const title = "Άγιος Αλέξανδρος Δασκαλειό — εκκλησάκι γάμου";
 const description =
   "Το παραθαλάσσιο εκκλησάκι του Αγίου Αλεξάνδρου στο Δασκαλειό, 5,2 χλμ και 10 λεπτά από το Κτήμα Ωρίων. Κατάλληλο για γάμους έως 170 άτομα.";
 

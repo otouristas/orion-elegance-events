@@ -66,7 +66,7 @@ export default function AgiaTriadaEn() {
       <section className="relative pt-32 pb-20 bg-gradient-to-b from-brand-main/10 to-background">
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="font-heading mb-6">
               Agia <span className="text-gradient-brand">Triada</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -82,22 +82,22 @@ export default function AgiaTriadaEn() {
           <div className="grid md:grid-cols-4 gap-6 mb-16">
             <div className="card-elegant p-6 text-center">
               <MapPin className="w-8 h-8 text-brand-main mx-auto mb-3" />
-              <h3 className="font-bold mb-2">Distance</h3>
+              <h3 className="font-heading mb-2">Distance</h3>
               <p className="text-muted-foreground">5 km from venue</p>
             </div>
             <div className="card-elegant p-6 text-center">
               <Clock className="w-8 h-8 text-brand-main mx-auto mb-3" />
-              <h3 className="font-bold mb-2">Time</h3>
+              <h3 className="font-heading mb-2">Time</h3>
               <p className="text-muted-foreground">10 minutes</p>
             </div>
             <div className="card-elegant p-6 text-center">
               <Users className="w-8 h-8 text-brand-main mx-auto mb-3" />
-              <h3 className="font-bold mb-2">Capacity</h3>
+              <h3 className="font-heading mb-2">Capacity</h3>
               <p className="text-muted-foreground">Availability depends, both inside and outside. Request information</p>
             </div>
             <div className="card-elegant p-6 text-center">
               <Car className="w-8 h-8 text-brand-main mx-auto mb-3" />
-              <h3 className="font-bold mb-2">Parking</h3>
+              <h3 className="font-heading mb-2">Parking</h3>
               <p className="text-muted-foreground">Available</p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function AgiaTriadaEn() {
           {/* Description */}
           <div className="max-w-4xl mx-auto">
             <div className="card-elegant p-8 mb-8">
-              <h2 className="text-3xl font-bold mb-6 text-gradient-brand">
+              <h2 className="font-heading mb-6 text-gradient-brand">
                 The Chapel
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
@@ -131,7 +131,7 @@ export default function AgiaTriadaEn() {
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="card-elegant p-6">
                 <Church className="w-8 h-8 text-brand-main mb-4" />
-                <h3 className="text-xl font-bold mb-3">Stone Architecture</h3>
+                <h3 className="font-heading mb-3">Stone Architecture</h3>
                 <p className="text-muted-foreground">
                   Picturesque chapel with traditional stone construction. Its unique aesthetic creates 
                   a moving atmosphere for the celebration of the sacrament of marriage.
@@ -139,7 +139,7 @@ export default function AgiaTriadaEn() {
               </div>
               <div className="card-elegant p-6">
                 <Heart className="w-8 h-8 text-brand-main mb-4" />
-                <h3 className="text-xl font-bold mb-3">Complete Services</h3>
+                <h3 className="font-heading mb-3">Complete Services</h3>
                 <p className="text-muted-foreground">
                   At Ktima Orion we handle the coordination of both the ceremony and the reception. 
                   We help with communication with the parish, catering, decoration and all the details.
@@ -149,7 +149,7 @@ export default function AgiaTriadaEn() {
 
             {/* Photo Gallery */}
             <div className="card-elegant p-6 mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-gradient-brand">Photos</h3>
+              <h3 className="font-heading mb-4 text-gradient-brand">Photos</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {churchPhotos.map((photo, index) => (
                   <ClickableImage
@@ -166,7 +166,7 @@ export default function AgiaTriadaEn() {
 
             {/* Map */}
             <div className="card-elegant p-6 mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-gradient-brand">How to Get There</h3>
+              <h3 className="font-heading mb-4 text-gradient-brand">How to Get There</h3>
               <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12609.08!2d23.99!3d37.806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2sKtima%20Orion!3m2!1d37.8024928!2d24.0288167!4m5!1s0x14a18d6e091cb57d%3A0x20df8f722cd314b8!2sAgias%20Triados%20Keratea!3m2!1d37.8103664!2d23.9710399!5e0!3m2!1sen!2sgr"
@@ -202,14 +202,14 @@ export default function AgiaTriadaEn() {
       {/* FAQ Section */}
       <section className="section-padding bg-gradient-to-b from-champagne/30 to-background">
         <div className="container-max max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="font-heading text-center mb-12">
             Frequently Asked <span className="text-gradient-brand">Questions</span>
           </h2>
           
           <div className="space-y-6">
             {faqs.map((faq, index) => (
               <div key={index} className="card-elegant p-6">
-                <h3 className="text-xl font-bold mb-3 text-gradient-brand">
+                <h3 className="font-heading mb-3 text-gradient-brand">
                   {faq.question}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -224,7 +224,7 @@ export default function AgiaTriadaEn() {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-brand-main/10 to-sage/20">
         <div className="container-max text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             Start Your <span className="text-gradient-brand">Journey</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

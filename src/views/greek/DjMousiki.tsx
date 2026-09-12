@@ -26,7 +26,7 @@ export default function DjMousiki() {
                   sizes="(max-width: 768px) 200px, 280px"
                 />
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-brand-text">
+              <h1 className="font-heading mb-6 text-brand-text">
                 DJ - Μουσική
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -40,7 +40,7 @@ export default function DjMousiki() {
             <div className="container-max max-w-4xl">
               <Card className="card-elegant mb-8">
                 <CardContent className="p-8 md:p-12">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-6 text-brand-text">
+                  <h2 className="font-heading mb-6 text-brand-text">
                     Γιώργος Μαρδέλλης
                   </h2>
                   
@@ -63,7 +63,7 @@ export default function DjMousiki() {
               {/* Contact Information */}
               <Card className="card-elegant">
                 <CardContent className="p-8 md:p-12">
-                  <h3 className="text-2xl font-bold mb-8 text-brand-text text-center">
+                  <h3 className="font-heading mb-8 text-brand-text text-center">
                     Στοιχεία Επικοινωνίας
                   </h3>
                   

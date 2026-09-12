@@ -28,25 +28,25 @@ export const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="font-heading mb-8">
               Εμείς - <span className="text-gradient-brand">Κτήμα Ωρίων</span>
             </h2>
             
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
                 Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης 
-                νιώθει αμέσως την λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον.
+                νιώθει αμέσως τη λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον.
               </p>
               
               <p>
-                Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική οδό, μπορείτε να 
+                Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική Οδό, μπορείτε να 
                 απολαύσετε, με κάθε μεγαλοπρέπεια, τις ξεχωριστές στιγμές όπως το γάμο σας ή 
                 τη βάπτιση του παιδιού σας.
               </p>
               
               <p>
                 Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος 
-                του κτήματος εγγυούνται την θερμή υποδοχή και την απόλυτη φιλοξενία των 
+                του κτήματος εγγυούνται τη θερμή υποδοχή και την απόλυτη φιλοξενία των 
                 καλεσμένων σας.
               </p>
             </div>
@@ -77,7 +77,7 @@ export const About = () => {
             </div>
 
             <div className="card-elegant p-8">
-              <h3 className="text-2xl font-bold mb-6 text-center text-gradient-brand">
+              <h3 className="font-heading mb-6 text-center text-gradient-brand">
                 Το Κτήμα Διαθέτει
               </h3>
               

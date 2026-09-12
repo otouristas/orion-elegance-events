@@ -40,5 +40,8 @@ export default async function BlogSlugPage({ params }: BlogSlugPageProps) {
   if (!post) {
     notFound();
   }
+  // BlogPosting and FAQPage markup is emitted by the <BlogPost> view itself,
+  // so it must not be repeated here — two BlogPosting nodes on one URL is
+  // worse than one.
   return <BlogPost slug={slug} />;
 }

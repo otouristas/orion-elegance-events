@@ -14,7 +14,7 @@ export default function KtimaVaptisis() {
         { icon: Home, title: "Ασφαλής Εξωτερικός Χώρος", description: "Καταπράσινος κήπος όπου τα παιδιά μπορούν να παίξουν με ασφάλεια" },
         { icon: Users, title: "30-250 Άτομα", description: "Ευέλικτες διαρρυθμίσεις για μικρές και μεγάλες βαπτίσεις" },
         { icon: Car, title: "Δωρεάν Parking 100+ Θέσεις", description: "Άνετη στάθμευση για όλη την οικογένεια" },
-        { icon: Church, title: "Κοντινές Εκκλησίες", description: "8 εκκλησάκια σε απόσταση 5-15 λεπτά για την τελετή" },
+        { icon: Church, title: "Κοντινές Εκκλησίες", description: "5 εκκλησάκια σε απόσταση 6–13 λεπτά για την τελετή" },
         { icon: Camera, title: "Οικογενειακές Φωτογραφίες", description: "Υπέροχα σκηνικά για αναμνηστικές φωτογραφίες" }
     ];
 
@@ -36,7 +36,7 @@ export default function KtimaVaptisis() {
                 <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
                     <div className="container-max text-center">
                         <Baby className="w-16 h-16 text-brand-main mx-auto mb-6" />
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                        <h1 className="font-heading mb-6">
                             <span className="text-gradient-brand">Κτήμα για βάπτιση με κήπο και ζεστή ατμόσφαιρα</span>
                         </h1>
                         <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
@@ -69,7 +69,7 @@ export default function KtimaVaptisis() {
                 {/* Why Choose Us */}
                 <section className="section-padding">
                     <div className="container-max">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                        <h2 className="font-heading text-center mb-4">
                             <span className="text-gradient-brand">Γιατί το Κτήμα Ωρίων για τη Βάπτιση σας</span>
                         </h2>
                         <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
@@ -81,7 +81,7 @@ export default function KtimaVaptisis() {
                                 <Card key={index} className="card-elegant hover:shadow-xl transition-all">
                                     <CardContent className="p-6">
                                         <feature.icon className="w-10 h-10 text-brand-main mb-4" />
-                                        <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+                                        <h3 className="font-heading mb-2">{feature.title}</h3>
                                         <p className="text-muted-foreground text-sm">{feature.description}</p>
                                     </CardContent>
                                 </Card>
@@ -94,7 +94,7 @@ export default function KtimaVaptisis() {
                 <section className="section-padding bg-muted/20">
                     <div className="container-max max-w-4xl space-y-12">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Γιατί να κάνετε τη βάπτιση σε κτήμα</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -104,7 +104,7 @@ export default function KtimaVaptisis() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Ο χώρος του Κτήματος Ωρίων για βάπτιση</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -114,7 +114,7 @@ export default function KtimaVaptisis() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Μενού βάπτισης και παιδικές επιλογές</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -124,7 +124,7 @@ export default function KtimaVaptisis() {
                             </div>
                         </div>
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                            <h2 className="font-heading mb-4 text-center">
                                 <span className="text-gradient-brand">Κοντινές εκκλησίες για το μυστήριο</span>
                             </h2>
                             <div className="prose prose-lg max-w-none text-muted-foreground text-center md:text-left">
@@ -138,7 +138,7 @@ export default function KtimaVaptisis() {
 
                 <section className="section-padding">
                     <div className="container-max max-w-4xl">
-                        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+                        <h2 className="font-heading text-center mb-8">
                             <span className="text-gradient-brand">Κτήμα για βάπτιση στην Αττική – Κτήμα Ωρίων</span>
                         </h2>
 
@@ -169,7 +169,7 @@ export default function KtimaVaptisis() {
                 {/* Popular Searches */}
                 <PopularSearches
                     links={[
-                        { label: "κτηματα βαπτισης αθηνα", href: "/el/ktimata-vaptisis-athina" },
+                        { label: "κτηματα βαπτισης αθηνα", href: "/ktima-vaptisis" },
                         { label: "κτημα για βαπτιση με κηπο", href: "/ktima-vaptisis" },
                         { label: "κτημα βαπτισης στην ανατολικη αττικη", href: "/ktima-vaptisis" },
                         { label: "εκκλησιες κοντα στο κτημα", href: "/ekklisies" },
@@ -181,7 +181,7 @@ export default function KtimaVaptisis() {
                 {/* CTA */}
                 <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">
                     <div className="container-max text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        <h2 className="font-heading mb-6">
                             Κλείστε Δωρεάν Επίσκεψη για τη Βάπτιση
                         </h2>
                         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -207,22 +207,9 @@ export default function KtimaVaptisis() {
                 </section>
             </div>
 
-            {/* FAQ Schema */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": faqs.map(faq => ({
-                        "@type": "Question",
-                        "name": faq.question,
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": faq.answer
-                        }
-                    }))
-                })}
-            </script>
-
+            {/* No FAQPage script here: the <FAQ> block above already emits one
+                from the same `faqs` array, and this page was shipping two
+                identical FAQPage nodes on a single URL. */}
         </Layout>
     );
 }

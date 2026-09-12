@@ -19,8 +19,8 @@ const Partners = lazy(() => import('@/components/Partners').then(module => ({ de
 const BackToTop = lazy(() => import('@/components/BackToTop').then(module => ({ default: module.BackToTop })));
 const ContactFAB = lazy(() => import('@/components/ContactFAB').then(module => ({ default: module.ContactFAB })));
 const FAQ = lazy(() => import('@/components/FAQ').then(module => ({ default: module.FAQ })));
-const NearbyChurches = lazy(() => import('@/components/NearbyChurches').then(module => ({ default: module.NearbyChurches })));
 const CookieConsent = lazy(() => import('@/components/CookieConsent').then(module => ({ default: module.CookieConsent })));
+const ScrollReveal = lazy(() => import('@/components/ScrollReveal').then(module => ({ default: module.ScrollReveal })));
 
 const Index = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,31 +30,44 @@ const Index = () => {
       setIsScrolled(window.scrollY > 50);
     };
     handleScroll();
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="min-h-screen">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-brand-text focus:px-5 focus:py-3 focus:text-sm focus:text-white"
+      >
+        Μετάβαση στο περιεχόμενο
+      </a>
       <Navigation isScrolled={isScrolled} isTransparent={true} />
-      <Hero />
-      <Description />
-      <Features />
-      <Suspense fallback={<div className="section-padding"><div className="container-max text-center">Loading...</div></div>}>
-        <HomeGallery />
-        <Services />
-        <About />
-        <Churches />
-        <Testimonials />
-        <FAQ items={[...homepageFaqs]} title="Συχνές Ερωτήσεις" />
-        <NearbyChurches />
-        <Partners />
-        <Contact />
-        <Footer />
-      </Suspense>
+      <main id="main">
+        <Hero />
+        <Description />
+        <Features />
+        {/* These stream in from the server, so the boundary needs no visible
+            fallback — the previous one emitted a stray "Loading..." into the
+            rendered HTML and shifted layout on hydration. */}
+        <Suspense fallback={null}>
+          <HomeGallery />
+          <Services />
+          <About />
+          <Churches />
+          <Testimonials />
+          <FAQ items={[...homepageFaqs]} title="Συχνές ερωτήσεις" />
+          {/* NearbyChurches is deliberately not rendered here: <Churches />
+              above already lists the same five churches on this page. */}
+          <Partners />
+          <Contact />
+        </Suspense>
+      </main>
       <Suspense fallback={null}>
+        <Footer />
         <BackToTop />
         <ContactFAB />
+        <ScrollReveal />
         <CookieConsent />
       </Suspense>
     </div>

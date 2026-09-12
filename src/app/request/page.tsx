@@ -3,9 +3,9 @@ import Request from "@/views/greek/Request";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Ζητήστε Προσφορά για Γάμο ή Βάπτιση | Κτήμα Ωρίων";
+const title = "Ζητήστε δωρεάν προσφορά για γάμο ή βάπτιση";
 const description =
-  "Ζητήστε προσφορά για γάμο, βάπτιση, πάρτι ή εταιρική εκδήλωση στο Κτήμα Ωρίων Κερατέας. 50–350 καλεσμένοι, διαθέσιμες ημερομηνίες 365 ημέρες τον χρόνο.";
+  "Συμπληρώστε τη φόρμα και λάβετε προσωπική προσφορά για τη δεξίωσή σας στο Κτήμα Ωρίων: ημερομηνία, αριθμός ατόμων, μενού. Χωρίς δέσμευση.";
 
 export const metadata: Metadata = buildMetadata({
   title,

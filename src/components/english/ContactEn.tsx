@@ -66,7 +66,7 @@ export const ContactEn = () => {
     <section id="contact" className="section-padding bg-gradient-to-b from-background to-champagne">
       <div className="container-max">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-heading mb-6">
             <span className="text-gradient-brand">Contact</span>
           </h2>
           <p className="text-xl text-muted-foreground">
@@ -79,7 +79,7 @@ export const ContactEn = () => {
               <div className="flex items-center justify-center mb-4">
                 <CheckCircle className="w-12 h-12 text-green-500" />
               </div>
-              <h3 className="text-2xl font-bold text-green-800 mb-2">Your message was sent successfully!</h3>
+              <h3 className="font-heading text-green-800 mb-2">Your message was sent successfully!</h3>
               <p className="text-green-700">
                 Thank you! We received your message and will contact you as soon as possible.
               </p>
@@ -92,7 +92,7 @@ export const ContactEn = () => {
               <div className="flex items-center justify-center mb-4">
                 <AlertCircle className="w-12 h-12 text-red-500" />
               </div>
-              <h3 className="text-2xl font-bold text-red-800 mb-2">Sending error</h3>
+              <h3 className="font-heading text-red-800 mb-2">Sending error</h3>
               <p className="text-red-700">{errorMessage}</p>
             </div>
           )}
@@ -102,7 +102,7 @@ export const ContactEn = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gradient-brand mb-6">
+              <h3 className="font-heading text-gradient-brand mb-6">
                 Contact Information
               </h3>
               
@@ -112,7 +112,7 @@ export const ContactEn = () => {
                     <MapPin className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Address</h4>
+                    <h4 className="font-heading mb-1">Address</h4>
                     <p className="text-muted-foreground">Keratea, Attica</p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export const ContactEn = () => {
                     <Phone className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Phones</h4>
+                    <h4 className="font-heading mb-1">Phones</h4>
                     <p className="text-muted-foreground">2299068812</p>
                     <p className="text-muted-foreground">6981889560</p>
                   </div>
@@ -133,7 +133,7 @@ export const ContactEn = () => {
                     <Mail className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
+                    <h4 className="font-heading mb-1">Email</h4>
                     <p className="text-muted-foreground">info@ktimaorion.gr</p>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export const ContactEn = () => {
                     <Clock className="w-6 h-6 text-brand-main" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Opening Hours</h4>
+                    <h4 className="font-heading mb-1">Opening Hours</h4>
                     <p className="text-muted-foreground">Monday - Sunday</p>
                     <p className="text-muted-foreground">9:00 - 21:00</p>
                   </div>
@@ -153,7 +153,7 @@ export const ContactEn = () => {
 
             {/* Social Media */}
             <div>
-              <h4 className="font-semibold mb-4">Follow us</h4>
+              <h4 className="font-heading mb-4">Follow us</h4>
               <div className="flex space-x-4">
                 <a 
                   href="https://www.facebook.com/ktimaorion.gr/?locale=el_GR"
@@ -179,7 +179,7 @@ export const ContactEn = () => {
 
           {/* Contact Form */}
           <div className="card-elegant p-8">
-            <h3 className="text-2xl font-bold text-gradient-brand mb-6">
+            <h3 className="font-heading text-gradient-brand mb-6">
               Send us a message
             </h3>
             
