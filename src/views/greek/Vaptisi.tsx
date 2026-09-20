@@ -7,7 +7,8 @@ import { TrustSignals } from '@/components/TrustSignals';
 import { NearbyChurches } from '@/components/NearbyChurches';
 import { RelatedServices } from '@/components/RelatedServices';
 import { PopularSearches } from '@/components/PopularSearches';
-import { PleiadesBanner } from '@/components/PleiadesBanner';
+import { BaptismPackagesBanner } from '@/components/BaptismPackagesBanner';
+import { promoHref } from '@/lib/promo';
 import Link from 'next/link';
 
 interface BaptismPhoto {
@@ -235,7 +236,7 @@ export default function Vaptisi() {
         {/* Trust Signals */}
         <TrustSignals />
 
-        <PleiadesBanner lang="el" />
+        <BaptismPackagesBanner lang="el" />
 
         {/* FAQs */}
         <FAQ items={baptismFAQs} title="Συχνές ερωτήσεις για Βαπτίσεις" />
@@ -267,6 +268,11 @@ export default function Vaptisi() {
               Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια βαπτιστική δεξίωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href={promoHref(false)}>
+                <button className="button button4">
+                  ΔΕΙΤΕ ΤΑ ΠΑΚΕΤΑ ΑΠΟ 33€
+                </button>
+              </a>
               <a href="/epikoinonia">
                 <button className="button button4">
                   ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ

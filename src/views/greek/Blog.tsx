@@ -6,8 +6,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 import { Calendar, Clock, Tag } from 'lucide-react';
 import { blogPosts, getAllCategories } from '@/data/blogPosts';
+import { PROMO_COPY, PROMO_SLUG } from '@/lib/promo';
 import { normalizePublicImageSrc } from '@/lib/images/normalize-public-src';
 import { useState } from 'react';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -77,10 +79,15 @@ export default function Blog() {
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                         loading="lazy"
                       />
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                         <span className="bg-brand-main text-white px-3 py-1 rounded-full text-sm">
                           {post.categoryLabel}
                         </span>
+                        {post.slug === PROMO_SLUG && (
+                          <span className="rounded-full bg-white px-3 py-1 text-sm font-bold uppercase tracking-wider text-brand-main shadow-sm">
+                            {PROMO_COPY.el.menuBadge}
+                          </span>
+                        )}
                       </div>
                     </div>
                     <CardContent className="p-6">
@@ -107,6 +114,8 @@ export default function Blog() {
             </div>
           </div>
         </section>
+
+        <PleiadesBanner lang="el" />
 
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-r from-brand-main/5 to-brand-main/10">

@@ -7,6 +7,9 @@ import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
 import { getPostBySlug, blogPosts } from '@/data/blogPosts';
 import { normalizePublicImageSrc } from '@/lib/images/normalize-public-src';
 import ReactMarkdown from 'react-markdown';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
+import { PLEIADES_ARTICLE_SLUG } from '@/data/pleiades-promo';
+import { PROMO_SLUG } from '@/lib/promo';
 
 interface BlogPostEnProps {
   readonly slug: string;
@@ -235,6 +238,10 @@ export default function BlogPostEn({ slug }: BlogPostEnProps) {
             </div>
           </div>
         </article>
+
+        {post.slug !== PROMO_SLUG && post.slug !== PLEIADES_ARTICLE_SLUG && (
+          <PleiadesBanner lang="en" />
+        )}
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (

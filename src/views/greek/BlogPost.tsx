@@ -8,6 +8,9 @@ import { getPostBySlug, blogPosts } from '@/data/blogPosts';
 import { normalizePublicImageSrc } from '@/lib/images/normalize-public-src';
 import { buildAbsoluteUrl } from '@/lib/seo/hreflang';
 import ReactMarkdown from 'react-markdown';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
+import { PLEIADES_ARTICLE_SLUG } from '@/data/pleiades-promo';
+import { PROMO_SLUG } from '@/lib/promo';
 
 interface BlogPostProps {
   readonly slug: string;
@@ -277,6 +280,10 @@ export default function BlogPost({ slug }: BlogPostProps) {
             </div>
           </div>
         </article>
+
+        {post.slug !== PROMO_SLUG && post.slug !== PLEIADES_ARTICLE_SLUG && (
+          <PleiadesBanner lang="el" />
+        )}
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (

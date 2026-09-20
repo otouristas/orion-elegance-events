@@ -6,20 +6,18 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { X } from 'lucide-react';
 import { PLEIADES_ARTICLE_SLUG, PLEIADES_PROMO_IMAGE } from '@/data/pleiades-promo';
+import {
+  PROMO_COPY,
+  PROMO_IMAGE,
+  isHomepage,
+  promoHref,
+  shouldShowBaptismPopup,
+  shouldShowPleiadesPopup,
+} from '@/lib/promo';
 
-/** Article the promotion points at, in both locales. */
-const PROMO_SLUG = PLEIADES_ARTICLE_SLUG;
-const PROMO_IMAGE = PLEIADES_PROMO_IMAGE;
+type Campaign = 'baptism' | 'pleiades';
 
-/**
- * Bump the suffix to re-show the popup to visitors who dismissed an earlier campaign.
- */
-const DISMISS_KEY = 'promoPopup:pleiades-synergasia-2026';
-
-/** Give the visitor a moment with the page (and the cookie notice) first. */
-const APPEAR_DELAY_MS = 6000;
-
-const COPY = {
+const PLEIADES_COPY = {
   el: {
     eyebrow: 'Συνεργασία',
     title: 'Ο γάμος των ονείρων σας',
@@ -42,40 +40,77 @@ const COPY = {
   },
 } as const;
 
+/** Bump the suffix to re-show a campaign after a previous dismissal. */
+const DISMISS_KEY = {
+  baptism: 'promoPopup:vaptisi-paketa-2026-restore',
+  pleiades: 'promoPopup:pleiades-synergasia-2026',
+} as const;
+
+/** Give the visitor a moment with the page (and the cookie notice) first. */
+const APPEAR_DELAY_MS = 6000;
+
+function resolveCampaign(pathname: string): Campaign | null {
+  if (shouldShowPleiadesPopup(pathname)) {
+    return 'pleiades';
+  }
+  if (shouldShowBaptismPopup(pathname)) {
+    return 'baptism';
+  }
+  return null;
+}
+
 export const PromoPopup = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
+  const campaign = resolveCampaign(pathname);
   const isEnglish = pathname.startsWith('/en');
-  const copy = isEnglish ? COPY.en : COPY.el;
-  const promoHref = isEnglish ? `/en/blog/${PROMO_SLUG}` : `/blog/${PROMO_SLUG}`;
-  // Never interrupt the page the popup is advertising.
-  const isPromoPage = pathname === `/blog/${PROMO_SLUG}` || pathname === `/en/blog/${PROMO_SLUG}`;
-  // The homepage always re-shows the offer, on every visit and every refresh, so
-  // a dismissal there is for the current view only and is never remembered.
-  const isHomepage = pathname === '/' || pathname === '/en';
+  const onHomepage = isHomepage(pathname);
+  const copy =
+    campaign === 'pleiades'
+      ? isEnglish
+        ? PLEIADES_COPY.en
+        : PLEIADES_COPY.el
+      : isEnglish
+        ? PROMO_COPY.en
+        : PROMO_COPY.el;
+  const href =
+    campaign === 'pleiades'
+      ? isEnglish
+        ? `/en/blog/${PLEIADES_ARTICLE_SLUG}`
+        : `/blog/${PLEIADES_ARTICLE_SLUG}`
+      : promoHref(isEnglish);
+  const image = campaign === 'pleiades' ? PLEIADES_PROMO_IMAGE : PROMO_IMAGE;
+  const imageSize =
+    campaign === 'pleiades' ? { width: 939, height: 1675 } : { width: 1254, height: 1254 };
+  const imageClass =
+    campaign === 'pleiades'
+      ? 'h-44 w-full object-cover object-top sm:h-48'
+      : 'h-44 w-full object-cover object-center sm:h-48';
 
   const dismiss = useCallback(() => {
     setIsOpen(false);
-    if (isHomepage) {
+    // Homepage (Partners) always re-shows the Pleiades offer on the next visit.
+    if (!campaign || (campaign === 'pleiades' && onHomepage)) {
       return;
     }
     try {
-      window.localStorage.setItem(DISMISS_KEY, 'dismissed');
+      window.localStorage.setItem(DISMISS_KEY[campaign], 'dismissed');
     } catch {
       // Private browsing or blocked storage: closing for this view is enough.
     }
-  }, [isHomepage]);
+  }, [campaign, onHomepage]);
 
   useEffect(() => {
-    if (isPromoPage) {
+    setIsOpen(false);
+    if (!campaign) {
       return;
     }
-    if (!isHomepage) {
+    if (!(campaign === 'pleiades' && onHomepage)) {
       let dismissed = false;
       try {
-        dismissed = window.localStorage.getItem(DISMISS_KEY) !== null;
+        dismissed = window.localStorage.getItem(DISMISS_KEY[campaign]) !== null;
       } catch {
         dismissed = false;
       }
@@ -85,7 +120,7 @@ export const PromoPopup = () => {
     }
     const timer = window.setTimeout(() => setIsOpen(true), APPEAR_DELAY_MS);
     return () => window.clearTimeout(timer);
-  }, [isPromoPage, isHomepage]);
+  }, [campaign, onHomepage, pathname]);
 
   // Lock background scrolling and wire up Escape while the dialog is open.
   useEffect(() => {
@@ -109,7 +144,7 @@ export const PromoPopup = () => {
     };
   }, [isOpen, dismiss]);
 
-  if (!isOpen) {
+  if (!isOpen || !campaign) {
     return null;
   }
 
@@ -142,13 +177,13 @@ export const PromoPopup = () => {
           <X className="h-4 w-4" />
         </button>
 
-        <Link href={promoHref} onClick={dismiss} className="block">
+        <Link href={href} onClick={dismiss} className="block">
           <Image
-            src={PROMO_IMAGE}
+            src={image}
             alt={copy.alt}
-            width={939}
-            height={1675}
-            className="h-44 w-full object-cover object-top sm:h-48"
+            width={imageSize.width}
+            height={imageSize.height}
+            className={imageClass}
             sizes="320px"
             priority
           />
@@ -165,7 +200,7 @@ export const PromoPopup = () => {
 
           <div className="mt-4 flex flex-col gap-1.5">
             <Link
-              href={promoHref}
+              href={href}
               onClick={dismiss}
               className="flex min-h-[44px] items-center justify-center rounded-md bg-brand-main px-4 text-sm font-bold text-white transition-colors hover:bg-brand-dark"
             >

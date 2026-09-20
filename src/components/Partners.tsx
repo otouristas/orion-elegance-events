@@ -8,7 +8,7 @@ const topeventsLogo = '/images/topevents-logo.png';
 
 export const Partners = () => {
   return (
-    <section className="section-padding bg-gradient-to-b from-background to-brand-main/5">
+    <section id="synergates" className="section-padding bg-gradient-to-b from-background to-brand-main/5">
       <div className="container-max">
         <div className="text-center mb-12">
           <h2 className="font-heading mb-4">

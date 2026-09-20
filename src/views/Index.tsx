@@ -16,6 +16,7 @@ const Testimonials = lazy(() => import('@/components/Testimonials').then(module 
 const Contact = lazy(() => import('@/components/Contact').then(module => ({ default: module.Contact })));
 const Footer = lazy(() => import('@/components/Footer').then(module => ({ default: module.Footer })));
 const Partners = lazy(() => import('@/components/Partners').then(module => ({ default: module.Partners })));
+const PleiadesBanner = lazy(() => import('@/components/PleiadesBanner').then(module => ({ default: module.PleiadesBanner })));
 const BackToTop = lazy(() => import('@/components/BackToTop').then(module => ({ default: module.BackToTop })));
 const ContactFAB = lazy(() => import('@/components/ContactFAB').then(module => ({ default: module.ContactFAB })));
 const FAQ = lazy(() => import('@/components/FAQ').then(module => ({ default: module.FAQ })));
@@ -60,6 +61,7 @@ const Index = () => {
           {/* NearbyChurches is deliberately not rendered here: <Churches />
               above already lists the same five churches on this page. */}
           <Partners />
+          <PleiadesBanner lang="el" />
           <Contact />
         </Suspense>
       </main>

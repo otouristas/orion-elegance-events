@@ -13,6 +13,7 @@ import { TestimonialsEn } from '@/components/english/TestimonialsEn';
 import { ContactEn } from '@/components/english/ContactEn';
 import { FooterEn } from '@/components/english/FooterEn';
 import { PartnersEn } from '@/components/english/PartnersEn';
+import { PleiadesBanner } from '@/components/PleiadesBanner';
 import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { FAQEn } from '@/components/english/FAQEn';
@@ -61,6 +62,7 @@ const IndexEn = () => {
       <FAQEn items={homepageFAQs} title="Frequently Asked Questions" />
       <NearbyChurchesEn />
       <PartnersEn />
+      <PleiadesBanner lang="en" />
       <ContactEn />
       <FooterEn />
       <BackToTop />

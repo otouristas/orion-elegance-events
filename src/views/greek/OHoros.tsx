@@ -4,8 +4,6 @@ import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPi
 import { FAQ } from '@/components/FAQ';
 import { TrustSignals } from '@/components/TrustSignals';
 import { PopularSearches } from '@/components/PopularSearches';
-import { PleiadesBanner } from '@/components/PleiadesBanner';
-import { PLEIADES_ARTICLE_SLUG } from '@/data/pleiades-promo';
 import Link from 'next/link';
 import { ClickableImage } from '@/components/ImageLightbox';
 
@@ -318,15 +316,10 @@ export default function OHoros() {
                 </h2>
                 <div className="space-y-6">
                   <p className="text-muted-foreground leading-relaxed">
-                    Σε συνεργασία με το{' '}
-                    <Link href={`/blog/${PLEIADES_ARTICLE_SLUG}`} className="font-semibold text-brand-main hover:underline">
-                      Pleiades Catering
-                    </Link>
-                    , εξασφαλίζουμε κορυφαία γαστρονομία και γαστριμαργική απόλαυση για τους καλεσμένους σας,
-                    σε μια ατμόσφαιρα γεμάτη λάμψη και μαγεία.
+                    Η συνεργασία μας με πιστοποιημένα catering εξασφαλίζει, εκτός από το περιβάλλον, και τη γαστριμαργική απόλαυση των καλεσμένων σας.
+                    Οι επιλεγμένοι συνεργάτες μας φροντίζουν για τη μουσική και ηχητική κάλυψη της δεξίωσής σας.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Οι επιλεγμένοι συνεργάτες μας φροντίζουν επίσης για τη μουσική και ηχητική κάλυψη της δεξίωσής σας.
                     Το Κτήμα συνδυάζει παρουσία, άρτια οργάνωση και υψηλό επίπεδο υπηρεσιών, πολύ κοντά σε γραφικά εκκλησάκια πάνω στη θάλασσα.
                   </p>
                 </div>
@@ -351,8 +344,6 @@ export default function OHoros() {
             </div>
           </div>
         </section>
-
-        <PleiadesBanner lang="el" />
 
         {/* Trust Signals */}
         <TrustSignals />
