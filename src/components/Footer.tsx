@@ -6,6 +6,7 @@ import {
   POSTAL_CODE,
   STREET_ADDRESS_EL,
 } from '@/lib/seo/config';
+import { PromoBanner } from '@/components/PromoBanner';
 
 const logoWhite = '/images/logo-white.png';
 
@@ -31,6 +32,8 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
+    <>
+    <PromoBanner />
     <footer className="bg-forest text-secondary-foreground">
       <div className="container-max py-16 md:py-20">
         <div className="mb-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -169,5 +172,6 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };

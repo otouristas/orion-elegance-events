@@ -7,7 +7,8 @@ import { TrustSignalsEn } from '@/components/english/TrustSignalsEn';
 import { NearbyChurchesEn } from '@/components/english/NearbyChurchesEn';
 import { RelatedServicesEn } from '@/components/english/RelatedServicesEn';
 import { PopularSearchesEn } from '@/components/english/PopularSearchesEn';
-import { PleiadesBanner } from '@/components/PleiadesBanner';
+import { BaptismPackagesBanner } from '@/components/BaptismPackagesBanner';
+import { promoHref } from '@/lib/promo';
 import Link from 'next/link';
 
 interface BaptismPhoto {
@@ -233,7 +234,7 @@ export default function BaptismEn() {
         {/* Trust Signals */}
         <TrustSignalsEn />
 
-        <PleiadesBanner lang="en" />
+        <BaptismPackagesBanner lang="en" />
 
         {/* FAQs */}
         <FAQEn items={baptismFAQs} title="Frequently Asked Questions About Baptisms" />
@@ -254,12 +255,21 @@ export default function BaptismEn() {
               Contact us today to schedule a visit to our <a href="/en/venue" className="text-brand-main hover:underline">christening venue</a> and start planning this unforgettable baptism celebration. Explore our <a href="/en/services" className="text-brand-main hover:underline">baptism services</a> and nearby <a href="/en/churches" className="text-brand-main hover:underline">churches</a>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button button4">
-                BOOK APPOINTMENT
-              </button>
-              <button className="button button4">
-                CONTACT US
-              </button>
+              <a href={promoHref(true)}>
+                <button className="button button4">
+                  SEE PACKAGES FROM €33
+                </button>
+              </a>
+              <a href="/en/contact">
+                <button className="button button4">
+                  BOOK APPOINTMENT
+                </button>
+              </a>
+              <a href="/en/contact">
+                <button className="button button4">
+                  CONTACT US
+                </button>
+              </a>
             </div>
           </div>
         </section>

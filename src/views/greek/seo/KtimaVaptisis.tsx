@@ -7,6 +7,8 @@ import { TrustSignals } from '@/components/TrustSignals';
 import { NearbyChurches } from '@/components/NearbyChurches';
 import { RelatedServices } from '@/components/RelatedServices';
 import { PopularSearches } from '@/components/PopularSearches';
+import { BaptismPackagesBanner } from '@/components/BaptismPackagesBanner';
+import { promoHref } from '@/lib/promo';
 
 export default function KtimaVaptisis() {
     const features = [
@@ -46,6 +48,11 @@ export default function KtimaVaptisis() {
                             Παιδικό μενού • Ασφαλής κήπος • 8 κοντινές εκκλησίες
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link href={promoHref(false)}>
+                                <button className="button button4">
+                                    Δείτε τα πακέτα από 33€
+                                </button>
+                            </Link>
                             <Link href="/request">
                                 <button className="button button4">
                                     Ζητήστε προσφορά
@@ -154,6 +161,8 @@ export default function KtimaVaptisis() {
                     </div>
                 </section>
 
+                <BaptismPackagesBanner lang="el" />
+
                 {/* Trust Signals */}
                 <TrustSignals />
 
@@ -188,6 +197,9 @@ export default function KtimaVaptisis() {
                             Επικοινωνήστε μαζί μας σήμερα για να δείτε τον χώρο και να οργανώσουμε την τέλεια βαπτιστική δεξίωση
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link href={promoHref(false)}>
+                                <button className="button button4">Δείτε τα πακέτα από 33€</button>
+                            </Link>
                             <Link href="/request">
                                 <button className="button button4">Ζητήστε προσφορά</button>
                             </Link>

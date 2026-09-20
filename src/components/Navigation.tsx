@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Menu, X, ChevronDown, Globe, Sparkles, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import * as Collapsible from '@radix-ui/react-collapsible';
+import { PROMO_COPY, promoHref, shouldShowBaptismMenuIndicator } from '@/lib/promo';
 const logoDark = '/images/logo-dark.png';
 const logoWhite = '/images/logo-white.png';
 
@@ -102,6 +103,10 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
     { label: 'Επικοινωνία', labelEn: 'Contact', href: '/epikoinonia', hrefEn: '/en/contact' },
   ];
 
+  const promoCopy = isEnglish ? PROMO_COPY.en : PROMO_COPY.el;
+  const showPromo = shouldShowBaptismMenuIndicator(pathname);
+  const isPackagesLink = (href: string) => href === '/vaptisi' || href === '/en/baptism';
+
   const bgClass = isTransparent && !isScrolled
     ? 'bg-transparent'
     : 'bg-background/95 backdrop-blur-md border-b border-border';
@@ -182,9 +187,14 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                             <Link
                               key={subItem.label}
                               href={isEnglish ? subItem.hrefEn : subItem.href}
-                              className="block px-5 py-3.5 text-sm text-foreground hover:bg-brand-main/10 hover:text-brand-main transition-colors border-b border-border/30 last:border-0 font-medium"
+                              className="flex items-center justify-between gap-2 px-5 py-3.5 text-sm text-foreground hover:bg-brand-main/10 hover:text-brand-main transition-colors border-b border-border/30 last:border-0 font-medium"
                             >
-                              {isEnglish ? subItem.labelEn : subItem.label}
+                              <span>{isEnglish ? subItem.labelEn : subItem.label}</span>
+                              {showPromo && isPackagesLink(subItem.href) && (
+                                <span className="shrink-0 rounded-full bg-brand-main/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-main">
+                                  {promoCopy.menuBadge}
+                                </span>
+                              )}
                             </Link>
                           ))}
                         </div>
@@ -275,6 +285,25 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
             onClick={(e) => e.stopPropagation()}
           >
             <div className="py-4">
+              {showPromo && (
+                <Link
+                  href={promoHref(isEnglish)}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="mx-4 mb-4 flex items-center gap-3 rounded-lg border border-brand-main/30 bg-brand-main/10 px-4 py-4 transition-colors hover:bg-brand-main/20"
+                >
+                  <Sparkles className="h-5 w-5 flex-shrink-0 text-brand-main" />
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-brand-main">
+                      {promoCopy.menuBadge}
+                    </span>
+                    <span className="block text-sm font-semibold text-foreground">
+                      {promoCopy.menuLabel}
+                    </span>
+                  </span>
+                  <ArrowRight className="h-4 w-4 flex-shrink-0 text-brand-main" />
+                </Link>
+              )}
+
               {navItems.map((item) => (
                 <div key={item.label} className="border-b border-border">
                   {item.submenu ? (
@@ -288,10 +317,15 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
                           <Link
                             key={subItem.label}
                             href={isEnglish ? subItem.hrefEn : subItem.href}
-                            className="block px-10 py-4 text-sm text-foreground hover:text-brand-main hover:bg-brand-main/10 transition-all font-medium"
+                            className="flex items-center justify-between gap-2 px-10 py-4 text-sm text-foreground hover:text-brand-main hover:bg-brand-main/10 transition-all font-medium"
                             onClick={() => setIsMenuOpen(false)}
                           >
-                            {isEnglish ? subItem.labelEn : subItem.label}
+                            <span>{isEnglish ? subItem.labelEn : subItem.label}</span>
+                            {showPromo && isPackagesLink(subItem.href) && (
+                              <span className="shrink-0 rounded-full bg-brand-main/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-main">
+                                {promoCopy.menuBadge}
+                              </span>
+                            )}
                           </Link>
                         ))}
                       </Collapsible.Content>
