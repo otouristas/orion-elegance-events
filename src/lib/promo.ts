@@ -66,17 +66,14 @@ export const isPleiadesArticle = (pathname: string) =>
 export const isHomepage = (pathname: string) => pathname === '/' || pathname === '/en';
 
 /**
- * Pleiades keeps the delayed modal only on Partners (homepage) and blog posts.
- * Baptism packages take the popup on every other page, plus the site-wide
- * banner, menu indicator and in-page CTAs.
+ * Pleiades keeps the delayed modal on blog listing and blog posts only.
+ * Partners keep the in-page banner/cards. The homepage popup is baptism packages.
  */
 export const shouldShowPleiadesPopup = (pathname: string) =>
-  (isHomepage(pathname) || isBlogRoute(pathname)) &&
-  !isPleiadesArticle(pathname) &&
-  !isPromoPage(pathname);
+  isBlogRoute(pathname) && !isPleiadesArticle(pathname) && !isPromoPage(pathname);
 
 export const shouldShowBaptismPopup = (pathname: string) =>
-  !isHomepage(pathname) && !isBlogRoute(pathname) && !isPromoPage(pathname);
+  !isBlogRoute(pathname) && !isPromoPage(pathname);
 
 export const shouldShowBaptismBanner = (pathname: string) =>
   !isPromoPage(pathname) && !isBlogRoute(pathname);

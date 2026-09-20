@@ -91,8 +91,8 @@ export const PromoPopup = () => {
 
   const dismiss = useCallback(() => {
     setIsOpen(false);
-    // Homepage (Partners) always re-shows the Pleiades offer on the next visit.
-    if (!campaign || (campaign === 'pleiades' && onHomepage)) {
+    // Homepage always re-shows the baptism offer on the next visit.
+    if (!campaign || (campaign === 'baptism' && onHomepage)) {
       return;
     }
     try {
@@ -107,7 +107,7 @@ export const PromoPopup = () => {
     if (!campaign) {
       return;
     }
-    if (!(campaign === 'pleiades' && onHomepage)) {
+    if (!(campaign === 'baptism' && onHomepage)) {
       let dismissed = false;
       try {
         dismissed = window.localStorage.getItem(DISMISS_KEY[campaign]) !== null;
