@@ -3,9 +3,9 @@ import Gamos from "@/views/greek/Gamos";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd, ServiceJsonLd } from "@/components/seo/json-ld";
 
-const title = "Γάμος στο Κτήμα Ωρίων: τελετή, δεξίωση & παροχές";
+const title = "Γαμήλια δεξίωση με χώρο, catering & στολισμό | Κτήμα Ωρίων";
 const description =
-  "Τι περιλαμβάνει ένας γάμος στο Κτήμα Ωρίων: τελετή σε εκκλησάκι 6–13 λεπτά μακριά, δεξίωση 50–350 ατόμων, catering, στολισμός, DJ και φωτογράφος.";
+  "Χώρος, catering, στολισμός, φωτισμός και ήχος, με δωρεάν parking 100+ θέσεων. Για 50–350 άτομα, τελετή σε εκκλησάκι 6–13 λεπτά και μία εκδήλωση την ημέρα.";
 
 export const metadata: Metadata = buildMetadata({
   title,
