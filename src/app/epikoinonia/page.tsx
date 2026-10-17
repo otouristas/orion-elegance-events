@@ -3,9 +3,9 @@ import Epikoinonia from "@/views/greek/Epikoinonia";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Επικοινωνία & δωρεάν ξενάγηση — 22990 68812";
+const title = "Καλέστε για ραντεβού στην Κερατέα: 22990 68812 | Κτήμα Ωρίων";
 const description =
-  "Επικοινωνήστε με το Κτήμα Ωρίων στην Κερατέα: 22990 68812, info@ktimaorion.gr. Κλείστε δωρεάν ξενάγηση στον χώρο, χωρίς καμία δέσμευση.";
+  "Καλέστε στο 22990 68812 ή στο 698 188 9560, ή γράψτε στο info@ktimaorion.gr. Φόρμα επικοινωνίας, χάρτης στην Κερατέα και ραντεβού, κάθε μέρα 9:00–22:00.";
 
 export const metadata: Metadata = buildMetadata({
   title,

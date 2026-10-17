@@ -3,9 +3,9 @@ import OHoros from "@/views/greek/OHoros";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Ο χώρος: αίθουσα, κήπος & πισίνα στην Κερατέα";
+const title = "Αίθουσα, κήπος, παγόδα & πισίνα στην Κερατέα | Κτήμα Ωρίων";
 const description =
-  "Κλιματιζόμενη αίθουσα, κήπος με θέα θάλασσα, ημιυπαίθρια παγόδα και πισίνα. Δεξιώσεις 50–350 ατόμων και δωρεάν parking 100+ θέσεων στην Κερατέα.";
+  "Κλιματιζόμενη αίθουσα, κήπος με θέα θάλασσα, ημιυπαίθρια παγόδα και πισίνα. Για 50–350 άτομα, με δωρεάν parking 100+ θέσεων και εκκλησάκια σε 6–13 λεπτά.";
 
 export const metadata: Metadata = buildMetadata({
   title,

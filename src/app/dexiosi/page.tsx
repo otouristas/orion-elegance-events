@@ -3,9 +3,9 @@ import Dexiosi from "@/views/greek/Dexiosi";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Δεξίωση γάμου & βάπτισης για 50 έως 350 άτομα";
+const title = "Δεξίωση για γάμο, βάπτιση, εταιρικά και πάρτι | Κτήμα Ωρίων";
 const description =
-  "Χώρος δεξίωσης στην Κερατέα Αττικής: κλιματιζόμενη αίθουσα και κήπος με θέα θάλασσα, για δεξιώσεις γάμου και βάπτισης από 50 έως 350 άτομα.";
+  "Γάμος, βάπτιση, εταιρική εκδήλωση ή πάρτι στην Κερατέα, για 50 έως 350 άτομα. Κλιματιζόμενη αίθουσα, κήπος με θέα θάλασσα και ραντεβού για να δείτε τον χώρο.";
 
 export const metadata: Metadata = buildMetadata({
   title,
