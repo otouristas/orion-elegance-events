@@ -27,6 +27,19 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // www is the same site as the apex host. One host keeps the brand URL.
+      {
+        source: "/",
+        has: [{ type: "host", value: "www.ktimaorion.gr" }],
+        destination: "https://ktimaorion.gr/",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.ktimaorion.gr" }],
+        destination: "https://ktimaorion.gr/:path*",
+        permanent: true,
+      },
       // Cannibalisation cleanup. Five pages targeted the same "κτήμα γάμου"
       // cluster and three the "κτήμα βάπτισης" one, so the site ranked 27–62
       // for terms at KD 0–13. Their content is folded into the two pillars.

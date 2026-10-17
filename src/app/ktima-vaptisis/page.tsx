@@ -23,7 +23,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/ktima-vaptisis"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Κτήμα βάπτισης", url: "/ktima-vaptisis" },
+        ]}
       />
       <KtimaVaptisis />
     </>

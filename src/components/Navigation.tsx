@@ -152,7 +152,7 @@ export const Navigation = ({ isScrolled = false, isTransparent = false }: Naviga
           <Link href={isEnglish ? "/en" : "/"} className="flex items-center z-[60]">
             <Image
               src={logoSrc}
-              alt="Ktima Orion"
+              alt={isEnglish ? "Ktima Orion" : "Κτήμα Ωρίων"}
               width={170}
               height={170}
               className={`h-16 md:h-20 w-auto max-w-[200px] object-contain object-left transition-all duration-300 ${useLightLogo ? 'drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]' : ''}`}

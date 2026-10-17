@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
 import {
   EMAIL,
@@ -38,15 +39,17 @@ export const Footer = () => {
       <div className="container-max py-16 md:py-20">
         <div className="mb-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>
-            <Image
-              src={logoWhite}
-              alt="Κτήμα Ωρίων"
-              width={170}
-              height={150}
-              className="mb-6 h-24 w-auto object-contain object-left"
-              sizes="200px"
-              loading="lazy"
-            />
+            <Link href="/" className="inline-block">
+              <Image
+                src={logoWhite}
+                alt="Κτήμα Ωρίων"
+                width={170}
+                height={150}
+                className="mb-6 h-24 w-auto object-contain object-left"
+                sizes="200px"
+                loading="lazy"
+              />
+            </Link>
             <p className="max-w-md leading-relaxed text-secondary-foreground/80">
               Κτήμα δεξιώσεων στην Κερατέα Αττικής, από το 2009. Κήπος με θέα
               στη θάλασσα, κλιματιζόμενη αίθουσα και δεξιώσεις από 50 έως 350
@@ -167,7 +170,13 @@ export const Footer = () => {
         <div className="mt-8 border-t border-secondary-foreground/20 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-secondary-foreground/60 md:flex-row">
             <p>Γ.Ε.ΜΗ. 062719803000</p>
-            <p>© {year} Κτήμα Ωρίων. Με την επιφύλαξη παντός δικαιώματος.</p>
+            <p>
+              © {year}{" "}
+              <Link href="/" className="transition-colors hover:text-brand-main">
+                Κτήμα Ωρίων
+              </Link>
+              . Με την επιφύλαξη παντός δικαιώματος.
+            </p>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/ktima-gamou"
-        schemaType="LocalBusiness"
+        consolidateToBrandHome
         breadcrumbs={[
           { name: "Αρχική", url: "/" },
           { name: "Κτήμα γάμου", url: "/ktima-gamou" },

@@ -40,9 +40,9 @@ export function Hero() {
           <p className="eyebrow !text-brand-light">Κερατέα Αττικής · από το 2009</p>
 
           <h1 className="mt-5 font-heading text-white">
-            Κτήμα γάμου και βάπτισης
+            Κτήμα Ωρίων
             <span className="block text-gradient-brand-on-dark">
-              στην Κερατέα Αττικής
+              κτήμα γάμου και βάπτισης στην Κερατέα
             </span>
           </h1>
 

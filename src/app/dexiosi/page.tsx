@@ -23,7 +23,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/dexiosi"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Δεξίωση", url: "/dexiosi" },
+        ]}
       />
       <Dexiosi />
     </>
