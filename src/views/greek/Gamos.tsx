@@ -67,7 +67,8 @@ export default function Gamos() {
     { question: "Πόσο κοστίζει ο γάμος στο Κτήμα Ωρίων;", answer: "Επικοινωνήστε μαζί μας για προσωποποιημένη προσφορά. Κάθε γάμος είναι μοναδικός και οι τιμές εξαρτώνται από τον αριθμό καλεσμένων, το μενού και τις υπηρεσίες που επιλέγετε." },
     { question: "Τι περιλαμβάνει η γαμήλια δεξίωση;", answer: "Η γαμήλια δεξίωση περιλαμβάνει νοίκι χώρου, catering, διακόσμηση, φωτισμό, ηχητικό σύστημα, parking και συντονισμό εκδήλωσης. Μπορούμε να δημιουργήσουμε προσαρμοσμένα πακέτα βάσει των αναγκών σας." },
     { question: "Πόσους καλεσμένους χωράει για γάμο;", answer: "Το Κτήμα Ωρίων μπορεί να φιλοξενήσει γάμους διαφόρων μεγεθών με εκτεταμένο χώρο στάθμευσης. Διαθέτουμε εσωτερικό κλιματιζόμενο χώρο και εξωτερικό χώρο." },
-    { question: "Υπάρχουν κοντινές εκκλησίες για την τελετή;", answer: "Ναι, υπάρχουν πολλές όμορφες παραθαλάσσιες εκκλησίες 6–13 λεπτά από το Κτήμα Ωρίων, συμπεριλαμβανομένων των Άγιος Αλέξανδρος, Παναγία Γκαρικά και Προφήτης Ηλίας." },
+    { question: "Ποιες είναι οι τιμές για γάμο;", answer: "Δεν δημοσιεύουμε σταθερό τιμοκατάλογο γάμου. Η γραπτή προσφορά εξαρτάται από την ημερομηνία, τον αριθμό καλεσμένων και το μενού. Ζητήστε την από τη φόρμα προσφοράς· για το τι αξίζει να συγκρίνετε σε μια προσφορά κτήματος, δείτε τον οδηγό κόστους γάμου σε κτήμα." },
+    { question: "Υπάρχουν κοντινές εκκλησίες για την τελετή;", answer: "Ναι, υπάρχουν πολλές όμορφες παραθαλάσσιες εκκλησίες 6–13 λεπτά από το κτήμα, συμπεριλαμβανομένων των Άγιος Αλέξανδρος, Παναγία Γκαρικά και Προφήτης Ηλίας." },
     { question: "Παρέχετε υπηρεσίες catering;", answer: "Ναι, προσφέρουμε πλήρεις υπηρεσίες catering με προσαρμοσμένα μενού βάσει των προτιμήσεων και απαιτήσεών σας." },
     { question: "Μπορούμε να κάνουμε τόσο την τελετή όσο και τη δεξίωση στο κτήμα;", answer: "Ενώ δεν πραγματοποιούμε τελετές στον χώρο, είμαστε πολύ κοντά σε όμορφες εκκλησίες. Μπορείτε να κάνετε την τελετή σε κοντινή εκκλησία και τη δεξίωση στο Κτήμα Ωρίων." },
     { question: "Υπάρχει διαθέσιμο parking για καλεσμένους;", answer: "Ναι, έχουμε τεράστιο χώρο δωρεάν στάθμευσης με πάνω από 100 θέσεις για όλους τους καλεσμένους του γάμου σας." },
@@ -86,10 +87,10 @@ export default function Gamos() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Γάμος</span>
+              <span className="text-gradient-brand">Τι περιλαμβάνει ο γάμος</span>
             </h1>
             <h2 className="font-heading mb-8 text-brand-text">
-              Μοναδικές Στιγμές Αγάπης στο Κτήμα Ωρίων
+              Τελετή, δεξίωση και παροχές
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
@@ -99,8 +100,8 @@ export default function Gamos() {
               </p>
               
               <p>
-                Αναλαμβάνουμε με φαντασία, συνέπεια και σεβασμό στις επιθυμίες σας το σχεδιασμό & τη διοργάνωση της <strong>δεξίωσης γάμου</strong> σας. 
-                Η απαίτησή σας για τελειότητα είναι ο απόλυτος στόχος μας, ώστε να σας προσφέρουμε μια ονειρεμένη γαμήλια δεξίωση στον <Link href="/o-horos" className="text-brand-main hover:underline">χώρο δεξιώσεων</Link> μας.
+                Αναλαμβάνουμε με φαντασία, συνέπεια και σεβασμό στις επιθυμίες σας το σχεδιασμό και τη διοργάνωση της <strong>δεξίωσης γάμου</strong> σας στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>.
+                Η απαίτησή σας για τελειότητα είναι ο απόλυτος στόχος μας, στον <Link href="/o-horos" className="text-brand-main hover:underline">χώρο δεξιώσεων</Link> της Κερατέας.
               </p>
               
               <p className="text-brand-main font-semibold text-xl">
@@ -110,11 +111,27 @@ export default function Gamos() {
           </div>
         </section>
 
+        <section className="section-padding">
+          <div className="container-max max-w-3xl text-center">
+            <h2 className="font-heading mb-6">
+              <span className="text-gradient-brand">Ζητήστε τιμές και προσφορά γάμου</span>
+            </h2>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              Δεν δημοσιεύουμε σταθερό τιμοκατάλογο γάμου. Η γραπτή προσφορά για το{" "}
+              <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>{" "}
+              βγαίνει αφού ορίσετε ημερομηνία, αριθμό καλεσμένων και μενού. Για να δείτε τι αξίζει να συγκρίνετε σε μια προσφορά κτήματος, διαβάστε τον{" "}
+              <Link href="/blog/kostos-gamou-ktima-2026" className="text-brand-main hover:underline">οδηγό κόστους γάμου σε κτήμα</Link>.
+              Για το δικό σας event,{" "}
+              <Link href="/request" className="text-brand-main hover:underline">ζητήστε προσφορά</Link>.
+            </p>
+          </div>
+        </section>
+
         {/* Wedding Features */}
         <section className="section-padding">
           <div className="container-max">
             <h2 className="font-heading text-center mb-16">
-              <span className="text-gradient-brand">Γιατί να επιλέξετε το Κτήμα Ωρίων;</span>
+              <span className="text-gradient-brand">Τι καλύπτει η οργάνωση του γάμου</span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">{weddingFeatures.map((feature, index) => (
@@ -183,7 +200,8 @@ export default function Gamos() {
               Ας κάνουμε τον γάμο σας ονειρεμένο
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια γαμήλια δεξίωση στο Κτήμα Ωρίων
+              Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια γαμήλια δεξίωση στο{" "}
+              <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/epikoinonia">

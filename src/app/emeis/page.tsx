@@ -22,7 +22,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/emeis"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Εμείς", url: "/emeis" },
+        ]}
       />
       <Emeis />
     </>

@@ -23,7 +23,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/gamos"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Γάμος", url: "/gamos" },
+        ]}
       />
       <ServiceJsonLd
         name="Δεξίωση γάμου"

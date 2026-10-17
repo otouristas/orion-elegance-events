@@ -23,7 +23,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/o-horos"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Ο χώρος", url: "/o-horos" },
+        ]}
       />
       <OHoros />
     </>

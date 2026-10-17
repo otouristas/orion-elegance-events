@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -107,11 +108,10 @@ export default function Epikoinonia() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Επικοινωνία</span>
+              <span className="text-gradient-brand">Τηλέφωνο, email και δωρεάν ξενάγηση</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Επικοινωνήστε μαζί μας για να συζητήσουμε τις ανάγκες της εκδήλωσής σας 
-              και να δημιουργήσουμε μαζί αξέχαστες αναμνήσεις.
+              Επικοινωνήστε με το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> στην Κερατέα για διαθεσιμότητα και δωρεάν ξενάγηση: 22990 68812 και info@ktimaorion.gr.
             </p>
 
             {/* Success Message */}

@@ -194,17 +194,16 @@ export default function OHoros() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Ο χώρος</span>
+              <span className="text-gradient-brand">Αίθουσα, κήπος και πισίνα</span>
             </h1>
             <h2 className="font-heading mb-8 text-brand-text">
-              Κτήμα Ωρίων - Μαγευτικός Χώρος για Εκδηλώσεις
+              Ο χώρος δεξιώσεων στην Κερατέα
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως τη λάμψη της πολυτέλειας 
-                σε απόλυτη αρμονία με το φυσικό περιβάλλον. Ιδανικό για <Link href="/gamos" className="text-brand-main hover:underline">γάμους</Link>, <Link href="/vaptisi" className="text-brand-main hover:underline">βαπτίσεις</Link> και εταιρικές εκδηλώσεις. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική Οδό, 
-                μπορείτε να απολαύσετε τις ξεχωριστές στιγμές της ζωής σας.
+                Κλιματιζόμενη αίθουσα, κήπος με θέα στη θάλασσα, ημιυπαίθρια παγόδα και πισίνα.
+                Το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> δέχεται <Link href="/gamos" className="text-brand-main hover:underline">γάμους</Link>, <Link href="/vaptisi" className="text-brand-main hover:underline">βαπτίσεις</Link> και εταιρικές εκδηλώσεις, με εύκολη πρόσβαση από την Αττική Οδό.
               </p>
               
               <p>

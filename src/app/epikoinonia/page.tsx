@@ -23,7 +23,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/epikoinonia"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Επικοινωνία", url: "/epikoinonia" },
+        ]}
       />
       <Epikoinonia />
     </>
