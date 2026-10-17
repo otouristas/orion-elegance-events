@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 import { POSTAL_CODE, STREET_ADDRESS_EN } from '@/lib/seo/config';
 import { PromoBanner } from '@/components/PromoBanner';
+import { CreditsBar } from '@/components/CreditsBar';
 const logoWhite = "/images/logo-white.png";
 
 export const FooterEn = () => {
@@ -99,6 +100,7 @@ export const FooterEn = () => {
               © 2024 <Link href="/en" className="hover:text-brand-main">Ktima Orion</Link>. All rights reserved.
             </div>
           </div>
+          <CreditsBar partner={null} source="ktimaorion.gr" className="mt-6 md:justify-center" />
         </div>
       </div>
     </footer>

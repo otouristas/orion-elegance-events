@@ -8,6 +8,7 @@ import {
   STREET_ADDRESS_EL,
 } from '@/lib/seo/config';
 import { PromoBanner } from '@/components/PromoBanner';
+import { CreditsBar } from "@/components/CreditsBar";
 
 const logoWhite = '/images/logo-white.png';
 
@@ -178,6 +179,7 @@ export const Footer = () => {
               . Με την επιφύλαξη παντός δικαιώματος.
             </p>
           </div>
+          <CreditsBar partner={null} source="ktimaorion.gr" className="mt-6 md:justify-center" />
         </div>
       </div>
     </footer>
