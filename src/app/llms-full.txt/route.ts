@@ -1,5 +1,6 @@
 import { SITE_URL, SITE_NAME_EL, PHONE, EMAIL } from "@/lib/seo/config";
 import { blogPosts } from "@/data/blogPosts";
+import { withLlmsHeader } from "@/lib/seo-parity/llms-header";
 
 export function GET(): Response {
   const blogSection = blogPosts
@@ -71,7 +72,7 @@ ${blogSection}
 
 Last-Updated: 2026-05-03
 `;
-  return new Response(body, {
+  return new Response(withLlmsHeader(body, { origin: SITE_URL, kind: "full" }), {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
       "Cache-Control": "public, max-age=3600",

@@ -1,6 +1,7 @@
 import { SITE_URL, SITE_NAME_EL, PHONE, EMAIL } from "@/lib/seo/config";
 import { CHURCH_COUNT, CHURCH_MINUTES_RANGE, churches } from "@/data/churches";
 import { AVERAGE_RATING, REVIEW_COUNT } from "@/data/reviews";
+import { withLlmsHeader } from "@/lib/seo-parity/llms-header";
 
 /**
  * Answer-engine summary. Every fact here must be verifiable on the site itself —
@@ -57,7 +58,7 @@ See ${SITE_URL}/llms-full.txt
 
 Last-Updated: 2026-09-12
 `;
-  return new Response(body, {
+  return new Response(withLlmsHeader(body, { origin: SITE_URL, kind: "index" }), {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
       "Cache-Control": "public, max-age=3600",
