@@ -8,6 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+
+# Local Cloudflare state and secrets
+.wrangler/
+.open-next/
+.dev.vars*
 dist
 dist-ssr
 *.local
