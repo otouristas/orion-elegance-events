@@ -1,0 +1,17 @@
+{
+  "sitemapPages": 57,
+  "pageFailures": [],
+  "assetsChecked": 539,
+  "assetFailures": [],
+  "formActions": [
+    "https://formspree.io/f/xlgzgyno"
+  ],
+  "invalidEmailPayloadStatus": 400,
+  "missingPageStatus": 404,
+  "browserVisualInteractionQA": "NOT TESTED - browser access disabled",
+  "validEmailOrFormSubmission": "NOT TESTED - no email, inquiry, or message sent",
+  "legacyPhotoAlias": {
+    "status": 200,
+    "target": "https://ktimaorion.gr/final-photos/gamos/IMG_0832.jpeg"
+  }
+}
