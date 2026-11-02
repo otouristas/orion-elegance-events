@@ -95,13 +95,13 @@ export default function BlogPost({ slug }: BlogPostProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
         />
       ) : null}
-      
+
       <div className="pt-20">
         {/* Back Button */}
         <section className="section-padding-sm bg-gradient-to-b from-background to-brand-main/5">
           <div className="container-max max-w-5xl">
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className="inline-flex items-center gap-2 text-brand-main hover:text-brand-dark font-medium transition-colors group"
             >
               <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
@@ -152,10 +152,10 @@ export default function BlogPost({ slug }: BlogPostProps) {
             <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-10 pb-8 border-b-2 border-border">
               <div className="flex items-center gap-2.5">
                 <Calendar className="w-5 h-5 text-brand-main" />
-                <span className="font-medium">{new Date(post.date).toLocaleDateString('el-GR', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                <span className="font-medium">{new Date(post.date).toLocaleDateString('el-GR', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
                 })}</span>
               </div>
               <div className="flex items-center gap-2.5">
@@ -177,26 +177,26 @@ export default function BlogPost({ slug }: BlogPostProps) {
                   h2: ({node, ...props}) => <h2 className="font-heading mt-10 mb-5 text-brand-main leading-tight" {...props} />,
                   h3: ({node, ...props}) => <h3 className="font-heading mt-8 mb-4 text-foreground leading-tight" {...props} />,
                   h4: ({node, ...props}) => <h4 className="font-heading mt-6 mb-3 text-foreground" {...props} />,
-                  
+
                   // Paragraphs
                   p: ({node, ...props}) => <p className="text-lg md:text-xl leading-relaxed mb-6 text-foreground/90" {...props} />,
-                  
+
                   // Links
                   a: ({node, ...props}) => (
-                    <a 
-                      className="text-brand-main font-bold hover:text-brand-dark underline underline-offset-4 decoration-2 hover:decoration-brand-dark transition-all inline-flex items-center gap-1" 
-                      {...props} 
+                    <a
+                      className="text-brand-main font-bold hover:text-brand-dark underline underline-offset-4 decoration-2 hover:decoration-brand-dark transition-all inline-flex items-center gap-1"
+                      {...props}
                     />
                   ),
-                  
+
                   // Strong/Bold
                   strong: ({node, ...props}) => <strong className="font-bold text-foreground" {...props} />,
-                  
+
                   // Lists
                   ul: ({node, ...props}) => <ul className="list-disc list-outside ml-6 mb-6 space-y-3 text-lg md:text-xl leading-relaxed text-foreground/90" {...props} />,
                   ol: ({node, ...props}) => <ol className="list-decimal list-outside ml-6 mb-6 space-y-3 text-lg md:text-xl leading-relaxed text-foreground/90" {...props} />,
                   li: ({node, ...props}) => <li className="pl-2" {...props} />,
-                  
+
                   // Images
                   img: ({ src, alt }) => {
                     const raw = typeof src === 'string' ? src : '';
@@ -217,12 +217,12 @@ export default function BlogPost({ slug }: BlogPostProps) {
                       </span>
                     );
                   },
-                  
+
                   // Blockquotes
                   blockquote: ({node, ...props}) => (
                     <blockquote className="border-l-4 border-brand-main pl-6 py-4 my-8 bg-brand-main/5 rounded-r-lg italic text-lg text-foreground/80" {...props} />
                   ),
-                  
+
                   // Code
                   code: ({node, ...props}) => (
                     <code className="bg-muted px-2 py-1 rounded text-sm font-mono text-foreground" {...props} />
@@ -331,16 +331,12 @@ export default function BlogPost({ slug }: BlogPostProps) {
               Επικοινωνήστε μαζί μας για να οργανώσουμε την τέλεια εκδήλωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/epikoinonia">
-                <button className="button button4">
+              <a href="/epikoinonia" className="button button4">
                   ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
-                </button>
-              </a>
-              <a href="/gamos">
-                <button className="button button4">
+                </a>
+              <a href="/gamos" className="button button4">
                   ΔΕΙΤΕ ΥΠΗΡΕΣΙΕΣ
-                </button>
-              </a>
+                </a>
             </div>
           </div>
         </section>

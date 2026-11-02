@@ -1,4 +1,3 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 interface FAQItem {
   question: string;
@@ -34,18 +33,14 @@ export const FAQ = ({ items, title = "Συχνές ερωτήσεις" }: FAQPro
         <h2 className="font-heading text-center mb-12">
           <span className="text-gradient-brand">{title}</span>
         </h2>
-        <Accordion type="single" collapsible className="w-full space-y-4">
+        <div className="space-y-3">
           {items.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="card-elegant px-6">
-              <AccordionTrigger className="text-left hover:text-brand-main">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
+            <details key={index} className="rounded-lg border border-border bg-background px-5 py-1">
+              <summary className="cursor-pointer py-4 font-semibold leading-relaxed">{item.question}</summary>
+              <p className="pb-5 text-muted-foreground leading-relaxed">{item.answer}</p>
+            </details>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

@@ -7,22 +7,17 @@ const partners = {
   crete: { name: "Discover Crete", url: "https://discover-crete.com/", logo: "/images/brand/credits/discover-crete.png" },
 };
 
-// Footer credits shared across AnotherSEOGuru sites: designer, platform and regional partner.
-// The logos have light lettering, so this row always sits on a dark background.
+// Keep the designer credit readable without depending on a remote logo asset.
 export function CreditsBar({ partner, source, className = "" }: { partner: Partner; source: string; className?: string }) {
   const p = partner ? partners[partner] : null;
   const utm = `utm_source=${source}&utm_medium=referral&utm_campaign=partner_footer`;
   return (
     <div
-      className={`flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-white/55 sm:justify-end ${className}`}
+      className={`flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-white/75 sm:justify-end ${className}`}
     >
       <a href="https://anotherseoguru.com" target="_blank" rel="noopener" className="inline-flex items-center gap-2 transition-colors hover:text-white">
         <span>Designed by</span>
-        <img src="/images/brand/credits/anotherseoguru.svg" alt="AnotherSEOGuru" width={106} height={24} className="h-6 w-auto" loading="lazy" />
-      </a>
-      <a href="https://touristas.ai" target="_blank" rel="noopener" className="inline-flex items-center gap-2 transition-colors hover:text-white">
-        <span>Powered by</span>
-        <img src="/images/brand/credits/touristas-ai-white.png" alt="Touristas AI" width={123} height={19} className="h-[19px] w-auto" loading="lazy" />
+        <span className="font-semibold text-white">AnotherSEOGuru</span>
       </a>
       {p && (
         <a href={`${p.url}?${utm}`} target="_blank" rel="noopener" className="inline-flex items-center gap-2 transition-opacity hover:opacity-90">

@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Camera, Users, Star, Home, Car, TreePine, Utensils, Award, MapPin, Phone, Mail } from 'lucide-react';
@@ -191,29 +192,7 @@ export default function OHoros() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Αίθουσα, κήπος και πισίνα</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Ο χώρος δεξιώσεων στην Κερατέα
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Κλιματιζόμενη αίθουσα, κήπος με θέα στη θάλασσα, ημιυπαίθρια παγόδα και πισίνα.
-                Το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> δέχεται <Link href="/gamos" className="text-brand-main hover:underline">γάμους</Link>, <Link href="/vaptisi" className="text-brand-main hover:underline">βαπτίσεις</Link> και εταιρικές εκδηλώσεις, με εύκολη πρόσβαση από την Αττική Οδό.
-              </p>
-              
-              <p>
-                Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται τη θερμή υποδοχή 
-                και την απόλυτη φιλοξενία των καλεσμένων σας. Βρισκόμαστε πολύ κοντά σε <Link href="/ekklisies" className="text-brand-main hover:underline">γραφικά εκκλησάκια</Link> πάνω στη θάλασσα 
-                για την τέλεση του μυστηρίου.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Ο χώρος · Κερατέα Αττικής" title="Κήπος, αίθουσα και χώρος για τις στιγμές σας." description="Δείτε τις διαφορετικές πλευρές του Κτήματος Ωρίων και συζητήστε τη διαμόρφωση για τη δική σας εκδήλωση." image="/images/hero-image.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" />
 
         {/* Venue Features */}
         <section className="section-padding">
@@ -323,7 +302,7 @@ export default function OHoros() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Υπεύθυνη χώρου</h3>
                 <div className="flex items-center space-x-4 mb-6">
@@ -351,7 +330,7 @@ export default function OHoros() {
         <FAQ items={venueFAQs} title="Συχνές ερωτήσεις για τον Χώρο" />
 
         {/* Popular Searches */}
-        <PopularSearches 
+        <PopularSearches
           links={[
             { label: "Γάμος", href: "/gamos" },
             { label: "Βάπτιση", href: "/vaptisi" },
@@ -368,7 +347,7 @@ export default function OHoros() {
               Επισκεφτείτε το Κτήμα Ωρίων
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Ραντεβού για επίσκεψη στο Κτήμα Ωρίων και να δείτε από κοντά 
+              Ραντεβού για επίσκεψη στο Κτήμα Ωρίων και να δείτε από κοντά
               το μαγευτικό περιβάλλον που θα φιλοξενήσει την εκδήλωσή σας.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -379,7 +358,7 @@ export default function OHoros() {
                 ΔΕΙΤΕ ΥΠΗΡΕΣΙΕΣ
               </a>
             </div>
-            
+
             {/* Contact Info */}
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="flex flex-col items-center">

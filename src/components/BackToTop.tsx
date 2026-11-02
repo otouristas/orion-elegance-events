@@ -1,8 +1,19 @@
 import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+    const observer = new IntersectionObserver(([entry]) => setIsFooterVisible(entry.isIntersecting));
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, [pathname]);
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -24,7 +35,7 @@ export const BackToTop = () => {
     });
   };
 
-  if (!isVisible) {
+  if (!isVisible || isFooterVisible) {
     return null;
   }
 

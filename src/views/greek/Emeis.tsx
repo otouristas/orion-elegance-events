@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Layout } from '@/components/Layout';
@@ -87,32 +88,7 @@ export default function Emeis() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Η ομάδα και η ιστορία από το 2009</span>
-            </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-5xl mx-auto mb-12">
-              Το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> είναι οικογενειακό κτήμα δεξιώσεων στην Κερατέα από το 2009. Τον χώρο συντονίζει η υπεύθυνη Μπούσουλα Παναγιώτα. Την αίθουσα, τον κήπο και το parking τα περιγράφουμε στη σελίδα <Link href="/o-horos" className="text-brand-main hover:underline">ο χώρος</Link>.
-            </p>
-            
-            {/* Hero Images */}
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
-              {heroImages.map(image => (
-                <div key={image.src} className="relative rounded-2xl overflow-hidden shadow-xl h-80 w-full">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 768px) 45vw, 100vw"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Η ιστορία μας · από το 2009" title="Γνωρίστε τους ανθρώπους του Κτήματος Ωρίων." description="Η ομάδα που σας υποδέχεται στην Κερατέα και συζητά μαζί σας κάθε βήμα της εκδήλωσής σας. Υπεύθυνη χώρου: Μπούσουλα Παναγιώτα." image="/final-photos/emeis/emeis1.jpg" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" />
 
         {/* Venue Features Section */}
         <section className="section-padding">
@@ -120,7 +96,7 @@ export default function Emeis() {
             <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Παροχές που φροντίζει η ομάδα</span>
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {venueFeatures.map((feature, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
@@ -166,7 +142,7 @@ export default function Emeis() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Υπεύθυνη χώρου</h3>
                 <div className="flex items-center space-x-4">
@@ -179,7 +155,7 @@ export default function Emeis() {
                   </div>
                 </div>
                 <p className="text-muted-foreground mt-6">
-                  Με εμπειρία και αγάπη για τη φιλοξενία, η Μπούσουλα Παναγιώτα εξασφαλίζει 
+                  Με εμπειρία και αγάπη για τη φιλοξενία, η Μπούσουλα Παναγιώτα εξασφαλίζει
                   ότι κάθε εκδήλωση στο Κτήμα Ωρίων θα είναι άψογη και αξέχαστη.
                 </p>
               </div>
@@ -193,7 +169,7 @@ export default function Emeis() {
             <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Οι Αξίες μας</span>
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
@@ -216,7 +192,7 @@ export default function Emeis() {
               Ας γνωριστούμε καλύτερα
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Επικοινωνήστε μαζί μας για να μάθετε περισσότερα για τις υπηρεσίες μας 
+              Επικοινωνήστε μαζί μας για να μάθετε περισσότερα για τις υπηρεσίες μας
               και πώς μπορούμε να δημιουργήσουμε μαζί αξέχαστες αναμνήσεις.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

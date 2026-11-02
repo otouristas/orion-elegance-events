@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Camera } from 'lucide-react';
@@ -45,28 +46,7 @@ export default function Ypiresies() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Υπηρεσίες</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Επαγγελματικές Υπηρεσίες στο Κτήμα Ωρίων
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> παρέχουμε ολοκληρωμένες υπηρεσίες για όλες τις εκδηλώσεις σας. 
-                Από τον σχεδιασμό μέχρι τη <Link href="/fotografos" className="text-brand-main hover:underline">φωτογράφιση</Link>, φροντίζουμε κάθε λεπτομέρεια να είναι άψογη για τον <Link href="/gamos" className="text-brand-main hover:underline">γάμο</Link> ή τη <Link href="/vaptisi" className="text-brand-main hover:underline">βάπτιση</Link> σας.
-              </p>
-              
-              <p>
-                Με εμπειρία, ευελιξία και αφοσίωση στη λεπτομέρεια, 
-                δημιουργούμε μαγικές εμπειρίες που θα θυμάστε για πάντα.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Οι συνεργάτες & οι παροχές" title="Όσα χρειάζεται η εκδήλωσή σας." description="Catering, στολισμός, φωτογραφία και μουσική. Γνωρίστε τις επιλογές και συμφωνήστε τις λεπτομέρειες της δικής σας προσφοράς." image="/images/wedding-card.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" />
 
         {/* Main Services */}
         <section className="section-padding">
@@ -126,7 +106,7 @@ export default function Ypiresies() {
         <FAQ items={servicesFAQs} title="Συχνές ερωτήσεις για Υπηρεσίες" />
 
         {/* Popular Searches */}
-        <PopularSearches 
+        <PopularSearches
           links={[
             { label: "Φωτογράφος", href: "/fotografos" },
             { label: "Γάμος", href: "/gamos" },
@@ -142,20 +122,16 @@ export default function Ypiresies() {
               Ας συζητήσουμε τις ανάγκες σας
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Επικοινωνήστε μαζί μας για να μάθετε περισσότερα για τις υπηρεσίες μας 
+              Επικοινωνήστε μαζί μας για να μάθετε περισσότερα για τις υπηρεσίες μας
               και πώς μπορούμε να δημιουργήσουμε μαζί αξέχαστες αναμνήσεις.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/epikoinonia">
-                <button className="button button4">
+              <a href="/epikoinonia" className="button button4">
                   ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
-                </button>
-              </a>
-              <a href="/gamos">
-                <button className="button button4">
+                </a>
+              <a href="/gamos" className="button button4">
                   ΔΕΙΤΕ ΤΙΣ ΥΠΗΡΕΣΙΕΣ ΜΑΣ
-                </button>
-              </a>
+                </a>
             </div>
           </div>
         </section>

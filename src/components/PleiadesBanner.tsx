@@ -38,7 +38,7 @@ export const PleiadesBanner = ({ lang }: PleiadesBannerProps) => {
   const articleHref = isEnglish
     ? `/en/blog/${PLEIADES_ARTICLE_SLUG}`
     : `/blog/${PLEIADES_ARTICLE_SLUG}`;
-  const contactHref = isEnglish ? '/en/contact' : '/epikoinonia';
+  const contactHref = isEnglish ? '/en/request' : '/request';
 
   return (
     <section className="section-padding bg-gradient-to-b from-brand-main/5 via-background to-background">

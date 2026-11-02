@@ -79,7 +79,6 @@ const nextConfig: NextConfig = {
       { source: "/en/ktima-gamou", destination: "/en/weddings", permanent: true },
       { source: "/en/ktima-vaptisis", destination: "/en/baptism", permanent: true },
       { source: "/en/o-horos", destination: "/en/venue", permanent: true },
-      { source: "/en/request", destination: "/en/contact", permanent: true },
       { source: "/en/ekklisies", destination: "/en/churches", permanent: true },
       { source: "/en/vaptisi", destination: "/en/baptism", permanent: true },
       { source: "/en/privacy", destination: "/en", permanent: true },

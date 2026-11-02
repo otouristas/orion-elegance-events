@@ -3,6 +3,7 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { homepageFaqs } from '@/data/homepage-faqs';
+import { CelebrationPaths } from '@/components/CelebrationPaths';
 import { Hero } from '@/components/Hero';
 import { Description } from '@/components/Description';
 import { Features } from '@/components/Features';
@@ -43,9 +44,10 @@ const Index = () => {
       >
         Μετάβαση στο περιεχόμενο
       </a>
-      <Navigation isScrolled={isScrolled} isTransparent={true} />
+      <Navigation isScrolled={isScrolled} isTransparent={false} />
       <main id="main">
         <Hero />
+        <CelebrationPaths />
         <Description />
         <Features />
         {/* These stream in from the server, so the boundary needs no visible

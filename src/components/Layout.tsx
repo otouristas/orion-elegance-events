@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
+import { FooterEn } from '@/components/english/FooterEn';
 import { BackToTop } from '@/components/BackToTop';
 import { ContactFAB } from '@/components/ContactFAB';
 import { CookieConsent } from '@/components/CookieConsent';
@@ -37,7 +38,7 @@ export const Layout = ({ children, isTransparent = false, lang = 'el' }: LayoutP
       </a>
       <Navigation isScrolled={isScrolled} isTransparent={isTransparent} />
       <main id="main">{children}</main>
-      <Footer />
+      {lang === 'en' ? <FooterEn /> : <Footer />}
       <BackToTop />
       <ContactFAB />
       <ScrollReveal />

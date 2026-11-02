@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -62,40 +63,10 @@ export default function CorporateEventsEn() {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Corporate Events</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Your Event, Our Expertise
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Your professional event is our professional responsibility. Planning it requires experience and flexibility, 
-                as a set of conditions must be met for it to be considered successful.
-              </p>
-              
-              <p>
-                The experience of our partners, our commitment to consistency and our attention to detail 
-                make our venue an ideal point for hosting the most distinctive and successful professional events.
-              </p>
-              
-              <p>
-                Whether it's a formal gathering, a press call, a conference, or a new product presentation, 
-                Ktima Orion meets the conditions for success.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Contact us to discuss all the parameters of your event and we will suggest the best solutions.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Corporate events in Attica" title="Space for your team." description="Meetings, presentations and company celebrations, with indoor and outdoor venue options and parking." image="/images/hero-image.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" event="corporate" />
 
         {/* Event Features */}
         <section className="section-padding">
@@ -189,7 +160,7 @@ export default function CorporateEventsEn() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Why Ktima Orion?</h3>
                 <ul className="space-y-4">

@@ -12,7 +12,7 @@ const signals: readonly Signal[] = [
     title: 'Από το 2009',
     // Was "από το 2008", which contradicted the founding date declared in the
     // site's own structured data, llms.txt and the /emeis page.
-    description: 'Πάνω από 500 γάμοι και βαπτίσεις στον χώρο μας.',
+    description: 'Γάμοι και βαπτίσεις στην Κερατέα Αττικής.',
   },
   {
     icon: Shield,
@@ -22,7 +22,7 @@ const signals: readonly Signal[] = [
   {
     icon: MapPin,
     title: 'Δωρεάν parking 100+ θέσεων',
-    description: 'Στάθμευση μέσα στο κτήμα για όλους τους καλεσμένους σας.',
+    description: 'Χώρος στάθμευσης μέσα στο κτήμα.',
   },
   {
     icon: Users,

@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Church } from 'lucide-react';
@@ -72,20 +73,7 @@ export default function Ekklisies() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <Church className="w-20 h-20 text-brand-main mx-auto mb-6" />
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Εκκλησίες</span>
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Το Κτήμα Ωρίων απέχει ελάχιστα από πολλά γραφικά εκκλησάκια και εκκλησίες στη γύρω περιοχή.
-              Σε απόσταση που κυμαίνεται από <strong>6–13 λεπτά</strong>, μπορείτε να τελέσετε το μυστήριο του γάμου
-              ή της βάπτισης, απολαμβάνοντας καταπληκτική θέα στο Αιγαίο, πριν ολοκληρώσετε την εκδήλωσή σας
-              στο Κτήμα Ωρίων.
-            </p>
-          </div>
-        </section>
+        <PageIntro eyebrow="5 εκκλησίες κοντά στο κτήμα" title="Από το μυστήριο στη δεξίωση." description="Γνωρίστε εκκλησίες στην Κερατέα και την ευρύτερη περιοχή, με χάρτες και ενδεικτικές διαδρομές για να σχεδιάσετε την ημέρα σας." image="/images/hero-image.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" />
 
         {/* Churches List */}
         <section className="section-padding">

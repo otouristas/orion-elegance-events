@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -92,33 +93,7 @@ export default function Vaptisi() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Βάπτιση</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Δημιουργήστε Αξέχαστες Αναμνήσεις για τη Βάπτιση του Παιδιού σας
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Πόσο ιδιαίτερο αλλά και πόσο χαρούμενο γεγονός! Πόσο τρυφερό αλλά και πόσο απαιτητικό!
-              </p>
-              
-              <p>
-                Η τελετή, αλλά και η <strong>δεξίωση βάπτισης</strong> που θα ακολουθήσει πρέπει να αντιπροσωπεύει την οικογένεια και για αυτό αξίζει ό,τι το καλύτερο. 
-                Θα πρέπει να μεταδίδει χαρά ώστε να δημιουργηθεί μια υπέροχη γιορτή για όλα τα αγαπημένα σας πρόσωπα. 
-                Με συναίσθηση της σημασίας που έχει η δεξίωση της βάπτισης στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>, στεκόμαστε δίπλα σας, ώστε μαζί σας να οργανώσουμε τη βάπτιση του παιδιού σας, 
-                με πολύ αγάπη και μεράκι. Κοντά σε <Link href="/ekklisies" className="text-brand-main hover:underline">παραθαλάσσια εκκλησάκια</Link>.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Πραγματοποιήστε τη δεξίωση της βάπτισής σας, σε ένα πολυχώρο διαφορετικό από τους άλλους.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Δεξίωση βάπτισης" title="Η βάπτιση του παιδιού σας, η γιορτή της οικογένειας." description="Γνωρίστε τον χώρο και τα πακέτα L. Varsos Catering από 33€ ανά άτομο για εκδηλώσεις από 100 καλεσμένους." image="/images/baptism-card.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" event="christening" />
 
         {/* Baptism Features */}
         <section className="section-padding">
@@ -201,13 +176,13 @@ export default function Vaptisi() {
                   <div>
                     <h3 className="font-heading mb-3">Φωτογραφία & Video</h3>
                     <p className="text-muted-foreground">
-                      Επαγγελματική καταγραφή όλων των στιγμών - από την προετοιμασία έως το τέλος του πάρτι - 
+                      Επαγγελματική καταγραφή όλων των στιγμών - από την προετοιμασία έως το τέλος του πάρτι -
                       για να διατηρήσετε για πάντα αυτές τις αξέχαστες στιγμές.
                     </p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Γιατί το Κτήμα Ωρίων;</h3>
                 <ul className="space-y-4">
@@ -248,7 +223,7 @@ export default function Vaptisi() {
         <RelatedServices currentPage="/vaptisi" />
 
         {/* Popular Searches */}
-        <PopularSearches 
+        <PopularSearches
           links={[
             { label: "Βαπτιστική Δεξίωση Κερατέα", href: "/vaptisi" },
             { label: "Χώρος Βάπτισης", href: "/o-horos" },
@@ -268,23 +243,17 @@ export default function Vaptisi() {
               Επικοινωνήστε μαζί μας για να σχεδιάσουμε μαζί την τέλεια βαπτιστική δεξίωση στο Κτήμα Ωρίων
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={promoHref(false)}>
-                <button className="button button4">
+              <a href={promoHref(false)} className="button button4">
                   ΔΕΙΤΕ ΤΑ ΠΑΚΕΤΑ ΑΠΟ 33€
-                </button>
-              </a>
-              <a href="/epikoinonia">
-                <button className="button button4">
+                </a>
+              <a href="/epikoinonia" className="button button4">
                   ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-                </button>
-              </a>
-              <a href="/ktima-vaptisis">
-                <button className="button button4">
+                </a>
+              <a href="/ktima-vaptisis" className="button button4">
                   ΠΕΡΙΣΣΟΤΕΡΑ ΓΙΑ ΒΑΠΤΙΣΗ
-                </button>
-              </a>
+                </a>
             </div>
-            
+
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
               <a href="/ktima-vaptisis" className="text-brand-main hover:underline">Κτήματα Βάπτισης Αθήνα</a>

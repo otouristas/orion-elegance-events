@@ -24,7 +24,7 @@ export default function Epikoinonia() {
     subject: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -68,7 +68,7 @@ export default function Epikoinonia() {
         subject: '',
         message: ''
       });
-      
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -149,7 +149,7 @@ export default function Epikoinonia() {
                 <h2 className="font-heading mb-12">
                   <span className="text-gradient-brand">Στοιχεία Επικοινωνίας</span>
                 </h2>
-                
+
                 <div className="space-y-8">
                   {contactInfo.map((info, index) => (
                     <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300">
@@ -178,7 +178,7 @@ export default function Epikoinonia() {
                       <div>
                         <h3 className="font-heading text-gradient-brand mb-3">Ώρες Λειτουργίας</h3>
                         <p className="text-muted-foreground text-lg">
-                          Δευτέρα - Κυριακή: 9:00 - 22:00
+                          Επισκέψεις κατόπιν ραντεβού
                         </p>
                         <p className="text-muted-foreground text-sm mt-2">
                           *Επικοινωνήστε μαζί μας για ραντεβού εκτός ωρών
@@ -194,30 +194,32 @@ export default function Epikoinonia() {
                 <h2 className="font-heading mb-8">
                   <span className="text-gradient-brand">Φόρμα Επικοινωνίας</span>
                 </h2>
-                
+
                 <Card className="card-elegant">
                   <CardContent className="p-8">
                     <form action={FORMSPREE_FORM_ACTION} method="POST" onSubmit={handleSubmit} className="space-y-6">
+<input type="hidden" name="type" value="contact" />
+<input type="hidden" name="lang" value="el" />
                       {/* Name Fields */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="firstName">Όνομα *</Label>
-                          <Input 
-                            id="firstName" 
-                            placeholder="Το όνομά σας" 
+                          <Input
+                            id="firstName"
+                            placeholder="Το όνομά σας"
                             value={formData.firstName}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="lastName">Επώνυμο *</Label>
-                          <Input 
-                            id="lastName" 
-                            placeholder="Το επώνυμό σας" 
+                          <Input
+                            id="lastName"
+                            placeholder="Το επώνυμό σας"
                             value={formData.lastName}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                       </div>
@@ -226,23 +228,23 @@ export default function Epikoinonia() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="email">Email *</Label>
-                          <Input 
-                            id="email" 
-                            type="email" 
-                            placeholder="email@example.com" 
+                          <Input
+                            id="email" name="email" autoComplete="email"
+                            type="email"
+                            placeholder="email@example.com"
                             value={formData.email}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="phone">Τηλέφωνο *</Label>
-                          <Input 
-                            id="phone" 
-                            placeholder="210 123 4567" 
+                          <Input
+                            id="phone" name="phone" type="tel" autoComplete="tel"
+                            placeholder="210 123 4567"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                       </div>
@@ -251,9 +253,9 @@ export default function Epikoinonia() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="eventType">Τύπος Εκδήλωσης *</Label>
-                          <select 
-                            id="eventType" 
-                            className="w-full px-3 py-2 border border-border rounded-md bg-background" 
+                          <select
+                            id="eventType"
+                            className="w-full px-3 py-2 border border-border rounded-md bg-background"
                             value={formData.eventType}
                             onChange={handleInputChange}
                             required
@@ -267,10 +269,10 @@ export default function Epikoinonia() {
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="guestCount">Αριθμός Ατόμων</Label>
-                          <Input 
-                            id="guestCount" 
-                            type="number" 
-                            placeholder="π.χ. 100" 
+                          <Input
+                            id="guestCount"
+                            type="number"
+                            placeholder="π.χ. 100"
                             value={formData.guestCount}
                             onChange={handleInputChange}
                           />
@@ -280,20 +282,20 @@ export default function Epikoinonia() {
                       {/* Subject */}
                       <div className="space-y-2">
                         <Label htmlFor="subject">Θέμα *</Label>
-                        <Input 
-                          id="subject" 
-                          placeholder="Το θέμα του μηνύματός σας" 
+                        <Input
+                          id="subject" name="subject"
+                          placeholder="Το θέμα του μηνύματός σας"
                           value={formData.subject}
                           onChange={handleInputChange}
-                          required 
+                          required
                         />
                       </div>
 
                       {/* Message */}
                       <div className="space-y-2">
                         <Label htmlFor="message">Μήνυμα *</Label>
-                        <Textarea 
-                          id="message" 
+                        <Textarea
+                          id="message" name="message"
                           placeholder="Πείτε μας περισσότερα για την εκδήλωσή σας..."
                           rows={6}
                           value={formData.message}
@@ -303,8 +305,8 @@ export default function Epikoinonia() {
                       </div>
 
                       {/* Submit Button */}
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         className="button button4 w-full"
                         disabled={isSubmitting}
                       >
@@ -336,22 +338,22 @@ export default function Epikoinonia() {
                 Βρισκόμαστε στην Κερατέα, με εύκολη πρόσβαση από την Αττική Οδό
               </p>
             </div>
-            
+
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.468!2d24.0262364!3d37.8024928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!5e0!3m2!1sel!2sgr" 
-                width="100%" 
-                height="450" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.468!2d24.0262364!3d37.8024928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2s%CE%9A%CF%84%CE%AE%CE%BC%CE%B1%20%CE%A9%CF%81%CE%AF%CF%89%CE%BD!5e0!3m2!1sel!2sgr"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-[450px]"
                 title="Χάρτης Κτήμα Ωρίων"
               />
             </div>
             <div className="text-center mt-6">
-              <a 
+              <a
                 href="https://www.google.gr/maps/place/%CE%9A%CF%84%CE%AE%CE%BC%CE%B1+%CE%A9%CF%81%CE%AF%CF%89%CE%BD/@37.8024928,24.0262364,17z/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -371,7 +373,7 @@ export default function Epikoinonia() {
               Επικοινωνήστε μαζί μας σήμερα
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Έχουμε ερωτήσεις για την εκδήλωσή σας; Θέλετε να κλείσετε ραντεβού; 
+              Έχουμε ερωτήσεις για την εκδήλωσή σας; Θέλετε να κλείσετε ραντεβού;
               Επικοινωνήστε μαζί μας και θα σας απαντήσουμε άμεσα.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

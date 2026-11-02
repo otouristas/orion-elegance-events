@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Navigation } from '@/components/Navigation';
+import { CelebrationPaths } from '@/components/CelebrationPaths';
 import { HeroEn } from '@/components/english/HeroEn';
 import { DescriptionEn } from '@/components/english/DescriptionEn';
 import { FeaturesEn } from '@/components/english/FeaturesEn';
@@ -40,18 +41,20 @@ const IndexEn = () => {
     { question: "Is there parking for guests?", answer: "Yes, we have a huge free parking area with over 100 spaces for all your guests, which is rare for venues in the area." },
     { question: "Can I visit the venue before booking?", answer: "Absolutely! We encourage you to visit Ktima Orion and see the magical environment. Contact us to schedule a free tour." },
     { question: "What services do you provide?", answer: "We offer comprehensive services: catering, decoration, lighting, sound, professional photographer (Studio Alpha), and complete event coordination." },
-    { question: "Are there churches nearby for the ceremony?", answer: "Yes, we are very close to 4 picturesque seaside chapels (5-15 minutes): Agios Alexandros Daskaleio, Profitis Ilias Thoriko, Agios Panteleimonas, and Panagia Gkarika." },
+    { question: "Are there churches nearby for the ceremony?", answer: "Yes, we are close to 5 churches (approximately 6–13 minutes by car): Agios Alexandros Daskaleio, Profitis Ilias Thoriko, Agios Panteleimonas, Panagia Gkarika, and Agia Triada." },
     { question: "Is the venue air-conditioned?", answer: "Yes, we have a fully air-conditioned hall and also a magical semi-outdoor space, ideal for all seasons." },
     { question: "Can I bring my own vendors?", answer: "Of course! You are free to bring your own vendors or use our experienced partners." },
     { question: "How far in advance should I book the venue?", answer: "We recommend booking at least 6-12 months in advance, especially for summer months and weekends. Popular dates fill up quickly." },
     { question: "What does catering include?", answer: "Catering includes a complete menu customized to your preferences, with options for all ages, including special children's menu for baptisms." },
-    { question: "Is there a playground for children?", answer: "Yes, we have a safe outdoor area where children can play under supervision, ideal for family events like baptisms." }
+    { question: "Is there a playground for children?", answer: "Yes, we have an outdoor area for family celebrations. Children need adult supervision, especially near the pool, ideal for family events like baptisms." }
   ];
 
   return (
     <div className="min-h-screen">
-      <Navigation isScrolled={isScrolled} isTransparent={true} />
+      <Navigation isScrolled={isScrolled} isTransparent={false} />
+      <main id="main">
       <HeroEn />
+      <CelebrationPaths lang="en" />
       <DescriptionEn />
       <FeaturesEn />
       <HomeGalleryEn />
@@ -64,6 +67,7 @@ const IndexEn = () => {
       <PartnersEn />
       <PleiadesBanner lang="en" />
       <ContactEn />
+      </main>
       <FooterEn />
       <BackToTop />
       <ContactFAB />

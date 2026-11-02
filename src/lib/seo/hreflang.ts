@@ -18,11 +18,13 @@ export const GREEK_TO_ENGLISH_PATH: Readonly<Record<string, string>> = {
   "/epikoinonia": "/en/contact",
   "/gallery": "/en/gallery",
   "/blog": "/en/blog",
-  "/request": "/en/contact",
+  "/el/ekklisies/agia-triada": "/en/churches/agia-triada",
+  "/request": "/en/request",
 };
 
 export function resolveEnglishAlternatePath(greekPath: string): string | undefined {
   const normalized = greekPath === "" ? "/" : greekPath.startsWith("/") ? greekPath : `/${greekPath}`;
+  if (normalized.startsWith("/blog/")) return `/en${normalized}`;
   return GREEK_TO_ENGLISH_PATH[normalized];
 }
 

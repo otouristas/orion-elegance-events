@@ -22,7 +22,7 @@ export default function ContactEn() {
     subject: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -66,7 +66,7 @@ export default function ContactEn() {
         subject: '',
         message: ''
       });
-      
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -101,7 +101,7 @@ export default function ContactEn() {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -148,7 +148,7 @@ export default function ContactEn() {
                 <h2 className="font-heading mb-12">
                   <span className="text-gradient-brand">Contact Information</span>
                 </h2>
-                
+
                 <div className="space-y-8">
                   {contactInfo.map((info, index) => (
                     <Card key={index} className="card-elegant hover:shadow-xl transition-all duration-300">
@@ -177,7 +177,7 @@ export default function ContactEn() {
                       <div>
                         <h3 className="font-heading text-gradient-brand mb-3">Business Hours</h3>
                         <p className="text-muted-foreground text-lg">
-                          Monday - Sunday: 9:00 AM - 10:00 PM
+                          Visits by appointment
                         </p>
                         <p className="text-muted-foreground text-sm mt-2">
                           *Contact us for appointments outside business hours
@@ -193,30 +193,32 @@ export default function ContactEn() {
                 <h2 className="font-heading mb-8">
                   <span className="text-gradient-brand">Contact Form</span>
                 </h2>
-                
+
                 <Card className="card-elegant">
                   <CardContent className="p-8">
                     <form action={FORMSPREE_FORM_ACTION} method="POST" onSubmit={handleSubmit} className="space-y-6">
+<input type="hidden" name="type" value="contact" />
+<input type="hidden" name="lang" value="en" />
                       {/* Name Fields */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="firstName">First Name *</Label>
-                          <Input 
-                            id="firstName" 
-                            placeholder="Your first name" 
+                          <Input
+                            id="firstName"
+                            placeholder="Your first name"
                             value={formData.firstName}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="lastName">Last Name *</Label>
-                          <Input 
-                            id="lastName" 
-                            placeholder="Your last name" 
+                          <Input
+                            id="lastName"
+                            placeholder="Your last name"
                             value={formData.lastName}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                       </div>
@@ -225,23 +227,23 @@ export default function ContactEn() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="email">Email *</Label>
-                          <Input 
-                            id="email" 
-                            type="email" 
-                            placeholder="email@example.com" 
+                          <Input
+                            id="email" name="email" autoComplete="email"
+                            type="email"
+                            placeholder="email@example.com"
                             value={formData.email}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="phone">Phone *</Label>
-                          <Input 
-                            id="phone" 
-                            placeholder="+30 210 123 4567" 
+                          <Input
+                            id="phone" name="phone" type="tel" autoComplete="tel"
+                            placeholder="+30 210 123 4567"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            required 
+                            required
                           />
                         </div>
                       </div>
@@ -250,9 +252,9 @@ export default function ContactEn() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="eventType">Event Type *</Label>
-                          <select 
-                            id="eventType" 
-                            className="w-full px-3 py-2 border border-border rounded-md bg-background" 
+                          <select
+                            id="eventType"
+                            className="w-full px-3 py-2 border border-border rounded-md bg-background"
                             value={formData.eventType}
                             onChange={handleInputChange}
                             required
@@ -266,10 +268,10 @@ export default function ContactEn() {
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="guestCount">Number of Guests</Label>
-                          <Input 
-                            id="guestCount" 
-                            type="number" 
-                            placeholder="e.g. 100" 
+                          <Input
+                            id="guestCount"
+                            type="number"
+                            placeholder="e.g. 100"
                             value={formData.guestCount}
                             onChange={handleInputChange}
                           />
@@ -279,20 +281,20 @@ export default function ContactEn() {
                       {/* Subject */}
                       <div className="space-y-2">
                         <Label htmlFor="subject">Subject *</Label>
-                        <Input 
-                          id="subject" 
-                          placeholder="Your message subject" 
+                        <Input
+                          id="subject" name="subject"
+                          placeholder="Your message subject"
                           value={formData.subject}
                           onChange={handleInputChange}
-                          required 
+                          required
                         />
                       </div>
 
                       {/* Message */}
                       <div className="space-y-2">
                         <Label htmlFor="message">Message *</Label>
-                        <Textarea 
-                          id="message" 
+                        <Textarea
+                          id="message" name="message"
                           placeholder="Tell us more about your event..."
                           rows={6}
                           value={formData.message}
@@ -302,8 +304,8 @@ export default function ContactEn() {
                       </div>
 
                       {/* Submit Button */}
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         className="button button4 w-full"
                         disabled={isSubmitting}
                       >
@@ -335,22 +337,22 @@ export default function ContactEn() {
                 Located in Keratea, with easy access from Attiki Odos highway
               </p>
             </div>
-            
+
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.468!2d24.0262364!3d37.8024928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2sKtima%20Orion!5e0!3m2!1sen!2sgr" 
-                width="100%" 
-                height="450" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.468!2d24.0262364!3d37.8024928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18dba5963d66d%3A0x753d26f1ce529d7!2sKtima%20Orion!5e0!3m2!1sen!2sgr"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-[450px]"
                 title="Ktima Orion Location"
               />
             </div>
             <div className="text-center mt-6">
-              <a 
+              <a
                 href="https://www.google.gr/maps/place/%CE%9A%CF%84%CE%AE%CE%BC%CE%B1+%CE%A9%CF%81%CE%AF%CF%89%CE%BD/@37.8024928,24.0262364,17z/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -370,7 +372,7 @@ export default function ContactEn() {
               Contact us today
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Have questions about your event? Want to book an appointment? 
+              Have questions about your event? Want to book an appointment?
               Contact us and we'll respond promptly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

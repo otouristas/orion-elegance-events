@@ -67,7 +67,7 @@ export default function ReviewsEn() {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -76,7 +76,7 @@ export default function ReviewsEn() {
               <span className="text-gradient-brand">Reviews</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Read what our clients say about their experiences at Ktima Orion. 
+              Read what our clients say about their experiences at Ktima Orion.
               Their words are our greatest pride and motivation.
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function ReviewsEn() {
                         </div>
                       </div>
                     </div>
-                    
+
                     <p className="text-muted-foreground leading-relaxed italic">
                       "{review.text}"
                     </p>
@@ -125,7 +125,7 @@ export default function ReviewsEn() {
               Be part of our story
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us to create unforgettable memories together 
+              Contact us to create unforgettable memories together
               that you will want to relive again and again.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

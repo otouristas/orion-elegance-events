@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -61,37 +62,7 @@ export default function EterikesEkdiloseis() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Εταιρικές εκδηλώσεις</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Η Εκδήλωσή Σας, η Εξειδίκευσή Μας
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Η επαγγελματική σας εκδήλωση επαγγελματική μας ευθύνη. Ο σχεδιασμός της, απαιτεί εμπειρία και ευελιξία, 
-                καθώς πρέπει να εκπληρωθεί ένα σύνολο προϋποθέσεων προκειμένου να μπορεί να θεωρηθεί επιτυχημένη.
-              </p>
-              
-              <p>
-                Η εμπειρία των συνεργατών μας, η αφοσίωση μας στη συνέπεια και η επιμονή μας στη λεπτομέρεια, 
-                καθιστούν τον χώρο μας ιδανικό σημείο για τη φιλοξενία των πιο ξεχωριστών και επιτυχημένων επαγγελματικών εκδηλώσεων.
-              </p>
-              
-              <p>
-                Είτε πρόκειται για μια εθιμοτυπική συνάθροιση, είτε για κάλεσμα στους εκπροσώπους των ΜΜΕ, 
-                είτε για ένα συνέδριο, είτε για παρουσίαση ενός νέου προϊόντος, το Κτήμα Ωρίων πληροί τις προϋποθέσεις της επιτυχίας.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Επικοινωνήστε μαζί μας, για να συζητήσουμε όλες τις παραμέτρους της εκδήλωσής σας και να σας προτείνουμε τις βέλτιστες λύσεις.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Εταιρικές εκδηλώσεις στην Αττική" title="Χώρος για την ομάδα σας." description="Συναντήσεις, παρουσιάσεις και εταιρικές εκδηλώσεις στο Κτήμα Ωρίων, με επιλογές εσωτερικού και εξωτερικού χώρου και parking." image="/images/hero-image.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" event="corporate" />
 
         {/* Event Features */}
         <section className="section-padding">
@@ -185,7 +156,7 @@ export default function EterikesEkdiloseis() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Γιατί το Κτήμα Ωρίων;</h3>
                 <ul className="space-y-4">

@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -90,33 +91,7 @@ export default function BaptismEn() {
     <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Baptism</span> at Ktima Orion
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              The Perfect Baptism Reception Venue for Your Child's Special Day in Keratea, Athens
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                A christening is a unique and special moment for every family. What a joyful and tender occasion!
-              </p>
-              
-              <p>
-                The ceremony and the baptism reception that follows must represent your family and deserve only the best. 
-                Understanding the importance of the baptism reception, we stand by your side to organize 
-                your child's baptism together, with love and passion. Our <a href="/en/venue" className="text-brand-main hover:underline">beautiful venue</a> is located near stunning <a href="/en/churches" className="text-brand-main hover:underline">seaside churches</a>, 
-                making it easy to combine the christening ceremony with a joyful reception.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Hold your baptism reception in a venue that stands out from the rest.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Baptism celebrations in Attica" title="A celebration for the whole family." description="Explore the garden, children\u2019s menus and reception packages. Tell us your preferred date and guest count." image="/images/baptism-card.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" event="christening" />
 
         {/* Baptism Features */}
         <section className="section-padding">
@@ -199,13 +174,13 @@ export default function BaptismEn() {
                   <div>
                     <h3 className="font-heading mb-3">Photography & Video</h3>
                     <p className="text-muted-foreground">
-                      Professional recording of all moments - from preparation to the end of the party - 
+                      Professional recording of all moments - from preparation to the end of the party -
                       to preserve these unforgettable moments forever.
                     </p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Why Ktima Orion?</h3>
                 <ul className="space-y-4">
@@ -255,21 +230,15 @@ export default function BaptismEn() {
               Contact us today to schedule a visit to our <a href="/en/venue" className="text-brand-main hover:underline">christening venue</a> and start planning this unforgettable baptism celebration. Explore our <a href="/en/services" className="text-brand-main hover:underline">baptism services</a> and nearby <a href="/en/churches" className="text-brand-main hover:underline">churches</a>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={promoHref(true)}>
-                <button className="button button4">
+              <a href={promoHref(true)} className="button button4">
                   SEE PACKAGES FROM €33
-                </button>
-              </a>
-              <a href="/en/contact">
-                <button className="button button4">
+                </a>
+              <a href="/en/contact" className="button button4">
                   BOOK APPOINTMENT
-                </button>
-              </a>
-              <a href="/en/contact">
-                <button className="button button4">
+                </a>
+              <a href="/en/contact" className="button button4">
                   CONTACT US
-                </button>
-              </a>
+                </a>
             </div>
           </div>
         </section>
