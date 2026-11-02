@@ -76,9 +76,9 @@ export default function AgiosAlexandrosDaskaleio() {
               {/* Popular Searches */}
               <div className="mt-12 pt-8 border-t border-border/50">
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
-                  <a href="/el/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
+                  <a href="/el/ekklisies/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
                   <span className="text-muted-foreground">•</span>
-                  <a href="/el/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
+                  <a href="/el/ekklisies/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
                   <span className="text-muted-foreground">•</span>
                   <a href="/gamos" className="text-brand-main hover:underline">Γάμος</a>
                   <span className="text-muted-foreground">•</span>
