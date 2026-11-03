@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 import { POSTAL_CODE, STREET_ADDRESS_EN } from '@/lib/seo/config';
 import { PromoBanner } from '@/components/PromoBanner';
+import DesignCredit from '@/components/DesignCredit';
 const logoWhite = "/images/logo-white.png";
 
 export const FooterEn = () => {
@@ -95,6 +96,9 @@ export const FooterEn = () => {
             <div className="text-secondary-foreground/60 text-sm">
               © 2024 Ktima Orion. All rights reserved.
             </div>
+          </div>
+          <div className="mt-6 flex justify-center">
+            <DesignCredit />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import {
   STREET_ADDRESS_EL,
 } from '@/lib/seo/config';
 import { PromoBanner } from '@/components/PromoBanner';
+import DesignCredit from '@/components/DesignCredit';
 
 const logoWhite = '/images/logo-white.png';
 
@@ -168,6 +169,9 @@ export const Footer = () => {
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-secondary-foreground/60 md:flex-row">
             <p>Γ.Ε.ΜΗ. 062719803000</p>
             <p>© {year} Κτήμα Ωρίων. Με την επιφύλαξη παντός δικαιώματος.</p>
+          </div>
+          <div className="mt-6 flex justify-center">
+            <DesignCredit />
           </div>
         </div>
       </div>
