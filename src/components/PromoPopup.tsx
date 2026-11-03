@@ -40,9 +40,6 @@ const PLEIADES_COPY = {
   },
 } as const;
 
-/** Short pause so the page paints (and the cookie notice settles) first. */
-const APPEAR_DELAY_MS = 2500;
-
 /**
  * Every page shows one campaign. Pleiades owns the homepage and blog,
  * baptism packages take every other page, and each campaign's own article
@@ -93,10 +90,9 @@ export const PromoPopup = () => {
     setIsOpen(false);
   }, []);
 
+  // Open straight away on every page the visitor lands on or navigates to.
   useEffect(() => {
-    setIsOpen(false);
-    const timer = window.setTimeout(() => setIsOpen(true), APPEAR_DELAY_MS);
-    return () => window.clearTimeout(timer);
+    setIsOpen(true);
   }, [pathname]);
 
   // Lock background scrolling and wire up Escape while the dialog is open.
