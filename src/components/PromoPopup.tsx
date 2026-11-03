@@ -9,7 +9,7 @@ import { PLEIADES_ARTICLE_SLUG, PLEIADES_PROMO_IMAGE } from '@/data/pleiades-pro
 import {
   PROMO_COPY,
   PROMO_IMAGE,
-  isHomepage,
+  isPromoPage,
   promoHref,
   shouldShowBaptismPopup,
   shouldShowPleiadesPopup,
@@ -40,23 +40,19 @@ const PLEIADES_COPY = {
   },
 } as const;
 
-/** Bump the suffix to re-show a campaign after a previous dismissal. */
-const DISMISS_KEY = {
-  baptism: 'promoPopup:vaptisi-paketa-2026-restore',
-  pleiades: 'promoPopup:pleiades-synergasia-2026',
-} as const;
-
-/** Give the visitor a moment with the page (and the cookie notice) first. */
-const APPEAR_DELAY_MS = 6000;
-
-function resolveCampaign(pathname: string): Campaign | null {
+/**
+ * Every page shows one campaign. Pleiades owns the homepage and blog,
+ * baptism packages take every other page, and each campaign's own article
+ * shows the other one instead of advertising itself.
+ */
+function resolveCampaign(pathname: string): Campaign {
   if (shouldShowPleiadesPopup(pathname)) {
     return 'pleiades';
   }
   if (shouldShowBaptismPopup(pathname)) {
     return 'baptism';
   }
-  return null;
+  return isPromoPage(pathname) ? 'pleiades' : 'baptism';
 }
 
 export const PromoPopup = () => {
@@ -66,7 +62,6 @@ export const PromoPopup = () => {
 
   const campaign = resolveCampaign(pathname);
   const isEnglish = pathname.startsWith('/en');
-  const onHomepage = isHomepage(pathname);
   const copy =
     campaign === 'pleiades'
       ? isEnglish
@@ -89,38 +84,16 @@ export const PromoPopup = () => {
       ? 'h-44 w-full object-cover object-top sm:h-48'
       : 'h-44 w-full object-cover object-center sm:h-48';
 
+  // Closing only hides the popup for the current page; it comes back on the
+  // next page the visitor opens, so the offer is seen across the whole site.
   const dismiss = useCallback(() => {
     setIsOpen(false);
-    // Homepage (Partners) always re-shows the Pleiades offer on the next visit.
-    if (!campaign || (campaign === 'pleiades' && onHomepage)) {
-      return;
-    }
-    try {
-      window.localStorage.setItem(DISMISS_KEY[campaign], 'dismissed');
-    } catch {
-      // Private browsing or blocked storage: closing for this view is enough.
-    }
-  }, [campaign, onHomepage]);
+  }, []);
 
+  // Open straight away on every page the visitor lands on or navigates to.
   useEffect(() => {
-    setIsOpen(false);
-    if (!campaign) {
-      return;
-    }
-    if (!(campaign === 'pleiades' && onHomepage)) {
-      let dismissed = false;
-      try {
-        dismissed = window.localStorage.getItem(DISMISS_KEY[campaign]) !== null;
-      } catch {
-        dismissed = false;
-      }
-      if (dismissed) {
-        return;
-      }
-    }
-    const timer = window.setTimeout(() => setIsOpen(true), APPEAR_DELAY_MS);
-    return () => window.clearTimeout(timer);
-  }, [campaign, onHomepage, pathname]);
+    setIsOpen(true);
+  }, [pathname]);
 
   // Lock background scrolling and wire up Escape while the dialog is open.
   useEffect(() => {
@@ -144,7 +117,7 @@ export const PromoPopup = () => {
     };
   }, [isOpen, dismiss]);
 
-  if (!isOpen || !campaign) {
+  if (!isOpen) {
     return null;
   }
 
