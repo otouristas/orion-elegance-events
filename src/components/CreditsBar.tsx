@@ -7,7 +7,7 @@ const partners = {
   crete: { name: "Discover Crete", url: "https://discover-crete.com/", logo: "/images/brand/credits/discover-crete.png" },
 };
 
-// Keep the designer credit readable without depending on a remote logo asset.
+// Designer credit with the AnotherSEOGuru lockup (on-dark version, served locally).
 export function CreditsBar({ partner, source, className = "" }: { partner: Partner; source: string; className?: string }) {
   const p = partner ? partners[partner] : null;
   const utm = `utm_source=${source}&utm_medium=referral&utm_campaign=partner_footer`;
@@ -17,7 +17,7 @@ export function CreditsBar({ partner, source, className = "" }: { partner: Partn
     >
       <a href="https://anotherseoguru.com" target="_blank" rel="noopener" className="inline-flex items-center gap-2 transition-colors hover:text-white">
         <span>Designed by</span>
-        <span className="font-semibold text-white">AnotherSEOGuru</span>
+        <img src="/brand/anotherseoguru-lockup-on-dark.svg" alt="AnotherSEOGuru" width={141} height={32} className="h-7 w-auto" loading="lazy" />
       </a>
       {p && (
         <a href={`${p.url}?${utm}`} target="_blank" rel="noopener" className="inline-flex items-center gap-2 transition-opacity hover:opacity-90">
