@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 
 const title = "Καλέστε για ραντεβού στην Κερατέα: 22990 68812 | Κτήμα Ωρίων";
 const description =
-  "Καλέστε στο 22990 68812 ή στο 698 188 9560, ή γράψτε στο info@ktimaorion.gr. Φόρμα επικοινωνίας, χάρτης στην Κερατέα και ραντεβού, κάθε μέρα 9:00–22:00.";
+  "Καλέστε στο 22990 68812 ή στο 698 188 9560, ή γράψτε στο info@ktimaorion.gr. Φόρμα επικοινωνίας, χάρτης στην Κερατέα και επισκέψεις κατόπιν ραντεβού.";
 
 export const metadata: Metadata = buildMetadata({
   title,

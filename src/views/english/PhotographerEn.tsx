@@ -10,7 +10,7 @@ const PhotographerEn = () => {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-muted/30">
         <div className="container-max">
           <div className="text-center max-w-4xl mx-auto">
@@ -37,7 +37,7 @@ const PhotographerEn = () => {
                   <strong className="text-brand-main">Trust Studio Alpha</strong> with every memory of your most important moments…
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Our extensive experience in wedding and baptism photography ensures impeccable service, 
+                  Our extensive experience in wedding and baptism photography ensures impeccable service,
                   excellent collaboration, and absolute professional capture of your every moment.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">

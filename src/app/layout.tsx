@@ -1,8 +1,6 @@
+import { AnalyticsConsent } from '@/components/AnalyticsConsent';
 import type { Metadata } from 'next';
 import { EB_Garamond, Inter } from 'next/font/google';
-import { GoogleAnalytics } from '@next/third-parties/google';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { AppProviders } from '@/components/providers/app-providers';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { PromoPopup } from '@/components/PromoPopup';
@@ -49,9 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <PromoPopup />
         </AppProviders>
-        <GoogleAnalytics gaId="G-R3D1HPVZYG" />
-        <Analytics />
-        <SpeedInsights />
+        <AnalyticsConsent />
       </body>
     </html>
   );

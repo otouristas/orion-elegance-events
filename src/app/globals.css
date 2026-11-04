@@ -134,7 +134,7 @@
 
   .section-padding {
     padding-block: var(--section-y);
-    padding-inline: var(--gutter);
+    padding-inline: 0;
   }
 
   /* ---- Type ---- */
@@ -195,7 +195,7 @@
   /* ---- Surfaces ---- */
 
   .card-elegant {
-    @apply bg-card rounded-2xl;
+    @apply bg-card rounded-md;
     border: var(--hairline);
     box-shadow: var(--shadow-sm);
     transition:
@@ -207,7 +207,7 @@
   .card-elegant:hover {
     box-shadow: var(--shadow-md);
     border-color: hsl(var(--brand-main) / 0.55);
-    transform: translateY(-3px);
+    transform: none;
   }
 
   /* ---- Buttons ----
@@ -236,7 +236,9 @@
     font-size: 0.9375rem;
     font-weight: 500;
     letter-spacing: 0.01em;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: 100%;
+    min-height: 48px;
     border-radius: 999px;
     box-shadow: var(--shadow-sm);
     transition:
@@ -269,7 +271,7 @@
     text-transform: none;
     letter-spacing: 0.01em;
     border-radius: 999px;
-    min-height: auto;
+    min-height: 48px;
   }
 
   .button-ghost {
@@ -406,3 +408,43 @@
   background: hsl(var(--cream));
   font-weight: 600;
 }
+
+/* Native top layer keeps the full-screen menu above all page widgets. */
+.orion-menu { position: fixed; inset: 0; margin: 0; padding: 0; width: 100%; max-width: none; height: 100vh; height: 100dvh; max-height: none; border: 0; border-radius: 0; background: hsl(var(--cream)); color: hsl(var(--foreground)); overflow: hidden; }
+.orion-menu[open] { display: flex; flex-direction: column; }
+.orion-menu::backdrop { background: hsl(var(--cream)); }
+.menu-top { flex-shrink: 0; display:flex; align-items:center; justify-content:space-between; gap:8px; padding:calc(12px + env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left)); border-bottom:var(--hairline); background:hsl(var(--cream)); }
+.menu-close { display:flex; align-items:center; justify-content:center; height:48px; width:48px; padding:0; border:1px solid hsl(var(--brand-text) / .25); border-radius:50%; margin-left:8px; }
+.menu-language { padding:0 10px; min-width:44px; min-height:44px; font-size:12px; border-radius:50%; }
+.menu-language[aria-pressed=true] { background:hsl(var(--brand-text)); color:white; }
+.menu-scroll { flex:1; min-height:0; display:flex; overflow-y:auto; overscroll-behavior:contain; }
+.menu-story { display:none; }
+.menu-links { width:100%; min-width:0; padding:24px max(20px, env(safe-area-inset-right)) calc(32px + env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
+.menu-destination { display:flex; align-items:center; gap:16px; padding:14px 8px; border-bottom:var(--hairline); }
+.menu-destination[aria-current=page] { background:hsl(var(--brand-main) / .14); border-left:3px solid hsl(var(--brand-deep)); }
+.menu-group { border-bottom:var(--hairline); }
+.menu-group summary { display:flex; align-items:center; justify-content:space-between; gap:16px; cursor:pointer; min-height:56px; padding:12px 0; font-weight:600; list-style:none; }
+.menu-group summary::-webkit-details-marker { display:none; }
+.menu-group[open] summary svg { transform:rotate(180deg); }
+.menu-group a,.menu-info { display:block; padding:14px 8px; font-size:14px; }
+.menu-group a[aria-current=page],.menu-info[aria-current=page],.nav-desktop-link[aria-current=page] { text-decoration:underline; text-underline-offset:6px; font-weight:700; }
+.nav-desktop-link { display:inline-flex; align-items:center; min-height:44px; font-size:14px; }
+@media(min-width:768px) { .menu-story { display:flex; flex:0 0 42%; position:sticky; top:0; height:100%; } .menu-links { padding:40px; } }
+:where(a,button,input,select,textarea,summary):focus-visible { outline:2px solid hsl(var(--brand-deep)); outline-offset:4px; }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; } }
+
+/* Every layout cell must fit its track at narrow widths. */
+.grid > * { min-width: 0; }
+.button svg { flex-shrink: 0; }
+@media(max-width:639px) { .button, .button4, .buttoncat { padding-inline:1.25rem; font-size:.875rem; } .card-elegant.p-8 { padding:1.25rem; } }
+.orion-promo { padding:0; width:min(440px,calc(100vw - 32px)); max-width:none; max-height:calc(100vh - 32px); max-height:calc(100dvh - 32px); border:1px solid hsl(var(--border)); border-radius:10px; background:hsl(var(--background)); color:hsl(var(--foreground)); overflow:hidden; }
+.orion-promo[open] { display:flex; flex-direction:column; }
+.orion-promo::backdrop { background:hsl(220 29% 15% / .65); }
+.orion-lightbox { position:fixed; inset:0; margin:0; width:100%; max-width:none; height:100vh; height:100dvh; max-height:none; border:0; border-radius:0; padding:0; background:#152032; color:white; overflow:hidden; }
+.orion-lightbox[open] { display:flex; flex-direction:column; }
+.orion-lightbox::backdrop { background:#152032; }
+
+/* Text and interactive fills use the readable bronze step. */
+.text-brand-main { color:hsl(var(--brand-deep)); }
+.bg-brand-text .text-brand-main,.bg-forest .text-brand-main { color:hsl(var(--brand-light)); }
+.bg-brand-main.text-white { background-color:hsl(var(--brand-deep)); }

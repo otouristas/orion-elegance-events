@@ -1,48 +1,5 @@
+import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 import { ClickableImage } from './ImageLightbox';
-
-interface GalleryImage {
-  readonly src: string;
-  readonly alt: string;
-}
-
-export const HomeGallery = () => {
-  const galleryImages: readonly GalleryImage[] = [
-    { src: "/final-photos/arxiki/1.jpeg", alt: "Είσοδος Κτήμα Ωρίων φωτισμένη το βράδυ" },
-    { src: "/final-photos/arxiki/2.jpeg", alt: "Κεντρικός κήπος Κτήμα Ωρίων" },
-    { src: "/final-photos/arxiki/2.jpg", alt: "Στολισμένη δεξίωση στο Κτήμα Ωρίων" },
-    { src: "/final-photos/arxiki/3.jpeg", alt: "Υπαίθριος χώρος εκδηλώσεων Κτήμα Ωρίων" },
-    { src: "/final-photos/arxiki/IMG_0825.jpeg", alt: "Στολισμός τραπεζιού με φυσικά άνθη" },
-    { src: "/final-photos/arxiki/IMG_0852.jpeg", alt: "Πανοραμική άποψη χώρου δεξίωσης" },
-    { src: "/final-photos/arxiki/IMG_3429.jpeg", alt: "Λεπτομέρεια φωτισμού στον κήπο" },
-    { src: "/final-photos/arxiki/3%20(2).jpeg", alt: "Διαμορφωμένος χώρος υποδοχής" }
-  ];
-
-  return (
-    <section className="section-padding bg-gradient-to-b from-champagne/30 to-background">
-      <div className="container-max">
-        <div className="text-center mb-16">
-          <h2 className="font-heading mb-6">
-            Γνωρίστε το <span className="text-gradient-brand">Κτήμα Ωρίων</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ένα μαγευτικό περιβάλλον που συνδυάζει την πολυτέλεια με τη φύση
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryImages.map((image, index) => (
-            <ClickableImage
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              images={galleryImages}
-              index={index}
-              className="w-full h-full object-cover aspect-square rounded-lg shadow-lg hover:shadow-xl"
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
+const photos=[{src:'/final-photos/arxiki/1.jpeg',alt:'Είσοδος Κτήματος Ωρίων το βράδυ'},{src:'/final-photos/arxiki/2.jpeg',alt:'Ο κήπος του Κτήματος Ωρίων'},{src:'/final-photos/arxiki/2.jpg',alt:'Στολισμός δεξίωσης στο Κτήμα Ωρίων'},{src:'/final-photos/arxiki/3.jpeg',alt:'Υπαίθριος χώρος δεξίωσης'},{src:'/final-photos/arxiki/IMG_0825.jpeg',alt:'Λεπτομέρεια στολισμού τραπεζιού'},{src:'/final-photos/arxiki/IMG_0852.jpeg',alt:'Άποψη του χώρου δεξίωσης'}];
+export function HomeGallery({lang='el'}:{lang?:'el'|'en'}){const en=lang==='en';return <section className="section-padding bg-cream"><div className="container-max"><div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p className="eyebrow">{en?'The venue in pictures':'Ο χώρος σε εικόνες'}</p><h2 className="mt-4 font-heading">{en?'A closer look at Orion.':'Μια πιο κοντινή ματιά στο Ωρίων.'}</h2></div><Link href={en?'/en/gallery':'/gallery'} className="inline-flex min-h-11 items-center gap-3 text-sm font-semibold">{en?'The full photo collection':'Όλη η συλλογή φωτογραφιών'}<ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link></div><div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">{photos.map((image,index)=><figure key={image.src} className={index===1?'lg:pt-10':''}><ClickableImage {...image} images={photos} index={index} className="aspect-[4/3]" /><figcaption className="mt-3 text-xs text-muted-foreground">{en?`Ktima Orion · ${String(index+1).padStart(2,'0')}`:image.alt}</figcaption></figure>)}</div></div></section>;}

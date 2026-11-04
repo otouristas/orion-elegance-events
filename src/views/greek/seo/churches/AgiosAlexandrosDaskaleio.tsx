@@ -42,12 +42,12 @@ export default function AgiosAlexandrosDaskaleio() {
                 <CardContent className="p-8">
                   <h2 className="font-heading mb-4 text-gradient-brand">Περιγραφή</h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Ο Άγιος Αλέξανδρος στο Δασκαλειό είναι ένα από τα πιο γραφικά εκκλησάκια της περιοχής, 
-                    με μοναδική θέα στη θάλασσα. Η τοποθεσία του το καθιστά ιδανικό για ρομαντικούς γάμους, 
+                    Ο Άγιος Αλέξανδρος στο Δασκαλειό είναι ένα από τα πιο γραφικά εκκλησάκια της περιοχής,
+                    με μοναδική θέα στη θάλασσα. Η τοποθεσία του το καθιστά ιδανικό για ρομαντικούς γάμους,
                     προσφέροντας φωτογενικά σκηνικά και ήσυχο περιβάλλον.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Το εκκλησάκι βρίσκεται μόλις 10 λεπτά από το Κτήμα Ωρίων, καθιστώντας τη μετάβαση από 
+                    Το εκκλησάκι βρίσκεται μόλις 10 λεπτά από το Κτήμα Ωρίων, καθιστώντας τη μετάβαση από
                     την τελετή στη δεξίωση απόλυτα ομαλή για εσάς και τους καλεσμένους σας.
                   </p>
                 </CardContent>
@@ -76,9 +76,9 @@ export default function AgiosAlexandrosDaskaleio() {
               {/* Popular Searches */}
               <div className="mt-12 pt-8 border-t border-border/50">
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
-                  <a href="/el/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
+                  <a href="/el/ekklisies/panagia-gkarika" className="text-brand-main hover:underline">Παναγία Γκαρικά</a>
                   <span className="text-muted-foreground">•</span>
-                  <a href="/el/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
+                  <a href="/el/ekklisies/profitis-ilias-thoriko" className="text-brand-main hover:underline">Προφήτης Ηλίας</a>
                   <span className="text-muted-foreground">•</span>
                   <a href="/gamos" className="text-brand-main hover:underline">Γάμος</a>
                   <span className="text-muted-foreground">•</span>
@@ -89,17 +89,13 @@ export default function AgiosAlexandrosDaskaleio() {
               </div>
 
               <div className="text-center mt-8">
-                <Link href="/ktima-gamou">
-                  <button className="button button4 mb-4">
+                <Link href="/ktima-gamou" className="button button4 mb-4">
                     Δείτε το Κτήμα Ωρίων
-                  </button>
-                </Link>
+                  </Link>
                 <br />
-                <Link href="/epikoinonia">
-                  <button className="button button4">
+                <Link href="/request" className="button button4">
                     Κλείστε Επίσκεψη
-                  </button>
-                </Link>
+                  </Link>
               </div>
             </div>
           </div>

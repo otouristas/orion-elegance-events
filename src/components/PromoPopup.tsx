@@ -1,185 +1,23 @@
 'use client';
-
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback,useEffect,useRef,useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { X } from 'lucide-react';
-import { PLEIADES_ARTICLE_SLUG, PLEIADES_PROMO_IMAGE } from '@/data/pleiades-promo';
-import {
-  PROMO_COPY,
-  PROMO_IMAGE,
-  isPromoPage,
-  promoHref,
-} from '@/lib/promo';
+import { ArrowRight,X } from 'lucide-react';
+import { PLEIADES_ARTICLE_SLUG,PLEIADES_PROMO_IMAGE } from '@/data/pleiades-promo';
+import { PROMO_COPY,PROMO_IMAGE,isPromoPage,promoHref } from '@/lib/promo';
 
-type Campaign = 'baptism' | 'pleiades';
-
-const PLEIADES_COPY = {
-  el: {
-    eyebrow: 'Συνεργασία',
-    title: 'Ο γάμος των ονείρων σας',
-    subtitle:
-      'Κτήμα Ωρίων × Pleiades Catering — καλύτερα από ό,τι είχατε ονειρευτεί. Κλείστε σήμερα τον χώρο.',
-    cta: 'Δείτε περισσότερα',
-    dismiss: 'Όχι τώρα',
-    close: 'Κλείσιμο',
-    alt: 'Συνεργασία Κτήμα Ωρίων και Pleiades Catering — ο γάμος των ονείρων σας',
-  },
-  en: {
-    eyebrow: 'Partnership',
-    title: 'The wedding of your dreams',
-    subtitle:
-      'Ktima Orion × Pleiades Catering — better than you had dreamed. Book the venue today.',
-    cta: 'Learn more',
-    dismiss: 'Not now',
-    close: 'Close',
-    alt: 'Ktima Orion and Pleiades Catering partnership — the wedding of your dreams',
-  },
-} as const;
-
-/**
- * The baptism-packages offer pops up on every page, homepage included.
- * Only the baptism article itself shows the Pleiades offer instead.
- */
-function resolveCampaign(pathname: string): Campaign {
-  return isPromoPage(pathname) ? 'pleiades' : 'baptism';
+// The baptism offer opens straight away on every page, homepage included, and
+// comes back on the next page after it is closed. The baptism article itself
+// shows the Pleiades offer instead; the request form shows none.
+const resolveCampaign=(path:string)=>path==='/request'||path==='/en/request'?null:isPromoPage(path)?'pleiades':'baptism';
+export function PromoPopup(){
+ const path=usePathname();const en=path.startsWith('/en');const campaign=resolveCampaign(path);
+ const [open,setOpen]=useState(false);const dialog=useRef<HTMLDialogElement>(null);
+ const dismiss=useCallback(()=>{setOpen(false);},[]);
+ useEffect(()=>{setOpen(Boolean(campaign));},[path,campaign]);
+ useEffect(()=>{if(!open||!dialog.current)return;const element=dialog.current;const previous=document.body.style.overflow;element.showModal();document.body.style.overflow='hidden';return()=>{element.close();document.body.style.overflow=previous;};},[open]);
+ const pleiades=campaign==='pleiades';const copy=en?PROMO_COPY.en:PROMO_COPY.el;
+ const href=pleiades?`${en?'/en':''}/blog/${PLEIADES_ARTICLE_SLUG}`:promoHref(en);
+ return <dialog ref={dialog} className="orion-promo" aria-labelledby="offer-title" onCancel={e=>{e.preventDefault();dismiss();}}><div className="sticky top-0 z-10 flex shrink-0 items-center justify-between border-b border-border bg-background px-5 py-3"><span className="text-[11px] uppercase tracking-[.15em] text-brand-deep">{pleiades?(en?'Our partnership':'Η συνεργασία μας'):(en?'Baptism packages':'Πακέτα βάπτισης')}</span><button type="button" onClick={dismiss} className="flex h-11 w-11 items-center justify-center rounded-full border border-border !p-0" aria-label={en?'Close offer':'Κλείσιμο προσφοράς'}><X className="h-5 w-5" aria-hidden="true" /></button></div><div className="overflow-y-auto overscroll-contain"><Link href={href} onClick={dismiss} className="block bg-cream p-3"><Image src={pleiades?PLEIADES_PROMO_IMAGE:PROMO_IMAGE} width={pleiades?939:1254} height={pleiades?1675:1254} alt={pleiades?'Κτήμα Ωρίων × Pleiades Catering':copy.alt} sizes="(max-width:480px) 90vw, 420px" className="mx-auto h-auto max-h-[36dvh] w-full object-contain" /></Link><div className="p-5 sm:p-6"><h2 id="offer-title" className="font-heading text-2xl leading-snug">{pleiades?'Κτήμα Ωρίων × Pleiades Catering':copy.title}</h2><p className="mb-5 mt-3 text-sm leading-relaxed text-muted-foreground">{pleiades?(en?'Discover the catering partnership and discuss the menu for your reception.':'Γνωρίστε τη συνεργασία και συζητήστε μαζί μας το μενού της δεξίωσής σας.'):copy.subtitle}</p><Link href={href} onClick={dismiss} className="button button4 w-full !text-sm">{pleiades?(en?'Explore the partnership':'Δείτε τη συνεργασία'):copy.cta}<ArrowRight className="h-4 w-4" aria-hidden="true" /></Link><button type="button" onClick={dismiss} className="mt-2 min-h-11 w-full text-sm text-muted-foreground">{en?'Not now':'Όχι τώρα'}</button></div></div></dialog>;
 }
-
-export const PromoPopup = () => {
-  const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-  const closeButtonRef = useRef<HTMLButtonElement>(null);
-
-  const campaign = resolveCampaign(pathname);
-  const isEnglish = pathname.startsWith('/en');
-  const copy =
-    campaign === 'pleiades'
-      ? isEnglish
-        ? PLEIADES_COPY.en
-        : PLEIADES_COPY.el
-      : isEnglish
-        ? PROMO_COPY.en
-        : PROMO_COPY.el;
-  const href =
-    campaign === 'pleiades'
-      ? isEnglish
-        ? `/en/blog/${PLEIADES_ARTICLE_SLUG}`
-        : `/blog/${PLEIADES_ARTICLE_SLUG}`
-      : promoHref(isEnglish);
-  const image = campaign === 'pleiades' ? PLEIADES_PROMO_IMAGE : PROMO_IMAGE;
-  const imageSize =
-    campaign === 'pleiades' ? { width: 939, height: 1675 } : { width: 1254, height: 1254 };
-  const imageClass =
-    campaign === 'pleiades'
-      ? 'h-44 w-full object-cover object-top sm:h-48'
-      : 'h-44 w-full object-cover object-center sm:h-48';
-
-  // Closing only hides the popup for the current page; it comes back on the
-  // next page the visitor opens, so the offer is seen across the whole site.
-  const dismiss = useCallback(() => {
-    setIsOpen(false);
-  }, []);
-
-  // Open straight away on every page the visitor lands on or navigates to.
-  useEffect(() => {
-    setIsOpen(true);
-  }, [pathname]);
-
-  // Lock background scrolling and wire up Escape while the dialog is open.
-  useEffect(() => {
-    if (!isOpen) {
-      return;
-    }
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    closeButtonRef.current?.focus();
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        dismiss();
-      }
-    };
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isOpen, dismiss]);
-
-  if (!isOpen) {
-    return null;
-  }
-
-  return (
-    <div
-      className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-in fade-in duration-300"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="promo-popup-title"
-    >
-      {/* Decorative scrim: closing is also reachable via Escape and the labelled buttons. */}
-      <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-        onClick={dismiss}
-        aria-hidden="true"
-      />
-
-      {/* Mid-size card: cropped image keeps height in check without feeling tiny.
-          Use built-in max-w-xs (320px) — arbitrary max-w-[Npx] was not reliably emitted. */}
-      <div className="relative z-[201] w-full max-w-xs overflow-hidden rounded-xl bg-background shadow-2xl animate-in zoom-in-95 duration-300">
-        {/* `p-0` resets the global `button` padding in globals.css, which would
-            otherwise collapse this icon button's content box to zero width. */}
-        <button
-          ref={closeButtonRef}
-          type="button"
-          onClick={dismiss}
-          className="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-black/50 p-0 text-white transition-colors hover:bg-black/70"
-          aria-label={copy.close}
-        >
-          <X className="h-4 w-4" />
-        </button>
-
-        <Link href={href} onClick={dismiss} className="block">
-          <Image
-            src={image}
-            alt={copy.alt}
-            width={imageSize.width}
-            height={imageSize.height}
-            className={imageClass}
-            sizes="320px"
-            priority
-          />
-        </Link>
-
-        <div className="px-4 py-4">
-          <p className="text-xs font-semibold uppercase tracking-wider text-brand-main">
-            {copy.eyebrow}
-          </p>
-          <h2 id="promo-popup-title" className="font-heading mt-1 leading-snug text-foreground">
-            {copy.title}
-          </h2>
-          <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{copy.subtitle}</p>
-
-          <div className="mt-4 flex flex-col gap-1.5">
-            <Link
-              href={href}
-              onClick={dismiss}
-              className="flex min-h-[44px] items-center justify-center rounded-md bg-brand-main px-4 text-sm font-bold text-white transition-colors hover:bg-brand-dark"
-            >
-              {copy.cta}
-            </Link>
-            <button
-              type="button"
-              onClick={dismiss}
-              className="min-h-[36px] rounded-md px-4 text-sm text-muted-foreground transition-colors hover:bg-muted"
-            >
-              {copy.dismiss}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};

@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Star, Camera } from 'lucide-react';
@@ -35,28 +36,7 @@ export default function Dexiosi() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Δεξίωση για 50 έως 350 άτομα</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Γάμος, βάπτιση, εταιρικό και πάρτι
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Η δεξίωση γίνεται σε κλιματιζόμενη αίθουσα και σε κήπο με θέα θάλασσα, για 50 έως 350 άτομα.
-                Στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> διαλέγετε τον τύπο εκδήλωσης: γάμο, βάπτιση, εταιρικό ή πάρτι.
-              </p>
-              
-              <p>
-                Με εμπειρία, ευελιξία και αφοσίωση στη λεπτομέρεια, 
-                εξασφαλίζουμε ότι κάθε εκδήλωσή σας θα είναι άψογη και αξέχαστη.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Δεξιώσεις στην Κερατέα" title="Ένας χώρος, πολλές αφορμές για γιορτή." description="Γάμος, βάπτιση, εταιρική συνάντηση ή πάρτι. Οργανώστε τη δεξίωσή σας στον κήπο ή στην αίθουσα του Κτήματος Ωρίων." image="/images/hero-image.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" />
 
         {/* Event Types */}
         <section className="section-padding">
@@ -96,7 +76,7 @@ export default function Dexiosi() {
               Ας δημιουργήσουμε μαζί την τέλεια εκδήλωση
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Επικοινωνήστε μαζί μας για να συζητήσουμε τις ανάγκες της εκδήλωσής σας 
+              Επικοινωνήστε μαζί μας για να συζητήσουμε τις ανάγκες της εκδήλωσής σας
               και να δημιουργήσουμε μαζί αξέχαστες αναμνήσεις.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

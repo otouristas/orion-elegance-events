@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Star, Camera } from 'lucide-react';
@@ -32,32 +33,10 @@ export default function ReceptionEn() {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Reception</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Events at Ktima Orion
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Ktima Orion offers the ideal space for all your special moments. 
-                From weddings and baptisms to corporate events and parties, 
-                we create magical experiences that you will remember forever.
-              </p>
-              
-              <p>
-                With experience, flexibility and dedication to detail, 
-                we ensure that every event will be impeccable and unforgettable.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Receptions in Keratea" title="A place for your people." description="Weddings, baptisms, private parties and company events in the garden or indoor hall at Ktima Orion." image="/images/hero-image.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" />
 
         {/* Event Types */}
         <section className="section-padding">
@@ -97,7 +76,7 @@ export default function ReceptionEn() {
               Let's create the perfect event together
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us to discuss your event needs 
+              Contact us to discuss your event needs
               and create unforgettable memories together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

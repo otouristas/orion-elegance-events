@@ -15,14 +15,14 @@ export default function BlogEn() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const categories = getAllCategories();
 
-  const filteredPosts = (selectedCategory === 'all' 
-    ? blogPosts 
+  const filteredPosts = (selectedCategory === 'all'
+    ? blogPosts
     : blogPosts.filter(post => post.category === selectedCategory))
     .slice()
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
@@ -127,16 +127,12 @@ export default function BlogEn() {
               Contact us to organize your perfect event
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/en/contact">
-                <button className="button button4">
+              <a href="/en/contact" className="button button4">
                   BOOK FREE TOUR
-                </button>
-              </a>
-              <a href="/en/weddings">
-                <button className="button button4">
+                </a>
+              <a href="/en/weddings" className="button button4">
                   VIEW OUR SERVICES
-                </button>
-              </a>
+                </a>
             </div>
           </div>
         </section>

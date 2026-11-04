@@ -22,7 +22,7 @@ export const PromoBanner = () => {
       <div className="container-max px-4 py-10 md:px-6 lg:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
-            <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-main">
+            <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-deep">
               <Sparkles className="h-4 w-4" />
               {copy.eyebrow}
             </p>
@@ -34,7 +34,7 @@ export const PromoBanner = () => {
 
           <Link
             href={promoHref(isEnglish)}
-            className="inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-md bg-brand-main px-7 font-bold text-white transition-colors hover:bg-brand-dark"
+            className="inline-flex min-h-[48px] shrink-0 items-center justify-center gap-2 rounded-full bg-brand-text px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
           >
             {copy.cta}
             <ArrowRight className="h-4 w-4" />

@@ -15,8 +15,8 @@ export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const categories = getAllCategories();
 
-  const filteredPosts = (selectedCategory === 'all' 
-    ? blogPosts 
+  const filteredPosts = (selectedCategory === 'all'
+    ? blogPosts
     : blogPosts.filter(post => post.category === selectedCategory))
     .slice()
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -127,16 +127,12 @@ export default function Blog() {
               Επικοινωνήστε μαζί μας για να οργανώσουμε την τέλεια εκδήλωσή σας
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/epikoinonia">
-                <button className="button button4">
+              <a href="/epikoinonia" className="button button4">
                   ΚΛΕΙΣΤΕ ΔΩΡΕΑΝ ΞΕΝΑΓΗΣΗ
-                </button>
-              </a>
-              <a href="/gamos">
-                <button className="button button4">
+                </a>
+              <a href="/gamos" className="button button4">
                   ΔΕΙΤΕ ΤΙΣ ΥΠΗΡΕΣΙΕΣ ΜΑΣ
-                </button>
-              </a>
+                </a>
             </div>
           </div>
         </section>

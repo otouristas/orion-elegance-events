@@ -80,17 +80,13 @@ export default function EkklisiakiDiplaStThalassa() {
                 Τελετή & Δεξίωση την ίδια μέρα - Ομαλή μετάβαση στο Κτήμα Ωρίων
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/epikoinonia">
-                  <button className="button button4">
+                <Link href="/request" className="button button4">
                     Κλείστε Επίσκεψη
-                  </button>
-                </Link>
-                <a href="tel:+302299068812">
-                  <button className="button button4">
+                  </Link>
+                <a href="tel:+302299068812" className="button button4">
                     <Phone className="w-5 h-5 inline mr-2" />
                     Πληροφορίες
-                  </button>
-                </a>
+                  </a>
               </div>
             </div>
           </div>
@@ -198,16 +194,12 @@ export default function EkklisiakiDiplaStThalassa() {
               Από το εκκλησάκι στο κτήμα - Αναλαμβάνουμε κάθε λεπτομέρεια
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+302299068812">
-                <button className="button button4">
+              <a href="tel:+302299068812" className="button button4">
                   Καλέστε 22990 68812
-                </button>
-              </a>
-              <Link href="/epikoinonia">
-                <button className="button button4">
+                </a>
+              <Link href="/request" className="button button4">
                   Online Αίτημα
-                </button>
-              </Link>
+                </Link>
             </div>
           </div>
         </section>

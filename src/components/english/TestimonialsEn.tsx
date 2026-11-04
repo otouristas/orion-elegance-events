@@ -44,25 +44,7 @@ export const TestimonialsEn = () => {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-brand mb-2">500+</div>
-            <div className="text-muted-foreground">Events</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-brand mb-2">15+</div>
-            <div className="text-muted-foreground">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-brand mb-2">100%</div>
-            <div className="text-muted-foreground">Satisfaction</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-gradient-brand mb-2">7</div>
-            <div className="text-muted-foreground">Nearby Chapels</div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

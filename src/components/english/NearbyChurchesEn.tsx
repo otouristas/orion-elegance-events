@@ -85,11 +85,9 @@ export const NearbyChurchesEn = () => {
         </div>
 
         <div className="text-center mt-8">
-          <Link href="/en/churches">
-            <button className="button button4">
+          <Link href="/en/churches" className="button button4">
               VIEW ALL CHURCHES
-            </button>
-          </Link>
+            </Link>
         </div>
       </div>
     </section>

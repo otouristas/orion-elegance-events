@@ -4,8 +4,8 @@ export const TrustSignalsEn = () => {
   const signals = [
     {
       icon: Award,
-      title: "15+ Years of Experience",
-      description: "500+ Successful Weddings & Baptisms since 2008"
+      title: "Since 2009",
+      description: "Weddings and baptisms in Keratea, Attica"
     },
     {
       icon: Shield,

@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -87,38 +88,10 @@ export default function PartyEn() {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Party</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              The ideal venue for your party - Ktima Orion
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Looking for the perfect venue to celebrate?
-              </p>
-              
-              <p>
-                At Ktima Orion, we turn your special moments into unforgettable experiences. 
-                Birthdays, engagements or corporate parties - our venue and services adapt to your every need.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Create with us an evening that will remain unforgettable.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Contact us today to book your date!
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Private parties in Keratea" title="Your reason to celebrate." description="Tell us about your birthday, engagement or gathering with friends, and discuss the space, menu and music." image="/images/hero-image.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" event="party" />
 
         {/* Party Features */}
         <section className="section-padding">

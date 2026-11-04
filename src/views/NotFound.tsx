@@ -1,22 +1,5 @@
 'use client';
-
-import { useEffect } from 'react';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-export default function NotFound() {
-  const pathname = usePathname();
-  useEffect(() => {
-    console.error('404 Error: User attempted to access non-existent route:', pathname);
-  }, [pathname]);
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="font-heading mb-4">404</h1>
-        <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
-          Return to Home
-        </a>
-      </div>
-    </div>
-  );
-}
+import { ArrowRight } from 'lucide-react';
+export default function NotFound(){const en=usePathname().startsWith('/en');return <main className="flex min-h-[100dvh] items-center bg-cream px-5 py-12"><div className="mx-auto w-full max-w-2xl"><p className="eyebrow">{en?'Ktima Orion · 404':'Κτήμα Ωρίων · 404'}</p><h1 className="mt-5 font-heading">{en?'This page could not be found.':'Η σελίδα δεν βρέθηκε.'}</h1><p className="mt-6 leading-relaxed text-muted-foreground">{en?'Explore the venue from the homepage, or contact us about your celebration.':'Γνωρίστε τον χώρο από την αρχική σελίδα ή επικοινωνήστε μαζί μας για την εκδήλωσή σας.'}</p><div className="mt-8 flex flex-wrap gap-4"><Link href={en?'/en':'/'} className="button button4">{en?'Back to home':'Επιστροφή στην αρχική'}<ArrowRight className="h-4 w-4" aria-hidden="true" /></Link><Link href={en?'/en/request':'/request'} className="inline-flex min-h-12 items-center px-2 text-sm font-semibold">{en?'Request a quote':'Ζητήστε προσφορά'}</Link></div></div></main>;}

@@ -1,63 +1,11 @@
-import { useState, useEffect } from 'react';
-import { X } from 'lucide-react';
-
-export const CookieConsent = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
-      setIsVisible(true);
-    }
-  }, []);
-
-  const acceptCookies = () => {
-    localStorage.setItem('cookieConsent', 'accepted');
-    setIsVisible(false);
-  };
-
-  const declineCookies = () => {
-    localStorage.setItem('cookieConsent', 'declined');
-    setIsVisible(false);
-  };
-
-  if (!isVisible) return null;
-
-  return (
-    <div className="fixed bottom-4 left-4 z-50 max-w-md animate-in slide-in-from-bottom-5 duration-500">
-      <div className="card-elegant p-6 shadow-2xl border-2 border-brand-main/20">
-        <button
-          onClick={declineCookies}
-          className="absolute top-3 right-3 text-muted-foreground hover:text-foreground transition-colors"
-          aria-label="Close"
-        >
-          <X className="w-5 h-5" />
-        </button>
-        
-        <h3 className="font-heading mb-3 text-gradient-brand pr-6">
-          Χρήση Cookies
-        </h3>
-        
-        <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-          Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας στην ιστοσελίδα μας. 
-          Συνεχίζοντας την περιήγησή σας, συμφωνείτε με τη χρήση cookies.
-        </p>
-        
-        <div className="flex gap-3">
-          <button
-            onClick={acceptCookies}
-            className="button button4 text-sm px-4 py-2 flex-1 min-h-[44px]"
-          >
-            Αποδοχή
-          </button>
-          <button
-            onClick={declineCookies}
-            className="px-4 py-2 text-sm border border-border rounded-md hover:bg-muted transition-colors min-h-[44px] min-w-[44px]"
-          >
-            Απόρριψη
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+'use client';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+export const CONSENT_EVENT='orion-cookie-consent';
+export function CookieConsent({ lang }: {lang?:'el'|'en'}) {
+ const pathname=usePathname();const en=lang==='en'||(!lang&&pathname.startsWith('/en'));const [visible,setVisible]=useState(false);
+ useEffect(()=>{try{setVisible(!localStorage.getItem('cookieConsent'));}catch{setVisible(true);}},[]);
+ const choose=(value:string)=>{try{localStorage.setItem('cookieConsent',value);}catch{/* The choice still applies to this page session. */}window.dispatchEvent(new CustomEvent(CONSENT_EVENT,{detail:value}));setVisible(false);};
+ if(!visible)return null;
+ return <aside aria-label={en?'Cookie preferences':'Προτιμήσεις cookies'} className="fixed bottom-4 left-4 right-4 z-[55] max-w-md rounded-lg border border-border bg-background p-5 shadow-xl sm:right-auto"><h2 className="font-heading text-xl">{en?'Your privacy preferences':'Οι προτιμήσεις σας'}</h2><p className="mb-4 mt-2 text-sm leading-relaxed text-muted-foreground">{en?'With your permission, analytics cookies help us understand how the website is used. You can continue with essential functions only.':'Με την άδειά σας, τα cookies ανάλυσης μας βοηθούν να καταλάβουμε πώς χρησιμοποιείται η ιστοσελίδα. Μπορείτε να συνεχίσετε μόνο με τις απαραίτητες λειτουργίες.'}</p><div className="flex flex-wrap gap-2"><button type="button" onClick={()=>choose('accepted')} className="button button4 flex-1 !px-3 !text-xs">{en?'Allow analytics':'Αποδοχή ανάλυσης'}</button><button type="button" onClick={()=>choose('declined')} className="min-h-11 flex-1 rounded-full border border-brand-text px-3 text-xs font-semibold">{en?'Essential only':'Μόνο απαραίτητα'}</button></div></aside>;
+}

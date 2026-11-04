@@ -1,382 +1,143 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { Menu, X, ChevronDown, Globe, Sparkles, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import * as Collapsible from '@radix-ui/react-collapsible';
-import { PROMO_COPY, promoHref, shouldShowBaptismMenuIndicator } from '@/lib/promo';
-const logoDark = '/images/logo-dark.png';
-const logoWhite = '/images/logo-white.png';
+import { ArrowRight, ChevronDown, Menu, Phone, X } from 'lucide-react';
+import { GREEK_TO_ENGLISH_PATH } from '@/lib/seo/hreflang';
+import { PHONE } from '@/lib/seo/config';
+import { PROMO_COPY, promoHref } from '@/lib/promo';
 
-interface NavigationProps {
-  isScrolled?: boolean;
-  isTransparent?: boolean;
-}
+type Item = { el: string; en: string; href: string; hrefEn: string };
+const destinations: Item[] = [
+  { el: 'Γάμος', en: 'Weddings', href: '/ktima-gamou', hrefEn: '/en/weddings' },
+  { el: 'Βάπτιση', en: 'Baptisms', href: '/ktima-vaptisis', hrefEn: '/en/baptism' },
+  { el: 'Ο χώρος', en: 'The venue', href: '/o-horos', hrefEn: '/en/venue' },
+  { el: 'Φωτογραφίες', en: 'Gallery', href: '/gallery', hrefEn: '/en/gallery' },
+];
+const groups: { el: string; en: string; items: Item[] }[] = [
+  { el: 'Σχεδιάστε την εκδήλωσή σας', en: 'Plan your celebration', items: [
+    { el: 'Γάμος: παροχές & οργάνωση', en: 'Wedding receptions', href: '/gamos', hrefEn: '/en/weddings' },
+    { el: 'Βάπτιση: πακέτα & μενού', en: 'Baptism packages', href: '/vaptisi', hrefEn: '/en/baptism' },
+    { el: 'Δεξιώσεις', en: 'Receptions', href: '/dexiosi', hrefEn: '/en/reception' },
+    { el: 'Εταιρικές εκδηλώσεις', en: 'Corporate events', href: '/eterikes-ekdiloseis', hrefEn: '/en/corporate-events' },
+    { el: 'Πάρτι', en: 'Private parties', href: '/parti', hrefEn: '/en/party' },
+    { el: 'Υπηρεσίες', en: 'Services', href: '/ypiresies', hrefEn: '/en/services' },
+    { el: 'Φωτογράφος', en: 'Photographer', href: '/fotografos', hrefEn: '/en/photographer' },
+    { el: 'DJ & μουσική', en: 'DJ & music', href: '/dj-mousiki', hrefEn: '/en/dj-music' },
+  ]},
+  { el: 'Εκκλησίες κοντά στο κτήμα', en: 'Nearby churches', items: [
+    { el: 'Όλες οι εκκλησίες', en: 'All nearby churches', href: '/ekklisies', hrefEn: '/en/churches' },
+    { el: 'Άγιος Αλέξανδρος, Δασκαλειό', en: 'Agios Alexandros, Daskaleio (Greek)', href: '/el/ekklisies/agios-alexandros-daskaleio', hrefEn: '/el/ekklisies/agios-alexandros-daskaleio' },
+    { el: 'Προφήτης Ηλίας, Θορικό', en: 'Profitis Ilias, Thoriko (Greek)', href: '/el/ekklisies/profitis-ilias-thoriko', hrefEn: '/el/ekklisies/profitis-ilias-thoriko' },
+    { el: 'Άγιος Παντελεήμονας, Κερατέα', en: 'Agios Panteleimonas (Greek)', href: '/el/ekklisies/agios-panteleimonas-keratea', hrefEn: '/el/ekklisies/agios-panteleimonas-keratea' },
+    { el: 'Παναγία Γκαρικά', en: 'Panagia Gkarika (Greek)', href: '/el/ekklisies/panagia-gkarika', hrefEn: '/el/ekklisies/panagia-gkarika' },
+    { el: 'Αγία Τριάδα', en: 'Agia Triada', href: '/el/ekklisies/agia-triada', hrefEn: '/en/churches/agia-triada' },
+  ]},
+];
+const information: Item[] = [
+  { el: 'Αρχική', en: 'Home', href: '/', hrefEn: '/en' },
+  { el: 'Οδηγοί γάμου & βάπτισης', en: 'Planning guides', href: '/blog', hrefEn: '/en/blog' },
+  { el: 'Κριτικές', en: 'Guest reviews', href: '/reviews', hrefEn: '/en/reviews' },
+  { el: 'Εμείς', en: 'About us', href: '/emeis', hrefEn: '/en/about' },
+  { el: 'Επικοινωνία & πρόσβαση', en: 'Contact & directions', href: '/epikoinonia', hrefEn: '/en/contact' },
+];
 
-interface NavItem {
-  label: string;
-  labelEn: string;
-  href: string;
-  hrefEn: string;
-  submenu?: Array<{ label: string; labelEn: string; href: string; hrefEn: string }>;
-}
-
-const pageMapping: Record<string, string> = {
-  '/': '/en', '/en': '/',
-  '/emeis': '/en/about', '/en/about': '/emeis',
-  '/dexiosi': '/en/reception', '/en/reception': '/dexiosi',
-  '/gamos': '/en/weddings', '/en/weddings': '/gamos',
-  '/vaptisi': '/en/baptism', '/en/baptism': '/vaptisi',
-  '/eterikes-ekdiloseis': '/en/corporate-events', '/en/corporate-events': '/eterikes-ekdiloseis',
-  '/parti': '/en/party', '/en/party': '/parti',
-  '/o-horos': '/en/venue', '/en/venue': '/o-horos',
-  '/ekklisies': '/en/churches', '/en/churches': '/ekklisies',
-  '/ypiresies': '/en/services', '/en/services': '/ypiresies',
-  '/fotografos': '/en/photographer', '/en/photographer': '/fotografos',
-  '/dj-mousiki': '/en/dj-music', '/en/dj-music': '/dj-mousiki',
-  '/reviews': '/en/reviews', '/en/reviews': '/reviews',
-  '/epikoinonia': '/en/contact', '/en/contact': '/epikoinonia',
-  '/ktima-gamou': '/en/weddings',
-  '/ktima-vaptisis': '/en/baptism',
-  '/blog': '/en/blog', '/en/blog': '/blog',
-  '/gallery': '/en/gallery', '/en/gallery': '/gallery',
-  '/request': '/en/contact',
-};
-
-export const Navigation = ({ isScrolled = false, isTransparent = false }: NavigationProps) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(null);
+export function Navigation({ isScrolled = false, isTransparent = false }: { isScrolled?: boolean; isTransparent?: boolean }) {
   const pathname = usePathname();
   const router = useRouter();
-  const isEnglish = pathname.startsWith('/en');
+  const en = pathname.startsWith('/en');
+  const [open, setOpen] = useState(false);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const navigating = useRef(false);
+  const light = isTransparent && !isScrolled;
+  const request = en ? '/en/request' : '/request';
+  const href = (item: Item) => en ? item.hrefEn : item.href;
+  const label = (item: Item) => en ? item.en : item.el;
+  const active = (item: Item) => pathname === href(item) || (item.href === '/ktima-gamou' && pathname === '/gamos') || (item.href === '/ktima-vaptisis' && pathname === '/vaptisi');
+  const close = (navigate = false) => { navigating.current = navigate; setOpen(false); };
 
-  // Sentence case rather than all-caps: Greek capitals are markedly harder to
-  // scan than Latin ones, and twenty stacked caps labels read as a wall.
-  const navItems: NavItem[] = [
-    { label: 'Αρχική', labelEn: 'Home', href: '/', hrefEn: '/en' },
-    { label: 'Ο χώρος', labelEn: 'The venue', href: '/o-horos', hrefEn: '/en/venue' },
-    {
-      label: 'Εκδηλώσεις',
-      labelEn: 'Events',
-      href: '/dexiosi',
-      hrefEn: '/en/reception',
-      submenu: [
-        { label: 'Κτήμα γάμου', labelEn: 'Wedding venue', href: '/ktima-gamou', hrefEn: '/en/weddings' },
-        { label: 'Γάμος: τι περιλαμβάνει', labelEn: 'What a wedding includes', href: '/gamos', hrefEn: '/en/weddings' },
-        { label: 'Κτήμα βάπτισης', labelEn: 'Baptism venue', href: '/ktima-vaptisis', hrefEn: '/en/baptism' },
-        { label: 'Βάπτιση: πακέτα & μενού', labelEn: 'Baptism packages', href: '/vaptisi', hrefEn: '/en/baptism' },
-        { label: 'Εταιρικές εκδηλώσεις', labelEn: 'Corporate events', href: '/eterikes-ekdiloseis', hrefEn: '/en/corporate-events' },
-        { label: 'Πάρτι', labelEn: 'Private parties', href: '/parti', hrefEn: '/en/party' },
-      ],
-    },
-    {
-      label: 'Εκκλησίες',
-      labelEn: 'Churches',
-      href: '/ekklisies',
-      hrefEn: '/en/churches',
-      submenu: [
-        { label: 'Άγιος Αλέξανδρος, Δασκαλειό', labelEn: 'Agios Alexandros, Daskaleio', href: '/el/ekklisies/agios-alexandros-daskaleio', hrefEn: '/en/churches/agios-alexandros-daskaleio' },
-        { label: 'Προφήτης Ηλίας, Θορικό', labelEn: 'Profitis Ilias, Thoriko', href: '/el/ekklisies/profitis-ilias-thoriko', hrefEn: '/en/churches/profitis-ilias-thoriko' },
-        { label: 'Άγιος Παντελεήμονας, Κερατέα', labelEn: 'Agios Panteleimonas, Keratea', href: '/el/ekklisies/agios-panteleimonas-keratea', hrefEn: '/en/churches/agios-panteleimonas-keratea' },
-        { label: 'Παναγία Γκαρικά', labelEn: 'Panagia Gkarika', href: '/el/ekklisies/panagia-gkarika', hrefEn: '/en/churches/panagia-gkarika' },
-        { label: 'Αγία Τριάδα', labelEn: 'Agia Triada', href: '/el/ekklisies/agia-triada', hrefEn: '/en/churches/agia-triada' },
-      ],
-    },
-    {
-      label: 'Υπηρεσίες',
-      labelEn: 'Services',
-      href: '/ypiresies',
-      hrefEn: '/en/services',
-      submenu: [
-        { label: 'Φωτογράφος', labelEn: 'Photographer', href: '/fotografos', hrefEn: '/en/photographer' },
-        { label: 'DJ & μουσική', labelEn: 'DJ & music', href: '/dj-mousiki', hrefEn: '/en/dj-music' },
-      ],
-    },
-    // The planning guides carry the terms whose SERPs are all guides and
-    // listicles; they were orphaned off the main nav until now.
-    { label: 'Οδηγοί', labelEn: 'Guides', href: '/blog', hrefEn: '/en/blog' },
-    { label: 'Κριτικές', labelEn: 'Reviews', href: '/reviews', hrefEn: '/en/reviews' },
-    { label: 'Εμείς', labelEn: 'About', href: '/emeis', hrefEn: '/en/about' },
-    { label: 'Επικοινωνία', labelEn: 'Contact', href: '/epikoinonia', hrefEn: '/en/contact' },
-  ];
-
-  const promoCopy = isEnglish ? PROMO_COPY.en : PROMO_COPY.el;
-  const showPromo = shouldShowBaptismMenuIndicator(pathname);
-  const isPackagesLink = (href: string) => href === '/vaptisi' || href === '/en/baptism';
-
-  const bgClass = isTransparent && !isScrolled
-    ? 'bg-transparent'
-    : 'bg-background/95 backdrop-blur-md border-b border-border';
-
-  const useLightLogo = isTransparent && !isScrolled;
-  const logoSrc = useLightLogo ? logoWhite : logoDark;
-  const textColor = useLightLogo ? 'text-white' : 'text-foreground';
-
-  /**
-   * Switches to an explicit language rather than toggling. Both buttons
-   * previously called one toggle, so pressing "ΕΛ" while already on the Greek
-   * site navigated the user to English.
-   */
-  const switchLanguage = (target: 'el' | 'en') => {
-    if ((target === 'en') === isEnglish) {
-      return;
-    }
-    router.push(pageMapping[pathname] ?? (target === 'en' ? '/en' : '/'));
-  };
-
-  // Close mobile menu on route change
+  useEffect(() => { setOpen(false); }, [pathname]);
   useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
-
-  // Prevent body scroll when mobile menu is open
+    const media = matchMedia('(min-width: 1280px)');
+    const resize = () => { if (media.matches) setOpen(false); };
+    media.addEventListener('change', resize);
+    return () => media.removeEventListener('change', resize);
+  }, []);
   useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    if (!open || !dialog.current) return;
+    const element = dialog.current;
+    const opener = trigger.current;
+    const body = document.body;
+    const original = { position: body.style.position, top: body.style.top, width: body.style.width, overflow: body.style.overflow };
+    const scroll = window.scrollY;
+    navigating.current = false;
+    element.showModal();
+    Object.assign(body.style, { position: 'fixed', top: `-${scroll}px`, width: '100%', overflow: 'hidden' });
+    element.querySelector<HTMLButtonElement>('[data-menu-close]')?.focus();
     return () => {
-      document.body.style.overflow = '';
+      element.close();
+      Object.assign(body.style, original);
+      if (!navigating.current) { window.scrollTo(0, scroll); opener?.focus({ preventScroll: true }); }
+      else window.scrollTo(0, 0);
     };
-  }, [isMenuOpen]);
+  }, [open]);
 
-  return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${bgClass}`}>
-      <div className="container-max">
-        <div className="flex items-center justify-between h-20 px-4">
-          {/* Logo */}
-          <Link href={isEnglish ? "/en" : "/"} className="flex items-center z-[60]">
-            <Image
-              src={logoSrc}
-              alt={isEnglish ? "Ktima Orion" : "Κτήμα Ωρίων"}
-              width={170}
-              height={170}
-              className={`h-16 md:h-20 w-auto max-w-[200px] object-contain object-left transition-all duration-300 ${useLightLogo ? 'drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]' : ''}`}
-              priority
-              sizes="(max-width: 768px) 160px, 200px"
-            />
-          </Link>
+  function language(target: 'el' | 'en') {
+    if ((target === 'en') === en) return;
+    const mapping: Record<string, string> = { ...GREEK_TO_ENGLISH_PATH, '/ktima-gamou': '/en/weddings', '/ktima-vaptisis': '/en/baptism', '/el/ekklisies/agia-triada': '/en/churches/agia-triada' };
+    const translated = target === 'en'
+      ? mapping[pathname] ?? (pathname.startsWith('/blog/') ? `/en${pathname}` : '/en/churches')
+      : Object.entries(mapping).find(([, value]) => value === pathname)?.[0] ?? (pathname.startsWith('/en/blog/') ? pathname.slice(3) : '/');
+    close(true);
+    router.push(translated);
+  }
 
-          {/* Desktop Navigation */}
-          <div className="hidden xl:flex items-center gap-0.5">
-            {navItems.map((item) => (
-              <div 
-                key={item.label} 
-                className="relative"
-                onMouseEnter={() => item.submenu && setOpenDesktopDropdown(item.label)}
-                onMouseLeave={() => setOpenDesktopDropdown(null)}
-              >
-                {item.submenu ? (
-                  <>
-                    <button
-                      className={`font-medium text-[0.9rem] whitespace-nowrap transition-colors duration-300 hover:text-brand-main ${textColor} flex items-center gap-1 px-3 py-2`}
-                      aria-expanded={openDesktopDropdown === item.label}
-                      onClick={() => setOpenDesktopDropdown(openDesktopDropdown === item.label ? null : item.label)}
-                    >
-                      {isEnglish ? item.labelEn : item.label}
-                      <ChevronDown className="w-4 h-4" />
-                    </button>
-                    {openDesktopDropdown === item.label && (
-                      <div className="absolute top-full left-0 w-64 pt-1 z-[100]">
-                        <div className="overflow-hidden rounded-lg border border-border bg-background shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.label}
-                              href={isEnglish ? subItem.hrefEn : subItem.href}
-                              className="flex items-center justify-between gap-2 px-5 py-3.5 text-sm text-foreground hover:bg-brand-main/10 hover:text-brand-main transition-colors border-b border-border/30 last:border-0 font-medium"
-                            >
-                              <span>{isEnglish ? subItem.labelEn : subItem.label}</span>
-                              {showPromo && isPackagesLink(subItem.href) && (
-                                <span className="shrink-0 rounded-full bg-brand-main/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-main">
-                                  {promoCopy.menuBadge}
-                                </span>
-                              )}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <Link
-                    href={isEnglish ? item.hrefEn : item.href}
-                    className={`font-medium text-[0.9rem] whitespace-nowrap transition-colors duration-300 hover:text-brand-main ${textColor} px-3 py-2 block`}
-                  >
-                    {isEnglish ? item.labelEn : item.label}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop: CTA + Language */}
-          <div className="hidden xl:flex items-center gap-3">
-            <Link href={isEnglish ? "/en/contact" : "/request"}>
-              <Button variant="outline" className="button button4 text-sm px-6">
-                {isEnglish ? 'Book a tour' : 'Δωρεάν ξενάγηση'}
-              </Button>
-            </Link>
-
-            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-background/80 border border-border backdrop-blur-sm">
-              <Globe className="w-3.5 h-3.5" />
-              <button
-                onClick={() => switchLanguage('el')}
-                aria-current={!isEnglish ? 'true' : undefined}
-                className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-all ${
-                  !isEnglish ? 'bg-brand-main text-white' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                ΕΛ
-              </button>
-              <button
-                onClick={() => switchLanguage('en')}
-                aria-current={isEnglish ? 'true' : undefined}
-                className={`px-2.5 py-1 text-xs font-semibold rounded-md transition-all ${
-                  isEnglish ? 'bg-brand-main text-white' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                EN
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`xl:hidden z-[60] p-2 ${textColor} hover:bg-muted/20 rounded-md transition-colors`}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+  return <>
+    <nav aria-label={en ? 'Main navigation' : 'Κύρια πλοήγηση'} className={`fixed inset-x-0 top-0 z-50 transition-colors ${light ? 'bg-transparent text-white' : 'border-b border-border bg-background/95 text-foreground backdrop-blur-md'}`}>
+      <div className="container-max flex h-20 items-center justify-between gap-3">
+        <Link href={en ? '/en' : '/'} aria-label={en ? 'Ktima Orion home' : 'Κτήμα Ωρίων αρχική'}>
+          <Image src={light ? '/images/logo-white.png' : '/images/logo-dark.png'} alt={en ? 'Ktima Orion' : 'Κτήμα Ωρίων'} width={170} height={170} className="h-[72px] w-auto" priority />
+        </Link>
+        <div className="hidden items-center gap-5 xl:flex">
+          {destinations.slice(0,3).map(item => <Link key={item.href} href={href(item)} aria-current={active(item) ? 'page' : undefined} className="nav-desktop-link">{label(item)}</Link>)}
+          {[information[1], information[2], information[4]].map(item => <Link key={item.href} href={href(item)} aria-current={active(item) ? 'page' : undefined} className="nav-desktop-link">{label(item)}</Link>)}
+          <button type="button" onClick={() => language(en ? 'el' : 'en')} className="min-h-11 min-w-11 px-2" aria-label={en ? 'Ελληνικά' : 'English'}>{en ? 'ΕΛ' : 'EN'}</button>
         </div>
-
-        {/* Mobile Menu Overlay - FULL SCREEN, OPAQUE, MAXIMUM Z-INDEX */}
-        <div 
-          className={`xl:hidden fixed inset-0 bg-background z-[9999] transition-all duration-300 ${
-            isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
-          }`}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          {/* Header bar with close button */}
-          <div className="bg-brand-text text-white px-6 py-4 flex justify-between items-center border-b border-white/10">
-            <div className="flex items-center gap-3">
-              <Menu size={24} />
-              <span className="font-heading text-xl">{isEnglish ? 'Menu' : 'Μενού'}</span>
-            </div>
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setIsMenuOpen(false);
-              }}
-              className="p-2 hover:bg-white/10 rounded-lg transition-colors"
-              aria-label="Close menu"
-            >
-              <X size={28} strokeWidth={2.5} />
-            </button>
-          </div>
-
-          <div 
-            className="h-[calc(100vh-64px)] overflow-y-auto bg-background"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="py-4">
-              {showPromo && (
-                <Link
-                  href={promoHref(isEnglish)}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="mx-4 mb-4 flex items-center gap-3 rounded-lg border border-brand-main/30 bg-brand-main/10 px-4 py-4 transition-colors hover:bg-brand-main/20"
-                >
-                  <Sparkles className="h-5 w-5 flex-shrink-0 text-brand-main" />
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-brand-main">
-                      {promoCopy.menuBadge}
-                    </span>
-                    <span className="block text-sm font-semibold text-foreground">
-                      {promoCopy.menuLabel}
-                    </span>
-                  </span>
-                  <ArrowRight className="h-4 w-4 flex-shrink-0 text-brand-main" />
-                </Link>
-              )}
-
-              {navItems.map((item) => (
-                <div key={item.label} className="border-b border-border">
-                  {item.submenu ? (
-                    <Collapsible.Root>
-                      <Collapsible.Trigger className="w-full flex items-center justify-between px-6 py-5 text-foreground font-semibold text-base hover:text-brand-main hover:bg-muted/30 transition-colors">
-                        <span>{isEnglish ? item.labelEn : item.label}</span>
-                        <ChevronDown className="w-5 h-5 transition-transform duration-200 data-[state=open]:rotate-180" />
-                      </Collapsible.Trigger>
-                      <Collapsible.Content className="bg-muted/50">
-                        {item.submenu.map((subItem) => (
-                          <Link
-                            key={subItem.label}
-                            href={isEnglish ? subItem.hrefEn : subItem.href}
-                            className="flex items-center justify-between gap-2 px-10 py-4 text-sm text-foreground hover:text-brand-main hover:bg-brand-main/10 transition-all font-medium"
-                            onClick={() => setIsMenuOpen(false)}
-                          >
-                            <span>{isEnglish ? subItem.labelEn : subItem.label}</span>
-                            {showPromo && isPackagesLink(subItem.href) && (
-                              <span className="shrink-0 rounded-full bg-brand-main/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-brand-main">
-                                {promoCopy.menuBadge}
-                              </span>
-                            )}
-                          </Link>
-                        ))}
-                      </Collapsible.Content>
-                    </Collapsible.Root>
-                  ) : (
-                    <Link
-                      href={isEnglish ? item.hrefEn : item.href}
-                      className="block px-6 py-5 text-foreground font-semibold text-base hover:text-brand-main hover:bg-muted/30 transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {isEnglish ? item.labelEn : item.label}
-                    </Link>
-                  )}
-                </div>
-              ))}
-
-              {/* Mobile Language Switcher */}
-              <div className="p-6">
-                <div className="flex items-center justify-center gap-2 p-3 rounded-lg bg-muted/50 border border-border">
-                  <Globe className="w-4 h-4" />
-                  <button
-                    onClick={() => switchLanguage('el')}
-                    className={`px-5 py-2.5 text-sm font-semibold rounded-md transition-all ${
-                      !isEnglish ? 'bg-brand-main text-white' : 'text-muted-foreground border border-border'
-                    }`}
-                  >
-                    ΕΛ
-                  </button>
-                  <button
-                    onClick={() => switchLanguage('en')}
-                    className={`px-5 py-2.5 text-sm font-semibold rounded-md transition-all ${
-                      isEnglish ? 'bg-brand-main text-white' : 'text-muted-foreground border border-border'
-                    }`}
-                  >
-                    EN
-                  </button>
-                </div>
-              </div>
-
-              {/* Mobile CTA */}
-              <div className="px-6 pb-6">
-                <Link href={isEnglish ? "/en/contact" : "/request"}>
-                  <Button className="w-full button button4 text-base py-6" onClick={() => setIsMenuOpen(false)}>
-                    {isEnglish ? 'Book a free tour' : 'Κλείστε δωρεάν ξενάγηση'}
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="flex items-center gap-2">
+          <Link href={request} className={`inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-xs font-semibold sm:text-sm ${light ? 'bg-white text-brand-text' : 'bg-brand-text text-white'}`}>{en ? 'Request a quote' : 'Ζητήστε προσφορά'}<ArrowRight className="hidden h-4 w-4 sm:block" aria-hidden="true" /></Link>
+          <button ref={trigger} type="button" onClick={() => setOpen(true)} aria-expanded={open} aria-controls="mobile-navigation" aria-label={en ? 'Open menu' : 'Άνοιγμα μενού'} className="flex h-12 w-12 items-center justify-center rounded-full border border-current/25 !p-0 xl:hidden"><Menu aria-hidden="true" className="h-6 w-6" /></button>
         </div>
       </div>
     </nav>
-  );
-};
+    <dialog ref={dialog} id="mobile-navigation" className="orion-menu" aria-labelledby="menu-title" aria-describedby="menu-description" onCancel={e => { e.preventDefault(); close(); }}>
+      <div className="menu-top">
+        <Link href={en ? '/en' : '/'} onClick={() => close(true)} className="font-heading text-xl">{en ? 'Ktima Orion' : 'Κτήμα Ωρίων'}</Link>
+        <div className="flex items-center gap-1">
+          {(['el','en'] as const).map(locale => <button key={locale} type="button" onClick={() => language(locale)} aria-pressed={(locale === 'en') === en} className="menu-language">{locale === 'el' ? 'ΕΛ' : 'EN'}</button>)}
+          <button data-menu-close type="button" onClick={() => close()} className="menu-close" aria-label={en ? 'Close menu' : 'Κλείσιμο μενού'}><X className="h-6 w-6" aria-hidden="true" /></button>
+        </div>
+      </div>
+      <div className="menu-scroll">
+        <aside className="menu-story">
+          <Image src="/images/hero-image.jpg" alt="" fill sizes="45vw" className="object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-text/95 via-brand-text/20 to-brand-text/10" />
+          <div className="relative mt-auto p-10 text-white"><p className="text-xs uppercase tracking-widest">{en ? 'Keratea, Attica · since 2009' : 'Κερατέα Αττικής · από το 2009'}</p><p className="mt-5 font-heading text-4xl">{en ? 'A place for your people.' : 'Ο χώρος για τις δικές σας στιγμές.'}</p><p className="mt-5 text-sm leading-relaxed text-white/85">{en ? 'Garden with sea views. Indoor reception hall. Space for 50–350 guests.' : 'Κήπος με θέα στη θάλασσα. Κλιματιζόμενη αίθουσα. Δεξιώσεις για 50–350 καλεσμένους.'}</p></div>
+        </aside>
+        <div className="menu-links">
+          <p id="menu-title" className="text-xs uppercase tracking-[0.2em] text-brand-deep">{en ? 'Your celebration starts here' : 'Η εκδήλωσή σας ξεκινά εδώ'}</p>
+          <p id="menu-description" className="mt-2 text-sm text-muted-foreground">{en ? 'Explore the venue and tell us what you are planning.' : 'Γνωρίστε τον χώρο και πείτε μας τι σχεδιάζετε.'}</p>
+          <div className="my-6 grid grid-cols-1 gap-1">
+            {destinations.map((item,i) => <Link href={href(item)} key={item.href} onClick={() => close(true)} aria-current={active(item) ? 'page' : undefined} className="menu-destination"><span className="text-xs tabular-nums text-brand-deep">0{i+1}</span><span className="flex-1 font-heading text-3xl">{label(item)}</span>{active(item) && <span className="text-xs font-semibold">{en ? 'You are here' : 'Είστε εδώ'}</span>}<ArrowRight className="h-5 w-5" aria-hidden="true" /></Link>)}
+          </div>
+          <div className="menu-actions"><Link href={request} onClick={() => close(true)} className="button button4 w-full">{en ? 'Request a quote / a visit' : 'Ζητήστε προσφορά / ξενάγηση'}<ArrowRight className="h-4 w-4" aria-hidden="true" /></Link><a href={`tel:${PHONE}`} className="flex min-h-11 items-center justify-center gap-2 text-sm"><Phone className="h-4 w-4" aria-hidden="true" />22990 68812</a></div>
+          <Link href={promoHref(en)} onClick={() => close(true)} className="my-6 flex items-center gap-4 border-y border-border py-5 text-sm"><span className="rounded-full bg-brand-text px-3 py-1 text-xs text-white">{en ? 'Baptism' : 'Βάπτιση'}</span><span className="flex-1">{(en ? PROMO_COPY.en : PROMO_COPY.el).menuLabel}<small className="mt-1 block text-muted-foreground">{en ? 'For events from 100 guests · see terms' : 'Για εκδηλώσεις από 100 άτομα · δείτε τους όρους'}</small></span><ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" /></Link>
+          {groups.map(group => <details key={group.el} className="menu-group" open={group.items.some(active)}><summary>{en ? group.en : group.el}<ChevronDown className="h-4 w-4 shrink-0" aria-hidden="true" /></summary><div>{group.items.filter((item,i,items) => items.findIndex(x => href(x) === href(item)) === i).map(item => <Link href={href(item)} key={item.href} aria-current={pathname === href(item) ? 'page' : undefined} onClick={() => close(true)}>{label(item)}</Link>)}</div></details>)}
+          <div className="mt-5 grid sm:grid-cols-2">{information.map(item => <Link className="menu-info" key={item.href} href={href(item)} aria-current={active(item) ? 'page' : undefined} onClick={() => close(true)}>{label(item)}</Link>)}</div>
+        </div>
+      </div>
+    </dialog>
+  </>;
+}
