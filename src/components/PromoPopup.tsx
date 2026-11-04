@@ -11,8 +11,6 @@ import {
   PROMO_IMAGE,
   isPromoPage,
   promoHref,
-  shouldShowBaptismPopup,
-  shouldShowPleiadesPopup,
 } from '@/lib/promo';
 
 type Campaign = 'baptism' | 'pleiades';
@@ -41,17 +39,10 @@ const PLEIADES_COPY = {
 } as const;
 
 /**
- * Every page shows one campaign. Pleiades owns the homepage and blog,
- * baptism packages take every other page, and each campaign's own article
- * shows the other one instead of advertising itself.
+ * The baptism-packages offer pops up on every page, homepage included.
+ * Only the baptism article itself shows the Pleiades offer instead.
  */
 function resolveCampaign(pathname: string): Campaign {
-  if (shouldShowPleiadesPopup(pathname)) {
-    return 'pleiades';
-  }
-  if (shouldShowBaptismPopup(pathname)) {
-    return 'baptism';
-  }
   return isPromoPage(pathname) ? 'pleiades' : 'baptism';
 }
 
