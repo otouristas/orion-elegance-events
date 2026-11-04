@@ -56,7 +56,7 @@ export default function Ypiresies() {
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Στο <Link href="/o-horos" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> παρέχουμε ολοκληρωμένες υπηρεσίες για όλες τις εκδηλώσεις σας. 
+                Στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> παρέχουμε ολοκληρωμένες υπηρεσίες για όλες τις εκδηλώσεις σας. 
                 Από τον σχεδιασμό μέχρι τη <Link href="/fotografos" className="text-brand-main hover:underline">φωτογράφιση</Link>, φροντίζουμε κάθε λεπτομέρεια να είναι άψογη για τον <Link href="/gamos" className="text-brand-main hover:underline">γάμο</Link> ή τη <Link href="/vaptisi" className="text-brand-main hover:underline">βάπτιση</Link> σας.
               </p>
               

@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Serve the existing image files on Workers without a paid Images binding.
+    unoptimized: process.env.CLOUDFLARE_BUILD === '1',
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -30,6 +32,21 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Preserve the existing gallery URL; the approved photo lives in gamos/.
+      { source: "/final-photos/xwros/IMG_0832.jpeg", destination: "/final-photos/gamos/IMG_0832.jpeg", permanent: true },
+      // www is the same site as the apex host. One host keeps the brand URL.
+      {
+        source: "/",
+        has: [{ type: "host", value: "www.ktimaorion.gr" }],
+        destination: "https://ktimaorion.gr/",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.ktimaorion.gr" }],
+        destination: "https://ktimaorion.gr/:path*",
+        permanent: true,
+      },
       // Cannibalisation cleanup. Five pages targeted the same "κτήμα γάμου"
       // cluster and three the "κτήμα βάπτισης" one, so the site ranked 27–62
       // for terms at KD 0–13. Their content is folded into the two pillars.

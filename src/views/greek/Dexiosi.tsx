@@ -38,17 +38,16 @@ export default function Dexiosi() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Δεξίωση</span>
+              <span className="text-gradient-brand">Δεξίωση για 50 έως 350 άτομα</span>
             </h1>
             <h2 className="font-heading mb-8 text-brand-text">
-              Εκδηλώσεις στο Κτήμα Ωρίων
+              Γάμος, βάπτιση, εταιρικό και πάρτι
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-                Το Κτήμα Ωρίων προσφέρει τον ιδανικό χώρο για όλες τις ειδικές σας στιγμές. 
-                Από γάμους και βαπτίσεις έως εταιρικές εκδηλώσεις και πάρτι, 
-                δημιουργούμε μαγικές εμπειρίες που θα θυμάστε για πάντα.
+                Η δεξίωση γίνεται σε κλιματιζόμενη αίθουσα και σε κήπο με θέα θάλασσα, για 50 έως 350 άτομα.
+                Στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> διαλέγετε τον τύπο εκδήλωσης: γάμο, βάπτιση, εταιρικό ή πάρτι.
               </p>
               
               <p>

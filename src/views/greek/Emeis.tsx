@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Star, Phone, Mail, MapPin, Car, Home, TreePine, Utensils, Music } from 'lucide-react';
@@ -89,10 +90,10 @@ export default function Emeis() {
         <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
           <div className="container-max text-center">
             <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Εμείς</span>
+              <span className="text-gradient-brand">Η ομάδα και η ιστορία από το 2009</span>
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-5xl mx-auto mb-12">
-              Το Κτήμα Ωρίων είναι ένας υπέροχος καταπράσινος χώρος, όπου ο επισκέπτης νιώθει αμέσως τη λάμψη της πολυτέλειας σε απόλυτη αρμονία με το φυσικό περιβάλλον. Σε μια ιδανική τοποθεσία, με εύκολη πρόσβαση από την Αττική Οδό, μπορείτε να απολαύσετε, με κάθε μεγαλοπρέπεια, τις ξεχωριστές στιγμές όπως το γάμο σας ή τη βάπτιση του παιδιού σας. Η κλειστή αίθουσα, πλήρως κλιματιζόμενη, και ο εξωτερικός μαγευτικός χώρος του κτήματος εγγυούνται τη θερμή υποδοχή και την απόλυτη φιλοξενία των καλεσμένων σας.
+              Το <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link> είναι οικογενειακό κτήμα δεξιώσεων στην Κερατέα από το 2009. Τον χώρο συντονίζει η υπεύθυνη Μπούσουλα Παναγιώτα. Την αίθουσα, τον κήπο και το parking τα περιγράφουμε στη σελίδα <Link href="/o-horos" className="text-brand-main hover:underline">ο χώρος</Link>.
             </p>
             
             {/* Hero Images */}
@@ -117,7 +118,7 @@ export default function Emeis() {
         <section className="section-padding">
           <div className="container-max">
             <h2 className="font-heading text-center mb-16">
-              <span className="text-gradient-brand">Το Κτήμα διαθέτει:</span>
+              <span className="text-gradient-brand">Παροχές που φροντίζει η ομάδα</span>
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

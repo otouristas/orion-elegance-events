@@ -98,6 +98,11 @@ export interface JsonLdProps {
   readonly breadcrumbs?: readonly BreadcrumbItem[];
   readonly eventDate?: string;
   readonly ogImagePath?: string;
+  /**
+   * Emit a WebPage about the homepage organization instead of a second
+   * EventVenue/LocalBusiness named «Κτήμα Ωρίων» at this URL.
+   */
+  readonly consolidateToBrandHome?: boolean;
 }
 
 function fullUrl(path: string): string {
@@ -115,6 +120,7 @@ export function JsonLd({
   breadcrumbs = [],
   eventDate,
   ogImagePath = DEFAULT_OG_IMAGE,
+  consolidateToBrandHome = false,
 }: JsonLdProps): ReactElement {
   const fullCanonical = fullUrl(canonicalPath);
   const fullOgImage = ogImagePath.startsWith("http")
@@ -140,7 +146,25 @@ export function JsonLd({
     "https://www.instagram.com/ktimaorion/",
   ];
   let mainEntity: Record<string, unknown>;
-  if (schemaType === "LocalBusiness") {
+  if (consolidateToBrandHome) {
+    mainEntity = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${fullCanonical}#webpage`,
+      url: fullCanonical,
+      name: title,
+      description,
+      inLanguage: "el",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: SITE_NAME_EL,
+        url: SITE_URL,
+      },
+      primaryImageOfPage: fullOgImage,
+    };
+  } else if (schemaType === "LocalBusiness") {
     mainEntity = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",

@@ -1,7 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Heart, Phone, Mail, MapPin } from 'lucide-react';
 import { POSTAL_CODE, STREET_ADDRESS_EN } from '@/lib/seo/config';
 import { PromoBanner } from '@/components/PromoBanner';
+import { CreditsBar } from '@/components/CreditsBar';
 const logoWhite = "/images/logo-white.png";
 
 export const FooterEn = () => {
@@ -13,15 +15,17 @@ export const FooterEn = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo & Description */}
           <div>
-            <Image
-              src={logoWhite}
-              alt="Ktima Orion"
-              width={170}
-              height={150}
-              className="h-24 w-auto mb-6 object-contain object-left"
-              sizes="200px"
-              loading="lazy"
-            />
+            <Link href="/en" className="inline-block">
+              <Image
+                src={logoWhite}
+                alt="Ktima Orion"
+                width={170}
+                height={150}
+                className="h-24 w-auto mb-6 object-contain object-left"
+                sizes="200px"
+                loading="lazy"
+              />
+            </Link>
             <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
               A beautiful green space where luxury meets the natural environment. 
               We create unforgettable memories for life's most special moments.
@@ -93,9 +97,10 @@ export const FooterEn = () => {
             </div>
             
             <div className="text-secondary-foreground/60 text-sm">
-              © 2024 Ktima Orion. All rights reserved.
+              © 2024 <Link href="/en" className="hover:text-brand-main">Ktima Orion</Link>. All rights reserved.
             </div>
           </div>
+          <CreditsBar partner={null} source="ktimaorion.gr" className="mt-6 md:justify-center" />
         </div>
       </div>
     </footer>
