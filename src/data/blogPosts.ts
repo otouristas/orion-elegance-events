@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
 
 ## Κτήμα Ωρίων: Ο Ιδανικός Χώρος για Μικρούς Γάμους
 
-Το [Κτήμα Ωρίων](/o-horos) στην Κερατέα συνδυάζει οικεία ατμόσφαιρα, φυσική ομορφιά και μαγικές φωτογραφίες:
+Το [Κτήμα Ωρίων](/) στην Κερατέα συνδυάζει οικεία ατμόσφαιρα, φυσική ομορφιά και μαγικές φωτογραφίες:
 
 ![Οικεία γαμήλια δεξίωση με σερβιριστό φαγητό υψηλής ποιότητας](/assets/gamos/DSC_7806.JPG)
 
@@ -93,7 +93,7 @@ export const blogPosts: BlogPost[] = [
 
 ## Συμπέρασμα
 
-Ένας μικρός γάμος στο [Κτήμα Ωρίων](/o-horos) σας επιτρέπει να εστιάσετε στο πιο σημαντικό: την αγάπη σας και τους πιο αγαπημένους σας ανθρώπους.
+Ένας μικρός γάμος στο [Κτήμα Ωρίων](/) σας επιτρέπει να εστιάσετε στο πιο σημαντικό: την αγάπη σας και τους πιο αγαπημένους σας ανθρώπους.
 
 **Επικοινωνήστε μαζί μας για να οργανώσουμε τον τέλειο οικείο, προσωπικό και μαγικό γάμο σας, με σερβιριστό φαγητό υψηλής ποιότητας και μοναδικές στιγμές.**
 
@@ -119,7 +119,7 @@ Small weddings offer unique advantages:
 
 ## Ktima Orion: The Ideal Venue for Small Weddings
 
-[Ktima Orion](/en/venue) in Keratea combines intimate atmosphere, natural beauty and magical photos:
+[Ktima Orion](/en) in Keratea combines intimate atmosphere, natural beauty and magical photos:
 
 ![Intimate wedding reception with high-quality served food](/assets/gamos/DSC_7806.JPG)
 
@@ -154,7 +154,7 @@ For more tips on [choosing a reception venue](/en/blog/epilogi-horou-dexiosis-at
 
 ## Conclusion
 
-A small wedding at [Ktima Orion](/en/venue) allows you to focus on what matters most: your love and your most beloved people.
+A small wedding at [Ktima Orion](/en) allows you to focus on what matters most: your love and your most beloved people.
 
 **Contact us to organize your perfect intimate, personal and magical wedding, with high-quality served food and unique moments.**
 
@@ -212,7 +212,7 @@ A small wedding at [Ktima Orion](/en/venue) allows you to focus on what matters 
 - **Απόσταση από Κτήμα Ωρίων**: 3,8 km (~10 λεπτά)
 - **Ιδανικό για**: Μικρούς γάμους
 
-Η εγγύτητα με το [Κτήμα Ωρίων](/o-horos) διευκολύνει τη μεταφορά των καλεσμένων και επιτρέπει μια ομαλή συνέχεια στη δεξίωση.
+Η εγγύτητα με το [Κτήμα Ωρίων](/) διευκολύνει τη μεταφορά των καλεσμένων και επιτρέπει μια ομαλή συνέχεια στη δεξίωση.
 
 ![Παραθαλάσσια εκκλησία κοντά στο Κτήμα Ωρίων με εύκολη πρόσβαση](/assets/home/DSC_7859.JPG)
 
@@ -226,7 +226,7 @@ A small wedding at [Ktima Orion](/en/venue) allows you to focus on what matters 
 
 ## Συνδυασμός με Δεξίωση στο Κτήμα Ωρίων
 
-Το [Κτήμα Ωρίων](/o-horos) βρίσκεται σε ιδανική απόσταση από όλες τις παραπάνω εκκλησίες, επιτρέποντάς σας να τελέσετε το μυστήριο με θέα στη θάλασσα και να μεταβείτε στο Κτήμα σε μόλις 10–20 λεπτά, συνεχίζοντας με μια υπέροχη δεξίωση για εσάς και τους καλεσμένους σας.
+Το [Κτήμα Ωρίων](/) βρίσκεται σε ιδανική απόσταση από όλες τις παραπάνω εκκλησίες, επιτρέποντάς σας να τελέσετε το μυστήριο με θέα στη θάλασσα και να μεταβείτε στο Κτήμα σε μόλις 10–20 λεπτά, συνεχίζοντας με μια υπέροχη δεξίωση για εσάς και τους καλεσμένους σας.
 
 Για [μικρούς γάμους](/blog/pos-na-organosete-enan-mikro-gamo) ή [γάμους οποιασδήποτε εποχής](/blog/kalokerinos-vs-heimoniatikos-gamos), η συνδυαστική προσέγγιση εκκλησίας και δεξίωσης δημιουργεί την τέλεια εμπειρία.
 
@@ -270,7 +270,7 @@ The genuine traditional atmosphere combined with the panoramic sea view creates 
 - **Distance from Ktima Orion**: 3.8 km (~10 minutes)
 - **Ideal for**: Small weddings
 
-The proximity to [Ktima Orion](/en/venue) facilitates guest transportation and allows a smooth continuation to the reception.
+The proximity to [Ktima Orion](/en) facilitates guest transportation and allows a smooth continuation to the reception.
 
 ![Seaside church near Ktima Orion with easy access](/assets/home/DSC_7859.JPG)
 
@@ -284,7 +284,7 @@ Choosing a seaside church offers much more than just a ceremony space. The sea c
 
 ## Combination with Reception at Ktima Orion
 
-[Ktima Orion](/en/venue) is ideally located from all the above churches, allowing you to hold the ceremony with sea views and travel to the venue in just 10-20 minutes, continuing with a wonderful reception for you and your guests.
+[Ktima Orion](/en) is ideally located from all the above churches, allowing you to hold the ceremony with sea views and travel to the venue in just 10-20 minutes, continuing with a wonderful reception for you and your guests.
 
 For [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo) or [weddings in any season](/en/blog/kalokerinos-vs-heimoniatikos-gamos), the combined approach of church and reception creates the perfect experience.
 
@@ -311,7 +311,7 @@ For [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo) or [weddings in
     content: `
 # Καλοκαιρινός vs Χειμωνιάτικος Γάμος: Ποιος να Επιλέξετε;
 
-Η επιλογή της εποχής του γάμου σας είναι μια από τις πιο σημαντικές αποφάσεις, καθώς επηρεάζει κάθε πτυχή της εκδήλωσης – από τον χώρο και τη διακόσμηση μέχρι τις φωτογραφίες και την ατμόσφαιρα. Ας δούμε τα πλεονεκτήματα κάθε εποχής και πώς το [Κτήμα Ωρίων](/o-horos) μπορεί να σας βοηθήσει να οργανώσετε τον γάμο των ονείρων σας.
+Η επιλογή της εποχής του γάμου σας είναι μια από τις πιο σημαντικές αποφάσεις, καθώς επηρεάζει κάθε πτυχή της εκδήλωσης – από τον χώρο και τη διακόσμηση μέχρι τις φωτογραφίες και την ατμόσφαιρα. Ας δούμε τα πλεονεκτήματα κάθε εποχής και πώς το [Κτήμα Ωρίων](/) μπορεί να σας βοηθήσει να οργανώσετε τον γάμο των ονείρων σας.
 
 ## Καλοκαιρινός Γάμος (Μάιος – Σεπτέμβριος)
 
@@ -379,7 +379,7 @@ For [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo) or [weddings in
 
 ## Συμπέρασμα
 
-Στο [Κτήμα Ωρίων](/o-horos), κάθε εποχή έχει τη δική της μαγεία. Οι ευέλικτοι χώροι και οι προσεγμένες εγκαταστάσεις μας εξασφαλίζουν ότι ο γάμος σας θα είναι τέλειος, είτε επιλέξετε το ζεστό καλοκαίρι, τον cozy χειμώνα, είτε τις ενδιάμεσες εποχές της άνοιξης ή του φθινοπώρου.
+Στο [Κτήμα Ωρίων](/), κάθε εποχή έχει τη δική της μαγεία. Οι ευέλικτοι χώροι και οι προσεγμένες εγκαταστάσεις μας εξασφαλίζουν ότι ο γάμος σας θα είναι τέλειος, είτε επιλέξετε το ζεστό καλοκαίρι, τον cozy χειμώνα, είτε τις ενδιάμεσες εποχές της άνοιξης ή του φθινοπώρου.
 
 **Επικοινωνήστε μαζί μας για να οργανώσουμε τον γάμο των ονείρων σας, με ρομαντική ατμόσφαιρα και υπέροχη διακόσμηση, οποιαδήποτε εποχή κι αν επιλέξετε.**
 
@@ -388,7 +388,7 @@ For [small weddings](/en/blog/pos-na-organosete-enan-mikro-gamo) or [weddings in
     contentEn: `
 # Summer vs Winter Wedding: Which to Choose?
 
-Choosing your wedding season is one of the most important decisions, as it affects every aspect of the event - from the venue and decoration to photos and atmosphere. Let's see the advantages of each season and how [Ktima Orion](/en/venue) can help you organize your dream wedding.
+Choosing your wedding season is one of the most important decisions, as it affects every aspect of the event - from the venue and decoration to photos and atmosphere. Let's see the advantages of each season and how [Ktima Orion](/en) can help you organize your dream wedding.
 
 ## Summer Wedding (May – September)
 
@@ -456,7 +456,7 @@ For more tips on [choosing a reception venue](/en/blog/epilogi-horou-dexiosis-at
 
 ## Conclusion
 
-At [Ktima Orion](/en/venue), every season has its own magic. Our flexible spaces and careful facilities ensure that your wedding will be perfect, whether you choose warm summer, cozy winter, or the in-between seasons of spring or autumn.
+At [Ktima Orion](/en), every season has its own magic. Our flexible spaces and careful facilities ensure that your wedding will be perfect, whether you choose warm summer, cozy winter, or the in-between seasons of spring or autumn.
 
 **Contact us to organize your dream wedding, with romantic atmosphere and wonderful decoration, whatever season you choose.**
 
@@ -504,7 +504,7 @@ At [Ktima Orion](/en/venue), every season has its own magic. Our flexible spaces
 
 ![Οργάνωση βάπτισης με παστέλ διακόσμηση και photo corner για αναμνηστικές φωτό](/assets/vaftisi/DSC_7859.JPG)
 
-Στο [Κτήμα Ωρίων](/o-horos) προσφέρουμε έναν ευρύχωρο και ασφαλή χώρο, ειδικό παιδικό μενού και kids-friendly εγκαταστάσεις, ενώ ο μεγάλος χώρος στάθμευσης διευκολύνει όλους τους καλεσμένους. Μια καλή δεξίωση συνδυάζει εσωτερικό και εξωτερικό χώρο ώστε να μπορείτε να απολαύσετε τη μέρα όποιος καιρός κι αν επικρατεί.
+Στο [Κτήμα Ωρίων](/) προσφέρουμε έναν ευρύχωρο και ασφαλή χώρο, ειδικό παιδικό μενού και kids-friendly εγκαταστάσεις, ενώ ο μεγάλος χώρος στάθμευσης διευκολύνει όλους τους καλεσμένους. Μια καλή δεξίωση συνδυάζει εσωτερικό και εξωτερικό χώρο ώστε να μπορείτε να απολαύσετε τη μέρα όποιος καιρός κι αν επικρατεί.
 
 **Ενδιαφέρεστε για χώρο βάπτισης;** [Επικοινωνήστε μαζί μας](/epikoinonia) για να δούμε τις επιλογές μας και να σχεδιάσουμε μαζί την τέλεια εκδήλωση.
 
@@ -545,7 +545,7 @@ At [Ktima Orion](/en/venue), every season has its own magic. Our flexible spaces
 
 ## Συμπέρασμα
 
-Μια επιτυχημένη βάπτιση είναι αυτή που απολαμβάνουν όλοι – παιδιά και ενήλικες. Στο [Κτήμα Ωρίων](/o-horos), φροντίζουμε για κάθε λεπτομέρεια ώστε εσείς να απολαύσετε τη μέρα, με ασφάλεια, άνεση και μαγική ατμόσφαιρα για κάθε ηλικία.
+Μια επιτυχημένη βάπτιση είναι αυτή που απολαμβάνουν όλοι – παιδιά και ενήλικες. Στο [Κτήμα Ωρίων](/), φροντίζουμε για κάθε λεπτομέρεια ώστε εσείς να απολαύσετε τη μέρα, με ασφάλεια, άνεση και μαγική ατμόσφαιρα για κάθε ηλικία.
 
 **Επικοινωνήστε μαζί μας για να οργανώσουμε την τέλεια βαπτιστική δεξίωση που θα θυμούνται όλοι.**
 
@@ -576,7 +576,7 @@ The reception venue must combine comfort, safety and functionality. It is import
 
 ![Baptism organization with pastel decoration and photo corner for souvenir photos](/assets/vaftisi/DSC_7859.JPG)
 
-At [Ktima Orion](/en/venue) we offer a spacious and safe space, special children's menu and kids-friendly facilities, while the large parking area facilitates all guests. A good reception combines indoor and outdoor space so you can enjoy the day whatever the weather.
+At [Ktima Orion](/en) we offer a spacious and safe space, special children's menu and kids-friendly facilities, while the large parking area facilitates all guests. A good reception combines indoor and outdoor space so you can enjoy the day whatever the weather.
 
 **Interested in a baptism venue?** [Contact us](/en/contact) to see our options and design the perfect event together.
 
@@ -617,7 +617,7 @@ For more tips on [choosing a reception venue](/en/blog/epilogi-horou-dexiosis-at
 
 ## Conclusion
 
-A successful baptism is one that everyone enjoys - children and adults. At [Ktima Orion](/en/venue), we take care of every detail so you can enjoy the day, with safety, comfort and magical atmosphere for every age.
+A successful baptism is one that everyone enjoys - children and adults. At [Ktima Orion](/en), we take care of every detail so you can enjoy the day, with safety, comfort and magical atmosphere for every age.
 
 **Contact us to organize the perfect baptism reception that everyone will remember.**
 
@@ -657,7 +657,7 @@ A successful baptism is one that everyone enjoys - children and adults. At [Ktim
 - Πρόσβαση από Αττική Οδό / κέντρο Αθήνας
 - Parking & εύκολη άφιξη για καλεσμένους
 
-**Το [Κτήμα Ωρίων](/o-horos) προσφέρει:**
+**Το [Κτήμα Ωρίων](/) προσφέρει:**
 - 40' από Αθήνα • άμεση πρόσβαση • κοντά σε γραφικά εκκλησάκια δίπλα στη θάλασσα
 
 ![Κτήμα γάμου στην Αθήνα με parking 100+ θέσεων και εύκολη πρόσβαση](/assets/home/DSC_7816.JPG)
@@ -699,7 +699,7 @@ A successful baptism is one that everyone enjoys - children and adults. At [Ktim
 - προσφέρει φυσικό περιβάλλον για φωτογραφίες
 - επιτρέπει άνετη ροή από υποδοχή σε δείπνο και χορό
 
-Στο [Κτήμα Ωρίων](/o-horos) υπάρχει πλήρως οργανωμένος εσωτερικός χώρος και μεγάλος εξωτερικός κήπος.
+Στο [Κτήμα Ωρίων](/) υπάρχει πλήρως οργανωμένος εσωτερικός χώρος και μεγάλος εξωτερικός κήπος.
 
 **Για περισσότερες συμβουλές σχετικά με [εποχιακές επιλογές](/blog/kalokerinos-vs-heimoniatikos-gamos), διαβάστε τον οδηγό μας.**
 
@@ -751,7 +751,7 @@ A successful baptism is one that everyone enjoys - children and adults. At [Ktim
 
 Ο σωστός χώρος δεξίωσης στην Αθήνα πρέπει να συνδυάζει καλή τοποθεσία, όμορφη ατμόσφαιρα και αξιόπιστες υποδομές. Δείτε αρκετές επιλογές και επιλέξτε εκείνη που σας κάνει να νιώθετε σιγουριά και άνεση από την πρώτη στιγμή.
 
-**Θέλετε ξενάγηση στο [Κτήμα Ωρίων](/o-horos);**
+**Θέλετε ξενάγηση στο [Κτήμα Ωρίων](/);**
 
 **Κλείστε δωρεάν ραντεβού σήμερα!**
 
@@ -775,7 +775,7 @@ The right location reduces travel and keeps the event pleasant and organized. Pr
 - Access from Attiki Odos / Athens center
 - Parking & easy arrival for guests
 
-**[Ktima Orion](/en/venue) offers:**
+**[Ktima Orion](/en) offers:**
 - 40' from Athens • immediate access • close to picturesque chapels by the sea
 
 ![Wedding venue in Athens with 100+ parking spaces and easy access](/assets/home/DSC_7816.JPG)
@@ -817,7 +817,7 @@ The combination of indoor and outdoor space:
 - offers natural environment for photos
 - allows comfortable flow from welcome to dinner and dance
 
-At [Ktima Orion](/en/venue) there is a fully organized indoor space and large outdoor garden.
+At [Ktima Orion](/en) there is a fully organized indoor space and large outdoor garden.
 
 **For more tips on [seasonal choices](/en/blog/kalokerinos-vs-heimoniatikos-gamos), read our guide.**
 
@@ -869,7 +869,7 @@ The tour is essential to see the real picture.
 
 The right reception venue in Athens must combine good location, beautiful atmosphere and reliable infrastructure. See several options and choose the one that makes you feel confident and comfortable from the first moment.
 
-**Want a tour of [Ktima Orion](/en/venue)?**
+**Want a tour of [Ktima Orion](/en)?**
 
 **Book a free appointment today!**
 
@@ -894,7 +894,7 @@ The right reception venue in Athens must combine good location, beautiful atmosp
     content: `
 # Νέα από το Κτήμα Ωρίων για το 2026 – Μια Χρονιά με Φρέσκιες Ιδέες & Νέες Εμπειρίες
 
-Η σεζόν 2026 ξεκινά δυναμικά στο [Κτήμα Ωρίων](/o-horos), με νέες παροχές, προσεγμένες αναβαθμίσεις και ακόμη πιο ολοκληρωμένη εμπειρία για ζευγάρια που αναζητούν έναν χώρο γάμου στην Αθήνα με ποιότητα, ατμόσφαιρα και οργάνωση.
+Η σεζόν 2026 ξεκινά δυναμικά στο [Κτήμα Ωρίων](/), με νέες παροχές, προσεγμένες αναβαθμίσεις και ακόμη πιο ολοκληρωμένη εμπειρία για ζευγάρια που αναζητούν έναν χώρο γάμου στην Αθήνα με ποιότητα, ατμόσφαιρα και οργάνωση.
 
 ![Νέα all-inclusive wedding packages με premium catering και επαγγελματική διακόσμηση](/assets/ekdiloseis/DSC_7783.JPG)
 
@@ -978,7 +978,7 @@ The right reception venue in Athens must combine good location, beautiful atmosp
 
 ## Συμπέρασμα
 
-Το [Κτήμα Ωρίων](/o-horos) συνεχίζει να αναβαθμίζεται και να προσφέρει νέες εμπειρίες για κάθε ζευγάρι. Με τις νέες παροχές, τις αναβαθμίσεις και τις συνεργασίες μας, είμαστε έτοιμοι να δημιουργήσουμε μαζί σας αξέχαστες στιγμές το 2026.
+Το [Κτήμα Ωρίων](/) συνεχίζει να αναβαθμίζεται και να προσφέρει νέες εμπειρίες για κάθε ζευγάρι. Με τις νέες παροχές, τις αναβαθμίσεις και τις συνεργασίες μας, είμαστε έτοιμοι να δημιουργήσουμε μαζί σας αξέχαστες στιγμές το 2026.
 
 **Επικοινωνήστε Μαζί μας**
 
@@ -995,7 +995,7 @@ The right reception venue in Athens must combine good location, beautiful atmosp
     contentEn: `
 # News from Ktima Orion for 2026 – A Year with Fresh Ideas & New Experiences
 
-The 2026 season starts strong at [Ktima Orion](/en/venue), with new services, careful upgrades and an even more complete experience for couples seeking a wedding venue in Athens with quality, atmosphere and organization.
+The 2026 season starts strong at [Ktima Orion](/en), with new services, careful upgrades and an even more complete experience for couples seeking a wedding venue in Athens with quality, atmosphere and organization.
 
 ![New all-inclusive wedding packages with premium catering and professional decoration](/assets/ekdiloseis/DSC_7783.JPG)
 
@@ -1079,7 +1079,7 @@ Reservation required.
 
 ## Conclusion
 
-[Ktima Orion](/en/venue) continues to upgrade and offer new experiences for every couple. With our new services, upgrades and partnerships, we are ready to create unforgettable moments together in 2026.
+[Ktima Orion](/en) continues to upgrade and offer new experiences for every couple. With our new services, upgrades and partnerships, we are ready to create unforgettable moments together in 2026.
 
 **Contact Us**
 
@@ -1129,13 +1129,13 @@ Follow us on social for real weddings, behind-the-scenes and exclusive offers.
 ## 10 Κριτήρια για την Επιλογή Κτήματος Γάμου
 
 ### 1. Χωρητικότητα & Ευελιξία
-Το **κτήμα για γάμο** πρέπει να φιλοξενεί άνετα τους καλεσμένους σας. Ζητήστε τον ακριβή αριθμό για εσωτερικό ΚΑΙ εξωτερικό χώρο. Το [Κτήμα Ωρίων](/o-horos) φιλοξενεί από 50 έως 350+ άτομα.
+Το **κτήμα για γάμο** πρέπει να φιλοξενεί άνετα τους καλεσμένους σας. Ζητήστε τον ακριβή αριθμό για εσωτερικό ΚΑΙ εξωτερικό χώρο. Το [Κτήμα Ωρίων](/) φιλοξενεί από 50 έως 350+ άτομα.
 
 ### 2. Τοποθεσία & Πρόσβαση
 Ελέγξτε: απόσταση από αστικό κέντρο, πρόσβαση με αυτοκίνητο, χώρος στάθμευσης.
 
 ### 3. Parking – Κρίσιμο!
-Ένα από τα **μεγαλύτερα προβλήματα** σε πολλά κτήματα. Το [Κτήμα Ωρίων](/o-horos) διαθέτει **100+ δωρεάν θέσεις** – ένα από τα λίγα κτήματα στην Αττική με τόσο μεγάλο parking.
+Ένα από τα **μεγαλύτερα προβλήματα** σε πολλά κτήματα. Το [Κτήμα Ωρίων](/) διαθέτει **100+ δωρεάν θέσεις** – ένα από τα λίγα κτήματα στην Αττική με τόσο μεγάλο parking.
 
 ### 4. Εκκλησία Κοντά
 Αν θέλετε θρησκευτικό γάμο, η απόσταση είναι καθοριστική. Στην [Κερατέα](/ekklisies) υπάρχουν 4+ γραφικά παραθαλάσσια εκκλησάκια σε 6–13 λεπτά.
@@ -1144,7 +1144,7 @@ Follow us on social for real weddings, behind-the-scenes and exclusive offers.
 Τα περισσότερα **κτήματα γάμου** προσφέρουν in-house catering. Ζητήστε δοκιμή γεύσης πριν κλείσετε.
 
 ### 6. Κλιματισμός & Plan B για Βροχή
-Το [Κτήμα Ωρίων](/o-horos) διαθέτει **πλήρως κλιματιζόμενη αίθουσα** και καλυμμένους εξωτερικούς χώρους.
+Το [Κτήμα Ωρίων](/) διαθέτει **πλήρως κλιματιζόμενη αίθουσα** και καλυμμένους εξωτερικούς χώρους.
 
 ### 7. Αποκλειστικότητα Χώρου
 Μάθετε αν το **κτήμα** πραγματοποιεί μία ή περισσότερες εκδηλώσεις την ίδια μέρα. Η αποκλειστική χρήση = περισσότερη ιδιωτικότητα.
@@ -1176,7 +1176,7 @@ Follow us on social for real weddings, behind-the-scenes and exclusive offers.
 
 ## Κτήμα Ωρίων: Η Απάντηση
 
-Αν ψάχνετε **κτήμα για γάμο** που συνδυάζει θέα θάλασσα, κοντινές εκκλησίες, 100+ parking και 15+ χρόνια εμπειρίας, το [Κτήμα Ωρίων](/o-horos) στην Κερατέα είναι η επιλογή σας.
+Αν ψάχνετε **κτήμα για γάμο** που συνδυάζει θέα θάλασσα, κοντινές εκκλησίες, 100+ parking και 15+ χρόνια εμπειρίας, το [Κτήμα Ωρίων](/) στην Κερατέα είναι η επιλογή σας.
 
 **[Κλείστε δωρεάν επίσκεψη τώρα](/epikoinonia)** – δείτε μόνοι σας γιατί εκατοντάδες ζευγάρια μας εμπιστεύτηκαν.
     `,
@@ -1185,7 +1185,7 @@ Follow us on social for real weddings, behind-the-scenes and exclusive offers.
 
 Choosing the right wedding venue is one of the most critical decisions. This guide covers 10 key criteria, a checklist of questions to ask, and pricing.
 
-[Ktima Orion](/en/venue) in Keratea: sea views, 100+ parking, seaside churches, 15+ years experience.
+[Ktima Orion](/en) in Keratea: sea views, 100+ parking, seaside churches, 15+ years experience.
 
 [Book a free visit](/en/contact) today.
     `,
@@ -1221,7 +1221,7 @@ Choosing the right wedding venue is one of the most critical decisions. This gui
 - Γραφικά παραθαλάσσια εκκλησάκια
 - Μεγαλύτερους χώρους με parking
 
-Το [Κτήμα Ωρίων](/o-horos) βρίσκεται στην **Κερατέα**, σε απόσταση περίπου 45 λεπτών από το κέντρο της Αθήνας. Σε μια επίσκεψη μπορείτε να δείτε τον χώρο, τις πιθανές διατάξεις και τη διαδρομή από το μυστήριο στη δεξίωση.
+Το [Κτήμα Ωρίων](/) βρίσκεται στην **Κερατέα**, σε απόσταση περίπου 45 λεπτών από το κέντρο της Αθήνας. Σε μια επίσκεψη μπορείτε να δείτε τον χώρο, τις πιθανές διατάξεις και τη διαδρομή από το μυστήριο στη δεξίωση.
 
 ### Βόρεια Προάστια
 Κοντύτερα στο κέντρο αλλά συνήθως μικρότεροι χώροι και λιγότερο parking.
@@ -1246,7 +1246,7 @@ Choosing the right wedding venue is one of the most critical decisions. This gui
 
 ## Κτήμα Ωρίων στην Κερατέα
 
-Για ζευγάρια που εξετάζουν κτήμα γάμου κοντά στην Αθήνα, το [Κτήμα Ωρίων](/ktima-gamou) προσφέρει:
+Για ζευγάρια που εξετάζουν κτήμα γάμου κοντά στην Αθήνα, το [Κτήμα Ωρίων](/) προσφέρει:
 
 - **45 λεπτά από κέντρο Αθήνας** – Εύκολη πρόσβαση
 - **Θέα στο Αιγαίο** – Μοναδικό φυσικό σκηνικό
@@ -1305,9 +1305,13 @@ Looking for ktimata (wedding venues) near Athens? Ktima Orion in Keratea is the 
     excerpt: "Κτήμα γάμου: τιμές και κόστος δεξίωσης το 2026. Οδηγός για να συγκρίνετε προσφορές, catering, φωτογράφο, DJ και τις χρεώσεις που αξίζει να ελέγξετε.",
     excerptEn: "Complete breakdown of wedding venue costs in Attica. Catering, decoration, photographer, DJ prices.",
     content: `
-# Κτήμα γάμου: Τιμές 2026 & Κόστος Δεξίωσης
-
 **«Πόσο κοστίζει ένας γάμος σε κτήμα;»** είναι μια από τις πιο συχνές ερωτήσεις. Οι τιμές για κτήμα γάμου εξαρτώνται από τον αριθμό καλεσμένων, την ημερομηνία, το μενού και τις υπηρεσίες που θέλετε να συμπεριλάβετε. Χρησιμοποιήστε τα παρακάτω ως οδηγό σύγκρισης και ζητήστε αναλυτική, γραπτή προσφορά για το δικό σας event.
+
+## Τιμές γάμου στο Κτήμα Ωρίων: ζητήστε προσφορά
+
+Το [Κτήμα Ωρίων](/) δεν δημοσιεύει σταθερό τιμοκατάλογο γάμου. Η γραπτή προσφορά βγαίνει αφού ορίσετε ημερομηνία, αριθμό καλεσμένων και μενού. Τα εύρη πιο κάτω είναι ενδεικτικά της αγοράς, για να συγκρίνετε προσφορές· δεν είναι τιμές του κτήματος και δεν αποτελούν προσφορά.
+
+Δείτε [τι περιλαμβάνει ο γάμος](/gamos) και [ζητήστε τιμές και προσφορά](/request).
 
 ![Πολυτελής γαμήλια δεξίωση στο Κτήμα Ωρίων](/final-photos/gamos/IMG_0815.jpeg)
 
@@ -1383,28 +1387,30 @@ Looking for ktimata (wedding venues) near Athens? Ktima Orion in Keratea is the 
 
 ## Τι να επιβεβαιώσετε για το Κτήμα Ωρίων
 
+Το [Κτήμα Ωρίων](/) δίνει προσφορά ανά εκδήλωση, όχι δημόσιο τιμοκατάλογο γάμου. Πριν συγκρίνετε, επιβεβαιώστε:
+
 - **Χωρητικότητα 50–350 ατόμων** για τη διάταξη που σχεδιάζετε
 - **Parking 100+ θέσεων** για τους καλεσμένους
 - **Κλιματιζόμενη αίθουσα και εξωτερικός χώρος** για εναλλακτική διάταξη
 - Τι περιλαμβάνει η προσφορά για [catering](/ypiresies), [φωτογράφο](/fotografos) και [DJ](/dj-mousiki)
 
-**[Ζητήστε δωρεάν προσφορά](/epikoinonia)** σήμερα.
+**[Ζητήστε τιμές και προσφορά](/request)** ή καλέστε από τη σελίδα [επικοινωνίας](/epikoinonia).
     `,
     contentEn: `
-# How Much Does a Venue Wedding Cost? 2026
-
 Venue wedding costs in Attica vary significantly with guest count, date, menu and services. Use indicative figures only to compare proposals, then ask for a detailed written quote for your event.
 
-[Ktima Orion](/en/venue) can prepare a personalized proposal after discussing your guest count and plans.
+## Wedding prices at Ktima Orion
 
-[Get a free quote](/en/contact) today.
+[Ktima Orion](/en) does not publish a fixed wedding price list. A written quote is prepared for your date, guest count and menu. The ranges in the Greek guide are market comparisons, not a quote from the venue.
+
+[See what a wedding includes](/en/weddings) or [ask for prices](/en/contact).
     `,
     category: 'tips',
     categoryLabel: 'Συμβουλές',
     categoryLabelEn: 'Tips & Guides',
     image: '/final-photos/gamos/IMG_0815.jpeg',
     date: '2026-02-28',
-    modifiedDate: '2026-07-27',
+    modifiedDate: '2026-10-17',
     author: 'Κτήμα Ωρίων',
     readTime: '9 λεπτά',
     keywords: 'κτημα γαμου τιμες, κόστος γάμου κτήμα, τιμές κτήμα για γάμο, πόσο κοστίζει γάμος κτήμα, προϋπολογισμός γάμου, τιμές catering γάμου, κόστος γαμήλιας δεξίωσης αττική',
@@ -1421,7 +1427,7 @@ Venue wedding costs in Attica vary significantly with guest count, date, menu an
 
 Ο **γάμος με θέα θάλασσα** είναι το όνειρο πολλών ζευγαριών – μπλε Αιγαίο, αλμυρή αύρα, μαγευτικές φωτογραφίες στο ηλιοβασίλεμα.
 
-Η **Κερατέα Αττικής** και το [Κτήμα Ωρίων](/o-horos) είναι η απάντηση – χωρίς να φύγετε από την Αττική.
+Η **Κερατέα Αττικής** και το [Κτήμα Ωρίων](/) είναι η απάντηση – χωρίς να φύγετε από την Αττική.
 
 ![Γάμος με θέα Αιγαίου – Κτήμα Ωρίων Κερατέα](/final-photos/gamos/IMG_0804.jpeg)
 
@@ -1457,7 +1463,7 @@ Venue wedding costs in Attica vary significantly with guest count, date, menu an
 Προγραμματίστε φωτογράφηση γύρω στο ηλιοβασίλεμα – ανεπανάληπτο φως.
 
 ### Parking
-Σε παραλιακές τοποθεσίες το parking είναι συχνά πρόβλημα. Το [Κτήμα Ωρίων](/o-horos) λύνει αυτό με **100+ δωρεάν θέσεις**.
+Σε παραλιακές τοποθεσίες το parking είναι συχνά πρόβλημα. Το [Κτήμα Ωρίων](/) λύνει αυτό με **100+ δωρεάν θέσεις**.
 
 ## Κτήμα Ωρίων: Γάμος με Θέα Θάλασσα στην Αττική
 
@@ -1557,7 +1563,7 @@ Keratea offers the perfect seaside wedding experience near Athens: panoramic Aeg
 
 ---
 
-Το [Κτήμα Ωρίων](/ktima-gamou) παρέχει **event coordinator** που σας βοηθά σε κάθε βήμα.
+Το [Κτήμα Ωρίων](/) παρέχει **event coordinator** που σας βοηθά σε κάθε βήμα.
 
 **[Επικοινωνήστε μαζί μας](/epikoinonia)** για να ξεκινήσουμε τον σχεδιασμό!
     `,
@@ -1566,7 +1572,7 @@ Keratea offers the perfect seaside wedding experience near Athens: panoramic Aeg
 
 From 12 months before to the day itself, this step-by-step guide will keep you organized.
 
-[Ktima Orion](/en/venue) provides an event coordinator to guide you through every step.
+[Ktima Orion](/en) provides an event coordinator to guide you through every step.
 
 [Start planning today](/en/contact).
     `,
@@ -1598,7 +1604,7 @@ From 12 months before to the day itself, this step-by-step guide will keep you o
 
 ## Πόσα άτομα χωράει ένα κτήμα γάμου;
 
-Κάθε χώρος έχει διαφορετική χωρητικότητα. Στο [Κτήμα Ωρίων](/ktima-gamou) οργανώνουμε δεξιώσεις από περίπου 50 έως 350 άτομα, με ευελιξία σε διάταξη και plan B για καιρό.
+Κάθε χώρος έχει διαφορετική χωρητικότητα. Στο [Κτήμα Ωρίων](/) οργανώνουμε δεξιώσεις από περίπου 50 έως 350 άτομα, με ευελιξία σε διάταξη και plan B για καιρό.
 
 ## Πόσο νωρίς πρέπει να κλείσω κτήμα για γάμο;
 
@@ -1614,7 +1620,7 @@ From 12 months before to the day itself, this step-by-step guide will keep you o
 
 ## Γιατί να επιλέξω κτήμα αντί για αίθουσα;
 
-Το κτήμα προσφέρει φυσικό περιβάλλον, περισσότερες επιλογές διάταξης και συχνά καλύτερη εμπειρία φωτογράφησης. Το [Κτήμα Ωρίων](/o-horos) συνδυάζει κήπο, θέα και κλειστή αίθουσα.
+Το κτήμα προσφέρει φυσικό περιβάλλον, περισσότερες επιλογές διάταξης και συχνά καλύτερη εμπειρία φωτογράφησης. Το [Κτήμα Ωρίων](/) συνδυάζει κήπο, θέα και κλειστή αίθουσα.
 
 ---
 
@@ -1678,7 +1684,7 @@ Common questions about cost, capacity, booking lead time, churches and what to c
     content: `
 # Συχνές ερωτήσεις για κτήματα βάπτισης
 
-Οι γονείς που ψάχνουν **κτήμα για βάπτιση** στην **Αθήνα** ή την **Αττική** έχουν συχνά τις ίδιες απορίες: ασφάλεια, παιδικό μενού, κόστος και εκκλησία. Παρακάτω συγκεντρώνουμε χρήσιμες απαντήσεις· για το [Κτήμα Ωρίων](/ktima-vaptisis) μπορείτε να [ζητήσετε προσφορά](/request).
+Οι γονείς που ψάχνουν **κτήμα για βάπτιση** στην **Αθήνα** ή την **Αττική** έχουν συχνά τις ίδιες απορίες: ασφάλεια, παιδικό μενού, κόστος και εκκλησία. Παρακάτω συγκεντρώνουμε χρήσιμες απαντήσεις· για το [Κτήμα Ωρίων](/) δείτε τη [σελίδα βάπτισης](/ktima-vaptisis) ή [ζητήστε προσφορά](/request).
 
 ## Είναι ασφαλές ένα κτήμα για τα παιδιά;
 
@@ -1762,7 +1768,7 @@ Safety, menus, pricing, outdoor space and churches near the venue. For Ktima Ori
 
 Η βάπτιση είναι μία από τις σημαντικότερες οικογενειακές στιγμές και αξίζει να πραγματοποιηθεί σε έναν χώρο που συνδυάζει όμορφο περιβάλλον, προσεγμένο φαγητό και ολοκληρωμένη οργάνωση.
 
-Το [Κτήμα Ωρίων](/ktima-vaptisis), σε συνεργασία με το **L. Varsos Catering**, παρουσιάζει δύο ολοκληρωμένες προτάσεις για τη διοργάνωση βάπτισης: το **Classic Finger Food Menu** και το **Premium Finger Food Menu**.
+Το [Κτήμα Ωρίων](/), σε συνεργασία με το **L. Varsos Catering**, παρουσιάζει δύο ολοκληρωμένες προτάσεις για τη διοργάνωση βάπτισης: το **Classic Finger Food Menu** και το **Premium Finger Food Menu**.
 
 Οι προτάσεις έχουν σχεδιαστεί ώστε οι οικογένειες να μπορούν να οργανώσουν τη δεξίωση της βάπτισης χωρίς να χρειάζεται να συντονίζουν ξεχωριστούς προμηθευτές για catering, προσωπικό, εξοπλισμό και βασικές παροχές.
 
@@ -1772,7 +1778,7 @@ Safety, menus, pricing, outdoor space and churches near the venue. For Ktima Ori
 
 Η φιλοσοφία είναι απλή: όλα όσα χρειάζονται για μία όμορφη και οργανωμένη βάπτιση συγκεντρωμένα σε ένα πακέτο.
 
-Οι τιμές των πακέτων αφορούν εκδηλώσεις από 100 καλεσμένους, ενώ στην τιμή περιλαμβάνονται και οι παροχές του [Κτήματος Ωρίων](/o-horos).
+Οι τιμές των πακέτων αφορούν εκδηλώσεις από 100 καλεσμένους, ενώ στην τιμή περιλαμβάνονται και οι [παροχές του χώρου](/o-horos) του [Κτήματος Ωρίων](/).
 
 ![Δεξίωση βάπτισης στο Κτήμα Ωρίων στην Κερατέα](/final-photos/vaftisi/IMG_3443.jpeg)
 
@@ -1934,7 +1940,7 @@ Safety, menus, pricing, outdoor space and churches near the venue. For Ktima Ori
 
 A baptism is one of the most important family milestones, and it deserves a venue that combines beautiful surroundings, carefully prepared food and complete organisation.
 
-[Ktima Orion](/en/baptism), in partnership with **L. Varsos Catering**, presents two all-inclusive baptism proposals: the **Classic Finger Food Menu** and the **Premium Finger Food Menu**.
+[Ktima Orion](/en), in partnership with **L. Varsos Catering**, presents two all-inclusive baptism proposals: the **Classic Finger Food Menu** and the **Premium Finger Food Menu**.
 
 Both packages are designed so families can organise the baptism reception without having to coordinate separate suppliers for catering, staff, equipment and basic amenities.
 
@@ -1944,7 +1950,7 @@ One of the biggest advantages of these packages is that they combine the experie
 
 The philosophy is simple: everything needed for a beautiful, well-organised baptism gathered into a single package.
 
-Package prices apply to events from 100 guests, and all [Ktima Orion](/en/venue) venue amenities are included in the price.
+Package prices apply to events from 100 guests, and all [Ktima Orion](/en) venue amenities are included in the price.
 
 ![Baptism reception at Ktima Orion in Keratea](/final-photos/vaftisi/IMG_3443.jpeg)
 
@@ -2166,7 +2172,7 @@ Prices apply to events from 100 guests and include the Ktima Orion venue ameniti
 
 **Εκεί όπου η λάμψη συναντά τα όνειρά σας.**
 
-Από το 2009, το [Κτήμα Ωρίων](/o-horos) στην Κερατέα φιλοξενεί τις πιο φωτεινές στιγμές της ζωής σας. Σε συνεργασία με το **Pleiades Catering (Πλειάδες)**, σας προσκαλούμε να απολαύσετε κορυφαία γαστρονομία σε μια ατμόσφαιρα γεμάτη μαγεία — **καλύτερα από ό,τι είχατε ονειρευτεί**.
+Από το 2009, το [Κτήμα Ωρίων](/) στην Κερατέα φιλοξενεί τις πιο φωτεινές στιγμές της ζωής σας. Σε συνεργασία με το **Pleiades Catering (Πλειάδες)**, σας προσκαλούμε να απολαύσετε κορυφαία γαστρονομία σε μια ατμόσφαιρα γεμάτη μαγεία — **καλύτερα από ό,τι είχατε ονειρευτεί**.
 
 ![Ο γάμος των ονείρων σας στο Κτήμα Ωρίων με Pleiades Catering](/promo/pleiades-synergasia.jpg)
 
@@ -2211,7 +2217,7 @@ Prices apply to events from 100 guests and include the Ktima Orion venue ameniti
 
 **Where sparkle meets your dreams.**
 
-Since 2009, [Ktima Orion](/en/venue) in Keratea has hosted life’s brightest moments. In partnership with **Pleiades Catering**, we invite you to enjoy outstanding cuisine in an atmosphere full of magic — **better than you had dreamed**.
+Since 2009, [Ktima Orion](/en) in Keratea has hosted life’s brightest moments. In partnership with **Pleiades Catering**, we invite you to enjoy outstanding cuisine in an atmosphere full of magic — **better than you had dreamed**.
 
 ![The wedding of your dreams at Ktima Orion with Pleiades Catering](/promo/pleiades-synergasia.jpg)
 

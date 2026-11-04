@@ -8,7 +8,7 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   ...eslintConfigNext,
   {
-    ignores: [".next/**", "node_modules/**", "dist/**", "public/**"],
+    ignores: [".next/**", ".open-next/**", ".wrangler/**", "cloudflare-env.d.ts", "node_modules/**", "dist/**", "public/**"],
   },
   {
     files: ["**/*.{ts,tsx}"],

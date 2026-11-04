@@ -3,9 +3,9 @@ import Emeis from "@/views/greek/Emeis";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const title = "Κτήμα Ωρίων: το κτήμα δεξιώσεων της Κερατέας από το 2009";
+const title = "Ποιοι είμαστε: η ομάδα δεξιώσεων στην Κερατέα | Κτήμα Ωρίων";
 const description =
-  "Ποιοι είμαστε: οικογενειακό κτήμα δεξιώσεων στην Κερατέα από το 2009, με πάνω από 500 γάμους και βαπτίσεις. Γνωρίστε την ομάδα και τον χώρο μας.";
+  "Υπεύθυνη χώρου η Μπούσουλα Παναγιώτα. 15+ χρόνια και 200+ εκδηλώσεις στην Κερατέα: κλιματιζόμενη αίθουσα, κήποι και συνεργασία με πιστοποιημένα catering.";
 
 export const metadata: Metadata = buildMetadata({
   title,
@@ -22,7 +22,11 @@ export default function Page() {
         title={title}
         description={description}
         canonicalPath="/emeis"
-        schemaType="EventVenue"
+        consolidateToBrandHome
+        breadcrumbs={[
+          { name: "Αρχική", url: "/" },
+          { name: "Εμείς", url: "/emeis" },
+        ]}
       />
       <Emeis />
     </>

@@ -52,7 +52,7 @@ const staticEnglishPaths: readonly string[] = [
 
 function lastMod(): Date {
   // Update this only when a shared page template or static page content changes.
-  return new Date("2026-07-27T00:00:00.000Z");
+  return new Date("2026-10-17T00:00:00.000Z");
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
