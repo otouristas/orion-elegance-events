@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Camera } from 'lucide-react';
@@ -45,28 +46,7 @@ export default function ServicesEn() {
     <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Services</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Professional Services at Ktima Orion
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                <Link href="/en/venue" className="text-brand-main hover:underline">Ktima Orion</Link> offers a complete package of professional services for all your events. 
-                From planning to <Link href="/en/photographer" className="text-brand-main hover:underline">photography</Link>, we ensure that every detail will be impeccable for your <Link href="/en/weddings" className="text-brand-main hover:underline">wedding</Link> or <Link href="/en/baptism" className="text-brand-main hover:underline">baptism</Link>.
-              </p>
-              
-              <p>
-                With experience, flexibility and dedication to detail, 
-                we create magical experiences that you will remember forever.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Our services & partners" title="The details of your day." description="Catering, decoration, photography and music. Discover the options and discuss a personal quote for your celebration." image="/images/wedding-card.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" />
 
         {/* Main Services */}
         <section className="section-padding">
@@ -132,20 +112,16 @@ export default function ServicesEn() {
               Let's discuss your needs
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us to learn more about our services 
+              Contact us to learn more about our services
               and how we can create unforgettable memories together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/en/contact">
-                <button className="button button4">
+              <Link href="/en/request" className="button button4">
                   BOOK FREE TOUR
-                </button>
-              </Link>
-              <Link href="/en/weddings">
-                <button className="button button4">
+                </Link>
+              <Link href="/en/weddings" className="button button4">
                   VIEW OUR SERVICES
-                </button>
-              </Link>
+                </Link>
             </div>
           </div>
         </section>

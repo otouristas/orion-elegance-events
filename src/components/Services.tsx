@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
-import { Heart, Baby, Building, PartyPopper, Camera, Crown } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { Heart, Baby, Building, PartyPopper, Camera } from 'lucide-react';
 import Link from 'next/link';
 
 export const Services = () => {
@@ -7,86 +7,39 @@ export const Services = () => {
     {
       icon: Heart,
       title: 'Γάμος',
-      description: 'Μοναδικές στιγμές αγάπης στο Κτήμα Ωρίων. Η γαμήλια δεξίωση σας είναι μια εξαιρετικά σημαντική στιγμή, η έναρξη της κοινής σας πορείας με νυφικό τραπέζι που θα θυμάστε για πάντα.',
+      description: 'Δεξίωση στον κήπο ή στην κλιματιζόμενη αίθουσα, με catering και συντονισμό. Δείτε τον χώρο, τις παροχές και τις επιλογές για την ημέρα του γάμου σας.',
       features: ['Εσωτερικός & εξωτερικός χώρος δεξίωσης', 'Πλήρως κλιματιζόμενη αίθουσα', 'Κοντά σε γραφικά παραθαλάσσια εκκλησάκια'],
       link: '/gamos'
     },
     {
       icon: Baby,
       title: 'Βάπτιση',
-      description: 'Δημιουργήστε αξέχαστες αναμνήσεις για τη βαπτιστική δεξίωση του παιδιού σας. Μια τρυφερή και χαρούμενη γιορτή για όλη την οικογένεια με ιδιαίτερο στολισμό.',
+      description: 'Ένας χώρος για να γιορτάσετε με την οικογένεια και τους φίλους σας, με παιδικό μενού και κήπο. Δείτε τα πακέτα βάπτισης και τι περιλαμβάνει κάθε επιλογή.',
       features: ['Ειδικό μενού για παιδιά', 'Επαγγελματική εξυπηρέτηση', 'Ιδανικό περιβάλλον για βαπτιστικές εκδηλώσεις'],
       link: '/vaptisi'
     },
     {
       icon: Building,
       title: 'Εταιρικές εκδηλώσεις',
-      description: 'Η εταιρική σας εκδήλωση, η εξειδίκευσή μας. Επαγγελματισμός και αφοσίωση για τις πιο επιτυχημένες εταιρικές εκδηλώσεις και συνέδρια.',
+      description: 'Εταιρικές συναντήσεις, παρουσιάσεις και εκδηλώσεις με ευέλικτη διαμόρφωση του χώρου, catering και χώρο στάθμευσης.',
       features: ['Συνεδριακός εξοπλισμός', 'Catering υψηλής ποιότητας', 'Χώρος στάθμευσης 100+ θέσεων'],
       link: '/eterikes-ekdiloseis'
     },
     {
       icon: PartyPopper,
       title: 'Πάρτι',
-      description: 'Ο ιδανικός χώρος για το party σας. Γενέθλια, αρραβώνας ή οποιαδήποτε ξεχωριστή στιγμή - ο χώρος μας προσαρμόζεται σε κάθε ανάγκη.',
+      description: 'Γενέθλια, αρραβώνας ή μια προσωπική γιορτή. Συζητήστε μαζί μας τη διαμόρφωση, το μενού και τη μουσική για το πάρτι σας.',
       features: ['Ευέλικτος χώρος εκδηλώσεων', 'Μουσική κάλυψη & DJ', 'Bar & cocktails'],
       link: '/parti'
     },
     {
       icon: Camera,
       title: 'Φωτογράφος',
-      description: 'Συνεργασία με το "Studio Alpha" - η φωτογραφία είναι το πάθος, η έμπνευση, η δημιουργία…η στιγμή. Καταγράψτε κάθε λεπτομέρεια της γαμήλιας ή βαπτιστικής σας δεξίωσης.',
+      description: 'Γνωρίστε το Studio Alpha και τις επιλογές φωτογράφισης και βίντεο για την τελετή και τη δεξίωσή σας.',
       features: ['Επαγγελματική κάλυψη', 'Πολύχρονη εμπειρία σε γάμους', 'Φωτογραφία & βίντεο'],
       link: '/fotografos'
     },
   ];
 
-  return (
-    <section id="services" className="section-padding bg-gradient-to-b from-background to-champagne">
-      <div className="container-max">
-        <div className="text-center mb-16">
-          <h2 className="font-heading mb-6">
-            Οι <span className="text-gradient-brand">Υπηρεσίες</span> Μας
-          </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Από <a href="/gamos" className="text-brand-main hover:underline">γαμήλιες δεξιώσεις</a> και <a href="/vaptisi" className="text-brand-main hover:underline">βαπτιστικές δεξιώσεις</a> μέχρι <a href="/eterikes-ekdiloseis" className="text-brand-main hover:underline">εταιρικές εκδηλώσεις</a> και πάρτι, 
-                προσφέρουμε ολοκληρωμένες υπηρεσίες για κάθε ξεχωριστή στιγμή στο χώρο δεξιώσεων μας.
-              </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="card-elegant p-8 text-center group">
-              <div className="mb-6 flex justify-center">
-                <div className="w-16 h-16 bg-brand-main rounded-full flex items-center justify-center transition-transform duration-300">
-                  <service.icon className="w-8 h-8 text-white" />
-                </div>
-              </div>
-              
-              <h3 className="font-heading mb-4 text-gradient-brand">
-                {service.title}
-              </h3>
-              
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                {service.description}
-              </p>
-              
-              <ul className="space-y-2 mb-6">
-                {service.features.map((feature, idx) => (
-                  <li key={idx} className="text-sm text-muted-foreground flex items-center justify-center">
-                    <span className="w-1.5 h-1.5 bg-brand-main rounded-full mr-2 flex-shrink-0"></span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              
-              <Button variant="outline" className="border-brand-main text-white bg-brand-main hover:bg-brand-dark hover:border-brand-dark min-h-[44px] min-w-[140px]" asChild>
-                <Link href={service.link}>Μάθετε περισσότερα</Link>
-              </Button>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <section id="services" className="section-padding bg-background"><div className="container-max grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:gap-20"><div><p className="eyebrow">Οι παροχές & οι συνεργάτες</p><h2 className="mt-4 font-heading">Οι λεπτομέρειες της δικής σας ημέρας.</h2><p className="mt-6 max-w-md leading-relaxed text-muted-foreground">Γνωρίστε τις επιλογές για τη δεξίωσή σας. Συζητήστε μαζί μας τι χρειάζεστε, ποιοι συνεργάτες ταιριάζουν στο σχέδιό σας και τι θα περιλαμβάνει η προσφορά.</p><Link href="/ypiresies" className="mt-6 inline-flex min-h-11 items-center gap-3 border-b border-brand-text/30 text-sm font-semibold">Όλες οι υπηρεσίες <ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link></div><div>{services.map((service,index)=><article key={service.link} className="border-t border-border py-6 first:pt-0 first:border-t-0"><Link href={service.link} className="flex items-start gap-4"><span className="pt-2 text-xs text-brand-deep">0{index+1}</span><div className="min-w-0 flex-1"><h3 className="font-heading text-2xl md:text-3xl">{service.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{service.description}</p></div><ArrowUpRight className="mt-2 h-5 w-5 shrink-0" aria-hidden="true" /></Link></article>)}</div></div></section>;
 };

@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Star, Phone, Mail, MapPin, Car, Home, TreePine, Utensils } from 'lucide-react';
@@ -76,43 +77,10 @@ export default function AboutEn() {
   ];
 
   return (
-    <Layout>
+    <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">About Us</span>
-            </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-5xl mx-auto mb-12">
-              Ktima Orion is a beautiful green space, where visitors immediately feel the glow of luxury in perfect harmony with the natural environment. In an ideal location, with easy access from the Attiki Odos, you can enjoy the special moments of your life with every magnificence. The closed, fully air-conditioned hall and the magical outdoor space of the estate guarantee a warm reception and absolute hospitality for your guests.
-            </p>
-            
-            {/* Hero Images */}
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
-              <ClickableImage
-                src={heroImage}
-                alt="Ktima Orion - Mother and child"
-                images={[
-                  { src: heroImage, alt: "Ktima Orion - Mother and child" },
-                  { src: venueImage, alt: "Ktima Orion - Event venue" }
-                ]}
-                index={0}
-                className="w-full h-80 object-cover rounded-2xl shadow-xl"
-              />
-              <ClickableImage
-                src={venueImage}
-                alt="Ktima Orion - Event venue"
-                images={[
-                  { src: heroImage, alt: "Ktima Orion - Mother and child" },
-                  { src: venueImage, alt: "Ktima Orion - Event venue" }
-                ]}
-                index={1}
-                className="w-full h-80 object-cover rounded-2xl shadow-xl"
-              />
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Our story \u00b7 since 2009" title="Meet the people behind Orion." description="Get to know our venue in Keratea and the team who will help you plan your celebration. Venue manager: Panagiota Bousoula." image="/final-photos/emeis/emeis1.jpg" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" />
 
         {/* Venue Features Section */}
         <section className="section-padding">
@@ -120,7 +88,7 @@ export default function AboutEn() {
             <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">The Venue Features:</span>
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {venueFeatures.map((feature, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
@@ -166,7 +134,7 @@ export default function AboutEn() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Venue Manager</h3>
                 <div className="flex items-center space-x-4">
@@ -179,7 +147,7 @@ export default function AboutEn() {
                   </div>
                 </div>
                 <p className="text-muted-foreground mt-6">
-                  With experience and love for hospitality, Bousoula Panagiota ensures 
+                  With experience and love for hospitality, Bousoula Panagiota ensures
                   that every event at Ktima Orion will be impeccable and unforgettable.
                 </p>
               </div>
@@ -193,7 +161,7 @@ export default function AboutEn() {
             <h2 className="font-heading text-center mb-16">
               <span className="text-gradient-brand">Our Values</span>
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <Card key={index} className="card-elegant text-center hover:shadow-xl transition-all duration-300">
@@ -215,7 +183,7 @@ export default function AboutEn() {
               Let's get to know each other better
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Contact us to learn more about our services 
+              Contact us to learn more about our services
               and how we can create unforgettable memories together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

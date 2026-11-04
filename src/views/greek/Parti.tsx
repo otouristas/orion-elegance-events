@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -89,35 +90,7 @@ export default function Parti() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Πάρτι</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Ο ιδανικός χώρος για το party σας - Κτήμα Ωρίων
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Αναζητάτε τον τέλειο χώρο για να γιορτάσετε;
-              </p>
-              
-              <p>
-                Στο Κτήμα Ωρίων, μετατρέπουμε τις ξεχωριστές σας στιγμές σε αξέχαστες εμπειρίες. 
-                Γενέθλια, αρραβώνας ή εταιρικό party - ο χώρος μας και οι υπηρεσίες μας προσαρμόζονται σε κάθε σας ανάγκη.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Δημιουργήστε μαζί μας μια βραδιά που θα μείνει αξέχαστη.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Επικοινωνήστε μαζί μας σήμερα για να κλείσετε την ημερομηνία σας!
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Πάρτι στην Κερατέα" title="Μια δική σας αφορμή για γιορτή." description="Γενέθλια, αρραβώνας ή μια συνάντηση με τους φίλους σας. Πείτε μας τι σχεδιάζετε και συζητήστε τη διαμόρφωση, το μενού και τη μουσική." image="/images/hero-image.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" event="party" />
 
         {/* Party Features */}
         <section className="section-padding">
@@ -232,7 +205,7 @@ export default function Parti() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-brand-main/10 to-brand-main/5 rounded-2xl p-8">
                 <h3 className="font-heading mb-6">Γιατί το Κτήμα Ωρίων;</h3>
                 <ul className="space-y-4">

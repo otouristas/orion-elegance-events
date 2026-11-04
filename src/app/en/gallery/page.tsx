@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Gallery from "@/views/greek/Gallery";
+import GalleryEn from "@/views/english/GalleryEn";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 
@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <>
       <JsonLd title={title} description={description} canonicalPath="/en/gallery" schemaType="EventVenue" />
-      <Gallery />
+      <GalleryEn />
     </>
   );
 }

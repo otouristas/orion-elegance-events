@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Church } from 'lucide-react';
@@ -72,19 +73,7 @@ export default function ChurchesEn() {
     <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <Church className="w-20 h-20 text-brand-main mx-auto mb-6" />
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Churches</span>
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Ktima Orion wedding and baptism venue is a short distance from many picturesque seaside chapels and churches in Keratea. 
-              At a distance ranging from <strong>5 - 15 minutes</strong>, you can hold the sacrament of marriage 
-              or christening, enjoying stunning views of the Aegean Sea, before continuing with your <a href="/en/weddings" className="text-brand-main hover:underline">wedding reception</a> or <a href="/en/baptism" className="text-brand-main hover:underline">baptism reception</a> at our <a href="/en/venue" className="text-brand-main hover:underline">beautiful venue</a>.
-            </p>
-          </div>
-        </section>
+        <PageIntro eyebrow="Churches near the venue" title="From ceremony to reception." description="Explore churches in Keratea and the surrounding area, with directions to help you plan your day." image="/images/hero-image.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" />
 
         {/* Churches List */}
         <section className="section-padding">
@@ -139,10 +128,10 @@ export default function ChurchesEn() {
             </div>
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <iframe 
-                src="https://www.google.com/maps/d/u/0/embed?mid=1I1J1VWCrLSQc6iwlQkAegUrpr74rcwA&ehbc=2E312F&noprof=1" 
-                width="100%" 
-                height="760" 
+              <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=1I1J1VWCrLSQc6iwlQkAegUrpr74rcwA&ehbc=2E312F&noprof=1"
+                width="100%"
+                height="760"
                 style={{ border: 0, marginTop: '-70px' }}
                 loading="lazy"
                 title="Map of Churches near Ktima Orion"
@@ -157,7 +146,7 @@ export default function ChurchesEn() {
             <h2 className="font-heading text-center mb-12">
               <span className="text-gradient-brand">Explore Our Churches</span>
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <a href="/en/churches/agios-alexandros-daskaleio" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
                 <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
@@ -166,7 +155,7 @@ export default function ChurchesEn() {
                 <p className="text-sm text-muted-foreground mb-3">3.8 km • 8'</p>
                 <p className="text-xs text-muted-foreground">Ideal for weddings up to 170 guests</p>
               </a>
-              
+
               <a href="/en/churches/profitis-ilias-thoriko" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
                 <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Profitis Ilias Thoriko
@@ -174,7 +163,7 @@ export default function ChurchesEn() {
                 <p className="text-sm text-muted-foreground mb-3">8.8 km • 11'</p>
                 <p className="text-xs text-muted-foreground">Stunning sea views</p>
               </a>
-              
+
               <a href="/en/churches/agios-panteleimonas-keratea" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
                 <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Agios Panteleimonas Keratea
@@ -182,7 +171,7 @@ export default function ChurchesEn() {
                 <p className="text-sm text-muted-foreground mb-3">8.6 km • 13'</p>
                 <p className="text-xs text-muted-foreground">Traditional rustic church</p>
               </a>
-              
+
               <a href="/en/churches/panagia-gkarika" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
                 <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Panagia Gkarika
@@ -190,7 +179,7 @@ export default function ChurchesEn() {
                 <p className="text-sm text-muted-foreground mb-3">3.1 km • 6'</p>
                 <p className="text-xs text-muted-foreground">Perfect for intimate weddings</p>
               </a>
-              
+
               <a href="/en/churches/agia-triada" className="card-elegant p-6 hover:shadow-xl transition-all duration-300 group text-center">
                 <h3 className="font-heading text-gradient-brand mb-2 group-hover:underline">
                   Agia Triada
@@ -228,7 +217,7 @@ export default function ChurchesEn() {
                 VIEW WEDDING SERVICES
               </a>
             </div>
-            
+
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
               <a href="/en/weddings" className="text-brand-main hover:underline">Wedding Venue</a>

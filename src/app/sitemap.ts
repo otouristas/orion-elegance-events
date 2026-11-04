@@ -45,6 +45,7 @@ const staticEnglishPaths: readonly string[] = [
   "/en/dj-music",
   "/en/reviews",
   "/en/contact",
+  "/en/request",
   "/en/blog",
   "/en/gallery",
   "/en/churches/agia-triada",
@@ -52,7 +53,7 @@ const staticEnglishPaths: readonly string[] = [
 
 function lastMod(): Date {
   // Update this only when a shared page template or static page content changes.
-  return new Date("2026-10-17T00:00:00.000Z");
+  return new Date("2026-11-02T00:00:00.000Z");
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -97,6 +98,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
   for (const post of blogPosts) {
+    entries.push({
+      url: buildAbsoluteUrl(`/en/blog/${post.slug}`),
+      lastModified: new Date(post.modifiedDate ?? post.date),
+      changeFrequency: "monthly",
+      priority: 0.65,
+      alternates: { languages: { el: buildAbsoluteUrl(`/blog/${post.slug}`), en: buildAbsoluteUrl(`/en/blog/${post.slug}`), "x-default": buildAbsoluteUrl(`/blog/${post.slug}`) } },
+    });
     entries.push({
       url: buildAbsoluteUrl(`/blog/${post.slug}`),
       // Each article carries its own publication/revision date, so report that

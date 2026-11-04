@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -85,34 +86,7 @@ export default function WeddingsEn() {
     <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              Your Dream <span className="text-gradient-brand">Wedding</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              The Ultimate Wedding Venue for Unforgettable Wedding Receptions in Keratea, Athens
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                At Ktima Orion, we specialize in creating magical wedding receptions that reflect your unique love story. 
-                Your wedding is an exceptional moment, the beginning of your shared journey with your partner.
-              </p>
-              
-              <p>
-                We take on with creativity, consistency and respect for your wishes the planning and organization of your wedding reception. 
-                Our beautiful <a href="/en/venue" className="text-brand-main hover:underline">wedding venue</a>, combined with our 15+ years of experience, ensures that your special day 
-                will be everything you've dreamed of and more. Located near stunning <a href="/en/churches" className="text-brand-main hover:underline">seaside churches</a>, 
-                we offer the perfect setting for your ceremony and wedding reception.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Come let us gift you the most beautiful memories on the most unique evening of your life.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Wedding venue in Keratea, Attica" title="Your wedding at Ktima Orion." description="A garden with sea views and an indoor hall for 50\u2013350 guests. Explore the venue and discuss the reception you have in mind." image="/images/wedding-card.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" event="wedding" />
 
         {/* Wedding Features */}
         <section className="section-padding">
@@ -179,16 +153,12 @@ export default function WeddingsEn() {
               Let's create the wedding reception of your dreams together. Book a free tour of our <a href="/en/venue" className="text-brand-main hover:underline">wedding venue</a> or explore <a href="/en/churches" className="text-brand-main hover:underline">nearby seaside churches</a> perfect for your ceremony.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/en/contact">
-                <button className="button button4">
+              <a href="/en/contact" className="button button4">
                   BOOK FREE TOUR
-                </button>
-              </a>
-              <a href="/en/churches">
-                <button className="button button4">
+                </a>
+              <a href="/en/churches" className="button button4">
                   VIEW CHURCHES
-                </button>
-              </a>
+                </a>
             </div>
           </div>
         </section>

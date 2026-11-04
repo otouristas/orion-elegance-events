@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import Image from 'next/image';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
@@ -191,30 +192,7 @@ export default function VenueEn() {
     <Layout lang="en">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              Our <span className="text-gradient-brand">Venue</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              A Unique Wedding and Baptism Venue for Unforgettable Events in Keratea, Athens
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Ktima Orion is a beautiful wedding and baptism reception venue, a green event space where visitors immediately feel the glow of luxury
-                in perfect harmony with the natural environment. In an ideal location with easy access from Attiki Odos, 
-                you can enjoy the special moments of your life.
-              </p>
-              
-              <p>
-                The fully air-conditioned wedding and baptism reception hall and the magical outdoor pavilion space guarantee warm reception 
-                and absolute hospitality for your guests. We are very close to <a href="/en/churches" className="text-brand-main hover:underline">picturesque seaside chapels</a> 
-                for your <a href="/en/weddings" className="text-brand-main hover:underline">wedding</a> or <a href="/en/baptism" className="text-brand-main hover:underline">baptism</a> ceremony. Explore our comprehensive <a href="/en/services" className="text-brand-main hover:underline">event services</a> for your special day.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="The venue \u00b7 Keratea, Attica" title="Find your place at Orion." description="Explore the garden, indoor hall and reception spaces, then arrange a free visit to discuss your event." image="/images/hero-image.webp" imageAlt="Ktima Orion in Keratea" lang="en" secondaryHref="/en/gallery" secondaryLabel="See the photos" />
 
         {/* Venue Features */}
         <section className="section-padding">
@@ -327,7 +305,7 @@ export default function VenueEn() {
               Visit Ktima Orion
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Schedule a visit to Ktima Orion and see up close 
+              Schedule a visit to Ktima Orion and see up close
               the magical environment that will host your event.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -338,7 +316,7 @@ export default function VenueEn() {
                 VIEW SERVICES
               </a>
             </div>
-            
+
             {/* Contact Info */}
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="flex flex-col items-center">

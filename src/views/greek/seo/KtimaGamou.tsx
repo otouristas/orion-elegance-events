@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
@@ -19,6 +20,7 @@ export default function KtimaGamou() {
     ];
 
     const faqs = [
+        { question: "Μπορώ να οργανώσω γάμο και βάπτιση την ίδια ημέρα;", answer: "Αν σχεδιάζετε γάμο και βάπτιση μαζί, αναφέρετέ το στο αίτημά σας. Πείτε μας τις ώρες των μυστηρίων, την εκκλησία και πόσοι ενήλικες και παιδιά θα έρθουν, ώστε να συζητήσουμε τη ροή της δεξίωσης, το μενού και την προσφορά σας." },
         { question: "Πόσο κοστίζει ένας γάμος στο Κτήμα Ωρίων;", answer: "Το κόστος εξαρτάται από αριθμό καλεσμένων, μενού, ημέρα (Σάββατο έναντι καθημερινής) και πρόσθετες παροχές. Για ενδεικτικά εύρη δείτε το άρθρο «Κόστος γάμου σε κτήμα 2026» στο blog μας· για ακριβή προσφορά επικοινωνήστε ή συμπληρώστε τη φόρμα αιτήματος στο ktimaorion.gr/request." },
         { question: "Πόσα άτομα μπορεί να φιλοξενήσει το Κτήμα Ωρίων για γάμο;", answer: "Φιλοξενούμε γάμους από περίπου 50 έως 350 άτομα, με ευέλικτες διατάξεις για μικρότερους γάμους και micro wedding. Υπάρχουν επιλογές εσωτερικού και εξωτερικού χώρου." },
         { question: "Υπάρχει εκκλησάκι ή κοντινές εκκλησίες για το μυστήριο;", answer: "Κοντά στο κτήμα υπάρχουν πολλά γραφικά εκκλησάκια (συνήθως 6–13 λεπτά με αυτοκίνητο), όπως Άγιος Αλέξανδρος Δασκαλειό, Παναγία Γκαρικά, Προφήτης Ηλίας Θορικό και άλλα. Δείτε λεπτομέρειες στη σελίδα εκκλησιών." },
@@ -33,37 +35,7 @@ export default function KtimaGamou() {
         <Layout>
             <div className="pt-20">
                 {/* Hero Section */}
-                <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-                    <div className="container-max text-center">
-                        <h1 className="font-heading mb-6">
-                            <span className="text-gradient-brand">Κτήμα για γάμο στην Αττική, στην Κερατέα</span>
-                        </h1>
-                        <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-                            Ρομαντικό κτήμα γάμου στην Ανατολική Αττική, κοντά στην Αθήνα, με θέα θάλασσα και ολοκληρωμένες παροχές για τη δεξίωσή σας
-                        </p>
-                        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                            Ιδανικό για 50-350 άτομα • Δωρεάν parking 100+ θέσεις • 5 κοντινά εκκλησάκια
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/request">
-                                <button className="button button4">
-                                    Ζητήστε προσφορά
-                                </button>
-                            </Link>
-                            <Link href="/epikoinonia">
-                                <button className="button button4">
-                                    Κλείστε δωρεάν επίσκεψη
-                                </button>
-                            </Link>
-                            <a href="tel:+302299068812">
-                                <button className="button button4">
-                                    <Phone className="w-5 h-5 inline mr-2" />
-                                    22990 68812
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+                <PageIntro eyebrow="Κτήμα γάμου στην Κερατέα Αττικής" title="Ο γάμος σας στο Κτήμα Ωρίων." description="Κήπος με θέα στη θάλασσα και κλιματιζόμενη αίθουσα για 50–350 καλεσμένους. Γνωρίστε τον χώρο και συζητήστε μαζί μας τη δική σας δεξίωση." image="/images/wedding-card.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" event="wedding" />
 
                 {/* Why Choose Us */}
                 <section className="section-padding">
@@ -303,20 +275,14 @@ export default function KtimaGamou() {
                             Επικοινωνήστε μαζί μας σήμερα για να δείτε τον χώρο και να λάβετε προσωποποιημένη προσφορά για τον γάμο σας
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/request">
-                                <button className="button button4">Ζητήστε προσφορά</button>
-                            </Link>
-                            <a href="tel:+302299068812">
-                                <button className="button button4">
+                            <Link href="/request" className="button button4">Ζητήστε προσφορά</Link>
+                            <a href="tel:+302299068812" className="button button4">
                                     <Phone className="w-5 h-5 inline mr-2" />
                                     22990 68812
-                                </button>
-                            </a>
-                            <Link href="/epikoinonia">
-                                <button className="button button4">
+                                </a>
+                            <Link href="/request" className="button button4">
                                     Επικοινωνία
-                                </button>
-                            </Link>
+                                </Link>
                         </div>
                     </div>
                 </section>

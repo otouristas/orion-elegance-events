@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { ClickableImage } from '@/components/ImageLightbox';
@@ -84,32 +85,7 @@ export default function Gamos() {
     <Layout>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-          <div className="container-max text-center">
-            <h1 className="font-heading mb-6">
-              <span className="text-gradient-brand">Τι περιλαμβάνει ο γάμος</span>
-            </h1>
-            <h2 className="font-heading mb-8 text-brand-text">
-              Τελετή, δεξίωση και παροχές
-            </h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed text-muted-foreground">
-              <p>
-                Ο γάμος σας είναι μια εξαιρετικά σημαντική στιγμή, η έναρξη της κοινής σας πορείας. 
-                Μια στιγμή που θα θυμάστε με συγκίνηση και αγάπη μέσα από το <strong>νυφικό τραπέζι</strong> και κάθε λεπτομέρεια της <strong>γαμήλιας δεξίωσης</strong> σας.
-              </p>
-              
-              <p>
-                Αναλαμβάνουμε με φαντασία, συνέπεια και σεβασμό στις επιθυμίες σας το σχεδιασμό και τη διοργάνωση της <strong>δεξίωσης γάμου</strong> σας στο <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>.
-                Η απαίτησή σας για τελειότητα είναι ο απόλυτος στόχος μας, στον <Link href="/o-horos" className="text-brand-main hover:underline">χώρο δεξιώσεων</Link> της Κερατέας.
-              </p>
-              
-              <p className="text-brand-main font-semibold text-xl">
-                Ελάτε να σας χαρίσουμε τις πιο όμορφες αναμνήσεις στο πιο μοναδικό βράδυ της ζωής σας. Κοντά σε <Link href="/ekklisies" className="text-brand-main hover:underline">παραθαλάσσια εκκλησάκια</Link>, με θέα που κόβει την ανάσα.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageIntro eyebrow="Γαμήλια δεξίωση" title="Μια δεξίωση που σας ταιριάζει." description="Ανακαλύψτε τους χώρους, τις παροχές και τις επιλογές συνεργατών για τον γάμο σας στο Κτήμα Ωρίων, στην Κερατέα." image="/images/wedding-card.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" event="wedding" />
 
         <section className="section-padding">
           <div className="container-max max-w-3xl text-center">
@@ -182,7 +158,7 @@ export default function Gamos() {
         <RelatedServices currentPage="/gamos" />
 
         {/* Popular Searches */}
-        <PopularSearches 
+        <PopularSearches
           links={[
             { label: "Κτήμα γάμου Αθήνα", href: "/ktima-gamou" },
             { label: "Athens Riviera", href: "/ktima-gamou" },
@@ -204,18 +180,14 @@ export default function Gamos() {
               <Link href="/" className="text-brand-main hover:underline">Κτήμα Ωρίων</Link>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/epikoinonia">
-                <button className="button button4">
+              <a href="/epikoinonia" className="button button4">
                   ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-                </button>
-              </a>
-              <a href="/el/ekklisiaki-dipla-sti-thalassa">
-                <button className="button button4">
+                </a>
+              <a href="/el/ekklisiaki-dipla-sti-thalassa" className="button button4">
                   ΔΕΙΤΕ ΕΚΚΛΗΣΙΕΣ
-                </button>
-              </a>
+                </a>
             </div>
-            
+
             {/* Internal Links */}
             <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
               <a href="/ktima-gamou" className="text-brand-main hover:underline">Κτήμα γάμου Αθήνα</a>

@@ -17,7 +17,7 @@ export const Contact = () => {
     subject: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -106,7 +106,7 @@ export const Contact = () => {
               <h3 className="font-heading text-gradient-brand mb-6">
                 Στοιχεία Επικοινωνίας
               </h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-brand-main/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -124,8 +124,8 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-heading mb-1">Τηλέφωνα</h4>
-                    <p className="text-muted-foreground">2299068812</p>
-                    <p className="text-muted-foreground">6981889560</p>
+                    <a className="block min-h-11 py-2" href="tel:+302299068812">22990 68812</a>
+                    <a className="block min-h-11 py-2" href="tel:+306981889560">698 188 9560</a>
                   </div>
                 </div>
 
@@ -135,7 +135,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-heading mb-1">Email</h4>
-                    <p className="text-muted-foreground">info@ktimaorion.gr</p>
+                    <a className="block min-h-11 py-2" href="mailto:info@ktimaorion.gr">info@ktimaorion.gr</a>
                   </div>
                 </div>
 
@@ -146,7 +146,7 @@ export const Contact = () => {
                   <div>
                     <h4 className="font-heading mb-1">Ώρες Λειτουργίας</h4>
                     <p className="text-muted-foreground">Δευτέρα - Κυριακή</p>
-                    <p className="text-muted-foreground">9:00 - 21:00</p>
+                    <p className="text-muted-foreground">Κατόπιν ραντεβού</p>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export const Contact = () => {
             <div>
               <h4 className="font-heading mb-4">Ακολουθήστε μας</h4>
               <div className="flex space-x-4">
-                <a 
+                <a
                   href="https://www.facebook.com/ktimaorion.gr/?locale=el_GR"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -165,7 +165,7 @@ export const Contact = () => {
                 >
                   <Facebook className="w-6 h-6" />
                 </a>
-                <a 
+                <a
                   href="https://www.instagram.com/ktimaorion/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -183,57 +183,59 @@ export const Contact = () => {
             <h3 className="font-heading text-gradient-brand mb-6">
               Στείλτε μας μήνυμα
             </h3>
-            
+
             <form action={FORMSPREE_FORM_ACTION} method="POST" onSubmit={handleSubmit} className="space-y-6">
+<input type="hidden" name="type" value="contact" />
+<input type="hidden" name="lang" value="el" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Ονοματεπώνυμο *</Label>
-                  <Input 
-                    id="name" 
-                    placeholder="Το όνομά σας" 
+                  <Input
+                    id="name" name="name" autoComplete="name"
+                    placeholder="Το όνομά σας"
                     value={formData.name}
                     onChange={handleInputChange}
-                    required 
+                    required
                   />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone">Τηλέφωνο</Label>
-                  <Input 
-                    id="phone" 
+                  <Input
+                    id="phone" name="phone" type="tel" autoComplete="tel"
                     placeholder="Το τηλέφωνό σας"
                     value={formData.phone}
                     onChange={handleInputChange}
                   />
                 </div>
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="email">Email *</Label>
-                <Input 
-                  id="email" 
-                  type="email" 
-                  placeholder="το email σας" 
+                <Input
+                  id="email" name="email" autoComplete="email"
+                  type="email"
+                  placeholder="το email σας"
                   value={formData.email}
                   onChange={handleInputChange}
-                  required 
+                  required
                 />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="subject">Θέμα *</Label>
-                <Input 
-                  id="subject" 
+                <Input
+                  id="subject" name="subject"
                   placeholder="Θέμα μηνύματος"
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
                 />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="message">Μήνυμα *</Label>
-                <Textarea 
-                  id="message" 
+                <Textarea
+                  id="message" name="message"
                   placeholder="Πείτε μας για την εκδήλωσή σας..."
                   rows={5}
                   value={formData.message}
@@ -241,9 +243,9 @@ export const Contact = () => {
                   required
                 />
               </div>
-              
-              <Button 
-                type="submit" 
+
+              <Button
+                type="submit"
                 className="w-full button button4"
                 disabled={isSubmitting}
               >
@@ -256,10 +258,9 @@ export const Contact = () => {
                   'Αποστολή Μηνύματος'
                 )}
               </Button>
-              
+
               <p className="text-xs text-muted-foreground">
-                Υποβάλλοντας αυτή τη φόρμα συμφωνείτε με τους όρους μας και την 
-                Πολιτική για Προστασία προσωπικών δεδομένων
+                Χρησιμοποιούμε τα στοιχεία σας για να απαντήσουμε στο αίτημά σας.
               </p>
             </form>
           </div>

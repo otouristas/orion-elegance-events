@@ -65,6 +65,16 @@ export const isPleiadesArticle = (pathname: string) =>
 
 export const isHomepage = (pathname: string) => pathname === '/' || pathname === '/en';
 
+/**
+ * Pleiades keeps the delayed modal on blog listing and blog posts only.
+ * Partners keep the in-page banner/cards. The homepage popup is baptism packages.
+ */
+export const shouldShowPleiadesPopup = (pathname: string) =>
+  isBlogRoute(pathname) && !isPleiadesArticle(pathname) && !isPromoPage(pathname);
+
+export const shouldShowBaptismPopup = (pathname: string) =>
+  !isBlogRoute(pathname) && !isPromoPage(pathname) && pathname !== '/request' && pathname !== '/en/request';
+
 export const shouldShowBaptismBanner = (pathname: string) =>
   !isPromoPage(pathname) && !isBlogRoute(pathname);
 

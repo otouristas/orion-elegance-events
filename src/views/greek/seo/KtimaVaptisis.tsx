@@ -1,3 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
@@ -13,21 +14,22 @@ import { promoHref } from '@/lib/promo';
 export default function KtimaVaptisis() {
     const features = [
         { icon: Baby, title: "Παιδικό Μενού", description: "Ειδικές επιλογές φαγητού για τα παιδιά - νόστιμα και υγιεινά" },
-        { icon: Home, title: "Ασφαλής Εξωτερικός Χώρος", description: "Καταπράσινος κήπος όπου τα παιδιά μπορούν να παίξουν με ασφάλεια" },
-        { icon: Users, title: "30-250 Άτομα", description: "Ευέλικτες διαρρυθμίσεις για μικρές και μεγάλες βαπτίσεις" },
+        { icon: Home, title: "Εξωτερικός Χώρος", description: "Κήπος για την οικογενειακή δεξίωση. Τα παιδιά χρειάζονται επίβλεψη από ενήλικα." },
+        { icon: Users, title: "50–350 Άτομα", description: "Ευέλικτες διαρρυθμίσεις για μικρές και μεγάλες βαπτίσεις" },
         { icon: Car, title: "Δωρεάν Parking 100+ Θέσεις", description: "Άνετη στάθμευση για όλη την οικογένεια" },
         { icon: Church, title: "Κοντινές Εκκλησίες", description: "5 εκκλησάκια σε απόσταση 6–13 λεπτά για την τελετή" },
         { icon: Camera, title: "Οικογενειακές Φωτογραφίες", description: "Υπέροχα σκηνικά για αναμνηστικές φωτογραφίες" }
     ];
 
     const faqs = [
-        { question: "Πόσα άτομα μπορεί να φιλοξενήσει το Κτήμα Ωρίων σε βάπτιση;", answer: "Οργανώνουμε βαπτίσεις από μικρές οικογενειακές δεξιώσεις έως μεγαλύτερες συγκεντρώσεις (ενδεικτικά περίπου 30–250 άτομα), με διατάξεις που προσαρμόζονται στο πλήθος και στο στυλ της εκδήλωσης." },
+        { question: "Ισχύουν τα πακέτα από 33€ για κάθε βάπτιση;", answer: "Τα δημοσιευμένα πακέτα L. Varsos Catering αφορούν εκδηλώσεις από 100 καλεσμένους: Classic Finger Food 33€ και Premium Finger Food 38€ ανά άτομο. Δείτε το αναλυτικό περιεχόμενο των πακέτων και ζητήστε γραπτή προσφορά για τη δική σας ημερομηνία και τον αριθμό των καλεσμένων σας." },
+        { question: "Πόσα άτομα μπορεί να φιλοξενήσει το Κτήμα Ωρίων σε βάπτιση;", answer: "Οργανώνουμε βαπτίσεις από μικρές οικογενειακές δεξιώσεις έως μεγαλύτερες συγκεντρώσεις (ενδεικτικά περίπου 50–350 άτομα), με διατάξεις που προσαρμόζονται στο πλήθος και στο στυλ της εκδήλωσης." },
         { question: "Υπάρχουν ειδικά μενού για παιδιά;", answer: "Ναι. Προσφέρουμε παιδικό μενού και επιλογές για ειδικές διατροφές· μπορούμε να συνδυάσουμε buffet και σερβιριστό ανάλογα με την ηλικία των καλεσμένων." },
         { question: "Μπορούμε να φέρουμε δικό μας ζαχαροπλαστείο ή διακοσμητή;", answer: "Συνήθως ναι· οι λεπτομέρειες καθορίζονται στο πακέτο σας. Μπορούμε επίσης να προτείνουμε αξιόπιστους συνεργάτες για τούρτα και στολισμό." },
         { question: "Υπάρχει χώρος για αλλαγή ρούχων του μωρού;", answer: "Ναι, υπάρχει άνετος χώρος για αλλαγή και τις ανάγκες του μωρού, με πρόσβαση σε καθαρούς χώρους υγιεινής κοντά στη δεξίωση." },
         { question: "Πόσο κοστίζει η βάπτιση σε κτήμα;", answer: "Το κόστος εξαρτάται από αριθμό ατόμων, μενού και ημέρα. Ζητήστε εξατομικευμένη προσφορά μέσω της φόρμας αιτήματος ή τηλεφωνικά." },
-        { question: "Είναι ασφαλής ο εξωτερικός χώρος για παιδιά;", answer: "Ο κήπος είναι περιφραγμένος και σχεδιασμένος ώστε τα παιδιά να κινούνται με ασφάλεια· μπορούμε να οργανώσουμε και ψυχαγωγία κατόπιν συνεννόησης." },
-        { question: "Πόσο κοντά είναι η εκκλησία από το κτήμα βάπτισης;", answer: "Πολλοί ναοί της περιοχής απέχουν περίπου 5–15 λεπτά με αυτοκίνητο. Λίστα και χάρτης στη σελίδα εκκλησιών." },
+        { question: "Είναι ασφαλής ο εξωτερικός χώρος για παιδιά;", answer: "Υπάρχει κήπος και χώρος παιχνιδιού. Τα παιδιά πρέπει να βρίσκονται υπό την επίβλεψη ενηλίκων, ιδιαίτερα κοντά στην πισίνα. Συζητήστε μαζί μας τη διαμόρφωση και τυχόν ψυχαγωγία πριν από την εκδήλωση." },
+        { question: "Πόσο κοντά είναι η εκκλησία από το κτήμα βάπτισης;", answer: "Πολλοί ναοί της περιοχής απέχουν περίπου 6–13 λεπτά με αυτοκίνητο. Λίστα και χάρτης στη σελίδα εκκλησιών." },
         { question: "Μπορώ να επισκεφθώ το κτήμα;", answer: "Κλείστε δωρεάν ξενάγηση στο 22990 68812 ή μέσω της φόρμας επικοινωνίας." }
     ];
 
@@ -35,43 +37,7 @@ export default function KtimaVaptisis() {
         <Layout>
             <div className="pt-20">
                 {/* Hero Section */}
-                <section className="section-padding bg-gradient-to-b from-brand-main/10 to-background">
-                    <div className="container-max text-center">
-                        <Baby className="w-16 h-16 text-brand-main mx-auto mb-6" />
-                        <h1 className="font-heading mb-6">
-                            <span className="text-gradient-brand">Κτήμα για βάπτιση με κήπο και ζεστή ατμόσφαιρα</span>
-                        </h1>
-                        <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-                            Δεξίωση βάπτισης στην Ανατολική Αττική: ασφαλής κήπος, παιδικό μενού και κοντινές εκκλησίες στο Κτήμα Ωρίων
-                        </p>
-                        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                            Παιδικό μενού • Ασφαλής κήπος • 8 κοντινές εκκλησίες
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={promoHref(false)}>
-                                <button className="button button4">
-                                    Δείτε τα πακέτα από 33€
-                                </button>
-                            </Link>
-                            <Link href="/request">
-                                <button className="button button4">
-                                    Ζητήστε προσφορά
-                                </button>
-                            </Link>
-                            <Link href="/epikoinonia">
-                                <button className="button button4">
-                                    Κλείστε δωρεάν επίσκεψη
-                                </button>
-                            </Link>
-                            <a href="tel:+302299068812">
-                                <button className="button button4">
-                                    <Phone className="w-5 h-5 inline mr-2" />
-                                    22990 68812
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+                <PageIntro eyebrow="Κτήμα βάπτισης στην Κερατέα Αττικής" title="Μια γιορτή για όλη την οικογένεια." description="Κήπος, παιδικό μενού και πέντε κοντινές εκκλησίες. Δείτε τα πακέτα βάπτισης και ζητήστε προσφορά για την ημερομηνία σας." image="/images/baptism-card.webp" imageAlt="Κτήμα Ωρίων στην Κερατέα" secondaryHref="/gallery" secondaryLabel="Δείτε φωτογραφίες" event="christening" />
 
                 {/* Why Choose Us */}
                 <section className="section-padding">
@@ -197,23 +163,15 @@ export default function KtimaVaptisis() {
                             Επικοινωνήστε μαζί μας σήμερα για να δείτε τον χώρο και να οργανώσουμε την τέλεια βαπτιστική δεξίωση
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href={promoHref(false)}>
-                                <button className="button button4">Δείτε τα πακέτα από 33€</button>
-                            </Link>
-                            <Link href="/request">
-                                <button className="button button4">Ζητήστε προσφορά</button>
-                            </Link>
-                            <a href="tel:+302299068812">
-                                <button className="button button4">
+                            <Link href={promoHref(false)} className="button button4">Δείτε τα πακέτα από 33€</Link>
+                            <Link href="/request" className="button button4">Ζητήστε προσφορά</Link>
+                            <a href="tel:+302299068812" className="button button4">
                                     <Phone className="w-5 h-5 inline mr-2" />
                                     22990 68812
-                                </button>
-                            </a>
-                            <Link href="/epikoinonia">
-                                <button className="button button4">
+                                </a>
+                            <Link href="/request" className="button button4">
                                     Επικοινωνία
-                                </button>
-                            </Link>
+                                </Link>
                         </div>
                     </div>
                 </section>

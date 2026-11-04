@@ -17,14 +17,14 @@ export function GET(): Response {
 - Email: ${EMAIL}
 - Address: 45th km New Athens–Lavrio Avenue, Keratea 190 01, Attica, Greece
 - Coordinates: 37.802493, 24.028817
-- Open 365 days a year
+- Venue visits by appointment
 - Languages: Greek (/), English (/en)
 
 ## Verified facts
 - Guest capacity: 50–350 people
 - Parking: 100+ free spaces on site
 - Indoor air-conditioned hall plus garden, pool area and semi-covered space
-- Distance from central Athens: approximately 45 minutes
+- Distance from central Athens: approximately 45 minutes, depending on traffic
 - ${CHURCH_COUNT} nearby churches for the ceremony, ${CHURCH_MINUTES_RANGE} minutes by car (see below)
 - Baptism packages with L. Varsos Catering: Classic finger food 33€/person, Premium finger food 38€/person, for events from 100 guests
 - Published guest reviews: ${REVIEW_COUNT}, average rating ${AVERAGE_RATING.toFixed(1)}/5 (see /reviews)
@@ -52,11 +52,12 @@ ${churches
 - /epikoinonia — Contact and free venue tour
 - /request — Request a quote
 - /en — English homepage
+- /en/request — Request a quote in English
 
 ## Full machine-readable index
 See ${SITE_URL}/llms-full.txt
 
-Last-Updated: 2026-09-12
+Last-Updated: 2026-11-02
 `;
   return new Response(withLlmsHeader(body, { origin: SITE_URL, kind: "index" }), {
     headers: {

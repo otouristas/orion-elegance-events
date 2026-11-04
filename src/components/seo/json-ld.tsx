@@ -196,12 +196,7 @@ export function JsonLd({
         "Ανατολική Αττική",
         "Αθήνα",
       ].map((name) => ({ "@type": "Place" as const, name })),
-      openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        opens: "09:00",
-        closes: "23:00",
-      },
+
     };
   } else if (schemaType === "Event") {
     mainEntity = {
@@ -232,9 +227,11 @@ export function JsonLd({
     mainEntity = {
       "@context": "https://schema.org",
       "@type": "EventVenue",
+      "@id": `${SITE_URL}/#venue`,
       name: SITE_NAME_EL,
       description,
-      url: fullCanonical,
+      url: SITE_URL,
+      mainEntityOfPage: fullCanonical,
       logo,
       image: fullOgImage,
       address,
