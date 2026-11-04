@@ -1,10 +1,10 @@
 name: Deploy to Cloudflare Workers
 
-# Every push to main builds the site with OpenNext and deploys it to the
-# `orion-elegance-events` Worker that serves ktimaorion.gr.
+# Builds main with OpenNext and deploys it to the `orion-elegance-events`
+# Worker that serves ktimaorion.gr. Manual only for now: the live design
+# (Worker version d60b4fc7) is not in main yet, so deploying main would bring
+# back the old design. Re-enable `push` once main matches the live site.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 concurrency:
