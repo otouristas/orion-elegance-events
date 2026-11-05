@@ -9,8 +9,10 @@ import { PROMO_COPY,PROMO_IMAGE,isPromoPage,promoHref } from '@/lib/promo';
 
 // The baptism offer opens straight away on every page, homepage included, and
 // comes back on the next page after it is closed. The baptism article itself
-// shows the Pleiades offer instead; the request form shows none.
-const resolveCampaign=(path:string)=>path==='/request'||path==='/en/request'?null:isPromoPage(path)?'pleiades':'baptism';
+// shows no pop-up: visitors land there from the pop-up's own link, and a second
+// (Pleiades) pop-up on arrival covered the article and read as a wrong link.
+// The request form shows none either.
+const resolveCampaign=(path:string):'baptism'|'pleiades'|null=>path==='/request'||path==='/en/request'||isPromoPage(path)?null:'baptism';
 export function PromoPopup(){
  const path=usePathname();const en=path.startsWith('/en');const campaign=resolveCampaign(path);
  const [open,setOpen]=useState(false);const dialog=useRef<HTMLDialogElement>(null);
